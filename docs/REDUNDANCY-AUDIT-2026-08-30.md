@@ -258,6 +258,34 @@ _to_delete/2026-08-30-cleanup/
   src/, docs/, scripts/   the removed components and staged-features fork
 ```
 
-**Left alone deliberately:** the 61 guides under 800 characters and the 298 under 1,500
-(Tier 4 called for expansion or merging, which is editorial work, not a cut); the
-readability decision; and `docs/archive/`, which is doing its job.
+### Follow-up, same day — thin guides (`87ebe614`)
+
+A proper parse of the guide objects (importing `guides.ts` rather than regexing it) showed
+the thin-guide problem was larger than the character-count estimate above: **823 guides
+under 300 words of body + steps, 434 of them under 200.** The thinnest is 12 words. All of
+them violate the ≥300-word `body` rule this repo states as an invariant.
+
+Splitting them by whether a better guide already exists:
+
+- **93 duplicated a substantial guide on the same topic** under a different title — a
+  30-word "How to Use Siri" beside a 1,400-word "How to Use Siri on Your iPhone (2026)".
+  Merged and redirected via `scripts/merge-thin-guides.mjs`.
+- **~700 are the only coverage of their topic.** Deleting them removes coverage; expanding
+  them is a content project. **Left alone, deliberately** — that is your call, not a cut.
+
+The merge map (`scripts/thin-guide-merges.json`) is hand-reviewed. Automatic topic matching
+scored 119 candidates at ≥0.6 title similarity and confidently proposed merging a VPN guide
+into a OneDrive guide, a romance-scam guide into an investment-scam guide, and an Apple
+Watch guide into Apple Pay. 26 of its suggestions were wrong. Do not regenerate that file.
+
+**One bug caught in verification:** `generate-site-stats.mjs` was a fifth generator
+scraping concrete `/tools/*` routes out of `App.tsx`. After the route table collapsed it
+counted 13 tools and wrote `TOOL_COUNT_LABEL = '0+'` — the `/tools` page was one deploy
+away from advertising "0+ free tech tools" to a cautious audience. Fixed to read the
+registry. It shipped in `30b141cf` and never reached production.
+
+**Final numbers:** 3,939 guides · 387 tools · 4,449 sitemap URLs · 495 edge redirects ·
+all 4,449 routes prerendered, 0 failed, 0 without a title.
+
+**Left alone deliberately:** the ~700 single-coverage thin guides above; the readability
+decision; and `docs/archive/`, which is doing its job.
