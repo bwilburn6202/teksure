@@ -209,3 +209,55 @@ Root-level markdown is 10 files. Keep `CLAUDE.md`, `README.md`, `CONTRIBUTING.md
 
 Steps 1–4 together are about 515 MB and roughly 80 files, with no change to what a
 visitor sees. Step 3 is the one that changes the website.
+
+---
+
+## What was actually done — 2026-08-30
+
+All five tiers approved and executed on branch `chore/redundancy-cleanup-2026-08-30`.
+
+| Commit | What |
+|---|---|
+| `6a2a733e` | Tier 2 + 4 + 5 — dead code, dead docs, 17 duplicate guides merged |
+| `30b141cf` | Tier 3 — `/tools` cut from 2,970 pages to 387, made a registry |
+| `17f0b67f` | 59 broken `/tools` links repaired (all pre-dated the cut) |
+| `e96c6097` | orphaned `scripts/sitemap-lastmod.json` removed |
+
+**Result**
+
+| | Before | After |
+|---|---|---|
+| `/tools` pages | 2,970 | 387 |
+| `src/pages/tools` | 24 MB | 8.4 MB |
+| `App.tsx` | 7,445 lines | 1,499 lines |
+| Hand-written tool routes | 3,156 | 1 (`/tools/:slug`) |
+| Duplicate route declarations | 37 | 0 |
+| Sitemap URLs | 7,128 | 4,542 |
+| Guides | 4,049 | 4,032 |
+| Dead `/tools` links in `src` | 157 | 0 |
+| Lines of code | — | −216,000 |
+
+**Verified:** `tsc --noEmit` clean (25s, down from >100s) · 106/106 tests · `validate-slugs`
+OK · full build with all 4,542 routes prerendered across 5 shards, **0 failed, 0 rendered
+without a title, ~420 MB peak RSS**. The `npm run build` OOM blocker is resolved as a side
+effect — it was a symptom of 7,128 routes, not a memory bug.
+
+**Redirects:** 495 permanent 308s in `vercel.json` (20 pre-existing + 13 `<Navigate>` +
+462 from `src/data/tool-redirects.ts`). The other ~2,100 removed slugs 404 deliberately.
+
+**Still needs a human — Tier 1 (~532 MB).** This mount refuses `unlink`, and the folder
+delete permission never reached the desktop. Everything Tier 1 named is now consolidated
+in **`_to_delete/`**, along with the 2,567 removed tool components (all safely in git
+history). Delete that one folder and 532 MB comes back:
+
+```
+_to_delete/2026-08-30-cleanup/
+  stale-builds/      four abandoned dist folders + the build swap  (~510 MB)
+  scratch/           .bak files, 26 vite HMR timestamps, probe files
+  git-lock-litter/   404 dead .git lock renames from past sessions
+  src/, docs/, scripts/   the removed components and staged-features fork
+```
+
+**Left alone deliberately:** the 61 guides under 800 characters and the 298 under 1,500
+(Tier 4 called for expansion or merging, which is editorial work, not a cut); the
+readability decision; and `docs/archive/`, which is doing its job.
