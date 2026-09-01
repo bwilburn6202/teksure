@@ -35,6 +35,24 @@ interface TechProblem {
 }
 
 const CURRENT_PROBLEM: TechProblem = {
+  weekRange: 'August 31\u2013September 6, 2026',
+  dateISO: '2026-08-31',
+  title: 'The Postcard Offering You Extra Veterans Benefits Is Fishing for Your Details',
+  emoji: '',
+  description:
+    'On August 24 the FTC warned about postcards turning up in veterans\u2019 mailboxes across the country. The card says you \u2014 or your spouse \u2014 may qualify for extra monthly money through a "Veterans Savings Program." There is no such program. The card often names the state you live in and mentions real benefits like CHAMPVA or TRICARE For Life so that it reads as official, then tells you to call right away or risk losing out. The FTC says the goal is to get you on the phone and talking, and to walk away with your Social Security number or your bank account details.',
+  howToCheck:
+    'The hurry is the tell. The VA does not send word that a benefit runs out this week, and it does not ask for your Social Security number or your bank details over the phone. Do not dial the number printed on the card. If you want to know whether anything has changed with your benefits, call the VA Benefits Hotline yourself at 1-800-827-1000, or sign in at VA.gov and read your own account. A real change shows up there.',
+  whatToDo:
+    'Throw the postcard out and do not answer it. If you already called and read out your Social Security number, put a free fraud alert on your file with any one of the three credit bureaus and pull your reports at AnnualCreditReport.com. If you gave bank or card details, call the number on the back of your card. Report the postcard to the FTC at ReportFraud.ftc.gov and to the VA at VSAFE.gov or 1-833-38V-SAFE. Then mention it to other veterans you know \u2014 the FTC says these cards go out in batches, so anyone who got one probably has a neighbor who did too.',
+  source: {
+    label: 'FTC Consumer Alert \u2014 August 24, 2026',
+    url: 'https://consumer.ftc.gov/consumer-alerts/2026/08/how-spot-postcard-scam-targeting-veterans',
+  },
+  isCurrent: true,
+};
+
+const PREVIOUS_WEEK_PROBLEM: TechProblem = {
   weekRange: 'August 24\u201330, 2026',
   dateISO: '2026-08-24',
   title: 'A Package You Never Ordered Is Not a Gift',
@@ -49,10 +67,9 @@ const CURRENT_PROBLEM: TechProblem = {
     label: 'FTC Consumer Alert \u2014 August 20, 2026',
     url: 'https://consumer.ftc.gov/consumer-alerts/2026/08/unexpected-package-you-got-could-be-brushing-scam',
   },
-  isCurrent: true,
 };
 
-const PREVIOUS_WEEK_PROBLEM: TechProblem = {
+const BILL_PAY_IMPERSONATOR_PROBLEM: TechProblem = {
   weekRange: 'August 17\u201323, 2026',
   dateISO: '2026-08-17',
   title: 'The Top Search Result for Paying Your Bill May Not Be Your Biller',
@@ -71,6 +88,7 @@ const PREVIOUS_WEEK_PROBLEM: TechProblem = {
 
 const PAST_PROBLEMS: TechProblem[] = [
   PREVIOUS_WEEK_PROBLEM,
+  BILL_PAY_IMPERSONATOR_PROBLEM,
   {
     weekRange: 'August 10\u201316, 2026',
     dateISO: '2026-08-10',
