@@ -8,6 +8,72 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 164 — 2026-09-01 (Cowork weekly review, hand-written)
+
+### [ok] Discoverability verified from outside
+`/guides/qr-codes` serves its own title, description, canonical and OG tags.
+prerender-report.json: status complete, 7128/7128 written, 0 failed, 0 without title.
+build-info commit `d61210b2` == `origin/main` HEAD — deploy is in sync, not silently stale.
+Sitemap 7128 = prerendered 7128 = build-info sitemapUrls. Link audit: 0 broken, 0 orphans.
+
+### [fixed] Site metrics snapshot reported 285 tools; the site publishes 2,958
+`checkSiteMetrics()` counted `title:` lines in `src/pages/Tools.tsx` — the HAND-CURATED
+/tools listing page — and printed the result as the site's tool count. Tools.tsx lists
+285. The live sitemap has 2,958 `/tools/` URLs and the auto-generated
+`src/data/tools-directory.ts` has 2,969. The headline understated the tool surface ~10x.
+
+Why this mattered more than a cosmetic number: cycle 151 escalated "the 2026-08-30
+redundancy cut (2,970 -> 387 tools) never shipped to production" as a decision for Bailey.
+Anyone reading "285 tools" in the health check would reasonably conclude the cut HAD
+landed. The one metric feeding that open decision was answering it wrongly. Same class of
+bug as the guide-count regex fixed in cycle 70, and the comment there already says a wrong
+headline number is worse than no number.
+
+Now counts `tools-directory.ts` (authoritative, regenerated in prebuild) and keeps the
+curated figure as its own `curatedToolsListed` metric, so the gap between "tool pages that
+exist" and "tool pages reachable from /tools" stays visible instead of collapsing into one
+misleading number.
+
+Before: `4049 guides, 3156 routes, 285 tools.`
+After:  `4049 guides, 3156 routes, 2969 tools (285 curated on /tools).`
+
+### [ok] Cadence pages — both current, and the June gap is correct
+TechProblemOfWeek dateISO 2026-08-31 (1 day old). WhatsNew newest is aug-2026.
+The missing jun-2026 entry is NOT an oversight: June 2026 has 117 commits, all
+`chore(dev-loop): cycle NNN findings`, and zero feat/fix. Nothing user-facing shipped, so
+leaving June out is the honest behaviour CLAUDE.md asks for. Do not "fill it in".
+
+### [warn] Readability — still 8.3 avg, 58.5% above grade 8. NOT touched, deliberately.
+CLAUDE.md is explicit that hand-passes move this ~0.1pp per session and that the existing
+splitters degrade prose if run blindly. Doing another token hand-pass would manufacture the
+appearance of progress. This needs a decision from Bailey: either commission a reviewed
+bulk pass or state that 8.3 is accepted. Flagging, not working around.
+
+### Skipped / could not verify in sandbox
+- `npx tsc --noEmit` and `npm run build` both OOM here (3.9GB available, production main's
+  7,128-route tree needs ~8GB). Environmental, not caused by this change — the change is to
+  `scripts/dev-loop.mjs`, which is not in the build pipeline. GitHub Actions compiles clean
+  (cycle 163 `[ok] TypeScript compile`). Verified instead: `node --check`, 104/104 vitest
+  pass, and `dev-loop --only=metrics` prints the corrected line.
+
+### Still open, unchanged — decisions for Bailey
+1. **Redundancy cut unmerged.** `chore/redundancy-cleanup-2026-08-30` is 13 ahead / 90
+   behind `origin/main`. Production still serves the pre-cut 7,128 URLs. The local mount
+   checkout is still sitting on that stale branch — worth switching it to main so routine
+   work doesn't get built against a tree 90 commits behind production.
+2. **Apex `teksure.com` still 307, not 308/301.** Verified again today; path is preserved
+   so users are fine, but link equity does not consolidate. Vercel dashboard setting, not
+   fixable from the repo.
+3. **Readability** — see above.
+4. Housekeeping: the GitHub PAT is stored in plaintext in `.git/config`
+   (`remote.origin.url`). Confirmed NOT in any tracked file and not in git history, so
+   nothing leaked to the repo — but worth rotating if that mount is ever shared.
+
+### Next
+Answer (1) — it is now the only thing gating a coherent picture of the site, and every
+weekly run re-derives the same divergence. Everything automated is green.
+
+---
 ## Cycle 163 — 2026-09-01T04:58:41.636Z
 
 ### [ok] Site metrics snapshot
@@ -1305,190 +1371,3 @@ No video is reused across more than 5 guides.
 
 ### Suggested next actions
 - **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 137 — 2026-08-24T01:53:57.314Z
-
-_No change through cycle 140 (2026-08-24T18:54:42.668Z) — 4 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-24.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 133 — 2026-08-23T01:56:27.696Z
-
-_No change through cycle 136 (2026-08-23T18:44:31.718Z) — 4 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-23.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 129 — 2026-08-22T01:46:22.601Z
-
-_No change through cycle 132 (2026-08-22T18:45:15.289Z) — 4 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-22.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-_(older cycles trimmed)_
