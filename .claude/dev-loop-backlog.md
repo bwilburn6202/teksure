@@ -8,6 +8,119 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 151 — 2026-08-31 (Cowork run, hand-written)
+
+### 🚨 [BLOCKER — needs Bailey] The entire 2026-08-30 redundancy cut has never reached production
+Live `build-info.json` says:
+
+    commit 8e33ddc2d208 · "chore(dev-loop): cycle 162 findings"
+    prerenderedPages 7128 · sitemapUrls 7128
+
+**7,128 URLs is the pre-cut number.** Production is serving the old site. The tools cut
+(2,970 → 387), the tool registry refactor, the 59 broken-link repairs, the 110 thin-guide
+merges and the senior-legibility type-scale pass all live only on
+`chore/redundancy-cleanup-2026-08-30`, which is **12 commits ahead of and 78 commits behind
+`origin/main`** and has never been merged.
+
+`CLAUDE.md`'s "Current state (2026-08-30) — 3,939 guides · 387 tools · 4,449 sitemap URLs"
+describes that branch, not the live site. Anyone reading it would reasonably believe the cut
+shipped. It has not.
+
+Meanwhile `origin/main` has moved on by 78 commits, almost all `chore(dev-loop): cycle N
+findings` written straight to main by the GitHub workflow. So the two histories have been
+diverging for two days.
+
+**This needs a decision, not an automated merge.** Reconciling a branch that deletes ~2,500
+routes against 78 commits of drift is a judgement call about what ships, and the loop should
+not make it unattended. Options, roughly: merge `main` into the branch and resolve, then
+fast-forward main; or rebase the branch onto main; or cherry-pick the cut in stages.
+`auto-merge-claude.yml` does not help — it only merges `claude/`, `codex/` and `vercel/`
+branches, and this one is `chore/`.
+
+### [fixed, and shipped to main] Tech Problem of the Week had gone stale
+`CURRENT_PROBLEM` was still the August 24–30 window (the FTC brushing-scam alert). Today is
+August 31, so the page was advertising an expired week on a footer-linked page that says
+"updated weekly".
+
+Refreshed to **August 31 – September 6** with the FTC's August 24 alert on postcards sent to
+veterans promising money from a fake "Veterans Savings Program"
+(`consumer.ftc.gov/consumer-alerts/2026/08/how-spot-postcard-scam-targeting-veterans`).
+The brushing scam moved to `PREVIOUS_WEEK_PROBLEM`; the August 17 bill-pay impersonator entry
+became `BILL_PAY_IMPERSONATOR_PROBLEM` and moved into `PAST_PROBLEMS`.
+
+Considered and rejected: the August 27 disaster-donation alert. `disaster-relief-charity-scam-guide`
+already covers that ground, and the FTC alert is a general reminder rather than a new variant.
+The postcard scam is described by the FTC as a **new twist** on VA impersonation, so it is not
+a recycle even though `va-benefits-impersonation-scam` exists.
+
+**Committed twice on purpose.** `591d71a8` on the cleanup branch, and `b5c481a` applied
+independently on top of `origin/main` and pushed there, because a fix to a stale page is worth
+nothing sitting on an unmerged branch. The two versions differ only in escaping style (main
+still uses `–` literals; the branch has the normalised characters from the type-scale pass).
+
+What's New was **not** touched — newest release is `aug-2026` and today is still August. It
+comes due on the first run of September.
+
+### [found — top candidate for next cycle] Every sitemap URL claims it changed today
+`scripts/generate-sitemap.mjs` stamps the build date onto all 4,449 URLs:
+
+    $ grep -o "<lastmod>[^<]*" public/sitemap.xml | sort | uniq -c
+    4449 <lastmod>2026-08-31
+
+A sitemap where every page changed today, every day, teaches crawlers to discount `lastmod`
+entirely — which is the opposite of what it is for. It also churns the committed file by 8,898
+lines on every single build, which is why `public/sitemap.xml` shows up in almost every commit.
+The fix is to derive `lastmod` per URL from the guide's `publishedAt` (and from git mtime for
+app routes). Note that `scripts/sitemap-lastmod.json` was dropped as orphaned in `e96c6097` —
+worth checking whether that file was an earlier, abandoned attempt at exactly this.
+
+### [ok] Health checks clean
+`dev-loop --once --dry-run`: 13 of 14 checks green — 3,939 guides, 0 duplicate slugs, 0 broken
+internal links, 0 orphaned routes, `tsc` clean, no stale OS mentions, 0 aged guides, 0 overlong
+excerpts, 0 undisclosed testimonials, 72 source URLs checked with 0 confirmed broken. 106/106
+tests pass. `validate-slugs` clean.
+
+### [readability — accepted this cycle, no hand-pass done]
+Grade 8.3, 58.7% above grade 8, 488 guides above grade 10 — unchanged. Deliberately did not do
+a 5-guide hand pass; per `CLAUDE.md` that moves the number ~0.1pp and is the appearance of
+progress. This still needs either a scripted bulk pass or an explicit decision from Bailey to
+accept 8.3.
+
+### [build] Full build runs in the sandbox now — prerender is genuinely fine
+Confirmed against the branch: **4,449 of 4,449 pages prerendered in 39.3s, 0 failed, 0 without a
+title**, peak RSS ~311MB in a 3.9GB container. `dist/prerender-report.json` reads
+`"status": "complete"`. The old OOM blocker is closed for real on the branch.
+
+Two sandbox-only snags worth knowing about, neither a code defect:
+- `vite build` and `scripts/prerender-cleanup.mjs` both die with `EPERM: operation not
+  permitted, unlink` because this FUSE mount refuses `unlink` on existing files. Workaround is
+  `mv dist dist.stale-$(date +%s)` before building. Cleanup failing *after* a successful
+  prerender makes the build print "PRERENDER FAILED — shipping the client-only SPA", which is
+  misleading: the pages were written. On Vercel's builder this does not happen.
+- `tsc` on `origin/main` still OOMs, because main is the pre-cut tree with ~2,970 tool routes.
+  It is clean on the branch. Another reason the cut matters.
+
+### [self-inflicted, cleaned up] A `git checkout` half-succeeded and scrambled the working tree
+Attempting to branch from `origin/main` inside the mount failed midway (`HEAD.lock` could not be
+created, then the index could not be rewritten), leaving 3,231 files in a hybrid state — 2,569
+deleted tool pages restored from main on top of the branch's tree. Recovered with
+`git read-tree HEAD` after moving `.git/index` aside and quarantining the extra files; tree is
+clean against `591d71a8` again and nothing was lost, since the commit was already pushed.
+
+The restored tool pages are parked in `_to_delete/tools-restored-by-accident-20260831/` — 2,569
+untracked files that **should be deleted from a machine that can unlink**. This mount cannot.
+
+**Lesson for future runs: do not switch branches inside this mount.** `mv`-ing lock files aside
+works for commits and pushes, but `checkout`/`reset --hard` need to unlink working-tree files and
+will leave the tree in a half-state. Clone into `/sessions/.../work/` and work there instead —
+that is what shipped the fix to main.
+
+### Blockers unchanged
+Monetization credentials (AdSense/affiliate) · analytics wiring unverified · Hetzner CX22 for
+hosted Ollama · apex `teksure.com` still 307s to `www` (Vercel dashboard → Settings → Domains).
+
+---
+
 ## Cycle 150 — 2026-08-27 (Cowork run, hand-written)
 
 ### [fixed] The wrong Supabase project ref was sitting in 22 places across `docs/` — including deploy commands
@@ -1066,325 +1179,4 @@ No video is reused across more than 5 guides.
 
 ---
 
-## Cycle 126 — 2026-08-20 (Cowork run)
-
-_No change through cycle 128 (2026-08-21T18:51:46.275Z) — 4 consecutive identical cycles._
-
-### [fixed] Every prerendered page shipped its title, canonical and og tags *outside* the head
-
-The whole point of the prerender step is that each of the 7,128 routes serves its own title and
-social metadata. It has been injecting all of it into the **body** instead.
-
-`index.html` carried the `<!--ssr-head-->` placeholder on the line after `<div id="root">`, i.e.
-inside `<body>`. `buildHtml()` in `scripts/prerender.mjs` substitutes the rendered head fragment at
-that placeholder, so on the live site `/guides/how-to-back-up-iphone-to-icloud` closed its head at
-line 152 and then emitted its real `<title>`, description, canonical, og:* and twitter:* tags at
-line 186 — 34 lines into the body. Confirmed against production, not inferred:
-
-```
-$ curl -s https://www.teksure.com/guides/how-to-back-up-iphone-to-icloud | grep -n 'title\|</head>'
-34:  <meta name="apple-mobile-web-app-title" ...>
-152: </head>
-186: <title data-rh="true">How to Back Up Your iPhone to iCloud ... | TekSure</title>
-```
-
-Browsers recover from this, so the site *looked* fine. Crawlers are under no obligation to: a
-`<meta property="og:...">` in the body is out of spec, and the strict head-only parsers are exactly
-the audience prerendering exists to serve — Bing, the social preview crawlers, and the AI answer
-engines robots.txt deliberately invites in. The shell's generic homepage title was stripped and the
-real one was placed where it may not be read, which is worse than either alone.
-
-**Why nothing caught it for the entire life of the feature:** the degraded-page check does
-`if (!head.includes('<title'))` against the *rendered head fragment*, before injection. The title
-was always present — it was being put in the wrong half of the document afterwards. So
-`prerender-report.json` has been reporting `renderedWithoutTitle: 0` truthfully and uselessly. The
-comment above the placeholder in prerender.mjs even described the body position as the intended
-design ("the SSR placeholders this pipeline was designed around: `<!--ssr-outlet-->` inside #root
-and `<!--ssr-head-->` after it"), which is presumably how it survived review.
-
-Two changes:
-
-1. `index.html` — moved `<!--ssr-head-->` inside `<head>`, just before the close, with a comment
-   saying why it must stay there. The comment deliberately contains **no literal tag markup**:
-   `buildHtml` strips the shell's existing title/meta by regex across the whole file, so a
-   tag-shaped string inside a comment is indistinguishable from a real tag and would be matched
-   first. (Hit this while writing it — the first draft quoted `<title>` and broke the strip.)
-
-2. `scripts/prerender.mjs` — `buildHtml` now asserts on **position**, not presence: it throws if the
-   injected `<title>` does not appear before `</head>`. A build with the placeholder back in the
-   body now fails loudly instead of shipping 7,128 silently-degraded pages.
-
-Verified by driving the real `buildHtml` against the real `index.html`:
-- exactly one `<title>`, one canonical, one `og:title`, one description — all before `</head>`
-- app HTML still lands in `#root`
-- negative test: placeholder moved back to the body → guard throws
-
-**This does not reach production until a full `npm run build` runs.** See below.
-
-### `npm run build` still cannot complete in this sandbox — the fix is committed but UNVERIFIED end to end
-3.9GB available, ~2.7GB free. `npx tsc` OOMs at the default heap and needs
-`NODE_OPTIONS=--max-old-space-size=3400`; even `vite build` alone (`build:spa`) was **Killed** at
-"rendering chunks" after transforming 6,440 modules. So the prerender step never ran here and no
-real prerendered page was inspected — only `buildHtml`'s output against the real template.
-
-The next Vercel deploy will exercise it. Two things to check once it lands, in order:
-1. `curl -s https://www.teksure.com/prerender-report.json` — `status: complete`, `written` equals
-   `routesAttempted` (7128), `failed: 0`. **If the new guard has a false positive it will fail every
-   page**, and that is what this report will show.
-2. `curl -s https://www.teksure.com/guides/how-to-back-up-iphone-to-icloud | grep -n 'title\|</head>'`
-   — the title's line number must now be *below* the `</head>` line.
-
-### [fixed] ~285 tool pages were canonicalising themselves to the homepage
-
-Found by checking the head fix on production, which is the only reason it turned up. Every page
-under `/tools/:slug` was serving:
-
-```
-<link rel="canonical" href="https://www.teksure.com/"/>
-```
-
-That tells Google each tool page is a duplicate of the homepage and should not be indexed on its own.
-`/guides/*` and the static pages (`/tools`, `/glossary`, `/scam-defense`, `/how-it-works`) were all
-correct — the tool detail pages were not.
-
-Cause: `SEOHead` declared `path?: string` with a default of `'/'`. Pages that pass `path` were fine;
-pages that forgot it silently claimed the homepage. A scan of `src/pages` finds 2,692 `SEOHead`
-usages with neither `path` nor `canonical` against 441 with one — almost all of the former in
-`src/pages/tools/`.
-
-**This interacts badly with the head fix above, which is why it was worth doing in the same run.**
-While canonicals were being emitted in the body, crawlers ignored them and the wrong value was inert.
-Putting them back in the head makes them authoritative. Shipping the head fix on its own would have
-taken 285 previously-ignored bad canonicals and made them count — actively worse than the bug it
-fixed. The two changes belong together.
-
-Fixed centrally in `src/components/SEOHead.tsx` rather than by editing hundreds of call sites:
-`path` now defaults to the current route via `useLocation()` instead of to `'/'`. SEOHead always
-renders inside a Router — `StaticRouter` during prerender, `BrowserRouter` in the app, `MemoryRouter`
-in tests — so the hook is safe in all three. Trailing slashes are normalised off (root excepted) to
-match `trailingSlash: false` in vercel.json. Explicitly-passed `path` and `canonical` still win, so
-no existing correct page changes.
-
-tsc clean, 104/104 tests still pass. Same caveat as above: `npm run build` could not run here, so
-this is verified by construction and by the test suite, not by inspecting a built page. Check after
-deploy:
-
-```
-curl -s https://www.teksure.com/tools/siri-commands-cheat-sheet | grep -o 'rel="canonical" href="[^"]*"'
-```
-should now be the tool's own URL, and `/` should still canonicalise to `https://www.teksure.com/`.
-
-### Readability — not touched, and deliberately so
-Still avg grade 8.3, 58.5% above grade 8, unchanged for many cycles. Per the run brief this does not
-get another 5-guide hand pass: that moves ~0.1pp and is the appearance of progress. The two scripted
-levers both have known problems — the splitters improve the metric while degrading prose, and
-`simplify-vocabulary` has prior corruption findings in this file. A real bulk pass needs sampled
-human review of the output, which is not something to do unattended on 4,049 files at 11pm.
-**This is a decision for Bailey, not a task**: either fund the scripted pass with review, or write
-grade 8.3 down as accepted and stop reporting it as a warning every cycle.
-
-### Cadence pages — both current, no action
-- `/tech-problem-of-week` → `dateISO: '2026-08-17'`, `weekRange: 'August 17–23, 2026'`. Covers today.
-- `/whats-new` → newest entry `aug-2026`. Current month, and this is not the first run of the month.
-
-Neither refreshed. No real FTC/CISA alert or shipped release to point at, and dates never move
-without one.
-
-### [ok] Everything else measured clean
-Production 200s, `build-info.json` matches `origin/main` (`3a471dc`), prerender report complete at
-7128/7128 with 0 failures. 4,049 guides / 285 tools / 4,049 unique slugs. tsc clean. 104/104 tests.
-robots.txt groups are correct — the private-route Disallows are repeated inside each named bot's
-group, which is what makes them apply.
-
-### Note: the local mount is stale again — 38 commits behind
-`~/Documents/Claude/Projects/TekSure` was at `0d3d7b4`; `origin/main` is at `3a471dc`. Same as cycle
-122, same cause: `git reset --hard` cannot unlink tracked files on this mount. Worked in a fresh
-clone per the CLAUDE.md fallback. **The mount still cannot self-repair** — it wants a `git pull` from
-a normal shell, or every session re-discovers this and burns the same ten minutes.
-
----
-
-## Cycle 125 — 2026-08-21T01:53:32.205Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-21.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 124 — 2026-08-20T18:55:12.351Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-20.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [warn] External source link health
-75 source URLs checked, 1 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-```
-- 404 https://support.microsoft.com/en-us/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c — used by turn-off-windows-recall-privacy-feature
-```
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-- **External source link health** — 75 source URLs checked, 1 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
----
-
-## Cycle 122 — 2026-08-20T07:01:58.377Z
-
-_No change through cycle 123 (2026-08-20T13:07:12.781Z) — 2 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-20.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-
-*(older cycles trimmed to keep this file under 64KB)*
+_Cycles 122–125 trimmed 2026-08-31 to keep this file under 64KB; see git history._

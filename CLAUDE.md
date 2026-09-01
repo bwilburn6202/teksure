@@ -12,8 +12,15 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 - **Repo:** github.com/bwilburn6202/teksure · **Live:** https://www.teksure.com (canonical host is `www`; apex currently **307s**, not 301 — see blockers)
 - **Local:** `~/Documents/Claude/Projects/TekSure` · dev on :5173
 
-## Current state (2026-08-30)
+## Current state (2026-08-30) — ON THIS BRANCH, NOT IN PRODUCTION
 3,939 guides · 387 tools · 4,449 sitemap URLs · TypeScript clean · 106/106 tests · prerendering live
+
+> ⚠️ **These numbers describe `chore/redundancy-cleanup-2026-08-30`, not the live site.**
+> As of 2026-08-31 production is `origin/main` @ `8e33ddc2` serving **7,128 URLs** — the
+> pre-cut site. This branch is 12 commits ahead of and 78 commits behind `origin/main`, and
+> the cut has never been merged. Verify with `curl -s https://www.teksure.com/build-info.json`
+> before trusting any count in this file. Reconciling the two is a decision for Bailey; see
+> cycle 151 in `.claude/dev-loop-backlog.md`.
 
 **Thin-content cut, 2026-08-30.** `/tools` went from 2,970 pages to 387. 2,246 of the
 removed pages were under 300 words, 2,480 had no editorial inbound link, and 207
