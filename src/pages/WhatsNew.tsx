@@ -116,9 +116,11 @@ const RELEASES: MonthlyRelease[] = [
   {
     id: 'aug-2026',
     label: 'August 2026',
-    summary: '12 new guides, plus a cleanup of summaries and claims across the site.',
+    summary: '17 new guides, bigger text across the site, and every page now shows its own title in search results.',
     groups: {
       guide: [
+        { title: 'The new grandparent scam: AI voice cloning', description: 'A caller who sounds exactly like your grandchild, because the voice was copied from a few seconds of video. How it works, and the one habit that stops it.' },
+        { title: 'When a scammer sends someone to your door', description: 'The courier and gold bar scam. No real bank, agency, or officer will ever ask you to hand cash or valuables to a stranger at your home.' },
         { title: 'Youville: a free FTC game for grandkids', description: "The FTC's new tool teaches children 8 to 12 how to make good choices online. Written for grandparents to play along." },
         { title: 'Your Medicare Annual Notice of Change', description: 'Plans mail the 2027 notice by September 30. Here are the five items worth reading before Open Enrollment opens October 15.' },
         { title: 'Free library eBooks and audiobooks with Libby', description: 'Your library card already covers this. No charge, no subscription, and nothing is ever overdue.' },
@@ -130,6 +132,8 @@ const RELEASES: MonthlyRelease[] = [
         { title: 'Replacing a lost Medicare card', description: 'How to order a replacement for free, and why nobody legitimate calls to offer you a new one.' },
       ],
       improvement: [
+        { title: 'Every page now shows its own title in search results', description: 'All 7,128 pages are now built as finished pages before they go out, so Google, Bing, and shared links show the right title and summary instead of a generic one.' },
+        { title: 'Larger text on tool pages and small labels', description: 'Body copy on our tools moved from 15px to 17px, and many small labels across the site were raised to a 14px minimum. Nothing here should need a squint.' },
         { title: 'Guide summaries no longer get cut off', description: 'We shortened 283 summaries that search engines were truncating mid-sentence, so you can see what a guide covers before you click.' },
       ],
       fix: [
