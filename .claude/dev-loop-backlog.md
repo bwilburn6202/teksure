@@ -8,6 +8,65 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 170 — 2026-09-02T20:58:26.681Z
+
+### [ok] Site metrics snapshot
+4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 0 orphaned routes (of 3119 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [ok] Stale OS version mentions
+No stale OS version mentions found.
+
+### [ok] Aged guides
+0 of 4049 guides published before 2025-03-02.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [warn] Readability & senior UX
+avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.2: use-silvur-retirement-planning
+- grade 10: how-to-back-up-iphone-to-icloud
+- grade 10.1: set-up-bank-text-alerts
+- grade 10.1: close-old-bank-account-safely
+- grade 10.3: youtube-videos-buffering-fix
+- grade 10.5: set-up-amazon-prime-delivery-prescriptions
+- grade 10: how-to-use-siri-iphone
+- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
+- grade 10.2: how-to-screenshot-windows-11
+- grade 10.7: how-to-use-notes-app-iphone
+```
+
+### [ok] External source link health
+75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+### [ok] Hardcoded prices outside pricing.ts
+All service prices come from src/data/pricing.ts.
+
+### [ok] Undisclosed invented testimonials
+No hardcoded reviews without a disclosure.
+
+### [ok] Overlong guide excerpts
+All guide excerpts are within 160 characters.
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+### Suggested next actions
+- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+---
+
 ## Cycle 169 — 2026-09-02T16:30:11.072Z
 
 ### [ok] Site metrics snapshot
@@ -1386,82 +1445,6 @@ No video is reused across more than 5 guides.
 
 ### Suggested next actions
 - **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 143 — 2026-08-25 (Cowork weekly run)
-
-_No change through cycle 142 (2026-08-25T07:03:55.346Z) — 2 consecutive identical cycles._
-
-### [fixed] The discoverability check itself was broken — false-alarm generator
-`.claude/prompts/weekly-site-review.md` and `.claude/prompts/seo-opportunity-scan.md` both told the
-run to verify prerendering with:
-
-```
-curl -s .../guides/qr-codes | grep -oE "<title>[^<]*</title>"
-```
-
-react-helmet emits `<title data-rh="true">`, so a bare `<title>` matches **nothing on a perfectly
-healthy page**. Both prompts then say that an empty/generic result means "prerendering has regressed
-and nothing else matters this week." This run hit exactly that: the check returned empty against a
-site that is fully prerendered and fine.
-
-That is the worst possible failure mode for a check that sits at priority #1 — it hands a future run
-a phantom production emergency, and the plausible "fix" is to start editing `prerender.mjs`, which is
-load-bearing. Corrected both patterns to `<title[^>]*>[^<]*</title>`, with an inline comment in each
-file explaining why the `[^>]*` is not optional.
-
-Also added `prerender-report.json` to the weekly check as the *authoritative* signal, with a note
-that the single-URL spot-check is not: one good URL says nothing about whether a shard died at
-route 4,500.
-
-Verified in both directions against production, not reasoned about:
-- new pattern on `/guides/qr-codes` → `How to Scan QR Codes (and Spot Fake Ones) … | TekSure`
-- old pattern on the same URL → no output, exit 1 (the bug, reproduced)
-- new pattern on `/` → `TekSure — Free Tech Help for Beginners & Seniors` (correctly reports generic)
-
-### [ok] Discoverability green — everything else this week was already clean
-`build-info.json`: commit `c99bfaa`, built 2026-08-25T04:12Z, 7,128 prerendered / 7,128 sitemap URLs,
-0 unprerendered. `prerender-report.json`: `status: complete`, 7,128 attempted / 7,128 written /
-0 failed / 0 renderedWithoutTitle, 8 shards, 210.7s. Guide page carries full per-page title,
-description, og/twitter tags, canonical, and HowTo + BreadcrumbList + FAQPage JSON-LD.
-
-Weekly-only checks: link audit **0 broken targets / 0 orphaned routes** (3,119 routes, 6,294 internal
-link calls, 3,231 unique paths). Slugs 4,049/4,049 unique across 328 files. Sitemap 7,128 = prerender
-7,128, no generator drift. `vercel.json` 20 redirects, all schema-valid keys — **0 shadowing a real
-route and 0 preserved-but-orphaned**, so there is no redirect debt this week.
-
-Cadence pages current, no action: `dateISO: '2026-08-24'` (within 7 days), newest WhatsNew `aug-2026`.
-
-### [not verified] tsc / tests / build not run — change is markdown-only
-This cycle touched two files, both under `.claude/prompts/`, both `.md`. Zero TypeScript, zero build
-inputs, zero shipped bytes. The clone is at `c99bfaa`, which already passed. Saying this plainly
-rather than running an install to produce a green tick that would not be evidence of anything.
-`npm run build` still OOMs in the sandbox regardless (~3.9GB avail vs ~8GB needed).
-
-### [unchanged, still needs Bailey] Readability at grade 8.3 / ~58.5% above grade 8
-**Third consecutive run reporting the same number with no decision.** Not worked, per CLAUDE.md —
-hand-passes move it ~0.1pp and are theater. It needs one of two calls from Bailey: fund a scripted
-bulk pass, or state that 8.3 is accepted and downgrade the `[warn]` so it stops consuming a slot
-every cycle. Nothing else can move until then.
-
-### [not fixed] The working mount is now 58 commits behind and still cannot self-repair
-`~/Documents/Claude/Projects/TekSure`: 58 behind `origin/main`, 3 "ahead". Confirmed the 3 are safe
-to discard — `git diff HEAD origin/main` shows origin strictly ahead on every source file they touch,
-so their content is fully subsumed. `git reset --hard` fails (`unable to unlink old 'vite.config.ts'`)
-and `rm` fails, both `Operation not permitted`; `/tmp/tk` from a past session is also unwritable.
-Worked from a fresh `/tmp` clone, as in 142, 141b and 122.
-
-**This is the fourth cycle in a row spending its first minutes routing around this.** One `git pull`
-plus a cleanup from a normal terminal ends it permanently:
-
-```
-cd ~/Documents/Claude/Projects/TekSure
-git fetch origin && git reset --hard origin/main
-git clean -fd
-rm -f zz-staletest-REMOVE.ts.bak vite.config.ts.timestamp-*.mjs
-rm -rf dist.stale*
-```
 
 ---
 
