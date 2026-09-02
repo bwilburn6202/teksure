@@ -8,6 +8,98 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 167 — 2026-09-01 (Cowork daily run, hand-written)
+
+### 🚨 [BLOCKER — needs Bailey, but it is far smaller than cycle 151 made it sound] The redundancy cut is still unmerged, and the merge is now measured
+
+Production is still the pre-cut site: `build-info.json` reports commit `60a6429a` ·
+`prerenderedPages 7128` · `sitemapUrls 7128`. `chore/redundancy-cleanup-2026-08-30` is now
+**13 commits ahead of and 94 behind `origin/main`** (76 of those 94 are
+`chore(dev-loop): cycle N findings` written by the workflow; 18 are real fixes).
+
+Cycle 151 called this "a judgement call across 78 commits of drift" and left it there. It
+is worth more than that, so this run actually ran the merge in a throwaway clone and
+counted what breaks. `git merge origin/main` produces **1,754 conflicts**, but they sort
+into three piles and only one needs a human:
+
+| pile | count | what it is | resolution |
+|---|---|---|---|
+| `DU` (deleted by us / modified by them) | 1,676 | tool pages the cut deleted, which main's later legibility passes then edited | `git rm` — keep the deletion, that is the whole point of the cut |
+| `UU` on kept tool pages | 64 | both sides restyled the same lines | take the branch side |
+| `UU` on real files | 14 | see list below | hand review |
+
+The 64 kept-tool conflicts are not a real disagreement. Diffing the two sides of
+`PasswordGenerator.tsx` shows the branch has `text-base` / `bg-primary/10` /
+`text-success-foreground` where main still has `text-sm` / `bg-violet-50` /
+`text-emerald-600` — the branch is strictly ahead on both senior legibility and design
+tokens. `--ours` is correct for all 64. (Note also that the branch files are CRLF and
+main's are LF, which is why every one of them conflicts whole-file rather than at the
+lines that actually differ. Worth normalising either way.)
+
+The 14 that need a person:
+`.claude/dev-loop-backlog.md` · `.claude/dev-loop-state.json` · `CLAUDE.md` ·
+`scripts/audit-senior-ux.mjs` · `scripts/generate-sitemap.mjs` ·
+`src/components/BeforeAfterSlider.tsx` · `NewsletterSignup.tsx` · `SafetyResultCard.tsx` ·
+`doc-browser/MessageItem.tsx` · `src/pages/FindAGuide.tsx` · `Learn.tsx` ·
+`customer/Dashboard.tsx` · `forum/Index.tsx` · `printables/CaregiverPlannerPack.tsx`
+
+So the decision in front of Bailey is not "reconcile 94 commits of drift". It is "do we
+still want to drop ~2,500 thin tool pages from production", plus roughly 14 files of real
+merge work. **Nothing was merged or pushed on this run** — deleting ~2,500 live URLs is not
+a call the loop should make unattended.
+
+### [shipped to main] What's New was under-reporting August
+
+`5c74907e`. The August entry claimed "12 new guides"; 17 guides carry a `2026-08`
+`publishedAt`. Nine were listed. The two missing ones are not filler — the AI voice-cloning
+grandparent scam and the courier / gold bar scam are among the month's more important
+guides — so both were added and the count corrected to 17.
+
+More to the point, the entry omitted the two most user-visible things that shipped to main
+in August, both traceable to real commits:
+
+- **Prerendering every route** (`26927709` sharding, `5b147182` ssr-head into `<head>`,
+  `6f1bac49` canonical default) — every page now carries its own title and description in
+  search results and shared links instead of a generic one.
+- **The type-scale pass** (`4e1fd1d4` tool body copy 15px → 17px, plus `d570becf`,
+  `dcce6122`, `c6597714`, `c99bfaa1` raising small labels to the 14px floor).
+
+For an audience of readers over 60, "we made the text bigger" is the single most relevant
+thing that happened in August, and the page that exists to say what changed did not say it.
+
+**September was deliberately left out.** It is the 1st and nothing has shipped. A month
+that shipped nothing gets left out.
+
+### Cadence pages
+- Tech Problem of the Week: `dateISO: '2026-08-31'`, window Aug 31 – Sep 6. **Current on
+  both main and the branch** — no action.
+- What's New: fixed above.
+
+### Readability — still deferred, deliberately, and this is the second cycle saying so
+`audit-senior-ux` reports **grade 8.3 · 58.7% of guides above grade 8 · 488 above grade
+10** (`CLAUDE.md` says 58.5%; the difference is noise, not progress). No hand pass was done,
+because five guides a day moves this ~0.1pp and looks like progress without being any. This
+needs either a scripted bulk pass — not the existing splitters, which degrade prose while
+improving the score — or an explicit decision to accept 8.3 and stop measuring it as a
+failure. **It has now been carried unchanged across multiple cycles; it is a decision, not a
+task.**
+
+### Verification
+`npx tsc --noEmit` clean (needs `--max-old-space-size=6144`; the default heap OOMs on main's
+2,970 tool pages) · `npm test` **104/104** · `validate-slugs` 4,049 slugs, 0 duplicates ·
+dev-loop dry run all green except the readability warning.
+
+**`npm run build` was NOT verified.** `build:spa` alone dies at "rendering chunks" with exit
+137 — the sandbox has 3.9GB and the build needs roughly 8GB. The change is one presentational
+data array in `WhatsNew.tsx`, so the risk is low, but nobody has run a full build locally and
+this report does not claim one passed.
+
+### Standing blockers, unchanged
+Monetization credentials (AdSense/affiliate) · one full `npm run build` on a machine with
+≥8GB · the readability decision · analytics verification · the Hetzner CX22 for hosted Ollama.
+
+---
+
 ## Cycle 164 — 2026-09-01T11:33:44.059Z
 
 _No change through cycle 166 (2026-09-01T20:58:26.984Z) — 3 consecutive identical cycles._
@@ -1316,119 +1408,3 @@ then every session that measures on the mount is measuring 57-commit-old code.
 
 ---
 
-## Cycle 141b — 2026-08-24 (Cowork run, hand-written)
-
-### [fixed] Tech Problem of the Week was stale — refreshed
-The current entry covered **August 17–23**. Today is **August 24**, so the page was already showing
-last week's window while advertising "updated weekly" in its own copy, and it is footer-linked, so
-that was publicly visible. Note the GitHub dev-loop does not catch this: it is read-only and its
-cycles 137–141 all reported green while the page sat stale.
-
-New current entry: **August 24–30, brushing scams**, from the FTC consumer alert published
-2026-08-20 (`/consumer-alerts/2026/08/unexpected-package-you-got-could-be-brushing-scam`). Real
-alert, verified by fetching the page — not written from memory. The QR-code detail in `howToCheck`
-and the "you may keep unordered goods" point in `whatToDo` both come straight from the FTC text.
-
-Rotation done per `refresh-cadence-pages.md`: bill-pay impersonators (Aug 17) demoted to
-`PREVIOUS_WEEK_PROBLEM` with `isCurrent` dropped, social-media ads (Aug 10) pushed into
-`PAST_PROBLEMS`. Exactly one `isCurrent: true` remains. Demoted copy was already past tense — no
-tense fix needed.
-
-### [ok] What's New — current, not touched
-Newest release is `aug-2026`, which covers the current month, and this is not the first run of a
-new month. June 2026 is still absent on purpose.
-
-### [ok] Measurement clean, discovery healthy
-4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs · 0 broken internal targets ·
-0 orphaned routes · 0 stale OS mentions · 0 aged guides · 75 source URLs checked, 0 confirmed
-broken. Live `prerender-report.json`: `status: complete`, 7,128/7,128 written, `failed: 0`,
-8 shards in 199s. Sharding is doing its job.
-
-### [accepted, not worked] Readability holds at grade 8.3 / 58.5% above grade 8
-Unchanged. Deliberately did not do a hand pass — CLAUDE.md is explicit that it moves the number
-~0.1pp and is the appearance of progress. This needs either a scripted bulk pass or Bailey's
-explicit acceptance of 8.3. **Still awaiting that decision.** Hardest guides remain long-tail
-directory pages (grade 12.6 `vietnamese-american-senior-community-centers-bpsos-care`,
-12.2 `how-to-find-refugee-resettlement-agency`) where the vocabulary is inherently formal.
-
-### [skipped] 13 sub-14px type instances across 7 files
-Real but minor, and below stale-cadence in the priority order. Left for a run where the cadence
-pages are already current. No sub-44px tap targets, no missing alt text, no `onClick` on a `div`.
-
-### [not fixed] The working mount is stale again and still cannot self-repair
-`~/Documents/Claude/Projects/TekSure` was **51 commits behind** `origin/main` and 3 "ahead" — all
-three of those already upstream under different SHAs, so nothing was at risk. This is the same
-failure cycle 122 recorded, recurring: `git reset --hard` and `rm` both fail on this mount with
-`Operation not permitted`, and `mv` does not help for tracked files. Worked from a fresh clone in
-`/tmp` again. **The mount will keep drifting until someone runs `git pull` from a normal shell**;
-every session that measures there is measuring stale code.
-
-### [blocker] `npm run build` OOMs in sandbox — build NOT verified
-`vite build` was killed at "rendering chunks" even with `--max-old-space-size=3400`. Available RAM
-is ~3.9GB against the ~8GB this needs. `npx tsc --noEmit` also OOMs at default heap and only passes
-when given 3400MB. **The production build was not run to completion this cycle.** Verified instead:
-tsc clean, 104/104 tests pass, `validate-slugs` clean at 4,049 unique. Vercel builds with more
-memory, so a deploy failure would show up there.
-
-### Open blockers, unchanged
-Monetization credentials (AdSense/affiliate) · one full `npm run build` on a ≥8GB machine ·
-the readability decision · analytics wiring verification · the Hetzner CX22 for hosted Ollama.
-
----
-
-## Cycle 141 — 2026-08-25T01:47:43.809Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-25.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
