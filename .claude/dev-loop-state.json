@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "cycleCount": 167,
-  "lastRun": "2026-09-02T04:21:57.518Z",
+  "cycleCount": 168,
+  "lastRun": "2026-09-02T11:10:56.597Z",
   "lastFindings": {
     "metrics": {
       "ok": true,
@@ -128,134 +128,6 @@
     }
   },
   "history": [
-    {
-      "cycle": 118,
-      "at": "2026-08-19T07:01:13.147Z",
-      "findings": {
-        "metrics": {
-          "ok": true,
-          "severity": "info",
-          "summary": "4049 guides, 3156 routes, 285 tools.",
-          "metrics": {
-            "guides": 4049,
-            "routes": 3156,
-            "lazyImports": 3098,
-            "tools": 285
-          }
-        },
-        "slugs": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No duplicate slugs.",
-          "metrics": null
-        },
-        "links": {
-          "ok": true,
-          "severity": "info",
-          "summary": "0 broken targets, 0 orphaned routes (of 3119 routes).",
-          "metrics": {
-            "brokenTargets": 0,
-            "orphanedRoutes": 0,
-            "definedRoutes": 3119
-          }
-        },
-        "typescript": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No TypeScript errors.",
-          "metrics": null
-        },
-        "stale-os": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No stale OS version mentions found.",
-          "metrics": {
-            "count": 0
-          }
-        },
-        "old-guides": {
-          "ok": true,
-          "severity": "info",
-          "summary": "0 of 4049 guides published before 2025-02-19.",
-          "metrics": {
-            "total": 4049,
-            "aged": 0,
-            "cutoff": "2025-02-19"
-          }
-        },
-        "duplicate-titles": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No duplicate guide titles.",
-          "metrics": {
-            "count": 0
-          }
-        },
-        "senior-ux": {
-          "ok": false,
-          "severity": "warn",
-          "summary": "avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.",
-          "metrics": {
-            "filesScanned": 3191,
-            "guidesScored": 3277,
-            "readingGradeAverage": 8.3,
-            "guidesAboveGrade8Pct": 58.5,
-            "guidesAboveGrade10": 493,
-            "guidesScoredSpanishExcluded": 49,
-            "spanishNote": "49 Spanish-language guide(s) excluded from English readability scoring (formula does not apply to Spanish text).",
-            "filesUsingTinyText": 7,
-            "tinyTextInstances": 13,
-            "filesWithSmallTapTargets": 0,
-            "imagesMissingAlt": 0,
-            "filesWithDivOnClick": 0
-          }
-        },
-        "source-links": {
-          "ok": true,
-          "severity": "info",
-          "summary": "75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).",
-          "metrics": {
-            "urlsChecked": 75,
-            "broken": 0,
-            "unreachable": 1
-          }
-        },
-        "pricing-consistency": {
-          "ok": true,
-          "severity": "info",
-          "summary": "All service prices come from src/data/pricing.ts.",
-          "metrics": {
-            "count": 0
-          }
-        },
-        "testimonial-honesty": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No hardcoded reviews without a disclosure.",
-          "metrics": {
-            "count": 0
-          }
-        },
-        "excerpt-length": {
-          "ok": true,
-          "severity": "info",
-          "summary": "All guide excerpts are within 160 characters.",
-          "metrics": {
-            "count": 0,
-            "worst": 0
-          }
-        },
-        "duplicate-videos": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No video is reused across more than 5 guides.",
-          "metrics": {
-            "offendingIds": 0,
-            "affectedGuides": 0
-          }
-        }
-      }
-    },
     {
       "cycle": 119,
       "at": "2026-08-19T13:04:48.773Z",
@@ -6406,6 +6278,135 @@
     {
       "cycle": 167,
       "at": "2026-09-02T04:21:57.518Z",
+      "findings": {
+        "metrics": {
+          "ok": true,
+          "severity": "info",
+          "summary": "4049 guides, 3156 routes, 2969 tools (285 curated on /tools).",
+          "metrics": {
+            "guides": 4049,
+            "routes": 3156,
+            "lazyImports": 3098,
+            "tools": 2969,
+            "curatedToolsListed": 285
+          }
+        },
+        "slugs": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate slugs.",
+          "metrics": null
+        },
+        "links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 broken targets, 0 orphaned routes (of 3119 routes).",
+          "metrics": {
+            "brokenTargets": 0,
+            "orphanedRoutes": 0,
+            "definedRoutes": 3119
+          }
+        },
+        "typescript": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No TypeScript errors.",
+          "metrics": null
+        },
+        "stale-os": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No stale OS version mentions found.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "old-guides": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 of 4049 guides published before 2025-03-02.",
+          "metrics": {
+            "total": 4049,
+            "aged": 0,
+            "cutoff": "2025-03-02"
+          }
+        },
+        "duplicate-titles": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate guide titles.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "senior-ux": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.",
+          "metrics": {
+            "filesScanned": 3191,
+            "guidesScored": 3277,
+            "readingGradeAverage": 8.3,
+            "guidesAboveGrade8Pct": 58.5,
+            "guidesAboveGrade10": 493,
+            "guidesScoredSpanishExcluded": 49,
+            "spanishNote": "49 Spanish-language guide(s) excluded from English readability scoring (formula does not apply to Spanish text).",
+            "filesUsingTinyText": 1,
+            "tinyTextInstances": 1,
+            "filesWithSmallTapTargets": 0,
+            "imagesMissingAlt": 0,
+            "filesWithDivOnClick": 0
+          }
+        },
+        "source-links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).",
+          "metrics": {
+            "urlsChecked": 75,
+            "broken": 0,
+            "unreachable": 1
+          }
+        },
+        "pricing-consistency": {
+          "ok": true,
+          "severity": "info",
+          "summary": "All service prices come from src/data/pricing.ts.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "testimonial-honesty": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No hardcoded reviews without a disclosure.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "excerpt-length": {
+          "ok": true,
+          "severity": "info",
+          "summary": "All guide excerpts are within 160 characters.",
+          "metrics": {
+            "count": 0,
+            "worst": 0
+          }
+        },
+        "duplicate-videos": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No video is reused across more than 5 guides.",
+          "metrics": {
+            "offendingIds": 0,
+            "affectedGuides": 0
+          }
+        }
+      }
+    },
+    {
+      "cycle": 168,
+      "at": "2026-09-02T11:10:56.597Z",
       "findings": {
         "metrics": {
           "ok": true,
