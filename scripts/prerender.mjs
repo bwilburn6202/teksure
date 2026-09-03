@@ -136,6 +136,23 @@ const require = createRequire(import.meta.url);
 
 // ── Head injection ───────────────────────────────────────────────
 /**
+ * True only when the rendered head carries a title with actual text in it.
+ *
+ * react-helmet-async emits `<title data-rh="true"></title>` when a route
+ * returns before its <SEOHead> renders — an auth guard that bails on `!user`,
+ * or a wizard whose first screen sits above the SEOHead in the tree. The tag
+ * is present, so a `head.includes('<title')` test passes, the shell's real
+ * fallback title gets stripped, and the page ships with NO title at all. That
+ * is strictly worse than leaving the generic one in place, and the prerender
+ * report counted zero failures while five live URLs had an empty <title>
+ * (found 2026-09-02: /signup, /forum/new, /ai-tutor, /family-sharing, /book).
+ */
+function hasRealTitle(head) {
+  const m = /<title[^>]*>([\s\S]*?)<\/title>/i.exec(head);
+  return Boolean(m && m[1].trim());
+}
+
+/**
  * Replace the shell's default head tags with this page's real ones.
  *
  * The template ships a generic title/description so the SPA is never blank in
@@ -145,7 +162,7 @@ const require = createRequire(import.meta.url);
 function buildHtml(head, appHtml) {
   let html = template;
 
-  if (head.includes('<title')) {
+  if (hasRealTitle(head)) {
     html = html.replace(/<title[^>]*>[\s\S]*?<\/title>\s*/i, '');
   }
   for (const attr of ['description', 'robots']) {
@@ -310,10 +327,11 @@ async function renderOne(route) {
 
     // A page that renders its shell but no <title> hit a recoverable error and
     // fell back — it would ship invisible to search. Surface it loudly.
-    if (!head.includes('<title')) {
+    if (!hasRealTitle(head)) {
       degraded++;
       if (degradedList.length < 40) {
-        degradedList.push(`${route} — no <title> (${errors?.[0] ?? 'unknown cause'})`);
+        const why = head.includes('<title') ? 'empty <title>' : 'no <title>';
+        degradedList.push(`${route} — ${why} (${errors?.[0] ?? 'unknown cause'})`);
       }
     } else if (errors?.length) {
       if (degradedList.length < 40) degradedList.push(`${route} — ${errors[0]}`);

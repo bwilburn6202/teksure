@@ -30,8 +30,13 @@ const TODAY = `${_d.getFullYear()}-${String(_d.getMonth() + 1).padStart(2, '0')}
 // chart, off-topic for a senior tech-help site. Both were unlinked from
 // anywhere on the site yet submitted in the sitemap, which is the definition
 // of an orphaned thin page. Excluded 2026-08-12.
+//
+// Added 2026-09-02: `login` and `signup` are auth forms, and `notifications`,
+// `my-devices`, `achievements`, `journal` and `certificate` render per-user
+// state that is empty for a crawler. All seven were being submitted for
+// indexing. `forum/new` is a compose form; /forum itself stays in.
 const EXCLUDE =
-  /^\/(admin|customer|tech|profile|my-requests|my-path|favorites|setup|payment|api|memory|opportunity-dashboard)(\/|$)/;
+  /^\/(admin|customer|tech|profile|my-requests|my-path|favorites|setup|payment|api|memory|opportunity-dashboard|login|signup|notifications|my-devices|achievements|journal|certificate|forum\/new)(\/|$)/;
 
 // ── Static pages with explicit priorities ─────────────────────
 const STATIC_PAGES = [
@@ -205,6 +210,12 @@ const seen = new Set();
 const entries = [];
 
 for (const page of STATIC_PAGES) {
+  // STATIC_PAGES used to skip both filters that the App.tsx routes go through,
+  // so a hand-listed path stayed in the sitemap after it became a redirect.
+  // That is how /book kept being submitted while the edge served it a 308 to
+  // /get-help (found 2026-09-02). Apply the same two rules here.
+  if (EXCLUDE.test(page.path)) continue;
+  if (redirectSources.has(page.path)) continue;
   seen.add(page.path);
   const loc = `${BASE_URL}${page.path}`;
   entries.push(buildEntry({ loc, lastmod: lastmodFor(loc, routeHash.get(page.path) ?? null), changefreq: page.changefreq, priority: page.priority }));

@@ -48,8 +48,16 @@ export default function FamilySharing() {
   }
 
   if (!user) {
+    // Signed-out is what the prerenderer renders, so the head tags have to be
+    // in this branch too. This page explains the offer to someone who has not
+    // signed up yet — it should be indexable, and it was shipping untitled.
     return (
       <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Family Tech Sharing — Share TekSure with Up to 4 Family Members"
+        description="Share your TekSure access with up to 4 family members. Each person gets their own account, progress tracking, and separate login."
+        path="/family-sharing"
+      />
         <Navbar />
         <main id="main-content" className="flex-1 container max-w-lg py-20 text-center">
           <Shield className="h-12 w-12 mx-auto text-muted-foreground opacity-30 mb-4" />
