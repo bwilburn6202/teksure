@@ -163,6 +163,32 @@ the symptom would be duplicate titles (shell + page) rather than missing ones; c
 `prerender-report.json` for a non-zero `renderedWithoutTitle` after deploy, which is now the
 correct signal rather than a broken one.
 
+### Post-deploy verification (added after the build ran on Vercel)
+
+`d1c9ef11` is live. `build-info.json` reports **`sitemapUrls 7119`** (was 7,128) with
+`prerenderedPages 7128` — the prerenderer still renders every route, it just no longer
+submits the nine. `prerender-report.json` is `status: complete`, `written 7128`,
+`failed: 0`.
+
+All five pages fixed on the live site:
+
+| URL | title | robots |
+|---|---|---|
+| `/ai-tutor` | "AI Tutor — Learn Tech at Your Own Pace" | index, follow |
+| `/family-sharing` | "Family Tech Sharing — Share TekSure with Up to 4 Family Members" | index, follow |
+| `/forum/new` | "Start a Discussion — TekSure Forum" | noindex, nofollow |
+| `/signup` | "Create Your TekSure Account" | noindex, nofollow |
+| `/book` | — | 308 → /get-help, no longer submitted |
+
+**`renderedWithoutTitle` is now `1`, up from a false `0`.** That is the check working: one
+prerendered route still has no SEOHead of its own, and it now keeps the shell's real
+fallback title instead of being stripped to an empty one. The auth-gated routes that
+`return null` (`/profile`, `/my-path`, `/favorites`, `/my-requests`, `/setup`) all serve the
+generic site title now rather than nothing. None of them are in the sitemap, so the cost is
+low — but the report does not name the route, and it would be worth having
+`prerender-report.json` carry the degraded list so the next cycle can find it without
+scanning. Left for a future run.
+
 ### Standing blockers, unchanged
 The unmerged redundancy cut (cycle 167 measured it: 1,754 conflicts, but only ~14 files need
 a person) · monetization credentials · one full `npm run build` on a machine with ≥8GB · the
