@@ -10,7 +10,7 @@ Newest cycles appear at the top.
 
 ## Cycle 171 — 2026-09-03T04:16:04.346Z
 
-_No change through cycle 172 (2026-09-03T11:07:04.570Z) — 2 consecutive identical cycles._
+_No change through cycle 173 (2026-09-03T16:20:56.745Z) — 3 consecutive identical cycles._
 
 ### [ok] Site metrics snapshot
 4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
