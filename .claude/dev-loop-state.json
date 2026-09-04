@@ -1,7 +1,7 @@
 {
   "version": "1.0",
-  "cycleCount": 174,
-  "lastRun": "2026-09-03T20:57:00.815Z",
+  "cycleCount": 175,
+  "lastRun": "2026-09-04T04:22:32.152Z",
   "lastFindings": {
     "metrics": {
       "ok": true,
@@ -48,11 +48,11 @@
     "old-guides": {
       "ok": true,
       "severity": "info",
-      "summary": "0 of 4049 guides published before 2025-03-03.",
+      "summary": "0 of 4049 guides published before 2025-03-04.",
       "metrics": {
         "total": 4049,
         "aged": 0,
-        "cutoff": "2025-03-03"
+        "cutoff": "2025-03-04"
       }
     },
     "duplicate-titles": {
@@ -128,134 +128,6 @@
     }
   },
   "history": [
-    {
-      "cycle": 125,
-      "at": "2026-08-21T01:53:32.205Z",
-      "findings": {
-        "metrics": {
-          "ok": true,
-          "severity": "info",
-          "summary": "4049 guides, 3156 routes, 285 tools.",
-          "metrics": {
-            "guides": 4049,
-            "routes": 3156,
-            "lazyImports": 3098,
-            "tools": 285
-          }
-        },
-        "slugs": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No duplicate slugs.",
-          "metrics": null
-        },
-        "links": {
-          "ok": true,
-          "severity": "info",
-          "summary": "0 broken targets, 0 orphaned routes (of 3119 routes).",
-          "metrics": {
-            "brokenTargets": 0,
-            "orphanedRoutes": 0,
-            "definedRoutes": 3119
-          }
-        },
-        "typescript": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No TypeScript errors.",
-          "metrics": null
-        },
-        "stale-os": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No stale OS version mentions found.",
-          "metrics": {
-            "count": 0
-          }
-        },
-        "old-guides": {
-          "ok": true,
-          "severity": "info",
-          "summary": "0 of 4049 guides published before 2025-02-21.",
-          "metrics": {
-            "total": 4049,
-            "aged": 0,
-            "cutoff": "2025-02-21"
-          }
-        },
-        "duplicate-titles": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No duplicate guide titles.",
-          "metrics": {
-            "count": 0
-          }
-        },
-        "senior-ux": {
-          "ok": false,
-          "severity": "warn",
-          "summary": "avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.",
-          "metrics": {
-            "filesScanned": 3191,
-            "guidesScored": 3277,
-            "readingGradeAverage": 8.3,
-            "guidesAboveGrade8Pct": 58.5,
-            "guidesAboveGrade10": 493,
-            "guidesScoredSpanishExcluded": 49,
-            "spanishNote": "49 Spanish-language guide(s) excluded from English readability scoring (formula does not apply to Spanish text).",
-            "filesUsingTinyText": 7,
-            "tinyTextInstances": 13,
-            "filesWithSmallTapTargets": 0,
-            "imagesMissingAlt": 0,
-            "filesWithDivOnClick": 0
-          }
-        },
-        "source-links": {
-          "ok": true,
-          "severity": "info",
-          "summary": "75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).",
-          "metrics": {
-            "urlsChecked": 75,
-            "broken": 0,
-            "unreachable": 1
-          }
-        },
-        "pricing-consistency": {
-          "ok": true,
-          "severity": "info",
-          "summary": "All service prices come from src/data/pricing.ts.",
-          "metrics": {
-            "count": 0
-          }
-        },
-        "testimonial-honesty": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No hardcoded reviews without a disclosure.",
-          "metrics": {
-            "count": 0
-          }
-        },
-        "excerpt-length": {
-          "ok": true,
-          "severity": "info",
-          "summary": "All guide excerpts are within 160 characters.",
-          "metrics": {
-            "count": 0,
-            "worst": 0
-          }
-        },
-        "duplicate-videos": {
-          "ok": true,
-          "severity": "info",
-          "summary": "No video is reused across more than 5 guides.",
-          "metrics": {
-            "offendingIds": 0,
-            "affectedGuides": 0
-          }
-        }
-      }
-    },
     {
       "cycle": 126,
       "at": "2026-08-21T07:02:59.277Z",
@@ -6538,7 +6410,136 @@
           }
         }
       }
+    },
+    {
+      "cycle": 175,
+      "at": "2026-09-04T04:22:32.152Z",
+      "findings": {
+        "metrics": {
+          "ok": true,
+          "severity": "info",
+          "summary": "4049 guides, 3156 routes, 2969 tools (285 curated on /tools).",
+          "metrics": {
+            "guides": 4049,
+            "routes": 3156,
+            "lazyImports": 3098,
+            "tools": 2969,
+            "curatedToolsListed": 285
+          }
+        },
+        "slugs": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate slugs.",
+          "metrics": null
+        },
+        "links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 broken targets, 0 orphaned routes (of 3119 routes).",
+          "metrics": {
+            "brokenTargets": 0,
+            "orphanedRoutes": 0,
+            "definedRoutes": 3119
+          }
+        },
+        "typescript": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No TypeScript errors.",
+          "metrics": null
+        },
+        "stale-os": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No stale OS version mentions found.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "old-guides": {
+          "ok": true,
+          "severity": "info",
+          "summary": "0 of 4049 guides published before 2025-03-04.",
+          "metrics": {
+            "total": 4049,
+            "aged": 0,
+            "cutoff": "2025-03-04"
+          }
+        },
+        "duplicate-titles": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No duplicate guide titles.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "senior-ux": {
+          "ok": false,
+          "severity": "warn",
+          "summary": "avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.",
+          "metrics": {
+            "filesScanned": 3191,
+            "guidesScored": 3277,
+            "readingGradeAverage": 8.3,
+            "guidesAboveGrade8Pct": 58.5,
+            "guidesAboveGrade10": 493,
+            "guidesScoredSpanishExcluded": 49,
+            "spanishNote": "49 Spanish-language guide(s) excluded from English readability scoring (formula does not apply to Spanish text).",
+            "filesUsingTinyText": 1,
+            "tinyTextInstances": 1,
+            "filesWithSmallTapTargets": 0,
+            "imagesMissingAlt": 0,
+            "filesWithDivOnClick": 0
+          }
+        },
+        "source-links": {
+          "ok": true,
+          "severity": "info",
+          "summary": "75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).",
+          "metrics": {
+            "urlsChecked": 75,
+            "broken": 0,
+            "unreachable": 1
+          }
+        },
+        "pricing-consistency": {
+          "ok": true,
+          "severity": "info",
+          "summary": "All service prices come from src/data/pricing.ts.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "testimonial-honesty": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No hardcoded reviews without a disclosure.",
+          "metrics": {
+            "count": 0
+          }
+        },
+        "excerpt-length": {
+          "ok": true,
+          "severity": "info",
+          "summary": "All guide excerpts are within 160 characters.",
+          "metrics": {
+            "count": 0,
+            "worst": 0
+          }
+        },
+        "duplicate-videos": {
+          "ok": true,
+          "severity": "info",
+          "summary": "No video is reused across more than 5 guides.",
+          "metrics": {
+            "offendingIds": 0,
+            "affectedGuides": 0
+          }
+        }
+      }
     }
   ],
-  "lastSignature": "[[\"metrics\",\"info\",\"4049 guides, 3156 routes, 2969 tools (285 curated on /tools).\",\"\"],[\"slugs\",\"info\",\"No duplicate slugs.\",\"\"],[\"links\",\"info\",\"0 broken targets, 0 orphaned routes (of 3119 routes).\",\"\"],[\"typescript\",\"info\",\"No TypeScript errors.\",\"\"],[\"stale-os\",\"info\",\"No stale OS version mentions found.\",\"\"],[\"old-guides\",\"info\",\"0 of 4049 guides published before 2025-03-03.\",\"\"],[\"duplicate-titles\",\"info\",\"No duplicate guide titles.\",\"\"],[\"senior-ux\",\"warn\",\"avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.\",\"- grade 10.2: use-silvur-retirement-planning\\n- grade 10: how-to-back-up-iphone-to-icloud\\n- grade 10.1: set-up-bank-text-alerts\\n- grade 10.1: close-old-bank-account-safely\\n- grade 10.3: youtube-videos-buffering-fix\\n- grade 10.5: set-up-amazon-prime-delivery-prescriptions\\n- grade 10: how-to-use-siri-iphone\\n- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026\\n- grade 10.2: how-to-screenshot-windows-11\\n- grade 10.7: how-to-use-notes-app-iphone\"],[\"source-links\",\"info\",\"75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).\",\"\"],[\"pricing-consistency\",\"info\",\"All service prices come from src/data/pricing.ts.\",\"\"],[\"testimonial-honesty\",\"info\",\"No hardcoded reviews without a disclosure.\",\"\"],[\"excerpt-length\",\"info\",\"All guide excerpts are within 160 characters.\",\"\"],[\"duplicate-videos\",\"info\",\"No video is reused across more than 5 guides.\",\"\"]]"
+  "lastSignature": "[[\"metrics\",\"info\",\"4049 guides, 3156 routes, 2969 tools (285 curated on /tools).\",\"\"],[\"slugs\",\"info\",\"No duplicate slugs.\",\"\"],[\"links\",\"info\",\"0 broken targets, 0 orphaned routes (of 3119 routes).\",\"\"],[\"typescript\",\"info\",\"No TypeScript errors.\",\"\"],[\"stale-os\",\"info\",\"No stale OS version mentions found.\",\"\"],[\"old-guides\",\"info\",\"0 of 4049 guides published before 2025-03-04.\",\"\"],[\"duplicate-titles\",\"info\",\"No duplicate guide titles.\",\"\"],[\"senior-ux\",\"warn\",\"avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.\",\"- grade 10.2: use-silvur-retirement-planning\\n- grade 10: how-to-back-up-iphone-to-icloud\\n- grade 10.1: set-up-bank-text-alerts\\n- grade 10.1: close-old-bank-account-safely\\n- grade 10.3: youtube-videos-buffering-fix\\n- grade 10.5: set-up-amazon-prime-delivery-prescriptions\\n- grade 10: how-to-use-siri-iphone\\n- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026\\n- grade 10.2: how-to-screenshot-windows-11\\n- grade 10.7: how-to-use-notes-app-iphone\"],[\"source-links\",\"info\",\"75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).\",\"\"],[\"pricing-consistency\",\"info\",\"All service prices come from src/data/pricing.ts.\",\"\"],[\"testimonial-honesty\",\"info\",\"No hardcoded reviews without a disclosure.\",\"\"],[\"excerpt-length\",\"info\",\"All guide excerpts are within 160 characters.\",\"\"],[\"duplicate-videos\",\"info\",\"No video is reused across more than 5 guides.\",\"\"]]"
 }
