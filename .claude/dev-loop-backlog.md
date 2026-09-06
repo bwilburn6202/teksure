@@ -8,6 +8,65 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 183 — 2026-09-06T04:28:52.124Z
+
+### [ok] Site metrics snapshot
+4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 0 orphaned routes (of 3119 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [ok] Stale OS version mentions
+No stale OS version mentions found.
+
+### [ok] Aged guides
+0 of 4049 guides published before 2025-03-06.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [warn] Readability & senior UX
+avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.2: use-silvur-retirement-planning
+- grade 10: how-to-back-up-iphone-to-icloud
+- grade 10.1: set-up-bank-text-alerts
+- grade 10.1: close-old-bank-account-safely
+- grade 10.3: youtube-videos-buffering-fix
+- grade 10.5: set-up-amazon-prime-delivery-prescriptions
+- grade 10: how-to-use-siri-iphone
+- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
+- grade 10.2: how-to-screenshot-windows-11
+- grade 10.7: how-to-use-notes-app-iphone
+```
+
+### [ok] External source link health
+75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+### [ok] Hardcoded prices outside pricing.ts
+All service prices come from src/data/pricing.ts.
+
+### [ok] Undisclosed invented testimonials
+No hardcoded reviews without a disclosure.
+
+### [ok] Overlong guide excerpts
+All guide excerpts are within 160 characters.
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+### Suggested next actions
+- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+---
+
 ## Cycle 179 — 2026-09-05T04:18:00.520Z
 
 _No change through cycle 182 (2026-09-05T20:16:25.914Z) — 4 consecutive identical cycles._
@@ -1425,83 +1484,4 @@ No video is reused across more than 5 guides.
 
 ---
 
-## Cycle 146 — 2026-08-26 (Cowork run, hand-written)
-
-_No change through cycle 146 (2026-08-26T07:04:19.901Z) — 2 consecutive identical cycles._
-
-### [fixed] The sitemap advertised 7,128 pages as modified on every single deploy
-Cycle 145 spotted this and left it as "worth a decision later". Taking it now, because it sits in
-the *blocking discovery* band and outranks readability in the priority order.
-
-`generate-sitemap.mjs` stamped a single `TODAY` into every `<lastmod>`. Since `prebuild` runs it on
-each deploy, every URL claimed to have changed that day. Do that daily and the field stops carrying
-information: a guide that really was rewritten gets no more crawler attention than one untouched
-since February. The signal was worth nothing.
-
-Now each URL is paired with a hash of the source behind it, kept in the committed
-`scripts/sitemap-lastmod.json`. Unchanged hash carries the recorded date forward; only new or
-genuinely changed URLs get today's date. Guide URLs hash the batch file that defines the slug;
-route URLs hash the page component resolved from the `App.tsx` import.
-
-**Hash-based on purpose, not git-based.** `git log -1 <file>` looks like the obvious source of
-truth, but Vercel builds from a shallow clone where it returns the deploy commit for *every* file —
-which would restamp everything and reintroduce the exact bug being fixed.
-
-First run seeds the manifest from the sitemap already committed, so introducing this did not itself
-restamp anything: **7,128 carried forward, 0 refreshed, `public/sitemap.xml` byte-identical**
-(`git diff` empty). Change detection verified by touching `guides-batch-10.ts`: exactly **39** URLs
-refreshed, the other 7,089 held. Reverted and reseeded afterwards.
-
-Coverage: 7,126 of 7,128 URLs resolved to a content hash. `/safety` and `/book` did not resolve to a
-page file; they hold their recorded date, which is the safe direction — a URL never silently
-refreshes because its source could not be found.
-
-One operational note, written into the script header: the manifest is rewritten by every build but
-only the *committed* copy is read at deploy time, so it must be committed alongside content changes.
-Until it is, a changed guide re-stamps today's date each deploy — churn limited to the URLs that
-actually changed, so it is safe, just noisy.
-
-### [ok] Cadence pages both current — not touched
-Tech Problem of the Week is `2026-08-24` (Aug 24–30, brushing scams), today is Aug 26, inside the
-window, exactly one `isCurrent: true`. What's New newest is `aug-2026`, the current month, and this
-is not the first run of a new month. June 2026 still absent on purpose.
-
-### [ok] Production healthy
-`build-info.json`: commit `13454cf`, built 2026-08-26T02:01:30Z. `prerender-report.json`:
-`status: complete`, 7,128/7,128 written, `failed: 0`, `renderedWithoutTitle: 0`, 8 shards in 257s.
-Sharding holding. Dev-loop cycle 145: 4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs ·
-0 duplicate titles · 0 broken internal targets · 0 orphaned routes · 0 stale OS mentions · 0 aged
-guides · 0 overlong excerpts · 0 images missing alt · 75 source URLs checked, 0 confirmed broken.
-
-### [verified] tsc clean · 104/104 tests · 4,049/4,049 unique slugs
-`tsc --noEmit` passes, again only with `--max-old-space-size=3400`; the default heap OOMs here.
-
-### [blocker] `npm run build` OOM'd — it did NOT pass
-Died in `vite build` with a V8 heap abort. Sandbox has 3.9GB; the build needs ~8GB. This cycle's
-only change is a build-time script, and it was executed directly and verified to emit a
-byte-identical sitemap — the strongest evidence available without a full build. But the build was
-not exercised end to end and I am not implying otherwise. **Still needs one run on a ≥8GB machine.**
-
-### [accepted, not worked] Readability holds at grade 8.3 / 58.5% above grade 8
-Unchanged and deliberately not hand-passed. This has now carried unresolved across cycles 141b, 145
-and 146. **It is not going to move without a decision from Bailey** — either fund a scripted bulk
-pass, or state plainly that 8.3 is accepted and stop reporting it as an open item every run.
-Continuing to list it as "open" while nobody is allowed to work on it is noise.
-
-### [not fixed] The working mount is still 64 commits behind origin and cannot self-repair
-Same as cycle 145. `~/Documents/Claude/Projects/TekSure` was 64 behind / 3 ahead with 8 modified
-files; the three local commits already exist upstream under different SHAs, so nothing is lost, but
-a run that trusted that tree would measure a stale snapshot and report it as current. `git reset
---hard` cannot fix it — this mount refuses `unlink` on tracked files, not just `.git/*.lock`. Also
-confirmed again: `rm -rf` fails on stale `/tmp` clones from earlier sessions, so clone under a
-fresh timestamped directory name. All work this cycle was done in a fresh clone and pushed from
-there.
-
-### [skipped] 4 remaining sub-14px type instances
-Avatar initials, two numeric step badges in fixed-size circles, one admin-only page. Decorative or
-non-public. Not chased.
-
----
-
-_Cycles before 2026-08-26 trimmed 2026-09-02 to keep this file under the 64KB
-budget in CLAUDE.md. Full history is in git._
+_(older cycles trimmed)_
