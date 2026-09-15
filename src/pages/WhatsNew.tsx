@@ -77,7 +77,7 @@ interface MonthlyRelease {
   groups: Partial<Record<UpdateType, Update[]>>;
 }
 
-// ── Featured highlights for "This Month" ─────────────────────────────────────
+// ── Featured highlights (not month-scoped, so they cannot go stale) ─────────────────────────────────────
 const FEATURED_THIS_MONTH: {
   title: string;
   description: string;
@@ -94,7 +94,7 @@ const FEATURED_THIS_MONTH: {
     cta: 'Browse the guides',
   },
   {
-    title: '12 new guides in August',
+    title: 'New guides added in August',
     description:
       'Current scam alerts from the FTC, what to check in your Medicare Annual Notice of Change, borrowing free library audiobooks with Libby, setting up a Medical ID on your phone, and more.',
     icon: BookOpen,
@@ -113,6 +113,17 @@ const FEATURED_THIS_MONTH: {
 
 // ── Monthly releases (newest first) ──────────────────────────────────────────
 const RELEASES: MonthlyRelease[] = [
+  {
+    id: 'sep-2026',
+    label: 'September 2026',
+    summary: 'A quiet month for new writing. Two fixes, both about pages being counted and described correctly.',
+    groups: {
+      fix: [
+        { title: 'Five pages were going out with no title at all', description: 'Five addresses listed in our sitemap reached search engines with an empty title, which meant nobody could tell what they were. They now carry their own title and summary.' },
+        { title: 'Our own tool count was being read off the wrong page', description: 'The snapshot we use to report how many tools the site has was counting the single directory page rather than the tools themselves. The number on the site is now the real one.' },
+      ],
+    },
+  },
   {
     id: 'aug-2026',
     label: 'August 2026',
@@ -394,10 +405,10 @@ export default function WhatsNew() {
             <div>
               <div className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-primary mb-2">
                 <Calendar className="h-4 w-4" aria-hidden="true" />
-                This Month
+                Recent highlights
               </div>
               <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
-                The biggest changes in April
+                The changes most worth knowing about
               </h2>
             </div>
             <Button asChild variant="outline" size="lg" className="text-base">
