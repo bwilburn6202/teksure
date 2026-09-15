@@ -35,6 +35,41 @@ interface TechProblem {
 }
 
 const CURRENT_PROBLEM: TechProblem = {
+  weekRange: 'September 14\u201320, 2026',
+  dateISO: '2026-09-14',
+  title: 'That Car Dealership Website May Be a Copy of the Real One',
+  emoji: '',
+  description:
+    'On September 1 the FTC warned that scammers are building fake car dealership websites and taking payment for cars that do not exist. The FTC says they clone a real dealer\u2019s site \u2014 often with the help of AI \u2014 and copy the logos, the vehicle listings, the photos, and in some cases the customer reviews. Rare muscle cars and hard-to-find classics are used as bait. The site walks you through a believable buying process and offers a generous return policy. Buyers have paid in full, driven to the dealership, and found no record of the order and no car.',
+  howToCheck:
+    'Search the dealer\u2019s name along with the words "scam," "review," and "complaint," and read what comes back. Glowing reviews are not proof, because a cloned site copies the real dealer\u2019s reputation along with its photos. So go further: ask to see the car and the dealership in person. If the car is too far to visit, say you want to hire a mobile inspection service to look at it. A dealer who will not allow either one is telling you something.',
+  whatToDo:
+    'Walk away from any seller who insists on payment up front by wire transfer only. That is the FTC\u2019s clearest warning sign, and a wire is close to impossible to claw back. Find the dealership\u2019s phone number independently \u2014 through the manufacturer\u2019s dealer locator or a phone directory, not from the website you are looking at \u2014 and call to confirm the order exists. If you have already paid, call your bank or wire service right away and ask whether the transfer can be stopped, then report it at ReportFraud.ftc.gov.',
+  source: {
+    label: 'FTC Consumer Alert \u2014 September 1, 2026',
+    url: 'https://consumer.ftc.gov/consumer-alerts/2026/09/scammers-are-spoofing-car-dealership-websites-what-you-need-know',
+  },
+  isCurrent: true,
+};
+
+const PREVIOUS_WEEK_PROBLEM: TechProblem = {
+  weekRange: 'September 7\u201313, 2026',
+  dateISO: '2026-09-07',
+  title: 'Someone Can Stick Their Own QR Code Over the One on the Parking Meter',
+  emoji: '',
+  description:
+    'On September 3 the FTC repeated a warning about QR codes in public places. People have reported finding a sticker with a scammer\u2019s QR code pasted over the real code on a parking meter. The two look identical, because every QR code looks like the same checkerboard square. Scan the wrong one and you land on a page built to look like the parking service, which then collects your card number, your personal details, or both.',
+  howToCheck:
+    'Look at the sticker itself before you lift your phone. A code pasted over another code often has a lifted corner, a different shade of white, or an edge that does not line up with the printing underneath. Then read the web address your phone previews before you open it, and check it for switched or missing letters. Most phone cameras show that address for a moment before you tap.',
+  whatToDo:
+    'Pay at the meter itself or through the parking app you downloaded from the App Store or Google Play, rather than through a code on a sticker. If you already scanned one and typed in a password, change that password everywhere you have used it. If you entered card details, read your card and bank statements for charges you do not recognize and call the number on the back of your card. Report it at ReportFraud.ftc.gov. Keeping your phone and its apps updated limits what a bad link can do.',
+  source: {
+    label: 'FTC Consumer Alert \u2014 September 3, 2026',
+    url: 'https://consumer.ftc.gov/consumer-alerts/2026/09/see-qr-code-parked-somewhere-dont-scan-ityet',
+  },
+};
+
+const VETERANS_POSTCARD_PROBLEM: TechProblem = {
   weekRange: 'August 31\u2013September 6, 2026',
   dateISO: '2026-08-31',
   title: 'The Postcard Offering You Extra Veterans Benefits Is Fishing for Your Details',
@@ -49,10 +84,9 @@ const CURRENT_PROBLEM: TechProblem = {
     label: 'FTC Consumer Alert \u2014 August 24, 2026',
     url: 'https://consumer.ftc.gov/consumer-alerts/2026/08/how-spot-postcard-scam-targeting-veterans',
   },
-  isCurrent: true,
 };
 
-const PREVIOUS_WEEK_PROBLEM: TechProblem = {
+const BRUSHING_PACKAGE_PROBLEM: TechProblem = {
   weekRange: 'August 24\u201330, 2026',
   dateISO: '2026-08-24',
   title: 'A Package You Never Ordered Is Not a Gift',
@@ -85,9 +119,10 @@ const BILL_PAY_IMPERSONATOR_PROBLEM: TechProblem = {
     url: 'https://consumer.ftc.gov/consumer-alerts/2026/08/searching-online-bill-pay-impersonators',
   },
 };
-
 const PAST_PROBLEMS: TechProblem[] = [
   PREVIOUS_WEEK_PROBLEM,
+  VETERANS_POSTCARD_PROBLEM,
+  BRUSHING_PACKAGE_PROBLEM,
   BILL_PAY_IMPERSONATOR_PROBLEM,
   {
     weekRange: 'August 10\u201316, 2026',

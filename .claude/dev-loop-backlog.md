@@ -8,6 +8,106 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 152 — 2026-09-15 (Cowork run, hand-written)
+
+### 🚨 [BLOCKER — needs Bailey, now two weeks old] The redundancy cut still has not shipped
+Live `build-info.json` today:
+
+    commit 7ab1691a335f · "chore(dev-loop): cycle 220 findings"
+    builtAt 2026-09-15T21:24:38Z · prerenderedPages 7128 · sitemapUrls 7119
+
+Still **7,128 URLs** — the pre-cut site. The divergence has grown since cycle 151:
+`chore/redundancy-cleanup-2026-08-30` is now **13 ahead of and 153 behind `origin/main`**
+(was 12 / 78 on 2026-08-31). `origin/main` gained ~75 more commits in two weeks, nearly all
+`chore(dev-loop): cycle N findings` written straight to main by the GitHub workflow.
+
+Every day this sits, the merge gets more expensive. The cut deletes ~2,500 routes; reconciling
+that against 153 commits of drift is a judgement call, and the loop should not make it
+unattended. Nothing has changed about the options since cycle 151.
+
+`CLAUDE.md`'s "Current state" block still describes the branch, not the live site. It carries
+the warning banner added in cycle 151, so it is not misleading, but it is also not true of
+production.
+
+### [fixed, shipped to main] Tech Problem of the Week was 15 days expired
+`CURRENT_PROBLEM` was still the **August 31 – September 6** window (the FTC veterans postcard
+alert) on 2026-09-15. A footer-linked page that says "updated weekly" was advertising a window
+that closed nine days ago, and two whole weeks had no entry at all.
+
+Filled both missing weeks from real FTC alerts:
+
+- **September 14–20 (current):** the FTC's **September 1** alert on cloned car dealership
+  websites. Scammers copy a real dealer's site — the FTC says often with AI — including logos,
+  listings, photos and reviews, advertise rare classics, take payment up front by wire, and
+  there is no car. No existing guide covers dealership impersonation, so this is a genuine gap.
+  `whatToDo` leads with the wire-transfer-only warning, which is the FTC's clearest tell.
+  Source: `consumer.ftc.gov/consumer-alerts/2026/09/scammers-are-spoofing-car-dealership-websites-what-you-need-know`
+- **September 7–13 (previous):** the FTC's **September 3** parking-meter QR code alert.
+  Deliberately placed in the previous-week slot rather than the headline, because
+  `qr-code-phishing-quishing-how-to-spot` (batch 133) already describes the
+  sticker-pasted-over-a-real-code trick on parking meters in step 1. The FTC alert restates
+  known guidance rather than reporting a new variant, so it does not earn the current-week slot
+  under the "do not recycle a covered scam" rule — but it is real, correctly dated, and worth
+  the archive entry.
+  Source: `consumer.ftc.gov/consumer-alerts/2026/09/see-qr-code-parked-somewhere-dont-scan-ityet`
+
+The veterans postcard entry became `VETERANS_POSTCARD_PROBLEM` with `isCurrent` dropped; the
+brushing-scam entry was renamed `BRUSHING_PACKAGE_PROBLEM` so `PREVIOUS_WEEK_PROBLEM` could hold
+the newer week. `PAST_PROBLEMS` order is now previous → postcard → brushing → bill-pay → rest.
+No tense fixes were needed on the demoted copy — it was already written in past tense.
+
+**Considered and rejected:**
+- **September 9, National Preparedness Month.** A seasonal reminder to plan ahead, not a
+  specific scam. Cycle 151 rejected the August 27 disaster-donation alert for the same reason.
+- **September 10, intimate images shared without consent.** Real and important, but it is
+  victim-support guidance rather than a tech problem to spot, and it sits outside this page's
+  audience.
+
+**Committed twice on purpose, same as cycle 151.** `b5a4093` pushed to `origin/main` (that is
+what production builds from, so that is the commit that reaches readers) and the identical
+change applied on the cleanup branch so it does not regress if the branch is ever merged. The
+two differ only in escaping style — main still uses literal `–`, the branch has the normalised
+characters from the type-scale pass.
+
+### [checked, no action] What's New is current
+Newest release is `aug-2026`, and August is the last completed month. September is not over.
+Nothing to add. Per `refresh-cadence-pages.md`, the September entry is due on the first run of
+October.
+
+### [checked] Health — no hard failures
+`node scripts/dev-loop.mjs --once --dry-run` (cycle 122 on the branch): 3,939 guides, 164 routes,
+194 tools. Clean on duplicate slugs, duplicate titles, internal links (0 broken, 0 orphaned),
+`tsc`, stale OS mentions, aged guides, overlong excerpts, hardcoded prices, undisclosed
+testimonials, reused videos. 72 external source URLs checked, 0 confirmed broken, 14 unreachable
+(bot-blocking, not 404s).
+
+Only warning: **readability, avg grade 8.3, 58.7% of guides above grade 8** — up a rounding
+hair from 58.5% at cycle 151 because guide text did not change. Deliberately not touched again.
+See below.
+
+### [deliberately skipped] Readability
+Still unresolved and still not something a daily run should nibble at. A hand pass moves the
+number ~0.1pp and is the appearance of progress. **This needs a decision from Bailey: either
+authorise one scripted bulk pass with the output reviewed, or state that grade 8.3 is accepted
+and stop reporting it as a warning every cycle.** Do not run the splitter scripts blindly —
+they improve the metric while degrading prose.
+
+### [not verified] `npm run build`
+Not run this cycle. Full `tsc --noEmit` on `origin/main` was **OOM-killed** in this sandbox and
+did not complete even with `--max-old-space-size=3200`; a targeted single-file check of
+`TechProblemOfWeek.tsx` came back clean, and the branch (smaller since the cut) compiles fine.
+`npm test` passed on both: **104/104 on main, 106/106 on the branch**. `validate-slugs` OK on
+main (328 files, 4,049 slugs, all unique). The production build itself ran on Vercel from the
+push — **it has not been verified here**. Check `prerender-report.json` says `complete`.
+
+### Blockers unchanged — raise, do not work around
+Monetization credentials (AdSense/affiliate) · analytics wiring still unverified · Hetzner CX22
+for hosted Ollama · one full `npm run build` on a machine with ≥8GB · the readability decision ·
+apex `teksure.com` still 307s to `www` instead of 308 (Vercel dashboard setting, not fixable
+from the repo).
+
+---
+
 ## Cycle 151 — 2026-08-31 (Cowork run, hand-written)
 
 ### 🚨 [BLOCKER — needs Bailey] The entire 2026-08-30 redundancy cut has never reached production
