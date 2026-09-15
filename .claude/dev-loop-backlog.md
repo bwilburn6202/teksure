@@ -24,8 +24,9 @@ prerendering them. Not a generator regression. `link-audit.mjs`: 6,294 internal 
 matches nothing and the check reads as a prerender regression when the site is fine.
 Use `grep -o "<title[^>]*>[^<]*"`. Same fix needed in `.claude/prompts/weekly-site-review.md`.
 
-### Done: both cadence pages were stale, both fixed (`b860653`)
-Tech Problem of the Week was 15 days expired. What's New was worse than stale — its
+### Done: both cadence pages were stale (`b5a4093` daily loop + `b860653` this run)
+Tech Problem of the Week was 15 days expired and was fixed by the daily loop, not here
+(see the collision note below). What's New was worse than stale — its
 "This Month" heading was **hardcoded to "The biggest changes in April"** while the cards
 under it described August. That had been wrong for months and would go wrong again on any
 re-dating, so the month claim was retired rather than updated: the block is now "Recent
@@ -37,9 +38,14 @@ the list beneath it (11); none of the three numbers could be verified, so the co
 ### 🚨 Two automations did the same job ten minutes apart
 While this run was editing Tech Problem of the Week, the daily `teksure-loop` pushed
 `b5a4093` — **the same fix to the same file**, sourced from the same FTC alerts. The
-rebase resolved cleanly and nothing was lost (the daily loop made the car-dealership alert
-the current week; this run made it the previous week, with the QR-parking alert current,
-so both survive). But two scheduled tasks racing on one file is luck, not design.
+rebase dropped this run's version of that file as already-applied and kept the daily
+loop's, which was the better outcome: the loop had checked guide coverage first and found
+that `qr-code-phishing-quishing-how-to-spot` already describes the sticker-over-a-meter
+trick in detail, so it correctly headlined the uncovered car-dealership alert and put the
+QR one in the previous-week slot. This run had it the other way round and would have
+headlined a scam the site already covers, against the rule in `refresh-cadence-pages.md`.
+Only the What's New fix from this run survived, and the loop never touched that file.
+Two scheduled tasks racing on one file worked out here. That was luck, not design.
 
 `CLAUDE.md` assigns cadence pages to the daily loop. The weekly task prompt *also* lists
 "stale cadence pages" third in its priority order, so it picks the same work whenever the
