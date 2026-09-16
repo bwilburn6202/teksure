@@ -8,6 +8,80 @@ Newest cycles appear at the top.
 
 ---
 
+## Daily loop — 2026-09-15 (Cowork run, hand-written)
+
+### [shipped] The prerender report counted title-less pages but never named them
+
+`prerender-report.json` on the live site has said `renderedWithoutTitle: 1` for some time.
+One of the 7,128 prerendered pages renders its shell with no real `<title>` — it ships
+invisible to Bing, the social preview crawlers and the AI answer engines — and the report
+gave no way to find out which one short of re-running the whole build and watching stdout.
+
+The cause is in the merge, not the renderer. `prerender.mjs` already collects up to 40
+offending routes with the reason (`sampleDegraded`), and each shard writes them into its own
+slice report. `prerender-sharded.mjs` read `renderedWithoutTitle` off every slice and threw
+`sampleDegraded` away, even though it does exactly the right thing three lines earlier for
+`sampleFailures`. Fixed: the names are collected across shards, written into the merged
+report, and logged at the end of the run. Same 40-item cap as the single-process path.
+
+The next production build will name the page in `https://www.teksure.com/prerender-report.json`.
+
+**Verified:** `node --check` clean · `npx tsc --noEmit` clean · 104/104 tests · validate-slugs
+4,049 slugs, 0 duplicates · merge logic exercised end-to-end against stubbed shard reports
+(3 shards, 2 degraded routes in shard 2) — both names survive the merge and print.
+
+**Not verified: `npm run build` did not complete.** It was killed (exit 137) at vite's
+`rendering chunks` step with 3.2 GB of heap and 3.9 GB of machine RAM. To be clear, the
+prerender never ran, so the real degraded page is still unidentified.
+
+### [note] The branch's CLAUDE.md is wrong about the build OOM; main's is right
+
+`CLAUDE.md` on `chore/redundancy-cleanup-2026-08-30` strikes through "`npm run build` OOMs in
+sandbox" and credits the 2026-08-30 cut with fixing it. That holds on the branch (3,939
+guides, 387 tools, 4,542 routes) and not on `origin/main`, which is what actually builds and
+deploys: 4,049 guides, 2,969 tools, 7,119 sitemap URLs. Main's own copy still lists the OOM
+as an open blocker, correctly, so nothing needed changing here — but the branch copy will
+become wrong-in-production the moment anyone merges it without re-checking that line.
+
+### [BLOCKER — needs Bailey, third cycle running] The redundancy cut still has not shipped
+
+`chore/redundancy-cleanup-2026-08-30` is now **14 ahead of and 157 behind `origin/main`**
+(12/78 at cycle 151 on 2026-08-31, 13/153 at cycle 152 earlier today). The drift is almost
+entirely `chore(dev-loop): cycle N findings` commits written straight to main by the GitHub
+workflow, but it compounds daily and the cut deletes ~2,500 routes. The loop should not
+reconcile that unattended. Nothing has changed about the options since cycle 151.
+
+Practical consequence beyond the merge itself: a scheduled run that checks out the cleanup
+branch is measuring a site that does not exist. Today's earlier run reported the Tech Problem
+of the Week fix as "shipped to main" from that branch; it had in fact landed on main by a
+separate path, and the branch's own `origin/main` ref was 157 commits stale. Anything the
+daily loop reports from that working tree should be treated as unverified until it is
+re-checked against `curl -s https://www.teksure.com/build-info.json`.
+
+### Health — clean, and production's cadence pages are current
+
+`dev-loop --once --dry-run`: 13 checks, 12 ok, 1 warn. No duplicate slugs, no duplicate
+titles, 0 broken internal targets, 0 orphaned routes, no stale OS mentions, 0 aged guides,
+72 external source URLs checked with 0 confirmed 404s (3 unreachable, bot-blocking),
+0 overlong excerpts, 0 reused placeholder videos, no hardcoded prices outside `pricing.ts`.
+
+Senior-UX audit: 0 images missing alt, 0 sub-44px tap targets, 0 `onClick` on a div,
+7 files below the 14px type floor (13 instances).
+
+Cadence pages verified against the live site, not the working tree:
+- `/tech-problem-of-week` serves **September 14–20, 2026** — the FTC car dealership
+  spoofing alert. Current.
+- `/whats-new` has a **September 2026** section. Current.
+
+Prerender is healthy: `status: complete`, 7,128 of 7,128 written, 0 failed.
+Apex `teksure.com` still 307s to `www` (path preserved). Still a Vercel dashboard setting.
+
+**Deliberately skipped:** readability, at grade 8.3 with 58.7% of guides above grade 8 and
+488 above grade 10. Unchanged from the last several cycles because it needs a decision, not
+another hand pass. The splitter scripts would move the metric and damage prose.
+
+---
+
 ## Weekly review — 2026-09-15 (Cowork run, hand-written)
 
 ### Discoverability: healthy, nothing to fix
@@ -1639,69 +1713,3 @@ Monetization credentials (AdSense/affiliate) · one full `npm run build` on a ma
 ≥8GB · the readability decision · analytics verification · the Hetzner CX22 for hosted Ollama.
 
 ---
-
-## Cycle 164 — 2026-09-01T11:33:44.059Z
-
-_No change through cycle 166 (2026-09-01T20:58:26.984Z) — 3 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-03-01.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-
----
-
-_Four of the oldest cycles were trimmed on 2026-09-15 to hold this file under the 64KB budget in `CLAUDE.md`. Full history is in git._

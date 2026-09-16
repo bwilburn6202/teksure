@@ -97,6 +97,7 @@ let written = 0;
 let failed = 0;
 let degraded = 0;
 const failures = [];
+const degradedList = [];
 const killed = [];
 
 for (let i = 0; i < shards; i++) {
@@ -120,6 +121,10 @@ for (let i = 0; i < shards; i++) {
     failed += slice.failed ?? 0;
     degraded += slice.renderedWithoutTitle ?? 0;
     for (const f of slice.sampleFailures ?? []) if (failures.length < 20) failures.push(f);
+    // Each shard names the routes it rendered without a <title>; the merge used
+    // to keep only the count, so a degraded page showed up as "1" in the report
+    // with no way to find it short of re-running the whole build.
+    for (const d of slice.sampleDegraded ?? []) if (degradedList.length < 40) degradedList.push(d);
   }
 
   if (res.status !== 0 || slice?.status !== 'complete') {
@@ -147,6 +152,7 @@ const report = {
   concurrency: CONCURRENCY,
   incompleteShards: killed,
   sampleFailures: failures,
+  sampleDegraded: degradedList,
 };
 if (existsSync(DIST)) writeFileSync(REPORT, JSON.stringify(report, null, 2) + '\n');
 
@@ -155,6 +161,10 @@ console.log(
     `(${failed} failed, ${degraded} rendered without a title)`
 );
 for (const f of failures) console.log('  - ' + f);
+if (degradedList.length) {
+  console.log('[prerender-sharded] pages that rendered without a real <title>:');
+  for (const d of degradedList) console.log('  ! ' + d);
+}
 
 // A short build is the exact failure this script exists to catch. Never let it
 // pass quietly again.
