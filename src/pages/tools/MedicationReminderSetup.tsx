@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/SEOHead";
 import {
   Pill,
   Smartphone,
@@ -128,6 +129,11 @@ const MedicationReminderSetup = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-50 via-white to-white">
+      <SEOHead
+        title="Medication Reminder Setup — Never Miss a Dose"
+        description="Set up medication reminders on an iPhone, Android phone, Alexa, Google Nest, or Apple Watch. Step-by-step setup, an app comparison, and family alerts."
+        path="/tools/medication-reminder-setup"
+      />
       {/* Hero */}
       <section className="bg-gradient-to-br from-red-600 to-rose-700 text-white py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
