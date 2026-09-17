@@ -68,11 +68,28 @@ same mount restriction CLAUDE.md already documents for `.git/*.lock`: this files
 refuses `unlink`, so git cannot clean up its own loose temp objects mid-unpack. There
 are hundreds of orphaned `.git/objects/*/tmp_obj_*` files from previous attempts.
 
-Worth trying, and cheap: `git config fetch.unpackLimit 1` in that checkout, which
-makes git write an indexed packfile instead of exploding loose objects, sidestepping
-the unlink entirely. Untested here — this run routed around the problem with the
-CLAUDE.md fallback (fresh `--depth 1` clone of main in `/tmp`, edit, verify, push)
-rather than risk making the working copy worse.
+**Two repairs were tried from the sandbox and both failed — do not spend another run
+on this.**
+
+1. `git config fetch.unpackLimit 1` (write an indexed packfile instead of exploding
+   loose objects, sidestepping the unlink). The fetch got further and then died with
+   `fatal: pack has 14 unresolved deltas` — the server sends a thin pack assuming we
+   hold the base objects, and the bases are exactly what went missing.
+2. Dropping `refs/remotes/origin/main` so git would stop advertising unreadable
+   commits and pull a full history. `git update-ref -d` cannot delete the ref:
+   `error: unable to unlink '.git/refs/remotes/origin/main': Operation not permitted`.
+   The mount refuses unlink on refs, not only on `.git/*.lock` and loose objects.
+
+The three `.lock` files those attempts left behind were moved aside with `mv`; the
+checkout is otherwise unharmed (branch, HEAD and working tree all verified after).
+
+**This needs to be run from a real terminal on Bailey's machine, outside the sandbox
+mount**, where unlink works. Either `git fetch --prune origin` after
+`rm -f .git/objects/*/tmp_obj_*`, or — simpler and probably better given the branch
+question above — a fresh clone and a decision about what to keep from the old one.
+
+Meanwhile the loop can still ship: this run used the CLAUDE.md fallback (fresh
+`--depth 1` clone of main in `/tmp`, edit, verify, push), and it worked cleanly.
 
 **This also means the loop has been reading the wrong backlog.** The mount checkout
 sits on the stale branch, so `head -40 .claude/dev-loop-backlog.md` at the start of a
