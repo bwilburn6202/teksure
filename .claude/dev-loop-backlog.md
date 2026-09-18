@@ -94,7 +94,40 @@ still not shipped. The change is two lines in a `.mjs` script and one string in
 `/404` file being written is verified only by replicating `collectRoutes()` standalone
 (3,099 app routes collected, `/404` present), not by an actual prerender run.
 
-**Post-deploy check, next run:**
+### Post-deploy verification — done, this run
+
+Deployed as `60ea0bb5fa1e` at 2026-09-18T04:21:15Z and checked live:
+
+    /this-page-does-not-exist-xyz123  200  "Page not found — TekSure"  noindex, nofollow
+    /guides/totally-fake-slug-abc     200  "Page not found — TekSure"  noindex, nofollow
+    /tools/nonexistent-tool-zzz       200  "Page not found — TekSure"  noindex, nofollow
+    /tech-problem-of-the-week         200  "Page not found — TekSure"  noindex, nofollow
+
+`prerender-report.json`: `status: complete`, 7,129 attempted / 7,129 written, **0 failed,
+0 renderedWithoutTitle**, 8 shards, 317s. `prerenderedPages` 7128 → 7129 — the one new
+route is `/404`. `unprerenderedUrls: 0`.
+
+No regressions. Spot-checked `/`, `/guides`, `/tools`, `/whats-new`,
+`/tech-problem-of-week`, `/get-help`, `/guides/how-to-use-siri-iphone` and
+`/tools/medication-reminder-setup`: all 200, all correct titles, **`noindex` absent from
+every one** — the tag did not leak off the 404 page. Redirects still resolve
+(`/welcome` → `/` and `/tools/jargon-translator` → `/tools/tech-jargon-translator`, both
+308). `/payment`, `/admin` and `/profile` still return 200 and boot the SPA.
+
+**Side effect worth recording.** The dynamic public detail routes — `/forum/:id`,
+`/blog/:slug`, `/articles/:slug` — contain `:` and so have never been prerendered. Their
+server HTML used to be the homepage; it is now the noindex 404 shell. Nothing indexable
+was lost: the old shell declared `<link rel="canonical" href=".../">`, so a crawler was
+told those URLs *were* the homepage either way. But it does mean forum threads and blog
+posts cannot be indexed at all until they are genuinely prerendered or server-rendered.
+If that content is meant to rank, it needs its own route collection in `prerender.mjs`,
+the way guides get theirs. Not urgent — it was never working — but it is now explicit
+rather than hidden behind a wrong canonical.
+
+**If it ever needs reverting:** set `vercel.json` `rewrites[0].destination` back to `/`.
+That restores the previous behaviour exactly.
+
+**Original pre-deploy check, kept for the record:**
 
     curl -s -o /dev/null -w "%{http_code}\n" https://www.teksure.com/this-page-does-not-exist-xyz123
     curl -s https://www.teksure.com/this-page-does-not-exist-xyz123 | grep -o 'robots[^>]*'
@@ -1344,67 +1377,6 @@ No stale OS version mentions found.
 
 ### [ok] Aged guides
 0 of 4049 guides published before 2025-03-08.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 187 — 2026-09-07T04:28:15.374Z
-
-_No change through cycle 189 (2026-09-07T21:27:43.624Z) — 3 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-03-07.
 
 ### [ok] Duplicate guide titles
 No duplicate guide titles.
