@@ -92,6 +92,15 @@ function collectRoutes() {
   const appTsx = readFileSync(join(ROOT, 'src', 'App.tsx'), 'utf8');
   const routes = new Set(['/']);
 
+  // The catch-all rewrite in vercel.json points every unmatched URL at /404, so
+  // this route has to exist as a real file or the edge has nothing to serve.
+  // App.tsx renders NotFound for `path="*"`, which the literal-path scan below
+  // skips, so it is added by hand. Without it an unknown URL was served the
+  // *homepage* HTML — same title, same canonical, HTTP 200 — a soft 404 that
+  // shows search engines thousands of duplicate homepages instead of a page
+  // saying it does not exist. NotFound already sets `noindex`.
+  routes.add('/404');
+
   // Routes that only exist to redirect are served as real 308s by Vercel
   // (see scripts/generate-redirects.mjs). Prerendering them would emit an
   // empty page that competes with the destination in search results.

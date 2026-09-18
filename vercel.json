@@ -62,7 +62,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/404"
     }
   ],
   "redirects": [
