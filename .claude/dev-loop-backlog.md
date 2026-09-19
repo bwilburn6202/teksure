@@ -8,6 +8,93 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 237 — 2026-09-19 (Cowork daily run, hand-written)
+
+### Headline: nothing is broken in production. The readability item is now answered.
+
+Live `build-info.json`: commit `a77643c133c9`, built 2026-09-19T15:57:55Z,
+**7,129 prerendered pages, 7,119 sitemap URLs, 0 unprerendered**.
+`prerender-report.json`: `status: complete`, 7,129/7,129 written, **0 failed**, 8 shards,
+286.8s. Every dev-loop check on main is `[ok]` except readability, and cycles 233–236 were
+four identical no-change cycles.
+
+Independent discovery spot-check (not covered by dev-loop): `robots.txt` correct with
+per-bot Disallow groups repeated; `sitemap.xml` served; guide pages prerender a real
+`<title>`, `<meta name="description">` and self-referencing `<link rel="canonical">`.
+(Note for future runs: react-helmet emits `<title data-rh="true">`, so a plain
+`grep '<title>'` returns nothing and looks like a catastrophic prerender failure. It isn't.)
+
+### [RESOLVED — pending Bailey's sign-off] Readability: the ≤8 target is unreachable by honest editing
+
+Wrote `docs/READABILITY-DECISION-2026-09-19.md`. Reproduced the audit's exact method
+(per-guide mean, `body:` only, Spanish excluded) and got **8.28 / 58.5% above 8** — an exact
+match for the reported 8.3 / 58.5%, so the decomposition is authoritative:
+
+| Term | Value | Measure |
+|---|---|---|
+| sentence length `0.39×wps` | 6.19 | 15.88 words/sentence |
+| word length `11.8×spw` | **17.68** | 1.498 syllables/word |
+
+Sentence length is already fine (15.9 words — plain-language guidance asks for ≤20). The
+grade is almost entirely **word length**, and the words driving it cannot be changed:
+
+- `simplify-vocabulary.mjs --dry-run` now reports **0 files, 0 fields, 0 swaps**. The safe
+  vocabulary pass is exhausted.
+- The most frequent 3+ syllable words are either on-screen labels and proper nouns
+  (security 2,305 · medicare 1,722 · location 1,646 · camera 1,643 · amazon 1,492 ·
+  battery 1,332 · microsoft 934 · alexa 910) or everyday words
+  (every 4,013 · family 3,569 · usually 2,755 · available 2,124). Renaming a UI label to a
+  shorter word breaks the guide; "family" is not a hard word.
+- Closing 0.28 grade points needs either words/sentence 15.88 → 15.16, or syllables/word
+  1.498 → 1.474 (~59,000 syllables removed without removing words).
+
+**Recommendation to Bailey: accept 8.3, retire the ≤8 target** on the same reasoning that
+retired the guide-count target on 2026-08-04, and re-target on sentence length ≤18 (already
+15.9) so genuine regressions still surface. The comprehension factors that matter are already
+enforced by `npm test` and all pass.
+
+Also recorded in the doc, so nobody re-derives it: the metric has noise in *both* directions —
+URL periods (`medicare.gov`) are **6.0% of all sentence marks**, which understates the grade,
+while the syllable heuristic scores "every"/"camera"/"different" as 3 syllables, which
+overstates it. They roughly cancel.
+
+### Deliberately skipped, with reasons
+- **No guide prose edited, no thresholds changed, no splitter run.** Retiring a target is
+  Bailey's call (CLAUDE.md lists the readability decision under "raise, don't work around").
+  This cycle produced the evidence and stopped. Running `split-comma-conjunctions` et al.
+  unattended would move the metric while degrading prose — explicitly warned against.
+- **Cadence pages: both current on main, left alone.** `TechProblemOfWeek` `dateISO` is
+  `2026-09-14` (window Sept 14–20, in range today). `WhatsNew` newest block is `sep-2026`.
+  ⚠️ The Sept 14–20 window **expires Sept 20** — the next run must roll it forward.
+- **Sub-14px type: not a real defect on main.** The branch checkout reports 7 files / 13
+  instances, but main reports **1 file / 1 instance** — `src/pages/admin/ContentPipeline.tsx:333`
+  at `text-[10px]`, an admin page that is `Disallow`ed in robots and never seen by a reader.
+  `PracticeMode.tsx` is already allowlisted as tiny-by-design. Not worth a change.
+- **`npm run build` not run.** Docs-only change; no source, routes or data touched.
+
+### Blockers unchanged (all need Bailey)
+1. **The redundancy cut still has not shipped** — now ~3 weeks old and worse: this checkout is
+   **14 ahead / 157 behind** `origin/main` (was 13/153 at cycle 152, 12/78 at cycle 151). Live is
+   still 7,129 URLs, the pre-cut site. Every day of `chore(dev-loop)` commits to main raises the
+   merge cost. Decision only.
+2. **Apex is still a 307.** Confirmed today: `https://teksure.com/guides` → `307` →
+   `https://www.teksure.com/guides`. Path preserved, users fine, link equity not consolidated.
+   Vercel dashboard → Settings → Domains → set redirect to permanent. Not fixable from the repo.
+3. Analytics wiring unverified · monetization needs AdSense/affiliate credentials ·
+   hosted Ollama needs the Hetzner CX22 · one full `npm run build` on a machine with ≥8GB.
+
+### Environment note for whoever runs this next
+The local mount at `~/Documents/Claude/Projects/TekSure` **still cannot fetch** — `git fetch
+origin main` dies with `fatal: pack has 3 unresolved deltas / invalid index-pack output`, and
+the mount refuses the `unlink` calls git needs to repair itself. Cycle 225 documented this and
+two failed repair attempts. This cycle used the CLAUDE.md fallback (fresh shallow clone in
+/tmp from the token in `remote.origin.url`) and it worked cleanly — **use that route directly
+rather than retrying repairs.** The branch checkout's numbers (3,939 guides, 194 tools,
+7 tiny-type files) describe `chore/redundancy-cleanup-2026-08-30`, not production; always
+verify against `build-info.json` before trusting them.
+
+---
+
 ## Cycle 233 — 2026-09-19T04:31:00.953Z
 
 _No change through cycle 236 (2026-09-19T20:33:26.304Z) — 4 consecutive identical cycles._
@@ -1467,251 +1554,4 @@ No video is reused across more than 5 guides.
 
 ---
 
-## Cycle 201 — 2026-09-10T20:47:49.590Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-03-10.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [warn] External source link health
-75 source URLs checked, 1 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-```
-- 404 https://support.microsoft.com/windows — used by windows-10-end-of-support-what-to-do, windows-11-voice-typing-dictation, windows-color-filters-easier-reading, windows-11-voice-typing-dictation, windows-color-filters-easier-reading
-```
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-- **External source link health** — 75 source URLs checked, 1 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
----
-
-## Cycle 198 — 2026-09-10T04:32:34.691Z
-
-_No change through cycle 200 (2026-09-10T16:19:51.732Z) — 3 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-03-10.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 194 — 2026-09-09T04:32:47.189Z
-
-_No change through cycle 197 (2026-09-09T20:53:09.677Z) — 4 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-03-09.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 190 — 2026-09-08T04:26:45.189Z
-
-_No change through cycle 193 (2026-09-08T21:05:27.963Z) — 4 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-03-08.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-_(older cycles trimmed)_
+_Older cycles trimmed on 2026-09-19 to keep this file under the 64KB ceiling (CLAUDE.md: backlog hygiene). Full history is in git._
