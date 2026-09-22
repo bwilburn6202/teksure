@@ -8,6 +8,65 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 244 — 2026-09-22T04:45:48.087Z
+
+### [ok] Site metrics snapshot
+4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 0 orphaned routes (of 3119 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [ok] Stale OS version mentions
+No stale OS version mentions found.
+
+### [ok] Aged guides
+0 of 4049 guides published before 2025-03-22.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [warn] Readability & senior UX
+avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.2: use-silvur-retirement-planning
+- grade 10: how-to-back-up-iphone-to-icloud
+- grade 10.1: set-up-bank-text-alerts
+- grade 10.1: close-old-bank-account-safely
+- grade 10.3: youtube-videos-buffering-fix
+- grade 10.5: set-up-amazon-prime-delivery-prescriptions
+- grade 10: how-to-use-siri-iphone
+- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
+- grade 10.2: how-to-screenshot-windows-11
+- grade 10.7: how-to-use-notes-app-iphone
+```
+
+### [ok] External source link health
+75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+### [ok] Hardcoded prices outside pricing.ts
+All service prices come from src/data/pricing.ts.
+
+### [ok] Undisclosed invented testimonials
+No hardcoded reviews without a disclosure.
+
+### [ok] Overlong guide excerpts
+All guide excerpts are within 160 characters.
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+### Suggested next actions
+- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+---
+
 ## Cycle 241 — 2026-09-21T04:47:55.387Z
 
 _No change through cycle 243 (2026-09-21T21:56:06.763Z) — 3 consecutive identical cycles._
@@ -1514,67 +1573,6 @@ No stale OS version mentions found.
 
 ### [ok] Aged guides
 0 of 4049 guides published before 2025-03-13.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 206 — 2026-09-12T04:26:41.568Z
-
-_No change through cycle 209 (2026-09-12T20:29:32.590Z) — 4 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-03-12.
 
 ### [ok] Duplicate guide titles
 No duplicate guide titles.
