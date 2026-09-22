@@ -6,6 +6,128 @@ monthly-feature-build) pick items off this list on their next run.
 
 Newest cycles appear at the top.
 
+> ⚠️ **This is the BRANCH copy of the backlog, on `chore/redundancy-cleanup-2026-08-30`.**
+> The GitHub dev-loop workflow writes to the copy on `origin/main` — two different files
+> with the same name. A run that reads this one is reading stale findings. As of
+> **2026-09-16 (cycle 225)** the newest real entries live on main; this checkout cannot
+> fetch them because its git object store is corrupted and the mount refuses the `unlink`
+> calls git needs to repair it. See cycle 225 on main for the full write-up and for the
+> two repair attempts that already failed, so they don't get repeated.
+
+
+---
+
+## Cycle 153 — 2026-09-21 (Cowork run, hand-written)
+
+### [fixed] `npm run build` completes locally — the blocker was never memory
+This is the headline. The build has been recorded for months as unverifiable in the
+sandbox ("OOMs, ~3.9GB avail, needs ~8GB"). That is no longer the failure, and the 2026-08-30
+cut already fixed the memory side. What remained was much smaller and much more misleading:
+
+    [prerender-sharded] wrote 4449 of 4449 pages in 37s (0 failed, 0 rendered without a title)
+    Error: EPERM: operation not permitted, unlink 'dist/server/_headers'
+    [build] PRERENDER FAILED — shipping the client-only SPA.
+
+Prerendering **succeeded completely** — 4,449 of 4,449, `failed: 0`, `renderedWithoutTitle: 0`,
+report `status: "complete"`. Then `scripts/prerender-cleanup.mjs` tried to delete the SSR
+bundle, this mount refused the `unlink` (the same refusal CLAUDE.md documents for
+`.git/*.lock`), the non-zero exit propagated through `prerender:safe`, and the build announced
+a total prerender failure. A cosmetic tidy-up step was reporting itself as the catastrophic
+SEO failure the whole pipeline exists to prevent.
+
+`prerender-cleanup.mjs` now catches the refusal, renames the artefact aside (`rename` works
+on this mount where `unlink` does not), warns loudly that it is still in `dist/`, and exits 0.
+Rationale is in the file header: a leftover 19MB artefact is a wasted 19MB, while a client-only
+SPA makes ~4,500 URLs serve the same generic title. Those are not the same size of problem, so
+cleanup must never be able to fail the build. On Vercel's filesystem `rmSync` still succeeds
+and the rename branch never runs.
+
+Verified after the change: `npm run build` runs end to end, no `[build] PRERENDER FAILED`,
+`dist/prerender-report.json` → `complete 4449/4449 failed:0 noTitle:0`.
+
+**Consequence for Bailey:** "one full `npm run build` on a machine with ≥8GB" can come off the
+raise-with-Bailey list. It runs here now.
+
+### [fixed] Tech Problem of the Week had expired
+`CURRENT_PROBLEM` was the September 14–20 window on September 21 — one day past a
+footer-linked page that promises weekly updates. Refreshed to **September 21–27** with the
+FTC's **September 17** alert on the Take It Down Act.
+
+Chosen over the two other candidates on purpose:
+
+- **Farm equipment impersonation (FTC, Sept 15)** — real, but it is the same mechanic as the
+  car dealership entry it would sit directly beneath: cloned seller site, payment up front,
+  no goods. Running that shape two weeks in a row reads as filler.
+- **National Preparedness Month (FTC, Sept 9)** — advisory rather than a new problem, and
+  disaster/charity scams are already covered.
+
+The Take It Down Act entry is a genuine gap: `grep` across all 328 batch files found **no**
+coverage of non-consensual intimate images, sextortion, or the removal right. The two existing
+deepfake guides are about spotting a fake, not about getting one taken down. It is also the
+newest alert available, and unlike most entries it gives the reader a *right* with a deadline
+attached rather than a tell to watch for: platforms must remove within 48 hours, having no
+working reporting process is itself a violation, and failures get reported to the FTC at
+TakeItDown.ftc.gov. Written plainly and without sensationalism; `whatToDo` names the concrete
+steps (report on the post, then StopNCII.org to block copies, then the FTC if 48 hours pass).
+
+Rotation done properly: car dealership moved down to the previous-week slot with `isCurrent`
+dropped, QR code pushed into `PAST_PROBLEMS`. Both already read in past tense, so no tense
+fixes were needed.
+
+### [deliberately skipped] What's New — September left out, and the rule is contradictory
+Newest release is still `aug-2026`. I did **not** add a September entry, for two reasons.
+
+First, the rule. `.claude/prompts/refresh-cadence-pages.md` says to add "one `MonthlyRelease`
+for the month that just ended," on the first run of a new month. September has not ended, so
+August being newest is correct. `CLAUDE.md` says What's New "must cover the current month,"
+which on September 21 would require an entry for a month still in progress. **These two
+instructions disagree.** The prompt is the more specific and more defensible of the two, so I
+followed it — but the `CLAUDE.md` line should be reworded to "must cover the most recently
+completed month" so a future run does not read it as licence to invent.
+
+Second, the substance. September's user-facing output is two Tech Problem of the Week
+refreshes. Everything else on `origin/main` this month is `chore(dev-loop): cycle N findings`.
+That is a thin month, and the honest-gap rule covers it. Due on the first run of October.
+
+### [accepted this run, stated plainly] Readability
+Grade **8.3**, **58.7%** above grade 8, 488 guides above grade 10 (was 58.5% — the metric moved
+the wrong way by 0.2pp, which is corpus noise, not regression). No hand pass was done, because
+five guides by hand moves this ~0.1pp and is the appearance of progress. Still needs one
+scripted bulk pass or an explicit decision to accept it. Unchanged since 2026-08-30.
+
+### [BLOCKER — needs Bailey, now three weeks old] The redundancy cut still has not shipped
+`git ls-remote` confirms `refs/heads/main` = `1106213580b5`, which is exactly the commit in the
+live `build-info.json` (cycle 243 findings, built 2026-09-21T22:06Z, **7,129 prerendered pages**).
+Production is still the pre-cut site.
+
+Divergence keeps widening — this branch is now **14 ahead of and 157 behind `origin/main`**
+(13/153 at cycle 152, 12/78 at cycle 151). Main gained ~23 more cycle-findings commits in the
+six days since the last Cowork run. The cut deletes ~2,500 routes; reconciling that against 157
+commits of drift is Bailey's call and the loop should not make it unattended. Nothing has
+changed about the options since cycle 151.
+
+`CLAUDE.md`'s "Current state" block still describes this branch, not production. The cycle-151
+warning banner is still there, so it is not misleading — but it is still not true of the live site.
+
+### Housekeeping note
+Each verification build leaves a `dist.stale-*` directory behind, because `dist` has to be
+renamed aside rather than deleted (`emptyOutDir` hits the same `unlink` refusal). There are now
+four, plus the `dist/server.build-artefact-*` dirs from the new cleanup path. None can be
+removed from this mount. Harmless — `dist/` is gitignored — but they take real disk space on
+Bailey's machine and want an occasional manual `rm -rf ~/Documents/Claude/Projects/TekSure/dist*`
+from a normal terminal.
+
+### Checks this cycle
+`tsc --noEmit` clean · **106/106 tests** · `validate-slugs` 3,939 slugs, 3,939 unique · dev-loop
+13 of 14 checks ok, the one warn being readability above · senior-UX audit: 0 images missing alt,
+0 sub-44px tap targets, 0 `onClick` on a div, 7 files below the 14px floor · external source
+links: 72 checked, 0 confirmed broken.
+
+Also committed: a small `prerender-sharded.mjs` improvement left uncommitted by an earlier
+session, which propagates each shard's `sampleDegraded` list into the merged report so a
+titleless page is findable instead of showing up as a bare count. Validated by this build
+(`sampleDegraded: []`).
+
 ---
 
 ## Cycle 152 — 2026-09-15 (Cowork run, hand-written)
@@ -914,369 +1036,8 @@ rm -rf dist.stale*
 
 ---
 
-## Cycle 142 — 2026-08-24 (Cowork run, hand-written; second run of the day)
-
-### [context] Cadence pages were already current — 141b landed
-Cycle 141b ran earlier today and pushed `0c372e4` (brushing-scam refresh). Verified on `origin/main`,
-not assumed: `dateISO: '2026-08-24'` in TechProblemOfWeek, newest WhatsNew release `aug-2026`.
-Nothing to do on cadence this run. This freed the run for the item 141b explicitly deferred
-"for a run where the cadence pages are already current."
-
-### [fixed] Sub-14px type — but only 2 of the 13 flagged instances were real
-Fixed `src/components/doc-browser/MessageItem.tsx`: the "Sources checked" citation list under an AI
-answer rendered URLs at `text-[11px]` with a status badge at `text-[9px]`. Both raised to `text-xs`
-(14px under our config). This is senior-facing chat output — 9px is indefensible there.
-
-**Triage of the other 11 — recorded so future runs stop re-opening this.** They are false positives
-and should not be "fixed":
-- `PracticeMode.tsx` ×5 (`text-[6px]`/`text-[8px]`) — a simulated miniature browser window used as
-  a practice illustration. The tininess is the point; enlarging breaks the mockup.
-- `CaregiverPlannerPack.tsx` ×2 (`text-[10px]` `cp-print-label`) — print-only field labels. Print
-  px is not screen px.
-- `VocabFlashcards.tsx` (`fontSize: '12px'`) — inside `print:block`, the 9-cards-per-page paper deck.
-  Print-only, and constrained by card geometry.
-- `Navbar.tsx` (11px), `Learn.tsx` (10px), `GuideDetail.tsx` (11px) — numerals/initials centered in
-  fixed `w-4`/`w-5` circles. Raising the text alone overflows the circle; these are glyphs in a
-  badge, not reading text.
-- `ContentPipeline.tsx` (10px) — admin-only route, no senior ever loads it.
-
-Audit after: **7 files / 13 instances → 6 files / 11 instances.** Deliberately did NOT relax the
-auditor's threshold to make the remaining 11 disappear — that would be editing the ruler rather than
-the thing measured. The number is expected to sit at 11 permanently; treat it as the floor, and
-re-triage only if a *new* file appears in the list.
-
-### [ok] Measurement clean
-Cycle 142 dry run: 4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs · 0 duplicate titles ·
-0 broken internal targets · 0 orphaned routes (of 3,119) · 0 stale OS mentions · 0 aged guides ·
-0 overlong excerpts · 0 missing alt text · 0 sub-44px tap targets · 0 `onClick` on a `div` ·
-75 source URLs checked, 0 confirmed broken (1 unreachable, bot-blocking). Slugs: 4,049/4,049 unique.
-
-### [accepted, not worked] Readability unchanged at grade 8.3 / 58.5% above grade 8
-No hand pass, per CLAUDE.md. **This is now the second consecutive run reporting the same number with
-no decision.** It needs Bailey to either fund a scripted bulk pass or say plainly that 8.3 is
-accepted, at which point the `[warn]` should be downgraded so it stops occupying a slot every cycle.
-
-### [verified] tsc clean, 104/104 tests pass
-`tsc --noEmit -p tsconfig.app.json` exit 0 (needs `--max-old-space-size=3400`; OOMs at default heap).
-`vitest run`: 10 files, 104 tests, all passing.
-
-### [blocker] `npm run build` OOMs — build NOT verified, again
-`vite build` aborted with a V8 OOM during chunk rendering. ~3.9GB available against ~8GB needed.
-Unchanged and unfixable in this sandbox. **Nothing in this cycle's output has been through a real
-production build.** The change is two Tailwind class strings in one component, so risk is low, but
-"low risk" is not "verified" — say so.
-
-### [not fixed] The working mount is still stale and still cannot self-repair
-`~/Documents/Claude/Projects/TekSure` is **57 commits behind** `origin/main` and 3 "ahead" (all three
-already upstream under different SHAs — nothing at risk). `git reset --hard` and `rm` both fail with
-`Operation not permitted`. Worked from a fresh clone in `/tmp`, as in 141b and 122. It also carries
-uncommitted junk: `zz-staletest-REMOVE.ts.bak`, `.claude/dev-loop-backlog.md.new`,
-`.claude/new-cycle-entry.md`, plus ~130 stale `vite.config.ts.timestamp-*.mjs` files and four
-`dist.stale*` directories. **One `git pull` + cleanup from a normal shell fixes all of it.** Until
-then every session that measures on the mount is measuring 57-commit-old code.
-
 ---
 
-## Cycle 141b — 2026-08-24 (Cowork run, hand-written)
-
-### [fixed] Tech Problem of the Week was stale — refreshed
-The current entry covered **August 17–23**. Today is **August 24**, so the page was already showing
-last week's window while advertising "updated weekly" in its own copy, and it is footer-linked, so
-that was publicly visible. Note the GitHub dev-loop does not catch this: it is read-only and its
-cycles 137–141 all reported green while the page sat stale.
-
-New current entry: **August 24–30, brushing scams**, from the FTC consumer alert published
-2026-08-20 (`/consumer-alerts/2026/08/unexpected-package-you-got-could-be-brushing-scam`). Real
-alert, verified by fetching the page — not written from memory. The QR-code detail in `howToCheck`
-and the "you may keep unordered goods" point in `whatToDo` both come straight from the FTC text.
-
-Rotation done per `refresh-cadence-pages.md`: bill-pay impersonators (Aug 17) demoted to
-`PREVIOUS_WEEK_PROBLEM` with `isCurrent` dropped, social-media ads (Aug 10) pushed into
-`PAST_PROBLEMS`. Exactly one `isCurrent: true` remains. Demoted copy was already past tense — no
-tense fix needed.
-
-### [ok] What's New — current, not touched
-Newest release is `aug-2026`, which covers the current month, and this is not the first run of a
-new month. June 2026 is still absent on purpose.
-
-### [ok] Measurement clean, discovery healthy
-4,049 guides · 3,156 routes · 285 tools · 0 duplicate slugs · 0 broken internal targets ·
-0 orphaned routes · 0 stale OS mentions · 0 aged guides · 75 source URLs checked, 0 confirmed
-broken. Live `prerender-report.json`: `status: complete`, 7,128/7,128 written, `failed: 0`,
-8 shards in 199s. Sharding is doing its job.
-
-### [accepted, not worked] Readability holds at grade 8.3 / 58.5% above grade 8
-Unchanged. Deliberately did not do a hand pass — CLAUDE.md is explicit that it moves the number
-~0.1pp and is the appearance of progress. This needs either a scripted bulk pass or Bailey's
-explicit acceptance of 8.3. **Still awaiting that decision.** Hardest guides remain long-tail
-directory pages (grade 12.6 `vietnamese-american-senior-community-centers-bpsos-care`,
-12.2 `how-to-find-refugee-resettlement-agency`) where the vocabulary is inherently formal.
-
-### [skipped] 13 sub-14px type instances across 7 files
-Real but minor, and below stale-cadence in the priority order. Left for a run where the cadence
-pages are already current. No sub-44px tap targets, no missing alt text, no `onClick` on a `div`.
-
-### [not fixed] The working mount is stale again and still cannot self-repair
-`~/Documents/Claude/Projects/TekSure` was **51 commits behind** `origin/main` and 3 "ahead" — all
-three of those already upstream under different SHAs, so nothing was at risk. This is the same
-failure cycle 122 recorded, recurring: `git reset --hard` and `rm` both fail on this mount with
-`Operation not permitted`, and `mv` does not help for tracked files. Worked from a fresh clone in
-`/tmp` again. **The mount will keep drifting until someone runs `git pull` from a normal shell**;
-every session that measures there is measuring stale code.
-
-### [blocker] `npm run build` OOMs in sandbox — build NOT verified
-`vite build` was killed at "rendering chunks" even with `--max-old-space-size=3400`. Available RAM
-is ~3.9GB against the ~8GB this needs. `npx tsc --noEmit` also OOMs at default heap and only passes
-when given 3400MB. **The production build was not run to completion this cycle.** Verified instead:
-tsc clean, 104/104 tests pass, `validate-slugs` clean at 4,049 unique. Vercel builds with more
-memory, so a deploy failure would show up there.
-
-### Open blockers, unchanged
-Monetization credentials (AdSense/affiliate) · one full `npm run build` on a ≥8GB machine ·
-the readability decision · analytics wiring verification · the Hetzner CX22 for hosted Ollama.
-
----
-
-## Cycle 141 — 2026-08-25T01:47:43.809Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-25.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 137 — 2026-08-24T01:53:57.314Z
-
-_No change through cycle 140 (2026-08-24T18:54:42.668Z) — 4 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-24.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 133 — 2026-08-23T01:56:27.696Z
-
-_No change through cycle 136 (2026-08-23T18:44:31.718Z) — 4 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-23.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 129 — 2026-08-22T01:46:22.601Z
-
-_No change through cycle 132 (2026-08-22T18:45:15.289Z) — 4 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-22.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-_Cycles 122–125 trimmed 2026-08-31 to keep this file under 64KB; see git history._
+_Cycles 129–142 (2026-08-22 → 2026-08-24) trimmed on 2026-09-21 to keep this file under the
+64KB budget in CLAUDE.md. Their findings were either fixed at the time or are restated in a
+later cycle above. Full history is in `git log .claude/dev-loop-backlog.md`._

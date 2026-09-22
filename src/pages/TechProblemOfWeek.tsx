@@ -35,6 +35,24 @@ interface TechProblem {
 }
 
 const CURRENT_PROBLEM: TechProblem = {
+  weekRange: 'September 21\u201327, 2026',
+  dateISO: '2026-09-21',
+  title: 'A Website Has 48 Hours to Take Down a Private Photo Posted Without Your Permission',
+  emoji: '',
+  description:
+    'On September 17 the FTC pointed people toward a right many do not know they have. Under the Take It Down Act, a website or app that carries what its users post has to give you a way to report an intimate photo or video of you that someone shared without your permission \u2014 and has to remove it, along with copies of it, within 48 hours of your request. The law covers pictures that were digitally altered or made with AI, so a fake counts the same as a real photo. If the platform misses that 48-hour deadline, it has broken the law. So has a platform with no reporting process at all, or one that does not work. The FTC enforces this against the platform, and a single violation can carry a civil penalty of $53,088.',
+  howToCheck:
+    'Start at the post itself. Most platforms put a reporting option behind the three dots in the corner of a post. If nothing there fits, look under the platform\u2019s help or support pages, or find its contact details in the directory at StopNCII.org/resources-and-support. Write down the date and the time you send your request, and save the confirmation screen or email. That timestamp is what starts the 48-hour clock, and it is what you will need if the platform does nothing.',
+  whatToDo:
+    'Report the image to the platform first. Then take a second step to keep copies from spreading: go to StopNCII.org, a free service run by the Revenge Porn Helpline, and choose "Create Your Case." You pick the image from your own phone, tablet, or computer, and the site turns it into a digital fingerprint. It sends that fingerprint \u2014 not the picture itself \u2014 to participating platforms, which then block uploads that match. If 48 hours pass and the image is still up, or the platform never offered you a way to report it, report the platform to the FTC at TakeItDown.ftc.gov. Those reports are what let the FTC investigate.',
+  source: {
+    label: 'FTC Consumer Alert \u2014 September 17, 2026',
+    url: 'https://consumer.ftc.gov/consumer-alerts/2026/09/did-online-platform-fail-quickly-take-down-your-intimate-images-report-it-ftc',
+  },
+  isCurrent: true,
+};
+
+const PREVIOUS_WEEK_PROBLEM: TechProblem = {
   weekRange: 'September 14\u201320, 2026',
   dateISO: '2026-09-14',
   title: 'That Car Dealership Website May Be a Copy of the Real One',
@@ -49,10 +67,9 @@ const CURRENT_PROBLEM: TechProblem = {
     label: 'FTC Consumer Alert \u2014 September 1, 2026',
     url: 'https://consumer.ftc.gov/consumer-alerts/2026/09/scammers-are-spoofing-car-dealership-websites-what-you-need-know',
   },
-  isCurrent: true,
 };
 
-const PREVIOUS_WEEK_PROBLEM: TechProblem = {
+const QR_CODE_PROBLEM: TechProblem = {
   weekRange: 'September 7\u201313, 2026',
   dateISO: '2026-09-07',
   title: 'Someone Can Stick Their Own QR Code Over the One on the Parking Meter',
@@ -121,6 +138,7 @@ const BILL_PAY_IMPERSONATOR_PROBLEM: TechProblem = {
 };
 const PAST_PROBLEMS: TechProblem[] = [
   PREVIOUS_WEEK_PROBLEM,
+  QR_CODE_PROBLEM,
   VETERANS_POSTCARD_PROBLEM,
   BRUSHING_PACKAGE_PROBLEM,
   BILL_PAY_IMPERSONATOR_PROBLEM,
