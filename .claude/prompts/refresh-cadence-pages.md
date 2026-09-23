@@ -20,7 +20,7 @@ trust than the page earns.**
 ## Check first (takes a minute)
 
 ```bash
-grep -m1 "dateISO" src/pages/TechProblemOfWeek.tsx     # current entry's date
+grep -m1 "dateISO: '" src/pages/TechProblemOfWeek.tsx   # current entry's date (the quote matters)
 grep -m1 "id: '" src/pages/WhatsNew.tsx                # newest release id
 ```
 

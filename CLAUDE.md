@@ -163,8 +163,13 @@ Flags: `--once`, `--dry-run`, `--ci`, `--interval=N`, `--only=health,links`, `--
 
 ## Cadence pages — check every run
 Two pages advertise a schedule in their own copy and are footer-linked, so staleness is publicly visible:
-- `grep -m1 "dateISO" src/pages/TechProblemOfWeek.tsx` → must be within 7 days
-- `grep -m1 "id: '" src/pages/WhatsNew.tsx` → must cover the current month
+- `grep -m1 "dateISO: '" src/pages/TechProblemOfWeek.tsx` → must be within 7 days
+- `grep -m1 "id: '" src/pages/WhatsNew.tsx` → must cover the **most recently completed** month
+
+Match `dateISO: '` with the quote. A bare `grep -m1 "dateISO"` hits the interface
+declaration (`dateISO: string;`) first and returns no date at all. And What's New is a
+record of months that have *ended* — on September 21 the newest entry is August, which is
+correct. Do not read "current month" as licence to write up a month still in progress.
 
 If behind, follow `.claude/prompts/refresh-cadence-pages.md`. **Never invent a scam or a release.** A month that shipped nothing gets left out.
 
