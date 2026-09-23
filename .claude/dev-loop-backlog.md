@@ -8,6 +8,44 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 248 — 2026-09-22 (Cowork daily run, hand-written)
+
+### [ok] Production healthy, cadence pages current — nothing broken
+Live `build-info.json`: `36f71970` (cycle 247 findings), built 2026-09-22T21:20Z, 7,129
+prerendered, 0 unprerendered. `/guides/qr-codes` serves its own title. Tech Problem of the
+Week is September 21–27 on main (cycle 245). What's New newest is `aug-2026`, correct until
+September ends. Dev-loop: all ok except the standing readability warn.
+
+### [fixed] The documented health checks lied in two places
+The one piece of work this run, taken from cycle 245's "Next #2". Docs only, no source.
+
+- **`grep -m1 "dateISO"`** — the cadence check in `CLAUDE.md` and
+  `refresh-cadence-pages.md` — matches the *interface* line `dateISO: string;` first, so it
+  prints no date at all. Now `grep -m1 "dateISO: '"`, which returns `2026-09-21`.
+- **"What's New must cover the current month"** in `CLAUDE.md` contradicted the prompt's
+  "add the month that just ended" (flagged in branch cycle 153). Reworded to *most recently
+  completed month*, with a line saying why, so no run reads it as licence to write up a
+  month in progress.
+- **`.claude/tasks/teksure-weekly.md`** still had the `<title>[^<]*` grep that matches nothing
+  on a healthy page (react-helmet emits `<title data-rh="true">`). Flagged at cycles ~220 and
+  245; `weekly-site-review.md` had been fixed, this copy had not. Now `<title[^>]*>`, verified
+  live against `/guides/qr-codes`.
+
+**Not fixable from the repo:** the Cowork scheduled-task prompts themselves (teksure-loop /
+teksure-90day-push and teksure-weekly) carry the same two bad greps. CLAUDE.md overrides them,
+but Bailey should paste the corrected commands into the task definitions.
+
+### [accepted, stated plainly] Readability
+8.3 / 58.5% above grade 8, unmoved. No hand pass. Still needs a scripted bulk pass or an
+explicit accept.
+
+### [BLOCKER — Bailey] Unchanged
+Redundancy-cut merge (branch now ~160 behind main); apex 307 → set permanent in Vercel
+Domains; analytics verification; monetization credentials; Hetzner CX22. `npm run build`
+not run this cycle (doc-only change; it OOMs on main's pre-cut tree anyway, per cycle 245).
+
+---
+
 ## Cycle 246 — 2026-09-22T16:50:56.401Z
 
 _No change through cycle 247 (2026-09-22T21:13:50.108Z) — 2 consecutive identical cycles._
@@ -1401,125 +1439,3 @@ No video is reused across more than 5 guides.
 - **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
 
 ---
-
-## Cycle 219 — 2026-09-15T16:51:56.075Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-03-15.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 3 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 217 — 2026-09-15T04:46:38.997Z
-
-_No change through cycle 218 (2026-09-15T11:37:30.077Z) — 2 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-03-15.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 4 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-_(older cycles trimmed)_
