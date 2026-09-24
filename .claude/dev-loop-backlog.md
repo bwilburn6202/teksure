@@ -8,6 +8,65 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 253 — 2026-09-24T11:38:09.642Z
+
+### [ok] Site metrics snapshot
+4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 0 orphaned routes (of 3119 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [ok] Stale OS version mentions
+No stale OS version mentions found.
+
+### [ok] Aged guides
+0 of 4049 guides published before 2025-03-24.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [warn] Readability & senior UX
+avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.2: use-silvur-retirement-planning
+- grade 10: how-to-back-up-iphone-to-icloud
+- grade 10.1: set-up-bank-text-alerts
+- grade 10.1: close-old-bank-account-safely
+- grade 10.3: youtube-videos-buffering-fix
+- grade 10.5: set-up-amazon-prime-delivery-prescriptions
+- grade 10: how-to-use-siri-iphone
+- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
+- grade 10.2: how-to-screenshot-windows-11
+- grade 10.7: how-to-use-notes-app-iphone
+```
+
+### [ok] External source link health
+75 source URLs checked, 0 confirmed broken (404/410), 2 unreachable (often bot-blocking).
+
+### [ok] Hardcoded prices outside pricing.ts
+All service prices come from src/data/pricing.ts.
+
+### [ok] Undisclosed invented testimonials
+No hardcoded reviews without a disclosure.
+
+### [ok] Overlong guide excerpts
+All guide excerpts are within 160 characters.
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+### Suggested next actions
+- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+---
+
 ## Cycle 252 — 2026-09-24T04:38:39.430Z
 
 ### [ok] Site metrics snapshot
@@ -1283,221 +1342,6 @@ files, one name. This entry went to main.
 5. Analytics wiring, monetization credentials, Hetzner CX22 — all unchanged.
 6. Apex `teksure.com` still 307s to `www` instead of 308/301. Vercel dashboard setting,
    not fixable from the repo.
-
----
-
-## Cycle 221 — 2026-09-16T04:42:36.932Z
-
-_No change through cycle 224 (2026-09-16T21:14:05.611Z) — 4 consecutive identical cycles._
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-03-16.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Daily loop — 2026-09-15 (Cowork run, hand-written)
-
-### [shipped] The prerender report counted title-less pages but never named them
-
-`prerender-report.json` on the live site has said `renderedWithoutTitle: 1` for some time.
-One of the 7,128 prerendered pages renders its shell with no real `<title>` — it ships
-invisible to Bing, the social preview crawlers and the AI answer engines — and the report
-gave no way to find out which one short of re-running the whole build and watching stdout.
-
-The cause is in the merge, not the renderer. `prerender.mjs` already collects up to 40
-offending routes with the reason (`sampleDegraded`), and each shard writes them into its own
-slice report. `prerender-sharded.mjs` read `renderedWithoutTitle` off every slice and threw
-`sampleDegraded` away, even though it does exactly the right thing three lines earlier for
-`sampleFailures`. Fixed: the names are collected across shards, written into the merged
-report, and logged at the end of the run. Same 40-item cap as the single-process path.
-
-The next production build will name the page in `https://www.teksure.com/prerender-report.json`.
-
-**Verified:** `node --check` clean · `npx tsc --noEmit` clean · 104/104 tests · validate-slugs
-4,049 slugs, 0 duplicates · merge logic exercised end-to-end against stubbed shard reports
-(3 shards, 2 degraded routes in shard 2) — both names survive the merge and print.
-
-**Not verified: `npm run build` did not complete.** It was killed (exit 137) at vite's
-`rendering chunks` step with 3.2 GB of heap and 3.9 GB of machine RAM. To be clear, the
-prerender never ran, so the real degraded page is still unidentified.
-
-### [note] The branch's CLAUDE.md is wrong about the build OOM; main's is right
-
-`CLAUDE.md` on `chore/redundancy-cleanup-2026-08-30` strikes through "`npm run build` OOMs in
-sandbox" and credits the 2026-08-30 cut with fixing it. That holds on the branch (3,939
-guides, 387 tools, 4,542 routes) and not on `origin/main`, which is what actually builds and
-deploys: 4,049 guides, 2,969 tools, 7,119 sitemap URLs. Main's own copy still lists the OOM
-as an open blocker, correctly, so nothing needed changing here — but the branch copy will
-become wrong-in-production the moment anyone merges it without re-checking that line.
-
-### [BLOCKER — needs Bailey, third cycle running] The redundancy cut still has not shipped
-
-`chore/redundancy-cleanup-2026-08-30` is now **14 ahead of and 157 behind `origin/main`**
-(12/78 at cycle 151 on 2026-08-31, 13/153 at cycle 152 earlier today). The drift is almost
-entirely `chore(dev-loop): cycle N findings` commits written straight to main by the GitHub
-workflow, but it compounds daily and the cut deletes ~2,500 routes. The loop should not
-reconcile that unattended. Nothing has changed about the options since cycle 151.
-
-Practical consequence beyond the merge itself: a scheduled run that checks out the cleanup
-branch is measuring a site that does not exist. Today's earlier run reported the Tech Problem
-of the Week fix as "shipped to main" from that branch; it had in fact landed on main by a
-separate path, and the branch's own `origin/main` ref was 157 commits stale. Anything the
-daily loop reports from that working tree should be treated as unverified until it is
-re-checked against `curl -s https://www.teksure.com/build-info.json`.
-
-### Health — clean, and production's cadence pages are current
-
-`dev-loop --once --dry-run`: 13 checks, 12 ok, 1 warn. No duplicate slugs, no duplicate
-titles, 0 broken internal targets, 0 orphaned routes, no stale OS mentions, 0 aged guides,
-72 external source URLs checked with 0 confirmed 404s (3 unreachable, bot-blocking),
-0 overlong excerpts, 0 reused placeholder videos, no hardcoded prices outside `pricing.ts`.
-
-Senior-UX audit: 0 images missing alt, 0 sub-44px tap targets, 0 `onClick` on a div,
-7 files below the 14px type floor (13 instances).
-
-Cadence pages verified against the live site, not the working tree:
-- `/tech-problem-of-week` serves **September 14–20, 2026** — the FTC car dealership
-  spoofing alert. Current.
-- `/whats-new` has a **September 2026** section. Current.
-
-Prerender is healthy: `status: complete`, 7,128 of 7,128 written, 0 failed.
-Apex `teksure.com` still 307s to `www` (path preserved). Still a Vercel dashboard setting.
-
-**Deliberately skipped:** readability, at grade 8.3 with 58.7% of guides above grade 8 and
-488 above grade 10. Unchanged from the last several cycles because it needs a decision, not
-another hand pass. The splitter scripts would move the metric and damage prose.
-
----
-
-## Weekly review — 2026-09-15 (Cowork run, hand-written)
-
-### Discoverability: healthy, nothing to fix
-`https://www.teksure.com/guides/qr-codes` returns its own title, not the generic one.
-Production is `7ab1691a` · 7,128 prerendered · sitemap 7,119 · `prerender-report.json`
-says `status: complete`, `written` = `routesAttempted` = 7,128, `failed: 0`.
-The 9-URL gap between prerendered and sitemap is deliberate — `EXCLUDE` in
-`generate-sitemap.mjs` keeps account and admin pages out of the sitemap while still
-prerendering them. Not a generator regression. `link-audit.mjs`: 6,294 internal links,
-0 broken, 0 orphans.
-
-**The title check in the weekly task prompt is wrong and will cry wolf.** It greps
-`"<title>[^<]*</title>"`, but react-helmet emits `<title data-rh="true">`, so the grep
-matches nothing and the check reads as a prerender regression when the site is fine.
-Use `grep -o "<title[^>]*>[^<]*"`. Same fix needed in `.claude/prompts/weekly-site-review.md`.
-
-### Done: both cadence pages were stale (`b5a4093` daily loop + `b860653` this run)
-Tech Problem of the Week was 15 days expired and was fixed by the daily loop, not here
-(see the collision note below). What's New was worse than stale — its
-"This Month" heading was **hardcoded to "The biggest changes in April"** while the cards
-under it described August. That had been wrong for months and would go wrong again on any
-re-dating, so the month claim was retired rather than updated: the block is now "Recent
-highlights" with a heading that makes no date promise. Added a deliberately short
-September release (two fixes, no new guides — an honest gap). Dropped the
-"12 new guides in August" card, which disagreed with both the release summary (17) and
-the list beneath it (11); none of the three numbers could be verified, so the count is gone.
-
-### 🚨 Two automations did the same job ten minutes apart
-While this run was editing Tech Problem of the Week, the daily `teksure-loop` pushed
-`b5a4093` — **the same fix to the same file**, sourced from the same FTC alerts. The
-rebase dropped this run's version of that file as already-applied and kept the daily
-loop's, which was the better outcome: the loop had checked guide coverage first and found
-that `qr-code-phishing-quishing-how-to-spot` already describes the sticker-over-a-meter
-trick in detail, so it correctly headlined the uncovered car-dealership alert and put the
-QR one in the previous-week slot. This run had it the other way round and would have
-headlined a scam the site already covers, against the rule in `refresh-cadence-pages.md`.
-Only the What's New fix from this run survived, and the loop never touched that file.
-Two scheduled tasks racing on one file worked out here. That was luck, not design.
-
-`CLAUDE.md` assigns cadence pages to the daily loop. The weekly task prompt *also* lists
-"stale cadence pages" third in its priority order, so it picks the same work whenever the
-daily loop has not got there yet. **Pick one owner.** Suggestion: cadence pages belong to
-the daily loop, and the weekly task should only *report* staleness and move to the next
-item in the priority order. That needs a one-line edit in both prompt files.
-
-### Still open, unchanged and getting worse
-- **The 2026-08-30 redundancy cut has still never shipped.** `chore/redundancy-cleanup-2026-08-30`
-  is now **13 ahead of and 153 behind** `origin/main` — it was 12/78 on 2026-08-31, so the
-  divergence has roughly doubled in two weeks. Every day this sits, the merge gets harder.
-  Still a decision for Bailey, not for the loop. See cycle 151.
-- **`CLAUDE.md`'s "Current state" block still describes that branch, not production.**
-  3,939 guides / 387 tools / 4,449 sitemap URLs is the branch. Production serves 7,128.
-  The warning note is there, but the numbers are the first thing anyone reads.
-- **Apex still 307, not 308.** `curl -sI https://teksure.com/guides/qr-codes` → `HTTP/2 307`.
-  Path is preserved so users are fine, but a temporary redirect does not consolidate link
-  equity onto `www`. Vercel dashboard setting, not fixable from the repo.
-
-### Skipped, and why
-- **`npm run build` was not verified locally.** `npx vite build` transformed all 6,440
-  modules, then was **killed at the chunk-rendering stage (exit 137, OOM)** with
-  `--max-old-space-size=3600` in a 3.9GB sandbox. This is worth flagging because `CLAUDE.md`
-  lists the build OOM as *fixed* by the 2026-08-30 cut — that fix is real, but it only
-  applies to the 4,542-route branch. On `main`'s 7,128 routes the sandbox still cannot
-  build. Verification here was `tsc --noEmit` clean + 104/104 tests; the deploy is the
-  real check.
-- **Readability.** Untouched again. The number has not moved because nobody has done the
-  scripted bulk pass, and hand-passes are theatre at ~0.1pp per session. This needs either
-  a decision to accept grade 8.3 / ~58.5% above grade 8, or one real scripted run — not
-  another cycle of deferring it.
-
-### Next
-1. Decide the cadence-page owner and edit both prompts (10 minutes, stops the collision).
-2. Fix the `<title>` grep in the weekly prompt so the check stops being unreliable.
-3. Chase `renderedWithoutTitle: 1` in `prerender-report.json` — cycle 171 fixed five of
-   these; one is left, and the report does not name it. Worth teaching
-   `prerender-sharded.mjs` to log the offending route.
-4. Bailey: the redundancy branch.
 
 ---
 
