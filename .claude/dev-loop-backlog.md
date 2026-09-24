@@ -17,6 +17,48 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 154 — 2026-09-23 (Cowork run, hand-written)
+
+### Status: production healthy, nothing broken
+Live `build-info.json`: main @ `d67991c6d832` (cycle 251 findings), built 2026-09-23T21:37Z,
+7,129 prerendered, 0 unprerendered. Live `prerender-report.json`: `complete`, 7129/7129, 0 failed,
+0 without title. dev-loop dry run: 12 ok, 1 warn (readability). Apex still **307**.
+
+### Cadence pages — current, nothing to do
+Tech Problem of the Week: `dateISO: '2026-09-21'` (Sept 21–27 window); the live page shows the
+Take It Down Act entry. What's New: `aug-2026` — correct until September ends; due first run of October.
+
+Note: the Sept 21–27 refresh reached production via a **separate commit on main** (2026-09-22),
+not via this branch. Something else is already maintaining cadence pages on main.
+
+### [fixed, branch only] DocBrowser source list: 9–11px type and raw API enums
+`src/components/doc-browser/MessageItem.tsx` (public tool `/tools/doc-browser`) rendered the
+"Sources checked" links at 11px and the status badge at 9px, with raw Gemini enum text
+(`SUCCESS`, `PAYWALL`, `UNSPECIFIED`). Now `text-sm` / `text-xs` (14px floor) and plain
+English: "Read", "Behind a paywall", "Blocked as unsafe", "Could not open".
+Senior-UX audit: files below 14px floor 7 → 6, instances 13 → 11.
+
+Left alone on purpose (the remaining 11): avatar initials and numbered badges inside fixed
+16–20px circles (Navbar, GuideDetail, Learn), the miniature phone mock-up in PracticeMode
+(intentionally tiny — it depicts a screen), an admin-only page, and print labels in
+CaregiverPlannerPack. Enlarging those breaks their containers for no reader benefit.
+
+### [accepted this run, stated plainly] Readability
+Grade 8.3, 58.7% above grade 8, 488 above grade 10. Unchanged. No hand pass.
+
+### [BLOCKER — needs Bailey, now 3.5 weeks old] This loop's output does not ship
+Production is `main`. This branch is still unmerged, so today's fix — and every fix made by this
+scheduled task since 2026-08-30 — is not live unless someone ports it. Main is meanwhile being
+maintained by a different run (cycle findings + cadence refreshes). Two loops, two backlogs, one
+of them shipping. Options unchanged since cycle 151: merge/reconcile the cut, abandon the branch
+and point this task at main, or retire this task.
+
+### Checks
+`tsc --noEmit` clean · 106/106 tests · validate-slugs 3,939 unique · `npm run build` exit 0,
+prerender `complete` 4449/4449, 0 failed, 0 without title. Pushed previously-unpushed `19950a1a`.
+
+---
+
 ## Cycle 153 — 2026-09-21 (Cowork run, hand-written)
 
 ### [fixed] `npm run build` completes locally — the blocker was never memory

@@ -81,12 +81,17 @@ export default function MessageItem({ message }: { message: ChatMessage }) {
               <p className="text-sm font-medium text-muted-foreground mb-1">Sources checked:</p>
               <ul className="space-y-0.5">
                 {message.urlContext.map((meta: UrlContextMetadataItem, idx: number) => {
-                  const status = typeof meta.urlRetrievalStatus === "string"
-                    ? meta.urlRetrievalStatus.replace("URL_RETRIEVAL_STATUS_", "")
-                    : "UNKNOWN";
+                  // Plain-English labels instead of the raw API enum ("SUCCESS", "PAYWALL").
                   const ok = meta.urlRetrievalStatus === "URL_RETRIEVAL_STATUS_SUCCESS";
+                  const status = ok
+                    ? "Read"
+                    : meta.urlRetrievalStatus === "URL_RETRIEVAL_STATUS_PAYWALL"
+                      ? "Behind a paywall"
+                      : meta.urlRetrievalStatus === "URL_RETRIEVAL_STATUS_UNSAFE"
+                        ? "Blocked as unsafe"
+                        : "Could not open";
                   return (
-                    <li key={idx} className="text-[11px] text-muted-foreground">
+                    <li key={idx} className="text-sm text-muted-foreground">
                       <a
                         href={meta.retrievedUrl}
                         target="_blank"
@@ -96,7 +101,7 @@ export default function MessageItem({ message }: { message: ChatMessage }) {
                         {meta.retrievedUrl}
                       </a>
                       <span
-                        className={`ml-1.5 px-1 py-0.5 rounded text-[9px] ${
+                        className={`ml-1.5 px-1.5 py-0.5 rounded text-xs ${
                           ok
                             ? "bg-emerald-100 dark:bg-emerald-900/40 text-success-foreground dark:text-emerald-400"
                             : "bg-muted text-muted-foreground"
