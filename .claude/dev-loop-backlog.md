@@ -17,6 +17,32 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 155 — 2026-09-24 (Cowork run, hand-written)
+
+### Status: production healthy, nothing broken
+Live `build-info.json`: main @ `ed0499a6212c` (cycle 255 findings), built 2026-09-24T21:35Z,
+7,129 prerendered, 7,119 sitemap URLs, 0 unprerendered. `prerender-report.json`: `complete`,
+7129/7129, 0 failed, 0 without title. dev-loop dry run: 12 ok, 1 warn (readability).
+**Live spot check:** 120 randomly sampled sitemap URLs, all 200. Apex still **307**.
+
+### Cadence pages — current, nothing to do
+Tech Problem of the Week `2026-09-21` (3 days old). What's New `aug-2026` — due first run of October.
+
+### [deliberately skipped] No source change this run
+Every fix this task makes lands on an unmerged branch that is now further behind main each
+day (main has moved from cycle 251 to 255 since yesterday). Adding another branch-only fix
+widens the gap Bailey has to reconcile without reaching a single reader. The one action with
+real value — the merge/abandon/retire decision — is Bailey's. Until that is made, this run
+limits itself to verifying production.
+
+### [accepted, stated plainly] Readability
+Grade 8.3, 58.7% above grade 8. Unchanged. No hand pass.
+
+### [BLOCKER — needs Bailey, 3.5+ weeks] This loop's output does not ship
+Same as cycle 151/154. Options: merge/reconcile the cut, repoint this task at `main`, or retire it.
+
+---
+
 ## Cycle 154 — 2026-09-23 (Cowork run, hand-written)
 
 ### Status: production healthy, nothing broken
