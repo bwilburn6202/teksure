@@ -10,6 +10,8 @@ Newest cycles appear at the top.
 
 ## Cycle 268 — 2026-09-28T05:15:09.321Z
 
+_No change through cycle 269 (2026-09-28T13:44:41.993Z) — 2 consecutive identical cycles._
+
 ### [ok] Site metrics snapshot
 4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
 
