@@ -8,6 +8,65 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 268 — 2026-09-28T05:15:09.321Z
+
+### [ok] Site metrics snapshot
+4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 0 orphaned routes (of 3119 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [ok] Stale OS version mentions
+No stale OS version mentions found.
+
+### [ok] Aged guides
+0 of 4049 guides published before 2025-03-28.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [warn] Readability & senior UX
+avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.2: use-silvur-retirement-planning
+- grade 10: how-to-back-up-iphone-to-icloud
+- grade 10.1: set-up-bank-text-alerts
+- grade 10.1: close-old-bank-account-safely
+- grade 10.3: youtube-videos-buffering-fix
+- grade 10.5: set-up-amazon-prime-delivery-prescriptions
+- grade 10: how-to-use-siri-iphone
+- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
+- grade 10.2: how-to-screenshot-windows-11
+- grade 10.7: how-to-use-notes-app-iphone
+```
+
+### [ok] External source link health
+75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+### [ok] Hardcoded prices outside pricing.ts
+All service prices come from src/data/pricing.ts.
+
+### [ok] Undisclosed invented testimonials
+No hardcoded reviews without a disclosure.
+
+### [ok] Overlong guide excerpts
+All guide excerpts are within 160 characters.
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+### Suggested next actions
+- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+---
+
 ## Cycle 264 — 2026-09-27T05:11:45.476Z
 
 _No change through cycle 267 (2026-09-27T21:17:15.228Z) — 4 consecutive identical cycles._
@@ -1519,130 +1578,6 @@ No video is reused across more than 5 guides.
 
 ### Suggested next actions
 - **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 225 — 2026-09-16 (Cowork daily run, hand-written)
-
-### [fixed, pushed to main] One production page was serving an empty `<title>`
-
-`/tools/medication-reminder-setup` had **no `<SEOHead>` at all** — the only one of
-388 tool page components missing it. Prerendering therefore wrote
-`<title data-rh="true"></title>` into its static HTML. Not the site default title;
-empty. Verified against the live site before touching anything:
-
-    curl -s https://www.teksure.com/tools/medication-reminder-setup
-    → <title data-rh="true"></title>     (HTTP 200, body renders fine)
-
-The page itself is good — ten-step iPhone Health setup, an Android/Alexa/Nest/Watch
-picker, a four-app comparison table, family missed-dose alerts — and it is about
-not missing medication doses, which is close to the middle of who TekSure is for.
-It has been invisible to search engines and AI answer engines for as long as it has
-existed.
-
-**The report already knew.** `prerender-report.json` on production carries
-`renderedWithoutTitle: 1` and, since the `sampleDegraded` change, names the exact
-route. Nothing fails the build on a degraded page, so it sat there. The detection
-was fine; the escalation was missing.
-
-Fixed by adding the component with a real title and description, and by adding
-`src/__tests__/tool-page-seo.test.ts` (3 tests) which fails if any tool page omits
-`<SEOHead>` or hands it an empty title or description. CLAUDE.md has always said
-"Every new page needs `<SEOHead …>`" — this is what makes the rule bite. Confirmed
-the guard actually fires by removing the component and watching it go red.
-
-Shipped straight to `main` as `284f901`, since that is what production builds.
-
-### 🚨 [BLOCKER — needs Bailey, now four weeks old] The redundancy cut still has not shipped
-
-Live `build-info.json` at the start of this run:
-
-    commit 8596d58770de · "chore(dev-loop): cycle 224 findings"
-    builtAt 2026-09-16T21:23:19Z · prerenderedPages 7128 · sitemapUrls 7119
-
-Still **7,128 URLs**. `chore/redundancy-cleanup-2026-08-30` is **14 ahead of and 157
-behind `origin/main`** (was 13 / 153 on 2026-09-15, 12 / 78 on 2026-08-31). The drift
-is almost entirely `chore(dev-loop): cycle N findings` commits written to main by the
-GitHub workflow, but it is drift all the same, and the cut deletes ~2,500 routes.
-Nothing has changed about the options since cycle 151. This needs a decision, not
-another loop run noticing it.
-
-### [new, needs Bailey] The local checkout's git object store is corrupted
-
-`git fetch` in `~/Documents/Claude/Projects/TekSure` fails on this mount:
-
-    warning: unable to unlink '.git/objects/f4/tmp_obj_YCVJcs': Operation not permitted
-    fatal: unresolved deltas left after unpacking
-    fatal: unpack-objects failed
-
-It moved `origin/main` forward but left the trees behind it missing, so
-`git log origin/main -- <path>` now dies with `unable to read tree b4e36fbe…`.
-`git fsck` confirms broken links from `b860653c` and `b5a40935`. The cause is the
-same mount restriction CLAUDE.md already documents for `.git/*.lock`: this filesystem
-refuses `unlink`, so git cannot clean up its own loose temp objects mid-unpack. There
-are hundreds of orphaned `.git/objects/*/tmp_obj_*` files from previous attempts.
-
-**Two repairs were tried from the sandbox and both failed — do not spend another run
-on this.**
-
-1. `git config fetch.unpackLimit 1` (write an indexed packfile instead of exploding
-   loose objects, sidestepping the unlink). The fetch got further and then died with
-   `fatal: pack has 14 unresolved deltas` — the server sends a thin pack assuming we
-   hold the base objects, and the bases are exactly what went missing.
-2. Dropping `refs/remotes/origin/main` so git would stop advertising unreadable
-   commits and pull a full history. `git update-ref -d` cannot delete the ref:
-   `error: unable to unlink '.git/refs/remotes/origin/main': Operation not permitted`.
-   The mount refuses unlink on refs, not only on `.git/*.lock` and loose objects.
-
-The three `.lock` files those attempts left behind were moved aside with `mv`; the
-checkout is otherwise unharmed (branch, HEAD and working tree all verified after).
-
-**This needs to be run from a real terminal on Bailey's machine, outside the sandbox
-mount**, where unlink works. Either `git fetch --prune origin` after
-`rm -f .git/objects/*/tmp_obj_*`, or — simpler and probably better given the branch
-question above — a fresh clone and a decision about what to keep from the old one.
-
-Meanwhile the loop can still ship: this run used the CLAUDE.md fallback (fresh
-`--depth 1` clone of main in `/tmp`, edit, verify, push), and it worked cleanly.
-
-**This also means the loop has been reading the wrong backlog.** The mount checkout
-sits on the stale branch, so `head -40 .claude/dev-loop-backlog.md` at the start of a
-run shows the branch's file, while the GitHub workflow writes to main's. Two different
-files, one name. This entry went to main.
-
-### Measurements this run
-
-| Check | Result |
-|---|---|
-| dev-loop (dry, on branch) | no hard failures; 0 broken internal links, 0 duplicate slugs, 0 stale OS mentions, 0 aged guides |
-| Readability | grade **8.3**, **58.7%** above grade 8 (was 58.5%) — unchanged, see below |
-| Senior UX audit | 0 sub-44px tap targets, 0 images missing alt, 0 `onClick` on a div; 7 files below the 14px floor |
-| External source links | 72 checked, 0 confirmed broken, 2 unreachable (bot-blocking) |
-| Cadence pages | **both current** — Tech Problem of the Week on `2026-09-14`; What's New covers September 2026 (verified on the live page, not the branch copy) |
-| tsc | clean on main, with `--max-old-space-size=3300` |
-| npm test | **107/107** (104 + 3 new) |
-| validate-slugs | 328 files, 4,049 slugs, 0 duplicates |
-| `vite build` | **did not complete** — killed at "rendering chunks", exit 137 |
-
-### Deliberately skipped
-
-- **Readability.** Still 8.3 / 58.7%. Not doing a hand pass; per CLAUDE.md that moves
-  the number ~0.1pp and is the appearance of progress. Still waiting on either a
-  scripted bulk pass or an explicit decision to accept 8.3.
-- **New guides.** No verified gap found worth adding one for at 4,049 slugs.
-- **The uncommitted `scripts/prerender-sharded.mjs` diff in the working copy.** It adds
-  `sampleDegraded` to the merged report — and production's report already has that
-  field, so the change is already on main. The working copy is just stale. Left alone.
-
-### Blockers for Bailey
-
-1. The redundancy cut — merge, abandon, or re-cut from current main.
-2. The corrupted local git object store (try `fetch.unpackLimit 1`).
-3. One full `npm run build` on a machine with ≥8GB — still never verified end-to-end here.
-4. Readability: bulk pass or accept 8.3.
-5. Analytics wiring, monetization credentials, Hetzner CX22 — all unchanged.
-6. Apex `teksure.com` still 307s to `www` instead of 308/301. Vercel dashboard setting,
-   not fixable from the repo.
 
 ---
 
