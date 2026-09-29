@@ -17,6 +17,29 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 157 — 2026-09-29 (Cowork run, hand-written)
+
+### Status: production healthy, nothing broken
+Live `build-info.json`: main @ `5a11c3ab6636` (cycle 270 findings), built 2026-09-28T23:20Z,
+7,129 prerendered, 7,119 sitemap URLs, 0 unprerendered. `prerender-report.json` (cache-busted):
+`complete`, 7129/7129, 0 failed, 0 without title. dev-loop dry run: 12 ok, 1 warn (readability
+8.3 / 58.7% above grade 8). Apex still 307.
+
+### Cadence pages
+Tech Problem of the Week on this branch is `2026-09-21` — now 8 days old, past the 7-day rule.
+What's New `aug-2026` — correct until October. Not refreshed: a refresh would land on the
+unmerged branch and reach no reader (same reasoning as cycles 154-156), and needs a real,
+verified FTC/CISA alert. Refresh on main once the branch question is settled.
+
+### [deliberately skipped] No source change; build/tests not run (no source touched)
+### [accepted] Readability unchanged, no hand pass.
+
+### [BLOCKER — needs Bailey, ~4.5 weeks] This loop's output does not ship
+Merge/reconcile the cut, repoint this task at `main`, or retire it. Repo is also stuck
+mid-rebase ("editing a commit while rebasing main"), with sitemap.xml modified.
+
+---
+
 ## Cycle 156 — 2026-09-25 (Cowork run, hand-written)
 
 ### Status: production healthy, nothing broken
