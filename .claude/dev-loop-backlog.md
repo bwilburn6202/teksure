@@ -8,6 +8,65 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 280 — 2026-10-02T05:27:06.290Z
+
+### [ok] Site metrics snapshot
+4049 guides, 3156 routes, 2969 tools (285 curated on /tools).
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 0 orphaned routes (of 3119 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [ok] Stale OS version mentions
+No stale OS version mentions found.
+
+### [ok] Aged guides
+0 of 4049 guides published before 2025-04-02.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [warn] Readability & senior UX
+avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.2: use-silvur-retirement-planning
+- grade 10: how-to-back-up-iphone-to-icloud
+- grade 10.1: set-up-bank-text-alerts
+- grade 10.1: close-old-bank-account-safely
+- grade 10.3: youtube-videos-buffering-fix
+- grade 10.5: set-up-amazon-prime-delivery-prescriptions
+- grade 10: how-to-use-siri-iphone
+- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
+- grade 10.2: how-to-screenshot-windows-11
+- grade 10.7: how-to-use-notes-app-iphone
+```
+
+### [ok] External source link health
+75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+### [ok] Hardcoded prices outside pricing.ts
+All service prices come from src/data/pricing.ts.
+
+### [ok] Undisclosed invented testimonials
+No hardcoded reviews without a disclosure.
+
+### [ok] Overlong guide excerpts
+All guide excerpts are within 160 characters.
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+### Suggested next actions
+- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+---
+
 ## Cycle 278 — 2026-10-01T13:03:22.783Z
 
 _No change through cycle 279 (2026-10-01T22:37:18.926Z) — 2 consecutive identical cycles._
@@ -1599,168 +1658,6 @@ No video is reused across more than 5 guides.
 
 ### Suggested next actions
 - **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 229 — 2026-09-17 (Cowork daily run, hand-written)
-
-### [fixed, pushed to main] Every unknown URL on the site returned the homepage under HTTP 200
-
-`vercel.json` ended with a single catch-all rewrite:
-
-    { "source": "/(.*)", "destination": "/" }
-
-Anything that matched no prerendered file and no redirect was served `/` — the
-**homepage HTML**, with the homepage's `<title>` and the homepage's canonical, at
-status **200**. Verified live before touching anything:
-
-    /this-page-does-not-exist-xyz123  -> 200  "TekSure — Free Tech Help for Beginners & Seniors"
-    /guides/totally-fake-slug-abc     -> 200  "TekSure — Free Tech Help for Beginners & Seniors"
-    /tools/nonexistent-tool-zzz       -> 200  "TekSure — Free Tech Help for Beginners & Seniors"
-    /tech-problem-of-the-week         -> 200  "TekSure — Free Tech Help for Beginners & Seniors"
-
-That last one is how it surfaced: the real route is `/tech-problem-of-week`, and the
-near-miss returned a confident 200 instead of a 404, so a wrong link looks healthy to
-every checker that only reads status codes.
-
-This is a soft 404 across the entire URL space. It matters in three ways:
-
-1. **Index bloat.** Every typo, every stale inbound link, every slug from the
-   2026-08-30 tool cut that a crawler still has queued resolves to a 200 page that is
-   byte-identical to `/`. The cut's own reasoning says pointing removed pages at a hub
-   "reads as a soft 404" — that reasoning applies to the catch-all too, and harder,
-   because the catch-all covers every URL that does not exist rather than 2,000 of them.
-2. **A 404 is never reported.** Nothing that consumes status codes — Search Console,
-   the internal link audit, an external link checker — can distinguish a live page from
-   a dead one on this domain.
-3. **Bad canonical.** Those pages each declare `<link rel="canonical" href=".../">`,
-   so they actively consolidate signals onto the homepage rather than being dropped.
-
-**Fix.** `src/pages/NotFound.tsx` was already correct — it sets `noindex`, canonicalises
-to `/404`, and is a genuinely useful page (search box, four destinations, report-this
-link). It was simply unreachable server-side. Two changes connect it:
-
-- `scripts/prerender.mjs` — `routes.add('/404')`. `collectRoutes()` scans App.tsx for
-  literal `path="…"` strings and skips anything containing `*`, so the `path="*"`
-  NotFound route was never in the list and no `/404` file was ever written.
-- `vercel.json` — catch-all `destination` changed from `/` to `/404`.
-
-Unknown URLs now serve the prerendered NotFound page: still HTTP 200, but carrying
-`noindex, nofollow` and a page that says it does not exist, which is what actually gets
-these dropped from the index.
-
-**Why not a real 404 status.** Vercel rewrites always return 200. A true 404 needs the
-catch-all narrowed so unmatched paths fall through to Vercel's native `404.html`
-handling — and that is not safe to do unattended. `EXCLUDE` in `prerender.mjs`
-deliberately skips `/admin`, `/customer`, `/tech`, `/profile`, `/my-requests`,
-`/my-path`, `/favorites`, `/setup`, `/payment`, `/api`; none of those have a
-prerendered file, so removing the catch-all hard-404s the logged-in areas **and the
-Stripe payment flow**. It would also convert any future prerender gap from "degraded
-page" into "hard 404" on 7,128 routes. See the raise below.
-
-**Behaviour that did not change.** The rewrite still serves the SPA bundle, so
-client-side routing for the excluded private routes works exactly as before — the
-hydration mismatch on those paths is the same one that already existed when the
-destination was `/`.
-
-**Guardrail.** `src/__tests__/catch-all-rewrite.test.ts` (3 tests) asserts the catch-all
-exists, that its destination is not `/`, and that `prerender.mjs` actually writes that
-destination. The two files are one mechanism with nothing else linking them, and
-`vercel.json` is generated — this is the same footgun class as the `/pricing` redirect
-that cost a session on 2026-07-26.
-
-Confirmed `npm run prebuild` regenerates `vercel.json` without reverting the rewrite —
-`generate-redirects.mjs` only rewrites `config.redirects`.
-
-### Verification
-
-    npx tsc --noEmit -p tsconfig.app.json   clean (see note below)
-    npm test                                110 passed (was 107)
-    node scripts/validate-slugs.mjs         4049 slugs, 0 duplicates
-    npm run prebuild                        ok, 7119 sitemap URLs
-    npm run build                           NOT RUN — see below
-
-**The build did not run and is not claimed to pass.** `vite build` was killed (OOM) in
-the sandbox at ~3.9 GB available. This is main, the pre-cut 7,128-route site; the
-2026-08-30 branch fixed the build OOM by deleting ~2,500 routes, and that branch has
-still not shipped. The change is two lines in a `.mjs` script and one string in
-`vercel.json`, so nothing in it can fail a TypeScript or bundling step — but the
-`/404` file being written is verified only by replicating `collectRoutes()` standalone
-(3,099 app routes collected, `/404` present), not by an actual prerender run.
-
-### Post-deploy verification — done, this run
-
-Deployed as `60ea0bb5fa1e` at 2026-09-18T04:21:15Z and checked live:
-
-    /this-page-does-not-exist-xyz123  200  "Page not found — TekSure"  noindex, nofollow
-    /guides/totally-fake-slug-abc     200  "Page not found — TekSure"  noindex, nofollow
-    /tools/nonexistent-tool-zzz       200  "Page not found — TekSure"  noindex, nofollow
-    /tech-problem-of-the-week         200  "Page not found — TekSure"  noindex, nofollow
-
-`prerender-report.json`: `status: complete`, 7,129 attempted / 7,129 written, **0 failed,
-0 renderedWithoutTitle**, 8 shards, 317s. `prerenderedPages` 7128 → 7129 — the one new
-route is `/404`. `unprerenderedUrls: 0`.
-
-No regressions. Spot-checked `/`, `/guides`, `/tools`, `/whats-new`,
-`/tech-problem-of-week`, `/get-help`, `/guides/how-to-use-siri-iphone` and
-`/tools/medication-reminder-setup`: all 200, all correct titles, **`noindex` absent from
-every one** — the tag did not leak off the 404 page. Redirects still resolve
-(`/welcome` → `/` and `/tools/jargon-translator` → `/tools/tech-jargon-translator`, both
-308). `/payment`, `/admin` and `/profile` still return 200 and boot the SPA.
-
-**Side effect worth recording.** The dynamic public detail routes — `/forum/:id`,
-`/blog/:slug`, `/articles/:slug` — contain `:` and so have never been prerendered. Their
-server HTML used to be the homepage; it is now the noindex 404 shell. Nothing indexable
-was lost: the old shell declared `<link rel="canonical" href=".../">`, so a crawler was
-told those URLs *were* the homepage either way. But it does mean forum threads and blog
-posts cannot be indexed at all until they are genuinely prerendered or server-rendered.
-If that content is meant to rank, it needs its own route collection in `prerender.mjs`,
-the way guides get theirs. Not urgent — it was never working — but it is now explicit
-rather than hidden behind a wrong canonical.
-
-**If it ever needs reverting:** set `vercel.json` `rewrites[0].destination` back to `/`.
-That restores the previous behaviour exactly.
-
-**Original pre-deploy check, kept for the record:**
-
-    curl -s -o /dev/null -w "%{http_code}\n" https://www.teksure.com/this-page-does-not-exist-xyz123
-    curl -s https://www.teksure.com/this-page-does-not-exist-xyz123 | grep -o 'robots[^>]*'
-
-Expect the page title to be "Page not found" and `noindex, nofollow` to be present. If
-instead the response is a bare Vercel error page, `/404` failed to prerender — revert
-`vercel.json` to `"destination": "/"` immediately; that restores today's behaviour.
-
-### Also noted, not acted on
-
-- **`tsc` OOMs at the default heap on main.** `npx tsc --noEmit -p tsconfig.app.json`
-  aborts with a V8 OOM unless run as
-  `NODE_OPTIONS="--max-old-space-size=7168" npx tsc …`. CLAUDE.md's "Verify before
-  claiming done" block does not mention this, so a run that follows it literally sees a
-  crash and may read it as a code failure. Worth adding to CLAUDE.md.
-- **Both cadence pages are current on production** — Tech Problem of the Week is the
-  September 14–20 window (checked 2026-09-17, in range) and What's New carries a
-  September 2026 entry. Main's 2026-09-15 cadence fix shipped. Nothing to do.
-- **The dev-loop is otherwise clean.** Cycles 225–228 are four identical runs; the only
-  warn is readability at grade 8.3 / 58.5% above grade 8, which is a standing decision
-  for Bailey, not a daily task. Deliberately not hand-passed — that moves ~0.1pp and is
-  the appearance of progress.
-
-### Raise with Bailey
-
-1. **The redundancy cut still has not shipped — day 18.** `chore/redundancy-cleanup-2026-08-30`
-   is now **14 ahead of and 157 behind `origin/main`** (was 13/153 at cycle 225, 12/78 on
-   2026-08-31). Production is `b1c73d68`, still 7,128 URLs. Unchanged in substance since
-   cycle 151.
-2. **A true 404 status.** Worth doing, needs a decision because it touches the edge
-   routing of a live Stripe site. The safe shape is: keep explicit rewrites to `/` for
-   the ten `EXCLUDE` prefixes, drop the universal catch-all, ship `dist/404.html`. The
-   risk to weigh is that it converts any prerender gap into a hard 404 across 7,128
-   routes. Today's change captures most of the SEO benefit with none of that risk.
-3. **The local checkout still cannot fetch.** `git fetch origin` fails with
-   `pack has 2 unresolved deltas / invalid index-pack output`, as cycle 225 recorded.
-   The CLAUDE.md fallback works and was used for this cycle: a fresh `--depth 1` clone of
-   main in `/tmp` cloned, installed, tested and pushed without trouble. Worth promoting
-   that from "fallback" to the normal path, or re-cloning the working copy.
 
 ---
 
