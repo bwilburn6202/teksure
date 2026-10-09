@@ -62,7 +62,6 @@ const hubs: Entry[] = [
   { to: '/how-it-works', label: 'How It Works', description: 'How TekSure helps — the short version.' },
   { to: '/faq', label: 'FAQ', description: 'Answers to the questions people ask most often.' },
   { to: '/about', label: 'About', description: 'Who we are and why we built TekSure.' },
-  { to: '/guides', label: 'Welcome Tour', description: "A quick walkthrough of TekSure for first-time visitors." },
 ];
 
 // ── Tools (every /tools/* route in App.tsx) ──────────────────────────────────

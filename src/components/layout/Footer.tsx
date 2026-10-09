@@ -46,7 +46,7 @@ export function Footer() {
       links: [
         { to: '/start', label: 'Start Here' },
         { to: '/scam-defense', label: 'Scam Help' },
-        { to: '/get-help', label: 'Book Help' },
+        { to: '/get-help', label: 'Get Help' },
         { to: '/tools', label: 'Find a Tool' },
         { to: '/glossary', label: 'Tech Glossary A–Z' },
         { to: '/tech-problem-of-week', label: "This Week's Tech Problem" },
@@ -63,7 +63,6 @@ export function Footer() {
       title: 'Company',
       links: [
         { to: '/about', label: 'About TekSure' },
-        { to: '/technicians', label: 'Book a Technician' },
         { to: '/whats-new', label: "What's New" },
         { to: 'mailto:hello@teksure.com', label: 'hello@teksure.com', external: true },
       ],

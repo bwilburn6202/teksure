@@ -91,24 +91,18 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
   const primaryLinks = [
     { to: '/guides', label: 'Guides' },
     { to: '/tools', label: 'Tools' },
+    { to: '/scam-defense', label: 'Scams' },
   ];
 
-  // "More" dropdown — curated, uniform list of pages that aren't on the
-  // main pill. Same set is reused in the mobile drawer so the surfaces stay
-  // in sync.
+  // "More" dropdown — kept short on purpose. Everything else is one click
+  // away from Guides, Tools, or the footer's Site Index.
   const moreLinks = [
-    { to: '/safety/scam-alerts', label: 'Safety & Scam Alerts' },
-    { to: '/safety/scam-alerts',        label: 'Current Scam Alerts' },
-    { to: '/privacy-hub',        label: 'Privacy Hub' },
     { to: '/quick-fixes',        label: 'Quick Fixes' },
-    { to: '/free-resources',     label: 'Free Tech Programs' },
+    { to: '/safety/scam-alerts', label: 'Current Scam Alerts' },
     { to: '/glossary',           label: 'Tech Glossary A–Z' },
-    { to: '/guides',             label: 'Video Tutorials' },
     { to: '/tech-help-near-me',  label: 'Help Near Me' },
-    { to: '/quick-fixes',          label: 'This Week' },
     { to: '/about',              label: 'About TekSure' },
     { to: '/faq',                label: 'FAQ' },
-    { to: '/site-index',         label: 'Site Index' },
   ];
 
   const mobileBrowseLinks = moreLinks;

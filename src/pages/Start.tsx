@@ -5,7 +5,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import {
   ShieldAlert, Heart, HeartHandshake, Eye, BookOpen,
-  Sparkles, MessageCircle, ArrowRight, Sun, type LucideIcon,
+  Sparkles, MessageCircle, ArrowRight, type LucideIcon,
 } from 'lucide-react';
 
 interface Path {
@@ -17,13 +17,6 @@ interface Path {
 }
 
 const PATHS: Path[] = [
-  {
-    q: 'I want a quick tip for today',
-    description: 'A 60-second tip you can listen to or read.',
-    to: '/daily-tip',
-    icon: Sun,
-    cls: 'from-amber-50 to-orange-50 dark:from-amber-950/30 dark:to-orange-950/30 border-amber-200 dark:border-amber-900',
-  },
   {
     q: 'I got a strange call, text, or email',
     description: 'Paste the message, get a clear answer.',
@@ -54,7 +47,7 @@ const PATHS: Path[] = [
   },
   {
     q: 'I just need to learn something',
-    description: 'Browse our free guide library — over 2,500 plain-English how-tos.',
+    description: 'Browse our free library of plain-English how-tos.',
     to: '/guides',
     icon: BookOpen,
     cls: 'from-emerald-50 to-teal-50 dark:from-emerald-950/30 dark:to-teal-950/30 border-emerald-200 dark:border-emerald-900',

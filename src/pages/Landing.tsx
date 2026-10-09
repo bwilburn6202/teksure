@@ -41,7 +41,7 @@ export default function Landing() {
     { label: 'Get real human help', to: '/get-help' },
     { label: 'Find the right guide', to: '/guides' },
     { label: 'Browse tools',        to: '/tools' },
-    { label: 'More',                to: '/site-index' },
+    { label: 'Start here',          to: '/start' },
   ];
 
   return (

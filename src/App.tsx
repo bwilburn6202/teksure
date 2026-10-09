@@ -723,7 +723,6 @@ const SuspiciousCallSim      = lazy(() => import("./pages/practice/SuspiciousCal
 const GrandparentDeviceSetup = lazy(() => import("./pages/GrandparentDeviceSetup"));
 const AccountAfterLoss       = lazy(() => import("./pages/AccountAfterLoss"));
 const LowVisionSetup         = lazy(() => import("./pages/LowVisionSetup"));
-const DailyTip               = lazy(() => import("./pages/DailyTip"));
 const Start                  = lazy(() => import("./pages/Start"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
@@ -1381,7 +1380,7 @@ const AppContent = () => {
           <Route path="/grandparent-device-setup" element={<GrandparentDeviceSetup />} />
           <Route path="/account-after-loss"       element={<AccountAfterLoss />} />
           <Route path="/low-vision-setup"         element={<LowVisionSetup />} />
-          <Route path="/daily-tip"                element={<DailyTip />} />
+          <Route path="/daily-tip" element={<Navigate to="/quick-fixes" replace />} />
 
           {/* ── April 2026 expansion (round 2) ──────────────────────────── */}
           <Route path="/start"                            element={<Start />} />
