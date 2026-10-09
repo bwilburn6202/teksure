@@ -12,7 +12,6 @@ import { Progress } from '@/components/ui/progress';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 
 /* ── Types ───────────────────────────────── */
 type Relationship = 'parent' | 'grandparent' | 'spouse' | 'myself';
@@ -236,10 +235,8 @@ function buildPlan(a: Answers): Plan {
   const caregiverResources = [
     { label: 'Caregiver Hub',               href: '/caregiver-hub' },
     { label: 'Scam Defense Center',         href: '/scam-defense' },
-    { label: 'Senior Tech Learning Path',   href: '/senior-tech-path' },
     { label: 'Dementia Care Tech',          href: '/dementia-care-tech' },
     { label: 'Accessibility Hub',           href: '/accessibility' },
-    { label: 'Family Sharing setup',        href: '/family-sharing' },
   ];
 
   return { setupChecklist: checklist, recommendedTools: tools, remoteSupport, redFlags, weeklyCheckins, caregiverResources };
@@ -280,12 +277,6 @@ export default function FamilyTechPlanner() {
         {/* Header */}
         <div className="relative">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="family-tech-planner"
-              title="Family Tech Planner"
-              url="/tools/family-tech-planner"
-            />
           </div>
           <div className="flex items-center gap-3 mb-3 pr-14">
             <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center">

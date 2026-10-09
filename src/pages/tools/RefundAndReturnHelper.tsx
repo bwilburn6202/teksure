@@ -43,7 +43,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { useToast } from '@/hooks/use-toast';
 
 /* ── Types ─────────────────────────────────── */
@@ -874,12 +873,6 @@ export default function RefundAndReturnHelper() {
         {/* ── Hero ── */}
         <div className="relative text-center mb-10">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="refund-and-return-helper"
-              title="Refund & Return Helper"
-              url="/tools/refund-and-return-helper"
-            />
           </div>
           <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-lg mb-5">
             <div className="relative">

@@ -23,7 +23,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -627,13 +626,6 @@ export default function ScamIqQuiz() {
                     Start the 20-question quiz
                     <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
                   </Button>
-                  <BookmarkButton
-                    type="tool"
-                    slug="scam-iq"
-                    title="Scam IQ Quiz"
-                    url="/quizzes/scam-iq"
-                    className="bg-white/10 text-white border-white/30 hover:bg-white/20 hover:text-white"
-                  />
                 </div>
 
                 {priorBest !== null && (

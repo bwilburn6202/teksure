@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -421,12 +420,6 @@ export default function LocalLibraryFinder() {
         {/* ── Hero ── */}
         <div className="relative text-center mb-10">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="local-library-finder"
-              title="Local Library Finder"
-              url="/tools/local-library-finder"
-            />
           </div>
           <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-teal-200 via-amber-100 to-orange-100 text-success-foreground dark:from-teal-900/60 dark:via-amber-950/40 dark:to-orange-950/40 mb-5 shadow-sm">
             <Library className="h-12 w-12" aria-hidden="true" />

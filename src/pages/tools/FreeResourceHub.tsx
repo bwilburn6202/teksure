@@ -1,41 +1,14 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Gift,
-  Tv,
-  BookOpen,
-  GraduationCap,
-  Landmark,
-  FileText,
-  Headphones,
-  Laptop,
-  Heart,
-  Search,
-  ChevronLeft,
-  ExternalLink,
-  ShieldAlert,
-  Info,
-  HandCoins,
-  Library,
-  CheckCircle2,
-  AlertTriangle,
-  HelpCircle,
-  type LucideIcon,
-} from 'lucide-react';
+import { Gift, Tv, BookOpen, GraduationCap, Landmark, FileText, Laptop, Heart, Search, ChevronLeft, ExternalLink, ShieldAlert, Info, HandCoins, Library, CheckCircle2, AlertTriangle, HelpCircle, type LucideIcon } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 /* ── Types ─────────────────────────────────── */
 type CategoryId =
@@ -857,12 +830,6 @@ export default function FreeResourceHub() {
         {/* ── Hero ── */}
         <div className="relative text-center mb-10">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="free-resource-hub"
-              title="Free Resource Hub"
-              url="/tools/free-resource-hub"
-            />
           </div>
           <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-emerald-100 to-green-200 text-success-foreground dark:from-emerald-900/50 dark:to-green-900/50 mb-5 shadow-sm">
             <Gift className="h-12 w-12" aria-hidden="true" />

@@ -52,7 +52,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 
 /* ──────────────────────────────────────────────────────────────
  * Social Media — Safe & Sane
@@ -1091,12 +1090,6 @@ export default function SocialMediaSafety() {
         {/* ── Hero ── */}
         <section className="relative text-center mb-10 rounded-3xl p-8 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-blue-950/40 dark:via-indigo-950/30 dark:to-purple-950/40 border-2 border-primary/25 ">
           <div className="absolute right-4 top-4">
-            <BookmarkButton
-              type="tool"
-              slug="social-media-safety"
-              title="Social Media — Safe & Sane"
-              url="/tools/social-media-safety"
-            />
           </div>
           <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-card text-primary mb-5 shadow-sm">
             <Users className="h-12 w-12" aria-hidden="true" />

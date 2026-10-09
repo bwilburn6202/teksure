@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -881,12 +880,6 @@ export default function PhonePlanComparison() {
         <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-sky-50 via-white to-teal-50 dark:from-sky-950/30 dark:via-background dark:to-teal-950/30">
           <div className="container py-10 md:py-16 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="phone-plan-comparison"
-                title="Phone Plan Comparison"
-                url="/tools/phone-plan-comparison"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <Signal className="w-5 h-5 text-primary" />

@@ -8,22 +8,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
-import {
-  Phone,
-  Search,
-  Printer,
-  Apple,
-  Smartphone,
-  Wifi,
-  CreditCard,
-  HeartPulse,
-  ShieldCheck,
-  Library,
-  Tv,
-  Laptop,
-  Mail,
-  AlertCircle,
-} from 'lucide-react';
+import { Phone, Search, Printer, Apple, Smartphone, Wifi, CreditCard, HeartPulse, ShieldCheck, Tv, Laptop, AlertCircle } from 'lucide-react';
 
 interface Hotline {
   name: string;
@@ -627,7 +612,7 @@ export default function TechHelpHotlineDirectory() {
                   <Link to="/free-resources">Free Tech Programs</Link>
                 </Button>
                 <Button asChild variant="outline" size="sm">
-                  <Link to="/tekbrain">Ask TekBrain</Link>
+                  <Link to="/get-help">Ask a real person</Link>
                 </Button>
               </div>
             </CardContent>

@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -475,12 +474,6 @@ export default function PodcastDirectory() {
         {/* ── Hero ── */}
         <div className="relative text-center mb-10">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="podcast-directory"
-              title="Podcast Directory"
-              url="/tools/podcast-directory"
-            />
           </div>
           <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-purple-200 via-pink-100 to-rose-100 text-primary dark:from-purple-900/60 dark:via-pink-950/40 dark:to-rose-950/40 mb-5 shadow-sm">
             <Headphones className="h-12 w-12" aria-hidden="true" />

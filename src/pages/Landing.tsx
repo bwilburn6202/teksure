@@ -40,7 +40,6 @@ export default function Landing() {
   const chips = [
     { label: 'Get real human help', to: '/get-help' },
     { label: 'Find the right guide', to: '/guides' },
-    { label: 'Ask TekBrain',        to: '/tekbrain' },
     { label: 'Browse tools',        to: '/tools' },
     { label: 'More',                to: '/site-index' },
   ];

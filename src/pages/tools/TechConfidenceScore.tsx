@@ -28,7 +28,7 @@ function getResult(score: number, max: number) {
     grade: 'Beginner', color: 'text-orange-600', bg: 'bg-orange-50 border-orange-200',
     icon: Sprout, tagline: 'Everyone starts somewhere — you\'re in the right place.',
     next: 'Start with our Beginner Basics learning path to build your foundation step by step.',
-    path: '/my-path',
+    path: '/guides',
   };
   if (pct < 50) return {
     grade: 'Developing', color: 'text-yellow-600', bg: 'bg-yellow-50 border-yellow-200',
@@ -40,13 +40,13 @@ function getResult(score: number, max: number) {
     grade: 'Capable', color: 'text-blue-600', bg: 'bg-blue-50 border-blue-200',
     icon: Star, tagline: 'You\'re doing really well. A few more skills and you\'ll be fully independent.',
     next: 'Try our Practical Skills path — you\'re ready for the next level.',
-    path: '/my-path',
+    path: '/guides',
   };
   return {
     grade: 'Confident', color: 'text-green-600', bg: 'bg-green-50 border-green-200',
     icon: Trophy, tagline: 'You\'re a confident, capable tech user. Well done!',
-    next: 'Share your knowledge — why not help others in the Community Forum?',
-    path: '/forum',
+    next: 'Keep going — browse the guides for something new to learn.',
+    path: '/guides',
   };
 }
 

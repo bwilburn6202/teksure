@@ -23,7 +23,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -1196,13 +1195,6 @@ export default function SuspiciousCallSim() {
               </div>
             </div>
             <div className="flex flex-col gap-3 md:items-end">
-              <BookmarkButton
-                type="tool"
-                slug="practice/suspicious-call"
-                title="Suspicious Call Simulator"
-                url="/practice/suspicious-call"
-                className="bg-white/20 border-white/30 text-white hover:bg-white/30"
-              />
               <Button
                 variant="outline"
                 onClick={() => setShowHistory(true)}

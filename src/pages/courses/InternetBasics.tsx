@@ -292,7 +292,7 @@ const InternetBasics = () => {
                 Start Lesson 1 <ArrowRight className="h-4 w-4" />
               </Button>
               <Button asChild variant="outline" size="lg" className="gap-2 rounded-xl h-[52px] px-8 text-base">
-                <Link to="/learn"><BookOpen className="h-4 w-4" /> Browse all learning paths</Link>
+                <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse all guides</Link>
               </Button>
             </div>
           </div>
@@ -707,7 +707,7 @@ const InternetBasics = () => {
 
               <h3 className="text-xl font-semibold tracking-tight mt-8">TekSure Brain</h3>
               <p>
-                <Link to="/brain" className="text-primary font-medium underline underline-offset-2">
+                <Link to="/get-help" className="text-primary font-medium underline underline-offset-2">
                   TekSure Brain
                 </Link>{' '}
                 is a search tool built on top of our 1,200+ guides. Ask it a question in plain English ("how do I change my WiFi password") and it'll pull the most relevant answers for you in seconds.
@@ -719,10 +719,10 @@ const InternetBasics = () => {
                 <Link to="/guides" className="text-primary font-medium underline underline-offset-2">/guides</Link>.
               </p>
 
-              <h3 className="text-xl font-semibold tracking-tight mt-8">Community forum</h3>
+              <h3 className="text-xl font-semibold tracking-tight mt-8">Ask a real person</h3>
               <p>
-                Not finding exactly what you need? Ask other real people on our{' '}
-                <Link to="/forum" className="text-primary font-medium underline underline-offset-2">community forum</Link>. Other TekSure users and our team read and answer questions — no question is too basic.
+                Not finding exactly what you need?{' '}
+                <Link to="/get-help" className="text-primary font-medium underline underline-offset-2">Ask a real person</Link>. No question is too basic.
               </p>
 
               <h3 className="text-xl font-semibold tracking-tight mt-8">Libraries and tech help near you</h3>
@@ -773,15 +773,15 @@ const InternetBasics = () => {
                 <CardContent className="px-6 md:px-10 py-8 md:py-10">
                   <h3 className="text-lg md:text-xl font-semibold mb-5">What's next?</h3>
                   <div className="grid sm:grid-cols-2 gap-3">
-                    <Link to="/learn" className="group block">
+                    <Link to="/guides" className="group block">
                       <div className="rounded-xl border border-border bg-card p-5 h-full hover:border-primary/40 hover:shadow-sm transition-all">
                         <div className="flex items-center gap-3 mb-2">
                           <div className="h-10 w-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                             <BookOpen className="h-5 w-5" />
                           </div>
-                          <h4 className="font-semibold group-hover:text-primary transition-colors">All learning paths</h4>
+                          <h4 className="font-semibold group-hover:text-primary transition-colors">All guides</h4>
                         </div>
-                        <p className="text-base text-muted-foreground">Every TekSure course in one place, sorted by skill level.</p>
+                        <p className="text-base text-muted-foreground">Every TekSure guide in one place, sorted by topic.</p>
                       </div>
                     </Link>
                     <Link to="/scam-defense" className="group block">
@@ -795,7 +795,7 @@ const InternetBasics = () => {
                         <p className="text-base text-muted-foreground">Go deeper on staying safe online — threats, warning signs, recovery help.</p>
                       </div>
                     </Link>
-                    <Link to="/brain" className="group block">
+                    <Link to="/get-help" className="group block">
                       <div className="rounded-xl border border-border bg-card p-5 h-full hover:border-primary/40 hover:shadow-sm transition-all">
                         <div className="flex items-center gap-3 mb-2">
                           <div className="h-10 w-10 rounded-lg bg-info text-info-foreground flex items-center justify-center">
@@ -806,7 +806,7 @@ const InternetBasics = () => {
                         <p className="text-base text-muted-foreground">Ask any tech question and get an answer drawn from all 1,200+ guides.</p>
                       </div>
                     </Link>
-                    <Link to="/forum" className="group block">
+                    <Link to="/get-help" className="group block">
                       <div className="rounded-xl border border-border bg-card p-5 h-full hover:border-primary/40 hover:shadow-sm transition-all">
                         <div className="flex items-center gap-3 mb-2">
                           <div className="h-10 w-10 rounded-lg bg-success text-success-foreground flex items-center justify-center">

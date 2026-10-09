@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -596,12 +595,6 @@ const HearingAidTechHelper = () => {
         <section className="border-b border-border bg-gradient-to-br from-amber-50 via-yellow-50 to-white dark:from-amber-950/20 dark:via-yellow-950/10 dark:to-background">
           <div className="container py-10 md:py-14 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="hearing-aid-tech-helper"
-                title="Hearing Aid Tech Helper"
-                url="/tools/hearing-aid-tech-helper"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <div className="p-3 rounded-2xl bg-warn text-warn-foreground ">

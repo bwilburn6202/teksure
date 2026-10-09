@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { useParams, Link, Navigate, useLocation } from 'react-router-dom';
-import { ArrowRight, Clock, Tag, CheckCircle, Lightbulb, AlertTriangle, Printer, Volume2, Square, Heart, BookOpen, ExternalLink } from 'lucide-react';
+import { ArrowRight, Clock, Tag, CheckCircle, Lightbulb, AlertTriangle, Printer, Volume2, Square, BookOpen, ExternalLink } from 'lucide-react';
 import { StarRating } from '@/components/StarRating';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -10,21 +10,17 @@ import { Progress } from '@/components/ui/progress';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { CopyButton } from '@/components/CopyButton';
 import { ShareGuideButton } from '@/components/ShareGuideButton';
 import { ReportBrokenLink } from '@/components/ReportBrokenLink';
-import {
-  Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage,
-} from '@/components/ui/breadcrumb';
+import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
 import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } from '@/data/guides';
 import { guideRedirects } from '@/data/guide-redirects';
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { GuideVideoSection } from '@/components/GuideVideoSection';
 import { StepContent, getStepIcon } from '@/components/guide/StepContentRenderer';
 import { ScreenshotLightbox } from '@/components/ScreenshotLightbox';
-import { isFavorite, addFavorite, removeFavorite } from '@/lib/favorites';
 import { MasteryPicker } from '@/components/MasteryPicker';
-import { getGuideThumbnailUrl, getGuideThumbnailSmall, getGuideHeroUrl } from '@/lib/guideThumbnails';
+import { getGuideThumbnailSmall, getGuideHeroUrl } from '@/lib/guideThumbnails';
 import { GuideThumbnail } from '@/components/GuideThumbnail';
 import { getGuideResources } from '@/lib/guideResources';
 import { useAuth } from '@/contexts/AuthContext';
@@ -317,18 +313,6 @@ const ListenButton = ({ guide }: { guide: { title: string; excerpt: string; step
   );
 };
 
-const BookmarkButton = ({ slug, title, excerpt }: { slug: string; title: string; excerpt: string }) => {
-  const [saved, setSaved] = useState(() => isFavorite(slug));
-  const toggle = () => {
-    if (saved) { removeFavorite(slug); } else { addFavorite({ slug, title, excerpt }); }
-    setSaved(!saved);
-  };
-  return (
-    <Button variant="ghost" size="icon" className="absolute top-0 right-0 no-print min-h-[44px] min-w-[44px]" onClick={toggle} aria-label={saved ? 'Remove from favorites' : 'Add to favorites'}>
-      <Heart className={`h-5 w-5 transition-colors ${saved ? 'fill-destructive text-destructive' : 'text-muted-foreground'}`} />
-    </Button>
-  );
-};
 
 const HelpfulSection = ({ guideSlug }: { guideSlug: string }) => (
   <Card className="mb-8">
@@ -500,7 +484,6 @@ const GuideDetail = () => {
         <div>
           {/* Header */}
           <div className="mb-10 relative">
-            <BookmarkButton slug={guide.slug} title={guide.title} excerpt={guide.excerpt} />
             <div className="relative w-full rounded-xl overflow-hidden mb-6 bg-muted aspect-[2/1] sm:aspect-[5/2]">
               <img
                 src={getGuideHeroUrl(guide)}
@@ -770,7 +753,7 @@ const GuideDetail = () => {
                 ))}
               </div>
               <p className="text-base text-muted-foreground mt-3">
-                Sources used to create and verify this guide. <a href="/sources" className="text-primary hover:underline">View all sources →</a>
+                Sources used to create and verify this guide.
               </p>
             </div>
           )}

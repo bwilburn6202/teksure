@@ -3,42 +3,14 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from '@/components/ui/accordion';
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import {
-  Mic,
-  MicOff,
-  Radio,
-  Lightbulb,
-  Lock,
-  Phone,
-  Printer,
-  Search as SearchIcon,
-  Apple,
-  Speaker,
-  Watch,
-  Smartphone,
-  ShieldCheck,
-  AlertTriangle,
-  Volume2,
-  Heart,
-  Users,
-  Sparkles,
-  HelpCircle,
-  ExternalLink,
-  type LucideIcon,
-} from 'lucide-react';
+import { Mic, MicOff, Radio, Lightbulb, Lock, Phone, Printer, Search as SearchIcon, Apple, Speaker, Smartphone, ShieldCheck, AlertTriangle, Volume2, Heart, Users, Sparkles, HelpCircle, ExternalLink, type LucideIcon } from 'lucide-react';
 
 /* ──────────────────────────────────────────────────────────────
  * Voice Command Cheat Sheet
@@ -736,12 +708,6 @@ export default function VoiceCommandCheatSheet() {
         <section className="border-b border-border bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 dark:from-amber-950/30 dark:via-orange-950/20 dark:to-yellow-950/20">
           <div className="container py-10 md:py-14 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="voice-commands"
-                title="Voice Command Cheat Sheet"
-                url="/tools/voice-commands"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <Mic className="w-5 h-5 text-warn-foreground " aria-hidden="true" />

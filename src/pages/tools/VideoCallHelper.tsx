@@ -3,43 +3,9 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import {
-  Video,
-  Phone,
-  MessageCircle,
-  Users,
-  Apple,
-  Monitor,
-  Mic,
-  MicOff,
-  Camera,
-  CameraOff,
-  Share2,
-  Calendar,
-  AlertTriangle,
-  HelpCircle,
-  CheckCircle2,
-  XCircle,
-  Lightbulb,
-  Heart,
-  Sparkles,
-  Accessibility,
-  BookOpen,
-  Coffee,
-  Utensils,
-  Image as ImageIcon,
-  Headphones,
-  Sun,
-  ExternalLink,
-  Star,
-  ArrowRight,
-  Captions,
-  type LucideIcon,
-} from 'lucide-react';
+import { Video, Phone, MessageCircle, Users, Apple, Monitor, Mic, MicOff, Camera, CameraOff, Share2, Calendar, AlertTriangle, HelpCircle, CheckCircle2, Lightbulb, Heart, Sparkles, Accessibility, BookOpen, Coffee, Utensils, Image as ImageIcon, Headphones, Sun, ExternalLink, Star, ArrowRight, Captions, type LucideIcon } from 'lucide-react';
 
 /* ──────────────────────────────────────────────────────────────
  * Video Call Helper
@@ -750,12 +716,6 @@ export default function VideoCallHelper() {
         <section className="border-b border-border bg-muted/30">
           <div className="container py-10 md:py-14 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="video-call-helper"
-                title="Video Call Helper"
-                url="/tools/video-call-helper"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <Video className="w-5 h-5 text-primary" />

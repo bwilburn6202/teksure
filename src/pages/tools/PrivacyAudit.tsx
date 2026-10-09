@@ -2,7 +2,6 @@ import { useState, useMemo } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -241,12 +240,6 @@ export default function PrivacyAudit() {
         <section className="border-b border-border bg-gradient-to-br from-primary/5 via-background to-background">
           <div className="container py-12 md:py-16 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="privacy-audit"
-                title="Privacy Audit"
-                url="/tools/privacy-audit"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <ShieldCheck className="w-5 h-5 text-primary" />

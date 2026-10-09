@@ -1,50 +1,16 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Heart,
-  Printer,
-  BookmarkIcon,
-  Clock,
-  ShieldAlert,
-  AlertTriangle,
-  Phone,
-  FileText,
-  HardDrive,
-  Image as ImageIcon,
-  Smartphone,
-  Download,
-  ExternalLink,
-  ArrowRight,
-  BookOpen,
-  LifeBuoy,
-  Scale,
-  DollarSign,
-  HandHeart,
-  Sparkles,
-  Info,
-  HelpCircle,
-  Users,
-  Mail,
-  ChevronRight,
-  CheckCircle2,
-  Lock,
-} from 'lucide-react';
+import { Heart, Printer, BookmarkIcon, Clock, ShieldAlert, AlertTriangle, Phone, FileText, HardDrive, Image as ImageIcon, Smartphone, Download, ExternalLink, ArrowRight, BookOpen, LifeBuoy, Scale, DollarSign, HandHeart, Sparkles, Info, HelpCircle, Users, Mail, ChevronRight, CheckCircle2, Lock } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 /* ──────────────────────────────────────────────────────────────────────────
  * Grief Tech Helper
@@ -483,12 +449,6 @@ export default function GriefTechHelper() {
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
-              <BookmarkButton
-                type="tool"
-                slug="grief-tech-helper"
-                title="Grief & Digital Aftercare"
-                url="/tools/grief-tech-helper"
-              />
               <Button
                 variant="outline"
                 size="lg"

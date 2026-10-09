@@ -52,7 +52,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 
 /* ── Types ─────────────────────────────────────────────── */
 interface ScamPage {
@@ -1155,12 +1154,6 @@ export default function StateAgScamLookup() {
         {/* ── Hero ── */}
         <div className="relative rounded-3xl overflow-hidden mb-10 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white shadow-xl">
           <div className="absolute top-4 right-4 z-10">
-            <BookmarkButton
-              type="tool"
-              slug="state-ag-scam-lookup"
-              title="State AG Scam Lookup"
-              url="/tools/state-ag-scam-lookup"
-            />
           </div>
           <div className="px-6 py-12 sm:px-10 sm:py-16 text-center">
             <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-white/10 backdrop-blur text-white mb-5 ring-1 ring-white/20">
@@ -1797,7 +1790,7 @@ export default function StateAgScamLookup() {
                 week by week with plain-language warnings and official source links.
               </p>
               <Link
-                to="/scam-alerts"
+                to="/safety/scam-alerts"
                 className="inline-flex items-center gap-1 mt-2 text-warn-foreground font-semibold underline hover:no-underline"
               >
                 Open the scam alerts feed <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
@@ -1837,7 +1830,7 @@ export default function StateAgScamLookup() {
             </h3>
             <div className="grid gap-3 sm:grid-cols-2">
               <Link
-                to="/scam-alerts"
+                to="/safety/scam-alerts"
                 className="rounded-xl border-2 border-border bg-background hover:border-emerald-500 p-4 min-h-14 transition-colors"
               >
                 <p className="font-bold text-base mb-1 inline-flex items-center gap-2">

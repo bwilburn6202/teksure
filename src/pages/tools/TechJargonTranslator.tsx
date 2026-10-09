@@ -1,57 +1,17 @@
-import { useState, useMemo, useEffect, Fragment } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from '@/components/ui/tabs';
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogFooter,
-} from '@/components/ui/dialog';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
-import {
-  Languages,
-  Search,
-  BookOpen,
-  MessageSquare,
-  AlertOctagon,
-  ShieldAlert,
-  Send,
-  Check,
-  Sparkles,
-  Lightbulb,
-  Plus,
-  ChevronRight,
-  HelpCircle,
-  Info,
-  Eye,
-  ArrowRight,
-  Tag,
-  Filter,
-  X,
-  Mail,
-  Lock,
-} from 'lucide-react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '@/components/ui/dialog';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { Languages, Search, BookOpen, MessageSquare, AlertOctagon, ShieldAlert, Send, Check, Sparkles, Lightbulb, Plus, ChevronRight, HelpCircle, Eye, ArrowRight, Tag, Filter, X, Mail, Lock, MessageCircle } from 'lucide-react';
 
 /* ─────────────────────────────────────────────────────────────────────────────
    Types
@@ -773,12 +733,6 @@ export default function TechJargonTranslator() {
                   </p>
                 </div>
               </div>
-              <BookmarkButton
-                type="tool"
-                slug="tech-jargon-translator"
-                title="Tech Jargon Translator"
-                url="/tools/tech-jargon-translator"
-              />
             </div>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -1195,12 +1149,12 @@ export default function TechJargonTranslator() {
                       <HelpCircle className="h-10 w-10 mx-auto text-muted-foreground mb-3" aria-hidden="true" />
                       <p className="text-lg font-semibold">No matching errors.</p>
                       <p className="text-base text-muted-foreground mt-1">
-                        Try a shorter search, or ask TekBrain for help.
+                        Try a shorter search, or ask a real person for help.
                       </p>
                       <Button asChild variant="default" className="mt-4 min-h-14 text-base gap-2">
-                        <Link to="/tekbrain">
-                          <Sparkles className="h-5 w-5" aria-hidden="true" />
-                          Ask TekBrain
+                        <Link to="/get-help">
+                          <MessageCircle className="h-5 w-5" aria-hidden="true" />
+                          Ask a real person
                         </Link>
                       </Button>
                     </CardContent>

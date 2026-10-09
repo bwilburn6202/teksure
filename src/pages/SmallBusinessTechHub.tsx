@@ -4,26 +4,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import {
-  Briefcase,
-  Mail,
-  Phone,
-  Globe,
-  Calculator,
-  CreditCard,
-  FileText,
-  Landmark,
-  Megaphone,
-  Users,
-  ShoppingCart,
-  Truck,
-  HandHeart,
-  Sparkles,
-  Receipt,
-  ShieldAlert,
-  ExternalLink,
-  CheckCircle2,
-} from 'lucide-react';
+import { Briefcase, Globe, Calculator, FileText, Landmark, Megaphone, Users, ShoppingCart, HandHeart, Sparkles, Receipt, ShieldAlert, ExternalLink, CheckCircle2 } from 'lucide-react';
 
 type Tool = {
   name: string;
@@ -462,7 +443,7 @@ export default function SmallBusinessTechHub() {
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
                 <Button asChild size="lg" variant="secondary">
-                  <a href="/explore">
+                  <a href="/guides">
                     <Globe className="w-4 h-4 mr-2" />
                     Browse all guides
                   </a>

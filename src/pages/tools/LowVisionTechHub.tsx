@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -1165,12 +1164,6 @@ export default function LowVisionTechHub() {
         <section className="border-b border-border bg-gradient-to-br from-violet-50 via-violet-100 to-amber-50 dark:from-violet-950/40 dark:via-violet-900/30 dark:to-amber-950/20">
           <div className="container py-12 md:py-16 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="low-vision-tech-hub"
-                title="Low Vision Tech Hub"
-                url="/tools/low-vision-tech-hub"
-              />
             </div>
             <div className="flex items-center gap-3 mb-5">
               <div className="p-3 rounded-xl bg-violet-600 text-white shadow-lg">

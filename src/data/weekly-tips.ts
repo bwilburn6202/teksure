@@ -297,7 +297,7 @@ export const weeklyTips: WeeklyTip[] = [
       'Made by Mozilla, a nonprofit. No data harvesting business model because they do not have that business model.',
     ],
     ctaLabel: 'Find more free software',
-    ctaHref: '/free-software',
+    ctaHref: '/free-resources',
   },
   {
     id: 19,
@@ -310,7 +310,7 @@ export const weeklyTips: WeeklyTip[] = [
       'For important conversations — money, health, family matters — this is the grown-up choice.',
     ],
     ctaLabel: 'Free apps worth installing',
-    ctaHref: '/free-software',
+    ctaHref: '/free-resources',
   },
   {
     id: 20,
@@ -349,7 +349,7 @@ export const weeklyTips: WeeklyTip[] = [
       'Free. Works on iPhone and Android. No ads, no algorithm — just you and the people you love.',
     ],
     ctaLabel: 'Family sharing setup',
-    ctaHref: '/family-sharing',
+    ctaHref: '/guides',
   },
 
   // ── Quick Fix (30-second problem solvers) ─────────────────────────────────
@@ -576,7 +576,7 @@ export const weeklyTips: WeeklyTip[] = [
       'Your mental health is not obligated to the companies that profit from your outrage.',
     ],
     ctaLabel: 'Tech anxiety help',
-    ctaHref: '/tech-anxiety',
+    ctaHref: '/get-help',
   },
   {
     id: 40,
@@ -602,7 +602,7 @@ export const weeklyTips: WeeklyTip[] = [
       'Adults report this change more than any other as the thing that improved their family life.',
     ],
     ctaLabel: 'Family sharing setup',
-    ctaHref: '/family-sharing',
+    ctaHref: '/guides',
   },
   {
     id: 42,
@@ -615,7 +615,7 @@ export const weeklyTips: WeeklyTip[] = [
       'Start with the worst offenders: email, Facebook, any news app. You\'ll still get notifications when you open the app — you just won\'t be nagged all day.',
     ],
     ctaLabel: 'Reduce phone anxiety',
-    ctaHref: '/tech-anxiety',
+    ctaHref: '/get-help',
   },
 
   // ── Seasonal (holiday, tax, travel, back-to-school) ───────────────────────
@@ -762,7 +762,7 @@ export const weeklyTips: WeeklyTip[] = [
       'Made by the same Swiss team behind ProtonMail. The business model is subscriptions, not data mining.',
     ],
     ctaLabel: 'More free software',
-    ctaHref: '/free-software',
+    ctaHref: '/free-resources',
   },
   {
     id: 54,
@@ -841,18 +841,5 @@ export const weeklyTips: WeeklyTip[] = [
     ],
     ctaLabel: 'Emergency setup walkthrough',
     ctaHref: '/emergency-tech',
-  },
-  {
-    id: 60,
-    category: 'Senior-Friendly',
-    icon: 'Lightbulb',
-    headline: 'Ask TekBrain anything — the tech advice button that stays patient forever.',
-    body: [
-      'If you ever wish you had a knowledgeable nephew you could call with dumb tech questions, without feeling embarrassed — that is what the Ask TekBrain feature is for.',
-      'Type any question in plain English, get a plain-English answer. No judgment, no upselling, no "you should have known this." It will happily explain the same thing five different ways.',
-      'It is most useful for specific questions: "How do I print from my iPad?" or "Why does my phone say my storage is full?" Try it right now — it is free.',
-    ],
-    ctaLabel: 'Ask TekBrain a question',
-    ctaHref: '/brain',
   },
 ];

@@ -1,43 +1,15 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Newspaper,
-  ShieldCheck,
-  ShieldAlert,
-  CheckCircle2,
-  XCircle,
-  AlertTriangle,
-  BookOpen,
-  ExternalLink,
-  Printer,
-  Bot,
-  Share2,
-  Eye,
-  Scale,
-  Heart,
-  Flag,
-  ArrowUpRight,
-  Users,
-  MessageSquare,
-  Sparkles,
-  Search,
-  FileSearch,
-} from 'lucide-react';
+import { Newspaper, ShieldCheck, ShieldAlert, CheckCircle2, XCircle, AlertTriangle, BookOpen, ExternalLink, Printer, Bot, Share2, Eye, Scale, Heart, Flag, ArrowUpRight, Users, MessageSquare, Sparkles, FileSearch } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 /* ── 10-step checklist ──────────────────────────────────── */
 interface ChecklistItem {
@@ -305,12 +277,6 @@ export default function FakeNewsChecker() {
           className="relative text-center mb-10 rounded-3xl p-8 sm:p-10 border-2 border-success-foreground/25 bg-gradient-to-br from-emerald-50 via-green-50 to-teal-50 dark:from-emerald-950/40 dark:via-green-950/30 dark:to-teal-950/40"
         >
           <div className="absolute right-4 top-4 print:hidden">
-            <BookmarkButton
-              type="tool"
-              slug="fake-news-checker"
-              title="Fake News Checker"
-              url="/tools/fake-news-checker"
-            />
           </div>
           <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-success text-success-foreground mb-5">
             <div className="relative">

@@ -98,17 +98,14 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
   // in sync.
   const moreLinks = [
     { to: '/safety/scam-alerts', label: 'Safety & Scam Alerts' },
-    { to: '/scam-alerts',        label: 'Current Scam Alerts' },
+    { to: '/safety/scam-alerts',        label: 'Current Scam Alerts' },
     { to: '/privacy-hub',        label: 'Privacy Hub' },
-    { to: '/forum',              label: 'Community Forum' },
-    { to: '/learn',              label: 'Learning Paths' },
     { to: '/quick-fixes',        label: 'Quick Fixes' },
     { to: '/free-resources',     label: 'Free Tech Programs' },
     { to: '/glossary',           label: 'Tech Glossary A–Z' },
-    { to: '/videos',             label: 'Video Tutorials' },
-    { to: '/articles',           label: 'Articles & Blog' },
+    { to: '/guides',             label: 'Video Tutorials' },
     { to: '/tech-help-near-me',  label: 'Help Near Me' },
-    { to: '/this-week',          label: 'This Week' },
+    { to: '/quick-fixes',          label: 'This Week' },
     { to: '/about',              label: 'About TekSure' },
     { to: '/faq',                label: 'FAQ' },
     { to: '/site-index',         label: 'Site Index' },
@@ -278,7 +275,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                   <DropdownMenuItem onClick={() => navigate('/my-requests')}>
                     <MessageSquare className="h-4 w-4 mr-2" aria-hidden="true" /> My Requests
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => navigate('/my-path')}>
+                  <DropdownMenuItem onClick={() => navigate('/guides')}>
                     <Map className="h-4 w-4 mr-2" aria-hidden="true" /> My Learning Path
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={() => navigate('/profile')}>

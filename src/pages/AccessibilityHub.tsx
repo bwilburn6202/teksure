@@ -5,23 +5,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import {
-  Eye,
-  Ear,
-  Hand,
-  Brain,
-  ArrowRight,
-  Accessibility,
-  Sparkles,
-  Settings,
-  Users,
-  ExternalLink,
-  HeartHandshake,
-  Mail,
-  BookOpen,
-  MessageCircle,
-  Lightbulb,
-} from 'lucide-react';
+import { Eye, Ear, Hand, Brain, ArrowRight, Accessibility, Sparkles, Settings, Users, ExternalLink, HeartHandshake, Mail, MessageCircle, Lightbulb } from 'lucide-react';
 
 // ─── Quick-access categories ─────────────────────────────────────────────────
 
@@ -243,14 +227,6 @@ const featuredTools = [
       'A gentle five-minute quiz that matches you to the setup most likely to work for your eyes, ears, hands, and focus.',
     to: '/tools/tech-comfort-quiz',
     cta: 'Take the quiz',
-  },
-  {
-    icon: BookOpen,
-    title: 'TekBrain',
-    description:
-      'Ask any plain-English tech question and TekBrain walks you through the answer — no jargon, no rush, no shame.',
-    to: '/tekbrain',
-    cta: 'Ask TekBrain',
   },
   {
     icon: Lightbulb,
@@ -655,7 +631,7 @@ export default function AccessibilityHub() {
                 className="rounded-xl gap-2 h-14 text-lg px-7"
               >
                 <Link
-                  to="/ask"
+                  to="/get-help"
                   aria-label="Request a custom accessibility guide"
                 >
                   Request a custom guide
@@ -668,9 +644,9 @@ export default function AccessibilityHub() {
                 size="lg"
                 className="rounded-xl gap-2 h-14 text-lg px-7 border-2"
               >
-                <Link to="/forum" aria-label="Ask the TekSure community forum">
+                <Link to="/get-help" >
                   <MessageCircle className="h-5 w-5" aria-hidden="true" />
-                  Ask the community
+                  Ask a real person
                 </Link>
               </Button>
             </div>

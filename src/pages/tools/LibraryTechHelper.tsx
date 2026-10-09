@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -1316,12 +1315,6 @@ export default function LibraryTechHelper() {
           <section className="border-b border-border bg-gradient-to-br from-teal-50 via-cyan-50 to-emerald-50 dark:from-teal-950/40 dark:via-cyan-950/30 dark:to-emerald-950/30">
             <div className="container py-10 md:py-16 relative">
               <div className="absolute top-6 right-6">
-                <BookmarkButton
-                  type="tool"
-                  slug="library-tech-helper"
-                  title="Library Tech Helper"
-                  url="/tools/library-tech-helper"
-                />
               </div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-3 rounded-xl bg-teal-600/10 text-success-foreground ">

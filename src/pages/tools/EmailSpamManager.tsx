@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -464,12 +463,6 @@ export default function EmailSpamManager() {
                   </h1>
                 </div>
               </div>
-              <BookmarkButton
-                type="tool"
-                slug="email-spam-manager"
-                title="Clean Up Your Inbox"
-                url="/tools/email-spam-manager"
-              />
             </div>
             <p className="text-lg md:text-xl text-foreground/80 max-w-2xl leading-relaxed">
               Unsubscribe, block, and organize — without deleting anything important. Pick your email provider below and we'll walk you through every step.

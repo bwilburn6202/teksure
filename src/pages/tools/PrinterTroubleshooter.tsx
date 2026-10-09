@@ -1,39 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Printer,
-  Laptop,
-  KeyRound,
-  RotateCcw,
-  ArrowLeft,
-  ChevronRight,
-  CheckCircle2,
-  AlertTriangle,
-  Wifi,
-  Plug,
-  AlertCircle,
-  Droplets,
-  Palette,
-  FileText,
-  Scan,
-  Layers,
-  Wrench,
-  Lightbulb,
-  MessageCircle,
-  BookOpen,
-  Home,
-  ExternalLink,
-  Power,
-  ShoppingCart,
-  Search,
-  type LucideIcon,
-} from 'lucide-react';
+import { Printer, Laptop, KeyRound, RotateCcw, ArrowLeft, ChevronRight, CheckCircle2, AlertTriangle, Wifi, AlertCircle, Palette, Scan, Layers, Wrench, Lightbulb, MessageCircle, BookOpen, Home, ExternalLink, ShoppingCart, Search, type LucideIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 
 /* ─────────────────────────────────────────────────────────────────────────
  * Decision-tree data model
@@ -307,7 +279,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If the printer still shows "jam" with no paper anywhere, the jam sensor may be stuck or dirty. Gently blow out the sensor with canned air — it\'s a small plastic flag or optical eye inside the paper path.',
     proHelp: 'A jam sensor that reads jam with no paper present is a repair-shop problem. On older printers, it\'s rarely worth repairing.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   fix_repeatJam: {
@@ -487,7 +459,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If Windows can\'t install the driver, download the full driver package from the manufacturer\'s website (hp.com, canon.com, epson.com, brother.com). Search for your model → "Downloads" → "Drivers."',
     proHelp: 'If your computer and printer are both on WiFi but can\'t find each other, the router\'s "AP Isolation" may be on. Log into the router and turn it off.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   fix_findMac: {
@@ -523,7 +495,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If USB still reports offline, update the printer driver. Uninstall the current one (Windows: Settings → Apps → find your printer brand → Uninstall) then reinstall from the manufacturer\'s site.',
     proHelp: 'If the USB cable is old (5+ years) and it\'s been bent at the connector, the wires inside may have broken. A new $8 cable may be the fastest fix.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   fix_offlineWifi: {
@@ -559,7 +531,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If the restart doesn\'t fix it, remove and re-add the printer. Remove first, then add — don\'t just install over the top.',
     proHelp: 'Offline that persists after full reset = driver issue. Reinstall the latest driver from the manufacturer.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   /* ── 9. Weird colours ───────────────────────────────────── */
@@ -591,7 +563,7 @@ const tree: Record<string, Node> = {
     ifFails: 'If the tint persists after calibration, replace all colour cartridges — one may be old or leaking. Original cartridges give far more consistent colour than refills or generics.',
     proHelp: 'If calibration won\'t run, your printer may not have a built-in colour sensor. Buy a replacement colour cartridge set instead.',
     buying: 'For photo-accurate colour, stick with genuine cartridges. Third-party brands save money for text documents but can shift colour by 10–20% on photos.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   fix_colorMode: {
@@ -609,7 +581,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If the printer only prints grayscale even with fresh colour cartridges and Color selected, the colour print head may be broken — see the "one colour missing" path.',
     proHelp: 'Some printers refuse to print colour when ANY cartridge is low — even if it\'s unrelated. Replace whichever cartridge is lowest and try again.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   fix_driverColor: {
@@ -627,7 +599,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If swapped colours survive a driver reinstall, try installing an older driver version from the manufacturer\'s archive. Some recent driver updates have colour bugs.',
     proHelp: 'If one cartridge was installed in the wrong slot, the printer will swap those colours. Open the printer and check each cartridge matches its label (C-M-Y-K).',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   /* ── 10. Error lights ───────────────────────────────────── */
@@ -658,7 +630,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If amber keeps blinking after all checks, the printer may need a firmware update. Install the manufacturer\'s software on your computer and run it with the printer connected — it will update automatically.',
     proHelp: 'Persistent amber without a clear cause means a hardware sensor is glitching. An older printer isn\'t usually worth the repair.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   fix_solidRed: {
@@ -696,7 +668,7 @@ const tree: Record<string, Node> = {
     ifFails: 'If blinking red persists after reset and firmware update, the printer may be reporting a component failure (print head, sensor, or fuser). Repair quotes for major components often exceed the price of a new printer.',
     proHelp: 'For business-grade printers (Brother MFC, HP OfficeJet Pro, etc.) repair is often worth it. For under-$200 home printers, replacing is usually cheaper.',
     replaceOrRepair: 'Under-$200 printer with a major error after 3+ years = replace. Business printer ($500+) with the same error = get a repair quote.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   /* ── 11. Out of ink ─────────────────────────────────────── */
@@ -749,7 +721,7 @@ const tree: Record<string, Node> = {
     ifFails: 'If duplex jams every time even with fresh paper, the duplex unit has worn rollers. Some printers let you swap the duplex module ($25–$50).',
     proHelp: 'On business-class printers, duplex is usually reliable. If yours jams constantly, the duplex was an add-on accessory and may not be well-matched.',
     replaceOrRepair: 'If duplex jams force you to baby every print, and the printer is 3+ years old, upgrade. Modern duplex units are much more reliable.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   fix_duplexBlank: {
@@ -767,7 +739,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If duplex is enabled but the back is still blank, the ink / toner for one side isn\'t reaching the paper — this is rare but points to an internal mechanical issue. See a pro.',
     proHelp: 'If duplex was ever working and just stopped, update the firmware. A recent update sometimes breaks the duplex function.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   fix_duplexOrientation: {
@@ -785,7 +757,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If the orientation stays wrong no matter what, the printer driver may be outdated. Reinstall the latest driver from the manufacturer.',
     proHelp: 'Some programs (especially older Office versions) override the printer driver. Print as PDF first, then print the PDF — that bypasses program quirks.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   fix_manualDuplex: {
@@ -803,7 +775,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If pages come out in the wrong order, your printer stacks face-up. Try flipping the stack in the OTHER direction — side-to-side instead of top-to-bottom.',
     proHelp: 'Print one test page first with "Print page 1." Note which side is up when it comes out. That tells you how to flip for the second pass.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   /* ── 13. Scanner ────────────────────────────────────────── */
@@ -834,7 +806,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If the scanner still doesn\'t appear, uninstall and reinstall the full printer software. Use the manufacturer\'s "removal tool" if they offer one — a normal uninstall often leaves scanner bits behind.',
     proHelp: 'On older macOS versions with newer printers (or vice versa), the scanner may not be supported. Check the manufacturer\'s "compatible OS versions" page.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 
   fix_scannerError: {
@@ -890,7 +862,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If scan-to-email refuses to work after correct app-password setup, your email provider may have blocked "less secure apps" — check your account security settings.',
     proHelp: 'Scan to Email is the flakiest printer feature. The reliable alternative is Scan to Folder (to a shared network folder) or use the HP Smart / Canon PRINT / Epson Smart Panel app on your phone — scan then send as an email from the app.',
-    guide: { label: 'Ask TekBrain', to: '/tekbrain' },
+    guide: { label: 'Ask a real person', to: '/get-help' },
   },
 };
 
@@ -924,12 +896,6 @@ export default function PrinterTroubleshooter() {
         {/* Header */}
         <div className="relative">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="printer-troubleshooter"
-              title="Printer Troubleshooter"
-              url="/tools/printer-troubleshooter"
-            />
           </div>
           <div className="flex items-center gap-3 mb-2 pr-14">
             <div className="rounded-xl bg-primary/10 p-2">
@@ -1131,7 +1097,7 @@ export default function PrinterTroubleshooter() {
               </Card>
             )}
 
-            {/* Related guide + Ask TekBrain fallback */}
+            {/* Related guide + ask-a-person fallback */}
             <div className="grid gap-3 sm:grid-cols-2 mb-4">
               {current.guide && (
                 <Button variant="outline" size="lg" asChild className="h-auto py-4 justify-start gap-3 text-left">
@@ -1146,11 +1112,11 @@ export default function PrinterTroubleshooter() {
                 </Button>
               )}
               <Button size="lg" asChild className="h-auto py-4 justify-start gap-3 text-left">
-                <Link to="/tekbrain">
+                <Link to="/get-help">
                   <MessageCircle className="h-5 w-5 shrink-0" aria-hidden="true" />
                   <span className="flex-1">
                     <span className="block text-sm opacity-80">Still stuck?</span>
-                    <span className="block font-semibold">Ask TekBrain</span>
+                    <span className="block font-semibold">Ask a real person</span>
                   </span>
                   <ChevronRight className="h-4 w-4 shrink-0" aria-hidden="true" />
                 </Link>

@@ -519,7 +519,7 @@ export default function AiLiteracyHub() {
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
                 <Button asChild size="lg" variant="secondary">
-                  <a href="/ai-tutor">
+                  <a href="/get-help">
                     <HeartHandshake className="w-4 h-4 mr-2" />
                     Try the AI Tutor
                   </a>

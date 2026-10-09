@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -709,12 +708,6 @@ export default function IpadForSeniors() {
         <div className="absolute inset-0 opacity-60 bg-[radial-gradient(ellipse_at_top_right,rgba(251,146,60,0.25),transparent_60%)]" />
         <div className="container relative py-10 md:py-14">
           <div className="absolute top-6 right-6">
-            <BookmarkButton
-              type="tool"
-              slug="ipad-for-seniors"
-              title="Your New iPad — Let's Get Comfortable"
-              url="/tools/ipad-for-seniors"
-            />
           </div>
           <div className="flex items-center gap-2 mb-4">
             <Tablet className="w-5 h-5 text-warn-foreground " />

@@ -24,7 +24,6 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
@@ -455,12 +454,6 @@ export default function PhoneBillDecoder() {
         <div className="absolute inset-0 opacity-60 bg-[radial-gradient(ellipse_at_top_right,rgba(45,212,191,0.35),transparent_60%)]" />
         <div className="container relative py-10 md:py-14">
           <div className="absolute top-6 right-6">
-            <BookmarkButton
-              type="tool"
-              slug="phone-bill-decoder"
-              title="Phone Bill Decoder"
-              url="/calculators/phone-bill"
-            />
           </div>
           <PageBreadcrumb
             segments={[

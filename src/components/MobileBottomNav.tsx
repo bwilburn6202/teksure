@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from 'react-router-dom';
-import { BookOpen, Wrench, Shield, MessageCircle, Phone } from 'lucide-react';
+import { BookOpen, Wrench, Shield, Phone } from 'lucide-react';
 
 /**
  * Persistent bottom navigation for mobile/tablet screens.
@@ -13,13 +13,9 @@ import { BookOpen, Wrench, Shield, MessageCircle, Phone } from 'lucide-react';
  * Hidden on admin / customer / tech routes so it doesn't cover dashboards.
  */
 const items = [
-  { to: '/learn', label: 'Learn', icon: BookOpen },
+  { to: '/guides', label: 'Guides', icon: BookOpen },
   { to: '/tools', label: 'Tools', icon: Wrench },
   { to: '/scam-defense', label: 'Safety', icon: Shield },
-  // One front door for the AI helper. /brain (the knowledge map) is a different
-  // page and stays reachable, but "Ask" must land where the homepage's
-  // "Ask TekBrain" button lands or the two names read as two products.
-  { to: '/tekbrain', label: 'Ask', icon: MessageCircle },
   { to: '/get-help', label: 'Help', icon: Phone },
 ] as const;
 

@@ -45,7 +45,6 @@ export function Footer() {
       title: 'Quick Help',
       links: [
         { to: '/start', label: 'Start Here' },
-        { to: '/tekbrain', label: 'Ask TekBrain' },
         { to: '/scam-defense', label: 'Scam Help' },
         { to: '/get-help', label: 'Book Help' },
         { to: '/tools', label: 'Find a Tool' },
@@ -56,10 +55,8 @@ export function Footer() {
     {
       title: 'For Families',
       links: [
-        { to: '/family-sharing', label: 'Family Sharing' },
         { to: '/caregiver-hub', label: 'Caregiver Resources' },
         { to: '/accessibility', label: 'Accessibility Hub' },
-        { to: '/stories', label: 'Stories' },
       ],
     },
     {
@@ -67,7 +64,6 @@ export function Footer() {
       links: [
         { to: '/about', label: 'About TekSure' },
         { to: '/technicians', label: 'Book a Technician' },
-        { to: '/volunteer', label: 'Volunteer' },
         { to: '/whats-new', label: "What's New" },
         { to: 'mailto:hello@teksure.com', label: 'hello@teksure.com', external: true },
       ],

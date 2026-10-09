@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -585,12 +584,6 @@ export default function AudioTutorialHub() {
         <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-indigo-100 via-indigo-50 to-white dark:from-indigo-950/40 dark:via-indigo-950/20 dark:to-background">
           <div className="container py-12 md:py-16 relative max-w-5xl">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="audio-tutorials"
-                title="Audio Tutorial Hub"
-                url="/tools/audio-tutorials"
-              />
             </div>
             <div className="flex items-center gap-3 mb-4">
               <div className="p-3 rounded-2xl bg-indigo-200 text-primary dark:bg-indigo-900/50 ">

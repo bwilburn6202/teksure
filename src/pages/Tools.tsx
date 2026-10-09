@@ -1,20 +1,6 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Search, Phone, Clock, Sparkles, ArrowRight, Brain, X,
-  KeyRound, Wifi, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages, CreditCard,
-  HelpCircle, Laptop, HardDrive, GraduationCap, Smartphone, ShieldCheck,
-  MailCheck, Eye, Lock, ShieldAlert, WifiOff, Activity,
-  Bluetooth, ClipboardCheck, ClipboardList, Trash2,
-  ShieldHalf, Sliders, KeySquare, Bell,
-  Flag, Package, Bot, BarChart2, Users, Heart, Gift, Smile, MapPin, Award,
-  FileSearch, FileText, Terminal, Shield, Receipt, Globe, Accessibility as AccessibilityIcon, Printer,
-  Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign,
-  Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake,
-  Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home,
-  Pill, Zap, MessageSquare, PawPrint, Plane, ShoppingCart, Scale, Moon, Footprints, Calendar, Notebook, Droplet, Sprout, Wrench, Wallet, PhoneOff, Tag, TrendingUp,
-  Volume2, CalendarCheck, Boxes, Wine, Trophy, Truck, Gem, Dumbbell, Bird, Crown, Scissors, Target, Dices,
-} from 'lucide-react';
+import { Search, Phone, Clock, Sparkles, ArrowRight, Brain, X, KeyRound, Wifi, HeartPulse, ArrowLeftRight, Type, Keyboard, Mail, AlertCircle, Languages, CreditCard, HelpCircle, Laptop, HardDrive, GraduationCap, Smartphone, ShieldCheck, MailCheck, Eye, Lock, ShieldAlert, WifiOff, Activity, Bluetooth, ClipboardCheck, ClipboardList, Trash2, ShieldHalf, Sliders, KeySquare, Bell, Flag, Package, Bot, BarChart2, Users, Heart, Gift, Smile, MapPin, Award, FileSearch, FileText, Terminal, Shield, Receipt, Globe, Accessibility as AccessibilityIcon, Printer, Router, Tv, Signal, Video, Image as ImageIcon, FileCheck, PiggyBank, DollarSign, Newspaper, ChefHat, Car, Landmark, Thermometer, BookOpen, Cake, Siren, HandHeart, Calculator, Inbox, Library, Gavel, Headphones, Mic, Home, Zap, MessageSquare, Plane, ShoppingCart, Scale, Calendar, Wallet, CalendarCheck, Truck, Dumbbell } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -70,24 +56,10 @@ export interface Tool {
 export const tools: Tool[] = [
   /* ── Flagship / AI tools ─────────────────── */
   {
-    title: 'TekBrain — Ask Anything',
-    description: 'Ask any tech question in plain English and get a clear, step-by-step answer — no jargon.',
-    icon: Brain,
-    path: '/tekbrain',
-    color: 'text-fuchsia-600',
-    bg: 'bg-fuchsia-50 dark:bg-fuchsia-950/30',
-    badge: 'AI',
-    category: 'Learning',
-    difficulty: 'Easy',
-    time: '2 min',
-    featured: true,
-    keywords: 'ai chatbot assistant help question answer',
-  },
-  {
     title: 'AI Tutor',
     description: 'Learn at your own pace with a friendly AI that adapts to your skill level.',
     icon: Bot,
-    path: '/ai-tutor',
+    path: '/get-help',
     color: 'text-cyan-500',
     bg: 'bg-cyan-50 dark:bg-cyan-950/30',
     badge: 'AI',
@@ -125,7 +97,7 @@ export const tools: Tool[] = [
     title: 'Tech Vocab Flashcards',
     description: 'Anki-style spaced-repetition flashcards for 100+ everyday tech words. Learn 10 a day, build a streak, and stop feeling lost when someone says "cache" or "VPN".',
     icon: Brain,
-    path: '/practice/vocab-flashcards',
+    path: '/glossary',
     color: 'text-violet-600',
     bg: 'bg-violet-50 dark:bg-violet-950/30',
     badge: 'New',
@@ -1201,7 +1173,7 @@ export const tools: Tool[] = [
     title: 'Tech Confidence Quiz',
     description: '25 honest questions across 5 areas of tech. Get your comfort tier (Brand New → Tech Wizard) and two personalized starting points. No judgment.',
     icon: Smile,
-    path: '/quizzes/tech-confidence',
+    path: '/quizzes/scam-iq',
     color: 'text-teal-600',
     bg: 'bg-teal-50 dark:bg-teal-950/30',
     badge: 'New',
@@ -1372,7 +1344,7 @@ export const tools: Tool[] = [
     title: 'Progress Report',
     description: 'Track your learning journey — guides completed, streak, and what\'s next.',
     icon: BarChart2,
-    path: '/progress-report',
+    path: '/guides',
     color: 'text-blue-500',
     bg: 'bg-blue-50 dark:bg-blue-950/30',
     badge: 'Progress',
@@ -1384,7 +1356,7 @@ export const tools: Tool[] = [
     title: 'Digital Skills Certificate',
     description: 'Earn a printable certificate as you complete guides.',
     icon: Award,
-    path: '/certificate',
+    path: '/guides',
     color: 'text-amber-600',
     bg: 'bg-amber-50 dark:bg-amber-950/30',
     badge: 'Achievement',
@@ -2355,7 +2327,7 @@ export const tools: Tool[] = [
     title: 'Family Tech Sharing',
     description: 'Share your TekSure access with up to 4 family members.',
     icon: Users,
-    path: '/family-sharing',
+    path: '/guides',
     color: 'text-indigo-500',
     bg: 'bg-indigo-50 dark:bg-indigo-950/30',
     badge: 'Family',
@@ -2379,7 +2351,7 @@ export const tools: Tool[] = [
     title: 'Caregiver Dashboard',
     description: 'Supporting a family member with tech? Book help on their behalf.',
     icon: Heart,
-    path: '/caregiver',
+    path: '/caregiver-hub',
     color: 'text-pink-500',
     bg: 'bg-pink-50 dark:bg-pink-950/30',
     badge: 'Caregivers',
@@ -2406,7 +2378,7 @@ export const tools: Tool[] = [
     title: 'Find Local Help',
     description: 'Discover libraries, community groups, and repair cafes near you.',
     icon: MapPin,
-    path: '/local-help',
+    path: '/tech-help-near-me',
     color: 'text-green-600',
     bg: 'bg-green-50 dark:bg-green-950/30',
     badge: 'Community',
@@ -2418,7 +2390,7 @@ export const tools: Tool[] = [
     title: 'Tech Gift Guide',
     description: 'Curated picks for seniors, parents, and children with no jargon.',
     icon: Gift,
-    path: '/gift-guide',
+    path: '/guides',
     color: 'text-rose-500',
     bg: 'bg-rose-50 dark:bg-rose-950/30',
     badge: 'Shopping',
@@ -2430,7 +2402,7 @@ export const tools: Tool[] = [
     title: 'Dealing with Tech Anxiety',
     description: 'Practical coping strategies for anyone who finds technology stressful.',
     icon: Smile,
-    path: '/tech-anxiety',
+    path: '/get-help',
     color: 'text-teal-500',
     bg: 'bg-teal-50 dark:bg-teal-950/30',
     badge: 'Wellbeing',
@@ -2442,7 +2414,7 @@ export const tools: Tool[] = [
     title: 'Push Notifications',
     description: 'Get weekly tech tips, scam alerts, and new guide announcements.',
     icon: Bell,
-    path: '/notifications',
+    path: '/guides',
     color: 'text-amber-500',
     bg: 'bg-amber-50 dark:bg-amber-950/30',
     badge: 'Setup',
@@ -2640,7 +2612,7 @@ export const tools: Tool[] = [
     title: 'Ask TekSure — Community Q&A',
     description: 'Got a tech question? A real person will answer, and everyone can learn from the thread. Browse answered questions or ask your own.',
     icon: Users,
-    path: '/community/ask',
+    path: '/get-help',
     color: 'text-teal-600',
     bg: 'bg-teal-50 dark:bg-teal-950/30',
     badge: 'New',
@@ -2876,7 +2848,7 @@ export default function Tools() {
 
               <p className="mt-6 text-base text-muted-foreground">
                 Looking for something specific?{' '}
-                <Link to="/tools/all" className="text-primary font-medium underline underline-offset-2">
+                <Link to="/tools" className="text-primary font-medium underline underline-offset-2">
                   Browse the full A-to-Z list of every tool
                 </Link>
               </p>
@@ -2970,7 +2942,7 @@ export default function Tools() {
                 <p className="text-4xl mb-3" aria-hidden="true"></p>
                 <p className="text-lg font-semibold mb-1">No tools match that search</p>
                 <p className="text-base text-muted-foreground mb-6 max-w-sm mx-auto">
-                  Try a different word, pick another category, or ask TekBrain in plain English.
+                  Try a different word, pick another category, or ask a real person for help.
                 </p>
                 <div className="flex gap-2 justify-center flex-wrap">
                   <Button
@@ -2981,9 +2953,9 @@ export default function Tools() {
                     Reset filters
                   </Button>
                   <Button asChild className="min-h-11 gap-2">
-                    <Link to="/tekbrain">
-                      <Brain className="h-4 w-4" aria-hidden="true" />
-                      Ask TekBrain
+                    <Link to="/get-help">
+                      <Phone className="h-4 w-4" aria-hidden="true" />
+                      Ask a real person
                     </Link>
                   </Button>
                 </div>
@@ -3020,7 +2992,7 @@ export default function Tools() {
             )}
           </section>
 
-          {/* ── Ask TekBrain CTA ─────────────────────── */}
+          {/* ── Ask-for-help CTA ─────────────────────── */}
           <div className="mt-20 relative overflow-hidden rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/[0.06] via-fuchsia-500/[0.04] to-primary/[0.06] p-8 md:p-12">
             <div className="relative max-w-2xl mx-auto text-center">
               <div className="h-14 w-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5">
@@ -3030,15 +3002,9 @@ export default function Tools() {
                 Can't find what you need?
               </h2>
               <p className="text-muted-foreground text-lg mb-7 max-w-xl mx-auto">
-                Describe your tech problem in plain English and TekBrain will point you to the right tool, guide, or fix.
+                Describe your tech problem in plain English and a real person will point you to the right tool, guide, or fix.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Button asChild size="lg" className="min-h-12 text-base gap-2 rounded-xl shadow-sm shadow-primary/20">
-                  <Link to="/tekbrain">
-                    Ask TekBrain
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                  </Link>
-                </Button>
                 <Button asChild size="lg" variant="outline" className="min-h-12 text-base gap-2 rounded-xl">
                   <Link to="/get-help">
                     <Phone className="h-4 w-4" aria-hidden="true" />

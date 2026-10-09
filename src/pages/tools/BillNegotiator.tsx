@@ -28,7 +28,6 @@ import { useToast } from '@/hooks/use-toast';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 
 /* ── Types ─────────────────────────────────────────── */
 type BillType = 'cable' | 'internet' | 'phone' | 'cell' | 'streaming';
@@ -368,12 +367,6 @@ export default function BillNegotiator() {
       <main className="container py-10 min-h-[80vh] max-w-3xl mx-auto text-lg">
         <div className="relative no-print">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="bill-negotiator"
-              title="Bill Negotiator"
-              url="/tools/bill-negotiator"
-            />
           </div>
           <div className="flex items-center gap-3 mb-2 pr-14">
             <PhoneCall className="h-8 w-8 text-primary" aria-hidden="true" />

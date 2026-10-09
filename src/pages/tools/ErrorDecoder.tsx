@@ -747,11 +747,11 @@ export default function ErrorDecoder() {
                   <li className="flex gap-3">
                     <MessageCircleQuestion className="h-4 w-4 mt-0.5 text-foreground/60" />
                     <span>
-                      Paste it into{' '}
-                      <Link to="/tekbrain" className="text-primary hover:underline">
-                        TekBrain
+                      Send it to{' '}
+                      <Link to="/get-help" className="text-primary hover:underline">
+                        a real person
                       </Link>{' '}
-                      — our AI assistant can help with unusual errors.
+                      — we can help with unusual errors.
                     </span>
                   </li>
                   <li className="flex gap-3">

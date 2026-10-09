@@ -13,7 +13,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -348,12 +347,6 @@ export default function PasswordPractice() {
           />
           <div className="container relative py-12 md:py-16 text-white">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="password-practice"
-                title="Password Practice"
-                url="/practice/password-practice"
-              />
             </div>
             <div className="flex items-center gap-3 mb-4">
               <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/20">

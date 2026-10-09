@@ -6,7 +6,6 @@ import { Progress } from '@/components/ui/progress';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Link } from 'react-router-dom';
 
 /* ── Types ───────────────────────────────── */
@@ -227,12 +226,6 @@ export default function TechComfortQuiz() {
         {/* Header */}
         <div className="relative">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="tech-comfort-quiz"
-              title="Tech Comfort Assessment"
-              url="/tools/tech-comfort-quiz"
-            />
           </div>
           <div className="flex items-center gap-3 mb-2 pr-14">
             <ClipboardCheck className="h-8 w-8 text-primary" />

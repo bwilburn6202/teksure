@@ -271,7 +271,7 @@ function EmptyResults({ query, onSuggest }: { query: string; onSuggest: (term: s
         No results for "{query}"
       </h2>
       <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-        Don't worry — there's still help available. Ask TekBrain for a plain-English answer,
+        Don't worry — there's still help available. Ask a real person for help,
         or suggest a guide we should write.
       </p>
 
@@ -281,9 +281,9 @@ function EmptyResults({ query, onSuggest }: { query: string; onSuggest: (term: s
           size="lg"
           className="min-h-[48px] text-base font-semibold rounded-xl"
         >
-          <Link to={`/tekbrain/chat?q=${encodeURIComponent(query)}`}>
+          <Link to={`/get-help?q=${encodeURIComponent(query)}`}>
             <Brain className="h-5 w-5 mr-2" aria-hidden="true" />
-            Ask TekBrain about "{query}"
+            Ask a real person about "{query}"
           </Link>
         </Button>
         <Button
@@ -292,7 +292,7 @@ function EmptyResults({ query, onSuggest }: { query: string; onSuggest: (term: s
           size="lg"
           className="min-h-[48px] text-base font-semibold rounded-xl border-2"
         >
-          <Link to="/find-a-guide">
+          <Link to="/guides">
             <Lightbulb className="h-5 w-5 mr-2" aria-hidden="true" />
             Suggest a guide
           </Link>
@@ -650,16 +650,16 @@ const SearchResults = () => {
                   Didn't find what you needed?
                 </p>
                 <p className="text-base text-muted-foreground mb-4">
-                  Ask TekBrain for a personalized answer — it reads every guide and tool on the site.
+                  Tell us what's wrong and a real person will help you sort it out.
                 </p>
                 <Button
                   asChild
                   size="lg"
                   className="min-h-[48px] text-base font-semibold rounded-xl"
                 >
-                  <Link to={`/tekbrain/chat?q=${encodeURIComponent(urlQuery)}`}>
+                  <Link to={`/get-help?q=${encodeURIComponent(urlQuery)}`}>
                     <Brain className="h-5 w-5 mr-2" aria-hidden="true" />
-                    Ask TekBrain about "{urlQuery}"
+                    Ask a real person about "{urlQuery}"
                   </Link>
                 </Button>
               </div>

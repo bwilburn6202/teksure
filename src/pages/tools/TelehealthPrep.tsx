@@ -6,12 +6,8 @@ import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { Checkbox } from '@/components/ui/checkbox';
-import {
-  Video, ChevronRight, Printer, type LucideIcon,
-  Wifi, Pill, Camera, FileText, Clock, Smartphone,
-} from 'lucide-react';
+import { Video, Printer, type LucideIcon, Wifi, Pill, FileText, Clock } from 'lucide-react';
 
 interface Item {
   id: string;
@@ -214,7 +210,7 @@ export default function TelehealthPrep() {
                 <p className="font-medium text-base">Medicare Plan Chooser</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Pick the right plan.</p>
               </Link>
-              <Link to="/caregiver" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/caregiver-hub" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Caregiver Hub</p>
                 <p className="text-sm text-muted-foreground mt-0.5">More health-tech help.</p>
               </Link>

@@ -1,7 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, LayoutList, LayoutGrid, Wifi, CreditCard, Tv, MessageSquare, ArrowRightLeft, Globe, Landmark, EyeOff, Building2, ShoppingCart, Cpu, Wrench, Briefcase, Shield, KeyRound, Video, PiggyBank, Home, GraduationCap, Star, Flame, ArrowRight, ArrowLeft, TrendingUp, Brain, MessageCircle, Compass, type LucideIcon } from 'lucide-react';
-import { Input } from '@/components/ui/input';
+import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, Wifi, CreditCard, Tv, MessageSquare, ArrowRightLeft, Landmark, EyeOff, Building2, ShoppingCart, Cpu, Wrench, Briefcase, Shield, KeyRound, Video, PiggyBank, Home, GraduationCap, Star, Flame, ArrowRight, ArrowLeft, TrendingUp, Brain, MessageCircle, Compass, type LucideIcon } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
@@ -751,7 +750,7 @@ const Guides = () => {
       )}
 
       {/* ══════════════════════════════════════════
-            BOTTOM CTA — Ask TekBrain
+            BOTTOM CTA — ask a real person
          ══════════════════════════════════════════ */}
       <section className="container py-16 md:py-20">
         <div className="relative overflow-hidden rounded-3xl border-2 border-border bg-gradient-to-br from-amber-100 via-orange-50 to-rose-100 dark:from-amber-950/40 dark:via-orange-950/30 dark:to-rose-950/40 p-8 md:p-12 text-center">
@@ -771,15 +770,10 @@ const Guides = () => {
               Can't find what you need?
             </h2>
             <p className="text-lg md:text-xl text-foreground/80 max-w-xl mx-auto mb-8 leading-relaxed">
-              Ask TekBrain — our friendly AI helper walks you through any tech problem, step by step, in plain language.
+              Tell us what's wrong and a real person will walk you through it, step by step, in plain language.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Button asChild size="lg" className="h-14 text-lg px-8 rounded-2xl gap-2 shadow-md">
-                <Link to="/tekbrain">
-                  <Brain className="h-5 w-5" /> Ask TekBrain <ArrowRight className="h-5 w-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="h-14 text-lg px-8 rounded-2xl gap-2 border-2">
                 <Link to="/get-help">
                   <MessageCircle className="h-5 w-5" /> Talk to a person
                 </Link>

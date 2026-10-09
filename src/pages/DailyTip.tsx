@@ -109,11 +109,11 @@ export default function DailyTip() {
           <div className="mt-10 pt-8 border-t border-border">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">More like this</p>
             <div className="grid sm:grid-cols-3 gap-3">
-              <Link to="/weekly-tips" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/quick-fixes" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">All weekly tips</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Five fresh tips every week.</p>
               </Link>
-              <Link to="/tips" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/quick-fixes" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Quick tips library</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Browse by topic.</p>
               </Link>

@@ -192,7 +192,6 @@ export const toolRegistry: Record<string, LazyExoticComponent<ComponentType>> = 
   'libby-app-for-seniors': lazy(() => import('@/pages/tools/LibbyAppForSeniors')),
   'library-power-pack': lazy(() => import('@/pages/tools/LibraryPowerPack')),
   'library-tech-helper': lazy(() => import('@/pages/tools/LibraryTechHelper')),
-  'llm-knowledge-base': lazy(() => import('@/pages/LlmKnowledgeBase')),
   'local-library-finder': lazy(() => import('@/pages/tools/LocalLibraryFinder')),
   'lost-wallet-checklist': lazy(() => import('@/pages/tools/LostWalletChecklist')),
   'low-cost-internet': lazy(() => import('@/pages/tools/LowCostInternet')),

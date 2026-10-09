@@ -1,24 +1,8 @@
 import { useState, useMemo, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Search,
-  HelpCircle,
-  Info,
-  MousePointerClick,
-  Brain as BrainIcon,
-  Shield,
-  Users,
-  HeartHandshake,
-  Wrench,
-  ArrowRight,
-} from 'lucide-react';
+import { Search, HelpCircle, Info, MousePointerClick, Shield, Users, HeartHandshake, Wrench } from 'lucide-react';
 import { Input } from '@/components/ui/input';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -78,7 +62,7 @@ const categories: FAQCategory[] = [
             seniors, caregivers, busy parents, non-native English speakers,
             first-time device owners, and anyone who prefers plain language
             over jargon. We have special hubs for{' '}
-            <Link to="/senior-tech-path" className="text-primary hover:underline">seniors</Link>,{' '}
+            <Link to="/guides" className="text-primary hover:underline">seniors</Link>,{' '}
             <Link to="/caregiver-hub" className="text-primary hover:underline">caregivers</Link>,
             and{' '}
             <Link to="/kids-online-safety" className="text-primary hover:underline">families</Link>.
@@ -101,14 +85,15 @@ const categories: FAQCategory[] = [
       {
         q: 'Is TekSure really free?',
         plain:
-          'Yes. All of our guides, tools, scam alerts, and the TekBrain AI assistant are free to use. You only pay if you choose to book a one-on-one session with a real technician — and even that is transparently priced up front.',
+          'Yes. All of our guides, tools, and scam alerts are free to use. You only pay if you choose to book a one-on-one session with a real technician — and even that is transparently priced up front.',
         a: (
           <>
             Yes. All of our{' '}
             <Link to="/guides" className="text-primary hover:underline">guides</Link>,{' '}
             <Link to="/tools" className="text-primary hover:underline">tools</Link>,{' '}
-            <Link to="/safety/scam-alerts" className="text-primary hover:underline">scam alerts</Link>,
-            and the TekBrain AI assistant are free to use. You only pay if you
+            and{' '}
+            <Link to="/safety/scam-alerts" className="text-primary hover:underline">scam alerts</Link>{' '}
+            are free to use. You only pay if you
             choose to book a one-on-one session with a real technician &mdash;
             and even that is transparently priced up front.
           </>
@@ -152,30 +137,14 @@ const categories: FAQCategory[] = [
       {
         q: 'Do I need an account?',
         plain:
-          'No. You can read every guide, use every tool, and ask TekBrain questions without signing up. An account only unlocks extras like saved guides, progress tracking, and booking real-human help.',
+          'No. You can read every guide and use every tool without signing up. You only need an account to book real-human help and follow your requests.',
         a: (
           <>
-            No. You can read every guide, use every tool, and ask TekBrain
-            questions without signing up. An account only unlocks extras like{' '}
-            <Link to="/favorites" className="text-primary hover:underline">saved guides</Link>,
-            progress tracking, and booking real-human help. You can{' '}
+            No. You can read every guide and use every tool without signing up.
+            You only need an account to book real-human help and follow your
+            requests. You can{' '}
             <Link to="/signup" className="text-primary hover:underline">create a free account</Link>{' '}
             in under a minute.
-          </>
-        ),
-      },
-      {
-        q: 'How do I save a guide for later?',
-        plain:
-          'Open any guide and tap the heart icon at the top. Saved guides live on your Favorites page, where you can search through them, sort them, and pick up right where you left off.',
-        a: (
-          <>
-            Open any guide and tap the heart icon at the top. Saved guides live
-            on your{' '}
-            <Link to="/favorites" className="text-primary hover:underline">Favorites page</Link>,
-            where you can search through them, sort them, and pick up right
-            where you left off. You do need a free account to save guides
-            across devices.
           </>
         ),
       },
@@ -189,7 +158,7 @@ const categories: FAQCategory[] = [
             menus, buttons, and ads so the paper version is clean and
             clutter-free &mdash; great for sticking on the fridge or next to the
             computer. Our{' '}
-            <Link to="/quick-reference-cards" className="text-primary hover:underline">Quick Reference Cards</Link>{' '}
+            <Link to="/reference-cards" className="text-primary hover:underline">Quick Reference Cards</Link>{' '}
             are designed to be printed and kept handy.
           </>
         ),
@@ -247,100 +216,6 @@ const categories: FAQCategory[] = [
             Yes. TekSure is built mobile-first, so every guide, tool, and page
             works on phones and tablets as well as on a computer. Large tap
             targets, big text, and swipe-friendly navigation throughout.
-          </>
-        ),
-      },
-    ],
-  },
-  {
-    id: 'tekbrain',
-    title: 'TekBrain AI',
-    blurb: 'Our friendly AI helper — what it is and how to use it.',
-    icon: BrainIcon,
-    items: [
-      {
-        q: 'What is TekBrain?',
-        plain:
-          'TekBrain is our free AI helper trained on plain-English tech answers. Ask it a question in normal language — “why is my printer offline?” — and it walks you through a fix step by step.',
-        a: (
-          <>
-            TekBrain is our free AI helper trained on plain-English tech
-            answers. Ask it a question in normal language &mdash; &ldquo;why
-            is my printer offline?&rdquo; &mdash; and it walks you through a
-            fix step by step.{' '}
-            <Link to="/tekbrain" className="text-primary hover:underline">Try TekBrain here</Link>.
-          </>
-        ),
-      },
-      {
-        q: 'Is TekBrain safe? Will it share my questions?',
-        plain:
-          'Your questions are never sold, shared with advertisers, or tied to your identity. We briefly store conversations to improve the service and detect abuse, and we explain exactly what happens in our Privacy page.',
-        a: (
-          <>
-            Your questions are never sold, shared with advertisers, or tied to
-            your identity. We briefly store conversations to improve the
-            service and detect abuse, and we explain exactly what happens in
-            our{' '}
-            <Link to="/privacy" className="text-primary hover:underline">Privacy page</Link>.
-            Don&rsquo;t paste passwords, credit card numbers, or Social
-            Security numbers into any chatbot &mdash; including ours.
-          </>
-        ),
-      },
-      {
-        q: 'Can I trust what TekBrain says?',
-        plain:
-          'TekBrain is accurate for the vast majority of common tech questions, but like any AI it can occasionally be wrong or out of date. For safety-critical things — like scams or banking — double-check with an official source, or ask a real technician.',
-        a: (
-          <>
-            TekBrain is accurate for the vast majority of common tech
-            questions, but like any AI it can occasionally be wrong or out of
-            date. For safety-critical things &mdash; like scams or banking
-            &mdash; double-check with an official source, or{' '}
-            <Link to="/get-help" className="text-primary hover:underline">book a real technician</Link>.
-          </>
-        ),
-      },
-      {
-        q: 'Why can’t TekBrain answer every question?',
-        plain:
-          'TekBrain sticks to consumer tech topics. It will gently steer away from medical, legal, or financial advice, and it does not have access to your personal accounts. For those, talk to a qualified human.',
-        a: (
-          <>
-            TekBrain sticks to consumer tech topics. It will gently steer away
-            from medical, legal, or financial advice, and it does not have
-            access to your personal accounts. For those, talk to a qualified
-            human &mdash; or, for tech issues, our{' '}
-            <Link to="/get-help" className="text-primary hover:underline">real-human technicians</Link>.
-          </>
-        ),
-      },
-      {
-        q: 'Can I talk to TekBrain with my voice?',
-        plain:
-          'Yes. On most phones and computers you can tap the microphone icon on your keyboard to dictate instead of typing. TekBrain reads everything aloud too — turn on your device’s read-aloud feature.',
-        a: (
-          <>
-            Yes. On most phones and computers you can tap the microphone icon
-            on your keyboard to dictate instead of typing. TekBrain reads
-            everything aloud too &mdash; turn on your device&rsquo;s
-            read-aloud feature (see our{' '}
-            <Link to="/accessibility" className="text-primary hover:underline">Accessibility Hub</Link>).
-          </>
-        ),
-      },
-      {
-        q: 'What if TekBrain gets something wrong?',
-        plain:
-          'Every answer has a thumbs-up / thumbs-down button. Tap thumbs-down and tell us what went wrong — a real person reads every piece of feedback, and it helps us make the tool smarter.',
-        a: (
-          <>
-            Every answer has a thumbs-up / thumbs-down button. Tap thumbs-down
-            and tell us what went wrong &mdash; a real person reads every
-            piece of feedback, and it helps us make the tool smarter. If you
-            need a human right away, you can always{' '}
-            <Link to="/get-help" className="text-primary hover:underline">book a technician</Link>.
           </>
         ),
       },
@@ -481,8 +356,7 @@ const categories: FAQCategory[] = [
             Most sessions happen by video call and last 20&ndash;45 minutes.
             The technician introduces themselves, asks a few questions, and
             walks you through the fix. You never have to hand over passwords
-            &mdash; ever. Read real stories on our{' '}
-            <Link to="/success-stories" className="text-primary hover:underline">Success Stories page</Link>.
+            &mdash; ever.
           </>
         ),
       },
@@ -498,7 +372,7 @@ const categories: FAQCategory[] = [
             and if we cannot fix your problem you pay nothing. No
             subscriptions, no hidden fees. Prefer local, in-person
             help? Try{' '}
-            <Link to="/local-help" className="text-primary hover:underline">Local Help</Link>.
+            <Link to="/tech-help-near-me" className="text-primary hover:underline">tech help near you</Link>.
           </>
         ),
       },
@@ -549,33 +423,6 @@ const categories: FAQCategory[] = [
             <Link to="/caregiver-hub" className="text-primary hover:underline">Caregiver Hub</Link>{' '}
             for how-tos on setting up devices, filtering scam calls, and
             simplifying a loved one&rsquo;s phone or computer.
-          </>
-        ),
-      },
-      {
-        q: 'Is there a family plan?',
-        plain:
-          'Yes. Family Sharing lets you save favorites, progress, and devices for up to 6 household members under one free account.',
-        a: (
-          <>
-            Yes.{' '}
-            <Link to="/family-sharing" className="text-primary hover:underline">Family Sharing</Link>{' '}
-            lets you save favorites, progress, and devices for up to 6
-            household members under one free account.
-          </>
-        ),
-      },
-      {
-        q: 'Can I track my parent’s progress?',
-        plain:
-          'With their permission, yes. The Progress Report page shows which guides they have finished, which tools they have used, and where they might still be stuck — so you can offer help before frustration sets in.',
-        a: (
-          <>
-            With their permission, yes. The{' '}
-            <Link to="/progress-report" className="text-primary hover:underline">Progress Report page</Link>{' '}
-            shows which guides they have finished, which tools they have used,
-            and where they might still be stuck &mdash; so you can offer help
-            before frustration sets in.
           </>
         ),
       },
@@ -637,7 +484,7 @@ const categories: FAQCategory[] = [
       {
         q: 'Why is the site slow?',
         plain:
-          'Usually it is a slow internet connection, not TekSure. Run our free Wi-Fi Speed test to check. If the site itself is slow for everyone, we post updates on the Changelog page.',
+          'Usually it is a slow internet connection, not TekSure. Run our free Wi-Fi Speed test to check. If the site itself is slow for everyone, we post updates on the What’s New page.',
         a: (
           <>
             Usually it is a slow internet connection, not TekSure. Run our
@@ -645,7 +492,7 @@ const categories: FAQCategory[] = [
             <Link to="/tools/wifi-speed" className="text-primary hover:underline">Wi-Fi Speed test</Link>{' '}
             to check. If the site itself is slow for everyone, we post updates
             on the{' '}
-            <Link to="/changelog" className="text-primary hover:underline">Changelog page</Link>.
+            <Link to="/whats-new" className="text-primary hover:underline">What&rsquo;s New page</Link>.
           </>
         ),
       },
@@ -667,13 +514,12 @@ const categories: FAQCategory[] = [
       {
         q: 'Can I use TekSure offline?',
         plain:
-          'Partly. Guides you have already visited stay readable offline, and an offline banner tells you when you have lost connection. TekBrain and booking a technician both need an active internet connection.',
+          'Partly. Guides you have already visited stay readable offline, and an offline banner tells you when you have lost connection. Booking a technician needs an active internet connection.',
         a: (
           <>
             Partly. Guides you have already visited stay readable offline, and
             an offline banner tells you when you have lost connection.
-            TekBrain and booking a technician both need an active internet
-            connection.
+            Booking a technician needs an active internet connection.
           </>
         ),
       },
@@ -728,7 +574,7 @@ const FAQ = () => {
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead
         title="Frequently Asked Questions — Plain-English Answers | TekSure"
-        description={`Everything you want to know about TekSure, in plain English. ${totalAll}+ answers on our free guides, TekBrain AI, privacy, real-human help, and more.`}
+        description={`Everything you want to know about TekSure, in plain English. ${totalAll}+ answers on our free guides, privacy, real-human help, and more.`}
         path="/faq"
         jsonLd={faqJsonLd}
       />
@@ -809,14 +655,14 @@ const FAQ = () => {
                 <p className="text-5xl mb-4" aria-hidden="true"></p>
                 <p className="text-xl font-semibold mb-2">No answers found</p>
                 <p className="text-muted-foreground text-base">
-                  Try a different search term, or ask{' '}
+                  Try a different search term, or{' '}
                   <Link
-                    to="/tekbrain"
+                    to="/get-help"
                     className="text-primary hover:underline font-medium"
                   >
-                    TekBrain
-                  </Link>{' '}
-                  directly.
+                    ask a real person
+                  </Link>
+                  .
                 </p>
               </div>
             ) : (
@@ -878,20 +724,10 @@ const FAQ = () => {
               Still stuck? We&rsquo;ve got you.
             </h2>
             <p className="text-background/70 text-lg mb-8 max-w-md mx-auto leading-relaxed">
-              Ask our free AI helper, or talk to a real human. Either way,
-              you&rsquo;ll have an answer in minutes.
+              Tell us what&rsquo;s wrong and a real person will help you
+              sort it out.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              <Button
-                asChild
-                size="lg"
-                className="gap-2 rounded-xl h-12 px-6 bg-background text-foreground hover:bg-background/90"
-              >
-                <Link to="/tekbrain">
-                  Ask TekBrain
-                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-              </Button>
               <Button
                 asChild
                 variant="outline"

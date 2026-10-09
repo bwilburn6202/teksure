@@ -27,7 +27,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -443,12 +442,6 @@ export default function Turning65() {
         <section className="border-b border-border bg-gradient-to-br from-amber-100 via-orange-50 to-rose-100 dark:from-amber-950/50 dark:via-orange-950/30 dark:to-rose-950/40 print:bg-card print:border-none">
           <div className="container py-10 md:py-14 relative">
             <div className="absolute top-6 right-6 print:hidden">
-              <BookmarkButton
-                type="tool"
-                slug="turning-65"
-                title="Turning 65 — Your Tech + Benefits Checklist"
-                url="/checklists/turning-65"
-              />
             </div>
             <div className="flex items-center gap-3 mb-4">
               <div className="p-3 rounded-xl bg-amber-500/15 text-warn-foreground ">

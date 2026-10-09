@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -645,12 +644,6 @@ export default function GovernmentBenefitsPortal() {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900" aria-hidden="true" />
           <div className="container relative py-12 md:py-16 text-white">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="government-benefits-portal"
-                title="Government Portals — What's Real, What's Free"
-                url="/tools/government-benefits-portal"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <div className="p-2 rounded-lg bg-white/10">

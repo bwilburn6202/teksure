@@ -27,7 +27,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -600,12 +599,6 @@ export default function InternetPlanCalculator() {
                   see the cheapest tier that matches your real household usage.
                 </p>
               </div>
-              <BookmarkButton
-                type="tool"
-                slug="internet-plan-calculator"
-                title="Internet Plan Calculator"
-                url="/calculators/internet-plan"
-              />
             </div>
           </div>
         </section>

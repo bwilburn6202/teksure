@@ -9,7 +9,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -371,12 +370,6 @@ export default function SubscriptionCostAggregator() {
                 </div>
                 <Badge variant="secondary" className="bg-white/80 dark:bg-black/30">Free Calculator</Badge>
               </div>
-              <BookmarkButton
-                type="tool"
-                slug="subscription-cost-aggregator"
-                title="Subscription Cost Aggregator"
-                url="/calculators/subscriptions"
-              />
             </div>
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-3 text-amber-950 dark:text-amber-100">
               What Are You Actually Paying For?

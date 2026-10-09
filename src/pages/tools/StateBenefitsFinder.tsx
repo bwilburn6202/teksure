@@ -1,56 +1,15 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  MapPin,
-  Printer,
-  CheckCircle2,
-  ShieldAlert,
-  Heart,
-  HelpCircle,
-  Home,
-  Pill,
-  Flame,
-  Utensils,
-  Bus,
-  Users,
-  Scale,
-  HeartPulse,
-  FileText,
-  Flag,
-  TreePine,
-  Fish,
-  Landmark,
-  ExternalLink,
-  AlertTriangle,
-  Sparkles,
-  DollarSign,
-  PhoneCall,
-  BookOpenCheck,
-  ArrowRight,
-  Building2,
-  type LucideIcon,
-} from 'lucide-react';
+import { MapPin, Printer, ShieldAlert, Heart, HelpCircle, Home, Pill, Flame, Utensils, Bus, Users, Scale, HeartPulse, FileText, Flag, TreePine, Fish, Landmark, ExternalLink, AlertTriangle, Sparkles, DollarSign, PhoneCall, BookOpenCheck, ArrowRight, Building2, type LucideIcon } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 /* ──────────────────────────────────────────────────────────────
@@ -1205,12 +1164,6 @@ export default function StateBenefitsFinder() {
           />
           <div className="container relative py-12 md:py-16 text-white">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="state-benefits-finder"
-                title="State Benefits Finder"
-                url="/tools/state-benefits-finder"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <div className="p-2 rounded-lg bg-white/10">

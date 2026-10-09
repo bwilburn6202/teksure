@@ -6,13 +6,8 @@ import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { Checkbox } from '@/components/ui/checkbox';
-import {
-  HeartPulse, ChevronRight, Pill, Phone, Calendar, Video,
-  Car, MessageCircle, Apple, Printer,
-  type LucideIcon,
-} from 'lucide-react';
+import { HeartPulse, ChevronRight, Pill, Phone, Calendar, Video, Car, MessageCircle, Apple, Printer, type LucideIcon } from 'lucide-react';
 
 interface KitStep {
   id: string;
@@ -317,7 +312,7 @@ export default function HospitalDischargeKit() {
                 <p className="font-medium text-base">Fall Detection Setup</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Higher fall risk after a hospital stay.</p>
               </Link>
-              <Link to="/caregiver" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/caregiver-hub" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Caregiver Hub</p>
                 <p className="text-sm text-muted-foreground mt-0.5">More for the person helping recovery.</p>
               </Link>

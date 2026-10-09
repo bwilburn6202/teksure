@@ -3,44 +3,14 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
-import {
-  Eye,
-  Volume2,
-  Headphones,
-  Ear,
-  Settings,
-  Smartphone,
-  Laptop,
-  Tablet,
-  Monitor,
-  Tv,
-  ArrowRight,
-  CheckCircle2,
-  Info,
-  ShieldCheck,
-  HeartHandshake,
-  Sparkles,
-  BookOpen,
-  HelpCircle,
-  ExternalLink,
-  Lightbulb,
-  AlertTriangle,
-  Globe,
-  Keyboard,
-} from 'lucide-react';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { Eye, Volume2, Headphones, Ear, Settings, Smartphone, Laptop, Tablet, Monitor, Tv, ArrowRight, CheckCircle2, Info, ShieldCheck, HeartHandshake, Sparkles, BookOpen, HelpCircle, ExternalLink, Lightbulb, AlertTriangle, Globe, Keyboard } from 'lucide-react';
 
 /* ──────────────────────────────────────────────────────────────────────────
  * Screen Reader Starter
@@ -546,12 +516,6 @@ const ScreenReaderStarter = () => {
             <PageBreadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Screen Reader Starter' }]} />
             <div className="relative pt-6">
               <div className="absolute top-0 right-0">
-                <BookmarkButton
-                  type="tool"
-                  slug="screen-reader-starter"
-                  title="Screen Reader Starter"
-                  url="/tools/screen-reader-starter"
-                />
               </div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="p-3 rounded-2xl bg-violet-200 text-primary dark:bg-violet-900/40 ">

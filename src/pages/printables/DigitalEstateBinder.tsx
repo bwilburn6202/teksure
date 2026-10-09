@@ -29,7 +29,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -830,12 +829,6 @@ export default function DigitalEstateBinder() {
                   Make It Easy for Your Family
                 </span>
               </h1>
-              <BookmarkButton
-                type="tool"
-                slug="digital-estate-binder"
-                title="Digital Estate Binder"
-                url="/printables/digital-estate-binder"
-              />
             </div>
             <p className="mt-4 text-xl md:text-2xl text-muted-foreground max-w-3xl leading-snug">
               One binder. Every account, every password hint, every wish.

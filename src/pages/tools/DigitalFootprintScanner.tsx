@@ -2,7 +2,6 @@ import { useState, useMemo } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -295,12 +294,6 @@ export default function DigitalFootprintScanner() {
         <section className="border-b border-border bg-muted/30">
           <div className="container py-10 md:py-14 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="digital-footprint-scanner"
-                title="Digital Footprint Scanner"
-                url="/tools/digital-footprint-scanner"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <Fingerprint className="w-5 h-5 text-primary" />

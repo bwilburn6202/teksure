@@ -1,37 +1,17 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Printer,
-  Phone as PhoneIcon,
-  Smartphone,
-  Tv,
-  Speaker,
-  Keyboard,
-  Thermometer,
-  AlertCircle,
-  ArrowRight,
-  Download,
-  Accessibility as AccessibilityIcon,
-  HeartHandshake,
-} from 'lucide-react';
+import { Printer, Phone as PhoneIcon, Smartphone, Tv, Speaker, Keyboard, Thermometer, ArrowRight, Download, Accessibility as AccessibilityIcon, HeartHandshake } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 /* ── Types ───────────────────────────────────────────────── */
 type PosterId =
@@ -891,12 +871,6 @@ export default function PhoneButtonPoster() {
                   A printable wall poster that names every button on your phone. Hang it near the counter.
                 </p>
                 <div className="mt-4 flex items-center gap-3">
-                  <BookmarkButton
-                    type="tool"
-                    slug="phone-button-poster"
-                    title="Phone Button Wall Poster"
-                    url="/printables/phone-button-poster"
-                  />
                 </div>
               </div>
             </div>

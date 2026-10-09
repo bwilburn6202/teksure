@@ -461,7 +461,7 @@ export default function TwoFactorRecoveryPlan() {
                       <Link to="/guides/new-phone-first-day-setup-checklist">New Phone Setup</Link>
                     </Button>
                     <Button asChild variant="outline" size="sm">
-                      <Link to="/tekbrain">Ask TekBrain</Link>
+                      <Link to="/get-help">Ask a real person</Link>
                     </Button>
                   </div>
                 </CardContent>

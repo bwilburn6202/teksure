@@ -4,20 +4,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Badge } from '@/components/ui/badge';
-import {
-  Shield,
-  AlertTriangle,
-  XCircle,
-  CheckCircle,
-  ChevronLeft,
-  ChevronRight,
-  Info,
-  Lock,
-  HelpCircle,
-  Wallet,
-  MessageCircle,
-  Sparkles,
-} from 'lucide-react';
+import { Shield, AlertTriangle, XCircle, CheckCircle, ChevronLeft, ChevronRight, Info, Lock, HelpCircle, Wallet, MessageCircle, Sparkles } from 'lucide-react';
 
 type DeviceType = 'iphone' | 'ipad' | 'android' | 'android-tablet' | 'chromebook' | 'mac' | 'windows';
 
@@ -146,10 +133,10 @@ function getResult(device: DeviceType, model: ModelOption): SupportResult {
       status: 'unknown',
       headline: "We can't tell for sure without more info.",
       detail:
-        "Device support varies a lot between brands and models. If you're not sure which exact model you have, don't worry — TekBrain (our tech helper) can walk you through finding the model name on your device in plain English.",
+        "Device support varies a lot between brands and models. If you're not sure which exact model you have, don't worry — a real person can walk you through finding the model name on your device in plain English.",
       recommendation: 'ask',
       recommendationText:
-        'Ask TekBrain for help figuring out exactly what you have. It only takes a minute, and once you know the model you can come back here for a precise answer.',
+        'Ask a real person for help figuring out exactly what you have. It only takes a minute, and once you know the model you can come back here for a precise answer.',
     };
   }
 
@@ -370,7 +357,7 @@ function getGuideLinks(device: DeviceType, status: SupportStatus): GuideLink[] {
   const links: GuideLink[] = [];
 
   if (status === 'unknown') {
-    links.push({ label: 'Ask TekBrain which model I have', to: '/tekbrain' });
+    links.push({ label: 'Ask us which model you have', to: '/get-help' });
     return links;
   }
 
@@ -396,7 +383,7 @@ function getGuideLinks(device: DeviceType, status: SupportStatus): GuideLink[] {
     links.push({ label: 'Run a full device health check', to: '/tools/device-health' });
   }
 
-  links.push({ label: 'Ask TekBrain a follow-up question', to: '/tekbrain' });
+  links.push({ label: 'Ask us a follow-up question', to: '/get-help' });
   return links;
 }
 
@@ -649,7 +636,7 @@ export default function DeviceAgeChecker() {
                 </p>
               </div>
 
-              {/* Unknown: TekBrain nudge */}
+              {/* Unknown: ask-a-person nudge */}
               {result.status === 'unknown' && (
                 <div className="rounded-2xl border-2 border-info-foreground/25 bg-info p-6 mb-5">
                   <h3 className="font-semibold text-base mb-2 flex items-center gap-2 text-info-foreground ">
@@ -657,16 +644,15 @@ export default function DeviceAgeChecker() {
                     Not sure which model you have?
                   </h3>
                   <p className="text-base text-blue-900/80 dark:text-blue-200/80 leading-relaxed mb-4">
-                    TekBrain is our friendly tech helper. Tell it what your device looks like —
-                    color, size, how old you think it is — and it'll help you find the exact
-                    model name, usually in under a minute.
+                    Tell us what your device looks like — color, size, how old you think it
+                    is — and a real person will help you find the exact model name.
                   </p>
                   <Link
-                    to="/tekbrain"
+                    to="/get-help"
                     className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm transition-colors"
                   >
                     <MessageCircle className="h-4 w-4" aria-hidden="true" />
-                    Ask TekBrain for help
+                    Ask a real person
                   </Link>
                 </div>
               )}

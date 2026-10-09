@@ -40,68 +40,29 @@ const AdminConsole           = lazy(() => import("./pages/admin/Console"));
 const ContentPipeline        = lazy(() => import("./pages/admin/ContentPipeline"));
 const KnowledgeBase          = lazy(() => import("./pages/admin/KnowledgeBase"));
 const AdminNewsletter        = lazy(() => import("./pages/admin/Newsletter"));
-const OpportunityDashboard   = lazy(() => import("./pages/OpportunityDashboard"));
 const Glossary               = lazy(() => import("./pages/Glossary"));
-const FindAGuide             = lazy(() => import("./pages/FindAGuide"));
 const QuickFixes             = lazy(() => import("./pages/QuickFixes"));
-const DeviceHub              = lazy(() => import("./pages/DeviceHub"));
 const About                  = lazy(() => import("./pages/About"));
 const Pricing                = lazy(() => import("./pages/Pricing"));
 const Terms                  = lazy(() => import("./pages/Terms"));
 const RefundPolicy           = lazy(() => import("./pages/RefundPolicy"));
-const Roadmap                = lazy(() => import("./pages/Roadmap"));
 const SearchResults          = lazy(() => import("./pages/SearchResults"));
 const Tools                  = lazy(() => import("./pages/Tools"));
-const AllToolsDirectory      = lazy(() => import("./pages/AllToolsDirectory"));
 const ScamAlerts             = lazy(() => import("./pages/ScamAlerts"));
-const Tips                   = lazy(() => import("./pages/Tips"));
-const Setup                  = lazy(() => import("./pages/Setup"));
-const Blog                   = lazy(() => import("./pages/Blog"));
-const Webinars               = lazy(() => import("./pages/Webinars"));
-const Ambassadors            = lazy(() => import("./pages/community/Ambassadors"));
 const PaymentSuccess         = lazy(() => import("./pages/payment/Success"));
 const PaymentCancel          = lazy(() => import("./pages/payment/Cancel"));
-const ForumIndex             = lazy(() => import("./pages/forum/Index"));
-const ThreadDetail           = lazy(() => import("./pages/forum/ThreadDetail"));
-const NewThread              = lazy(() => import("./pages/forum/NewThread"));
 const ParentalControls       = lazy(() => import("./pages/ParentalControls"));
-const Favorites              = lazy(() => import("./pages/Favorites"));
-const TechJournal            = lazy(() => import("./pages/TechJournal"));
-const MyDevices              = lazy(() => import("./pages/MyDevices"));
-const Achievements           = lazy(() => import("./pages/Achievements"));
-const QuickReferenceCards    = lazy(() => import("./pages/QuickReferenceCards"));
 const PhoneButtonPoster      = lazy(() => import("./pages/printables/PhoneButtonPoster"));
 const ReferenceCards         = lazy(() => import("./pages/ReferenceCards"));
 const Checklists             = lazy(() => import("./pages/Checklists"));
 const GetHelp                = lazy(() => import("./pages/GetHelp"));
 const MyRequests             = lazy(() => import("./pages/MyRequests"));
-const MyPath                 = lazy(() => import("./pages/MyPath"));
 const Profile                = lazy(() => import("./pages/Profile"));
-const News                   = lazy(() => import("./pages/News"));
 const NotFound               = lazy(() => import("./pages/NotFound"));
-const TechGiftGuide          = lazy(() => import("./pages/TechGiftGuide"));
-const TechAnxiety            = lazy(() => import("./pages/TechAnxiety"));
-const LocalHelp              = lazy(() => import("./pages/LocalHelp"));
-const Certificate            = lazy(() => import("./pages/Certificate"));
-const AiTutor                = lazy(() => import("./pages/AiTutor"));
-const ProgressReport         = lazy(() => import("./pages/ProgressReport"));
-const FamilySharing          = lazy(() => import("./pages/FamilySharing"));
-const Caregiver              = lazy(() => import("./pages/Caregiver"));
-const Notifications          = lazy(() => import("./pages/Notifications"));
-const Onboarding             = lazy(() => import("./pages/Onboarding"));
-const Explore                = lazy(() => import("./pages/Explore"));
-const Articles               = lazy(() => import("./pages/Articles"));
-const AggregatedArticlePage  = lazy(() => import("./pages/AggregatedArticlePage"));
-const Sources                = lazy(() => import("./pages/Sources"));
-const Videos                 = lazy(() => import("./pages/Videos"));
-const LlmKnowledgeBase       = lazy(() => import("./pages/LlmKnowledgeBase"));
 
 const EmergencyHelp          = lazy(() => import("./pages/EmergencyHelp"));
-const KeyboardNavigation     = lazy(() => import("./pages/KeyboardNavigation"));
 const Privacy                = lazy(() => import("./pages/Privacy"));
-const Changelog              = lazy(() => import("./pages/Changelog"));
 const WhatsNew               = lazy(() => import("./pages/WhatsNew"));
-const MemoryDashboard        = lazy(() => import("./pages/MemoryDashboard"));
 const FAQ                    = lazy(() => import("./pages/FAQ"));
 
 // ── New tools (April 2026 expansion) ──
@@ -112,7 +73,6 @@ const InternetPlanCalculator = lazy(() => import("./pages/calculators/InternetPl
 // ── OSINT.link-inspired tools ──
 
 // ── Tools expansion (April 16 2026) ──
-const WeeklyTips             = lazy(() => import("./pages/WeeklyTips"));
 
 // ── Cycle 1 (April 29 2026) — net-new tools ──
 
@@ -704,21 +664,13 @@ const WeeklyTips             = lazy(() => import("./pages/WeeklyTips"));
 
 // ── Master Plan tools (April 16 2026 batch-2) ──
 const ScamIqQuiz             = lazy(() => import("./pages/quizzes/ScamIqQuiz"));
-const TechConfidenceQuiz     = lazy(() => import("./pages/quizzes/TechConfidenceQuiz"));
 const PhishingInbox          = lazy(() => import("./pages/practice/PhishingInbox"));
 const GuidesEspanol          = lazy(() => import("./pages/GuidesEspanol"));
-const Brain                  = lazy(() => import("./pages/Brain"));
-const TekBrainPage           = lazy(() => import("./pages/TekBrain"));
-const TekBrainLanding        = lazy(() => import("./pages/TekBrainLanding"));
 const FreeResources          = lazy(() => import("./pages/FreeResources"));
 const ScamDefenseCenter      = lazy(() => import("./pages/ScamDefenseCenter"));
-const ScamAlertFeed          = lazy(() => import("./pages/ScamAlertFeed"));
-const Learn                  = lazy(() => import("./pages/Learn"));
 const AccessibilityHub       = lazy(() => import("./pages/AccessibilityHub"));
 const CaregiverHub           = lazy(() => import("./pages/CaregiverHub"));
-const FreeSoftware           = lazy(() => import("./pages/FreeSoftware"));
 const TechHelpNearMe         = lazy(() => import("./pages/TechHelpNearMe"));
-const SeniorTechPath         = lazy(() => import("./pages/SeniorTechPath"));
 const ChromebookHub          = lazy(() => import("./pages/ChromebookHub"));
 const InternetBasics         = lazy(() => import("./pages/courses/InternetBasics"));
 
@@ -740,10 +692,6 @@ const DigitalDetox           = lazy(() => import("./pages/DigitalDetox"));
 const MovingTech             = lazy(() => import("./pages/MovingTech"));
 const RetirementTech         = lazy(() => import("./pages/RetirementTech"));
 const NewGrandparentTech     = lazy(() => import("./pages/NewGrandparentTech"));
-const AskTekSure             = lazy(() => import("./pages/AskTekSure"));
-const AskTekSureCommunity    = lazy(() => import("./pages/community/AskTekSure"));
-const SuccessStories         = lazy(() => import("./pages/SuccessStories"));
-const Stories                = lazy(() => import("./pages/Stories"));
 const TechProblemOfWeek      = lazy(() => import("./pages/TechProblemOfWeek"));
 const PasswordPractice       = lazy(() => import("./pages/practice/PasswordPractice"));
 const CaregiverPlannerPack   = lazy(() => import("./pages/printables/CaregiverPlannerPack"));
@@ -763,8 +711,6 @@ const EmptyNestTech          = lazy(() => import("./pages/EmptyNestTech"));
 const FirstApartmentTech     = lazy(() => import("./pages/FirstApartmentTech"));
 // ── Round 4 tools ──
 const SiteIndex              = lazy(() => import("./pages/SiteIndex"));
-const Volunteer              = lazy(() => import("./pages/Volunteer"));
-const WeeklyNewsletterTemplate = lazy(() => import("./pages/printables/WeeklyNewsletterTemplate"));
 
 
 // ── Toolkits (hub pages) ─────────────────────────────────────────────────────
@@ -772,7 +718,6 @@ const CaregiverToolkit       = lazy(() => import("./pages/toolkits/CaregiverTool
 
 // ── Practice sims (branching interactive safety practice) ──────────────────
 const SuspiciousCallSim      = lazy(() => import("./pages/practice/SuspiciousCallSim"));
-const VocabFlashcards        = lazy(() => import("./pages/practice/VocabFlashcards"));
 
 // ── New tools and hubs (April 2026 expansion) ──────────────────────────────
 const GrandparentDeviceSetup = lazy(() => import("./pages/GrandparentDeviceSetup"));
@@ -968,7 +913,7 @@ const AppContent = () => {
           <Route path="/guides/:slug" element={<GuideDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/emergency-help" element={<EmergencyHelp />} />
-          <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="/roadmap" element={<Navigate to="/about" replace />} />
           <Route path="/search" element={<SearchResults />} />
           <Route path="/customer" element={<ProtectedRoute allowedRoles={['customer']}><CustomerDashboard /></ProtectedRoute>} />
           <Route path="/customer/jobs/:id" element={<ProtectedRoute allowedRoles={['customer']}><CustomerJobRoom /></ProtectedRoute>} />
@@ -978,31 +923,30 @@ const AppContent = () => {
           <Route path="/admin/content" element={<ProtectedRoute allowedRoles={['admin']}><ContentPipeline /></ProtectedRoute>} />
           <Route path="/admin/knowledge-base" element={<ProtectedRoute allowedRoles={['admin']}><KnowledgeBase /></ProtectedRoute>} />
           <Route path="/admin/newsletter" element={<ProtectedRoute allowedRoles={['admin']}><AdminNewsletter /></ProtectedRoute>} />
-          <Route path="/opportunity-dashboard" element={<OpportunityDashboard />} />
           <Route path="/glossary" element={<Glossary />} />
-          <Route path="/find-a-guide" element={<FindAGuide />} />
+          <Route path="/find-a-guide" element={<Navigate to="/guides" replace />} />
           <Route path="/quick-fixes" element={<QuickFixes />} />
-          <Route path="/device-hub" element={<DeviceHub />} />
+          <Route path="/device-hub" element={<Navigate to="/guides" replace />} />
           <Route path="/tools" element={<Tools />} />
-          <Route path="/tools/all" element={<AllToolsDirectory />} />
+          <Route path="/tools/all" element={<Navigate to="/tools" replace />} />
           {/* Every other /tools/<slug> resolves through src/data/tools-registry.ts. */}
           <Route path="/tools/:slug" element={<ToolRoute />} />
-          <Route path="/brain" element={<Brain />} />
+          <Route path="/brain" element={<Navigate to="/get-help" replace />} />
           {/* /tekbrain is the welcoming landing page; /tekbrain/chat is the
               actual chat UI. First-time visitors now see an explainer before
               being dropped into a conversation. */}
-          <Route path="/tekbrain" element={<TekBrainLanding />} />
-          <Route path="/tekbrain/chat" element={<TekBrainPage />} />
+          <Route path="/tekbrain" element={<Navigate to="/get-help" replace />} />
+          <Route path="/tekbrain/chat" element={<Navigate to="/get-help" replace />} />
           <Route path="/safety/scam-alerts" element={<ScamAlerts />} />
-          <Route path="/tips" element={<Tips />} />
+          <Route path="/tips" element={<Navigate to="/quick-fixes" replace />} />
           <Route path="/tools/jargon-translator" element={<Navigate to="/tools/tech-jargon-translator" replace />} />
-          <Route path="/setup" element={<Setup />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<Blog />} />
-          <Route path="/webinars" element={<Webinars />} />
-          <Route path="/community/ambassadors" element={<Ambassadors />} />
+          <Route path="/setup" element={<Navigate to="/guides" replace />} />
+          <Route path="/blog" element={<Navigate to="/guides" replace />} />
+          <Route path="/blog/:slug" element={<Navigate to="/guides" replace />} />
+          <Route path="/webinars" element={<Navigate to="/about" replace />} />
+          <Route path="/community/ambassadors" element={<Navigate to="/about" replace />} />
           <Route path="/tools/phishing-scanner" element={<Navigate to="/tools/url-safety-checker" replace />} />
-          <Route path="/notifications" element={<Notifications />} />
+          <Route path="/notifications" element={<Navigate to="/guides" replace />} />
           {/* /technicians is taken out of public reach on purpose.
               The page shipped four invented technician profiles ("James R.",
               4.9 rating, 112 jobs completed) and eleven fabricated customer
@@ -1019,16 +963,16 @@ const AppContent = () => {
           <Route path="/book" element={<Navigate to="/get-help" replace />} />
           <Route path="/payment/success" element={<PaymentSuccess />} />
           <Route path="/payment/cancel" element={<PaymentCancel />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/forum" element={<ForumIndex />} />
-          <Route path="/forum/new" element={<NewThread />} />
-          <Route path="/forum/:id" element={<ThreadDetail />} />
+          <Route path="/news" element={<Navigate to="/whats-new" replace />} />
+          <Route path="/forum" element={<Navigate to="/get-help" replace />} />
+          <Route path="/forum/new" element={<Navigate to="/get-help" replace />} />
+          <Route path="/forum/:id" element={<Navigate to="/get-help" replace />} />
           <Route path="/safety/parental-controls" element={<ParentalControls />} />
-          <Route path="/favorites" element={<Favorites />} />
-          <Route path="/journal" element={<TechJournal />} />
-          <Route path="/my-devices" element={<MyDevices />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/quick-reference-cards" element={<QuickReferenceCards />} />
+          <Route path="/favorites" element={<Navigate to="/guides" replace />} />
+          <Route path="/journal" element={<Navigate to="/guides" replace />} />
+          <Route path="/my-devices" element={<Navigate to="/guides" replace />} />
+          <Route path="/achievements" element={<Navigate to="/guides" replace />} />
+          <Route path="/quick-reference-cards" element={<Navigate to="/reference-cards" replace />} />
           <Route path="/reference-cards" element={<ReferenceCards />} />
           <Route path="/printables/phone-button-poster" element={<PhoneButtonPoster />} />
           <Route path="/checklists" element={<Checklists />} />
@@ -1037,37 +981,37 @@ const AppContent = () => {
           <Route path="/calculators/medicare-cost" element={<MedicareCostEstimator />} />
           <Route path="/calculators/phone-bill" element={<PhoneBillDecoder />} />
           <Route path="/get-help" element={<GetHelp />} />
-          <Route path="/my-path" element={<MyPath />} />
+          <Route path="/my-path" element={<Navigate to="/guides" replace />} />
           <Route path="/my-requests" element={<MyRequests />} />
           <Route path="/profile" element={<ProtectedRoute allowedRoles={['customer', 'tech', 'admin']}><Profile /></ProtectedRoute>} />
-          <Route path="/gift-guide" element={<TechGiftGuide />} />
-          <Route path="/tech-anxiety" element={<TechAnxiety />} />
-          <Route path="/local-help" element={<LocalHelp />} />
-          <Route path="/certificate" element={<Certificate />} />
-          <Route path="/ai-tutor" element={<AiTutor />} />
-          <Route path="/progress-report" element={<ProgressReport />} />
-          <Route path="/family-sharing" element={<FamilySharing />} />
-          <Route path="/caregiver" element={<Caregiver />} />
+          <Route path="/gift-guide" element={<Navigate to="/guides" replace />} />
+          <Route path="/tech-anxiety" element={<Navigate to="/get-help" replace />} />
+          <Route path="/local-help" element={<Navigate to="/tech-help-near-me" replace />} />
+          <Route path="/certificate" element={<Navigate to="/guides" replace />} />
+          <Route path="/ai-tutor" element={<Navigate to="/get-help" replace />} />
+          <Route path="/progress-report" element={<Navigate to="/guides" replace />} />
+          <Route path="/family-sharing" element={<Navigate to="/guides" replace />} />
+          <Route path="/caregiver" element={<Navigate to="/caregiver-hub" replace />} />
           <Route path="/tools/osint-tools" element={<Navigate to="/tools/security-osint?tab=osint" replace />} />
           <Route path="/tools/geoint" element={<Navigate to="/tools/security-osint?tab=geoint" replace />} />
           <Route path="/tools/osint-collections" element={<Navigate to="/tools/security-osint?tab=collections" replace />} />
           <Route path="/cybersec" element={<Navigate to="/tools/security-osint?tab=cybersec" replace />} />
-          <Route path="/onboarding" element={<Onboarding />} />
-          <Route path="/explore" element={<Explore />} />
-          <Route path="/articles" element={<Articles />} />
-          <Route path="/articles/:slug" element={<AggregatedArticlePage />} />
-          <Route path="/sources" element={<Sources />} />
+          <Route path="/onboarding" element={<Navigate to="/guides" replace />} />
+          <Route path="/explore" element={<Navigate to="/guides" replace />} />
+          <Route path="/articles" element={<Navigate to="/guides" replace />} />
+          <Route path="/articles/:slug" element={<Navigate to="/guides" replace />} />
+          <Route path="/sources" element={<Navigate to="/guides" replace />} />
           <Route path="/free-resources" element={<FreeResources />} />
           <Route path="/scam-defense" element={<ScamDefenseCenter />} />
-          <Route path="/scam-alerts" element={<ScamAlertFeed />} />
+          <Route path="/scam-alerts" element={<Navigate to="/safety/scam-alerts" replace />} />
           <Route path="/practice/phishing-inbox" element={<PhishingInbox />} />
           <Route path="/practice/inbox" element={<Navigate to="/practice/phishing-inbox" replace />} />
-          <Route path="/learn" element={<Learn />} />
+          <Route path="/learn" element={<Navigate to="/guides" replace />} />
           <Route path="/accessibility" element={<AccessibilityHub />} />
           <Route path="/caregiver-hub" element={<CaregiverHub />} />
-          <Route path="/free-software" element={<FreeSoftware />} />
+          <Route path="/free-software" element={<Navigate to="/free-resources" replace />} />
           <Route path="/tech-help-near-me" element={<TechHelpNearMe />} />
-          <Route path="/senior-tech-path" element={<SeniorTechPath />} />
+          <Route path="/senior-tech-path" element={<Navigate to="/guides" replace />} />
           <Route path="/chromebook" element={<ChromebookHub />} />
           <Route path="/courses/internet-basics" element={<InternetBasics />} />
 
@@ -1082,10 +1026,10 @@ const AppContent = () => {
           <Route path="/moving-tech" element={<MovingTech />} />
           <Route path="/retirement-tech" element={<RetirementTech />} />
           <Route path="/new-grandparent-tech" element={<NewGrandparentTech />} />
-          <Route path="/ask" element={<AskTekSure />} />
-          <Route path="/community/ask" element={<AskTekSureCommunity />} />
-          <Route path="/success-stories" element={<SuccessStories />} />
-          <Route path="/stories" element={<Stories />} />
+          <Route path="/ask" element={<Navigate to="/get-help" replace />} />
+          <Route path="/community/ask" element={<Navigate to="/get-help" replace />} />
+          <Route path="/success-stories" element={<Navigate to="/about" replace />} />
+          <Route path="/stories" element={<Navigate to="/about" replace />} />
           <Route path="/tech-problem-of-week" element={<TechProblemOfWeek />} />
           <Route path="/practice/password-practice" element={<PasswordPractice />} />
           <Route path="/printables/caregiver-planner" element={<CaregiverPlannerPack />} />
@@ -1107,13 +1051,11 @@ const AppContent = () => {
           <Route path="/tools/plain-english-translator" element={<Navigate to="/tools/tech-jargon-translator" replace />} />
           <Route path="/tools/safe-link-checker" element={<Navigate to="/tools/url-safety-checker" replace />} />
           <Route path="/tools/is-this-real" element={<Navigate to="/tools/is-this-a-scam" replace />} />
-          <Route path="/videos" element={<Videos />} />
-          <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
-          <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
+          <Route path="/videos" element={<Navigate to="/guides" replace />} />
+          <Route path="/keyboard-navigation" element={<Navigate to="/accessibility" replace />} />
           <Route path="/privacy" element={<Privacy />} />
-          <Route path="/changelog" element={<Changelog />} />
+          <Route path="/changelog" element={<Navigate to="/whats-new" replace />} />
           <Route path="/whats-new" element={<WhatsNew />} />
-          <Route path="/memory" element={<MemoryDashboard />} />
           <Route path="/faq" element={<FAQ />} />
 
           {/* ── New tools (April 2026 expansion) ── */}
@@ -1124,8 +1066,8 @@ const AppContent = () => {
           {/* OSINT.link-inspired tools */}
 
           {/* ── Tools expansion April 16 ── */}
-          <Route path="/weekly-tips" element={<WeeklyTips />} />
-          <Route path="/this-week" element={<WeeklyTips />} />
+          <Route path="/weekly-tips" element={<Navigate to="/quick-fixes" replace />} />
+          <Route path="/this-week" element={<Navigate to="/quick-fixes" replace />} />
 
           {/* Cycle 1 — net-new tools (April 29 2026) */}
 
@@ -1401,7 +1343,7 @@ const AppContent = () => {
 
           {/* Master Plan tools */}
           <Route path="/quizzes/scam-iq" element={<ScamIqQuiz />} />
-          <Route path="/quizzes/tech-confidence" element={<TechConfidenceQuiz />} />
+          <Route path="/quizzes/tech-confidence" element={<Navigate to="/quizzes/scam-iq" replace />} />
 
           {/* Practice Mode — simulated phone interface for fearless practice */}
 
@@ -1423,16 +1365,15 @@ const AppContent = () => {
           {/* Practice simulators — branching interactive safety practice */}
           <Route path="/practice/suspicious-call" element={<SuspiciousCallSim />} />
           <Route path="/practice/phone" element={<Navigate to="/practice/suspicious-call" replace />} />
-          <Route path="/practice/vocab-flashcards" element={<VocabFlashcards />} />
+          <Route path="/practice/vocab-flashcards" element={<Navigate to="/glossary" replace />} />
 
           {/* Site Index — human-readable sitemap of every page on TekSure */}
           <Route path="/site-index" element={<SiteIndex />} />
 
           {/* Volunteer — invite people to help grow TekSure */}
-          <Route path="/volunteer" element={<Volunteer />} />
+          <Route path="/volunteer" element={<Navigate to="/about" replace />} />
 
           {/* Printables — fillable, printable one-page templates */}
-          <Route path="/printables/weekly-newsletter" element={<WeeklyNewsletterTemplate />} />
 
           {/* ── April 2026 expansion: new tools ─────────────────────────── */}
 

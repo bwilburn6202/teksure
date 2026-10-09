@@ -23,7 +23,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -313,12 +312,6 @@ export default function MedicareCostEstimator() {
                 Original Medicare vs Advantage. Real numbers for your situation.
               </p>
               <div className="flex flex-wrap gap-3 justify-center pt-2">
-                <BookmarkButton
-                  type="tool"
-                  slug="medicare-cost-estimator"
-                  title="Medicare Cost Estimator"
-                  url="/calculators/medicare-cost"
-                />
                 <Button
                   variant="secondary"
                   onClick={resetForm}

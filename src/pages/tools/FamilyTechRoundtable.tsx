@@ -152,7 +152,7 @@ export default function FamilyTechRoundtable() {
                 <p className="font-medium text-base">Account After Loss</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Plan ahead for digital legacy.</p>
               </Link>
-              <Link to="/caregiver" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/caregiver-hub" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Caregiver Hub</p>
                 <p className="text-sm text-muted-foreground mt-0.5">More for adult children helping parents.</p>
               </Link>

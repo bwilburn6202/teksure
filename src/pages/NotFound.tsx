@@ -3,17 +3,7 @@ import { useEffect, useState, type FormEvent } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import {
-  Compass,
-  Search,
-  BookOpen,
-  Wrench,
-  Sparkles,
-  HeartHandshake,
-  MapPin,
-  Flag,
-  ArrowRight,
-} from 'lucide-react';
+import { BookOpen, Wrench, HeartHandshake, Flag, ArrowRight } from 'lucide-react';
 
 /**
  * 404 page — warm, reassuring, and actually helpful.
@@ -40,17 +30,14 @@ const DESTINATIONS: Array<{
 }> = [
   { icon: BookOpen,       label: 'Browse Guides', to: '/guides',   desc: 'Step-by-step help for any device',             tone: 'navy'  },
   { icon: Wrench,         label: 'Explore Tools', to: '/tools',    desc: 'Handy helpers — wizards, checks & calculators', tone: 'amber' },
-  { icon: Sparkles,       label: 'Ask TekBrain',  to: '/tekbrain', desc: 'Chat with our friendly tech assistant',         tone: 'navy'  },
   { icon: HeartHandshake, label: 'Book Help',     to: '/get-help', desc: 'Connect with a real, patient technician',       tone: 'amber' },
 ];
 
 const POPULAR_PAGES: Array<{ label: string; to: string }> = [
   { label: 'How TekSure works',   to: '/how-it-works'  },
   { label: 'Scam Defense Center', to: '/scam-defense'  },
-  { label: 'Daily tech tips',     to: '/tips'          },
   { label: 'Tech glossary',       to: '/glossary'      },
   { label: 'Quick fixes',         to: '/quick-fixes'   },
-  { label: 'Find a guide',        to: '/find-a-guide'  },
   { label: 'Free resources',      to: '/free-resources'},
   { label: 'Emergency help',      to: '/emergency-help'},
 ];
@@ -86,7 +73,7 @@ const NotFound = () => {
     <>
       <SEOHead
         title="Page not found — TekSure"
-        description="We couldn't find that page — but we'll help you find what you need. Browse guides, tools, or chat with TekBrain."
+        description="We couldn't find that page — but we'll help you find what you need. Browse guides, tools, or ask a real person."
         path="/404"
         type="error"
         noindex

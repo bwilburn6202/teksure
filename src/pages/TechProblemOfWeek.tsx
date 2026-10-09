@@ -489,7 +489,7 @@ export default function TechProblemOfWeek() {
                 We prioritize problems that are widespread, actionable (there is something you can actually do), and explained in plain English.
               </p>
               <Link
-                to="/news"
+                to="/whats-new"
                 className="inline-flex items-center text-sm font-semibold text-amber-700 dark:text-amber-400 hover:underline mt-4"
               >
                 See our full news feed

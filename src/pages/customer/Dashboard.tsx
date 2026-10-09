@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import {
-  Plus, BookOpen, BarChart2, Brain, Award, Map, ArrowRight,
-  Wrench, Calendar, CheckCircle2, Clock, Star, Zap, ChevronRight,
-  MessageSquare, Shield, Wifi, Smartphone, TrendingUp,
-} from 'lucide-react';
+import { Plus, BookOpen, BarChart2, Brain, ArrowRight, Wrench, Calendar, CheckCircle2, Clock, Star, Zap, ChevronRight, MessageSquare, Shield, Wifi, Smartphone, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Label } from '@/components/ui/label';
@@ -59,11 +54,7 @@ function nextMilestone(n: number) {
 
 const QUICK_ACTIONS = [
   { icon: BookOpen, label: 'Browse Guides', to: '/guides', color: 'text-blue-500', bg: 'bg-blue-50 dark:bg-blue-950/30' },
-  { icon: Brain, label: 'AI Tutor', to: '/ai-tutor', color: 'text-cyan-500', bg: 'bg-cyan-50 dark:bg-cyan-950/30' },
   { icon: Wrench, label: 'Tools', to: '/tools', color: 'text-amber-500', bg: 'bg-amber-50 dark:bg-amber-950/30' },
-  { icon: Map, label: 'My Path', to: '/my-path', color: 'text-violet-500', bg: 'bg-violet-50 dark:bg-violet-950/30' },
-  { icon: BarChart2, label: 'Progress', to: '/progress-report', color: 'text-emerald-500', bg: 'bg-emerald-50 dark:bg-emerald-950/30' },
-  { icon: Award, label: 'Certificate', to: '/certificate', color: 'text-rose-500', bg: 'bg-rose-50 dark:bg-rose-950/30' },
 ];
 
 const Dashboard = () => {
@@ -237,7 +228,7 @@ const Dashboard = () => {
             <CardHeader className="pb-3 border-b border-border">
               <div className="flex items-center justify-between">
                 <CardTitle className="text-base">Learning Progress</CardTitle>
-                <Link to="/progress-report" className="text-xs text-primary hover:underline flex items-center gap-0.5">
+                <Link to="/guides" className="text-xs text-primary hover:underline flex items-center gap-0.5">
                   Full report <ChevronRight className="h-3 w-3" />
                 </Link>
               </div>

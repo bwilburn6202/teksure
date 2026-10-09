@@ -38,7 +38,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -826,12 +825,6 @@ export default function CaregiverToolkit() {
         <section className="relative border-b border-border overflow-hidden bg-gradient-to-br from-rose-100 via-orange-50 to-emerald-100 dark:from-rose-950/40 dark:via-orange-950/20 dark:to-emerald-950/40">
           <div className="container py-12 md:py-20 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="toolkits-caregiver"
-                title="Caregiver Toolkit — Helping From Near or Far"
-                url="/toolkits/caregiver"
-              />
             </div>
             <div className="flex items-center gap-3 mb-5">
               <div className="p-3 rounded-2xl bg-rose-500/15 text-danger-foreground shadow-sm">

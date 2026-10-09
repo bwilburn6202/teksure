@@ -1,34 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Siren,
-  Printer,
-  Download,
-  Save,
-  Trash2,
-  ShieldCheck,
-  AlertTriangle,
-  Heart,
-  Phone,
-  Pill,
-  User,
-  HeartPulse,
-  Stethoscope,
-  Eye,
-  EyeOff,
-  Sparkles,
-  ArrowRight,
-  BookOpen,
-  PawPrint,
-  FileText,
-  Lock,
-  CreditCard,
-  Smartphone,
-} from 'lucide-react';
+import { Siren, Printer, Download, Save, Trash2, ShieldCheck, AlertTriangle, Heart, Phone, Pill, User, HeartPulse, Stethoscope, Eye, EyeOff, Sparkles, BookOpen, PawPrint, FileText, Lock, CreditCard, Smartphone } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -37,21 +12,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 /* ──────────────────────────────────────────────────────────────────────────
  * Emergency Info Card Generator
@@ -731,13 +695,6 @@ export default function EmergencyInfoCard() {
                 <Sparkles className="h-4 w-4 mr-1" />
                 New Tool
               </Badge>
-              <BookmarkButton
-                type="tool"
-                slug="emergency-info-card"
-                title="Emergency Info Card"
-                url="/tools/emergency-info-card"
-                className="bg-white/15 border-white/30 text-white hover:bg-white/25"
-              />
             </div>
             <div className="flex items-start gap-4 md:gap-5">
               <Siren className="h-12 w-12 md:h-16 md:w-16 shrink-0 text-rose-200" aria-hidden />

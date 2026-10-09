@@ -33,7 +33,6 @@ import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 
 /* ── Types ───────────────────────────────── */
 type CategoryId =
@@ -641,12 +640,6 @@ export default function FreeLearningHub() {
         {/* ── Hero ── */}
         <div className="relative text-center mb-10">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="free-learning-hub"
-              title="Free Learning Hub"
-              url="/tools/free-learning-hub"
-            />
           </div>
           <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-violet-200 via-violet-100 to-fuchsia-100 text-primary dark:from-violet-900/60 dark:via-violet-950/40 dark:to-fuchsia-950/40 mb-5 shadow-sm">
             <GraduationCap className="h-12 w-12" aria-hidden="true" />

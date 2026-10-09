@@ -468,7 +468,7 @@ export default function PhoneDiagnosticChecklist() {
                       <Link to="/tools/device-age-checker">Device Age Checker</Link>
                     </Button>
                     <Button asChild variant="outline">
-                      <Link to="/tekbrain">Ask TekBrain</Link>
+                      <Link to="/get-help">Ask a real person</Link>
                     </Button>
                   </div>
                   <div className="mt-4">

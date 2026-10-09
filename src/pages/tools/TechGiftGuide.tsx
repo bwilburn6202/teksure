@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -1124,12 +1123,6 @@ export default function TechGiftGuide() {
         <section className="relative border-b border-border bg-gradient-to-br from-rose-50 via-orange-50 to-amber-50 dark:from-rose-950/30 dark:via-orange-950/20 dark:to-amber-950/20">
           <div className="container py-10 md:py-14 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="tech-gift-guide"
-                title="Tech Gift Guide"
-                url="/tools/tech-gift-guide"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <div className="p-2 rounded-xl bg-gradient-to-br from-rose-500 to-orange-500 text-white shadow-sm">

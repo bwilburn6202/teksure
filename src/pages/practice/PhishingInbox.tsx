@@ -22,7 +22,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -822,13 +821,6 @@ export default function PhishingInbox() {
                 Safe-practice email inbox with 20 messages mixed real + fake. Can you spot the scams?
               </p>
               <div className="mt-7 flex flex-wrap items-center gap-3">
-                <BookmarkButton
-                  type="tool"
-                  slug="phishing-inbox"
-                  title="Phishing Practice Inbox"
-                  url="/practice/phishing-inbox"
-                  className="bg-white/10 text-white border-white/30 hover:bg-white/20 hover:text-white"
-                />
                 <Button
                   asChild
                   variant="outline"

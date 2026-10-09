@@ -75,7 +75,7 @@ const situations = [
       'Better yet, record a short screen recording on your phone and text it to them. They can watch it as many times as they need without calling.',
       'Our printable Quick Reference Cards are built for exactly this — one card per task, large type, no jargon.',
     ],
-    cta: { to: '/quick-reference-cards', label: 'Print a quick reference card' },
+    cta: { to: '/reference-cards', label: 'Print a quick reference card' },
   },
   {
     id: 'falling-for-scams',
@@ -125,7 +125,6 @@ const situations = [
       'Start with the thing they actually want to do. "Let me show you how to video call your grandkids" works better than "Let me teach you your phone."',
       'Never take over. Put the device in their hands and talk them through it. Doing it for them confirms their worst fear: that they cannot.',
     ],
-    cta: { to: '/tech-anxiety', label: 'Tech anxiety resources' },
   },
   {
     id: 'different-states',
@@ -462,7 +461,7 @@ export default function CaregiverHub() {
                   you are doing. Moderated, free, and no judgment.
                 </p>
                 <Button asChild variant="outline" className="rounded-xl gap-2">
-                  <Link to="/forum">
+                  <Link to="/get-help">
                     Visit the forum
                     <ArrowRight className="h-4 w-4" />
                   </Link>
@@ -488,9 +487,6 @@ export default function CaregiverHub() {
                     <Phone className="h-4 w-4" />
                     Book support for them
                   </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="rounded-xl">
-                  <Link to="/tech-anxiety">Tech anxiety resources</Link>
                 </Button>
               </div>
             </CardContent>

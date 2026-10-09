@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -761,12 +760,6 @@ export default function DmvOnlineHelper() {
           <div className="absolute inset-0 bg-gradient-to-br from-sky-500/15 via-blue-500/10 to-cyan-400/15 dark:from-sky-900/40 dark:via-blue-900/25 dark:to-cyan-900/30" aria-hidden="true" />
           <div className="container relative py-10 md:py-16">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="dmv-online-helper"
-                title="DMV Online Helper"
-                url="/tools/dmv-online-helper"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <Car className="w-5 h-5 text-info-foreground " />

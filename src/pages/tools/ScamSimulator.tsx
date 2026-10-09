@@ -7,7 +7,6 @@ import { Progress } from '@/components/ui/progress';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 
 /* ── Types ───────────────────────────────── */
 type ScenarioType = 'email' | 'text' | 'phone';
@@ -280,12 +279,6 @@ export default function ScamSimulator() {
       <main className="container py-12 min-h-[80vh] max-w-2xl mx-auto">
         <div className="relative">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="scam-simulator"
-              title="Scam Simulator"
-              url="/tools/scam-simulator"
-            />
           </div>
           <div className="flex items-center gap-3 mb-2 pr-14">
             <ShieldAlert className="h-8 w-8 text-primary" />

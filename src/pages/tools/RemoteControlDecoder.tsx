@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -1441,12 +1440,6 @@ export default function RemoteControlDecoder() {
         <section className="border-b border-border bg-gradient-to-br from-slate-100 via-slate-50 to-slate-200 dark:from-slate-900 dark:via-slate-950 dark:to-slate-800">
           <div className="container py-10 md:py-16 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="remote-control-decoder"
-                title="Remote Control Decoder"
-                url="/tools/remote-control-decoder"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <div className="p-3 rounded-xl bg-slate-900/10 dark:bg-slate-100/10 text-foreground ">

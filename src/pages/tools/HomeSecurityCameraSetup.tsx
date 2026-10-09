@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -1270,12 +1269,6 @@ export default function HomeSecurityCameraSetup() {
           <section className="border-b border-border bg-gradient-to-br from-sky-50 via-slate-50 to-blue-100 dark:from-sky-950/40 dark:via-slate-900 dark:to-blue-950/40">
             <div className="container py-10 md:py-14 relative">
               <div className="absolute top-6 right-6">
-                <BookmarkButton
-                  type="tool"
-                  slug="home-security-camera-setup"
-                  title="Home Security Cameras — Pick One and Set It Up"
-                  url="/tools/home-security-camera-setup"
-                />
               </div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="p-2 rounded-lg bg-sky-500/15 text-info-foreground ">
