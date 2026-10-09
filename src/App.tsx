@@ -15,7 +15,8 @@ import { TierProvider } from "@/contexts/TierContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { MeshGradientBackground } from "@/components/MeshGradientBackground";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
-import { SearchModal, useSearchModal } from "@/components/SearchModal";
+import { useSearchModal } from "@/hooks/useSearchModal";
+const SearchModal = lazy(() => import("@/components/SearchModal"));
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import ToolRoute from "@/components/ToolRoute";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -886,7 +887,11 @@ const AppContent = () => {
       </a>
       <OfflineBanner />
       {!isServer && <GoogleAnalytics measurementId={import.meta.env.VITE_GA4_ID || ''} />}
-      <SearchModal open={open} onClose={onClose} />
+      {open && (
+        <Suspense fallback={null}>
+          <SearchModal open={open} onClose={onClose} />
+        </Suspense>
+      )}
       <RouteThemeDefault />
       <MobileBottomNav />
       <BackToTop />

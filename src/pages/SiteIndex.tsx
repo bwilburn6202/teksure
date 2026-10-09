@@ -19,7 +19,7 @@ import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { guides, categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guides';
+import { categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guide-categories';
 import { TOOL_COUNT_LABEL } from '@/data/site-stats';
 
 /**
@@ -192,7 +192,6 @@ const account: Entry[] = [
   { to: '/signup', label: 'Sign Up', description: 'Create a free TekSure account.' },
   { to: '/customer', label: 'Dashboard', description: 'Your personal dashboard (sign-in required).' },
   { to: '/profile', label: 'Profile', description: 'Your profile and preferences (sign-in required).' },
-  { to: '/guides', label: 'My Devices', description: 'The devices you have told us about.' },
   { to: '/my-requests', label: 'My Requests', description: 'Help requests you have submitted.' },
   { to: '/technicians', label: 'Technicians', description: 'Browse available technicians.' },
   { to: '/quick-fixes', label: 'Quick Fixes', description: 'One-minute fixes for common problems.' },
@@ -200,21 +199,14 @@ const account: Entry[] = [
   { to: '/terms', label: 'Terms of Use', description: 'The rules for using TekSure.' },
 ];
 
-// Build the Guide Categories section from real data, so counts stay honest.
-const guideCategoryEntries: Entry[] = (Object.keys(categoryLabels) as GuideCategory[])
-  .map((cat) => {
-    const count = guides.filter((g) => g.category === cat).length;
-    return {
-      to: `/guides?category=${cat}`,
-      label: `${categoryLabels[cat]} (${count})`,
-      description: categoryDescriptions[cat],
-    };
-  })
-  .filter((e) => {
-    // Only include categories that actually have guides.
-    const countStr = e.label.match(/\((\d+)\)$/)?.[1];
-    return countStr ? parseInt(countStr, 10) > 0 : true;
-  });
+// Every guide category, linked to the filtered guide library. Per-category
+// counts were dropped: computing them here imported the whole guide library
+// (~17 MB) into this page just to print numbers.
+const guideCategoryEntries: Entry[] = (Object.keys(categoryLabels) as GuideCategory[]).map((cat) => ({
+  to: `/guides?category=${cat}`,
+  label: categoryLabels[cat],
+  description: categoryDescriptions[cat],
+}));
 
 // Master list of sections, in display order.
 const sections: Section[] = [

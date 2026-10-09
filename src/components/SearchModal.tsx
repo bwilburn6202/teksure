@@ -169,19 +169,4 @@ export function SearchModal({ open, onClose }: SearchModalProps) {
   );
 }
 
-export function useSearchModal() {
-  const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    const handler = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-        e.preventDefault();
-        setOpen(v => !v);
-      }
-    };
-    document.addEventListener('keydown', handler);
-    return () => document.removeEventListener('keydown', handler);
-  }, []);
-
-  return { open, setOpen, onClose: () => setOpen(false) };
-}
+export default SearchModal;

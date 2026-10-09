@@ -21,7 +21,7 @@ import {
 import { SEOHead } from '@/components/SEOHead';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { guides } from '@/data/guides';
+import { GUIDE_COUNT_LABEL } from '@/data/site-stats';
 
 /**
  * TekSure — About page.
@@ -32,9 +32,6 @@ import { guides } from '@/data/guides';
  * an 80-year-old who has never used a computer.
  */
 
-const guideCount = guides.length;
-// Round down to the nearest hundred for a friendlier, less-brittle number.
-const guideCountRounded = Math.floor(guideCount / 100) * 100;
 
 const pillars = [
   {
@@ -73,7 +70,7 @@ const audience = [
 const differences = [
   {
     icon: BookOpen,
-    title: `${guideCountRounded.toLocaleString()}+ guides, read-aloud tested`,
+    title: `${GUIDE_COUNT_LABEL} guides, read-aloud tested`,
     body:
       'Every guide is written to be read aloud by an 80-year-old who’s never used a computer. If a sentence stumbles, we rewrite it.',
   },
@@ -98,7 +95,7 @@ const differences = [
 ];
 
 const trustStats = [
-  { value: `${guideCountRounded.toLocaleString()}+`, label: 'Plain-English guides' },
+  { value: GUIDE_COUNT_LABEL, label: 'Plain-English guides' },
   { value: '150+', label: 'Friendly tools & wizards' },
   { value: 'Free', label: 'No paywalls on guides or tools' },
 ];
