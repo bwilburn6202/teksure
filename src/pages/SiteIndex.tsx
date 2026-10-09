@@ -156,6 +156,7 @@ const resources: Entry[] = [
   { to: '/reference-cards', label: 'Reference Cards', description: 'Printable cards for common everyday tasks.' },
   { to: '/checklists', label: 'Checklists', description: 'Printable checklists for setup, safety, and more.' },
   { to: '/glossary', label: 'Glossary', description: 'Every tech term explained in plain English.' },
+  { to: '/courses/internet-basics', label: 'Internet Basics Course', description: 'A free, step-by-step course for brand-new internet users.' },
 ];
 
 // ── For Specific Audiences ───────────────────────────────────────────────────

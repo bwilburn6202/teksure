@@ -125,6 +125,7 @@ const situations = [
       'Start with the thing they actually want to do. "Let me show you how to video call your grandkids" works better than "Let me teach you your phone."',
       'Never take over. Put the device in their hands and talk them through it. Doing it for them confirms their worst fear: that they cannot.',
     ],
+    cta: { to: '/get-help', label: 'Book a patient helper for them' },
   },
   {
     id: 'different-states',
