@@ -72,13 +72,83 @@
       "permanent": true
     },
     {
+      "source": "/roadmap",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/find-a-guide",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/device-hub",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/tools/all",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/brain",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
+      "source": "/tekbrain",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
+      "source": "/tekbrain/chat",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
+      "source": "/tips",
+      "destination": "/quick-fixes",
+      "permanent": true
+    },
+    {
       "source": "/tools/jargon-translator",
       "destination": "/tools/tech-jargon-translator",
       "permanent": true
     },
     {
+      "source": "/setup",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:slug",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/webinars",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/community/ambassadors",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
       "source": "/tools/phishing-scanner",
       "destination": "/tools/url-safety-checker",
+      "permanent": true
+    },
+    {
+      "source": "/notifications",
+      "destination": "/guides",
       "permanent": true
     },
     {
@@ -94,6 +164,96 @@
     {
       "source": "/book",
       "destination": "/get-help",
+      "permanent": true
+    },
+    {
+      "source": "/news",
+      "destination": "/whats-new",
+      "permanent": true
+    },
+    {
+      "source": "/forum",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
+      "source": "/forum/new",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
+      "source": "/forum/:id",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
+      "source": "/favorites",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/journal",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/my-devices",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/achievements",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/quick-reference-cards",
+      "destination": "/reference-cards",
+      "permanent": true
+    },
+    {
+      "source": "/my-path",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/gift-guide",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/tech-anxiety",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
+      "source": "/local-help",
+      "destination": "/tech-help-near-me",
+      "permanent": true
+    },
+    {
+      "source": "/certificate",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/ai-tutor",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
+      "source": "/progress-report",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/family-sharing",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/caregiver",
+      "destination": "/caregiver-hub",
       "permanent": true
     },
     {
@@ -117,8 +277,53 @@
       "permanent": true
     },
     {
+      "source": "/onboarding",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/explore",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/articles",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/articles/:slug",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/sources",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/scam-alerts",
+      "destination": "/safety/scam-alerts",
+      "permanent": true
+    },
+    {
       "source": "/practice/inbox",
       "destination": "/practice/phishing-inbox",
+      "permanent": true
+    },
+    {
+      "source": "/learn",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/free-software",
+      "destination": "/free-resources",
+      "permanent": true
+    },
+    {
+      "source": "/senior-tech-path",
+      "destination": "/guides",
       "permanent": true
     },
     {
@@ -129,6 +334,26 @@
     {
       "source": "/tools/password-leak-checker",
       "destination": "/tools/password-health",
+      "permanent": true
+    },
+    {
+      "source": "/ask",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
+      "source": "/community/ask",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
+      "source": "/success-stories",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/stories",
+      "destination": "/about",
       "permanent": true
     },
     {
@@ -147,13 +372,58 @@
       "permanent": true
     },
     {
+      "source": "/videos",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/keyboard-navigation",
+      "destination": "/accessibility",
+      "permanent": true
+    },
+    {
+      "source": "/changelog",
+      "destination": "/whats-new",
+      "permanent": true
+    },
+    {
       "source": "/tools/subscription-tracker",
       "destination": "/tools/subscription-auditor",
       "permanent": true
     },
     {
+      "source": "/weekly-tips",
+      "destination": "/quick-fixes",
+      "permanent": true
+    },
+    {
+      "source": "/this-week",
+      "destination": "/quick-fixes",
+      "permanent": true
+    },
+    {
+      "source": "/quizzes/tech-confidence",
+      "destination": "/quizzes/scam-iq",
+      "permanent": true
+    },
+    {
       "source": "/practice/phone",
       "destination": "/practice/suspicious-call",
+      "permanent": true
+    },
+    {
+      "source": "/practice/vocab-flashcards",
+      "destination": "/glossary",
+      "permanent": true
+    },
+    {
+      "source": "/volunteer",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/daily-tip",
+      "destination": "/quick-fixes",
       "permanent": true
     },
     {

@@ -12,15 +12,26 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 - **Repo:** github.com/bwilburn6202/teksure · **Live:** https://www.teksure.com (canonical host is `www`; apex currently **307s**, not 301 — see blockers)
 - **Local:** `~/Documents/Claude/Projects/TekSure` · dev on :5173
 
-## Current state (2026-08-30) — ON THIS BRANCH, NOT IN PRODUCTION
-3,939 guides · 387 tools · 4,449 sitemap URLs · TypeScript clean · 106/106 tests · prerendering live
+## Current state (2026-10-09) — overhaul branch, pending merge
+3,939 guides · 385 tools · 4,395 sitemap URLs · TypeScript clean · 103/103 tests · 4,397/4,397 prerendered
 
-> ⚠️ **These numbers describe `chore/redundancy-cleanup-2026-08-30`, not the live site.**
-> As of 2026-08-31 production is `origin/main` @ `8e33ddc2` serving **7,128 URLs** — the
-> pre-cut site. This branch is 12 commits ahead of and 78 commits behind `origin/main`, and
-> the cut has never been merged. Verify with `curl -s https://www.teksure.com/build-info.json`
-> before trusting any count in this file. Reconciling the two is a decision for Bailey; see
-> cycle 151 in `.claude/dev-loop-backlog.md`.
+> Branch `overhaul/minimize-2026-10-09` = the 2026-08-30 cut merged with `origin/main`
+> plus the minimize overhaul below. Until it merges, production (`origin/main`) still serves
+> ~7,128 URLs. Check `curl -s https://www.teksure.com/build-info.json` before trusting counts.
+
+**Minimize overhaul, 2026-10-09.** 57 more routes removed, chosen by Supabase usage, not
+taste: forum (3 threads, 0 replies), community Q&A (0), TekBrain chat (its `tekbrain-chat`
+edge function was never deployed — every "Ask TekBrain" button led to a 404), learning
+paths / progress / favorites / achievements (`guide_progress` = 0 rows), empty aggregators
+(articles, sources, videos), stale blog/news/webinars, fictional stories, nonexistent
+programs (volunteer, ambassadors), internal pages (`/memory`, `/opportunity-dashboard`,
+`/llm-knowledge-base`), and duplicate front doors. Each with an equivalent is a
+`<Navigate>`; the internal ones 404. "Ask a real person" (`/get-help`) is the single help
+path. **Do not reintroduce an AI-chat CTA until the function behind it is deployed and
+answering.** The global Cmd+K `SearchModal` is lazy-loaded and its hook lives in
+`hooks/useSearchModal.ts`: importing `@/data/guides` anywhere in the entry graph puts the
+17 MB guide-data chunk on every page. Category labels live in `data/guide-categories.ts`
+for the same reason.
 
 **Thin-content cut, 2026-08-30.** `/tools` went from 2,970 pages to 387. 2,246 of the
 removed pages were under 300 words, 2,480 had no editorial inbound link, and 207
@@ -117,7 +128,7 @@ The 70+ accumulated `.stale*`/`.bak*` files are from past sessions hitting this 
 ## Verify before claiming done
 ```bash
 npx tsc --noEmit -p tsconfig.app.json
-npm test                        # 104 tests — brand voice + schema
+npm test                        # 103 tests — brand voice + schema
 node scripts/validate-slugs.mjs
 npm run build                   # ~40s + 5 prerender shards; verify prerender-report.json says complete
 ```
@@ -127,7 +138,7 @@ npm run build                   # ~40s + 5 prerender shards; verify prerender-re
 |---|---|
 | `src/data/guides.ts` | Guide content + `GUIDE_CATEGORIES` |
 | `src/App.tsx` | All routes + `<Navigate>` redirects |
-| `src/components/Navbar.tsx` · `TekBot.tsx` | Nav · AI assistant |
+| `src/components/layout/Navbar.tsx` · `Footer.tsx` · `MobileBottomNav.tsx` | Navigation |
 | `supabase/migrations/` | Migrations |
 | `.claude/dev-loop-backlog.md` | Work queue — newest cycles at top |
 | `.claude/prompts/` | Reusable run briefs |

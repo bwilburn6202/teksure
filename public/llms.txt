@@ -4,7 +4,7 @@
 
 ## About this site
 
-- 3,654 step-by-step guides and 387 interactive tools, all free and without a paywall.
+- 3,654 step-by-step guides and 386 interactive tools, all free and without a paywall.
 - Audience: non-technical adults, especially people aged 60+, and caregivers.
 - US-focused: prices in USD, US carriers, US government services (Medicare, Social Security, IRS).
 - Editorial rule: plain English, no jargon without an explanation, no "it's easy".
