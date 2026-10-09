@@ -13,10 +13,10 @@ This task exists for the one thing the daily loop doesn't do: **verify from outs
 
 ## 1. Discoverability check — highest priority, do this first
 ```bash
-curl -s https://www.teksure.com/guides/qr-codes | grep -oE "<title>[^<]*</title>"
+curl -s https://www.teksure.com/guides/qr-codes | grep -oE "<title[^>]*>[^<]*</title>"
 curl -s https://www.teksure.com/build-info.json
 ```
-The title **must** be that guide's own title. If it returns the generic `TekSure — Free Tech Help for Beginners & Seniors`, prerendering has regressed and fixing it outranks everything else this week. See `scripts/prerender.mjs`, which runs inside `npm run build` via `prerender:safe`.
+The `[^>]*` matters: react-helmet emits `<title data-rh="true">`, so a bare `<title>` pattern matches nothing on a **healthy** page and looks exactly like a regression. The title **must** be that guide's own title. If it returns the generic `TekSure — Free Tech Help for Beginners & Seniors`, prerendering has regressed and fixing it outranks everything else this week. See `scripts/prerender.mjs`, which runs inside `npm run build` via `prerender:safe`.
 
 `build-info.json` tells you the deployed commit and prerendered page count — if it's behind your last push, the deploy failed silently. Check `vercel.json` for schema-invalid keys first; that's the usual cause.
 

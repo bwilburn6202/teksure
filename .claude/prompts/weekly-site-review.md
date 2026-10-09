@@ -22,12 +22,23 @@ Then check what the outside world sees — the site is useless if it cannot be f
 
 ```bash
 curl -s https://www.teksure.com/sitemap.xml | grep -c "<loc>"
-curl -s https://www.teksure.com/guides/qr-codes | grep -oE "<title>[^<]*</title>"
+curl -s https://www.teksure.com/guides/qr-codes | grep -oE "<title[^>]*>[^<]*</title>"
+curl -s https://www.teksure.com/prerender-report.json
 ```
 
-That last one must return the *guide's* title, not the generic site title. If it
-returns the generic one, prerendering has regressed and **nothing else matters this
-week** — fix it first (`scripts/prerender.mjs`, wired into `npm run build`).
+Note the `[^>]*` in the title pattern — react-helmet emits `<title data-rh="true">`, so a
+bare `<title>` matches nothing **on a perfectly healthy page**. An earlier version of this
+file carried the bare pattern, which turns a green site into a false "prerendering has
+regressed" alarm and burns the run chasing it. Do not simplify it back.
+
+The title must be the *guide's* own title, not the generic site title. If it returns the
+generic one, prerendering has regressed and **nothing else matters this week** — fix it
+first (`scripts/prerender.mjs`, wired into `npm run build`).
+
+`prerender-report.json` is the authoritative check, and the spot-check is not: `status`
+must be `complete` and `written` must equal `routesAttempted`. A short run means a shard
+died and some pages serve the generic shell even though the one URL you checked looked
+fine.
 
 ## 2. Choose by impact, not by ease
 

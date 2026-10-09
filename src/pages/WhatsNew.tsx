@@ -77,7 +77,7 @@ interface MonthlyRelease {
   groups: Partial<Record<UpdateType, Update[]>>;
 }
 
-// ── Featured highlights for "This Month" ─────────────────────────────────────
+// ── Featured highlights (not month-scoped, so they cannot go stale) ─────────────────────────────────────
 const FEATURED_THIS_MONTH: {
   title: string;
   description: string;
@@ -94,7 +94,7 @@ const FEATURED_THIS_MONTH: {
     cta: 'Browse the guides',
   },
   {
-    title: '12 new guides in August',
+    title: 'New guides added in August',
     description:
       'Current scam alerts from the FTC, what to check in your Medicare Annual Notice of Change, borrowing free library audiobooks with Libby, setting up a Medical ID on your phone, and more.',
     icon: BookOpen,
@@ -114,11 +114,24 @@ const FEATURED_THIS_MONTH: {
 // ── Monthly releases (newest first) ──────────────────────────────────────────
 const RELEASES: MonthlyRelease[] = [
   {
+    id: 'sep-2026',
+    label: 'September 2026',
+    summary: 'A quiet month for new writing. Two fixes, both about pages being counted and described correctly.',
+    groups: {
+      fix: [
+        { title: 'Five pages were going out with no title at all', description: 'Five addresses listed in our sitemap reached search engines with an empty title, which meant nobody could tell what they were. They now carry their own title and summary.' },
+        { title: 'Our own tool count was being read off the wrong page', description: 'The snapshot we use to report how many tools the site has was counting the single directory page rather than the tools themselves. The number on the site is now the real one.' },
+      ],
+    },
+  },
+  {
     id: 'aug-2026',
     label: 'August 2026',
-    summary: '12 new guides, plus a cleanup of summaries and claims across the site.',
+    summary: '17 new guides, bigger text across the site, and every page now shows its own title in search results.',
     groups: {
       guide: [
+        { title: 'The new grandparent scam: AI voice cloning', description: 'A caller who sounds exactly like your grandchild, because the voice was copied from a few seconds of video. How it works, and the one habit that stops it.' },
+        { title: 'When a scammer sends someone to your door', description: 'The courier and gold bar scam. No real bank, agency, or officer will ever ask you to hand cash or valuables to a stranger at your home.' },
         { title: 'Youville: a free FTC game for grandkids', description: "The FTC's new tool teaches children 8 to 12 how to make good choices online. Written for grandparents to play along." },
         { title: 'Your Medicare Annual Notice of Change', description: 'Plans mail the 2027 notice by September 30. Here are the five items worth reading before Open Enrollment opens October 15.' },
         { title: 'Free library eBooks and audiobooks with Libby', description: 'Your library card already covers this. No charge, no subscription, and nothing is ever overdue.' },
@@ -130,6 +143,8 @@ const RELEASES: MonthlyRelease[] = [
         { title: 'Replacing a lost Medicare card', description: 'How to order a replacement for free, and why nobody legitimate calls to offer you a new one.' },
       ],
       improvement: [
+        { title: 'Every page now shows its own title in search results', description: 'All 7,128 pages are now built as finished pages before they go out, so Google, Bing, and shared links show the right title and summary instead of a generic one.' },
+        { title: 'Larger text on tool pages and small labels', description: 'Body copy on our tools moved from 15px to 17px, and many small labels across the site were raised to a 14px minimum. Nothing here should need a squint.' },
         { title: 'Guide summaries no longer get cut off', description: 'We shortened 283 summaries that search engines were truncating mid-sentence, so you can see what a guide covers before you click.' },
       ],
       fix: [
@@ -390,10 +405,10 @@ export default function WhatsNew() {
             <div>
               <div className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-primary mb-2">
                 <Calendar className="h-4 w-4" aria-hidden="true" />
-                This Month
+                Recent highlights
               </div>
               <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
-                The biggest changes in April
+                The changes most worth knowing about
               </h2>
             </div>
             <Button asChild variant="outline" size="lg" className="text-base">

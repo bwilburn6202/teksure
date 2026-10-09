@@ -63,8 +63,17 @@ export default function AiTutor() {
   }
 
   if (!level) {
+    // The level picker is the first screen every visitor and every crawler
+    // sees, so the head tags belong here as well as in the chat view. When
+    // they lived only below this return, /ai-tutor prerendered with an empty
+    // <title> and no description or canonical.
     return (
       <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="AI Tutor — Learn Tech at Your Own Pace | TekSure"
+        description="Learn technology at your own pace with a friendly AI tutor that adapts to your skill level. Ask anything and get clear, plain-English answers."
+        path="/ai-tutor"
+      />
         <Navbar />
         <main id="main-content" className="flex-1 container max-w-2xl py-14 text-center">
           <div className="text-5xl mb-4"></div>

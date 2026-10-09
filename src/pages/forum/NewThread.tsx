@@ -65,7 +65,17 @@ export default function NewThread() {
 
   if (!user) {
     navigate('/login', { state: { from: '/forum/new' } });
-    return null;
+    // The prerenderer always hits this branch — there is no user at build
+    // time — so the head tags have to live here too, or the page ships with
+    // an empty <title>. A "start a discussion" form is not a search result.
+    return (
+      <SEOHead
+        title="Start a Discussion — TekSure Forum"
+        description="Ask a question or share a tip with the TekSure community."
+        path="/forum/new"
+        noindex
+      />
+    );
   }
 
   const categoryChoices = CATEGORIES.filter(c => c.value !== 'all');
@@ -126,7 +136,7 @@ export default function NewThread() {
                   >
                     <span className="text-lg">{cat.emoji}</span>
                     <span className="font-medium leading-tight">{cat.label}</span>
-                    <span className="text-sm text-muted-foreground leading-tight">{cat.description}</span>
+                    <span className="text-xs text-muted-foreground leading-tight">{cat.description}</span>
                   </button>
                 ))}
               </div>
@@ -146,7 +156,7 @@ export default function NewThread() {
                 className="text-base"
                 disabled={createThread.isPending}
               />
-              <p className="text-sm text-muted-foreground text-right">{title.length}/120</p>
+              <p className="text-xs text-muted-foreground text-right">{title.length}/120</p>
             </div>
 
             {/* Body */}
@@ -165,7 +175,7 @@ export default function NewThread() {
               />
             </div>
 
-            <p className="text-base text-muted-foreground">
+            <p className="text-sm text-muted-foreground">
               Posting as <span className="font-medium text-foreground">{user.fullName || user.email}</span>
             </p>
 

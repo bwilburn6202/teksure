@@ -25,7 +25,7 @@ grep -m1 "id: '" src/pages/WhatsNew.tsx                # newest release id
 ```
 
 If the Tech Problem date is within the last 7 days and the What's New release covers
-the current month, there is nothing to do here. Say so and move on to other work.
+the most recently completed month, there is nothing to do here. Say so and move on to other work.
 
 ## Refreshing /tech-problem-of-week
 

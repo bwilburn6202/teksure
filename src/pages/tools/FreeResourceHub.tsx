@@ -1030,7 +1030,7 @@ export default function FreeResourceHub() {
                       <p className="text-base text-foreground mb-3 leading-relaxed">
                         {r.what}
                       </p>
-                      <dl className="space-y-2 text-sm mb-4 flex-1">
+                      <dl className="space-y-2 text-base mb-4 flex-1">
                         <div>
                           <dt className="font-semibold text-muted-foreground">Who runs it</dt>
                           <dd className="text-foreground">{r.who}</dd>

@@ -93,6 +93,15 @@ function collectRoutes() {
   const appTsx = readFileSync(join(ROOT, 'src', 'App.tsx'), 'utf8');
   const routes = new Set(['/']);
 
+  // The catch-all rewrite in vercel.json points every unmatched URL at /404, so
+  // this route has to exist as a real file or the edge has nothing to serve.
+  // App.tsx renders NotFound for `path="*"`, which the literal-path scan below
+  // skips, so it is added by hand. Without it an unknown URL was served the
+  // *homepage* HTML — same title, same canonical, HTTP 200 — a soft 404 that
+  // shows search engines thousands of duplicate homepages instead of a page
+  // saying it does not exist. NotFound already sets `noindex`.
+  routes.add('/404');
+
   // Routes that only exist to redirect are served as real 308s by Vercel
   // (see scripts/generate-redirects.mjs). Prerendering them would emit an
   // empty page that competes with the destination in search results.
@@ -143,6 +152,23 @@ const require = createRequire(import.meta.url);
 
 // ── Head injection ───────────────────────────────────────────────
 /**
+ * True only when the rendered head carries a title with actual text in it.
+ *
+ * react-helmet-async emits `<title data-rh="true"></title>` when a route
+ * returns before its <SEOHead> renders — an auth guard that bails on `!user`,
+ * or a wizard whose first screen sits above the SEOHead in the tree. The tag
+ * is present, so a `head.includes('<title')` test passes, the shell's real
+ * fallback title gets stripped, and the page ships with NO title at all. That
+ * is strictly worse than leaving the generic one in place, and the prerender
+ * report counted zero failures while five live URLs had an empty <title>
+ * (found 2026-09-02: /signup, /forum/new, /ai-tutor, /family-sharing, /book).
+ */
+function hasRealTitle(head) {
+  const m = /<title[^>]*>([\s\S]*?)<\/title>/i.exec(head);
+  return Boolean(m && m[1].trim());
+}
+
+/**
  * Replace the shell's default head tags with this page's real ones.
  *
  * The template ships a generic title/description so the SPA is never blank in
@@ -152,7 +178,7 @@ const require = createRequire(import.meta.url);
 function buildHtml(head, appHtml) {
   let html = template;
 
-  if (head.includes('<title')) {
+  if (hasRealTitle(head)) {
     html = html.replace(/<title[^>]*>[\s\S]*?<\/title>\s*/i, '');
   }
   for (const attr of ['description', 'robots']) {
@@ -183,6 +209,22 @@ function buildHtml(head, appHtml) {
     throw new Error('shell template is missing the <!--ssr-outlet--> placeholder');
   }
   html = html.replace('<!--ssr-outlet-->', appHtml);
+
+  // Guard: the injected tags are only worth anything inside <head>. The
+  // <!--ssr-head--> placeholder lived in <body> (just after #root) until
+  // 2026-08-20, so every page shipped its title, canonical and og:* tags
+  // after the head element. Nothing caught it: the degraded check greps the
+  // rendered head fragment for <title>, which was present -- just injected
+  // into the wrong half of the document. Assert on position, not presence.
+  const headClose = html.indexOf('</head>');
+  const titleAt = html.search(/<title[\s>]/i);
+  if (titleAt === -1 || headClose === -1 || titleAt > headClose) {
+    throw new Error(
+      'injected <title> did not land inside <head> -- is the <!--ssr-head--> ' +
+        'placeholder still inside the head element in index.html?'
+    );
+  }
+
   return html;
 }
 
@@ -301,10 +343,11 @@ async function renderOne(route) {
 
     // A page that renders its shell but no <title> hit a recoverable error and
     // fell back — it would ship invisible to search. Surface it loudly.
-    if (!head.includes('<title')) {
+    if (!hasRealTitle(head)) {
       degraded++;
       if (degradedList.length < 40) {
-        degradedList.push(`${route} — no <title> (${errors?.[0] ?? 'unknown cause'})`);
+        const why = head.includes('<title') ? 'empty <title>' : 'no <title>';
+        degradedList.push(`${route} — ${why} (${errors?.[0] ?? 'unknown cause'})`);
       }
     } else if (errors?.length) {
       if (degradedList.length < 40) degradedList.push(`${route} — ${errors[0]}`);

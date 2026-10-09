@@ -40,7 +40,7 @@ const CURRENT_PROBLEM: TechProblem = {
   title: 'A Website Has 48 Hours to Take Down a Private Photo Posted Without Your Permission',
   emoji: '',
   description:
-    'On September 17 the FTC pointed people toward a right many do not know they have. Under the Take It Down Act, a website or app that carries what its users post has to give you a way to report an intimate photo or video of you that someone shared without your permission \u2014 and has to remove it, along with copies of it, within 48 hours of your request. The law covers pictures that were digitally altered or made with AI, so a fake counts the same as a real photo. If the platform misses that 48-hour deadline, it has broken the law. So has a platform with no reporting process at all, or one that does not work. The FTC enforces this against the platform, and a single violation can carry a civil penalty of $53,088.',
+    'On September 17 the FTC pointed people toward a right many do not know they have. Under the Take It Down Act, a website or app that carries what its users post has to give you a way to report an intimate photo or video of you that someone shared without your permission \u2014 and has to remove it, along with copies of it, within 48 hours of your request. The law covers pictures that were digitally altered or created, so a fake counts the same as a real photo. If the platform misses that 48-hour deadline, it has broken the law. So has a platform with no reporting process at all, or one that does not work. The FTC enforces this against the platform, and a single violation can carry a civil penalty of $53,088.',
   howToCheck:
     'Start at the post itself. Most platforms put a reporting option behind the three dots in the corner of a post. If nothing there fits, look under the platform\u2019s help or support pages, or find its contact details in the directory at StopNCII.org/resources-and-support. Write down the date and the time you send your request, and save the confirmation screen or email. That timestamp is what starts the 48-hour clock, and it is what you will need if the platform does nothing.',
   whatToDo:
@@ -334,7 +334,7 @@ const PAST_PROBLEMS: TechProblem[] = [
 
 export default function TechProblemOfWeek() {
   return (
-    <div className="min-h-screen bg-muted ">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
       <SEOHead
         title="Tech Problem of the Week — Stay Ahead of What's Breaking | TekSure"
         description="The biggest tech issues affecting everyday users this week. What's broken, who's affected, and exactly how to fix it. Updated weekly."
@@ -345,27 +345,27 @@ export default function TechProblemOfWeek() {
       <main id="main-content" className="container mx-auto px-4 py-12 md:py-16">
         {/* Hero */}
         <section className="max-w-4xl mx-auto text-center mb-12">
-          <Badge className="mb-5 bg-warn text-warn-foreground text-sm px-3 py-1">
+          <Badge className="mb-5 bg-orange-100 text-orange-800 dark:bg-orange-900/40 dark:text-orange-300 text-sm px-3 py-1">
             <AlertTriangle className="w-4 h-4 mr-1.5" />
             Weekly tech alert
           </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground dark:text-white mb-5 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 dark:text-white mb-5 leading-tight">
             What's Going Wrong This Week
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+          <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
             A weekly look at the tech problems affecting everyday people — plus exactly what to do about them.
           </p>
         </section>
 
         {/* Current Week Hero Card */}
         <section className="max-w-4xl mx-auto mb-16">
-          <Card className="border-2 border-warn-foreground/25 bg-card shadow-lg">
+          <Card className="border-2 border-orange-300 dark:border-orange-700 bg-white dark:bg-slate-900 shadow-lg">
             <CardContent className="p-8 md:p-10">
               <div className="flex flex-wrap items-center gap-3 mb-4">
                 <Badge className="bg-red-600 text-white hover:bg-red-700">
                   This Week
                 </Badge>
-                <span className="flex items-center text-base text-muted-foreground ">
+                <span className="flex items-center text-sm text-slate-500 dark:text-slate-400">
                   <Calendar className="w-4 h-4 mr-1.5" />
                   {CURRENT_PROBLEM.weekRange}
                 </span>
@@ -373,35 +373,35 @@ export default function TechProblemOfWeek() {
 
               <div className="flex items-start gap-4 mb-6">
                 <div className="text-5xl md:text-6xl flex-shrink-0">{CURRENT_PROBLEM.emoji}</div>
-                <h2 className="text-2xl md:text-4xl font-bold text-foreground dark:text-white leading-tight">
+                <h2 className="text-2xl md:text-4xl font-bold text-slate-900 dark:text-white leading-tight">
                   {CURRENT_PROBLEM.title}
                 </h2>
               </div>
 
-              <p className="text-base md:text-lg text-foreground mb-6 leading-relaxed">
+              <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 mb-6 leading-relaxed">
                 {CURRENT_PROBLEM.description}
               </p>
 
               {CURRENT_PROBLEM.howToCheck && (
-                <div className="mb-6 p-5 rounded-lg bg-info border border-info-foreground/25 ">
+                <div className="mb-6 p-5 rounded-lg bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900">
                   <div className="flex items-center gap-2 mb-2">
-                    <CheckCircle2 className="w-5 h-5 text-info-foreground " />
-                    <h3 className="font-bold text-foreground dark:text-white">
+                    <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                    <h3 className="font-bold text-slate-900 dark:text-white">
                       How to check if you're affected
                     </h3>
                   </div>
-                  <p className="text-foreground leading-relaxed">
+                  <p className="text-slate-700 dark:text-slate-200 leading-relaxed">
                     {CURRENT_PROBLEM.howToCheck}
                   </p>
                 </div>
               )}
 
-              <div className="mb-6 p-5 rounded-lg bg-success border border-success-foreground/25 ">
+              <div className="mb-6 p-5 rounded-lg bg-green-50 dark:bg-green-950/40 border border-green-200 dark:border-green-900">
                 <div className="flex items-center gap-2 mb-2">
-                  <Wrench className="w-5 h-5 text-success-foreground " />
-                  <h3 className="font-bold text-foreground dark:text-white">How to fix it</h3>
+                  <Wrench className="w-5 h-5 text-green-600 dark:text-green-400" />
+                  <h3 className="font-bold text-slate-900 dark:text-white">How to fix it</h3>
                 </div>
-                <p className="text-foreground leading-relaxed">
+                <p className="text-slate-700 dark:text-slate-200 leading-relaxed">
                   {CURRENT_PROBLEM.whatToDo}
                 </p>
               </div>
@@ -410,7 +410,7 @@ export default function TechProblemOfWeek() {
                 href={CURRENT_PROBLEM.source.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-sm font-semibold text-warn-foreground hover:underline"
+                className="inline-flex items-center text-sm font-semibold text-amber-700 dark:text-amber-400 hover:underline"
               >
                 Source: {CURRENT_PROBLEM.source.label}
                 <ExternalLink className="w-4 h-4 ml-1.5" />
@@ -422,8 +422,8 @@ export default function TechProblemOfWeek() {
         {/* Recent Weeks */}
         <section className="max-w-5xl mx-auto mb-20">
           <div className="flex items-center gap-3 mb-8">
-            <Newspaper className="w-6 h-6 text-muted-foreground " />
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground dark:text-white">
+            <Newspaper className="w-6 h-6 text-slate-600 dark:text-slate-400" />
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">
               Recent Weeks
             </h2>
           </div>
@@ -432,7 +432,7 @@ export default function TechProblemOfWeek() {
             {PAST_PROBLEMS.map((problem) => (
               <Card
                 key={problem.dateISO}
-                className="border-border hover:shadow-lg transition-shadow"
+                className="border-slate-200 dark:border-slate-800 hover:shadow-lg transition-shadow"
               >
                 <CardContent className="p-6 flex flex-col h-full">
                   <div className="flex items-start justify-between mb-3">
@@ -443,24 +443,24 @@ export default function TechProblemOfWeek() {
                     </Badge>
                   </div>
 
-                  <h3 className="text-lg font-bold text-foreground dark:text-white mb-2 leading-snug">
+                  <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 leading-snug">
                     {problem.title}
                   </h3>
 
-                  <p className="text-base text-muted-foreground mb-4 leading-relaxed flex-grow">
+                  <p className="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed flex-grow">
                     {problem.description}
                   </p>
 
-                  <div className="border-t border-border pt-3 space-y-2">
-                    <p className="text-sm text-muted-foreground ">
-                      <span className="font-semibold text-foreground ">What to do:</span>{' '}
+                  <div className="border-t border-slate-200 dark:border-slate-800 pt-3 space-y-2">
+                    <p className="text-xs text-slate-500 dark:text-slate-400">
+                      <span className="font-semibold text-slate-700 dark:text-slate-200">What to do:</span>{' '}
                       {problem.whatToDo}
                     </p>
                     <a
                       href={problem.source.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-xs font-semibold text-warn-foreground hover:underline"
+                      className="inline-flex items-center text-xs font-semibold text-amber-700 dark:text-amber-400 hover:underline"
                     >
                       {problem.source.label}
                       <ExternalLink className="w-3 h-3 ml-1" />
@@ -474,23 +474,23 @@ export default function TechProblemOfWeek() {
 
         {/* How We Pick + Suggest */}
         <section className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-          <Card className="border-border ">
+          <Card className="border-slate-200 dark:border-slate-800">
             <CardContent className="p-8">
               <div className="flex items-center gap-2 mb-3">
-                <Info className="w-5 h-5 text-muted-foreground " />
-                <h2 className="text-xl font-bold text-foreground dark:text-white">
+                <Info className="w-5 h-5 text-slate-600 dark:text-slate-400" />
+                <h2 className="text-xl font-bold text-slate-900 dark:text-white">
                   How we pick these
                 </h2>
               </div>
-              <p className="text-muted-foreground leading-relaxed mb-3">
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
                 Every Monday, our team reviews reports from the FTC, CISA, official vendor status pages, and tech news sources to identify the issue most likely to affect everyday users that week.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                 We prioritize problems that are widespread, actionable (there is something you can actually do), and explained in plain English.
               </p>
               <Link
                 to="/news"
-                className="inline-flex items-center text-sm font-semibold text-warn-foreground hover:underline mt-4"
+                className="inline-flex items-center text-sm font-semibold text-amber-700 dark:text-amber-400 hover:underline mt-4"
               >
                 See our full news feed
                 <ArrowRight className="w-4 h-4 ml-1" />
@@ -498,15 +498,15 @@ export default function TechProblemOfWeek() {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/40 dark:to-orange-950/40 border-warn-foreground/25 ">
+          <Card className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/40 dark:to-orange-950/40 border-amber-200 dark:border-amber-900">
             <CardContent className="p-8 flex flex-col h-full">
               <div className="flex items-center gap-2 mb-3">
-                <Mail className="w-5 h-5 text-warn-foreground " />
-                <h2 className="text-xl font-bold text-foreground dark:text-white">
+                <Mail className="w-5 h-5 text-amber-600 dark:text-amber-400" />
+                <h2 className="text-xl font-bold text-slate-900 dark:text-white">
                   Suggest a problem
                 </h2>
               </div>
-              <p className="text-foreground leading-relaxed mb-5 flex-grow">
+              <p className="text-slate-700 dark:text-slate-200 leading-relaxed mb-5 flex-grow">
                 Noticed something breaking for you or people you know? Drop us a line. If it's affecting a lot of people, we'll feature it and help folks fix it.
               </p>
               <Button asChild className="bg-amber-600 hover:bg-amber-700 text-white w-fit">

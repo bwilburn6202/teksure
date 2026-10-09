@@ -67,6 +67,12 @@ const XS_IS_TINY = XS_PX < TINY_FLOOR_PX;
 // Counted only when the class actually resolves below the floor. Arbitrary
 // values like text-[11px] are always checked, since they bypass the config.
 const tinyText = [];
+// PracticeMode renders a deliberately miniature simulated phone screen — a mock
+// recipe page the learner practises pinch-to-zoom on. The 6px/8px type IS the
+// exercise; raising it would remove the thing being taught. Excluded so the
+// tiny-text count stays a list of real defects rather than one permanent
+// false positive that trains people to ignore this check.
+const TINY_TEXT_BY_DESIGN = new Set(['src/pages/tools/PracticeMode.tsx']);
 // ── 2. Tap targets below the 44px WCAG minimum ───────────────────
 // h-8 = 32px, h-9 = 36px. Fine for a mouse, poor for an unsteady finger.
 const smallTargets = [];
@@ -87,7 +93,7 @@ for (const f of files) {
     if (px < TINY_FLOOR_PX) xs += 1;
   }
 
-  if (xs > 0) tinyText.push({ file: rel, count: xs });
+  if (xs > 0 && !TINY_TEXT_BY_DESIGN.has(rel)) tinyText.push({ file: rel, count: xs });
 
   // Tap targets under 44px. The size class has to be on the interactive element
   // itself — an earlier version looked 200 characters backwards for the word

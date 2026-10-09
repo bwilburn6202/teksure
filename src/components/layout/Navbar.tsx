@@ -260,7 +260,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                                 transition-colors ${focusRing}`}
                   >
                     <Avatar className="h-9 w-9">
-                      <AvatarFallback className="bg-[#2A5FCC] text-white text-[11px] font-bold">
+                      <AvatarFallback className="bg-[#2A5FCC] text-white text-sm font-bold">
                         {initials}
                       </AvatarFallback>
                     </Avatar>

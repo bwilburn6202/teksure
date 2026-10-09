@@ -348,7 +348,17 @@ function checkOldGuides() {
 function checkSiteMetrics() {
   // Quick snapshot of growth metrics so the backlog tracks trajectory over time.
   const app = safeRead(path.join(ROOT, 'src', 'App.tsx'));
-  const tools = safeRead(path.join(ROOT, 'src', 'pages', 'Tools.tsx'));
+  // Tools.tsx is the HAND-CURATED /tools listing page, not the tool surface.
+  // It lists 285 tools while the site publishes ~2,958, so reporting its length
+  // as "tools" understated the live surface by an order of magnitude - and made
+  // it look as though the 2026-08-30 redundancy cut (2,970 -> 387) had already
+  // shipped when production never received it. Cycle 151 escalated exactly that
+  // question; this number was answering it wrongly. Count the authoritative
+  // auto-generated directory instead, and keep the curated count as its own
+  // metric so the gap between "pages that exist" and "pages a human can reach
+  // from /tools" stays visible instead of being silently averaged away.
+  const curated = safeRead(path.join(ROOT, 'src', 'pages', 'Tools.tsx'));
+  const toolsDir = safeRead(path.join(ROOT, 'src', 'data', 'tools-directory.ts'));
   const dataDir = path.join(ROOT, 'src', 'data');
   let guideCount = 0;
   if (fs.existsSync(dataDir)) {
@@ -365,18 +375,22 @@ function checkSiteMetrics() {
       guideCount += (content.match(/(?:^|[{,\s])slug:\s*['"`]/gm) ?? []).length;
     }
   }
+  const toolCount = (toolsDir.match(/\{\s*path:\s*'\/tools\//g) ?? []).length;
+  const curatedTools = (curated.match(/\n\s*title:\s*['"]/g) ?? []).length;
+  const routes = (app.match(/<Route\s+path=/g) ?? []).length;
   return {
     name: 'metrics',
     label: 'Site metrics snapshot',
     ok: true,
     severity: 'info',
-    summary: `${guideCount} guides, ${(app.match(/<Route\s+path=/g) ?? []).length} routes, ${(tools.match(/\n\s*title:\s*['"]/g) ?? []).length} tools.`,
+    summary: `${guideCount} guides, ${routes} routes, ${toolCount} tools (${curatedTools} curated on /tools).`,
     details: '',
     metrics: {
       guides: guideCount,
-      routes: (app.match(/<Route\s+path=/g) ?? []).length,
+      routes,
       lazyImports: (app.match(/lazy\(\(\) => import/g) ?? []).length,
-      tools: (tools.match(/\n\s*title:\s*['"]/g) ?? []).length,
+      tools: toolCount,
+      curatedToolsListed: curatedTools,
     },
   };
 }
