@@ -107,7 +107,7 @@ export default function TripPreparationChecklist() {
   const pct = Math.round((done / total) * 100);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Trip Preparation Checklist | TekSure"
         description="A step-by-step checklist for getting ready to travel — bookings, documents, home prep, and last-minute reminders, all in one place."
@@ -116,10 +116,10 @@ export default function TripPreparationChecklist() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Plane className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Trip Preparation Checklist</h1>
+            <Plane className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Trip Preparation Checklist</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Get ready to travel without forgetting anything important. Work through this list in the weeks before you leave.
           </p>
         </div>
@@ -142,14 +142,14 @@ export default function TripPreparationChecklist() {
         <Card className="mb-4">
           <CardContent className="py-4 px-4">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-lg font-semibold text-gray-800">{done} of {total} done</span>
-              <span className="text-2xl font-bold text-blue-700">{pct}%</span>
+              <span className="text-lg font-semibold text-foreground">{done} of {total} done</span>
+              <span className="text-2xl font-bold text-info-foreground">{pct}%</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
               <div className="h-3 bg-blue-500 rounded-full transition-all duration-300" style={{ width: `${pct}%` }} />
             </div>
             {pct === 100 && (
-              <p className="text-green-700 font-semibold mt-2 text-center">
+              <p className="text-success-foreground font-semibold mt-2 text-center">
                 Ready for takeoff! Have a wonderful trip{tripName ? ` — ${tripName}` : ""}.
               </p>
             )}
@@ -176,17 +176,17 @@ export default function TripPreparationChecklist() {
                         key={item.id}
                         onClick={() => toggle(item.id)}
                         className={`w-full text-left flex items-start gap-3 p-3 rounded-lg border transition-colors ${
-                          isDone ? "bg-green-50 border-green-200" : "bg-white border-gray-200 hover:bg-gray-50"
+                          isDone ? "bg-green-50 border-green-200" : "bg-white border-border hover:bg-gray-50"
                         }`}
                       >
                         <span className="mt-0.5 shrink-0">
-                          {isDone ? <CheckCircle2 className="h-5 w-5 text-green-600" /> : <Circle className="h-5 w-5 text-gray-400" />}
+                          {isDone ? <CheckCircle2 className="h-5 w-5 text-success-foreground" /> : <Circle className="h-5 w-5 text-muted-foreground" />}
                         </span>
                         <span>
-                          <span className={`block text-sm font-semibold ${isDone ? "line-through text-gray-400" : "text-gray-900"}`}>
+                          <span className={`block text-base font-semibold ${isDone ? "line-through text-gray-400" : "text-gray-900"}`}>
                             {item.task}
                           </span>
-                          {!isDone && <span className="block text-sm text-gray-500 mt-0.5">{item.detail}</span>}
+                          {!isDone && <span className="block text-base text-muted-foreground mt-0.5">{item.detail}</span>}
                         </span>
                       </button>
                     );
@@ -202,17 +202,17 @@ export default function TripPreparationChecklist() {
             <Printer className="h-4 w-4" />
             Print Checklist
           </Button>
-          <Button variant="ghost" onClick={reset} className="gap-2 text-gray-500">
+          <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground">
             <RotateCcw className="h-4 w-4" />
             Start Over
           </Button>
         </div>
 
-        <p className="text-sm text-gray-400 mt-4 flex items-center gap-1 print:hidden">
+        <p className="text-base text-muted-foreground mt-4 flex items-center gap-1 print:hidden">
           <MapPin className="h-3 w-3" />
           Tip: Print this checklist and tape it to the fridge while you prepare.
         </p>
       </div>
-    </div>
+    </main>
   );
 }

@@ -12,12 +12,48 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 - **Repo:** github.com/bwilburn6202/teksure · **Live:** https://www.teksure.com (canonical host is `www`; apex currently **307s**, not 301 — see blockers)
 - **Local:** `~/Documents/Claude/Projects/TekSure` · dev on :5173
 
-## Current state (2026-08-06)
-4,049 guides · 285 tools · ~7,100 sitemap URLs · TypeScript clean · 104/104 tests · prerendering live
+## Current state (2026-10-09) — overhaul branch, pending merge
+3,939 guides · 385 tools · 4,395 sitemap URLs · TypeScript clean · 103/103 tests · 4,397/4,397 prerendered
+
+> Branch `overhaul/minimize-2026-10-09` = the 2026-08-30 cut merged with `origin/main`
+> plus the minimize overhaul below. Until it merges, production (`origin/main`) still serves
+> ~7,128 URLs. Check `curl -s https://www.teksure.com/build-info.json` before trusting counts.
+
+**Minimize overhaul, 2026-10-09.** 57 more routes removed, chosen by Supabase usage, not
+taste: forum (3 threads, 0 replies), community Q&A (0), TekBrain chat (its `tekbrain-chat`
+edge function was never deployed — every "Ask TekBrain" button led to a 404), learning
+paths / progress / favorites / achievements (`guide_progress` = 0 rows), empty aggregators
+(articles, sources, videos), stale blog/news/webinars, fictional stories, nonexistent
+programs (volunteer, ambassadors), internal pages (`/memory`, `/opportunity-dashboard`,
+`/llm-knowledge-base`), and duplicate front doors. Each with an equivalent is a
+`<Navigate>`; the internal ones 404. "Ask a real person" (`/get-help`) is the single help
+path. **Do not reintroduce an AI-chat CTA until the function behind it is deployed and
+answering.** The global Cmd+K `SearchModal` is lazy-loaded and its hook lives in
+`hooks/useSearchModal.ts`: importing `@/data/guides` anywhere in the entry graph puts the
+17 MB guide-data chunk on every page. Category labels live in `data/guide-categories.ts`
+for the same reason.
+
+**Thin-content cut, 2026-08-30.** `/tools` went from 2,970 pages to 387. 2,246 of the
+removed pages were under 300 words, 2,480 had no editorial inbound link, and 207
+near-duplicate topic clusters covered 443 of them. This was the guide-count problem
+repeated at the route layer — the 2026-08-04 quality-over-count decision had been applied
+to guides and never to tool pages. 474 removed slugs with a genuine equivalent redirect
+(308 at the edge); the rest 404 on purpose, because pointing 2,000 unrelated thin pages at
+a hub reads as a soft 404. Full reasoning: `docs/REDUNDANCY-AUDIT-2026-08-30.md`.
+**Do not add `/tools` pages to move a number either.**
+
+**Thin guides, same day.** 110 guides that duplicated a longer guide on the same topic
+were merged away (17 by title via `scripts/merge-duplicate-guides.mjs`, 93 by topic via
+`scripts/merge-thin-guides.mjs` + `scripts/thin-guide-merges.json`) and redirect to the
+guide that actually answers the question. The merge map is hand-reviewed on purpose:
+automatic topic matching proposed a VPN guide onto a OneDrive guide and an Apple Watch
+guide onto Apple Pay. **~700 guides under 300 words remain and were left alone** — each is
+the only coverage of its topic, so they need expanding or an explicit decision to accept
+them, not deleting. That is a content call, not a cleanup.
 
 **Guide count target: retired.** Closed as MISSED at 4,049 by decision on 2026-08-04. 4,000 mediocre pages rank worse than 400 excellent ones. Do not add guides to move a number.
 
-**Open blockers (raise, don't work around):** analytics wiring unverified · monetization needs AdSense/affiliate credentials · hosted Ollama needs the Hetzner CX22 · `npm run build` OOMs in sandbox (needs ≥8GB) · readability sits at grade 8.3 with ~58.5% above grade 8 — **analysis done 2026-09-19, awaiting Bailey's decision**: the grade is 17.68 word-length vs 6.19 sentence-length, sentences already average 15.9 words, the safe vocabulary pass is exhausted (0 swaps left), and the words driving it are proper nouns/UI labels (Medicare, Security, Battery) or everyday words (every, family). Recommendation is to accept 8.3 and retire the ≤8 target. Full evidence: `docs/READABILITY-DECISION-2026-09-19.md`. Do not re-derive this daily · **apex `teksure.com` redirects to `www` with a 307 (temporary), not a 308/301** — path is preserved so users are fine, but a 307 does not consolidate link equity onto the canonical host. This is a Vercel *domain* setting, not `vercel.json`, so it cannot be fixed from the repo: Vercel dashboard → Project → Settings → Domains → `teksure.com` → set the redirect to permanent.
+**Open blockers (raise, don't work around):** analytics wiring unverified · monetization needs AdSense/affiliate credentials · hosted Ollama needs the Hetzner CX22 · ~~`npm run build` OOMs in sandbox~~ — fixed by the 2026-08-30 cut (tool registry + sharded prerender) · readability sits at grade 8.3 with ~58.5% above grade 8 — **analysis done 2026-09-19, awaiting Bailey's decision**: the grade is 17.68 word-length vs 6.19 sentence-length, sentences already average 15.9 words, the safe vocabulary pass is exhausted (0 swaps left), and the words driving it are proper nouns/UI labels (Medicare, Security, Battery) or everyday words (every, family). Recommendation is to accept 8.3 and retire the ≤8 target. Full evidence: `docs/READABILITY-DECISION-2026-09-19.md`. Do not re-derive this daily · **apex `teksure.com` redirects to `www` with a 307 (temporary), not a 308/301** — path is preserved so users are fine, but a 307 does not consolidate link equity onto the canonical host. This is a Vercel *domain* setting, not `vercel.json`, so it cannot be fixed from the repo: Vercel dashboard → Project → Settings → Domains → `teksure.com` → set the redirect to permanent.
 
 ---
 
@@ -32,7 +68,9 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 - Verify what's actually live: `curl -s https://www.teksure.com/build-info.json`
 
 **Redirects**
-- Redirects come from `<Navigate>` routes in `App.tsx` via `scripts/generate-redirects.mjs`. Add them there, never by hand in `vercel.json`.
+- Redirects come from two places, both consumed by `scripts/generate-redirects.mjs`:
+  `<Navigate>` routes in `App.tsx`, and `src/data/tool-redirects.ts` for tool pages removed
+  in the 2026-08-30 cut. Add them there, never by hand in `vercel.json`.
 - **Turning a redirect back into a real page takes TWO steps.** `generate-redirects.mjs` preserves any redirect it no longer finds in `App.tsx`, treating it as hand-added — so the stale 308 survives and shadows the new page forever while the source looks correct. Delete the `vercel.json` entry by hand as well. (Cost a full session on `/pricing`, 2026-07-26.)
 
 **Data shape — this is the one that caused 440 type errors**
@@ -51,6 +89,16 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 ```
 - `GuideCategory` derives from `GUIDE_CATEGORIES` in `src/data/guides.ts`. Add categories to that array only — the type, tests, and `Record<GuideCategory, …>` maps follow.
 - **Every new batch file must be imported AND spread** in `guides.ts`, or its guides silently do not exist.
+
+**Tool pages are a registry, not a route table**
+- `/tools/<slug>` resolves through `src/data/tools-registry.ts` via a single dynamic
+  `/tools/:slug` route and `src/components/ToolRoute.tsx`. A tool that is not in that map
+  does not exist. `App.tsx` used to carry one `lazy()` and one `<Route>` per tool, which is
+  how it reached 7,445 lines and accumulated 37 duplicate route declarations that were
+  silently unreachable — React Router matched the first and ignored the second.
+- `scripts/generate-sitemap.mjs`, `scripts/generate-tools-directory.mjs` and
+  `scripts/prerender.mjs` all read the slug list through `scripts/tool-slugs.mjs`. If you
+  add a tool, add it to the registry — nothing scrapes `App.tsx` for tool routes any more.
 
 **Generated files — never hand-edit**
 `public/sitemap.xml` · `src/data/tools-directory.ts` · `src/data/site-stats.ts` · `vercel.json` (except redirect deletions above). All produced in `prebuild`. Do NOT add a second sitemap generator to `vite.config.ts` — one used to overwrite the good sitemap with guides only.
@@ -80,9 +128,9 @@ The 70+ accumulated `.stale*`/`.bak*` files are from past sessions hitting this 
 ## Verify before claiming done
 ```bash
 npx tsc --noEmit -p tsconfig.app.json
-npm test                        # 104 tests — brand voice + schema
+npm test                        # 103 tests — brand voice + schema
 node scripts/validate-slugs.mjs
-npm run build                   # OOMs in sandbox — if it dies, SAY SO
+npm run build                   # ~40s + 5 prerender shards; verify prerender-report.json says complete
 ```
 
 ## Key locations
@@ -90,7 +138,7 @@ npm run build                   # OOMs in sandbox — if it dies, SAY SO
 |---|---|
 | `src/data/guides.ts` | Guide content + `GUIDE_CATEGORIES` |
 | `src/App.tsx` | All routes + `<Navigate>` redirects |
-| `src/components/Navbar.tsx` · `TekBot.tsx` | Nav · AI assistant |
+| `src/components/layout/Navbar.tsx` · `Footer.tsx` · `MobileBottomNav.tsx` | Navigation |
 | `supabase/migrations/` | Migrations |
 | `.claude/dev-loop-backlog.md` | Work queue — newest cycles at top |
 | `.claude/prompts/` | Reusable run briefs |

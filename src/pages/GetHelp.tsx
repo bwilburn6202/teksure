@@ -299,7 +299,7 @@ const GetHelp = () => {
                 We got your request. A real person will be in touch with you soon — no robots, no runaround.
               </p>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               While you wait, browse our free guides.
             </p>
             <Button onClick={() => navigate('/guides')} className="gap-2 rounded-xl" size="lg">
@@ -321,7 +321,7 @@ const GetHelp = () => {
         <main id="main-content" tabIndex={-1} className="flex-1 outline-none">
           <div className="container py-24 flex flex-col items-center justify-center text-center max-w-lg mx-auto gap-8">
             <div className="h-20 w-20 rounded-full bg-green-500/10 flex items-center justify-center">
-              <CheckCircle2 className="h-10 w-10 text-green-600" />
+              <CheckCircle2 className="h-10 w-10 text-success-foreground" />
             </div>
             <div>
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Booking confirmed!</h1>
@@ -330,7 +330,7 @@ const GetHelp = () => {
                 <strong>{selectedDate?.label}</strong> at <strong>{selectedSlot?.label}</strong>.
               </p>
               {email && (
-                <p className="text-sm text-muted-foreground mb-6">
+                <p className="text-base text-muted-foreground mb-6">
                   A confirmation has been sent to <strong>{email}</strong>.
                 </p>
               )}
@@ -341,7 +341,7 @@ const GetHelp = () => {
                 <p className="text-3xl font-mono font-bold tracking-widest">{bookingRef}</p>
               </CardContent>
             </Card>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               One of our technicians will confirm your exact appointment time. They'll call or email you{phone ? ` at ${phone}` : ''} before the appointment.
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
@@ -396,7 +396,7 @@ const GetHelp = () => {
                 <Zap className={`h-5 w-5 ${mode === 'asap' ? 'text-primary' : 'text-muted-foreground'}`} />
                 <span className="font-semibold">Reach out to me</span>
               </div>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Free. A real person will call or email you as soon as possible.
               </p>
             </button>
@@ -414,7 +414,7 @@ const GetHelp = () => {
                 <CalendarClock className={`h-5 w-5 ${mode === 'schedule' ? 'text-primary' : 'text-muted-foreground'}`} />
                 <span className="font-semibold">Schedule a time</span>
               </div>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Pick a date and time. Pay on the day, or secure with a {formatPrice(DEPOSIT_AMOUNT)} deposit.
               </p>
             </button>
@@ -484,7 +484,7 @@ const GetHelp = () => {
                   : <>Send Request <ArrowRight className="h-4 w-4" aria-hidden="true" /></>}
               </Button>
 
-              <p className="text-center text-xs text-muted-foreground">
+              <p className="text-center text-sm text-muted-foreground">
                 No spam. No sales pitch. Just real tech help.
               </p>
             </form>
@@ -553,9 +553,9 @@ const GetHelp = () => {
                             : 'border-border bg-card hover:border-primary/30 hover:bg-card/80'
                         }`}
                       >
-                        <span className="text-xs font-normal opacity-70" aria-hidden="true">{d.dayName}</span>
+                        <span className="text-sm font-normal opacity-70" aria-hidden="true">{d.dayName}</span>
                         <span className="text-base font-bold" aria-hidden="true">{d.label.split(' ')[0]}</span>
-                        <span className="text-xs opacity-70" aria-hidden="true">{d.label.split(' ')[1]}</span>
+                        <span className="text-sm opacity-70" aria-hidden="true">{d.label.split(' ')[1]}</span>
                       </button>
                     ))}
                   </div>
@@ -575,7 +575,7 @@ const GetHelp = () => {
                         ))}
                       </SelectContent>
                     </Select>
-                    <p className="text-xs text-muted-foreground mt-2">
+                    <p className="text-sm text-muted-foreground mt-2">
                       Half-hour slots from 7:00 AM to 10:00 PM. Your technician will confirm before the visit.
                     </p>
                   </div>
@@ -648,8 +648,8 @@ const GetHelp = () => {
                       <CardContent className="p-4 flex items-start gap-3">
                         <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" aria-hidden="true" />
                         <div>
-                          <p className="font-semibold text-sm">This is a remote session</p>
-                          <p className="text-xs text-muted-foreground mt-1">
+                          <p className="font-semibold text-base">This is a remote session</p>
+                          <p className="text-sm text-muted-foreground mt-1">
                             We help you over the phone, and share your screen if that makes it easier.
                             It works anywhere in the United States — there is nothing to install
                             beforehand and nobody comes to your door.
@@ -659,7 +659,7 @@ const GetHelp = () => {
                     </Card>
                   ) : (
                   <div className="mb-6">
-                    <p className="text-sm font-medium mb-3">Where would you like help?</p>
+                    <p className="text-base font-medium mb-3">Where would you like help?</p>
                     <div role="radiogroup" aria-label="Session location" className="space-y-3">
                       <button
                         role="radio"
@@ -671,8 +671,8 @@ const GetHelp = () => {
                           {serviceLocation === 'remote' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
                         </div>
                         <div>
-                          <p className="font-semibold text-sm">Remotely, over the phone</p>
-                          <p className="text-xs text-muted-foreground mt-1">We call you and, if it helps, walk through your screen together. Works for most problems.</p>
+                          <p className="font-semibold text-base">Remotely, over the phone</p>
+                          <p className="text-sm text-muted-foreground mt-1">We call you and, if it helps, walk through your screen together. Works for most problems.</p>
                         </div>
                       </button>
 
@@ -686,15 +686,15 @@ const GetHelp = () => {
                           {serviceLocation === 'onsite' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
                         </div>
                         <div>
-                          <p className="font-semibold text-sm">At my home</p>
-                          <p className="text-xs text-muted-foreground mt-1">A technician comes to you. Same price. Travel within {INCLUDED_TRAVEL_MILES} miles is included.</p>
+                          <p className="font-semibold text-base">At my home</p>
+                          <p className="text-sm text-muted-foreground mt-1">A technician comes to you. Same price. Travel within {INCLUDED_TRAVEL_MILES} miles is included.</p>
                         </div>
                       </button>
                     </div>
 
                     {serviceLocation === 'onsite' && (
                       <div className="mt-4 space-y-3 rounded-xl border border-border bg-muted/30 p-4">
-                        <p className="text-xs text-muted-foreground">
+                        <p className="text-sm text-muted-foreground">
                           We need your address to send a technician. We'll confirm you're inside our service
                           area before charging anything — if you're not, we'll tell you and cancel at no cost.
                         </p>
@@ -727,7 +727,7 @@ const GetHelp = () => {
                       <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Pricing</p>
                       <div className="flex justify-between text-sm mb-2"><span>First hour</span><strong>{formatPrice(FIRST_HOUR_PRICE)}</strong></div>
                       <div className="flex justify-between text-sm text-muted-foreground mb-3"><span>Each additional hour</span><span>{formatPrice(ADDITIONAL_HOUR_PRICE)}</span></div>
-                      <p className="text-xs text-muted-foreground">Most jobs take 1 hour. You only pay for time spent — no fix, no charge.</p>
+                      <p className="text-sm text-muted-foreground">Most jobs take 1 hour. You only pay for time spent — no fix, no charge.</p>
                     </CardContent>
                   </Card>
 
@@ -742,8 +742,8 @@ const GetHelp = () => {
                         {paymentOption === 'day' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
                       </div>
                       <div>
-                        <p className="font-semibold text-sm">Pay on the day <span className="text-green-600 font-normal text-xs ml-1">Free to book</span></p>
-                        <p className="text-xs text-muted-foreground mt-1">Pay the technician directly after the visit. Cash, card, or bank transfer.</p>
+                        <p className="font-semibold text-base">Pay on the day <span className="text-success-foreground font-normal text-sm ml-1">Free to book</span></p>
+                        <p className="text-sm text-muted-foreground mt-1">Pay the technician directly after the visit. Cash, card, or bank transfer.</p>
                       </div>
                     </button>
 
@@ -757,8 +757,8 @@ const GetHelp = () => {
                         {paymentOption === 'deposit' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
                       </div>
                       <div>
-                        <p className="font-semibold text-sm">Pay {formatPrice(DEPOSIT_AMOUNT)} deposit now</p>
-                        <p className="text-xs text-muted-foreground mt-1">
+                        <p className="font-semibold text-base">Pay {formatPrice(DEPOSIT_AMOUNT)} deposit now</p>
+                        <p className="text-sm text-muted-foreground mt-1">
                           Secure your booking with a small deposit. It comes off your bill — a 1-hour job leaves{' '}
                           {formatPrice(remainderAfterDeposit())} to pay on the day. Fully refundable if you cancel{' '}
                           {FREE_CANCELLATION_HOURS}+ hours before.
@@ -772,9 +772,9 @@ const GetHelp = () => {
                       <CardContent className="p-4 text-center">
                         <div className="flex items-center justify-center gap-2 mb-2">
                           <Lock className="h-4 w-4 text-primary" aria-hidden="true" />
-                          <p className="text-sm font-semibold">Secure checkout via Stripe</p>
+                          <p className="text-base font-semibold">Secure checkout via Stripe</p>
                         </div>
-                        <p className="text-xs text-muted-foreground">
+                        <p className="text-sm text-muted-foreground">
                           You'll be taken to Stripe's secure payment page. We never store your card.
                         </p>
                       </CardContent>
@@ -789,14 +789,14 @@ const GetHelp = () => {
                       <p className="flex items-center gap-2"><Clock className="h-4 w-4 text-muted-foreground" /> <strong>{selectedSlot?.label}</strong></p>
                       <p className="flex items-center gap-2"><MapPin className="h-4 w-4 text-muted-foreground" /> <strong>{ONSITE_AVAILABLE && serviceLocation === 'onsite' ? `At your home${city.trim() ? ` — ${city.trim()}` : ''}` : 'Remotely, over the phone'}</strong></p>
                       <p className="flex items-center gap-2"><CreditCard className="h-4 w-4 text-muted-foreground" /> <strong>{paymentOption === 'deposit' ? `${formatPrice(DEPOSIT_AMOUNT)} now, ${formatPrice(remainderAfterDeposit())} on the day` : `${formatPrice(FIRST_HOUR_PRICE)} on the day`}</strong></p>
-                      <p className="text-xs text-muted-foreground pt-1">
+                      <p className="text-sm text-muted-foreground pt-1">
                         Based on a 1-hour job. Longer jobs add {formatPrice(ADDITIONAL_HOUR_PRICE)} per extra hour. If we can't fix it, you pay nothing.{' '}
                         <Link to="/refund-policy" className="text-primary hover:underline">Refund policy</Link>
                       </p>
                     </CardContent>
                   </Card>
 
-                  {error && <p role="alert" className="text-destructive text-sm mb-4 font-medium">{error}</p>}
+                  {error && <p role="alert" className="text-destructive text-base mb-4 font-medium">{error}</p>}
 
                   <div className="flex gap-3">
                     <Button variant="outline" onClick={() => setStep(1)} className="rounded-xl">← Back</Button>

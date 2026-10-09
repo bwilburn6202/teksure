@@ -16,17 +16,17 @@ export default function GrandparentScamDefense() {
           <p className="text-lg text-muted-foreground">"Grandma, it&apos;s me — I&apos;m in trouble..."</p>
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The setup</h2>
-            <p className="text-sm">A panicked young voice calls. Says they&apos;re your grandchild. Been in a car accident, in jail, in the hospital. Begs you not to tell mom or dad. Need money RIGHT NOW. Will send a "lawyer" or "courier" to pick up cash. <strong>$2.7 BILLION lost to these scams in 2023</strong> per FTC.</p>
+            <p className="text-base">A panicked young voice calls. Says they&apos;re your grandchild. Been in a car accident, in jail, in the hospital. Begs you not to tell mom or dad. Need money RIGHT NOW. Will send a "lawyer" or "courier" to pick up cash. <strong>$2.7 BILLION lost to these scams in 2023</strong> per FTC.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The new AI voice twist (since 2024)</h2>
-            <p className="text-sm">Scammers now use AI to clone a real grandchild&apos;s voice from social media videos. 30 seconds of audio is enough. The voice will sound exactly right. <strong>Trust the rules below — not your ears.</strong></p>
+            <p className="text-base">Scammers now use AI to clone a real grandchild&apos;s voice from social media videos. 30 seconds of audio is enough. The voice will sound exactly right. <strong>Trust the rules below — not your ears.</strong></p>
           </CardContent>
         </Card>
 
@@ -60,7 +60,7 @@ export default function GrandparentScamDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up a family safe word — today</h2>
-            <p className="text-sm">Family meeting (or group text). Pick a goofy word everyone knows but a stranger never could. Examples: "watermelon", "blue tractor", "Aunt Mildred&apos;s pies". Anyone calling with a real emergency must use it. No safe word = scam.</p>
+            <p className="text-base">Family meeting (or group text). Pick a goofy word everyone knows but a stranger never could. Examples: "watermelon", "blue tractor", "Aunt Mildred&apos;s pies". Anyone calling with a real emergency must use it. No safe word = scam.</p>
           </CardContent>
         </Card>
 

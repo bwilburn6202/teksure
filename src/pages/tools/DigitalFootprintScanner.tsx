@@ -2,7 +2,6 @@ import { useState, useMemo } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -295,12 +294,6 @@ export default function DigitalFootprintScanner() {
         <section className="border-b border-border bg-muted/30">
           <div className="container py-10 md:py-14 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="digital-footprint-scanner"
-                title="Digital Footprint Scanner"
-                url="/tools/digital-footprint-scanner"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <Fingerprint className="w-5 h-5 text-primary" />
@@ -319,7 +312,7 @@ export default function DigitalFootprintScanner() {
         <section className="container pt-8 pb-2">
           <Card className="border-blue-500/40 bg-blue-50/50 dark:bg-blue-950/20">
             <CardContent className="p-5 flex items-start gap-3">
-              <Lock className="w-6 h-6 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
+              <Lock className="w-6 h-6 text-info-foreground shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg mb-1">This is an educational tool — not an actual scanner</h3>
                 <p className="text-base text-muted-foreground leading-relaxed">
@@ -375,7 +368,7 @@ export default function DigitalFootprintScanner() {
                     <div
                       className={`p-3 rounded-lg shrink-0 ${
                         complete
-                          ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
+                          ? 'bg-green-100 text-success-foreground dark:bg-green-900 dark:text-green-300'
                           : 'bg-primary/10 text-primary'
                       }`}
                     >
@@ -395,7 +388,7 @@ export default function DigitalFootprintScanner() {
                           {section.risk} Risk
                         </span>
                       </div>
-                      <p className="text-sm text-muted-foreground mt-1">
+                      <p className="text-base text-muted-foreground mt-1">
                         {done} of {total} checks completed
                       </p>
                     </div>
@@ -412,7 +405,7 @@ export default function DigitalFootprintScanner() {
                       {/* Why it matters */}
                       <div className="mt-5 mb-5 p-4 bg-muted/40 rounded-lg">
                         <h4 className="font-semibold text-base mb-2 flex items-center gap-2">
-                          <AlertTriangle className="w-4 h-4 text-amber-600" />
+                          <AlertTriangle className="w-4 h-4 text-warn-foreground" />
                           Why This Matters
                         </h4>
                         <p className="text-base text-muted-foreground leading-relaxed">
@@ -477,7 +470,7 @@ export default function DigitalFootprintScanner() {
                                   {item.label}
                                 </span>
                                 {item.detail && (
-                                  <p className="text-sm text-muted-foreground mt-0.5">{item.detail}</p>
+                                  <p className="text-base text-muted-foreground mt-0.5">{item.detail}</p>
                                 )}
                               </div>
                             </label>
@@ -513,14 +506,14 @@ export default function DigitalFootprintScanner() {
               </div>
 
               {progressPct === 100 && (
-                <div className="mt-6 p-4 bg-green-100 dark:bg-green-950 border border-green-300 dark:border-green-800 rounded-lg">
+                <div className="mt-6 p-4 bg-success border border-success-foreground/25 rounded-lg">
                   <div className="flex items-center gap-2 mb-2">
-                    <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-300" />
-                    <h3 className="font-semibold text-green-800 dark:text-green-200">
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground " />
+                    <h3 className="font-semibold text-success-foreground ">
                       All Checks Complete!
                     </h3>
                   </div>
-                  <p className="text-base text-green-700 dark:text-green-300 leading-relaxed">
+                  <p className="text-base text-success-foreground leading-relaxed">
                     You've gone through every section of the Digital Footprint Scanner. Set a
                     reminder to come back and check again in 3–6 months — data brokers often
                     re-list your information over time.

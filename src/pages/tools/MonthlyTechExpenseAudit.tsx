@@ -205,7 +205,7 @@ export default function MonthlyTechExpenseAudit() {
         description="Find out if you are overpaying for your phone, internet, streaming, and other tech services. Free audit tool — no sign-in needed."
       />
       <Navbar />
-      <main className="min-h-screen bg-gray-50 dark:bg-gray-950 pb-16">
+      <main className="min-h-screen bg-muted pb-16">
         <div className="max-w-2xl mx-auto px-4 pt-6">
           <PageBreadcrumb
             items={[
@@ -216,14 +216,14 @@ export default function MonthlyTechExpenseAudit() {
 
           <div className="text-center mb-8 mt-4">
             <div className="text-5xl mb-3">💰</div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+            <h1 className="text-3xl font-bold text-foreground dark:text-white mb-2">
               Monthly Tech Expense Audit
             </h1>
-            <p className="text-gray-600 dark:text-gray-300 text-lg">
+            <p className="text-muted-foreground text-lg">
               Enter what you pay each month. We will show you where you might be overpaying and
               what free alternatives exist.
             </p>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+            <p className="text-base text-muted-foreground mt-2">
               Nothing leaves your device — all calculations happen in your browser.
             </p>
           </div>
@@ -242,16 +242,16 @@ export default function MonthlyTechExpenseAudit() {
                 <Card key={id} className="overflow-hidden">
                   <CardContent className="p-0">
                     <button
-                      className="w-full flex items-center gap-3 p-4 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+                      className="w-full flex items-center gap-3 p-4 text-left hover:bg-muted transition-colors"
                       onClick={() => toggleExpand(id)}
                       aria-expanded={isOpen}
                     >
-                      <div className={`p-2 rounded-lg bg-gray-100 dark:bg-gray-800 ${color}`}>
+                      <div className={`p-2 rounded-lg bg-muted ${color}`}>
                         <Icon size={20} />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="font-semibold text-gray-900 dark:text-white">{label}</div>
-                        <div className="text-sm text-gray-500 dark:text-gray-400">{sublabel}</div>
+                        <div className="font-semibold text-foreground dark:text-white">{label}</div>
+                        <div className="text-sm text-muted-foreground ">{sublabel}</div>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">
                         {hasValue && (
@@ -268,19 +268,19 @@ export default function MonthlyTechExpenseAudit() {
                           </Badge>
                         )}
                         {isOpen ? (
-                          <ChevronUp size={16} className="text-gray-400" />
+                          <ChevronUp size={16} className="text-muted-foreground" />
                         ) : (
-                          <ChevronDown size={16} className="text-gray-400" />
+                          <ChevronDown size={16} className="text-muted-foreground" />
                         )}
                       </div>
                     </button>
 
                     {isOpen && (
-                      <div className="px-4 pb-4 border-t border-gray-100 dark:border-gray-700 pt-3 space-y-3">
+                      <div className="px-4 pb-4 border-t border-border pt-3 space-y-3">
                         <div className="flex items-center gap-3">
                           <label
                             htmlFor={`input-${id}`}
-                            className="text-sm font-medium text-gray-700 dark:text-gray-300 whitespace-nowrap"
+                            className="text-sm font-medium text-foreground whitespace-nowrap"
                           >
                             Your monthly cost ($):
                           </label>
@@ -296,15 +296,15 @@ export default function MonthlyTechExpenseAudit() {
                             className="w-28"
                           />
                         </div>
-                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                        <p className="text-base text-muted-foreground ">
                           <span className="font-medium">Typical range:</span> {typicalRange}
                         </p>
-                        <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-3 text-sm text-blue-800 dark:text-blue-200">
+                        <div className="bg-info rounded-lg p-3 text-sm text-info-foreground ">
                           <p className="font-medium mb-1">💡 Money-saving tip</p>
                           <p>{item.savingsTip}</p>
                         </div>
                         {item.freeAlternative && (
-                          <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-3 text-sm text-green-800 dark:text-green-200">
+                          <div className="bg-success rounded-lg p-3 text-sm text-success-foreground ">
                             <p className="font-medium mb-1">🆓 Free alternatives</p>
                             <p>{item.freeAlternative}</p>
                           </div>
@@ -333,16 +333,16 @@ export default function MonthlyTechExpenseAudit() {
           )}
 
           {showResults && filledCount >= 2 && (
-            <Card className="mb-6 border-2 border-blue-200 dark:border-blue-800">
+            <Card className="mb-6 border-2 border-info-foreground/25 ">
               <CardContent className="p-6 space-y-5">
                 <div className="text-center">
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
+                  <h2 className="text-2xl font-bold text-foreground dark:text-white mb-1">
                     Your Results
                   </h2>
-                  <div className="text-4xl font-bold text-blue-600 dark:text-blue-400">
+                  <div className="text-4xl font-bold text-info-foreground ">
                     ${total.toFixed(2)} / month
                   </div>
-                  <div className="text-gray-500 dark:text-gray-400 text-sm mt-1">
+                  <div className="text-muted-foreground text-sm mt-1">
                     ${(total * 12).toFixed(0)} per year on tech services
                   </div>
                 </div>
@@ -354,17 +354,17 @@ export default function MonthlyTechExpenseAudit() {
                       const rating = getRating(amount!, item.typicalMid);
                       return (
                         <div key={item.id} className="flex items-center justify-between py-1">
-                          <span className="text-gray-700 dark:text-gray-300 text-sm flex items-center gap-2">
+                          <span className="text-foreground text-base flex items-center gap-2">
                             {rating === 'great' ? (
-                              <CheckCircle2 size={15} className="text-green-500 shrink-0" />
+                              <CheckCircle2 size={15} className="text-success-foreground shrink-0" />
                             ) : rating === 'ok' ? (
-                              <CheckCircle2 size={15} className="text-yellow-500 shrink-0" />
+                              <CheckCircle2 size={15} className="text-warn-foreground shrink-0" />
                             ) : (
-                              <AlertTriangle size={15} className="text-red-500 shrink-0" />
+                              <AlertTriangle size={15} className="text-danger-foreground shrink-0" />
                             )}
                             {item.label}
                           </span>
-                          <span className="font-semibold text-gray-900 dark:text-white">
+                          <span className="font-semibold text-foreground dark:text-white">
                             ${amount!.toFixed(2)}
                           </span>
                         </div>
@@ -373,14 +373,14 @@ export default function MonthlyTechExpenseAudit() {
                 </div>
 
                 {savings > 5 && (
-                  <div className="bg-amber-50 dark:bg-amber-900/20 rounded-lg p-4 border border-amber-200 dark:border-amber-800">
+                  <div className="bg-warn rounded-lg p-4 border border-warn-foreground/25 ">
                     <div className="flex items-start gap-2">
-                      <TrendingDown size={20} className="text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+                      <TrendingDown size={20} className="text-warn-foreground shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-semibold text-amber-800 dark:text-amber-200">
+                        <p className="font-semibold text-warn-foreground ">
                           Potential savings: ${savings.toFixed(2)}/month (${(savings * 12).toFixed(0)}/year)
                         </p>
-                        <p className="text-sm text-amber-700 dark:text-amber-300 mt-1">
+                        <p className="text-base text-warn-foreground mt-1">
                           Some of your services appear to cost more than typical. Tap each item
                           above to see specific tips for reducing that cost.
                         </p>
@@ -390,14 +390,14 @@ export default function MonthlyTechExpenseAudit() {
                 )}
 
                 {savings <= 5 && (
-                  <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border border-green-200 dark:border-green-800">
+                  <div className="bg-success rounded-lg p-4 border border-success-foreground/25 ">
                     <div className="flex items-start gap-2">
-                      <CheckCircle2 size={20} className="text-green-600 dark:text-green-400 shrink-0 mt-0.5" />
+                      <CheckCircle2 size={20} className="text-success-foreground shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-semibold text-green-800 dark:text-green-200">
+                        <p className="font-semibold text-success-foreground ">
                           Your tech spending looks reasonable!
                         </p>
-                        <p className="text-sm text-green-700 dark:text-green-300 mt-1">
+                        <p className="text-base text-success-foreground mt-1">
                           Your costs are in line with or below typical ranges. Still worth
                           reviewing each service annually — prices and better deals change often.
                         </p>
@@ -406,8 +406,8 @@ export default function MonthlyTechExpenseAudit() {
                   </div>
                 )}
 
-                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 text-sm text-gray-600 dark:text-gray-400 space-y-1">
-                  <p className="font-medium text-gray-800 dark:text-gray-200">Next steps:</p>
+                <div className="bg-muted rounded-lg p-4 text-sm text-muted-foreground space-y-1">
+                  <p className="font-medium text-foreground ">Next steps:</p>
                   <p>1. Review any item marked "Check this" and tap it for a savings tip.</p>
                   <p>2. Call your phone or internet provider and ask: "What promotions do you have for existing customers?"</p>
                   <p>3. Check your bank statement for small recurring charges you may have forgotten.</p>
@@ -427,9 +427,9 @@ export default function MonthlyTechExpenseAudit() {
           )}
 
           {filledCount === 0 && (
-            <div className="text-center text-gray-400 dark:text-gray-600 py-8">
+            <div className="text-center text-muted-foreground py-8">
               <DollarSign size={40} className="mx-auto mb-2 opacity-30" />
-              <p className="text-sm">Tap each category above to enter your monthly cost.</p>
+              <p className="text-base">Tap each category above to enter your monthly cost.</p>
             </div>
           )}
         </div>

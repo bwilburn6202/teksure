@@ -82,7 +82,7 @@ export default function WifiCallingSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-cyan-500/10 rounded-full">
-                <PhoneCall className="h-8 w-8 text-cyan-600" />
+                <PhoneCall className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Wi-Fi Calling Setup</h1>
@@ -97,7 +97,7 @@ export default function WifiCallingSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your phone</p>
+              <p className="text-base font-semibold mb-3">Pick your phone</p>
               <div className="flex gap-2">
                 {(['iphone', 'android'] as Phone[]).map(p => (
                   <Button key={p} variant={phone === p ? 'default' : 'outline'} onClick={() => setPhone(p)}>
@@ -113,7 +113,7 @@ export default function WifiCallingSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Setup steps</p>
               <ol className="space-y-3 mb-4">
                 {setup.steps.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{s}</span>
                   </li>
@@ -123,7 +123,7 @@ export default function WifiCallingSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Worth knowing</p>
               <ul className="space-y-1.5">
                 {setup.notes.map((n, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-primary shrink-0">•</span><span>{n}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-primary shrink-0">•</span><span>{n}</span></li>
                 ))}
               </ul>
             </CardContent>
@@ -134,8 +134,8 @@ export default function WifiCallingSetup() {
             {SCENARIOS.map((s, i) => (
               <Card key={i} className="border-border">
                 <CardContent className="p-4">
-                  <p className="font-medium text-sm">{s.title}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{s.detail}</p>
+                  <p className="font-medium text-base">{s.title}</p>
+                  <p className="text-sm text-muted-foreground mt-1">{s.detail}</p>
                 </CardContent>
               </Card>
             ))}
@@ -143,8 +143,8 @@ export default function WifiCallingSetup() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A free signal-booster alternative</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A free signal-booster alternative</p>
+              <p className="text-sm text-muted-foreground">
                 Major US carriers also send free in-home cell boosters (Verizon LTE Network Extender, AT&T MicroCell, T-Mobile signal booster) if you genuinely have no signal at home. Call your carrier and ask. They are sometimes free for senior customers, sometimes a one-time $100 fee.
               </p>
             </CardContent>
@@ -154,20 +154,20 @@ export default function WifiCallingSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/router-upgrade-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Router Upgrade Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Better Wi-Fi = better Wi-Fi calling.</p>
+                <p className="font-medium text-base">Router Upgrade Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Better Wi-Fi = better Wi-Fi calling.</p>
               </Link>
               <Link to="/tools/voicemail-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Voicemail Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Read voicemails when on Wi-Fi too.</p>
+                <p className="font-medium text-base">Voicemail Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Read voicemails when on Wi-Fi too.</p>
               </Link>
               <Link to="/tools/travel-tech-checklist" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Travel Tech Checklist</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Free calls home from any hotel.</p>
+                <p className="font-medium text-base">Travel Tech Checklist</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Free calls home from any hotel.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: turn it on at home BEFORE you travel. The international free-calls trick works only after Wi-Fi calling is enabled.
           </p>
         </div>

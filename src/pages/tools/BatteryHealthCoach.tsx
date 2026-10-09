@@ -175,7 +175,7 @@ export default function BatteryHealthCoach() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <BatteryFull className="h-8 w-8 text-emerald-600" aria-hidden="true" />
+                <BatteryFull className="h-8 w-8 text-success-foreground" aria-hidden="true" />
               </div>
             </div>
             <Badge variant="secondary" className="mb-3">Free Tool · 30 seconds</Badge>
@@ -240,7 +240,7 @@ export default function BatteryHealthCoach() {
                 <Card>
                   <CardContent className="p-6">
                     <h2 className="text-lg font-semibold mb-2">Step 2: Enter your battery health</h2>
-                    <p className="text-sm text-muted-foreground mb-4">
+                    <p className="text-base text-muted-foreground mb-4">
                       It is the "Maximum Capacity" number on iPhone, or the "Battery health"
                       reading on most Android phones. If you do not see it, see the help below.
                     </p>
@@ -310,7 +310,7 @@ export default function BatteryHealthCoach() {
                         <li>Tap "Battery."</li>
                         <li>Tap "Battery Health."</li>
                       </ol>
-                      <p className="text-xs text-muted-foreground mt-1">
+                      <p className="text-sm text-muted-foreground mt-1">
                         Pixel 8a and newer show the percentage directly.
                       </p>
                     </div>
@@ -391,7 +391,7 @@ export default function BatteryHealthCoach() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="font-semibold mb-2">What to do next</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{result.nextStep}</p>
+                  <p className="text-base text-muted-foreground mb-4">{result.nextStep}</p>
                   <div className="flex flex-wrap gap-3">
                     <Button variant="outline" onClick={reset} className="gap-2">
                       <RotateCcw className="h-4 w-4" aria-hidden="true" /> Check another phone

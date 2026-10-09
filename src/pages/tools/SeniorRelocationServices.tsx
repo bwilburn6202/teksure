@@ -30,9 +30,9 @@ export default function SeniorRelocationServices() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
+                <p className="text-base">{s.best}</p>
                 <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>

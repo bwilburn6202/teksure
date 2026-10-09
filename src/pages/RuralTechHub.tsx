@@ -337,7 +337,7 @@ export default function RuralTechHub() {
                         <Badge variant="secondary" className="text-xs">{opt.speed}</Badge>
                         <Badge variant="outline" className="text-xs">{opt.price}</Badge>
                       </div>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{opt.notes}</p>
+                      <p className="text-base text-muted-foreground leading-relaxed">{opt.notes}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -404,7 +404,7 @@ export default function RuralTechHub() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">{tip.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed">
                       {tip.description}
                     </p>
                   </div>
@@ -437,7 +437,7 @@ export default function RuralTechHub() {
                       <h3 className="font-semibold text-foreground">{b.name}</h3>
                       <Badge variant="secondary" className="text-xs">{b.price}</Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{b.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{b.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -463,7 +463,7 @@ export default function RuralTechHub() {
               <Card key={w.name} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{w.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{w.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{w.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -475,7 +475,7 @@ export default function RuralTechHub() {
                 <Zap className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-foreground mb-2">Backup power basics</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     A $40 battery pack keeps your phone alive for 3 days. A $200 Jackery or EcoFlow
                     keeps the WiFi router, phone, and a light going for an overnight outage. A
                     generator handles multi-day storms. For rural homes, plan in layers — phone
@@ -505,7 +505,7 @@ export default function RuralTechHub() {
                 <Card key={t.name} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{t.name}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{t.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{t.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -531,7 +531,7 @@ export default function RuralTechHub() {
               <Card key={t.name} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{t.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{t.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{t.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -556,7 +556,7 @@ export default function RuralTechHub() {
                 <Card key={s.name} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{s.name}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{s.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{s.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -582,7 +582,7 @@ export default function RuralTechHub() {
               <Card key={g.name} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{g.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{g.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{g.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -608,7 +608,7 @@ export default function RuralTechHub() {
                 <Card key={c.name} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{c.name}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{c.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{c.description}</p>
                   </CardContent>
                 </Card>
               ))}

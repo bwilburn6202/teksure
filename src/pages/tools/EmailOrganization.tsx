@@ -170,7 +170,7 @@ export default function EmailOrganization() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <Inbox className="h-8 w-8 text-blue-600" />
+                <Inbox className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Email Organization</h1>
@@ -185,14 +185,14 @@ export default function EmailOrganization() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your email service</p>
+              <p className="text-base font-semibold mb-3">Pick your email service</p>
               <div className="grid sm:grid-cols-3 gap-2">
                 {SERVICES.map(s => (
                   <button key={s.id} onClick={() => setService(s.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       service === s.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{s.label}</p>
+                    <p className="font-medium text-base">{s.label}</p>
                   </button>
                 ))}
               </div>
@@ -210,7 +210,7 @@ export default function EmailOrganization() {
                   </p>
                   <ol className="space-y-2">
                     {section.steps.map((step, i) => (
-                      <li key={i} className="flex gap-3 text-sm">
+                      <li key={i} className="flex gap-3 text-base">
                         <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                         <span>{step}</span>
                       </li>
@@ -227,8 +227,8 @@ export default function EmailOrganization() {
               <div className="space-y-3">
                 {guide.cleanups.map((c, i) => (
                   <div key={i} className="p-3 rounded-lg border border-border">
-                    <p className="font-medium text-sm">{c.title}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{c.detail}</p>
+                    <p className="font-medium text-base">{c.title}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{c.detail}</p>
                   </div>
                 ))}
               </div>
@@ -240,21 +240,21 @@ export default function EmailOrganization() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 flex items-center gap-2">
                 <Mail className="h-3 w-3" /> Unsubscribe from newsletters you no longer read
               </p>
-              <p className="text-sm">{guide.unsubscribe}</p>
+              <p className="text-base">{guide.unsubscribe}</p>
             </CardContent>
           </Card>
 
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Schedule send — for the right time of day</p>
-              <p className="text-sm">{guide.scheduleSend}</p>
+              <p className="text-base">{guide.scheduleSend}</p>
             </CardContent>
           </Card>
 
-          <Card className="border-amber-500/40 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-amber-500/40 bg-warn mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A note on Unroll.me and other "mass unsubscribe" services</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A note on Unroll.me and other "mass unsubscribe" services</p>
+              <p className="text-sm text-muted-foreground">
                 Unroll.me is a third-party service that bundles your newsletters into one daily digest. It works, but here is the catch: in 2017 the parent company was caught selling user email data (including receipts from Lyft trips) to outside buyers. They settled with the FTC in 2019. The company says practices have changed, but giving any third party full read-access to your inbox is a privacy risk worth thinking about. Gmail, Apple Mail, and Outlook all have built-in filters and one-click unsubscribe links that do the same job without handing your inbox to a stranger. Stick with the built-in tools when you can.
               </p>
             </CardContent>
@@ -262,8 +262,8 @@ export default function EmailOrganization() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A weekly five-minute habit</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A weekly five-minute habit</p>
+              <p className="text-sm text-muted-foreground">
                 Once a week, on a Sunday morning with coffee: open your Read Later folder, archive what you read, delete what you did not. Click unsubscribe on three newsletters you no longer open. After a month, the inbox feels lighter. After three months, it stays that way on its own.
               </p>
             </CardContent>
@@ -273,20 +273,20 @@ export default function EmailOrganization() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/email-spam-manager" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Email Spam Manager</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Block spam and keep junk out for good.</p>
+                <p className="font-medium text-base">Email Spam Manager</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Block spam and keep junk out for good.</p>
               </Link>
               <Link to="/tools/email-migration" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Email Migration</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Move from one email service to another.</p>
+                <p className="font-medium text-base">Email Migration</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Move from one email service to another.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Spot phishing and fraud in your inbox.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Spot phishing and fraud in your inbox.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: archive freely. Storage is plentiful, and Search will find anything you ever needed within seconds.
           </p>
 

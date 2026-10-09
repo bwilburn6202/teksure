@@ -29,9 +29,9 @@ export default function AeroGardenForSeniors() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
+                <p className="text-base">{p.best}</p>
                 <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>

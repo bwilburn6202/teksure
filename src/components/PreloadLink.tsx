@@ -3,16 +3,13 @@ import { forwardRef, useCallback } from 'react';
 
 // Map of route paths to their lazy import functions
 const routeImports: Record<string, () => Promise<unknown>> = {
-  '/': () => import('@/pages/TekBrain'),
+  '/': () => import('@/pages/Landing'),
   '/guides': () => import('@/pages/Guides'),
   '/tools': () => import('@/pages/Tools'),
   '/glossary': () => import('@/pages/Glossary'),
   '/quick-fixes': () => import('@/pages/QuickFixes'),
-  '/device-hub': () => import('@/pages/DeviceHub'),
   '/how-it-works': () => import('@/pages/HowItWorks'),
   '/about': () => import('@/pages/About'),
-  '/blog': () => import('@/pages/Blog'),
-  '/forum': () => import('@/pages/forum/Index'),
   '/search': () => import('@/pages/SearchResults'),
 };
 

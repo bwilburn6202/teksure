@@ -293,33 +293,33 @@ const OptionCard = ({ option }: { option: HelpOption }) => {
     <Card className="flex flex-col h-full border-2 border-amber-200/60 bg-white/70 hover:border-amber-400 hover:shadow-lg transition-all">
       <CardHeader className="pb-3">
         <div className="flex items-center gap-3 mb-2">
-          <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-amber-100 text-amber-800">
+          <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-warn text-warn-foreground">
             <Icon className="h-6 w-6" />
           </div>
           <span className="text-3xl" aria-hidden="true">
             {option.emoji}
           </span>
         </div>
-        <CardTitle className="text-xl text-stone-900">{option.title}</CardTitle>
+        <CardTitle className="text-xl text-foreground">{option.title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-1 flex flex-col space-y-3">
         {option.offers ? (
-          <p className="text-base text-stone-700 leading-relaxed">
-            <span className="font-semibold text-stone-900">What they offer: </span>
+          <p className="text-base text-foreground leading-relaxed">
+            <span className="font-semibold text-foreground">What they offer: </span>
             {option.offers}
           </p>
         ) : option.description ? (
-          <p className="text-base text-stone-700 leading-relaxed">{option.description}</p>
+          <p className="text-base text-foreground leading-relaxed">{option.description}</p>
         ) : null}
         {option.howToFind && (
-          <p className="text-base text-stone-700 leading-relaxed">
-            <span className="font-semibold text-stone-900">How to find them: </span>
+          <p className="text-base text-foreground leading-relaxed">
+            <span className="font-semibold text-foreground">How to find them: </span>
             {option.howToFind}
           </p>
         )}
         {option.cost && (
           <div className="flex items-center gap-2 pt-1">
-            <Badge className="bg-amber-100 text-amber-900 hover:bg-amber-100 border border-amber-300">
+            <Badge className="bg-warn text-warn-foreground hover:bg-warn border border-warn-foreground/25">
               {option.cost}
             </Badge>
           </div>
@@ -371,18 +371,18 @@ const TechHelpNearMe = () => {
       <main id="main-content" className="container mx-auto px-4 py-12 md:py-16">
         {/* Hero */}
         <section className="mx-auto max-w-3xl text-center mb-14">
-          <div className="inline-flex items-center gap-2 rounded-full bg-amber-100 text-amber-900 px-4 py-1.5 text-sm font-semibold mb-5 border border-amber-200">
+          <div className="inline-flex items-center gap-2 rounded-full bg-warn text-warn-foreground px-4 py-1.5 text-sm font-semibold mb-5 border border-warn-foreground/25">
             <MapPin className="h-4 w-4" />
             In-Person Tech Help Directory
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-5 text-stone-900">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-5 text-foreground">
             Get In-Person Tech Help Near You
           </h1>
-          <p className="text-xl md:text-2xl text-stone-700 leading-relaxed">
+          <p className="text-xl md:text-2xl text-foreground leading-relaxed">
             Libraries, senior centers, AARP classes, and more —{' '}
-            <span className="font-semibold text-amber-800">often free.</span>
+            <span className="font-semibold text-warn-foreground">often free.</span>
           </p>
-          <p className="text-base md:text-lg text-stone-600 mt-4">
+          <p className="text-base md:text-lg text-muted-foreground mt-4">
             Face-to-face help is often the fastest way to solve a stubborn tech problem. Here are
             the best places to find real people nearby who can sit with you and walk you through it.
           </p>
@@ -391,12 +391,12 @@ const TechHelpNearMe = () => {
         {/* Free help */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-green-100 text-green-800">
+            <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-success text-success-foreground">
               <Sparkles className="h-5 w-5" />
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-stone-900">Free help</h2>
-              <p className="text-stone-600">
+              <h2 className="text-3xl font-bold text-foreground">Free help</h2>
+              <p className="text-muted-foreground">
                 These services cost nothing. Start here — almost every question can be answered for
                 free.
               </p>
@@ -412,12 +412,12 @@ const TechHelpNearMe = () => {
         {/* Paid but accessible */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-800">
+            <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-info text-info-foreground">
               <Store className="h-5 w-5" />
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-stone-900">Paid but accessible</h2>
-              <p className="text-stone-600">
+              <h2 className="text-3xl font-bold text-foreground">Paid but accessible</h2>
+              <p className="text-muted-foreground">
                 Affordable, reputable options when you want dedicated one-on-one time.
               </p>
             </div>
@@ -432,12 +432,12 @@ const TechHelpNearMe = () => {
         {/* Community */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-purple-100 text-purple-800">
+            <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
               <Users className="h-5 w-5" />
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-stone-900">Community</h2>
-              <p className="text-stone-600">
+              <h2 className="text-3xl font-bold text-foreground">Community</h2>
+              <p className="text-muted-foreground">
                 Neighbors, church groups, and local classes that often have a friendly face eager to
                 help.
               </p>
@@ -453,12 +453,12 @@ const TechHelpNearMe = () => {
         {/* Emergency */}
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-rose-100 text-rose-800">
+            <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-danger text-danger-foreground">
               <ShieldAlert className="h-5 w-5" />
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-stone-900">In an emergency</h2>
-              <p className="text-stone-600">
+              <h2 className="text-3xl font-bold text-foreground">In an emergency</h2>
+              <p className="text-muted-foreground">
                 Something urgent — a suspected scam, a device that will not start, a charge you do
                 not recognize.
               </p>
@@ -472,16 +472,16 @@ const TechHelpNearMe = () => {
         </section>
 
         {/* How to make the most of a session */}
-        <section className="mx-auto max-w-5xl rounded-2xl border-2 border-amber-200 bg-white/80 p-8 md:p-12 mb-16 shadow-sm">
+        <section className="mx-auto max-w-5xl rounded-2xl border-2 border-warn-foreground/25 bg-white/80 p-8 md:p-12 mb-16 shadow-sm">
           <div className="flex items-start gap-4 mb-8">
-            <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-green-100 text-green-800 shrink-0">
+            <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-success text-success-foreground shrink-0">
               <CheckCircle2 className="h-6 w-6" />
             </div>
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-stone-900">
+              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-foreground">
                 How to make the most of an in-person session
               </h2>
-              <p className="text-stone-700">
+              <p className="text-foreground">
                 A little preparation turns a 20-minute visit into a lot more value. These four
                 habits work every time.
               </p>
@@ -495,12 +495,12 @@ const TechHelpNearMe = () => {
                   key={tip.title}
                   className="flex gap-4 p-4 rounded-xl bg-amber-50/60 border border-amber-100"
                 >
-                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-amber-200/60 text-amber-900 shrink-0">
+                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-amber-200/60 text-warn-foreground shrink-0">
                     <Icon className="h-5 w-5" />
                   </div>
                   <div>
-                    <div className="font-semibold text-stone-900 mb-1">{tip.title}</div>
-                    <p className="text-base text-stone-700 leading-relaxed">{tip.detail}</p>
+                    <div className="font-semibold text-foreground mb-1">{tip.title}</div>
+                    <p className="text-base text-foreground leading-relaxed">{tip.detail}</p>
                   </div>
                 </div>
               );
@@ -509,16 +509,16 @@ const TechHelpNearMe = () => {
         </section>
 
         {/* Red flags */}
-        <section className="mx-auto max-w-5xl rounded-2xl border-2 border-red-300 bg-red-50/70 p-8 md:p-12 mb-16 shadow-sm">
+        <section className="mx-auto max-w-5xl rounded-2xl border-2 border-danger-foreground/25 bg-red-50/70 p-8 md:p-12 mb-16 shadow-sm">
           <div className="flex items-start gap-4 mb-8">
-            <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-red-100 text-red-800 shrink-0">
+            <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-danger text-danger-foreground shrink-0">
               <AlertTriangle className="h-6 w-6" />
             </div>
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-stone-900">
+              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-foreground">
                 Red flags — avoid these
               </h2>
-              <p className="text-stone-700">
+              <p className="text-foreground">
                 Scammers love to pose as tech support. If any of these happen, stop and call a
                 family member before paying or clicking anything.
               </p>
@@ -530,14 +530,14 @@ const TechHelpNearMe = () => {
               return (
                 <div
                   key={flag.title}
-                  className="flex gap-4 p-4 rounded-xl bg-white border border-red-200"
+                  className="flex gap-4 p-4 rounded-xl bg-card border border-danger-foreground/25"
                 >
-                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-red-100 text-red-700 shrink-0">
+                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-danger text-danger-foreground shrink-0">
                     <Icon className="h-5 w-5" />
                   </div>
                   <div>
-                    <div className="font-semibold text-stone-900 mb-1">{flag.title}</div>
-                    <p className="text-base text-stone-700 leading-relaxed">{flag.detail}</p>
+                    <div className="font-semibold text-foreground mb-1">{flag.title}</div>
+                    <p className="text-base text-foreground leading-relaxed">{flag.detail}</p>
                   </div>
                 </div>
               );
@@ -546,16 +546,16 @@ const TechHelpNearMe = () => {
         </section>
 
         {/* Eldercare Locator — universal fallback */}
-        <section className="mx-auto max-w-4xl rounded-2xl border-2 border-amber-300 bg-amber-100/60 p-8 md:p-12 mb-16">
+        <section className="mx-auto max-w-4xl rounded-2xl border-2 border-warn-foreground/25 bg-amber-100/60 p-8 md:p-12 mb-16">
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
             <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-amber-700 text-white shrink-0">
               <Phone className="h-8 w-8" />
             </div>
             <div className="flex-1">
-              <h2 className="text-2xl font-bold mb-2 text-stone-900">
+              <h2 className="text-2xl font-bold mb-2 text-foreground">
                 Not sure where to start? Call the Eldercare Locator.
               </h2>
-              <p className="text-stone-700 mb-4">
+              <p className="text-foreground mb-4">
                 A free government service that finds local senior centers, tech classes,
                 transportation, and meal programs for any US ZIP code. A real person will point you
                 to exactly the right place.
@@ -575,7 +575,7 @@ const TechHelpNearMe = () => {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="border-amber-700 text-amber-900 hover:bg-amber-50 min-h-[48px]"
+                  className="border-amber-700 text-warn-foreground hover:bg-warn min-h-[48px]"
                 >
                   <a
                     href="https://eldercare.acl.gov"
@@ -594,11 +594,11 @@ const TechHelpNearMe = () => {
 
         {/* Encouragement */}
         <section className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-amber-200 text-amber-900 mb-4">
+          <div className="inline-flex items-center justify-center h-14 w-14 rounded-full bg-amber-200 text-warn-foreground mb-4">
             <Heart className="h-7 w-7" />
           </div>
-          <h2 className="text-3xl font-bold mb-3 text-stone-900">You are not alone</h2>
-          <p className="text-lg text-stone-700 mb-6 leading-relaxed">
+          <h2 className="text-3xl font-bold mb-3 text-foreground">You are not alone</h2>
+          <p className="text-lg text-foreground mb-6 leading-relaxed">
             Asking for tech help is not a sign of weakness — it is how everyone learns. The people
             running these programs chose this work because they like helping. Bring your questions.
             No question is too basic.
@@ -615,7 +615,7 @@ const TechHelpNearMe = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-amber-700 text-amber-900 hover:bg-amber-50 min-h-[48px]"
+              className="border-amber-700 text-warn-foreground hover:bg-warn min-h-[48px]"
             >
               <a href="/free-resources">See free online programs</a>
             </Button>

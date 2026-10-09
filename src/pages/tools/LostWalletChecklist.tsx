@@ -82,7 +82,7 @@ export default function LostWalletChecklist() {
   const pct = Math.round((done.size / ALL.length) * 100);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Lost Wallet Checklist | TekSure"
         description="Step-by-step checklist for what to do when your wallet is lost or stolen. Cancel cards, replace IDs, freeze credit, prevent fraud."
@@ -91,10 +91,10 @@ export default function LostWalletChecklist() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Wallet className="h-7 w-7 text-red-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Lost Wallet Checklist</h1>
+            <Wallet className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Lost Wallet Checklist</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Take a deep breath. Work this list top to bottom — it covers every step from the first hour through replacement.
           </p>
         </div>
@@ -103,8 +103,8 @@ export default function LostWalletChecklist() {
         <Card className="mb-4 print:break-inside-avoid">
           <CardContent className="py-3 px-4">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-base font-semibold text-gray-800">{done.size} of {ALL.length} done</span>
-              <span className="text-2xl font-bold text-red-700">{pct}%</span>
+              <span className="text-base font-semibold text-foreground">{done.size} of {ALL.length} done</span>
+              <span className="text-2xl font-bold text-danger-foreground">{pct}%</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
               <div className="h-3 bg-red-500 rounded-full transition-all" style={{ width: `${pct}%` }} />
@@ -136,15 +136,15 @@ export default function LostWalletChecklist() {
                       >
                         <button onClick={() => toggle(item.id)} className="w-full text-left flex items-start gap-3">
                           <span className="mt-0.5 shrink-0">
-                            {isDone ? <CheckCircle2 className="h-5 w-5 text-green-600" /> : <Circle className="h-5 w-5 text-gray-400" />}
+                            {isDone ? <CheckCircle2 className="h-5 w-5 text-success-foreground" /> : <Circle className="h-5 w-5 text-muted-foreground" />}
                           </span>
                           <span className="flex-1">
-                            <span className={`block text-sm font-semibold ${isDone ? "line-through text-gray-400" : "text-gray-900"}`}>
+                            <span className={`block text-base font-semibold ${isDone ? "line-through text-gray-400" : "text-gray-900"}`}>
                               {item.task}
                             </span>
-                            {!isDone && <span className="block text-sm text-gray-600 mt-0.5">{item.detail}</span>}
+                            {!isDone && <span className="block text-base text-muted-foreground mt-0.5">{item.detail}</span>}
                             {!isDone && item.phone && (
-                              <span className="block text-xs text-blue-700 mt-1 flex items-start gap-1">
+                              <span className="block text-sm text-info-foreground mt-1 flex items-start gap-1">
                                 <Phone className="h-3 w-3 mt-0.5 shrink-0" />
                                 {item.phone}
                               </span>
@@ -165,21 +165,21 @@ export default function LostWalletChecklist() {
             <Printer className="h-4 w-4" />
             Print Checklist
           </Button>
-          <Button variant="ghost" onClick={reset} className="gap-2 text-gray-500">
+          <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground">
             <RotateCcw className="h-4 w-4" />
             Reset
           </Button>
         </div>
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">After everything is replaced: </span>
               Print this list now and tape it inside your filing cabinet, with your bank phone numbers filled in. Future-you will be grateful.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

@@ -77,6 +77,24 @@ export default {
           support: "hsl(var(--zone-support))",
         },
         // Origin "Midnight Command Center" palette — exposed as Tailwind
+        // Semantic surfaces — AA-safe in both themes, so `bg-warn` needs no
+        // hand-written dark: variant. Use instead of raw bg-amber-50 etc.
+        warn: {
+          DEFAULT: "hsl(var(--warn-surface) / <alpha-value>)",
+          foreground: "hsl(var(--warn-surface-foreground) / <alpha-value>)",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success-surface) / <alpha-value>)",
+          foreground: "hsl(var(--success-surface-foreground) / <alpha-value>)",
+        },
+        info: {
+          DEFAULT: "hsl(var(--info-surface) / <alpha-value>)",
+          foreground: "hsl(var(--info-surface-foreground) / <alpha-value>)",
+        },
+        danger: {
+          DEFAULT: "hsl(var(--danger-surface) / <alpha-value>)",
+          foreground: "hsl(var(--danger-surface-foreground) / <alpha-value>)",
+        },
         // utilities so we can write `bg-origin-violet` etc. directly.
         origin: {
           midnight: "hsl(var(--origin-midnight) / <alpha-value>)",
@@ -93,6 +111,8 @@ export default {
           indigo: "hsl(var(--origin-indigo) / <alpha-value>)",
           sky: "hsl(var(--origin-sky) / <alpha-value>)",
           "deep-sea": "hsl(var(--origin-deep-sea) / <alpha-value>)",
+          "sky-text": "hsl(var(--origin-sky-text) / <alpha-value>)",
+          "lavender-text": "hsl(var(--origin-lavender-text) / <alpha-value>)",
         },
       },
       fontFamily: {

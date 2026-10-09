@@ -46,21 +46,21 @@ export default function AccessibleTravelChecklist() {
   const completedCount = Object.values(done).filter(Boolean).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Accessible Travel Checklist for Seniors | TekSure" description="A pre-trip checklist for older adults traveling with a wheelchair, walker, cane, or oxygen. Air, hotel, equipment rental, and arrival steps." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Plane className="h-7 w-7 text-sky-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Accessible Travel Checklist</h1>
+            <Plane className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Accessible Travel Checklist</h1>
           </div>
-          <p className="text-gray-600 text-lg">For older adults traveling with a wheelchair, walker, cane, or oxygen. 16 essential items across the trip lifecycle.</p>
+          <p className="text-muted-foreground text-lg">For older adults traveling with a wheelchair, walker, cane, or oxygen. 16 essential items across the trip lifecycle.</p>
         </div>
 
         {completedCount > 0 && (
-          <Card className="mb-4 bg-sky-50 border-sky-200">
+          <Card className="mb-4 bg-info border-info-foreground/25">
             <CardContent className="py-3 px-4 text-center">
-              <p className="text-sky-900 font-semibold">{completedCount} of {ITEMS.length} done</p>
+              <p className="text-info-foreground font-semibold">{completedCount} of {ITEMS.length} done</p>
             </CardContent>
           </Card>
         )}
@@ -68,14 +68,14 @@ export default function AccessibleTravelChecklist() {
         {CATEGORIES.map(cat => (
           <Card key={cat} className="mb-4">
             <CardContent className="py-4 px-4">
-              <h2 className="text-xl font-bold text-gray-900 mb-3">{cat}</h2>
+              <h2 className="text-xl font-bold text-foreground mb-3">{cat}</h2>
               <div className="space-y-3">
                 {ITEMS.filter(i => i.category === cat).map(i => (
-                  <div key={i.id} className="flex items-start gap-3 p-3 rounded-lg border border-gray-200 bg-white">
+                  <div key={i.id} className="flex items-start gap-3 p-3 rounded-lg border border-border bg-card">
                     <Checkbox checked={!!done[i.id]} onCheckedChange={() => toggle(i.id)} className="mt-1 print:hidden" />
                     <div className="flex-1 min-w-0">
                       <p className={`font-semibold ${done[i.id] ? "line-through text-gray-400" : "text-gray-900"}`}>{i.title}</p>
-                      <p className="text-sm text-gray-600 mt-1">{i.detail}</p>
+                      <p className="text-base text-muted-foreground mt-1">{i.detail}</p>
                     </div>
                   </div>
                 ))}
@@ -84,9 +84,9 @@ export default function AccessibleTravelChecklist() {
           </Card>
         ))}
 
-        <Card className="mb-4 bg-blue-50 border-blue-200">
+        <Card className="mb-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">National parks bonus:</span> A Lifetime Senior Pass ($80, ages 62+) gets you free entry to all 400+ NPS sites and 50% off camping. The Annual Senior Pass is $20. Buy at any park entrance or online at store.usgs.gov/senior-pass.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">National parks bonus:</span> A Lifetime Senior Pass ($80, ages 62+) gets you free entry to all 400+ NPS sites and 50% off camping. The Annual Senior Pass is $20. Buy at any park entrance or online at store.usgs.gov/senior-pass.</p>
           </CardContent>
         </Card>
 
@@ -96,6 +96,6 @@ export default function AccessibleTravelChecklist() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -235,11 +235,11 @@ export default function VeteransTechHub() {
           <Card className="rounded-2xl border-2 border-rose-400 bg-rose-50/80 dark:bg-rose-950/30 dark:border-rose-800">
             <CardContent className="p-5 md:p-6">
               <div className="flex items-start gap-4">
-                <div className="rounded-xl bg-rose-100 dark:bg-rose-900/50 w-12 h-12 flex items-center justify-center shrink-0">
-                  <LifeBuoy className="h-6 w-6 text-rose-700 dark:text-rose-300" />
+                <div className="rounded-xl bg-danger w-12 h-12 flex items-center justify-center shrink-0">
+                  <LifeBuoy className="h-6 w-6 text-danger-foreground " />
                 </div>
                 <div className="flex-1">
-                  <Badge variant="outline" className="mb-2 bg-background/60 border-rose-300 text-rose-700 dark:text-rose-300">
+                  <Badge variant="outline" className="mb-2 bg-background/60 border-danger-foreground/25 text-danger-foreground ">
                     24/7 — FREE & CONFIDENTIAL
                   </Badge>
                   <h2 className="text-xl font-bold text-foreground mb-2">Veterans Crisis Line</h2>
@@ -253,12 +253,12 @@ export default function VeteransTechHub() {
                         Call 988, press 1
                       </a>
                     </Button>
-                    <Button asChild variant="outline" className="rounded-xl gap-2 border-rose-300 dark:border-rose-800">
+                    <Button asChild variant="outline" className="rounded-xl gap-2 border-danger-foreground/25 ">
                       <a href="sms:838255">
                         Text 838255
                       </a>
                     </Button>
-                    <Button asChild variant="outline" className="rounded-xl gap-2 border-rose-300 dark:border-rose-800">
+                    <Button asChild variant="outline" className="rounded-xl gap-2 border-danger-foreground/25 ">
                       <a href="https://www.veteranscrisisline.net" target="_blank" rel="noopener noreferrer">
                         Online chat
                         <ExternalLink className="h-3.5 w-3.5" />
@@ -302,7 +302,7 @@ export default function VeteransTechHub() {
                   >
                     <CardContent className="p-5 flex flex-col h-full">
                       <h3 className="font-semibold text-foreground mb-2">{r.name}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
+                      <p className="text-base text-muted-foreground leading-relaxed mb-4 flex-1">
                         {r.description}
                       </p>
                       <Button asChild variant="outline" size="sm" className="rounded-xl gap-2 self-start">
@@ -327,7 +327,7 @@ export default function VeteransTechHub() {
                 <Shield className="h-6 w-6 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-1">Thank you for your service</h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 If something on this page is out of date or missing, let us know — we update it as soon as we hear.
               </p>
             </CardContent>

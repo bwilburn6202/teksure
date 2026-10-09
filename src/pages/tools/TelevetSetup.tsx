@@ -80,7 +80,7 @@ export default function TelevetSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-teal-500/10 rounded-full">
-                <Stethoscope className="h-8 w-8 text-teal-600" />
+                <Stethoscope className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Televet Setup</h1>
@@ -95,14 +95,14 @@ export default function TelevetSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Which service are you considering?</p>
+              <p className="text-base font-semibold mb-3">Which service are you considering?</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {OPTS.map(o => (
                   <button key={o.id} onClick={() => setService(o.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       service === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -112,20 +112,20 @@ export default function TelevetSetup() {
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <Badge variant="outline" className="mb-2">{s.name}</Badge>
-              <p className="text-sm text-muted-foreground mb-2"><strong>Best for:</strong> {s.who}</p>
+              <p className="text-base text-muted-foreground mb-2"><strong>Best for:</strong> {s.who}</p>
               <Badge variant="outline" className="text-xs justify-start mb-4">Cost: {s.cost}</Badge>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Pros</p>
               <ul className="space-y-1 mb-4">
                 {s.pros.map((p, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-green-600 font-semibold shrink-0">+</span><span>{p}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-success-foreground font-semibold shrink-0">+</span><span>{p}</span></li>
                 ))}
               </ul>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Cons</p>
               <ul className="space-y-1 mb-3">
                 {s.cons.map((c, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-amber-600 font-semibold shrink-0">-</span><span>{c}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-warn-foreground font-semibold shrink-0">-</span><span>{c}</span></li>
                 ))}
               </ul>
 
@@ -135,9 +135,9 @@ export default function TelevetSetup() {
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Televet cannot diagnose every issue</p>
                 <p className="text-muted-foreground">
@@ -149,8 +149,8 @@ export default function TelevetSetup() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Five things to do before your video vet visit</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Five things to do before your video vet visit</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Write down symptoms, when they started, and what changed.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Take photos or a short video — rashes, limping, eating habits.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Have your pet's weight, age, breed, and current meds ready.</span></li>
@@ -164,16 +164,16 @@ export default function TelevetSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/pet-tech-picker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Pet Tech Picker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Cameras, feeders, and trackers for your pet.</p>
+                <p className="font-medium text-base">Pet Tech Picker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Cameras, feeders, and trackers for your pet.</p>
               </Link>
               <Link to="/tools/find-lost-items" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Find Lost Items</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Track collars, AirTags, and more.</p>
+                <p className="font-medium text-base">Find Lost Items</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Track collars, AirTags, and more.</p>
               </Link>
               <Link to="/tools/telehealth-prep" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Telehealth Prep</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Get ready for any video health visit.</p>
+                <p className="font-medium text-base">Telehealth Prep</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Get ready for any video health visit.</p>
               </Link>
             </div>
           </div>

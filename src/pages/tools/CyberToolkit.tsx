@@ -330,7 +330,7 @@ const PasswordStrengthAnalyzer: React.FC<{ onClose: () => void }> = ({ onClose }
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">Enter Password</label>
+        <label className="block text-base font-medium text-muted-foreground mb-2">Enter Password</label>
         <div className="relative">
           <input
             type={showPassword ? 'text' : 'password'}
@@ -341,7 +341,7 @@ const PasswordStrengthAnalyzer: React.FC<{ onClose: () => void }> = ({ onClose }
           />
           <button
             onClick={() => setShowPassword(!showPassword)}
-            className="absolute right-3 top-2.5 text-gray-400 hover:text-gray-300"
+            className="absolute right-3 top-2.5 text-muted-foreground hover:text-muted-foreground"
           >
             {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
           </button>
@@ -352,26 +352,26 @@ const PasswordStrengthAnalyzer: React.FC<{ onClose: () => void }> = ({ onClose }
         <div className="space-y-3 pt-4 border-t border-gray-700">
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-gray-900/50 p-3 rounded border border-gray-700">
-              <div className="text-xs text-gray-400 mb-1">Entropy</div>
-              <div className="text-lg font-mono text-blue-400">{entropy.toFixed(1)} bits</div>
+              <div className="text-xs text-muted-foreground mb-1">Entropy</div>
+              <div className="text-lg font-mono text-info-foreground">{entropy.toFixed(1)} bits</div>
             </div>
             <div className="bg-gray-900/50 p-3 rounded border border-gray-700">
-              <div className="text-xs text-gray-400 mb-1">Length</div>
-              <div className="text-lg font-mono text-blue-400">{password.length} chars</div>
+              <div className="text-xs text-muted-foreground mb-1">Length</div>
+              <div className="text-lg font-mono text-info-foreground">{password.length} chars</div>
             </div>
           </div>
 
           <div className="bg-gray-900/50 p-3 rounded border border-gray-700">
-            <div className="text-xs text-gray-400 mb-1">Strength</div>
+            <div className="text-xs text-muted-foreground mb-1">Strength</div>
             <div className={`text-lg font-mono ${strengthColor}`}>{strength}</div>
           </div>
 
           <div className="bg-gray-900/50 p-3 rounded border border-gray-700">
-            <div className="text-xs text-gray-400 mb-1">Estimated Crack Time (1B guesses/sec)</div>
-            <div className="text-lg font-mono text-yellow-400">{crackTime}</div>
+            <div className="text-xs text-muted-foreground mb-1">Estimated Crack Time (1B guesses/sec)</div>
+            <div className="text-lg font-mono text-warn-foreground">{crackTime}</div>
           </div>
 
-          <div className="space-y-2 text-xs text-gray-400">
+          <div className="space-y-2 text-xs text-muted-foreground">
             <div> Contains lowercase: {/[a-z]/.test(password) ? '' : ''}</div>
             <div> Contains uppercase: {/[A-Z]/.test(password) ? '' : ''}</div>
             <div> Contains numbers: {/[0-9]/.test(password) ? '' : ''}</div>
@@ -429,7 +429,7 @@ const HashGenerator: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">Enter Text to Hash</label>
+        <label className="block text-base font-medium text-muted-foreground mb-2">Enter Text to Hash</label>
         <textarea
           value={input}
           onChange={(e) => handleChange(e.target.value)}
@@ -445,14 +445,14 @@ const HashGenerator: React.FC<{ onClose: () => void }> = ({ onClose }) => {
             <div key={algo} className="bg-gray-900/50 p-3 rounded border border-gray-700">
               <div className="flex justify-between items-start gap-2">
                 <div className="flex-1 min-w-0">
-                  <div className="text-xs text-gray-400 mb-1">{algo}</div>
-                  <div className="text-xs font-mono text-blue-400 break-all">{hash}</div>
+                  <div className="text-xs text-muted-foreground mb-1">{algo}</div>
+                  <div className="text-xs font-mono text-info-foreground break-all">{hash}</div>
                 </div>
                 <button
                   onClick={() => copyToClipboard(hash, algo)}
                   className="flex-shrink-0 p-1.5 hover:bg-gray-800 rounded transition-colors"
                 >
-                  {copied === algo ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4 text-gray-400" />}
+                  {copied === algo ? <Check className="w-4 h-4 text-success-foreground" /> : <Copy className="w-4 h-4 text-muted-foreground" />}
                 </button>
               </div>
             </div>
@@ -511,7 +511,7 @@ const EncodingDecoder: React.FC<{ onClose: () => void }> = ({ onClose }) => {
     <div className="space-y-4">
       <div className="grid grid-cols-2 gap-3">
         <div>
-          <label className="block text-xs font-medium text-gray-400 mb-2">Encoding Type</label>
+          <label className="block text-sm font-medium text-muted-foreground mb-2">Encoding Type</label>
           <select
             value={encodingType}
             onChange={(e) => setEncodingType(e.target.value as any)}
@@ -524,7 +524,7 @@ const EncodingDecoder: React.FC<{ onClose: () => void }> = ({ onClose }) => {
           </select>
         </div>
         <div>
-          <label className="block text-xs font-medium text-gray-400 mb-2">Mode</label>
+          <label className="block text-sm font-medium text-muted-foreground mb-2">Mode</label>
           <select
             value={mode}
             onChange={(e) => setMode(e.target.value as any)}
@@ -538,7 +538,7 @@ const EncodingDecoder: React.FC<{ onClose: () => void }> = ({ onClose }) => {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">Input</label>
+        <label className="block text-base font-medium text-muted-foreground mb-2">Input</label>
         <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -550,7 +550,7 @@ const EncodingDecoder: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 
       {output && (
         <div>
-          <label className="block text-sm font-medium text-gray-300 mb-2">Output</label>
+          <label className="block text-base font-medium text-muted-foreground mb-2">Output</label>
           <textarea
             value={output}
             readOnly
@@ -591,7 +591,7 @@ const JWTDecoder: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">Paste JWT Token</label>
+        <label className="block text-base font-medium text-muted-foreground mb-2">Paste JWT Token</label>
         <textarea
           value={jwt}
           onChange={(e) => {
@@ -604,25 +604,25 @@ const JWTDecoder: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         />
       </div>
 
-      {error && <div className="p-3 bg-red-950/30 border border-red-500/30 rounded text-red-400 text-sm">{error}</div>}
+      {error && <div className="p-3 bg-red-950/30 border border-red-500/30 rounded text-danger-foreground text-sm">{error}</div>}
 
       {decoded && (
         <div className="space-y-3 pt-4 border-t border-gray-700">
           <div>
-            <div className="text-xs font-medium text-gray-400 mb-2">Header</div>
-            <pre className="bg-gray-900/50 p-2 rounded border border-gray-700 text-xs font-mono text-blue-400 overflow-auto">
+            <div className="text-xs font-medium text-muted-foreground mb-2">Header</div>
+            <pre className="bg-gray-900/50 p-2 rounded border border-gray-700 text-xs font-mono text-info-foreground overflow-auto">
               {JSON.stringify(decoded.header, null, 2)}
             </pre>
           </div>
           <div>
-            <div className="text-xs font-medium text-gray-400 mb-2">Payload</div>
-            <pre className="bg-gray-900/50 p-2 rounded border border-gray-700 text-xs font-mono text-blue-400 overflow-auto max-h-48">
+            <div className="text-xs font-medium text-muted-foreground mb-2">Payload</div>
+            <pre className="bg-gray-900/50 p-2 rounded border border-gray-700 text-xs font-mono text-info-foreground overflow-auto max-h-48">
               {JSON.stringify(decoded.payload, null, 2)}
             </pre>
           </div>
           <div>
-            <div className="text-xs font-medium text-gray-400 mb-2">Signature</div>
-            <div className="bg-gray-900/50 p-2 rounded border border-gray-700 text-xs font-mono text-gray-400">{decoded.signature}</div>
+            <div className="text-xs font-medium text-muted-foreground mb-2">Signature</div>
+            <div className="bg-gray-900/50 p-2 rounded border border-gray-700 text-xs font-mono text-muted-foreground">{decoded.signature}</div>
           </div>
         </div>
       )}
@@ -680,7 +680,7 @@ const IPSubnetCalculator: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">CIDR Notation</label>
+        <label className="block text-base font-medium text-muted-foreground mb-2">CIDR Notation</label>
         <input
           type="text"
           value={input}
@@ -694,24 +694,24 @@ const IPSubnetCalculator: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         <div className="space-y-2 pt-4 border-t border-gray-700">
           <div className="grid grid-cols-2 gap-2 text-sm">
             <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">Network Address</div>
-              <div className="font-mono text-blue-400">{results.network}</div>
+              <div className="text-xs text-muted-foreground">Network Address</div>
+              <div className="font-mono text-info-foreground">{results.network}</div>
             </div>
             <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">Broadcast</div>
-              <div className="font-mono text-blue-400">{results.broadcast}</div>
+              <div className="text-xs text-muted-foreground">Broadcast</div>
+              <div className="font-mono text-info-foreground">{results.broadcast}</div>
             </div>
             <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">First Host</div>
-              <div className="font-mono text-blue-400">{results.firstHost}</div>
+              <div className="text-xs text-muted-foreground">First Host</div>
+              <div className="font-mono text-info-foreground">{results.firstHost}</div>
             </div>
             <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">Last Host</div>
-              <div className="font-mono text-blue-400">{results.lastHost}</div>
+              <div className="text-xs text-muted-foreground">Last Host</div>
+              <div className="font-mono text-info-foreground">{results.lastHost}</div>
             </div>
             <div className="col-span-2 bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">Usable Hosts</div>
-              <div className="font-mono text-blue-400">{results.usableHosts}</div>
+              <div className="text-xs text-muted-foreground">Usable Hosts</div>
+              <div className="font-mono text-info-foreground">{results.usableHosts}</div>
             </div>
           </div>
         </div>
@@ -762,7 +762,7 @@ const URLAnalyzer: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">Enter URL</label>
+        <label className="block text-base font-medium text-muted-foreground mb-2">Enter URL</label>
         <input
           type="text"
           value={url}
@@ -779,34 +779,34 @@ const URLAnalyzer: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         <div className="space-y-2 pt-4 border-t border-gray-700">
           <div className="grid grid-cols-2 gap-2 text-sm">
             <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">Protocol</div>
-              <div className="font-mono text-blue-400">{analysis.protocol}</div>
+              <div className="text-xs text-muted-foreground">Protocol</div>
+              <div className="font-mono text-info-foreground">{analysis.protocol}</div>
             </div>
             <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">Port</div>
-              <div className="font-mono text-blue-400">{analysis.port}</div>
+              <div className="text-xs text-muted-foreground">Port</div>
+              <div className="font-mono text-info-foreground">{analysis.port}</div>
             </div>
           </div>
           <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-            <div className="text-xs text-gray-400">Hostname</div>
-            <div className="font-mono text-blue-400 break-all">{analysis.hostname}</div>
+            <div className="text-xs text-muted-foreground">Hostname</div>
+            <div className="font-mono text-info-foreground break-all">{analysis.hostname}</div>
           </div>
           {analysis.pathname && (
             <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">Path</div>
-              <div className="font-mono text-blue-400">{analysis.pathname}</div>
+              <div className="text-xs text-muted-foreground">Path</div>
+              <div className="font-mono text-info-foreground">{analysis.pathname}</div>
             </div>
           )}
           {analysis.search && (
             <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">Query String</div>
-              <div className="font-mono text-blue-400 break-all">{analysis.search}</div>
+              <div className="text-xs text-muted-foreground">Query String</div>
+              <div className="font-mono text-info-foreground break-all">{analysis.search}</div>
             </div>
           )}
           {analysis.suspicious.length > 0 && (
             <div className="bg-red-950/30 border border-red-500/30 rounded p-2">
-              <div className="text-xs font-medium text-red-400 mb-1">Suspicious Indicators</div>
-              <ul className="text-xs text-red-300 space-y-1">
+              <div className="text-xs font-medium text-danger-foreground mb-1">Suspicious Indicators</div>
+              <ul className="text-sm text-red-300 space-y-1">
                 {analysis.suspicious.map((ind: string, i: number) => (
                   <li key={i}> {ind}</li>
                 ))}
@@ -853,7 +853,7 @@ const HTTPHeaderChecker: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">Enter Domain</label>
+        <label className="block text-base font-medium text-muted-foreground mb-2">Enter Domain</label>
         <input
           type="text"
           value={domain}
@@ -875,13 +875,13 @@ const HTTPHeaderChecker: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 
       {headers && (
         <div className="space-y-2 pt-4 border-t border-gray-700">
-          <div className="text-xs text-gray-400 mb-2">Security Headers (top 5)</div>
+          <div className="text-xs text-muted-foreground mb-2">Security Headers (top 5)</div>
           {Object.entries(headers)
             .slice(0, 10)
             .map(([key, value]) => (
               <div key={key} className="bg-gray-900/50 p-2 rounded border border-gray-700">
-                <div className="text-xs font-mono text-gray-400">{key}</div>
-                <div className="text-xs font-mono text-blue-400 break-all">{String(value).substring(0, 100)}</div>
+                <div className="text-xs font-mono text-muted-foreground">{key}</div>
+                <div className="text-xs font-mono text-info-foreground break-all">{String(value).substring(0, 100)}</div>
               </div>
             ))}
         </div>
@@ -921,7 +921,7 @@ const RegexTester: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">Regex Pattern</label>
+        <label className="block text-base font-medium text-muted-foreground mb-2">Regex Pattern</label>
         <input
           type="text"
           value={pattern}
@@ -932,11 +932,11 @@ const RegexTester: React.FC<{ onClose: () => void }> = ({ onClose }) => {
       </div>
 
       <div className="flex gap-2">
-        <label className="flex items-center gap-2 text-sm text-gray-300">
+        <label className="flex items-center gap-2 text-base text-muted-foreground">
           <input type="checkbox" checked={flags.includes('g')} onChange={(e) => setFlags(e.target.checked ? 'g' : '')} className="rounded" />
           Global (g)
         </label>
-        <label className="flex items-center gap-2 text-sm text-gray-300">
+        <label className="flex items-center gap-2 text-base text-muted-foreground">
           <input
             type="checkbox"
             checked={flags.includes('i')}
@@ -945,7 +945,7 @@ const RegexTester: React.FC<{ onClose: () => void }> = ({ onClose }) => {
           />
           Case Insensitive (i)
         </label>
-        <label className="flex items-center gap-2 text-sm text-gray-300">
+        <label className="flex items-center gap-2 text-base text-muted-foreground">
           <input
             type="checkbox"
             checked={flags.includes('m')}
@@ -957,7 +957,7 @@ const RegexTester: React.FC<{ onClose: () => void }> = ({ onClose }) => {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">Test String</label>
+        <label className="block text-base font-medium text-muted-foreground mb-2">Test String</label>
         <textarea
           value={testString}
           onChange={(e) => setTestString(e.target.value)}
@@ -967,27 +967,27 @@ const RegexTester: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         />
       </div>
 
-      {error && <div className="p-3 bg-red-950/30 border border-red-500/30 rounded text-red-400 text-sm">{error}</div>}
+      {error && <div className="p-3 bg-red-950/30 border border-red-500/30 rounded text-danger-foreground text-sm">{error}</div>}
 
       {matches && (
         <div className="space-y-2 pt-4 border-t border-gray-700">
           <div className="flex gap-2">
             <div className="flex-1 bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">Status</div>
+              <div className="text-xs text-muted-foreground">Status</div>
               <div className={`font-mono text-sm ${matches.isMatch ? 'text-green-400' : 'text-red-400'}`}>
                 {matches.isMatch ? 'MATCH' : 'NO MATCH'}
               </div>
             </div>
             <div className="flex-1 bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">Matches Found</div>
-              <div className="font-mono text-blue-400">{matches.count}</div>
+              <div className="text-xs text-muted-foreground">Matches Found</div>
+              <div className="font-mono text-info-foreground">{matches.count}</div>
             </div>
           </div>
           {matches.matches.length > 0 && (
             <div>
-              <div className="text-xs text-gray-400 mb-2">Matched Strings</div>
+              <div className="text-xs text-muted-foreground mb-2">Matched Strings</div>
               {matches.matches.map((match: string, i: number) => (
-                <div key={i} className="bg-gray-900/50 p-2 rounded border border-gray-700 text-xs font-mono text-blue-400 mb-1">
+                <div key={i} className="bg-gray-900/50 p-2 rounded border border-gray-700 text-xs font-mono text-info-foreground mb-1">
                   {match}
                 </div>
               ))}
@@ -1043,13 +1043,13 @@ const SecurePasswordGenerator: React.FC<{ onClose: () => void }> = ({ onClose })
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">Password Length: {length}</label>
+        <label className="block text-base font-medium text-muted-foreground mb-2">Password Length: {length}</label>
         <input
           type="range" min="8" max="64" value={length}
           onChange={(e) => setLength(parseInt(e.target.value))}
           className="w-full accent-green-500"
         />
-        <div className="flex justify-between text-xs text-gray-500 mt-1"><span>8</span><span>64</span></div>
+        <div className="flex justify-between text-xs text-muted-foreground mt-1"><span>8</span><span>64</span></div>
       </div>
 
       <div className="grid grid-cols-2 gap-2">
@@ -1059,7 +1059,7 @@ const SecurePasswordGenerator: React.FC<{ onClose: () => void }> = ({ onClose })
           { label: 'Numbers (0-9)', checked: includeDigits, set: setIncludeDigits },
           { label: 'Symbols (!@#$)', checked: includeSpecial, set: setIncludeSpecial },
         ].map((opt) => (
-          <label key={opt.label} className="flex items-center gap-2 text-sm text-gray-300 p-2 bg-gray-900/30 rounded border border-gray-700 cursor-pointer">
+          <label key={opt.label} className="flex items-center gap-2 text-base text-muted-foreground p-2 bg-gray-900/30 rounded border border-gray-700 cursor-pointer">
             <input type="checkbox" checked={opt.checked} onChange={(e) => opt.set(e.target.checked)} className="rounded" />
             {opt.label}
           </label>
@@ -1067,23 +1067,23 @@ const SecurePasswordGenerator: React.FC<{ onClose: () => void }> = ({ onClose })
       </div>
 
       <div className="bg-gray-900/50 p-4 rounded border border-gray-700">
-        <div className="text-xs text-gray-400 mb-2">Generated Password</div>
+        <div className="text-xs text-muted-foreground mb-2">Generated Password</div>
         <div className="flex items-center gap-2">
-          <div className="flex-1 font-mono text-sm text-green-400 break-all select-all">{password}</div>
+          <div className="flex-1 font-mono text-sm text-success-foreground break-all select-all">{password}</div>
           <button onClick={copyToClipboard} className="p-2 hover:bg-gray-800 rounded transition-colors shrink-0">
-            {copied ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4 text-gray-400" />}
+            {copied ? <Check className="w-4 h-4 text-success-foreground" /> : <Copy className="w-4 h-4 text-muted-foreground" />}
           </button>
         </div>
       </div>
 
       <div className="grid grid-cols-2 gap-3">
         <div className="bg-gray-900/50 p-3 rounded border border-gray-700">
-          <div className="text-xs text-gray-400 mb-1">Entropy</div>
-          <div className="text-lg font-mono text-blue-400">{entropy.toFixed(1)} bits</div>
+          <div className="text-xs text-muted-foreground mb-1">Entropy</div>
+          <div className="text-lg font-mono text-info-foreground">{entropy.toFixed(1)} bits</div>
         </div>
         <div className="bg-gray-900/50 p-3 rounded border border-gray-700">
-          <div className="text-xs text-gray-400 mb-1">Charset Size</div>
-          <div className="text-lg font-mono text-blue-400">{charsetSize}</div>
+          <div className="text-xs text-muted-foreground mb-1">Charset Size</div>
+          <div className="text-lg font-mono text-info-foreground">{charsetSize}</div>
         </div>
       </div>
 
@@ -1135,7 +1135,7 @@ const IOCExtractor: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">Paste incident report, log data, or threat intel</label>
+        <label className="block text-base font-medium text-muted-foreground mb-2">Paste incident report, log data, or threat intel</label>
         <textarea
           value={text}
           onChange={(e) => setText(e.target.value)}
@@ -1148,9 +1148,9 @@ const IOCExtractor: React.FC<{ onClose: () => void }> = ({ onClose }) => {
       {totalIOCs > 0 && (
         <div className="space-y-3 pt-4 border-t border-gray-700">
           <div className="flex items-center justify-between">
-            <div className="text-sm font-medium text-gray-300">{totalIOCs} IOC{totalIOCs !== 1 ? 's' : ''} found</div>
+            <div className="text-sm font-medium text-muted-foreground">{totalIOCs} IOC{totalIOCs !== 1 ? 's' : ''} found</div>
             <button onClick={exportJSON} className="text-xs px-3 py-1 bg-gray-800 hover:bg-gray-700 rounded border border-gray-600 transition-colors flex items-center gap-1">
-              {copied ? <Check className="w-3 h-3 text-green-400" /> : <Copy className="w-3 h-3" />}
+              {copied ? <Check className="w-3 h-3 text-success-foreground" /> : <Copy className="w-3 h-3" />}
               {copied ? 'Copied!' : 'Copy JSON'}
             </button>
           </div>
@@ -1158,7 +1158,7 @@ const IOCExtractor: React.FC<{ onClose: () => void }> = ({ onClose }) => {
             const info = IOC_PATTERNS[key];
             return (
               <div key={key} className="bg-gray-900/50 p-3 rounded border border-gray-700">
-                <div className="text-xs text-gray-400 mb-2">{info.label} ({matches.length})</div>
+                <div className="text-xs text-muted-foreground mb-2">{info.label} ({matches.length})</div>
                 <div className="space-y-1">
                   {matches.map((m, i) => (
                     <div key={i} className={`font-mono text-xs break-all ${info.color}`}>{m}</div>
@@ -1171,7 +1171,7 @@ const IOCExtractor: React.FC<{ onClose: () => void }> = ({ onClose }) => {
       )}
 
       {text.trim() && totalIOCs === 0 && (
-        <div className="p-3 bg-gray-900/50 border border-gray-700 rounded text-center text-sm text-gray-400">
+        <div className="p-3 bg-gray-900/50 border border-gray-700 rounded text-center text-sm text-muted-foreground">
           No IOCs detected in the provided text.
         </div>
       )}
@@ -1268,7 +1268,7 @@ const EmailHeaderAnalyzer: React.FC<{ onClose: () => void }> = ({ onClose }) => 
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-gray-300 mb-2">Paste Email Headers</label>
+        <label className="block text-base font-medium text-muted-foreground mb-2">Paste Email Headers</label>
         <textarea
           value={headers}
           onChange={(e) => setHeaders(e.target.value)}
@@ -1282,24 +1282,24 @@ const EmailHeaderAnalyzer: React.FC<{ onClose: () => void }> = ({ onClose }) => 
         <div className="space-y-3 pt-4 border-t border-gray-700">
           <div className="grid grid-cols-2 gap-2 text-sm">
             <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">From</div>
-              <div className="font-mono text-blue-400 text-xs break-all">{analysis.from}</div>
+              <div className="text-xs text-muted-foreground">From</div>
+              <div className="font-mono text-info-foreground text-xs break-all">{analysis.from}</div>
             </div>
             <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-              <div className="text-xs text-gray-400">Return-Path</div>
-              <div className="font-mono text-blue-400 text-xs break-all">{analysis.returnPath}</div>
+              <div className="text-xs text-muted-foreground">Return-Path</div>
+              <div className="font-mono text-info-foreground text-xs break-all">{analysis.returnPath}</div>
             </div>
           </div>
           <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-            <div className="text-xs text-gray-400">Subject</div>
-            <div className="font-mono text-blue-400 text-xs break-all">{analysis.subject}</div>
+            <div className="text-xs text-muted-foreground">Subject</div>
+            <div className="font-mono text-info-foreground text-xs break-all">{analysis.subject}</div>
           </div>
           <div className="bg-gray-900/50 p-2 rounded border border-gray-700">
-            <div className="text-xs text-gray-400">Hops (Received headers)</div>
-            <div className="font-mono text-blue-400">{analysis.receivedCount}</div>
+            <div className="text-xs text-muted-foreground">Hops (Received headers)</div>
+            <div className="font-mono text-info-foreground">{analysis.receivedCount}</div>
           </div>
 
-          <div className="text-xs font-medium text-gray-400 mt-2">Findings:</div>
+          <div className="text-xs font-medium text-muted-foreground mt-2">Findings:</div>
           {analysis.findings.map((f: any, i: number) => (
             <div key={i} className={`p-2 rounded border text-xs ${
               f.severity === 'HIGH' ? 'bg-red-950/30 border-red-500/30 text-red-400' :
@@ -1380,33 +1380,34 @@ export default function CyberToolkit() {
         path="/tools/cyber-toolkit"
       />
       <Navbar />
+      <main className="flex-1">
 
       {/* Header */}
       <div className="border-b border-gray-800 bg-gray-950/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 py-8">
           <Breadcrumb className="mb-6">
             <BreadcrumbList>
-              <BreadcrumbItem><BreadcrumbLink asChild><Link to="/" className="text-gray-400 hover:text-white">Home</Link></BreadcrumbLink></BreadcrumbItem>
-              <BreadcrumbSeparator className="text-gray-600" />
-              <BreadcrumbItem><BreadcrumbLink asChild><Link to="/tools" className="text-gray-400 hover:text-white">Tools</Link></BreadcrumbLink></BreadcrumbItem>
-              <BreadcrumbSeparator className="text-gray-600" />
+              <BreadcrumbItem><BreadcrumbLink asChild><Link to="/" className="text-muted-foreground hover:text-white">Home</Link></BreadcrumbLink></BreadcrumbItem>
+              <BreadcrumbSeparator className="text-muted-foreground" />
+              <BreadcrumbItem><BreadcrumbLink asChild><Link to="/tools" className="text-muted-foreground hover:text-white">Tools</Link></BreadcrumbLink></BreadcrumbItem>
+              <BreadcrumbSeparator className="text-muted-foreground" />
               <BreadcrumbItem><BreadcrumbPage className="text-white">Cyber AI Toolkit</BreadcrumbPage></BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
 
           <div className="flex items-center gap-3 mb-6">
-            <Terminal className="w-8 h-8 text-green-400" />
+            <Terminal className="w-8 h-8 text-success-foreground" />
             <div>
               <h1 className="text-4xl font-bold font-mono text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-400">
                 Cyber AI Toolkit
               </h1>
-              <p className="text-gray-400 text-sm mt-1">{totalTools} Security Modules | Red Team · Blue Team · White Hat · OSINT</p>
+              <p className="text-muted-foreground text-base mt-1">{totalTools} Security Modules | Red Team · Blue Team · White Hat · OSINT</p>
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
             <div className="flex-1 relative">
-              <Search className="absolute left-3 top-3 w-5 h-5 text-gray-500" />
+              <Search className="absolute left-3 top-3 w-5 h-5 text-muted-foreground" />
               <input
                 type="text"
                 placeholder="Search tools..."
@@ -1430,7 +1431,7 @@ export default function CyberToolkit() {
         <div className="flex gap-2 mb-8 overflow-x-auto pb-2">
           <button
             onClick={() => setSelectedTeam(null)}
-            className={`px-4 py-2 rounded-lg font-medium transition-colors text-sm whitespace-nowrap ${selectedTeam === null ? 'bg-green-600 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'}`}
+            className={`px-4 py-2 rounded-lg font-medium transition-colors text-sm whitespace-nowrap ${selectedTeam === null ? 'bg-green-600 text-white' : 'bg-gray-800 text-muted-foreground hover:bg-gray-700'}`}
           >
             All ({totalTools})
           </button>
@@ -1469,7 +1470,7 @@ export default function CyberToolkit() {
                       <div className={team.textColor}>{tool.icon}</div>
                       <div className="flex-1 min-w-0">
                         <h3 className="font-semibold text-white truncate">{tool.name}</h3>
-                        <p className="text-xs text-gray-400 mt-1">{tool.category}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{tool.category}</p>
                       </div>
                     </div>
                     <div className={`px-2 py-1 rounded text-xs font-medium whitespace-nowrap ${team.bgColor} ${team.textColor} border ${team.borderColor}`}>
@@ -1477,7 +1478,7 @@ export default function CyberToolkit() {
                     </div>
                   </div>
 
-                  <p className="text-sm text-gray-300 mb-3">{tool.description}</p>
+                  <p className="text-base text-muted-foreground mb-3">{tool.description}</p>
 
                   <div className="flex gap-2">
                     {tool.isInteractive ? (
@@ -1501,8 +1502,8 @@ export default function CyberToolkit() {
 
                 {isExpanded && !tool.isInteractive && (
                   <div className="border-t border-gray-700/50 p-4 bg-gray-900/20">
-                    <div className="text-xs text-gray-400 mb-2">Command Line Usage:</div>
-                    <div className="bg-black/50 p-3 rounded border border-gray-700 font-mono text-xs text-green-400 overflow-auto">
+                    <div className="text-xs text-muted-foreground mb-2">Command Line Usage:</div>
+                    <div className="bg-black/50 p-3 rounded border border-gray-700 font-mono text-xs text-success-foreground overflow-auto">
                       {/* Extract command from tool ID */}
                       {tool.id === 'vulnerability-scanner' && '$ ./teksure scan --target example.com --depth full'}
                       {tool.id === 'ssl-checker' && '$ ./teksure ssl-check --domain example.com'}
@@ -1525,8 +1526,8 @@ export default function CyberToolkit() {
 
         {filteredTools.length === 0 && (
           <div className="text-center py-12">
-            <AlertCircle className="w-12 h-12 text-gray-600 mx-auto mb-4" />
-            <p className="text-gray-400">No tools found matching your search.</p>
+            <AlertCircle className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+            <p className="text-muted-foreground">No tools found matching your search.</p>
           </div>
         )}
       </div>
@@ -1539,7 +1540,7 @@ export default function CyberToolkit() {
               <h2 className="text-xl font-bold">{TOOLS.find((t) => t.id === selectedTool)?.name}</h2>
               <button
                 onClick={() => setSelectedTool(null)}
-                className="text-gray-400 hover:text-white transition-colors p-1"
+                className="text-muted-foreground hover:text-white transition-colors p-1"
               >
                 
               </button>
@@ -1551,11 +1552,12 @@ export default function CyberToolkit() {
 
       {/* Disclaimer */}
       <div className="border-t border-gray-800 bg-gray-950/50 backdrop-blur-sm mt-12">
-        <div className="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-400">
+        <div className="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-muted-foreground">
           <p>TekSure Cyber AI Toolkit | Interactive Browser-Based Security Tools</p>
-          <p className="text-xs mt-2">For educational and authorized testing purposes only. All tools run locally in your browser — no data is sent anywhere.</p>
+          <p className="text-sm mt-2">For educational and authorized testing purposes only. All tools run locally in your browser — no data is sent anywhere.</p>
         </div>
       </div>
+      </main>
       <Footer />
     </div>
   );

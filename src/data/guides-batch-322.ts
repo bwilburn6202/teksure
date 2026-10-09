@@ -43,45 +43,7 @@ export const guidesBatch322: Guide[] = [
       },
     ],
   },
-  {
-    slug: "free-up-iphone-storage-space-guide",
-    canonicalSlug: 'how-to-free-up-storage-space-on-your-iphone-2026',
-    title: "How to Free Up Storage Space on Your iPhone",
-    excerpt: "Step-by-step ways to see what's taking up space on your iPhone and safely clear it out when you get the 'Storage Almost Full' warning.",
-    category: "phone-guides",
-    tags: ["iphone storage", "iOS", "phone maintenance", "photos"],
-    readTime: "6 min",
-    thumbnailEmoji: "📦",
-    publishedAt: "2026-07-19",
-    lastVerifiedAt: "2026-07-19",
-    difficulty: "Beginner",
-    body: "When an iPhone's storage gets full, it can slow down, refuse to install updates, or stop letting you take new photos. The good news is that iPhones include a built-in tool that shows exactly what's using up space and offers one-tap ways to clear it out, without needing any extra apps.\n\nMost of the time, storage fills up with photos and videos, apps you no longer use, or old text message attachments that have quietly piled up over the years. Apple's storage screen breaks all of this down by category so you can see exactly where the space is going before deleting anything.\n\nNone of the steps below delete anything permanently right away in most cases — photos moved to iCloud or apps you 'offload' can be brought back later, which makes this a safe, low-risk way to get your phone working smoothly again. Source: support.apple.com/en-us/HT201656.",
-    steps: [
-      {
-        title: "Check what's using your storage",
-        content: "Open Settings, tap General, then tap iPhone Storage. Wait a moment for the screen to load a colored bar showing exactly how much space Photos, Apps, Messages, and other categories are using.",
-      },
-      {
-        title: "Turn on 'Offload Unused Apps'",
-        content: "Still in iPhone Storage, tap 'Offload Unused Apps' and turn it on. This automatically removes apps you haven't opened in a while while keeping all their data, so if you open the app again later, it reinstalls with everything intact.",
-        tip: "This is completely reversible and doesn't delete any documents, saved games, or logins tied to the app.",
-      },
-      {
-        title: "Review and delete large attachments in Messages",
-        content: "In iPhone Storage, tap Messages to see how much space photos and videos sent through text messages are using. Tap 'Review Large Attachments' to see them all in one list and delete ones you no longer need.",
-      },
-      {
-        title: "Back up and optimize Photos storage",
-        content: "Go to Settings, tap your name at the top, tap iCloud, then Photos, and turn on 'Optimize iPhone Storage.' This keeps smaller versions of your photos on your phone while the full-resolution originals stay safely backed up in iCloud.",
-        warning: "iCloud has a free storage limit of 5GB. If your photo library is larger than that, you may need to pay for more iCloud storage or move some photos to a computer instead.",
-      },
-      {
-        title: "Empty 'Recently Deleted' albums",
-        content: "Deleted photos sit in a 'Recently Deleted' album for 30 days before they're gone for good, still using up space. Open the Photos app, tap Albums, scroll to Recently Deleted, tap Select, then Delete All to clear them right away.",
-      },
-    ],
-  },
-  {
+    {
     slug: "set-up-medicare-gov-online-account",
     title: "How to Set Up Your Medicare.gov Online Account",
     excerpt: "Create a free MyMedicare.gov account to view your coverage, order a replacement Medicare card, and check your Part D drug plan details online.",

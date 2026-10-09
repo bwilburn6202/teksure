@@ -5,7 +5,7 @@ import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent } from '@/components/ui/card';
 import {
   ShieldAlert, Heart, HeartHandshake, Eye, BookOpen,
-  Sparkles, MessageCircle, ArrowRight, Sun, type LucideIcon,
+  Sparkles, MessageCircle, ArrowRight, type LucideIcon,
 } from 'lucide-react';
 
 interface Path {
@@ -17,13 +17,6 @@ interface Path {
 }
 
 const PATHS: Path[] = [
-  {
-    q: 'I want a quick tip for today',
-    description: 'A 60-second tip you can listen to or read.',
-    to: '/daily-tip',
-    icon: Sun,
-    cls: 'from-amber-50 to-orange-50 dark:from-amber-950/30 dark:to-orange-950/30 border-amber-200 dark:border-amber-900',
-  },
   {
     q: 'I got a strange call, text, or email',
     description: 'Paste the message, get a clear answer.',
@@ -54,7 +47,7 @@ const PATHS: Path[] = [
   },
   {
     q: 'I just need to learn something',
-    description: 'Browse our free guide library — over 2,500 plain-English how-tos.',
+    description: 'Browse our free library of plain-English how-tos.',
     to: '/guides',
     icon: BookOpen,
     cls: 'from-emerald-50 to-teal-50 dark:from-emerald-950/30 dark:to-teal-950/30 border-emerald-200 dark:border-emerald-900',
@@ -101,12 +94,12 @@ export default function Start() {
                 <Link key={p.to} to={p.to}>
                   <Card className={`bg-gradient-to-r ${p.cls} hover:shadow-md transition-all border-2`}>
                     <CardContent className="p-5 flex items-center gap-4">
-                      <div className="p-3 bg-white dark:bg-slate-900 rounded-xl shadow-sm shrink-0">
+                      <div className="p-3 bg-card rounded-xl shadow-sm shrink-0">
                         <Icon className="h-6 w-6 text-foreground" />
                       </div>
                       <div className="flex-1">
                         <p className="font-semibold text-base md:text-lg">{p.q}</p>
-                        <p className="text-sm text-muted-foreground mt-0.5">{p.description}</p>
+                        <p className="text-base text-muted-foreground mt-0.5">{p.description}</p>
                       </div>
                       <ArrowRight className="h-5 w-5 text-muted-foreground shrink-0" />
                     </CardContent>
@@ -117,7 +110,7 @@ export default function Start() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-sm text-muted-foreground mb-2">None of these match what you need?</p>
+            <p className="text-base text-muted-foreground mb-2">None of these match what you need?</p>
             <Link to="/site-index" className="text-primary hover:underline text-sm font-medium">
               See every page on TekSure →
             </Link>

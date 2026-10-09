@@ -79,7 +79,7 @@ export default function AiVoiceDefense() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-red-500/10 rounded-full">
-                <PhoneOff className="h-8 w-8 text-red-600" />
+                <PhoneOff className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">AI Voice Clone Defense</h1>
@@ -92,9 +92,9 @@ export default function AiVoiceDefense() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'AI Voice Clone Defense' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">What changed in the last two years</p>
                 <p className="text-muted-foreground">
@@ -112,13 +112,13 @@ export default function AiVoiceDefense() {
                   <Badge variant="outline" className="mb-2">Pattern {i + 1}</Badge>
 
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Scenario</p>
-                  <p className="text-sm mb-2 italic">{p.scenario}</p>
+                  <p className="text-base mb-2 italic">{p.scenario}</p>
 
-                  <p className="text-xs font-semibold text-red-700 dark:text-red-300 uppercase tracking-wider mb-1">Red flag</p>
-                  <p className="text-sm mb-2 p-2 rounded bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800">{p.redFlag}</p>
+                  <p className="text-xs font-semibold text-danger-foreground uppercase tracking-wider mb-1">Red flag</p>
+                  <p className="text-base mb-2 p-2 rounded bg-danger border border-danger-foreground/25 ">{p.redFlag}</p>
 
-                  <p className="text-xs font-semibold text-green-700 dark:text-green-300 uppercase tracking-wider mb-1">What to do</p>
-                  <p className="text-sm p-2 rounded bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800">{p.whatToDo}</p>
+                  <p className="text-xs font-semibold text-success-foreground uppercase tracking-wider mb-1">What to do</p>
+                  <p className="text-base p-2 rounded bg-success border border-success-foreground/25 ">{p.whatToDo}</p>
                 </CardContent>
               </Card>
             ))}
@@ -129,7 +129,7 @@ export default function AiVoiceDefense() {
             <CardContent className="p-5">
               <ol className="space-y-3">
                 {PROTECTION_STEPS.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <div>
                       <p className="font-semibold">{s.title}</p>
@@ -143,8 +143,8 @@ export default function AiVoiceDefense() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A note for the family conversation</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A note for the family conversation</p>
+              <p className="text-sm text-muted-foreground">
                 Talk about this once with the whole family — kids, grandkids, parents. Pick the safe-word together. Show grandparents this page. The conversation takes 10 minutes and saves a lot of money and grief.
               </p>
             </CardContent>
@@ -154,20 +154,20 @@ export default function AiVoiceDefense() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For text and email scams.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For text and email scams.</p>
               </Link>
               <Link to="/tools/common-scams-library" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Common Scams Library</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Other scam patterns.</p>
+                <p className="font-medium text-base">Common Scams Library</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Other scam patterns.</p>
               </Link>
               <Link to="/tools/family-tech-roundtable" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Family Tech Roundtable</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Have the family conversation.</p>
+                <p className="font-medium text-base">Family Tech Roundtable</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Have the family conversation.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: a family safe-word costs nothing and stops the most expensive scam. Pick one this week.
           </p>
         </div>

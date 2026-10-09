@@ -284,7 +284,7 @@ export default function NewGrandparentTech() {
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="mb-2 font-semibold">{app.title}</h3>
-                    <p className="text-sm text-muted-foreground">{app.description}</p>
+                    <p className="text-base text-muted-foreground">{app.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -312,8 +312,8 @@ export default function NewGrandparentTech() {
                 <Card key={opt.title} className="border-2">
                   <CardContent className="p-6">
                     <h3 className="mb-2 text-lg font-semibold">{opt.title}</h3>
-                    <p className="mb-3 text-sm text-muted-foreground">{opt.description}</p>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="mb-3 text-base text-muted-foreground">{opt.description}</p>
+                    <p className="text-sm text-muted-foreground">
                       <span className="font-medium text-foreground">Best for:</span> {opt.bestFor}
                     </p>
                   </CardContent>
@@ -347,7 +347,7 @@ export default function NewGrandparentTech() {
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="mb-2 font-semibold">{tip.title}</h3>
-                    <p className="text-sm text-muted-foreground">{tip.description}</p>
+                    <p className="text-base text-muted-foreground">{tip.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -376,7 +376,7 @@ export default function NewGrandparentTech() {
                 <Card key={tool.title} className="border-2">
                   <CardContent className="p-6">
                     <h3 className="mb-2 font-semibold">{tool.title}</h3>
-                    <p className="mb-3 text-sm text-muted-foreground">{tool.description}</p>
+                    <p className="mb-3 text-base text-muted-foreground">{tool.description}</p>
                     {tool.url && (
                       <a
                         href={tool.url}
@@ -413,7 +413,7 @@ export default function NewGrandparentTech() {
               <Card key={item.title}>
                 <CardContent className="p-6">
                   <h3 className="mb-2 font-semibold">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-base text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -440,7 +440,7 @@ export default function NewGrandparentTech() {
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -472,7 +472,7 @@ export default function NewGrandparentTech() {
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -503,7 +503,7 @@ export default function NewGrandparentTech() {
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
                     <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -535,7 +535,7 @@ export default function NewGrandparentTech() {
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               );

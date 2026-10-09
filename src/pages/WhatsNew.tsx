@@ -4,26 +4,9 @@ import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Link } from 'react-router-dom';
-import {
-  Sparkles,
-  Wrench,
-  BookOpen,
-  Bug,
-  Rss,
-  Mail,
-  ArrowRight,
-  Mic,
-  Shield,
-  Rocket,
-  Calendar,
-} from 'lucide-react';
+import { Sparkles, Wrench, BookOpen, Bug, Rss, Mail, ArrowRight, Shield, Rocket, Calendar } from 'lucide-react';
 
 // ── Category styling for grouped updates ─────────────────────────────────────
 type UpdateType = 'guide' | 'tool' | 'improvement' | 'fix';
@@ -356,7 +339,7 @@ function UpdateGroup({ type, items }: { type: UpdateType; items: Update[] }) {
             />
             <div>
               <p className="text-base font-medium text-foreground leading-snug">{item.title}</p>
-              <p className="text-sm md:text-base text-foreground/70 leading-relaxed">{item.description}</p>
+              <p className="text-base md:text-base text-foreground/70 leading-relaxed">{item.description}</p>
             </div>
           </li>
         ))}
@@ -460,7 +443,7 @@ export default function WhatsNew() {
                           {release.label}
                         </h3>
                         {release.summary && (
-                          <p className="text-sm md:text-base text-foreground/70 font-normal mt-1 leading-relaxed">
+                          <p className="text-base md:text-base text-foreground/70 font-normal mt-1 leading-relaxed">
                             {release.summary}
                           </p>
                         )}
@@ -534,11 +517,11 @@ export default function WhatsNew() {
               </Button>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-foreground/60">
-              <Link to="/changelog" className="inline-flex items-center gap-1.5 hover:text-primary hover:underline underline-offset-4 transition-colors">
+              <Link to="/whats-new" className="inline-flex items-center gap-1.5 hover:text-primary hover:underline underline-offset-4 transition-colors">
                 <Shield className="h-4 w-4" aria-hidden="true" />
                 Technical changelog
               </Link>
-              <Link to="/roadmap" className="inline-flex items-center gap-1.5 hover:text-primary hover:underline underline-offset-4 transition-colors">
+              <Link to="/about" className="inline-flex items-center gap-1.5 hover:text-primary hover:underline underline-offset-4 transition-colors">
                 <Rocket className="h-4 w-4" aria-hidden="true" />
                 What&rsquo;s coming next
               </Link>

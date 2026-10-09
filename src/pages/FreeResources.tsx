@@ -296,19 +296,19 @@ const FreeResources = () => {
       />
       <Navbar />
 
-      <main id="main-content" className="min-h-screen bg-gray-50 dark:bg-gray-950">
+      <main id="main-content" className="min-h-screen bg-muted ">
 
         {/* Hero */}
-        <section className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+        <section className="bg-card border-b border-border ">
           <div className="max-w-4xl mx-auto px-4 py-12 text-center">
-            <div className="inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-sm font-medium px-4 py-1.5 rounded-full mb-5">
+            <div className="inline-flex items-center gap-2 bg-success text-success-foreground text-sm font-medium px-4 py-1.5 rounded-full mb-5">
               <span className="w-2 h-2 rounded-full bg-green-500 inline-block"></span>
               Updated April 2026
             </div>
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
+            <h1 className="text-4xl font-bold text-foreground dark:text-white mb-4 leading-tight">
               Free Technology Help Is Available
             </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Millions of Americans qualify for free or deeply discounted internet, computers, and tech training — but most people never hear about these programs. This page lists real programs with real eligibility requirements so you can find what you qualify for today.
             </p>
           </div>
@@ -317,13 +317,13 @@ const FreeResources = () => {
         <div className="max-w-6xl mx-auto px-4 py-8">
 
           {/* How to Apply callout */}
-          <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-xl p-5 mb-8 flex gap-4 items-start">
+          <div className="bg-warn border border-warn-foreground/25 rounded-xl p-5 mb-8 flex gap-4 items-start">
             <div className="flex-shrink-0 mt-0.5">
-              <Info className="w-5 h-5 text-amber-600 dark:text-amber-400" />
+              <Info className="w-5 h-5 text-warn-foreground " />
             </div>
             <div>
-              <p className="font-semibold text-amber-900 dark:text-amber-200 mb-1">Before you apply — have these documents ready</p>
-              <p className="text-sm text-amber-800 dark:text-amber-300">
+              <p className="font-semibold text-warn-foreground mb-1">Before you apply — have these documents ready</p>
+              <p className="text-base text-warn-foreground ">
                 Most programs require proof that you qualify. Common documents accepted: a Medicaid card, SNAP/EBT card, SSI award letter, proof that a child in your household receives free/reduced school lunch, or recent pay stubs showing income below 200% of the federal poverty line (about $30,120/year for a single person in 2026). Having these ready before you apply speeds things up.
               </p>
             </div>
@@ -338,7 +338,7 @@ const FreeResources = () => {
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                   activeTab === tab
                     ? 'bg-blue-600 text-white shadow-sm'
-                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 hover:text-blue-700 dark:hover:text-blue-400'
+                    : 'bg-white dark:bg-gray-800 text-foreground border border-border hover:border-info-foreground/25 hover:text-info-foreground dark:hover:text-blue-400'
                 }`}
               >
                 {tab === 'Internet & Phone' && <Wifi className="w-3.5 h-3.5 inline mr-1.5" />}
@@ -353,7 +353,7 @@ const FreeResources = () => {
           </div>
 
           {/* Count */}
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
+          <p className="text-base text-muted-foreground mb-6">
             Showing {filtered.length} program{filtered.length !== 1 ? 's' : ''}
             {activeTab !== 'All' ? ` in ${activeTab}` : ' across all categories'}
           </p>
@@ -365,7 +365,7 @@ const FreeResources = () => {
               return (
                 <Card
                   key={resource.name}
-                  className="flex flex-col bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 hover:shadow-md transition-shadow"
+                  className="flex flex-col bg-card border-border hover:shadow-md transition-shadow"
                 >
                   <CardHeader className="pb-2">
                     <div className="flex items-start justify-between gap-2 mb-2">
@@ -374,21 +374,21 @@ const FreeResources = () => {
                         {resource.category}
                       </Badge>
                     </div>
-                    <CardTitle className="text-base font-bold text-gray-900 dark:text-white leading-snug">
+                    <CardTitle className="text-base font-bold text-foreground dark:text-white leading-snug">
                       {resource.name}
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col flex-1 pt-0">
-                    <p className="text-sm text-gray-700 dark:text-gray-300 mb-3 leading-relaxed">
+                    <p className="text-base text-foreground mb-3 leading-relaxed">
                       {resource.description}
                     </p>
                     {resource.note && (
-                      <p className="text-xs text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20 rounded-md px-3 py-2 mb-3 border border-amber-200 dark:border-amber-800">
+                      <p className="text-sm text-warn-foreground bg-warn rounded-md px-3 py-2 mb-3 border border-warn-foreground/25 ">
                         <strong>Note:</strong> {resource.note}
                       </p>
                     )}
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mb-4 leading-relaxed">
-                      <span className="font-semibold text-gray-600 dark:text-gray-300">Who qualifies: </span>
+                    <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                      <span className="font-semibold text-muted-foreground ">Who qualifies: </span>
                       {resource.eligibility}
                     </p>
                     <div className="mt-auto">
@@ -396,7 +396,7 @@ const FreeResources = () => {
                         asChild
                         variant="outline"
                         size="sm"
-                        className="w-full text-blue-700 dark:text-blue-400 border-blue-200 dark:border-blue-800 hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:border-blue-400 font-medium"
+                        className="w-full text-info-foreground border-info-foreground/25 hover:bg-info hover:border-blue-400 font-medium"
                       >
                         <a
                           href={resource.url}
@@ -415,8 +415,8 @@ const FreeResources = () => {
           </div>
 
           {/* Footer note */}
-          <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 text-center">
-            <p className="text-sm text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+          <div className="mt-12 pt-8 border-t border-border text-center">
+            <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
               TekSure does not administer any of these programs and cannot process applications on your behalf. Contact each organization directly to apply. Program availability, eligibility rules, and funding levels may change — always check the program's official website for the most current information.
             </p>
           </div>

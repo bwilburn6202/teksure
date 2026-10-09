@@ -78,7 +78,7 @@ export default function PrintFromPhoneHelper() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h2 className="font-bold text-xl mb-1">{phone === 'iphone' ? 'iPhone' : 'Android'} → {BRANDS.find(b => b.id === brand)?.name}</h2>
-                {result.app && <p className="text-sm text-muted-foreground mb-4">Recommended app: <strong>{result.app}</strong></p>}
+                {result.app && <p className="text-base text-muted-foreground mb-4">Recommended app: <strong>{result.app}</strong></p>}
                 <ol className="space-y-3 list-decimal pl-5">
                   {result.steps.map((s, i) => <li key={i}>{s}</li>)}
                 </ol>
@@ -87,7 +87,7 @@ export default function PrintFromPhoneHelper() {
             <Card className="bg-muted/40 mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold mb-2">If it's not working</h3>
-                <ul className="text-sm list-disc pl-5 space-y-1 text-muted-foreground">
+                <ul className="text-base list-disc pl-5 space-y-1 text-muted-foreground">
                   <li>Both devices must be on the SAME Wi-Fi network (not Guest, not Hotspot).</li>
                   <li>Restart the printer — unplug it for 30 seconds, plug it back in.</li>
                   <li>Restart your phone too.</li>

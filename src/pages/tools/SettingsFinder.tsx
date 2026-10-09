@@ -1005,7 +1005,7 @@ function SettingCard({
             {setting.category}
           </Badge>
         </div>
-        <p className="text-sm text-muted-foreground pt-1">{setting.description}</p>
+        <p className="text-base text-muted-foreground pt-1">{setting.description}</p>
       </CardHeader>
       <CardContent className="space-y-3">
         <div className="space-y-2.5">
@@ -1028,7 +1028,7 @@ function SettingCard({
 
         {related.length > 0 && (
           <div className="pt-2 border-t">
-            <p className="text-xs font-medium text-muted-foreground mb-2">Related settings</p>
+            <p className="text-sm font-medium text-muted-foreground mb-2">Related settings</p>
             <div className="flex flex-wrap gap-1.5">
               {related.map((r) => (
                 <button
@@ -1223,7 +1223,7 @@ export default function SettingsFinder() {
                 >
                   <div className="flex items-center justify-between gap-2">
                     <span className="font-medium">{s.name}</span>
-                    <span className="text-xs text-muted-foreground shrink-0">{s.category}</span>
+                    <span className="text-sm text-muted-foreground shrink-0">{s.category}</span>
                   </div>
                   <p className="text-xs text-muted-foreground truncate">{s.description}</p>
                 </button>
@@ -1268,13 +1268,13 @@ export default function SettingsFinder() {
               </p>
               <p className="text-muted-foreground">
                 Try a simpler word (for example "brightness" instead of "how to make the screen brighter"),
-                or ask TekBrain — our AI helper knows about many more settings.
+                or ask a real person for help.
               </p>
               <div className="flex items-center justify-center gap-3 pt-2">
                 <Button asChild variant="default">
-                  <Link to="/tekbrain">
+                  <Link to="/get-help">
                     <MessageCircle className="mr-2 h-4 w-4" />
-                    Ask TekBrain
+                    Ask a real person
                   </Link>
                 </Button>
                 <Button variant="outline" onClick={() => setQuery('')}>
@@ -1309,14 +1309,14 @@ export default function SettingsFinder() {
         {/* Footer help */}
         <div className="mt-16 rounded-xl border bg-muted/40 p-6 max-w-3xl">
           <h3 className="font-semibold mb-1">Can't find what you're looking for?</h3>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             Settings menus change between software updates and phone brands. If the path here
-            doesn't match what you see, ask TekBrain for step-by-step help with your exact device.
+            doesn't match what you see, ask a real person for step-by-step help with your exact device.
           </p>
           <Button asChild variant="outline" size="sm">
-            <Link to="/tekbrain">
+            <Link to="/get-help">
               <MessageCircle className="mr-2 h-4 w-4" />
-              Ask TekBrain
+              Ask a real person
             </Link>
           </Button>
         </div>

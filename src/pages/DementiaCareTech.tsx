@@ -308,11 +308,11 @@ export default function DementiaCareTech() {
               return (
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">
+                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary ">
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -341,11 +341,11 @@ export default function DementiaCareTech() {
                 return (
                   <Card key={item.title} className="border-2">
                     <CardContent className="p-6">
-                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary ">
                         <Icon className="h-5 w-5" />
                       </div>
                       <h3 className="mb-2 font-semibold">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                      <p className="text-base text-muted-foreground">{item.description}</p>
                     </CardContent>
                   </Card>
                 );
@@ -373,7 +373,7 @@ export default function DementiaCareTech() {
               <Card key={item.title} className="border-2">
                 <CardContent className="p-6">
                   <h3 className="mb-2 font-semibold">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-base text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -401,11 +401,11 @@ export default function DementiaCareTech() {
                 return (
                   <Card key={item.title} className="border-2">
                     <CardContent className="p-6">
-                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary ">
                         <Icon className="h-5 w-5" />
                       </div>
                       <h3 className="mb-2 font-semibold">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                      <p className="text-base text-muted-foreground">{item.description}</p>
                     </CardContent>
                   </Card>
                 );
@@ -435,7 +435,7 @@ export default function DementiaCareTech() {
               <Card key={item.title} className="border-2">
                 <CardContent className="p-6">
                   <h3 className="mb-2 font-semibold">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-base text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -462,7 +462,7 @@ export default function DementiaCareTech() {
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
                     <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -490,11 +490,11 @@ export default function DementiaCareTech() {
               return (
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">
+                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary ">
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -522,7 +522,7 @@ export default function DementiaCareTech() {
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -550,11 +550,11 @@ export default function DementiaCareTech() {
               return (
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">
+                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-warn text-warn-foreground ">
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -582,7 +582,7 @@ export default function DementiaCareTech() {
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
                     <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -595,7 +595,7 @@ export default function DementiaCareTech() {
       <section className="border-t bg-gradient-to-b from-purple-50 to-background dark:from-purple-950/30">
         <div className="container mx-auto px-4 py-20">
           <div className="mx-auto max-w-3xl text-center">
-            <Heart className="mx-auto mb-6 h-12 w-12 text-purple-600 dark:text-purple-400" />
+            <Heart className="mx-auto mb-6 h-12 w-12 text-primary " />
             <h2 className="mb-4 text-2xl font-bold md:text-3xl">This is hard. You're doing your best.</h2>
             <p className="mb-6 text-lg text-muted-foreground">
               Take breaks. Ask for help. You cannot pour from an empty cup, and the person you
@@ -604,7 +604,7 @@ export default function DementiaCareTech() {
             </p>
             <p className="mb-8 text-xl font-semibold">
               Alzheimer's Association 24/7 Helpline:{' '}
-              <a href="tel:18002723900" className="text-purple-700 underline dark:text-purple-300">
+              <a href="tel:18002723900" className="text-primary underline ">
                 1-800-272-3900
               </a>
             </p>

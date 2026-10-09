@@ -123,7 +123,7 @@ export default function LowVisionApps() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-indigo-500/10 rounded-full">
-                <Eye className="h-8 w-8 text-indigo-600" />
+                <Eye className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Low Vision Apps and Services</h1>
@@ -138,8 +138,8 @@ export default function LowVisionApps() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Start with Be My Eyes and Seeing AI</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Start with Be My Eyes and Seeing AI</p>
+              <p className="text-sm text-muted-foreground">
                 These two apps are free and cover 80% of the daily needs people describe to us — reading mail, identifying products, finding dropped items, listening to a label. Install both before you consider any paid service.
               </p>
             </CardContent>
@@ -153,20 +153,20 @@ export default function LowVisionApps() {
                     <p className="font-semibold text-base">{p.name}</p>
                     <Badge variant="outline">{p.cost}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-2"><strong>What it does:</strong> {p.whatItDoes}</p>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {p.bestFor}</p>
+                  <p className="text-base text-muted-foreground mb-2"><strong>What it does:</strong> {p.whatItDoes}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {p.bestFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {p.pros.map((pr, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{pr}</span></li>)}
+                        {p.pros.map((pr, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{pr}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {p.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                        {p.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -185,8 +185,8 @@ export default function LowVisionApps() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Ask your eye doctor about state services</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Ask your eye doctor about state services</p>
+              <p className="text-sm text-muted-foreground">
                 Every state has a Bureau of Services for the Blind (sometimes called Vocational Rehab). Many provide free training, free magnifiers, and free copies of paid apps. A note from your ophthalmologist or optometrist usually opens the door.
               </p>
             </CardContent>
@@ -196,20 +196,20 @@ export default function LowVisionApps() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Low Vision Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Configure your phone, tablet, and TV for easier viewing.</p>
+                <p className="font-medium text-base">Low Vision Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Configure your phone, tablet, and TV for easier viewing.</p>
               </Link>
               <Link to="/tools/screen-reader-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Screen Reader Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">First steps with VoiceOver, TalkBack, or NVDA.</p>
+                <p className="font-medium text-base">Screen Reader Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">First steps with VoiceOver, TalkBack, or NVDA.</p>
               </Link>
               <Link to="/accessibility" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Accessibility Hub</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Every accessibility guide in one place.</p>
+                <p className="font-medium text-base">Accessibility Hub</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Every accessibility guide in one place.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: install Be My Eyes and Seeing AI today, even if you do not need them yet. Practice on your mail when there is no pressure, so the apps feel familiar the day you really need them.
           </p>
         </div>

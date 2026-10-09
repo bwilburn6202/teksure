@@ -117,8 +117,8 @@ export default function BatteryOptimizer() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 flex items-center justify-center flex-shrink-0">
-                <BatteryCharging className="h-6 w-6 text-emerald-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-success flex items-center justify-center flex-shrink-0">
+                <BatteryCharging className="h-6 w-6 text-success-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -140,7 +140,7 @@ export default function BatteryOptimizer() {
                     key={d}
                     onClick={() => setDevice(d)}
                     className={`p-3 rounded-xl border text-sm font-medium transition-colors ${
-                      device === d ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30' : 'hover:border-primary hover:bg-muted/50'
+                      device === d ? 'border-emerald-500 bg-success dark:bg-emerald-950/30' : 'hover:border-primary hover:bg-muted/50'
                     }`}
                   >
                     <div className="text-2xl mb-1">{DEVICE_LABELS[d].emoji}</div>
@@ -152,7 +152,7 @@ export default function BatteryOptimizer() {
           </Card>
 
           {/* Progress */}
-          <Card className="border-emerald-200 dark:border-emerald-800/50">
+          <Card className="border-success-foreground/25 ">
             <CardContent className="pt-6 space-y-2">
               <div className="flex justify-between text-sm">
                 <span>Progress</span>
@@ -173,7 +173,7 @@ export default function BatteryOptimizer() {
                 const isDone = !!done[key];
                 const isOpen = !!open[key];
                 return (
-                  <div key={key} className={`rounded-lg border ${isDone ? 'bg-emerald-50/50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/50' : ''}`}>
+                  <div key={key} className={`rounded-lg border ${isDone ? 'bg-emerald-50/50 dark:bg-emerald-950/20 border-success-foreground/25 dark:border-emerald-800/50' : ''}`}>
                     <div className="flex items-start gap-3 p-3">
                       <input
                         type="checkbox"
@@ -187,14 +187,14 @@ export default function BatteryOptimizer() {
                         className="flex-1 text-left flex items-start gap-2"
                       >
                         <div className="flex-1">
-                          <span className="text-xs text-muted-foreground mr-2">{i + 1}.</span>
-                          <span className={`text-sm font-medium ${isDone ? 'line-through text-muted-foreground' : ''}`}>{s.title}</span>
+                          <span className="text-sm text-muted-foreground mr-2">{i + 1}.</span>
+                          <span className={`text-base font-medium ${isDone ? 'line-through text-muted-foreground' : ''}`}>{s.title}</span>
                         </div>
                         {isOpen ? <ChevronUp className="h-4 w-4 flex-shrink-0 mt-0.5" /> : <ChevronDown className="h-4 w-4 flex-shrink-0 mt-0.5" />}
                       </button>
                     </div>
                     {isOpen && (
-                      <p className="px-3 pb-3 pl-10 text-sm text-muted-foreground">{s.detail}</p>
+                      <p className="px-3 pb-3 pl-10 text-base text-muted-foreground">{s.detail}</p>
                     )}
                   </div>
                 );
@@ -206,7 +206,7 @@ export default function BatteryOptimizer() {
           <Card>
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
-                <Wrench className="h-5 w-5 text-orange-600" aria-hidden="true" /> Battery Replacement Guide
+                <Wrench className="h-5 w-5 text-warn-foreground" aria-hidden="true" /> Battery Replacement Guide
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-sm">
@@ -231,7 +231,7 @@ export default function BatteryOptimizer() {
                 href="https://support.apple.com/iphone/repair/battery-power"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-1 text-blue-600 hover:underline"
+                className="inline-flex items-center gap-1 text-info-foreground hover:underline"
               >
                 Apple battery service info <ExternalLink className="h-3 w-3" />
               </a>
@@ -240,8 +240,8 @@ export default function BatteryOptimizer() {
 
           {/* Cross link */}
           <a href="/tools/device-age-checker" className="block rounded-xl border p-4 hover:border-primary hover:bg-muted/50 transition-colors">
-            <p className="font-semibold text-sm">Is it time for a new device? <ArrowRight className="inline h-4 w-4" /></p>
-            <p className="text-xs text-muted-foreground mt-1">If your battery is the only problem, replacement is much cheaper. Use our Device Age Checker to decide.</p>
+            <p className="font-semibold text-base">Is it time for a new device? <ArrowRight className="inline h-4 w-4" /></p>
+            <p className="text-sm text-muted-foreground mt-1">If your battery is the only problem, replacement is much cheaper. Use our Device Age Checker to decide.</p>
           </a>
         </div>
       </main>

@@ -34,7 +34,7 @@ export default function RomanceScamDefense() {
               <AlertTriangle className="w-6 h-6 text-destructive shrink-0" />
               <div>
                 <h2 className="font-bold mb-1">The hard truth</h2>
-                <p className="text-sm">Americans over 60 lost over <strong>$1 billion</strong> to romance scams in 2024. The targets are not naive — they're often smart, kind, lonely, and recently widowed. The scammers are professional, and they study their target for weeks before asking for money.</p>
+                <p className="text-base">Americans over 60 lost over <strong>$1 billion</strong> to romance scams in 2024. The targets are not naive — they're often smart, kind, lonely, and recently widowed. The scammers are professional, and they study their target for weeks before asking for money.</p>
               </div>
             </div>
           </CardContent>
@@ -49,12 +49,12 @@ export default function RomanceScamDefense() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The hardest rule (and the most important)</h2>
-            <p className="text-sm mb-2"><strong>Never send money to anyone you've only met online.</strong></p>
-            <p className="text-sm">Not a small "loan". Not gift cards "to help out". Not "hold this transfer for me". Not "buy this crypto for us". Once it's gone, it's gone — and the next request will be bigger.</p>
-            <p className="text-sm mt-2">Real partners don't ask people they've never met for money. Period.</p>
+            <p className="text-base mb-2"><strong>Never send money to anyone you've only met online.</strong></p>
+            <p className="text-base">Not a small "loan". Not gift cards "to help out". Not "hold this transfer for me". Not "buy this crypto for us". Once it's gone, it's gone — and the next request will be bigger.</p>
+            <p className="text-base mt-2">Real partners don't ask people they've never met for money. Period.</p>
           </CardContent>
         </Card>
 
@@ -87,8 +87,8 @@ export default function RomanceScamDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For family — having "the conversation"</h2>
-            <p className="text-sm mb-2">If a parent or relative seems caught up in something:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">If a parent or relative seems caught up in something:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Don't shame or yell — they're already embarrassed.</li>
               <li>Show them the FBI and FTC pages on romance scams. They use the same exact playbook every time.</li>
               <li>Ask to do a video call WITH them, on speaker, with the "partner". (Will not happen.)</li>

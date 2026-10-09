@@ -96,7 +96,7 @@ const categoryEmoji: Record<string, string> = {
 function ComplexityBadge({ level }: { level: Complexity }) {
   const cfg = complexityConfig[level];
   return (
-    <span className={`inline-flex items-center px-1.5 py-0.5 rounded text-xs font-medium border shrink-0 ${cfg.color}`}>
+    <span className={`inline-flex items-center px-1.5 py-0.5 rounded text-sm font-medium border shrink-0 ${cfg.color}`}>
       {cfg.label}
     </span>
   );
@@ -335,7 +335,7 @@ export default function OsintFramework() {
           <div className="container max-w-4xl mx-auto px-4 py-4">
             <div className="flex items-center gap-2 mb-3">
               <Filter className="h-4 w-4 text-muted-foreground" />
-              <span className="text-sm font-medium">Difficulty levels</span>
+              <span className="text-base font-medium">Difficulty levels</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {(['beginner', 'intermediate', 'advanced'] as Complexity[]).map(level => {
@@ -353,9 +353,9 @@ export default function OsintFramework() {
                   >
                     <ComplexityBadge level={level} />
                     <div className="flex-1 min-w-0">
-                      <p className="text-xs text-muted-foreground">{cfg.description}</p>
+                      <p className="text-sm text-muted-foreground">{cfg.description}</p>
                     </div>
-                    <span className="text-xs font-mono text-muted-foreground">
+                    <span className="text-sm font-mono text-muted-foreground">
                       {complexityCounts[level]}
                     </span>
                   </button>

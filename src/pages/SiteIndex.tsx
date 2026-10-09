@@ -19,7 +19,7 @@ import { Badge } from '@/components/ui/badge';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { guides, categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guides';
+import { categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guide-categories';
 import { TOOL_COUNT_LABEL } from '@/data/site-stats';
 
 /**
@@ -51,25 +51,17 @@ const hubs: Entry[] = [
   { to: '/', label: 'Home', description: 'The TekSure welcome page — start here.' },
   { to: '/guides', label: 'Guides', description: 'Step-by-step how-to guides in plain English.' },
   { to: '/tools', label: 'Tools', description: `Interactive helpers — ${TOOL_COUNT_LABEL} free tools to solve everyday problems.` },
-  { to: '/tekbrain', label: 'TekBrain', description: 'Your friendly, always-available AI tech helper.' },
-  { to: '/tekbrain/chat', label: 'TekBrain Chat', description: 'Open the TekBrain chat directly.' },
-  { to: '/brain', label: 'Brain (Knowledge Map)', description: 'A visual map of everything TekSure knows.' },
-  { to: '/learn', label: 'Learn', description: 'Courses and learning paths for becoming more confident with tech.' },
-  { to: '/senior-tech-path', label: 'Senior Tech Path', description: 'A gentle learning path designed for seniors.' },
-  { to: '/explore', label: 'Explore', description: 'Wander through TekSure topics by curiosity, not task.' },
   { to: '/accessibility', label: 'Accessibility Hub', description: 'Assistive settings and guides for vision, hearing, mobility, and cognition.' },
   { to: '/caregiver-hub', label: 'Caregiver Hub', description: 'Resources for anyone helping a loved one with technology.' },
   { to: '/privacy-hub', label: 'Privacy Hub', description: 'Take back control of your online privacy in plain steps.' },
   { to: '/scam-defense', label: 'Scam Defense Center', description: 'Recognize scams, react safely, and report them.' },
   { to: '/free-resources', label: 'Free Resources', description: 'Printables, reference cards, and no-cost tools.' },
-  { to: '/free-software', label: 'Free Software', description: 'Safe, trustworthy free software recommendations.' },
   { to: '/get-help', label: 'Get Help', description: 'Find the fastest way to get unstuck.' },
   { to: '/emergency-help', label: 'Emergency Help', description: 'Something is urgent — start here.' },
   { to: '/emergency-tech', label: 'Emergency Tech', description: 'Prep your tech for weather and power emergencies.' },
   { to: '/how-it-works', label: 'How It Works', description: 'How TekSure helps — the short version.' },
   { to: '/faq', label: 'FAQ', description: 'Answers to the questions people ask most often.' },
   { to: '/about', label: 'About', description: 'Who we are and why we built TekSure.' },
-  { to: '/onboarding', label: 'Welcome Tour', description: "A quick walkthrough of TekSure for first-time visitors." },
 ];
 
 // ── Tools (every /tools/* route in App.tsx) ──────────────────────────────────
@@ -144,9 +136,7 @@ const tools: Entry[] = [
   { to: '/tools/smart-tv-setup', label: 'Smart TV Setup Wizard', description: 'Set up a new smart TV with confidence.' },
   { to: '/tools/streaming-calculator', label: 'Streaming Calculator', description: 'Figure out which streaming services add up best.' },
   { to: '/tools/subscription-auditor', label: 'Subscription Auditor', description: 'Audit active subscriptions across your accounts.' },
-  { to: '/tools/tech-budget', label: 'Tech Budget Planner', description: "Plan the household's tech spending for the year." },
   { to: '/tools/tech-emergency-kit', label: 'Tech Emergency Kit', description: 'Prep a kit of info and tools for tech emergencies.' },
-  { to: '/tools/tech-setup-cost-estimator', label: 'Tech Setup Cost Estimator', description: "Estimate the cost of setting up a new home office or classroom." },
   { to: '/tools/trade-in-estimator', label: 'Trade-In Estimator', description: 'Estimate the trade-in value of a device.' },
   { to: '/tools/troubleshooter', label: 'Troubleshooter', description: 'General-purpose device troubleshooter.' },
   { to: '/tools/two-factor-setup', label: 'Two-Factor Setup', description: 'Turn on two-factor authentication the right way.' },
@@ -166,24 +156,12 @@ const resources: Entry[] = [
   { to: '/reference-cards', label: 'Reference Cards', description: 'Printable cards for common everyday tasks.' },
   { to: '/checklists', label: 'Checklists', description: 'Printable checklists for setup, safety, and more.' },
   { to: '/glossary', label: 'Glossary', description: 'Every tech term explained in plain English.' },
-  { to: '/blog', label: 'Blog', description: 'Thoughts, how-tos, and tech news from the TekSure team.' },
-  { to: '/articles', label: 'Articles', description: "Longer-form articles on specific topics." },
-  { to: '/webinars', label: 'Webinars', description: "Live and recorded workshops." },
-  { to: '/videos', label: 'Videos', description: 'Short, friendly videos for visual learners.' },
-  { to: '/news', label: 'Tech News', description: 'Everyday-person-friendly tech news.' },
-  { to: '/tips', label: 'Tips', description: 'A growing library of quick tips.' },
-  { to: '/success-stories', label: 'Success Stories', description: 'Real people, real tech wins.' },
-  { to: '/ask', label: 'Ask TekSure', description: 'Submit a question to the TekSure community.' },
-  { to: '/sources', label: 'Sources', description: 'The sources we cite and trust.' },
-  { to: '/forum', label: 'Community Forum', description: 'Ask questions and help your neighbors.' },
-  { to: '/community/ambassadors', label: 'Ambassadors Program', description: 'Community ambassadors who help others learn.' },
+  { to: '/courses/internet-basics', label: 'Internet Basics Course', description: 'A free, step-by-step course for brand-new internet users.' },
 ];
 
 // ── For Specific Audiences ───────────────────────────────────────────────────
 const audiences: Entry[] = [
-  { to: '/family-sharing', label: 'Family Sharing', description: 'Share TekSure with everyone in your household.' },
   { to: '/veterans-tech-hub', label: 'Veterans Tech Hub', description: 'Tech resources tailored for veterans.' },
-  { to: '/senior-tech-path', label: 'Senior Tech Path', description: 'A learning path designed specifically for seniors.' },
   { to: '/retirement-tech', label: 'Retirement Tech', description: 'Tech tips for the retirement years.' },
   { to: '/new-grandparent-tech', label: 'New Grandparent Tech', description: 'Tech for new grandparents — video calls, photos, and more.' },
   { to: '/kids-online-safety', label: 'Kids Online Safety', description: 'Keep kids safe online without making tech a fight.' },
@@ -205,11 +183,6 @@ const audiences: Entry[] = [
   { to: '/job-search-tech-hub', label: 'Job Search Tech Hub', description: 'Resumes, LinkedIn, interviews — the tech side.' },
   { to: '/data-broker-removal', label: 'Data Broker Removal', description: 'Remove yourself from data broker sites.' },
   { to: '/tech-help-near-me', label: 'Tech Help Near Me', description: 'Find in-person tech help in your area.' },
-  { to: '/local-help', label: 'Local Help', description: 'Local, human help options.' },
-  { to: '/tech-anxiety', label: 'Tech Anxiety', description: "For when tech makes your heart race — we've got you." },
-  { to: '/gift-guide', label: 'Tech Gift Guide', description: 'Thoughtful, age-appropriate tech gift ideas.' },
-  { to: '/ai-tutor', label: 'AI Tutor', description: 'A gentle, patient AI tutor for tech basics.' },
-  { to: '/progress-report', label: 'Progress Report', description: 'See how far you have come on your tech journey.' },
   { to: '/safety/parental-controls', label: 'Parental Controls', description: 'Plain-English parental controls setup.' },
 ];
 
@@ -219,39 +192,21 @@ const account: Entry[] = [
   { to: '/signup', label: 'Sign Up', description: 'Create a free TekSure account.' },
   { to: '/customer', label: 'Dashboard', description: 'Your personal dashboard (sign-in required).' },
   { to: '/profile', label: 'Profile', description: 'Your profile and preferences (sign-in required).' },
-  { to: '/favorites', label: 'Favorites', description: 'Guides and tools you have saved.' },
-  { to: '/my-devices', label: 'My Devices', description: 'The devices you have told us about.' },
   { to: '/my-requests', label: 'My Requests', description: 'Help requests you have submitted.' },
-  { to: '/my-path', label: 'My Path', description: 'Your personal learning path.' },
-  { to: '/journal', label: 'Tech Journal', description: 'A private journal for your tech wins and frustrations.' },
-  { to: '/achievements', label: 'Achievements', description: 'Badges and milestones you have earned.' },
-  { to: '/notifications', label: 'Notifications', description: 'Your TekSure notifications.' },
-  { to: '/certificate', label: 'Certificate of Completion', description: 'Download a certificate when you finish a path.' },
   { to: '/technicians', label: 'Technicians', description: 'Browse available technicians.' },
-  { to: '/find-a-guide', label: 'Find a Guide', description: 'Help picking the right guide.' },
-  { to: '/setup', label: 'Setup Wizard', description: 'A friendly setup wizard for new arrivals.' },
-  { to: '/device-hub', label: 'Device Hub', description: 'A hub for setting up and managing devices.' },
   { to: '/quick-fixes', label: 'Quick Fixes', description: 'One-minute fixes for common problems.' },
-  { to: '/keyboard-navigation', label: 'Keyboard Navigation', description: 'Using TekSure without a mouse.' },
   { to: '/privacy', label: 'Privacy Policy', description: 'How we handle your data.' },
   { to: '/terms', label: 'Terms of Use', description: 'The rules for using TekSure.' },
 ];
 
-// Build the Guide Categories section from real data, so counts stay honest.
-const guideCategoryEntries: Entry[] = (Object.keys(categoryLabels) as GuideCategory[])
-  .map((cat) => {
-    const count = guides.filter((g) => g.category === cat).length;
-    return {
-      to: `/guides?category=${cat}`,
-      label: `${categoryLabels[cat]} (${count})`,
-      description: categoryDescriptions[cat],
-    };
-  })
-  .filter((e) => {
-    // Only include categories that actually have guides.
-    const countStr = e.label.match(/\((\d+)\)$/)?.[1];
-    return countStr ? parseInt(countStr, 10) > 0 : true;
-  });
+// Every guide category, linked to the filtered guide library. Per-category
+// counts were dropped: computing them here imported the whole guide library
+// (~17 MB) into this page just to print numbers.
+const guideCategoryEntries: Entry[] = (Object.keys(categoryLabels) as GuideCategory[]).map((cat) => ({
+  to: `/guides?category=${cat}`,
+  label: categoryLabels[cat],
+  description: categoryDescriptions[cat],
+}));
 
 // Master list of sections, in display order.
 const sections: Section[] = [
@@ -334,7 +289,7 @@ const EntryRow = ({ entry }: { entry: Entry }) => (
         <span className="text-base font-medium text-foreground group-hover:text-primary leading-snug">
           {entry.label}
         </span>
-        <span className="text-sm text-muted-foreground leading-snug">
+        <span className="text-base text-muted-foreground leading-snug">
           {entry.description}
         </span>
       </span>
@@ -389,6 +344,7 @@ const SiteIndex = () => {
         }}
       />
       <Navbar />
+      <main className="flex-1">
 
       {/* Hero */}
       <section className="border-b border-border">
@@ -421,7 +377,7 @@ const SiteIndex = () => {
               />
             </div>
             <p
-              className="text-sm text-muted-foreground mt-4"
+              className="text-base text-muted-foreground mt-4"
               aria-live="polite"
             >
               {q ? (
@@ -553,16 +509,9 @@ const SiteIndex = () => {
           />
           <h2 className="text-xl font-semibold">Looking for something and cannot find it?</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Try our friendly AI helper — it knows every page on TekSure and can point you straight there.
+            Ask a real person — we know every page on TekSure and can point you straight there.
           </p>
           <div className="flex flex-wrap gap-3 justify-center pt-2">
-            <Link
-              to="/tekbrain"
-              className="inline-flex items-center gap-2 px-5 h-11 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
-            >
-              <Sparkles className="h-4 w-4" aria-hidden="true" />
-              Ask TekBrain
-            </Link>
             <Link
               to="/get-help"
               className="inline-flex items-center gap-2 px-5 h-11 rounded-full border border-border bg-card font-semibold hover:bg-accent/50 transition-colors"
@@ -581,6 +530,7 @@ const SiteIndex = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

@@ -66,3 +66,7 @@ vitest.config.ts.timestamp-*
 dist.stale*
 .git/*.lock.*
 scripts/revert-require-swap.mjs
+
+# Files staged for deletion by a session that could not unlink them (see CLAUDE.md).
+# Safe to delete this folder outright.
+_to_delete/

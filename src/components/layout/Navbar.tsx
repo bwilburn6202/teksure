@@ -91,27 +91,18 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
   const primaryLinks = [
     { to: '/guides', label: 'Guides' },
     { to: '/tools', label: 'Tools' },
+    { to: '/scam-defense', label: 'Scams' },
   ];
 
-  // "More" dropdown — curated, uniform list of pages that aren't on the
-  // main pill. Same set is reused in the mobile drawer so the surfaces stay
-  // in sync.
+  // "More" dropdown — kept short on purpose. Everything else is one click
+  // away from Guides, Tools, or the footer's Site Index.
   const moreLinks = [
-    { to: '/safety/scam-alerts', label: 'Safety & Scam Alerts' },
-    { to: '/scam-alerts',        label: 'Current Scam Alerts' },
-    { to: '/privacy-hub',        label: 'Privacy Hub' },
-    { to: '/forum',              label: 'Community Forum' },
-    { to: '/learn',              label: 'Learning Paths' },
     { to: '/quick-fixes',        label: 'Quick Fixes' },
-    { to: '/free-resources',     label: 'Free Tech Programs' },
+    { to: '/safety/scam-alerts', label: 'Current Scam Alerts' },
     { to: '/glossary',           label: 'Tech Glossary A–Z' },
-    { to: '/videos',             label: 'Video Tutorials' },
-    { to: '/articles',           label: 'Articles & Blog' },
     { to: '/tech-help-near-me',  label: 'Help Near Me' },
-    { to: '/this-week',          label: 'This Week' },
     { to: '/about',              label: 'About TekSure' },
     { to: '/faq',                label: 'FAQ' },
-    { to: '/site-index',         label: 'Site Index' },
   ];
 
   const mobileBrowseLinks = moreLinks;
@@ -256,7 +247,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                     aria-label={`Account menu for ${user.fullName}`}
                     className={`h-11 w-11 rounded-full border border-white/80 dark:border-white/15
                                 bg-white/60 dark:bg-white/10 flex items-center justify-center
-                                hover:bg-white hover:border-[#2A5FCC] dark:hover:bg-white/20 dark:hover:border-white/30
+                                hover:bg-card hover:border-[#2A5FCC] dark:hover:bg-white/20 dark:hover:border-white/30
                                 transition-colors ${focusRing}`}
                   >
                     <Avatar className="h-9 w-9">
@@ -268,8 +259,8 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end" className="w-56">
                   <div className="px-3 py-2.5">
-                    <p className="text-sm font-semibold">{user.fullName}</p>
-                    <p className="text-xs text-muted-foreground">{user.email}</p>
+                    <p className="text-base font-semibold">{user.fullName}</p>
+                    <p className="text-sm text-muted-foreground">{user.email}</p>
                   </div>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem onClick={() => navigate(dashboardPath)}>
@@ -278,7 +269,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                   <DropdownMenuItem onClick={() => navigate('/my-requests')}>
                     <MessageSquare className="h-4 w-4 mr-2" aria-hidden="true" /> My Requests
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => navigate('/my-path')}>
+                  <DropdownMenuItem onClick={() => navigate('/guides')}>
                     <Map className="h-4 w-4 mr-2" aria-hidden="true" /> My Learning Path
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={() => navigate('/profile')}>
@@ -381,7 +372,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                 onClick={() => setMobileMenuOpen(false)}
                 className={`h-11 w-11 rounded-full flex items-center justify-center
                             text-[#1A1A1A] dark:text-white/90
-                            hover:bg-white dark:hover:bg-white/10 transition-colors ${focusRing}`}
+                            hover:bg-card dark:hover:bg-white/10 transition-colors ${focusRing}`}
               >
                 <X className="h-5 w-5" aria-hidden="true" />
               </button>
@@ -440,7 +431,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                                 transition-colors ${focusRing}
                                 ${isActive(link.to)
                                   ? 'bg-white text-[#2A5FCC] shadow-[0_2px_6px_rgba(0,0,0,0.04)] dark:bg-white/10 dark:text-white'
-                                  : 'text-[#1A1A1A] dark:text-white/85 hover:bg-white dark:hover:bg-white/10'
+                                  : 'text-[#1A1A1A] dark:text-white/85 hover:bg-card dark:hover:bg-white/10'
                                 }`}
                   >
                     {link.label}
@@ -471,7 +462,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                       setMobileMenuOpen(false);
                     }}
                     className={`w-full px-3 py-3.5 text-[17px] font-semibold text-[#C43333]
-                                hover:bg-white dark:hover:bg-white/10 rounded-xl text-left
+                                hover:bg-card dark:hover:bg-white/10 rounded-xl text-left
                                 min-h-[52px] flex items-center transition-colors ${focusRing}`}
                   >
                     <LogOut className="h-5 w-5 mr-2" aria-hidden="true" />
@@ -487,7 +478,7 @@ export function Navbar({ noSpacer = false }: { noSpacer?: boolean } = {}) {
                       }}
                       className={`w-full min-h-[52px] text-base font-bold rounded-xl
                                   border-[#E4DFD4] text-[#1A1A1A] dark:text-white
-                                  hover:bg-white dark:hover:bg-white/10 ${focusRing}`}
+                                  hover:bg-card dark:hover:bg-white/10 ${focusRing}`}
                     >
                       Sign In
                     </Button>

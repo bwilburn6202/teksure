@@ -148,17 +148,17 @@ export default function ScreenTimeAdvisor() {
         title="Screen Time Advisor — TekSure"
         description="Learn how to check your daily phone usage, set app limits, and schedule phone-free hours on iPhone and Android. Plain-English steps for seniors."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4">
+      <main className="min-h-screen bg-muted py-8 px-4">
         <div className="max-w-2xl mx-auto">
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-indigo-100 dark:bg-indigo-950/60 mb-4">
-              <Smartphone className="w-8 h-8 text-indigo-600 dark:text-indigo-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-4">
+              <Smartphone className="w-8 h-8 text-primary " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+            <h1 className="text-3xl font-bold text-foreground mb-2">
               Screen Time Advisor
             </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <p className="text-lg text-muted-foreground ">
               Find out how much time you spend on your phone — and how to cut back if you want to.
               No judgment, no complicated settings.
             </p>
@@ -166,26 +166,26 @@ export default function ScreenTimeAdvisor() {
 
           {/* Platform picker */}
           {!platform && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-800 p-6 mb-6">
-              <p className="text-center text-gray-700 dark:text-gray-300 font-medium mb-4 text-lg">
+            <div className="bg-card rounded-2xl shadow-sm border border-border p-6 mb-6">
+              <p className="text-center text-foreground font-medium mb-4 text-lg">
                 What kind of phone do you have?
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <button
                   onClick={() => setPlatform('iPhone')}
-                  className="flex flex-col items-center gap-2 p-5 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition-all"
+                  className="flex flex-col items-center gap-2 p-5 rounded-xl border-2 border-border hover:border-indigo-400 hover:bg-primary/10 transition-all"
                 >
                   <span className="text-4xl">🍎</span>
-                  <span className="font-semibold text-gray-900 dark:text-gray-100 text-lg">iPhone</span>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">Apple iPhone (any model)</span>
+                  <span className="font-semibold text-foreground text-lg">iPhone</span>
+                  <span className="text-base text-muted-foreground ">Apple iPhone (any model)</span>
                 </button>
                 <button
                   onClick={() => setPlatform('Android')}
-                  className="flex flex-col items-center gap-2 p-5 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-green-400 hover:bg-green-50 dark:hover:bg-green-950/30 transition-all"
+                  className="flex flex-col items-center gap-2 p-5 rounded-xl border-2 border-border hover:border-green-400 hover:bg-success transition-all"
                 >
                   <span className="text-4xl">🤖</span>
-                  <span className="font-semibold text-gray-900 dark:text-gray-100 text-lg">Android</span>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">Samsung, Google Pixel, etc.</span>
+                  <span className="font-semibold text-foreground text-lg">Android</span>
+                  <span className="text-base text-muted-foreground ">Samsung, Google Pixel, etc.</span>
                 </button>
               </div>
             </div>
@@ -193,13 +193,13 @@ export default function ScreenTimeAdvisor() {
 
           {/* Platform selected badge */}
           {platform && (
-            <div className="flex items-center justify-between bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 rounded-xl px-4 py-3 mb-6">
-              <span className="text-indigo-800 dark:text-indigo-200 font-medium">
+            <div className="flex items-center justify-between bg-primary/10 border border-primary/25 rounded-xl px-4 py-3 mb-6">
+              <span className="text-primary font-medium">
                 Showing steps for: {platform === 'iPhone' ? '🍎 iPhone' : '🤖 Android'}
               </span>
               <button
                 onClick={() => setPlatform(null)}
-                className="text-sm text-indigo-600 dark:text-indigo-400 underline"
+                className="text-sm text-primary underline"
               >
                 Change
               </button>
@@ -207,9 +207,9 @@ export default function ScreenTimeAdvisor() {
           )}
 
           {/* Tip banner */}
-          <div className="flex gap-3 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl p-4 mb-6">
-            <Info className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
-            <p className="text-sm text-amber-800 dark:text-amber-200">
+          <div className="flex gap-3 bg-warn border border-warn-foreground/25 rounded-xl p-4 mb-6">
+            <Info className="w-5 h-5 text-warn-foreground flex-shrink-0 mt-0.5" />
+            <p className="text-base text-warn-foreground ">
               <strong>Quick Tip:</strong> The average American spends over 4 hours a day on their phone.
               Even cutting back by 30 minutes a day frees up 3.5 hours a week.
             </p>
@@ -229,42 +229,42 @@ export default function ScreenTimeAdvisor() {
               return (
                 <div
                   key={section.id}
-                  className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm"
+                  className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm"
                 >
                   <button
                     onClick={() => toggle(section.id)}
-                    className="w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+                    className="w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-muted transition-colors"
                   >
-                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-950/60 flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-primary " />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="font-semibold text-gray-900 dark:text-gray-100">{section.title}</p>
+                      <p className="font-semibold text-foreground ">{section.title}</p>
                       {!isOpen && (
-                        <p className="text-sm text-gray-500 dark:text-gray-400 truncate">{section.description}</p>
+                        <p className="text-sm text-muted-foreground truncate">{section.description}</p>
                       )}
                     </div>
                     {isOpen ? (
-                      <ChevronUp className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                      <ChevronUp className="w-5 h-5 text-muted-foreground flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                      <ChevronDown className="w-5 h-5 text-muted-foreground flex-shrink-0" />
                     )}
                   </button>
 
                   {isOpen && (
-                    <div className="px-5 pb-5 border-t border-gray-100 dark:border-gray-800 pt-4">
-                      <p className="text-gray-600 dark:text-gray-400 mb-4">{section.description}</p>
+                    <div className="px-5 pb-5 border-t border-border pt-4">
+                      <p className="text-muted-foreground mb-4">{section.description}</p>
 
                       {/* No platform selected — show both */}
                       {!platform && (
                         <div className="grid md:grid-cols-2 gap-4">
                           {[section.iphone, section.android].map((pd, idx) => (
-                            <div key={idx} className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-4">
-                              <p className="font-semibold text-gray-800 dark:text-gray-200 mb-3 text-sm">{pd.title}</p>
+                            <div key={idx} className="bg-muted rounded-xl p-4">
+                              <p className="font-semibold text-foreground mb-3 text-base">{pd.title}</p>
                               <ol className="space-y-2">
                                 {pd.steps.map((step, si) => (
-                                  <li key={si} className="flex gap-2 text-sm text-gray-700 dark:text-gray-300">
-                                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 text-xs flex items-center justify-center font-bold mt-0.5">
+                                  <li key={si} className="flex gap-2 text-base text-foreground ">
+                                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary text-xs flex items-center justify-center font-bold mt-0.5">
                                       {si + 1}
                                     </span>
                                     <span>{step}</span>
@@ -272,9 +272,9 @@ export default function ScreenTimeAdvisor() {
                                 ))}
                               </ol>
                               {pd.tip && (
-                                <div className="mt-3 flex gap-2 bg-amber-50 dark:bg-amber-950/30 rounded-lg p-3">
-                                  <CheckCircle2 className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
-                                  <p className="text-xs text-amber-800 dark:text-amber-200">{pd.tip}</p>
+                                <div className="mt-3 flex gap-2 bg-warn rounded-lg p-3">
+                                  <CheckCircle2 className="w-4 h-4 text-warn-foreground flex-shrink-0 mt-0.5" />
+                                  <p className="text-sm text-warn-foreground ">{pd.tip}</p>
                                 </div>
                               )}
                             </div>
@@ -284,12 +284,12 @@ export default function ScreenTimeAdvisor() {
 
                       {/* Platform selected — show one */}
                       {platform && platformData && (
-                        <div className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-4">
-                          <p className="font-semibold text-gray-800 dark:text-gray-200 mb-3">{platformData.title}</p>
+                        <div className="bg-muted rounded-xl p-4">
+                          <p className="font-semibold text-foreground mb-3">{platformData.title}</p>
                           <ol className="space-y-3">
                             {platformData.steps.map((step, si) => (
-                              <li key={si} className="flex gap-3 text-gray-700 dark:text-gray-300">
-                                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 text-sm flex items-center justify-center font-bold mt-0.5">
+                              <li key={si} className="flex gap-3 text-foreground ">
+                                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary text-sm flex items-center justify-center font-bold mt-0.5">
                                   {si + 1}
                                 </span>
                                 <span>{step}</span>
@@ -297,9 +297,9 @@ export default function ScreenTimeAdvisor() {
                             ))}
                           </ol>
                           {platformData.tip && (
-                            <div className="mt-4 flex gap-2 bg-amber-50 dark:bg-amber-950/30 rounded-lg p-3">
-                              <CheckCircle2 className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
-                              <p className="text-sm text-amber-800 dark:text-amber-200">
+                            <div className="mt-4 flex gap-2 bg-warn rounded-lg p-3">
+                              <CheckCircle2 className="w-4 h-4 text-warn-foreground flex-shrink-0 mt-0.5" />
+                              <p className="text-base text-warn-foreground ">
                                 <strong>Quick Tip:</strong> {platformData.tip}
                               </p>
                             </div>
@@ -314,18 +314,18 @@ export default function ScreenTimeAdvisor() {
           </div>
 
           {/* Bottom reminder */}
-          <div className="mt-6 bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 rounded-xl p-5 text-center">
-            <CheckCircle2 className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
-            <p className="font-semibold text-green-800 dark:text-green-200 mb-1">
+          <div className="mt-6 bg-success border border-success-foreground/25 rounded-xl p-5 text-center">
+            <CheckCircle2 className="w-8 h-8 text-success-foreground mx-auto mb-2" />
+            <p className="font-semibold text-success-foreground mb-1">
               Small changes add up
             </p>
-            <p className="text-sm text-green-700 dark:text-green-300">
+            <p className="text-base text-success-foreground ">
               You do not need to overhaul your phone habits overnight. Pick one section above, try it
               for a week, and see how you feel.
             </p>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }

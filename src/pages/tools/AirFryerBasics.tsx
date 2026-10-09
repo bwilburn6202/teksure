@@ -19,7 +19,7 @@ export default function AirFryerBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it actually is</h2>
-            <p className="text-sm">An air fryer is a small countertop convection oven. Hot air whips around food fast — gives a crisp outside without much oil. Doesn&apos;t actually "fry" anything. Faster than the oven, no preheating needed.</p>
+            <p className="text-base">An air fryer is a small countertop convection oven. Hot air whips around food fast — gives a crisp outside without much oil. Doesn&apos;t actually "fry" anything. Faster than the oven, no preheating needed.</p>
           </CardContent>
         </Card>
 

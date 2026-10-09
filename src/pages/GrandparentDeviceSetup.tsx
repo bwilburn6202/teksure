@@ -114,7 +114,7 @@ export default function GrandparentDeviceSetup() {
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
               The honest, step-by-step way to set up a tablet for a grandparent — so it works the first time, every time.
             </p>
-            <p className="text-sm text-muted-foreground mt-3">About 30 minutes start to finish. Free.</p>
+            <p className="text-base text-muted-foreground mt-3">About 30 minutes start to finish. Free.</p>
           </div>
         </section>
 
@@ -150,7 +150,7 @@ export default function GrandparentDeviceSetup() {
                 </div>
                 <Card className="border-border">
                   <CardContent className="p-5">
-                    <ul className="space-y-2.5 text-sm leading-relaxed">
+                    <ul className="space-y-2.5 text-base leading-relaxed">
                       {s.body.map((b, i) => (
                         <li key={i} className="flex gap-2">
                           <span className="text-primary shrink-0 mt-1">•</span>
@@ -168,7 +168,7 @@ export default function GrandparentDeviceSetup() {
             <CardContent className="p-6">
               <Badge className="mb-3" variant="secondary">When you are done</Badge>
               <p className="font-semibold mb-2">Walk through it together — twice.</p>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 Sit next to them. Have them open the photo album, place a video call, and turn the volume up. Watch where they hesitate. That tells you which icon needs to move or grow. Walk it through a second time before you leave.
               </p>
               <div className="flex flex-wrap gap-3">
@@ -188,16 +188,16 @@ export default function GrandparentDeviceSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/new-grandparent-tech" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">New Grandparent Tech</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Tech for new grandparents — the wider hub.</p>
+                <p className="font-medium text-base">New Grandparent Tech</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Tech for new grandparents — the wider hub.</p>
               </Link>
               <Link to="/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Low-Vision Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Make any device easier to see.</p>
+                <p className="font-medium text-base">Low-Vision Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Make any device easier to see.</p>
               </Link>
               <Link to="/scam-defense" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Defense Center</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Help them spot scams.</p>
+                <p className="font-medium text-base">Scam Defense Center</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Help them spot scams.</p>
               </Link>
             </div>
           </div>

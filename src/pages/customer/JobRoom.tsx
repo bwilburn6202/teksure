@@ -153,10 +153,12 @@ const CustomerJobRoom = () => {
     return (
       <div className="min-h-screen bg-background">
         <Navbar />
+        <main className="flex-1">
         <div className="container py-16 max-w-4xl flex flex-col items-center justify-center gap-4">
           <Loader2 className="h-10 w-10 animate-spin text-primary" />
           <p className="text-lg text-muted-foreground">Loading your booking...</p>
         </div>
+        </main>
         <Footer />
       </div>
     );
@@ -167,6 +169,7 @@ const CustomerJobRoom = () => {
     return (
       <div className="min-h-screen bg-background">
         <Navbar />
+        <main className="flex-1">
         <div className="container py-16 max-w-4xl">
           <Link to="/customer" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6">
             <ArrowLeft className="h-4 w-4" /> Back to Dashboard
@@ -189,6 +192,7 @@ const CustomerJobRoom = () => {
             </CardContent>
           </Card>
         </div>
+        </main>
         <Footer />
       </div>
     );
@@ -203,6 +207,7 @@ const CustomerJobRoom = () => {
     <div className="min-h-screen bg-background">
       <SEOHead title="Booking Details — TekSure" description="View details and status of your TekSure support booking." path={`/customer/job/${id}`} />
       <Navbar />
+      <main className="flex-1">
       <div className="container py-8 max-w-4xl">
         <Link to="/customer" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="h-4 w-4" /> Back to Dashboard
@@ -236,11 +241,11 @@ const CustomerJobRoom = () => {
                       {i < timeline.length - 1 && <div className="w-px flex-1 bg-border" />}
                     </div>
                     <div className="pb-4">
-                      <p className={`text-sm font-medium ${step.done ? 'text-foreground' : 'text-muted-foreground'}`}>
+                      <p className={`text-base font-medium ${step.done ? 'text-foreground' : 'text-muted-foreground'}`}>
                         {step.label}
                       </p>
                       {step.time && (
-                        <p className="text-xs text-muted-foreground">
+                        <p className="text-sm text-muted-foreground">
                           {formatTime(step.time)}
                         </p>
                       )}
@@ -264,14 +269,14 @@ const CustomerJobRoom = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Preferred Date</p>
-                    <p className="text-sm font-medium flex items-center gap-1.5">
+                    <p className="text-base font-medium flex items-center gap-1.5">
                       <Calendar className="h-4 w-4 text-muted-foreground" />
                       {formatDate(booking.preferred_date)}
                     </p>
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Preferred Time</p>
-                    <p className="text-sm font-medium flex items-center gap-1.5">
+                    <p className="text-base font-medium flex items-center gap-1.5">
                       <Clock className="h-4 w-4 text-muted-foreground" />
                       {booking.preferred_slot ? formatBookingSlot(booking.preferred_slot) : 'Not set'}
                     </p>
@@ -285,18 +290,18 @@ const CustomerJobRoom = () => {
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Booking ID</p>
-                    <p className="text-sm font-mono text-muted-foreground">{booking.id.slice(0, 8)}...</p>
+                    <p className="text-base font-mono text-muted-foreground">{booking.id.slice(0, 8)}...</p>
                   </div>
                 </div>
 
                 {booking.payment_status !== 'paid' && booking.status !== 'cancelled' && (
                   <>
                     <Separator />
-                    <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-xl p-4">
-                      <p className="text-sm font-medium text-amber-800 dark:text-amber-200">
+                    <div className="bg-warn border border-warn-foreground/25 rounded-xl p-4">
+                      <p className="text-base font-medium text-warn-foreground ">
                         Payment not yet received
                       </p>
-                      <p className="text-sm text-amber-700 dark:text-amber-300 mt-1">
+                      <p className="text-base text-warn-foreground mt-1">
                         A deposit of 15 dollars is required to confirm your booking.
                         If you have already paid, it may take a moment to process.
                       </p>
@@ -318,7 +323,7 @@ const CustomerJobRoom = () => {
                   <MessageSquare className="h-10 w-10 text-muted-foreground/30" />
                   <div>
                     <p className="text-base font-semibold mb-1">Live chat coming soon</p>
-                    <p className="text-sm text-muted-foreground max-w-sm">
+                    <p className="text-base text-muted-foreground max-w-sm">
                       We are building a messaging feature so you can chat directly with your technician.
                       For urgent issues, please book a call with us.
                     </p>
@@ -336,6 +341,7 @@ const CustomerJobRoom = () => {
           </div>
         </div>
       </div>
+      </main>
       <Footer />
     </div>
   );

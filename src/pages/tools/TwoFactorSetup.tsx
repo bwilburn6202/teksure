@@ -184,7 +184,7 @@ export default function TwoFactorSetup() {
               <div>
                 <div className="flex items-center gap-2 p-3 rounded-lg bg-[hsl(var(--teksure-success)/0.1)] border border-[hsl(var(--teksure-success)/0.3)]">
                   <CheckCircle2 className="h-4 w-4 text-[hsl(var(--teksure-success))]" />
-                  <span className="text-sm font-medium text-[hsl(var(--teksure-success))]">
+                  <span className="text-base font-medium text-[hsl(var(--teksure-success))]">
                     {completedServices.size} of {services.length} accounts secured 
                   </span>
                 </div>
@@ -213,7 +213,7 @@ export default function TwoFactorSetup() {
                             <div className="flex-1">
                               <div className="flex items-center gap-2 flex-wrap">
                                 <span className={`font-semibold ${isDone ? 'line-through text-muted-foreground' : ''}`}>{svc.label}</span>
-                                <Badge variant="outline" className={`text-xs ${svc.priority === 'Start here' || svc.priority === 'Essential' ? 'bg-red-50 text-red-600 border-red-200 dark:bg-red-950/20 dark:text-red-400' : 'bg-[hsl(var(--teksure-warning)/0.1)] text-[hsl(var(--teksure-warning))] border-[hsl(var(--teksure-warning)/0.3)]'}`}>
+                                <Badge variant="outline" className={`text-xs ${svc.priority === 'Start here' || svc.priority === 'Essential' ? 'bg-red-50 text-danger-foreground border-danger-foreground/25 dark:bg-red-950/20 dark:text-red-400' : 'bg-[hsl(var(--teksure-warning)/0.1)] text-[hsl(var(--teksure-warning))] border-[hsl(var(--teksure-warning)/0.3)]'}`}>
                                   {svc.priority}
                                 </Badge>
                                 {isDone && <CheckCircle2 className="h-4 w-4 text-[hsl(var(--teksure-success))]" />}
@@ -230,7 +230,7 @@ export default function TwoFactorSetup() {
                                 <div className="border-t border-border pt-4">
                                   <ol className="space-y-2">
                                     {guide.steps.map((step, si) => (
-                                      <li key={si} className="flex items-start gap-2.5 text-sm">
+                                      <li key={si} className="flex items-start gap-2.5 text-base">
                                         <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 text-primary text-xs flex items-center justify-center font-bold">{si + 1}</span>
                                         <span className="text-foreground/80">{step}</span>
                                       </li>
@@ -269,8 +269,8 @@ export default function TwoFactorSetup() {
                   {authApps.map((app, i) => (
                     <div key={i} className="flex items-start justify-between gap-3 py-2 border-b border-border last:border-0">
                       <div>
-                        <p className="font-medium text-sm">{app.name}</p>
-                        <p className="text-xs text-muted-foreground">{app.platforms} · {app.note}</p>
+                        <p className="font-medium text-base">{app.name}</p>
+                        <p className="text-sm text-muted-foreground">{app.platforms} · {app.note}</p>
                       </div>
                       <div className="flex gap-0.5 shrink-0">
                         {Array.from({ length: 5 }).map((_, si) => (

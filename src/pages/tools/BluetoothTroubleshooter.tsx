@@ -413,7 +413,7 @@ export default function BluetoothTroubleshooter() {
                     <CardContent className="p-6">
                       <h2 className="text-xl font-semibold mb-3">{currentStep.instruction}</h2>
                       {currentStep.detail && (
-                        <p className="text-muted-foreground text-sm leading-relaxed mb-4 p-3 bg-muted rounded-lg">
+                        <p className="text-muted-foreground text-base leading-relaxed mb-4 p-3 bg-muted rounded-lg">
                           {currentStep.detail}
                         </p>
                       )}

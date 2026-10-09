@@ -79,7 +79,7 @@ export default function OnlineFormsHelper() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <FileText className="h-8 w-8 text-emerald-600" />
+                <FileText className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Online Forms Helper</h1>
@@ -109,17 +109,17 @@ export default function OnlineFormsHelper() {
               <div className="space-y-3">
                 {section.tips.map((t, i) => (
                   <div key={i} className="p-3 rounded-lg border border-border">
-                    <p className="font-medium text-sm">{t.title}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{t.detail}</p>
+                    <p className="font-medium text-base">{t.title}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{t.detail}</p>
                   </div>
                 ))}
               </div>
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20">
+          <Card className="border-warn-foreground/25 bg-warn ">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">If the form is asking for sensitive info — pause</p>
                 <p className="text-muted-foreground">
@@ -133,20 +133,20 @@ export default function OnlineFormsHelper() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/password-health" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Password Health Check</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Strong passphrase before filling forms.</p>
+                <p className="font-medium text-base">Password Health Check</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Strong passphrase before filling forms.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Check that "verify your account" email.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Check that "verify your account" email.</p>
               </Link>
               <Link to="/tools/online-shopping-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Online Shopping Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">When the form is on a checkout page.</p>
+                <p className="font-medium text-base">Online Shopping Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">When the form is on a checkout page.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: spend 5 minutes setting up autofill once. You will save 30 minutes the next time you fill out a long form.
           </p>
         </div>

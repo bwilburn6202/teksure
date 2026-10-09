@@ -28,7 +28,7 @@ function getResult(score: number, max: number) {
     grade: 'Beginner', color: 'text-orange-600', bg: 'bg-orange-50 border-orange-200',
     icon: Sprout, tagline: 'Everyone starts somewhere — you\'re in the right place.',
     next: 'Start with our Beginner Basics learning path to build your foundation step by step.',
-    path: '/my-path',
+    path: '/guides',
   };
   if (pct < 50) return {
     grade: 'Developing', color: 'text-yellow-600', bg: 'bg-yellow-50 border-yellow-200',
@@ -40,13 +40,13 @@ function getResult(score: number, max: number) {
     grade: 'Capable', color: 'text-blue-600', bg: 'bg-blue-50 border-blue-200',
     icon: Star, tagline: 'You\'re doing really well. A few more skills and you\'ll be fully independent.',
     next: 'Try our Practical Skills path — you\'re ready for the next level.',
-    path: '/my-path',
+    path: '/guides',
   };
   return {
     grade: 'Confident', color: 'text-green-600', bg: 'bg-green-50 border-green-200',
     icon: Trophy, tagline: 'You\'re a confident, capable tech user. Well done!',
-    next: 'Share your knowledge — why not help others in the Community Forum?',
-    path: '/forum',
+    next: 'Keep going — browse the guides for something new to learn.',
+    path: '/guides',
   };
 }
 
@@ -97,8 +97,8 @@ export default function TechConfidenceScore() {
           {!done ? (
             <div key={current}>
               <div className="flex items-center justify-between mb-3">
-                <span className="text-sm text-muted-foreground">Question {current + 1} of {total}</span>
-                <span className="text-sm font-medium">{Math.round(((current) / total) * 100)}%</span>
+                <span className="text-base text-muted-foreground">Question {current + 1} of {total}</span>
+                <span className="text-base font-medium">{Math.round(((current) / total) * 100)}%</span>
               </div>
               <Progress value={(current / total) * 100} className="mb-6 h-2" />
               <Card>
@@ -121,10 +121,10 @@ export default function TechConfidenceScore() {
                 <CardContent className="pt-8 pb-6 text-center">
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4"><result.icon className="h-8 w-8 text-primary" /></div>
                   <h2 className="text-3xl font-bold mb-1">Your score: <span className={result.color}>{pct}%</span></h2>
-                  <Badge className={`text-base px-4 py-1 mb-4 ${result.color} border-current bg-white`} variant="outline">{result.grade}</Badge>
+                  <Badge className={`text-base px-4 py-1 mb-4 ${result.color} border-current bg-card`} variant="outline">{result.grade}</Badge>
                   <p className="text-lg mb-2">{result.tagline}</p>
                   {previousScore && Number(previousScore) !== pct && (
-                    <p className="text-sm text-muted-foreground mt-1">Previous score: {previousScore}% <TrendingUp className="inline h-3.5 w-3.5 ml-1 text-green-500" /></p>
+                    <p className="text-base text-muted-foreground mt-1">Previous score: {previousScore}% <TrendingUp className="inline h-3.5 w-3.5 ml-1 text-success-foreground" /></p>
                   )}
                 </CardContent>
               </Card>
@@ -135,7 +135,7 @@ export default function TechConfidenceScore() {
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                     <div>
                       <p className="font-semibold mb-1">What to do next</p>
-                      <p className="text-muted-foreground text-sm">{result.next}</p>
+                      <p className="text-muted-foreground text-base">{result.next}</p>
                     </div>
                   </div>
                 </CardContent>

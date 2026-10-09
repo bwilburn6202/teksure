@@ -136,57 +136,57 @@ export default function ImportantDocumentsOrganizer() {
         title="Important Documents Organizer — TekSure"
         description="Track where your vital documents are stored — will, power of attorney, Medicare card, insurance policies, and more. Print a reference sheet for your family."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4 print:bg-white print:py-2">
+      <main className="min-h-screen bg-muted py-8 px-4 print:bg-card print:py-2">
         <div className="max-w-2xl mx-auto">
 
           {/* Header */}
           <div className="text-center mb-8 print:mb-4">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-sky-100 dark:bg-sky-950/60 mb-4 print:hidden">
-              <FileText className="w-8 h-8 text-sky-600 dark:text-sky-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-info mb-4 print:hidden">
+              <FileText className="w-8 h-8 text-info-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+            <h1 className="text-3xl font-bold text-foreground mb-2">
               Important Documents Organizer
             </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 print:hidden">
+            <p className="text-lg text-muted-foreground print:hidden">
               Record where each important document is stored so your family can find them when
               they need to. Print when done and keep a copy with a trusted person.
             </p>
-            <p className="hidden print:block text-sm text-gray-600 mt-1">
+            <p className="hidden print:block text-base text-muted-foreground mt-1">
               Prepared on {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
           </div>
 
           {/* Privacy notice */}
-          <div className="flex gap-3 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-xl p-4 mb-5 print:hidden">
-            <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
-            <p className="text-sm text-blue-800 dark:text-blue-200">
+          <div className="flex gap-3 bg-info border border-info-foreground/25 rounded-xl p-4 mb-5 print:hidden">
+            <CheckCircle2 className="w-5 h-5 text-info-foreground flex-shrink-0 mt-0.5" />
+            <p className="text-base text-info-foreground ">
               <strong>Private:</strong> Nothing is saved online. All information stays on this page only. Use "Print" to save a copy — do not store account numbers or passwords here.
             </p>
           </div>
 
           {/* Progress */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-4 mb-5 shadow-sm print:hidden">
+          <div className="bg-card rounded-2xl border border-border p-4 mb-5 shadow-sm print:hidden">
             <div className="flex justify-between items-center mb-2">
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Documents located</span>
-              <span className="text-sm font-bold text-sky-600 dark:text-sky-400">{locatedDocs} of {totalDocs} ({pct}%)</span>
+              <span className="text-base font-medium text-foreground ">Documents located</span>
+              <span className="text-base font-bold text-info-foreground ">{locatedDocs} of {totalDocs} ({pct}%)</span>
             </div>
-            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-2.5">
+            <div className="w-full bg-muted rounded-full h-2.5">
               <div
                 className="bg-sky-500 h-2.5 rounded-full transition-all duration-300"
                 style={{ width: `${pct}%` }}
               />
             </div>
             {pct === 100 && (
-              <p className="text-sm text-green-600 dark:text-green-400 mt-2 font-medium">
+              <p className="text-base text-success-foreground mt-2 font-medium">
                 All documents accounted for — print this page and share with a trusted family member!
               </p>
             )}
           </div>
 
           {/* Important warning */}
-          <div className="flex gap-3 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl p-4 mb-5 print:hidden">
-            <AlertCircle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
-            <p className="text-sm text-amber-800 dark:text-amber-200">
+          <div className="flex gap-3 bg-warn border border-warn-foreground/25 rounded-xl p-4 mb-5 print:hidden">
+            <AlertCircle className="w-5 h-5 text-warn-foreground flex-shrink-0 mt-0.5" />
+            <p className="text-base text-warn-foreground ">
               <strong>Quick Tip:</strong> Record only document locations — not passwords, PINs, or full account numbers. Keep this completed sheet in a fireproof safe or with your attorney.
             </p>
           </div>
@@ -199,38 +199,38 @@ export default function ImportantDocumentsOrganizer() {
               const catLocated = catDocs.filter(d => entries[d.id]?.location.trim()).length;
 
               return (
-                <div key={cat.id} className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm">
+                <div key={cat.id} className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm">
 
                   {/* Print header */}
-                  <div className="hidden print:block px-5 pt-4 pb-2 border-b border-gray-200">
-                    <h2 className="text-lg font-bold text-gray-900">{cat.icon} {cat.title}</h2>
+                  <div className="hidden print:block px-5 pt-4 pb-2 border-b border-border">
+                    <h2 className="text-lg font-bold text-foreground">{cat.icon} {cat.title}</h2>
                   </div>
 
                   {/* Screen toggle */}
                   <button
                     onClick={() => toggle(cat.id)}
-                    className="print:hidden w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+                    className="print:hidden w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-muted transition-colors"
                   >
                     <span className="text-2xl">{cat.icon}</span>
                     <div className="flex-1 min-w-0">
-                      <p className="font-semibold text-gray-900 dark:text-gray-100">{cat.title}</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">
+                      <p className="font-semibold text-foreground ">{cat.title}</p>
+                      <p className="text-base text-muted-foreground ">
                         {catLocated} of {catDocs.length} located
                       </p>
                     </div>
                     {catLocated === catDocs.length
-                      ? <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      ? <CheckCircle2 className="w-5 h-5 text-success-foreground flex-shrink-0" />
                       : isOpen
-                        ? <ChevronUp className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                        : <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                        ? <ChevronUp className="w-5 h-5 text-muted-foreground flex-shrink-0" />
+                        : <ChevronDown className="w-5 h-5 text-muted-foreground flex-shrink-0" />
                     }
                   </button>
 
                   {/* Expanded content */}
                   {(isOpen || true) && (
-                    <div className={`${isOpen ? '' : 'print:block hidden'} border-t border-gray-100 dark:border-gray-800`}>
+                    <div className={`${isOpen ? '' : 'print:block hidden'} border-t border-border `}>
                       <div className="px-5 py-3 print:hidden">
-                        <div className="flex gap-2 text-sm text-gray-500 dark:text-gray-400">
+                        <div className="flex gap-2 text-sm text-muted-foreground ">
                           <Info className="w-4 h-4 flex-shrink-0 mt-0.5" />
                           <span>{cat.why}</span>
                         </div>
@@ -242,16 +242,16 @@ export default function ImportantDocumentsOrganizer() {
                             <div key={doc.id} className="px-5 py-3">
                               {/* Print row */}
                               <div className="hidden print:block">
-                                <p className="font-medium text-gray-900 text-sm">{doc.name}</p>
+                                <p className="font-medium text-foreground text-base">{doc.name}</p>
                                 <div className="flex gap-6 mt-0.5">
                                   <div className="flex-1">
-                                    <span className="text-xs text-gray-500">Location: </span>
-                                    <span className="text-sm text-gray-800">{entry.location || '________________________________'}</span>
+                                    <span className="text-sm text-muted-foreground">Location: </span>
+                                    <span className="text-base text-foreground">{entry.location || '________________________________'}</span>
                                   </div>
                                   {entry.notes && (
                                     <div className="flex-1">
-                                      <span className="text-xs text-gray-500">Notes: </span>
-                                      <span className="text-sm text-gray-800">{entry.notes}</span>
+                                      <span className="text-sm text-muted-foreground">Notes: </span>
+                                      <span className="text-base text-foreground">{entry.notes}</span>
                                     </div>
                                   )}
                                 </div>
@@ -267,21 +267,21 @@ export default function ImportantDocumentsOrganizer() {
                                     title="Mark as confirmed located"
                                   />
                                   <div className="flex-1 min-w-0">
-                                    <p className="font-medium text-gray-800 dark:text-gray-200 text-sm mb-0.5">{doc.name}</p>
-                                    <p className="text-xs text-gray-400 dark:text-gray-500 mb-2">{doc.hint}</p>
+                                    <p className="font-medium text-foreground text-base mb-0.5">{doc.name}</p>
+                                    <p className="text-sm text-muted-foreground mb-2">{doc.hint}</p>
                                     <input
                                       type="text"
                                       placeholder="Where is it stored? (e.g. fireproof safe in bedroom closet)"
                                       value={entry.location}
                                       onChange={e => update(doc.id, 'location', e.target.value)}
-                                      className="w-full text-sm rounded-lg px-3 py-1.5 border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 outline-none focus:border-sky-400 mb-1.5"
+                                      className="w-full text-sm rounded-lg px-3 py-1.5 border border-border bg-muted text-foreground outline-none focus:border-sky-400 mb-1.5"
                                     />
                                     <input
                                       type="text"
                                       placeholder="Notes (optional)"
                                       value={entry.notes}
                                       onChange={e => update(doc.id, 'notes', e.target.value)}
-                                      className="w-full text-sm rounded-lg px-3 py-1.5 border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-400 dark:text-gray-500 outline-none focus:border-sky-400"
+                                      className="w-full text-sm rounded-lg px-3 py-1.5 border border-border bg-muted text-muted-foreground outline-none focus:border-sky-400"
                                     />
                                   </div>
                                 </div>
@@ -308,11 +308,11 @@ export default function ImportantDocumentsOrganizer() {
             </button>
           </div>
 
-          <p className="mt-4 text-xs text-gray-400 dark:text-gray-600 print:hidden">
+          <p className="mt-4 text-sm text-muted-foreground print:hidden">
             After printing, store one copy in your fireproof safe and give a second copy to a trusted family member or your attorney.
           </p>
         </div>
-      </div>
+      </main>
     </>
   );
 }

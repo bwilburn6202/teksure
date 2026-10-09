@@ -62,19 +62,19 @@ export default function AppCleanup() {
 
         {marked.size > 0 && (
           <Card className="mb-6 border-primary/40"><CardContent className="p-4 flex items-center justify-between">
-            <div className="flex items-center gap-3"><HardDrive className="h-5 w-5 text-primary" /><div><p className="text-sm font-medium">{marked.size} app{marked.size !== 1 ? 's' : ''} marked for removal</p><p className="text-xs text-muted-foreground">You could save approximately <strong>{spaceSaved}</strong> of storage</p></div></div>
+            <div className="flex items-center gap-3"><HardDrive className="h-5 w-5 text-primary" /><div><p className="text-base font-medium">{marked.size} app{marked.size !== 1 ? 's' : ''} marked for removal</p><p className="text-sm text-muted-foreground">You could save approximately <strong>{spaceSaved}</strong> of storage</p></div></div>
           </CardContent></Card>
         )}
 
         <div className="space-y-2">{filtered.map(app => (
           <Card key={app.name} className={`cursor-pointer transition-all ${marked.has(app.name) ? 'border-red-500/30 bg-red-50/50 dark:bg-red-950/20' : ''}`} onClick={() => toggle(app.name)}>
             <CardContent className="p-4 flex items-center gap-3">
-              <div className="mt-0.5">{marked.has(app.name) ? <CheckCircle className="h-5 w-5 text-red-500" /> : <Circle className="h-5 w-5 text-muted-foreground" />}</div>
+              <div className="mt-0.5">{marked.has(app.name) ? <CheckCircle className="h-5 w-5 text-danger-foreground" /> : <Circle className="h-5 w-5 text-muted-foreground" />}</div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1"><h3 className={`font-medium text-sm ${marked.has(app.name) ? 'line-through text-muted-foreground' : ''}`}>{app.name}</h3><Badge variant="outline" className="text-xs">{app.category}</Badge><Badge variant="secondary" className={`text-xs border ${riskBg[app.risk]}`}><span className={riskColor[app.risk]}>{riskLabel[app.risk]}</span></Badge></div>
-                <p className="text-xs text-muted-foreground">{app.reason}</p>
+                <p className="text-sm text-muted-foreground">{app.reason}</p>
               </div>
-              <div className="text-right shrink-0"><p className="text-sm font-medium">{app.size}</p><p className="text-xs text-muted-foreground flex items-center gap-1 justify-end"><Clock className="h-3 w-3" />{app.lastUsed}</p></div>
+              <div className="text-right shrink-0"><p className="text-base font-medium">{app.size}</p><p className="text-sm text-muted-foreground flex items-center gap-1 justify-end"><Clock className="h-3 w-3" />{app.lastUsed}</p></div>
             </CardContent>
           </Card>
         ))}</div>
@@ -82,8 +82,8 @@ export default function AppCleanup() {
         <Card className="mt-8"><CardContent className="p-6">
           <h3 className="font-semibold mb-3 flex items-center gap-2"><Shield className="h-5 w-5 text-primary" /> How to delete apps</h3>
           <div className="grid sm:grid-cols-2 gap-4 text-sm">
-            <div className="p-3 rounded-lg bg-muted/50"><h4 className="font-medium mb-1">iPhone / iPad</h4><p className="text-xs text-muted-foreground">Press and hold the app icon until it wiggles. Tap the minus (-) or X button, then tap "Delete App."</p></div>
-            <div className="p-3 rounded-lg bg-muted/50"><h4 className="font-medium mb-1">Android</h4><p className="text-xs text-muted-foreground">Press and hold the app icon. Drag it to "Uninstall" at the top, or tap the info icon and select "Uninstall."</p></div>
+            <div className="p-3 rounded-lg bg-muted/50"><h4 className="font-medium mb-1">iPhone / iPad</h4><p className="text-sm text-muted-foreground">Press and hold the app icon until it wiggles. Tap the minus (-) or X button, then tap "Delete App."</p></div>
+            <div className="p-3 rounded-lg bg-muted/50"><h4 className="font-medium mb-1">Android</h4><p className="text-sm text-muted-foreground">Press and hold the app icon. Drag it to "Uninstall" at the top, or tap the info icon and select "Uninstall."</p></div>
           </div>
         </CardContent></Card>
       </div></main>

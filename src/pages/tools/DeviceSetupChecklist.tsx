@@ -41,13 +41,13 @@ export default function DeviceSetupChecklist() {
           <div className="flex gap-4 justify-center"><Button size="lg" onClick={() => setDevice('windows')}>Windows PC</Button><Button size="lg" variant="outline" onClick={() => setDevice('mac')}>Mac</Button></div>
         ) : (
           <div>
-            <div className="flex items-center justify-between mb-4"><span className="text-sm font-medium">{done.size}/{allSteps.length} ({progress}%)</span><Button size="sm" variant="ghost" onClick={() => { setDevice(null); setDone(new Set()); }} className="gap-1 text-xs"><RotateCcw className="h-3 w-3" /> Start Over</Button></div>
+            <div className="flex items-center justify-between mb-4"><span className="text-base font-medium">{done.size}/{allSteps.length} ({progress}%)</span><Button size="sm" variant="ghost" onClick={() => { setDevice(null); setDone(new Set()); }} className="gap-1 text-xs"><RotateCcw className="h-3 w-3" /> Start Over</Button></div>
             <div className="h-2 rounded-full bg-muted mb-6 overflow-hidden"><div className="h-full bg-primary rounded-full transition-all" style={{ width: `${progress}%` }} /></div>
             {Object.entries(STEPS).map(([section, steps]) => (
               <div key={section} className="mb-6"><h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">{section === 'security' ? 'Security' : section === 'backup' ? 'Backup & Sync' : 'Comfort & Essentials'}</h3>
                 <div className="space-y-2">{steps.map(step => (
                   <Card key={step.title} className={`cursor-pointer ${done.has(step.title) ? 'border-green-500/30 bg-green-50/50 dark:bg-green-950/20' : ''}`} onClick={() => toggle(step.title)}>
-                    <CardContent className="p-4 flex gap-3"><div className="mt-0.5">{done.has(step.title) ? <CheckCircle className="h-5 w-5 text-green-500" /> : <Circle className="h-5 w-5 text-muted-foreground" />}</div><div><h4 className={`font-medium text-sm ${done.has(step.title) ? 'line-through text-muted-foreground' : ''}`}>{step.title}</h4><p className="text-xs text-muted-foreground mt-1">{device === 'windows' ? step.windows : step.mac}</p></div></CardContent>
+                    <CardContent className="p-4 flex gap-3"><div className="mt-0.5">{done.has(step.title) ? <CheckCircle className="h-5 w-5 text-success-foreground" /> : <Circle className="h-5 w-5 text-muted-foreground" />}</div><div><h4 className={`font-medium text-sm ${done.has(step.title) ? 'line-through text-muted-foreground' : ''}`}>{step.title}</h4><p className="text-sm text-muted-foreground mt-1">{device === 'windows' ? step.windows : step.mac}</p></div></CardContent>
                   </Card>
                 ))}</div>
               </div>

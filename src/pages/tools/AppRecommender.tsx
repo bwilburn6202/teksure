@@ -282,16 +282,16 @@ export default function AppRecommender() {
                           <div className="flex items-center gap-2 flex-wrap mb-1">
                             <span className="text-lg font-bold">{app.name}</span>
                             {app.badge && <Badge className="bg-primary text-primary-foreground text-xs">{app.badge}</Badge>}
-                            <span className="text-sm text-muted-foreground ml-auto">{app.rating}</span>
+                            <span className="text-base text-muted-foreground ml-auto">{app.rating}</span>
                           </div>
-                          <p className="text-sm font-medium text-primary mb-1">{app.tagline}</p>
-                          <p className="text-sm text-muted-foreground mb-2">{app.description}</p>
+                          <p className="text-base font-medium text-primary mb-1">{app.tagline}</p>
+                          <p className="text-base text-muted-foreground mb-2">{app.description}</p>
                           <div className="rounded-lg bg-muted/60 p-3 mb-3">
-                            <p className="text-xs font-semibold text-muted-foreground mb-0.5">Why it's great for beginners:</p>
-                            <p className="text-sm">{app.whySeniors}</p>
+                            <p className="text-sm font-semibold text-muted-foreground mb-0.5">Why it's great for beginners:</p>
+                            <p className="text-base">{app.whySeniors}</p>
                           </div>
                           <div className="flex items-center justify-between flex-wrap gap-2">
-                            <span className="text-sm font-medium">{app.price}</span>
+                            <span className="text-base font-medium">{app.price}</span>
                             <div className="flex gap-2">
                               {app.iosUrl && (
                                 <Button size="sm" variant="outline" asChild>
@@ -323,9 +323,9 @@ export default function AppRecommender() {
                 ))}
               </div>
 
-              <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 p-4 mb-6">
-                <p className="text-sm font-semibold text-amber-700 dark:text-amber-400 mb-1"> Safety tip</p>
-                <p className="text-sm text-amber-700/90 dark:text-amber-300/90">
+              <div className="rounded-xl bg-warn border border-warn-foreground/25 p-4 mb-6">
+                <p className="text-base font-semibold text-warn-foreground mb-1"> Safety tip</p>
+                <p className="text-base text-amber-700/90 dark:text-amber-300/90">
                   Always download apps from the official App Store or Google Play — never from a random website link. Official stores check every app for safety.
                 </p>
               </div>

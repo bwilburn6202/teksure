@@ -16,7 +16,7 @@ export default function IrsScamPlaybook() {
           <p className="text-lg text-muted-foreground">"This is the IRS. You owe back taxes..." — it&apos;s a scam.</p>
         </div>
 
-        <Card className="mb-4 bg-green-50 border-green-300 dark:bg-green-950/20 dark:border-green-800">
+        <Card className="mb-4 bg-success border-success-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The IRS NEVER does these</h2>
             <ul className="list-disc pl-5 space-y-2 text-base">
@@ -73,8 +73,8 @@ export default function IrsScamPlaybook() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Defense in 3 words</h2>
-            <p className="text-sm font-bold">"I&apos;ll call back."</p>
-            <p className="text-sm mt-2">Hang up. Look up the IRS phone number yourself (1-800-829-1040). Call them. Real IRS workers will be able to look up your tax records and explain. Scammers vanish.</p>
+            <p className="text-base font-bold">"I&apos;ll call back."</p>
+            <p className="text-base mt-2">Hang up. Look up the IRS phone number yourself (1-800-829-1040). Call them. Real IRS workers will be able to look up your tax records and explain. Scammers vanish.</p>
           </CardContent>
         </Card>
 

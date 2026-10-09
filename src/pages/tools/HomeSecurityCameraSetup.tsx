@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -1012,7 +1011,7 @@ function DoneScreen({
     <Card className="border-green-600/40 bg-green-50/40 dark:bg-green-950/20">
       <CardContent className="p-6 md:p-8 space-y-6">
         <div className="flex items-center gap-3">
-          <div className="p-3 rounded-full bg-green-600/10 text-green-700 dark:text-green-400">
+          <div className="p-3 rounded-full bg-green-600/10 text-success-foreground ">
             <CheckCircle2 className="w-8 h-8" />
           </div>
           <div>
@@ -1033,14 +1032,14 @@ function DoneScreen({
             <li>Share access with one family member (there&apos;s an &quot;Invite&quot; button in the app settings).</li>
             <li>
               Run a{' '}
-              <Link to="/tools/password-strength-tester" className="text-primary underline font-medium">
+              <Link to="/tools/password-strength" className="text-primary underline font-medium">
                 password strength check
               </Link>{' '}
               on your camera account password.
             </li>
             <li>
               Test your Wi-Fi at the camera with our{' '}
-              <Link to="/tools/wifi-speed-doctor" className="text-primary underline font-medium">
+              <Link to="/tools/wifi-speed" className="text-primary underline font-medium">
                 Wi-Fi Speed Doctor
               </Link>.
             </li>
@@ -1270,15 +1269,9 @@ export default function HomeSecurityCameraSetup() {
           <section className="border-b border-border bg-gradient-to-br from-sky-50 via-slate-50 to-blue-100 dark:from-sky-950/40 dark:via-slate-900 dark:to-blue-950/40">
             <div className="container py-10 md:py-14 relative">
               <div className="absolute top-6 right-6">
-                <BookmarkButton
-                  type="tool"
-                  slug="home-security-camera-setup"
-                  title="Home Security Cameras — Pick One and Set It Up"
-                  url="/tools/home-security-camera-setup"
-                />
               </div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="p-2 rounded-lg bg-sky-500/15 text-sky-700 dark:text-sky-300">
+                <div className="p-2 rounded-lg bg-sky-500/15 text-info-foreground ">
                   <Shield className="w-5 h-5" />
                 </div>
                 <Badge variant="outline" className="text-xs">Home Safety · Compare & Set Up</Badge>
@@ -1286,7 +1279,7 @@ export default function HomeSecurityCameraSetup() {
               <h1 className="text-3xl md:text-5xl font-bold mb-3 pr-14">
                 Home Security Cameras — Pick One and Set It Up
               </h1>
-              <p className="text-lg md:text-2xl text-slate-700 dark:text-slate-300 max-w-3xl leading-relaxed">
+              <p className="text-lg md:text-2xl text-foreground max-w-3xl leading-relaxed">
                 We'll help you choose, install, and understand what the camera actually sees — in plain English, with no jargon.
               </p>
 
@@ -1325,7 +1318,7 @@ export default function HomeSecurityCameraSetup() {
                   <Card key={b.id} className="flex flex-col">
                     <CardContent className="p-6 flex-1 flex flex-col gap-4">
                       <div className="flex items-start gap-3">
-                        <div className="p-3 rounded-xl bg-sky-500/10 text-sky-700 dark:text-sky-300 shrink-0">
+                        <div className="p-3 rounded-xl bg-sky-500/10 text-info-foreground shrink-0">
                           <Camera className="w-7 h-7" />
                         </div>
                         <div className="flex-1">
@@ -1349,19 +1342,19 @@ export default function HomeSecurityCameraSetup() {
                       <div className="space-y-3">
                         <div className="grid grid-cols-1 gap-2 text-base">
                           <div className="flex gap-2">
-                            <Camera className="w-5 h-5 text-sky-600 dark:text-sky-400 shrink-0 mt-0.5" />
+                            <Camera className="w-5 h-5 text-info-foreground shrink-0 mt-0.5" />
                             <span><strong>Models:</strong> {b.models}</span>
                           </div>
                           <div className="flex gap-2">
-                            <Cloud className="w-5 h-5 text-sky-600 dark:text-sky-400 shrink-0 mt-0.5" />
+                            <Cloud className="w-5 h-5 text-info-foreground shrink-0 mt-0.5" />
                             <span><strong>Storage:</strong> {b.storage}</span>
                           </div>
                           <div className="flex gap-2">
-                            <DollarSign className="w-5 h-5 text-sky-600 dark:text-sky-400 shrink-0 mt-0.5" />
+                            <DollarSign className="w-5 h-5 text-info-foreground shrink-0 mt-0.5" />
                             <span><strong>Subscription:</strong> {b.subscription}</span>
                           </div>
                           <div className="flex gap-2">
-                            <Star className="w-5 h-5 text-sky-600 dark:text-sky-400 shrink-0 mt-0.5" />
+                            <Star className="w-5 h-5 text-info-foreground shrink-0 mt-0.5" />
                             <span><strong>Best for:</strong> {b.bestFor}</span>
                           </div>
                         </div>
@@ -1369,28 +1362,28 @@ export default function HomeSecurityCameraSetup() {
 
                       <div className="grid grid-cols-1 gap-3">
                         <div>
-                          <h4 className="text-sm font-semibold text-green-800 dark:text-green-400 mb-1.5 flex items-center gap-1.5">
+                          <h4 className="text-sm font-semibold text-success-foreground mb-1.5 flex items-center gap-1.5">
                             <CheckCircle2 className="w-4 h-4" />
                             Strengths
                           </h4>
                           <ul className="space-y-1.5">
                             {b.strengths.map((s) => (
                               <li key={s} className="text-base leading-relaxed flex gap-2">
-                                <span className="text-green-700 dark:text-green-400 shrink-0" aria-hidden="true">+</span>
+                                <span className="text-success-foreground shrink-0" aria-hidden="true">+</span>
                                 <span>{s}</span>
                               </li>
                             ))}
                           </ul>
                         </div>
                         <div>
-                          <h4 className="text-sm font-semibold text-amber-800 dark:text-amber-400 mb-1.5 flex items-center gap-1.5">
+                          <h4 className="text-sm font-semibold text-warn-foreground mb-1.5 flex items-center gap-1.5">
                             <XCircle className="w-4 h-4" />
                             Weaknesses
                           </h4>
                           <ul className="space-y-1.5">
                             {b.weaknesses.map((w) => (
                               <li key={w} className="text-base leading-relaxed flex gap-2">
-                                <span className="text-amber-700 dark:text-amber-400 shrink-0" aria-hidden="true">−</span>
+                                <span className="text-warn-foreground shrink-0" aria-hidden="true">−</span>
                                 <span>{w}</span>
                               </li>
                             ))}
@@ -1476,10 +1469,10 @@ export default function HomeSecurityCameraSetup() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+              <Card className="bg-warn border-amber-500/40">
                 <CardContent className="p-6 space-y-3">
                   <h3 className="text-xl font-semibold flex items-center gap-2">
-                    <AlertTriangle className="w-6 h-6 text-amber-700 dark:text-amber-400" />
+                    <AlertTriangle className="w-6 h-6 text-warn-foreground " />
                     Recording audio — know your state
                   </h3>
                   <p className="text-base leading-relaxed">
@@ -1503,10 +1496,10 @@ export default function HomeSecurityCameraSetup() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-red-50 dark:bg-red-950/20 border-red-500/40">
+              <Card className="bg-danger border-red-500/40">
                 <CardContent className="p-6 space-y-3">
                   <h3 className="text-xl font-semibold flex items-center gap-2">
-                    <KeyRound className="w-6 h-6 text-red-700 dark:text-red-400" />
+                    <KeyRound className="w-6 h-6 text-danger-foreground " />
                     The single most important thing — your password
                   </h3>
                   <p className="text-base leading-relaxed">
@@ -1517,7 +1510,7 @@ export default function HomeSecurityCameraSetup() {
                     <li>Turn on <strong>two-factor authentication (2FA)</strong> — yes, it&apos;s one extra step, and yes, it stops 99% of attacks.</li>
                     <li>
                       Check your password strength with our{' '}
-                      <Link to="/tools/password-strength-tester" className="text-primary underline font-medium">
+                      <Link to="/tools/password-strength" className="text-primary underline font-medium">
                         Password Strength Tester
                       </Link>.
                     </li>
@@ -1543,7 +1536,7 @@ export default function HomeSecurityCameraSetup() {
                   <AccordionItem key={item.title} value={`trouble-${i}`}>
                     <AccordionTrigger className="px-5 py-4 text-left text-base md:text-lg font-medium">
                       <span className="flex items-start gap-2 text-left">
-                        <AlertTriangle className="w-5 h-5 text-amber-700 dark:text-amber-400 shrink-0 mt-1" aria-hidden="true" />
+                        <AlertTriangle className="w-5 h-5 text-warn-foreground shrink-0 mt-1" aria-hidden="true" />
                         <span>{item.title}</span>
                       </span>
                     </AccordionTrigger>
@@ -1572,7 +1565,7 @@ export default function HomeSecurityCameraSetup() {
                 return (
                   <Card key={item.title}>
                     <CardContent className="p-5 flex items-start gap-3">
-                      <div className="p-2 rounded-lg bg-sky-500/10 text-sky-700 dark:text-sky-300 shrink-0">
+                      <div className="p-2 rounded-lg bg-sky-500/10 text-info-foreground shrink-0">
                         <Icon className="w-6 h-6" />
                       </div>
                       <div>
@@ -1628,7 +1621,7 @@ export default function HomeSecurityCameraSetup() {
                   <Wifi className="w-6 h-6 text-primary shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">
-                      <Link to="/tools/wifi-speed-doctor" className="hover:underline">Wi-Fi Speed Doctor</Link>
+                      <Link to="/tools/wifi-speed" className="hover:underline">Wi-Fi Speed Doctor</Link>
                     </h3>
                     <p className="text-base leading-relaxed text-muted-foreground">
                       Check that your Wi-Fi is strong enough where your camera will live. Almost every camera problem starts here.
@@ -1700,7 +1693,7 @@ export default function HomeSecurityCameraSetup() {
           <div className="container py-6 md:py-8">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
               <div className="flex items-center gap-3">
-                <Camera className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+                <Camera className="w-5 h-5 text-info-foreground " />
                 <span className="text-base md:text-lg font-medium">
                   Setting up · {setup.brandName}
                 </span>
@@ -1712,19 +1705,19 @@ export default function HomeSecurityCameraSetup() {
             </div>
 
             <div className="flex flex-wrap items-center gap-3 mb-2">
-              <span className="text-sm md:text-base font-medium text-muted-foreground">
+              <span className="text-base md:text-base font-medium text-muted-foreground">
                 {isDone ? 'All done' : `Step ${stepIndex + 1} of ${totalSteps}`}
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 {completed.size} completed
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 App: <strong>{setup.appName}</strong>
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 About {setup.estTime}
               </span>
             </div>
@@ -1778,10 +1771,10 @@ export default function HomeSecurityCameraSetup() {
 
               {/* Stumbling block */}
               {current.stumble && (
-                <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+                <Card className="bg-warn border-amber-500/40">
                   <CardContent className="p-5 flex items-start gap-3">
                     <Lightbulb
-                      className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5"
+                      className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5"
                       aria-hidden="true"
                     />
                     <div>
@@ -1875,13 +1868,13 @@ export default function HomeSecurityCameraSetup() {
                     <Smartphone className="w-5 h-5 text-primary" />
                     While you&apos;re here
                   </h3>
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-base leading-relaxed">
                     <strong>2.4 GHz Wi-Fi:</strong> Almost every security camera uses the 2.4 GHz Wi-Fi band. If setup keeps failing, that&apos;s the first thing to check.
                   </p>
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-base leading-relaxed">
                     <strong>Two-factor authentication:</strong> Turn it on the moment you create the account. It&apos;s the single biggest protection against a hacked camera.
                   </p>
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-base leading-relaxed">
                     <strong>Official help:</strong>{' '}
                     <a
                       href={setup.support.url}

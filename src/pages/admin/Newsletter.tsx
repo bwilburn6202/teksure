@@ -118,19 +118,19 @@ const Newsletter = () => {
           </div>
           <div>
             <h1 className="text-2xl font-bold">Newsletter</h1>
-            <p className="text-sm text-muted-foreground">Compose, preview, test, and send to all subscribers.</p>
+            <p className="text-base text-muted-foreground">Compose, preview, test, and send to all subscribers.</p>
           </div>
         </div>
 
         <Card className="mb-6">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-base">
-              <AlertTriangle className="h-4 w-4 text-amber-500" />
+              <AlertTriangle className="h-4 w-4 text-warn-foreground" />
               Email diagnostics
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               Verify Resend is configured before sending. The self-test reports which env vars are set in the edge function runtime.
             </p>
             <div className="flex gap-2">
@@ -182,7 +182,7 @@ const Newsletter = () => {
                 <iframe
                   title="Newsletter preview"
                   srcDoc={html}
-                  className="w-full h-80 bg-white"
+                  className="w-full h-80 bg-card"
                   sandbox=""
                 />
               </div>
@@ -229,7 +229,7 @@ const Newsletter = () => {
                 {result.error ? (
                   <AlertTriangle className="h-4 w-4 text-destructive" />
                 ) : (
-                  <CheckCircle className="h-4 w-4 text-green-600" />
+                  <CheckCircle className="h-4 w-4 text-success-foreground" />
                 )}
                 Result
               </CardTitle>

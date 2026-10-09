@@ -341,7 +341,7 @@ const QuickFixes = () => {
                                 <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary text-xs font-bold flex items-center justify-center mt-0.5">
                                   {j + 1}
                                 </span>
-                                <span className="text-sm text-muted-foreground leading-relaxed pt-0.5">{step}</span>
+                                <span className="text-base text-muted-foreground leading-relaxed pt-0.5">{step}</span>
                               </li>
                             ))}
                           </ol>

@@ -193,22 +193,22 @@ export default function AccessibilitySettingsWizard() {
         title="Accessibility Settings Wizard — TekSure"
         description="Tell us your needs and we'll show you exactly which settings to turn on for your iPhone, Android, Mac, or Windows computer."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4 print:bg-white">
+      <main className="min-h-screen bg-muted py-8 px-4 print:bg-card">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-6 print:mb-3">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-emerald-100 dark:bg-emerald-950/60 mb-4 print:hidden">
-              <Sparkles className="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-success mb-4 print:hidden">
+              <Sparkles className="w-8 h-8 text-success-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Accessibility Settings Wizard</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 print:hidden">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Accessibility Settings Wizard</h1>
+            <p className="text-lg text-muted-foreground print:hidden">
               Tell us what you need help with, and we will show you exactly which settings to turn on.
             </p>
           </div>
 
           {/* Step 1: Needs */}
           {step === 0 && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
-              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-4 text-lg">
+            <div className="bg-card rounded-2xl border border-border p-5 shadow-sm">
+              <p className="font-semibold text-foreground mb-4 text-lg">
                 What would you like help with? (Pick all that apply)
               </p>
               <div className="space-y-3">
@@ -221,17 +221,17 @@ export default function AccessibilitySettingsWizard() {
                       onClick={() => toggleNeed(n.id)}
                       className={`w-full flex items-start gap-3 p-4 rounded-xl border-2 text-left transition-all ${
                         selected
-                          ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30'
+                          ? 'border-emerald-500 bg-success dark:bg-emerald-950/30'
                           : 'border-gray-200 dark:border-gray-700 hover:border-gray-300'
                       }`}
                     >
                       <Icon className={`w-6 h-6 flex-shrink-0 mt-0.5 ${selected ? 'text-emerald-600 dark:text-emerald-400' : 'text-gray-500'}`} />
                       <div className="flex-1">
-                        <p className="font-semibold text-gray-900 dark:text-gray-100">{n.label}</p>
-                        <p className="text-sm text-gray-500 dark:text-gray-400">{n.description}</p>
+                        <p className="font-semibold text-foreground ">{n.label}</p>
+                        <p className="text-base text-muted-foreground ">{n.description}</p>
                       </div>
                       {selected && (
-                        <span className="text-emerald-600 dark:text-emerald-400 text-xl">✓</span>
+                        <span className="text-success-foreground text-xl">✓</span>
                       )}
                     </button>
                   );
@@ -250,8 +250,8 @@ export default function AccessibilitySettingsWizard() {
 
           {/* Step 2: Platform */}
           {step === 1 && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
-              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-4 text-lg">
+            <div className="bg-card rounded-2xl border border-border p-5 shadow-sm">
+              <p className="font-semibold text-foreground mb-4 text-lg">
                 What device do you want to set up?
               </p>
               <div className="grid grid-cols-2 gap-3">
@@ -259,16 +259,16 @@ export default function AccessibilitySettingsWizard() {
                   <button
                     key={p}
                     onClick={() => { setPlatform(p); setStep(2); }}
-                    className="p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-950/30 transition-all text-left"
+                    className="p-4 rounded-xl border-2 border-border hover:border-emerald-500 hover:bg-success transition-all text-left"
                   >
                     <p className="text-2xl mb-2">{p === 'iPhone' ? '🍎' : p === 'Android' ? '🤖' : p === 'Mac' ? '💻' : '🖥️'}</p>
-                    <p className="font-semibold text-gray-900 dark:text-gray-100">{p}</p>
+                    <p className="font-semibold text-foreground ">{p}</p>
                   </button>
                 ))}
               </div>
               <button
                 onClick={() => setStep(0)}
-                className="mt-5 flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+                className="mt-5 flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground "
               >
                 <ChevronLeft className="w-4 h-4" />
                 Back
@@ -280,30 +280,30 @@ export default function AccessibilitySettingsWizard() {
           {step === 2 && platform && (
             <>
               <div className="text-center mb-4 print:mb-3">
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Personalized for</p>
-                <p className="font-semibold text-gray-900 dark:text-gray-100">
+                <p className="text-base text-muted-foreground mb-1">Personalized for</p>
+                <p className="font-semibold text-foreground ">
                   {platform} • {selectedNeeds.map(n => NEEDS.find(x => x.id === n)?.label).join(', ')}
                 </p>
               </div>
 
-              <p className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
+              <p className="text-base font-medium text-foreground mb-3">
                 {recommendations.length} setting{recommendations.length === 1 ? '' : 's'} we recommend you try:
               </p>
 
               {recommendations.length === 0 && (
-                <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-6 text-center text-gray-500 dark:text-gray-400">
+                <div className="bg-card rounded-2xl border border-border p-6 text-center text-muted-foreground ">
                   <p>No specific settings to recommend for {platform} based on your selections. Try selecting different needs or a different device.</p>
                 </div>
               )}
 
               <div className="space-y-3">
                 {recommendations.map((s, i) => (
-                  <div key={i} className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-4 shadow-sm">
-                    <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">{s.title}</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">{s.why}</p>
-                    <div className="bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 rounded-lg p-3">
-                      <p className="text-xs font-semibold text-emerald-800 dark:text-emerald-200 uppercase tracking-wide mb-1">Where to find it on {platform}</p>
-                      <p className="text-sm text-gray-800 dark:text-gray-200">{getInstruction(s)}</p>
+                  <div key={i} className="bg-card rounded-2xl border border-border p-4 shadow-sm">
+                    <p className="font-semibold text-foreground mb-1">{s.title}</p>
+                    <p className="text-base text-muted-foreground mb-3">{s.why}</p>
+                    <div className="bg-success border border-success-foreground/25 rounded-lg p-3">
+                      <p className="text-xs font-semibold text-success-foreground uppercase tracking-wide mb-1">Where to find it on {platform}</p>
+                      <p className="text-base text-foreground ">{getInstruction(s)}</p>
                     </div>
                   </div>
                 ))}
@@ -312,7 +312,7 @@ export default function AccessibilitySettingsWizard() {
               <div className="mt-6 flex gap-3 print:hidden">
                 <button
                   onClick={restart}
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm font-medium"
+                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-border text-muted-foreground hover:bg-muted transition-colors text-sm font-medium"
                 >
                   <RotateCcw className="w-4 h-4" />
                   Start Over
@@ -328,7 +328,7 @@ export default function AccessibilitySettingsWizard() {
             </>
           )}
         </div>
-      </div>
+      </main>
     </>
   );
 }

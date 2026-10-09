@@ -119,47 +119,7 @@ export const guidesBatch53: Guide[] = [
       },
     ],
   },
-  {
-    slug: 'back-up-phone-contacts',
-    canonicalSlug: 'how-to-back-up-phone-contacts-2026',
-    title: 'How to Back Up Your Phone Contacts So You Never Lose Them',
-    excerpt: "Most phones back up contacts automatically — but only if the right setting is on. Here's how to check and protect years of phone numbers in 2 minutes.",
-    category: 'essential-skills',
-    tags: ['contacts', 'backup', 'iPhone', 'Android', 'iCloud', 'Google'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-19',
-    lastVerifiedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: `Your phone contacts hold years of important information — family phone numbers, doctors, businesses, old friends. If your phone is lost, stolen, damaged, or you switch to a new phone without preparing first, all of those contacts can disappear permanently.\n\nThe good news is that both iPhone and Android are designed to back up your contacts to the cloud automatically. The bad news is that the backup only works if the right settings are turned on — and many people have never checked.\n\nThis guide takes about 2 minutes to verify on your phone. You will also learn how to export a copy of your contacts as a safety net, and what to do when switching to a new phone.`,
-    steps: [
-      {
-        title: 'Check that iCloud Contacts backup is on (iPhone)',
-        content: 'On iPhone, go to Settings → tap your name at the top → iCloud. Look for "Contacts" in the list and make sure the switch next to it is green (on). If it was off, turn it on — your contacts will start syncing to iCloud within a few minutes. As long as iCloud backup is on, your contacts are backed up whenever your phone is connected to Wi-Fi and charging.',
-        tip: 'Apple\'s support page for iCloud Contacts is at support.apple.com — search "Back up contacts on iPhone" for step-by-step photos of every screen.',
-      },
-      {
-        title: 'Check that Google Contacts sync is on (Android)',
-        content: 'On Android, go to Settings → tap "Accounts" or "Accounts and backup" (the name varies by phone brand) → tap your Google account → make sure "Contacts" has a checkmark or is toggled on. On Samsung phones, go to Settings → Accounts and Backup → Manage Accounts → tap your Google account → Account Sync → toggle Contacts on. Your contacts are now automatically synced to your Google account and will transfer to any new Android phone you sign in to.',
-        tip: 'Google\'s support page for contact sync is at support.google.com — search "Back up and sync contacts on Android" for the most current instructions.',
-      },
-      {
-        title: 'Export a backup copy of your contacts (both iPhone and Android)',
-        content: 'Cloud backup is convenient, but having a saved copy is extra insurance. On iPhone: open the Contacts app → tap your account at the top (or go to icloud.com on a computer, click Contacts, select all, then export as a .vcf file). On Android: open the Google Contacts app (or contacts.google.com on a computer) → tap the three lines in the top left → Export → choose vCard (.vcf) → Save. You can email this file to yourself or save it to a USB drive.',
-      },
-      {
-        title: 'What to do before switching to a new phone',
-        content: 'Before handing in your old phone or wiping it: (1) Make sure iCloud or Google sync is on and has finished syncing. You will see a "Last synced" timestamp in your account settings. (2) If switching between iPhone and Android (or vice versa), export your contacts as a .vcf file first and import it into the new platform. (3) Sign in to your Apple ID or Google account on the new phone — your contacts should appear automatically within a few minutes.',
-        tip: 'When you sign in to your Apple ID or Google account on a new phone, contacts, calendar, and photos all restore automatically over Wi-Fi. Make sure you are on Wi-Fi before setting up a new phone — the initial download can be large.',
-      },
-      {
-        title: 'Verify your contacts are backed up',
-        content: 'The final check: on another device (a tablet, a family member\'s phone, or a computer), sign in to icloud.com or contacts.google.com with the same account. You should see all your contacts there. If they show up on the web, they are backed up and safe — no matter what happens to your physical phone.',
-        warning: 'If you see zero contacts on the web version, your backup is not working. Go back to Step 1 or 2 and make sure sync is turned on. Wait 10 minutes and check again.',
-      },
-    ],
-  },
-
+  
   // === origin/main guides: entertainment, phone, health-tech, windows, mac, networking ===
   {
     slug: `hdmi-arc-guide`,

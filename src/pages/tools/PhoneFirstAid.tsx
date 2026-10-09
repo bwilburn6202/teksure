@@ -30,7 +30,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 
 /* ─────────────────────────────────────────────────────────────────────────
  * Decision-tree data model
@@ -163,7 +162,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If holding the buttons does nothing, plug the phone into a charger for 15 minutes and try again. If it still won\'t force-restart, the battery may be fully dead — charge for 30 minutes first.',
     proHelp: 'If you\'ve tried force-restart several times and the phone still freezes on the logo, a professional repair is likely needed. It could be a failed update that needs recovery mode.',
-    guide: { label: 'When to call a TekSure guide', to: '/find-a-guide' },
+    guide: { label: 'When to call a TekSure guide', to: '/guides' },
   },
 
   fix_tryCharger: {
@@ -449,7 +448,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If the phone fell into water and the screen developed lines or spots a day or two later, that\'s water damage spreading — the sooner to a shop, the better.',
     proHelp: 'Screen display repairs are not DIY unless you\'re experienced. Take it to a professional — manufacturer first, then a reputable third-party shop.',
-    guide: { label: 'Find a trusted tech', to: '/find-a-guide' },
+    guide: { label: 'Find a trusted tech', to: '/guides' },
   },
 
   /* ── 5. Slow / frozen ────────────────────────────────────── */
@@ -591,7 +590,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If the mic test fails (can\'t hear yourself in Voice Memos), the mic is dead. That\'s a cheap repair — usually $40–$70.',
     proHelp: 'If speaker + earpiece + mic all work but people still can\'t hear you, it\'s a network/VoLTE issue — the carrier can usually fix it from their end.',
-    guide: { label: 'Find a trusted tech', to: '/find-a-guide' },
+    guide: { label: 'Find a trusted tech', to: '/guides' },
   },
 
   fix_blockedNumber: {
@@ -733,7 +732,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If the rear camera is black but the front works fine (or vice versa), the camera itself has failed. It\'s a warranty or pro repair.',
     proHelp: 'If both cameras are black even after restart and app updates, the camera module or its cable is damaged — see a pro.',
-    guide: { label: 'Find a trusted tech', to: '/find-a-guide' },
+    guide: { label: 'Find a trusted tech', to: '/guides' },
   },
 
   fix_cameraBlur: {
@@ -787,7 +786,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If the error persists after all those, back up and do a factory reset. It\'s the last DIY step before professional help.',
     proHelp: 'Error after reset = hardware issue with the camera module or its ribbon cable. Repair cost is usually $80–$150.',
-    guide: { label: 'Find a trusted tech', to: '/find-a-guide' },
+    guide: { label: 'Find a trusted tech', to: '/guides' },
   },
 
   /* ── 9. Restarts ─────────────────────────────────────────── */
@@ -1086,7 +1085,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If you can\'t access your accounts from another device, go to a friend\'s or family member\'s computer and reset your passwords there.',
     proHelp: 'TekSure guides have walked dozens of people through the "my phone was stolen" panic. If you need a calm voice to help you through it step by step, book one.',
-    guide: { label: 'Find a TekSure guide', to: '/find-a-guide' },
+    guide: { label: 'Find a TekSure guide', to: '/guides' },
   },
 };
 
@@ -1121,12 +1120,6 @@ export default function PhoneFirstAid() {
         {/* Header */}
         <div className="relative">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="phone-first-aid"
-              title="First Aid for Your Phone"
-              url="/tools/phone-first-aid"
-            />
           </div>
           <div className="flex items-center gap-3 mb-2 pr-14">
             <div className="rounded-xl bg-primary/10 p-2">
@@ -1149,7 +1142,7 @@ export default function PhoneFirstAid() {
             <Button variant="ghost" size="sm" onClick={reset} className="gap-2">
               <Home className="h-4 w-4" aria-hidden="true" /> Start over
             </Button>
-            <span className="text-sm text-muted-foreground ml-auto">
+            <span className="text-base text-muted-foreground ml-auto">
               Step {crumbCount}
             </span>
           </div>
@@ -1201,11 +1194,11 @@ export default function PhoneFirstAid() {
           <div>
             {/* Urgent banner — for water, lost/stolen, anything time-critical */}
             {current.urgent && (
-              <div className="mb-4 rounded-xl border-2 border-red-400 bg-red-50 dark:bg-red-950/40 dark:border-red-700 p-4">
+              <div className="mb-4 rounded-xl border-2 border-red-400 bg-danger dark:border-red-700 p-4">
                 <div className="flex gap-3 items-start">
-                  <AlertTriangle className="h-6 w-6 text-red-700 dark:text-red-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <AlertTriangle className="h-6 w-6 text-danger-foreground shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-bold text-red-900 dark:text-red-200 mb-1 uppercase tracking-wide">
+                    <p className="text-sm font-bold text-danger-foreground mb-1 uppercase tracking-wide">
                       Act now
                     </p>
                     <p className="text-base text-red-900/95 dark:text-red-100/95 leading-relaxed">
@@ -1233,7 +1226,7 @@ export default function PhoneFirstAid() {
               <CardContent className="p-4 flex gap-3">
                 <Lightbulb className="h-5 w-5 text-primary shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
-                  <p className="text-sm font-semibold text-primary mb-1">Why this works</p>
+                  <p className="text-base font-semibold text-primary mb-1">Why this works</p>
                   <p className="text-base leading-relaxed">{current.why}</p>
                 </div>
               </CardContent>
@@ -1261,11 +1254,11 @@ export default function PhoneFirstAid() {
 
             {/* If this doesn't work */}
             {current.ifFails && (
-              <Card className="mb-5 bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-800">
+              <Card className="mb-5 bg-warn border-warn-foreground/25 ">
                 <CardContent className="p-4 flex gap-3">
-                  <RotateCcw className="h-5 w-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <RotateCcw className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-semibold text-amber-900 dark:text-amber-300 mb-1">
+                    <p className="text-base font-semibold text-warn-foreground mb-1">
                       If this didn't work
                     </p>
                     <p className="text-base text-amber-900/95 dark:text-amber-100/95 leading-relaxed">
@@ -1278,11 +1271,11 @@ export default function PhoneFirstAid() {
 
             {/* Pro help */}
             {current.proHelp && (
-              <Card className="mb-5 bg-orange-50 dark:bg-orange-950/30 border-orange-200 dark:border-orange-800">
+              <Card className="mb-5 bg-warn border-warn-foreground/25 ">
                 <CardContent className="p-4 flex gap-3">
-                  <Wrench className="h-5 w-5 text-orange-700 dark:text-orange-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <Wrench className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-semibold text-orange-900 dark:text-orange-300 mb-1">
+                    <p className="text-base font-semibold text-warn-foreground mb-1">
                       When to call a professional
                     </p>
                     <p className="text-base text-orange-900/95 dark:text-orange-100/95 leading-relaxed">
@@ -1293,14 +1286,14 @@ export default function PhoneFirstAid() {
               </Card>
             )}
 
-            {/* Related guide + Ask TekBrain + Start over */}
+            {/* Related guide + ask a person + Start over */}
             <div className="grid gap-3 sm:grid-cols-2 mb-4">
               {current.guide && (
                 <Button variant="outline" size="lg" asChild className="h-auto py-4 justify-start gap-3 text-left">
                   <Link to={current.guide.to}>
                     <BookOpen className="h-5 w-5 shrink-0" aria-hidden="true" />
                     <span className="flex-1">
-                      <span className="block text-xs text-muted-foreground">Related guide</span>
+                      <span className="block text-sm text-muted-foreground">Related guide</span>
                       <span className="block font-semibold">{current.guide.label}</span>
                     </span>
                     <ExternalLink className="h-4 w-4 shrink-0 opacity-60" aria-hidden="true" />
@@ -1308,11 +1301,11 @@ export default function PhoneFirstAid() {
                 </Button>
               )}
               <Button size="lg" asChild className="h-auto py-4 justify-start gap-3 text-left">
-                <Link to="/tekbrain">
+                <Link to="/get-help">
                   <MessageCircle className="h-5 w-5 shrink-0" aria-hidden="true" />
                   <span className="flex-1">
-                    <span className="block text-xs opacity-80">Still stuck?</span>
-                    <span className="block font-semibold">Ask TekBrain</span>
+                    <span className="block text-sm opacity-80">Still stuck?</span>
+                    <span className="block font-semibold">Ask a real person</span>
                   </span>
                   <ChevronRight className="h-4 w-4 shrink-0" aria-hidden="true" />
                 </Link>
@@ -1320,11 +1313,11 @@ export default function PhoneFirstAid() {
             </div>
 
             {/* Reassurance & actions */}
-            <Card className="mb-4 bg-green-50 dark:bg-green-950/30 border-green-200 dark:border-green-800">
+            <Card className="mb-4 bg-success border-success-foreground/25 ">
               <CardContent className="p-4 flex gap-3">
-                <CheckCircle2 className="h-5 w-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
-                  <p className="text-sm font-semibold text-green-900 dark:text-green-300 mb-1">
+                  <p className="text-base font-semibold text-success-foreground mb-1">
                     You're doing great.
                   </p>
                   <p className="text-base text-green-900/95 dark:text-green-100/95 leading-relaxed">

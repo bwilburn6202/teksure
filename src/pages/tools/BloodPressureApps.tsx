@@ -164,7 +164,7 @@ export default function BloodPressureApps() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-rose-500/10 rounded-full">
-                <HeartPulse className="h-8 w-8 text-rose-600 dark:text-rose-300" />
+                <HeartPulse className="h-8 w-8 text-danger-foreground " />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Blood Pressure Apps and Cuffs</h1>
@@ -177,16 +177,16 @@ export default function BloodPressureApps() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Blood Pressure Apps' }]} />
 
-          <Card className="border-rose-300 bg-rose-50 dark:bg-rose-950/20 mb-6">
+          <Card className="border-danger-foreground/25 bg-danger mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-rose-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">This page is not medical advice</p>
                 <p className="text-muted-foreground">
                   We compare devices and apps. We do not diagnose, treat, or set targets. Your doctor knows your history, your medications, and the right numbers for your body. Talk to them about what your target should be and what to do if your readings are high.
                 </p>
                 <p className="text-muted-foreground mt-2">
-                  <strong className="text-rose-700 dark:text-rose-200">Call 911 or your doctor right away</strong> if a reading is sustained over 180/120, or if a high reading comes with chest pain, shortness of breath, weakness on one side, or trouble speaking. That is a hypertensive crisis, not a wait-and-see.
+                  <strong className="text-danger-foreground ">Call 911 or your doctor right away</strong> if a reading is sustained over 180/120, or if a high reading comes with chest pain, shortness of breath, weakness on one side, or trouble speaking. That is a hypertensive crisis, not a wait-and-see.
                 </p>
               </div>
             </CardContent>
@@ -194,8 +194,8 @@ export default function BloodPressureApps() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Why a home cuff matters</p>
-              <p className="text-xs text-muted-foreground mb-3">
+              <p className="text-base font-semibold mb-2">Why a home cuff matters</p>
+              <p className="text-sm text-muted-foreground mb-3">
                 Doctors call it "white coat syndrome" — your blood pressure goes up the second a nurse puts the cuff on. A home reading taken in your own kitchen is often more honest than what you get at a clinic. The American Heart Association now recommends home monitoring for anyone being treated for high blood pressure, and most insurance plans, including Medicare, cover the cost of a cuff for patients with a doctor's order.
               </p>
             </CardContent>
@@ -211,21 +211,21 @@ export default function BloodPressureApps() {
                     <p className="font-semibold text-base">{c.name}</p>
                     <Badge variant="outline">{c.price}</Badge>
                   </div>
-                  <p className="text-xs text-muted-foreground mb-2"><strong>Accuracy:</strong> {c.accuracy}</p>
-                  <p className="text-sm text-muted-foreground mb-2"><strong>Best for:</strong> {c.whoFor}</p>
-                  <p className="text-xs text-muted-foreground mb-3"><strong>App support:</strong> {c.appIntegration}</p>
+                  <p className="text-sm text-muted-foreground mb-2"><strong>Accuracy:</strong> {c.accuracy}</p>
+                  <p className="text-base text-muted-foreground mb-2"><strong>Best for:</strong> {c.whoFor}</p>
+                  <p className="text-sm text-muted-foreground mb-3"><strong>App support:</strong> {c.appIntegration}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {c.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}
+                        {c.pros.map((p, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {c.cons.map((con, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{con}</span></li>)}
+                        {c.cons.map((con, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{con}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -249,10 +249,10 @@ export default function BloodPressureApps() {
               <Card key={a.name} className="border-border">
                 <CardContent className="p-4">
                   <div className="flex items-start justify-between gap-3 mb-2 flex-wrap">
-                    <p className="font-semibold text-sm">{a.name}</p>
+                    <p className="font-semibold text-base">{a.name}</p>
                     <Badge variant="outline" className="text-xs">{a.price}</Badge>
                   </div>
-                  <p className="text-xs text-muted-foreground mb-2">{a.whoFor}</p>
+                  <p className="text-sm text-muted-foreground mb-2">{a.whoFor}</p>
                   <a href={a.link} target="_blank" rel="noreferrer"
                     className="inline-flex items-center gap-1 text-xs text-primary hover:underline">
                     Learn more <ExternalLink className="h-3 w-3" />
@@ -264,8 +264,8 @@ export default function BloodPressureApps() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">When to check — and how</p>
-              <ul className="space-y-2 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">When to check — and how</p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary font-semibold">•</span><span><strong>Twice a day:</strong> once in the morning before coffee or medication, once in the evening before dinner. Same times each day.</span></li>
                 <li className="flex gap-2"><span className="text-primary font-semibold">•</span><span><strong>Wait 5 minutes</strong> sitting quietly before you start. No talking, no TV, feet flat on the floor.</span></li>
                 <li className="flex gap-2"><span className="text-primary font-semibold">•</span><span><strong>Empty bladder first.</strong> A full bladder can raise the reading by up to 10 points.</span></li>
@@ -277,48 +277,48 @@ export default function BloodPressureApps() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">What the numbers mean</p>
-              <p className="text-xs text-muted-foreground mb-3">
+              <p className="text-base font-semibold mb-2">What the numbers mean</p>
+              <p className="text-sm text-muted-foreground mb-3">
                 A reading has two numbers, like 128/80. The top number (systolic) is the pressure when your heart beats. The bottom number (diastolic) is the pressure when your heart rests between beats. Both matter.
               </p>
               <div className="space-y-2 text-xs">
                 <div className="flex gap-3 items-start">
-                  <span className="inline-block px-2 py-0.5 rounded bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-200 font-semibold w-24 text-center shrink-0">Normal</span>
+                  <span className="inline-block px-2 py-0.5 rounded bg-success text-success-foreground font-semibold w-24 text-center shrink-0">Normal</span>
                   <span className="text-muted-foreground">Less than 120 / less than 80</span>
                 </div>
                 <div className="flex gap-3 items-start">
-                  <span className="inline-block px-2 py-0.5 rounded bg-yellow-100 text-yellow-800 dark:bg-yellow-950 dark:text-yellow-200 font-semibold w-24 text-center shrink-0">Elevated</span>
+                  <span className="inline-block px-2 py-0.5 rounded bg-warn text-warn-foreground font-semibold w-24 text-center shrink-0">Elevated</span>
                   <span className="text-muted-foreground">120-129 / less than 80</span>
                 </div>
                 <div className="flex gap-3 items-start">
-                  <span className="inline-block px-2 py-0.5 rounded bg-orange-100 text-orange-800 dark:bg-orange-950 dark:text-orange-200 font-semibold w-24 text-center shrink-0">Stage 1</span>
+                  <span className="inline-block px-2 py-0.5 rounded bg-warn text-warn-foreground font-semibold w-24 text-center shrink-0">Stage 1</span>
                   <span className="text-muted-foreground">130-139 / 80-89</span>
                 </div>
                 <div className="flex gap-3 items-start">
-                  <span className="inline-block px-2 py-0.5 rounded bg-red-100 text-red-800 dark:bg-red-950 dark:text-red-200 font-semibold w-24 text-center shrink-0">Stage 2</span>
+                  <span className="inline-block px-2 py-0.5 rounded bg-danger text-danger-foreground font-semibold w-24 text-center shrink-0">Stage 2</span>
                   <span className="text-muted-foreground">140 or higher / 90 or higher</span>
                 </div>
                 <div className="flex gap-3 items-start">
-                  <span className="inline-block px-2 py-0.5 rounded bg-red-200 text-red-900 dark:bg-red-900 dark:text-red-100 font-bold w-24 text-center shrink-0">Crisis</span>
+                  <span className="inline-block px-2 py-0.5 rounded bg-red-200 text-danger-foreground dark:bg-red-900 font-bold w-24 text-center shrink-0">Crisis</span>
                   <span className="text-muted-foreground"><strong>Over 180 / over 120 — call 911 or your doctor now.</strong></span>
                 </div>
               </div>
-              <p className="text-xs text-muted-foreground mt-3">
+              <p className="text-sm text-muted-foreground mt-3">
                 These are the American Heart Association ranges. Your doctor may have a different target for you, especially if you have diabetes, kidney disease, or are over 75. Always go by what they tell you.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">When to call your doctor</p>
                 <ol className="space-y-1.5 mt-2">
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">1.</span><span><strong>Right now:</strong> a reading of 180/120 or higher, especially with chest pain, shortness of breath, vision changes, weakness, or trouble speaking. Call 911.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">2.</span><span><strong>Same day:</strong> a reading over 180/120 with no other symptoms. Wait 5 minutes, take it again. If still that high, call your doctor.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">3.</span><span><strong>This week:</strong> readings consistently over 140/90 for several days in a row, or a sudden change from your normal range.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">4.</span><span><strong>At your next visit:</strong> bring two weeks of readings. Most doctors will adjust medication based on home numbers.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">1.</span><span><strong>Right now:</strong> a reading of 180/120 or higher, especially with chest pain, shortness of breath, vision changes, weakness, or trouble speaking. Call 911.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">2.</span><span><strong>Same day:</strong> a reading over 180/120 with no other symptoms. Wait 5 minutes, take it again. If still that high, call your doctor.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">3.</span><span><strong>This week:</strong> readings consistently over 140/90 for several days in a row, or a sudden change from your normal range.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">4.</span><span><strong>At your next visit:</strong> bring two weeks of readings. Most doctors will adjust medication based on home numbers.</span></li>
                 </ol>
               </div>
             </CardContent>
@@ -326,8 +326,8 @@ export default function BloodPressureApps() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Cuff size matters more than the brand</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Cuff size matters more than the brand</p>
+              <p className="text-sm text-muted-foreground">
                 Wrap a soft tape measure around the middle of your upper arm, halfway between your elbow and shoulder. Standard adult cuffs fit 9 to 13 inch arms. Large cuffs fit 13 to 17 inch arms. A cuff that is too small will read too high — sometimes by 10 to 40 points. If you are between sizes, go larger. Wrist cuffs are less accurate than upper-arm cuffs and most doctors do not recommend them.
               </p>
             </CardContent>
@@ -337,20 +337,20 @@ export default function BloodPressureApps() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/medication-reminder-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Medication Reminder Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair your readings with on-time pills.</p>
+                <p className="font-medium text-base">Medication Reminder Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair your readings with on-time pills.</p>
               </Link>
               <Link to="/tools/senior-fitness-apps" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Senior Fitness Apps</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Walking and gentle exercise lower BP.</p>
+                <p className="font-medium text-base">Senior Fitness Apps</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Walking and gentle exercise lower BP.</p>
               </Link>
               <Link to="/tools/telehealth-prep" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Telehealth Prep</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Bring your numbers to a video visit.</p>
+                <p className="font-medium text-base">Telehealth Prep</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Bring your numbers to a video visit.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: keep your cuff in the same drawer near where you sit each morning. Out of sight means skipped readings — the best cuff is the one you actually use.
           </p>
         </div>

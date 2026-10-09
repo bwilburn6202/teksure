@@ -182,7 +182,7 @@ export default function CallScreenerSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <PhoneOff className="h-8 w-8 text-blue-600" />
+                <PhoneOff className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Call Screener Setup</h1>
@@ -197,14 +197,14 @@ export default function CallScreenerSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Which screener do you want to set up?</p>
+              <p className="text-base font-semibold mb-3">Which screener do you want to set up?</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {APP_OPTIONS.map(o => (
                   <button key={o.id} onClick={() => setApp(o.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       app === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -212,9 +212,9 @@ export default function CallScreenerSetup() {
           </Card>
 
           {app === 'truecaller' && (
-            <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+            <Card className="border-warn-foreground/25 bg-warn mb-6">
               <CardContent className="p-5 flex gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                 <div className="text-sm">
                   <p className="font-semibold mb-1">Privacy heads-up about Truecaller</p>
                   <p className="text-muted-foreground">
@@ -228,7 +228,7 @@ export default function CallScreenerSetup() {
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <Badge variant="outline" className="mb-2">{a.name}</Badge>
-              <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {a.who}</p>
+              <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {a.who}</p>
               <div className="grid sm:grid-cols-2 gap-2 mb-3">
                 <Badge variant="outline" className="text-xs justify-start">Cost: {a.cost}</Badge>
                 <Badge variant="outline" className="text-xs justify-start">Works on: {a.worksOn}</Badge>
@@ -237,7 +237,7 @@ export default function CallScreenerSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Setup</p>
               <ol className="space-y-1.5 mb-4">
                 {a.setup.map((s, i) => (
-                  <li key={i} className="flex gap-2 text-sm">
+                  <li key={i} className="flex gap-2 text-base">
                     <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                     <span>{s}</span>
                   </li>
@@ -247,7 +247,7 @@ export default function CallScreenerSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">How to use it</p>
               <ol className="space-y-1.5 mb-4">
                 {a.use.map((s, i) => (
-                  <li key={i} className="flex gap-2 text-sm">
+                  <li key={i} className="flex gap-2 text-base">
                     <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                     <span>{s}</span>
                   </li>
@@ -257,7 +257,7 @@ export default function CallScreenerSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Worth knowing</p>
               <ul className="space-y-1">
                 {a.notes.map((n, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-primary shrink-0">&bull;</span><span>{n}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-primary shrink-0">&bull;</span><span>{n}</span></li>
                 ))}
               </ul>
 
@@ -270,8 +270,8 @@ export default function CallScreenerSetup() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Five universal call-screening habits</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Five universal call-screening habits</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">&bull;</span><span>Let unknown numbers go to voicemail. Real people leave a message.</span></li>
                 <li className="flex gap-2"><span className="text-primary">&bull;</span><span>Never press a number to "stop" a robocall. That confirms your line is active.</span></li>
                 <li className="flex gap-2"><span className="text-primary">&bull;</span><span>Add the doctor, pharmacy, and bank to your contacts so they ring through.</span></li>
@@ -285,16 +285,16 @@ export default function CallScreenerSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/caller-id-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Caller ID Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Show who is calling before you answer.</p>
+                <p className="font-medium text-base">Caller ID Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Show who is calling before you answer.</p>
               </Link>
               <Link to="/tools/robocall-blocker-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Robocall Blocker Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Block known robocallers automatically.</p>
+                <p className="font-medium text-base">Robocall Blocker Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Block known robocallers automatically.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Check if a text is a scam in seconds.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Check if a text is a scam in seconds.</p>
               </Link>
             </div>
           </div>

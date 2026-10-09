@@ -161,7 +161,7 @@ export default function FitnessTrackerPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <Activity className="h-8 w-8 text-emerald-600" />
+                <Activity className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Fitness Tracker Picker</h1>
@@ -177,7 +177,7 @@ export default function FitnessTrackerPicker() {
           {!submitted ? (
             <Card className="border-border shadow-sm">
               <CardContent className="p-6">
-                <p className="text-sm font-semibold mb-3">What matters? Pick everything that applies.</p>
+                <p className="text-base font-semibold mb-3">What matters? Pick everything that applies.</p>
                 <div className="space-y-2 mb-5">
                   {WANT_OPTIONS.map(o => (
                     <label key={o.id}
@@ -185,7 +185,7 @@ export default function FitnessTrackerPicker() {
                         wants.has(o.id) ? 'border-primary bg-primary/5' : 'border-border hover:bg-muted/40'
                       }`}>
                       <Checkbox checked={wants.has(o.id)} onCheckedChange={() => toggle(o.id)} />
-                      <span className="font-medium text-sm">{o.label}</span>
+                      <span className="font-medium text-base">{o.label}</span>
                     </label>
                   ))}
                 </div>
@@ -211,19 +211,19 @@ export default function FitnessTrackerPicker() {
                         <p className="font-semibold text-base">{p.name}</p>
                         <Badge variant="outline">{p.price}</Badge>
                       </div>
-                      <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {p.whoFor}</p>
+                      <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {p.whoFor}</p>
 
                       <div className="grid sm:grid-cols-2 gap-2 mb-3">
                         <div>
-                          <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                          <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                           <ul className="space-y-0.5">
-                            {p.pros.map((pr, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{pr}</span></li>)}
+                            {p.pros.map((pr, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{pr}</span></li>)}
                           </ul>
                         </div>
                         <div>
-                          <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                          <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                           <ul className="space-y-0.5">
-                            {p.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                            {p.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                           </ul>
                         </div>
                       </div>
@@ -239,8 +239,8 @@ export default function FitnessTrackerPicker() {
 
               <Card className="border-border bg-muted/30">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-2">Things people forget</p>
-                  <ul className="space-y-1.5 text-xs text-muted-foreground">
+                  <p className="text-base font-semibold mb-2">Things people forget</p>
+                  <ul className="space-y-1.5 text-sm text-muted-foreground">
                     <li className="flex gap-2"><span className="text-primary">•</span><span>You have to actually wear it. The fanciest watch is useless on the dresser.</span></li>
                     <li className="flex gap-2"><span className="text-primary">•</span><span>Most fall-detection requires the watch on your wrist. Take it off at night and you lose protection.</span></li>
                     <li className="flex gap-2"><span className="text-primary">•</span><span>Rechargeable batteries last 2-3 years. Plan to replace the watch eventually — Apple charges $99 for battery replacement.</span></li>
@@ -254,16 +254,16 @@ export default function FitnessTrackerPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/fall-detection-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Fall Detection Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Turn it on after you buy.</p>
+                <p className="font-medium text-base">Fall Detection Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Turn it on after you buy.</p>
               </Link>
               <Link to="/tools/hearing-aid-pairing-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Hearing Aid Pairing</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair with the watch too.</p>
+                <p className="font-medium text-base">Hearing Aid Pairing</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair with the watch too.</p>
               </Link>
               <Link to="/tools/smart-home-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Smart Home Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">First smart-home device.</p>
+                <p className="font-medium text-base">Smart Home Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">First smart-home device.</p>
               </Link>
             </div>
           </div>

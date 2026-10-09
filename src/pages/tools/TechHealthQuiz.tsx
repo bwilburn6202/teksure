@@ -312,7 +312,7 @@ export default function TechHealthQuiz() {
                       </h3>
                       <ul className="space-y-3">
                         {result.tips.map((tip, i) => (
-                          <li key={i} className="flex items-start gap-3 text-sm">
+                          <li key={i} className="flex items-start gap-3 text-base">
                             <span className="shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary text-xs flex items-center justify-center font-bold mt-0.5">
                               {i + 1}
                             </span>

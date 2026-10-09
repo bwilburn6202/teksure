@@ -84,7 +84,7 @@ export default function EmailUnsubscribeFlow() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <Mail className="h-8 w-8 text-emerald-600" />
+                <Mail className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Email Unsubscribe Flow</h1>
@@ -97,12 +97,12 @@ export default function EmailUnsubscribeFlow() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Email Unsubscribe Flow' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-800 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div>
-                <p className="text-sm font-semibold mb-1">Never click "Unsubscribe" inside a scam email</p>
-                <p className="text-xs text-muted-foreground">
+                <p className="text-base font-semibold mb-1">Never click "Unsubscribe" inside a scam email</p>
+                <p className="text-sm text-muted-foreground">
                   Scammers put fake "Unsubscribe" links in their emails. Clicking confirms your address is real and active — which means more scam mail, not less. Replying does the same. If the email looks suspicious, do not unsubscribe and do not reply. Mark it as spam (or phishing) and block the sender. That is the safe path.
                 </p>
               </div>
@@ -111,7 +111,7 @@ export default function EmailUnsubscribeFlow() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your email app</p>
+              <p className="text-base font-semibold mb-3">Pick your email app</p>
               <div className="grid sm:grid-cols-3 gap-2">
                 {([
                   { id: 'gmail' as App,   label: 'Gmail' },
@@ -122,7 +122,7 @@ export default function EmailUnsubscribeFlow() {
                     className={`p-3 rounded-lg border text-left transition-all ${
                       app === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -135,14 +135,14 @@ export default function EmailUnsubscribeFlow() {
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-3 mb-2">Try this first</p>
               <div className="p-3 rounded-lg border border-border mb-4">
-                <p className="font-medium text-sm">{guide.topButton.title}</p>
-                <p className="text-xs text-muted-foreground mt-1">{guide.topButton.detail}</p>
+                <p className="font-medium text-base">{guide.topButton.title}</p>
+                <p className="text-sm text-muted-foreground mt-1">{guide.topButton.detail}</p>
               </div>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">If no top button — use the link at the bottom of the email</p>
               <ol className="space-y-2 mb-4">
                 {guide.bottomLink.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{s}</span>
                   </li>
@@ -150,17 +150,17 @@ export default function EmailUnsubscribeFlow() {
               </ol>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Mark as spam (do not delete)</p>
-              <p className="text-xs text-muted-foreground mb-4">{guide.spam}</p>
+              <p className="text-sm text-muted-foreground mb-4">{guide.spam}</p>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Block the sender</p>
-              <p className="text-xs text-muted-foreground">{guide.block}</p>
+              <p className="text-sm text-muted-foreground">{guide.block}</p>
             </CardContent>
           </Card>
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Why deleting is not enough</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Why deleting is not enough</p>
+              <p className="text-sm text-muted-foreground">
                 Deleting an email tells your email app nothing. The same sender shows up tomorrow. Marking as spam teaches the filter — Gmail, Apple, and Outlook all use spam reports to protect millions of other inboxes. One spam click does more good than a hundred deletes.
               </p>
             </CardContent>
@@ -170,16 +170,16 @@ export default function EmailUnsubscribeFlow() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/email-organization" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Email Organization</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Folders, filters, and a calmer inbox.</p>
+                <p className="font-medium text-base">Email Organization</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Folders, filters, and a calmer inbox.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Spot the warning signs in a suspicious email.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Spot the warning signs in a suspicious email.</p>
               </Link>
               <Link to="/tools/email-spam-manager" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Email Spam Manager</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Train your spam filter for the long haul.</p>
+                <p className="font-medium text-base">Email Spam Manager</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Train your spam filter for the long haul.</p>
               </Link>
             </div>
           </div>

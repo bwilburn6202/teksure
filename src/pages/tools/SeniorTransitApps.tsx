@@ -126,7 +126,7 @@ export default function SeniorTransitApps() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-sky-500/10 rounded-full">
-                <Bus className="h-8 w-8 text-sky-600" />
+                <Bus className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Senior Transit Apps</h1>
@@ -139,18 +139,18 @@ export default function SeniorTransitApps() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Senior Transit Apps' }]} />
 
-          <Card className="border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5">
               <div className="flex items-start gap-3">
                 <div className="p-2 bg-amber-500/10 rounded-lg shrink-0">
-                  <AlertTriangle className="h-5 w-5 text-amber-600" />
+                  <AlertTriangle className="h-5 w-5 text-warn-foreground" />
                 </div>
                 <div>
-                  <p className="font-semibold text-sm mb-2">Watch out for the "free senior ride" phone scam</p>
-                  <p className="text-xs text-muted-foreground mb-2">
+                  <p className="font-semibold text-base mb-2">Watch out for the "free senior ride" phone scam</p>
+                  <p className="text-sm text-muted-foreground mb-2">
                     Scammers call seniors saying things like "you have qualified for free senior rides — give us your credit card to verify." This is fake. Real services like the Area Agency on Aging do not cold-call you. Real services do not need a credit card to "verify" a free ride.
                   </p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-sm text-muted-foreground">
                     If a caller pressures you for payment info, hang up. You can always call eldercare.acl.gov or 1-800-677-1116 yourself to find real, free senior transport in your area.
                   </p>
                 </div>
@@ -187,9 +187,9 @@ export default function SeniorTransitApps() {
                         </div>
                       </div>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-2"><strong>Who it fits:</strong> {s.whoItFits}</p>
-                    <p className="text-sm text-muted-foreground mb-2">{s.what}</p>
-                    <p className="text-xs text-muted-foreground mb-2"><strong>How to start:</strong> {s.howToStart}</p>
+                    <p className="text-base text-muted-foreground mb-2"><strong>Who it fits:</strong> {s.whoItFits}</p>
+                    <p className="text-base text-muted-foreground mb-2">{s.what}</p>
+                    <p className="text-sm text-muted-foreground mb-2"><strong>How to start:</strong> {s.howToStart}</p>
 
                     {s.link && (
                       <a href={s.link} target="_blank" rel="noreferrer"
@@ -205,8 +205,8 @@ export default function SeniorTransitApps() {
 
           <Card className="border-border bg-gradient-to-br from-sky-50 to-blue-50 dark:from-sky-950/20 dark:to-blue-950/20 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Quick Tip: senior fare discounts</p>
-              <p className="text-xs text-muted-foreground mb-3">
+              <p className="text-base font-semibold mb-2">Quick Tip: senior fare discounts</p>
+              <p className="text-sm text-muted-foreground mb-3">
                 Most US transit agencies offer half-price or better fares for riders 65+. The discount almost never applies automatically — you have to apply with proof of age. Once approved, the discount is loaded onto your fare card or app account. Worth the one-time paperwork — it can save hundreds of dollars a year for regular riders.
               </p>
               <a href="https://eldercare.acl.gov" target="_blank" rel="noreferrer"
@@ -220,16 +220,16 @@ export default function SeniorTransitApps() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/rideshare-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Rideshare Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Set up Uber and Lyft step by step.</p>
+                <p className="font-medium text-base">Rideshare Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Set up Uber and Lyft step by step.</p>
               </Link>
               <Link to="/tools/maps-navigation-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Maps & Navigation Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Get directions you can read.</p>
+                <p className="font-medium text-base">Maps & Navigation Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Get directions you can read.</p>
               </Link>
               <Link to="/tools/government-benefits-portal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Government Benefits Portal</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Find federal and state senior benefits.</p>
+                <p className="font-medium text-base">Government Benefits Portal</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Find federal and state senior benefits.</p>
               </Link>
             </div>
           </div>

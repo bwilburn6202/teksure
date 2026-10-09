@@ -153,7 +153,7 @@ export default function ComputerRepairOptions() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-slate-500/10 rounded-full">
-                <Wrench className="h-8 w-8 text-slate-700 dark:text-slate-300" />
+                <Wrench className="h-8 w-8 text-foreground " />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Computer Repair Options</h1>
@@ -168,8 +168,8 @@ export default function ComputerRepairOptions() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Before you pay for any repair</p>
-              <p className="text-xs text-muted-foreground mb-3">
+              <p className="text-base font-semibold mb-2">Before you pay for any repair</p>
+              <p className="text-sm text-muted-foreground mb-3">
                 Back up your files first, if the computer still turns on. A repair shop is allowed to wipe a drive if that fixes the problem — and most will. Plug in an external drive and copy your photos, documents, and downloads. If the computer will not boot at all, ask the shop about data recovery before they begin work, in writing.
               </p>
             </CardContent>
@@ -183,21 +183,21 @@ export default function ComputerRepairOptions() {
                     <p className="font-semibold text-base">{o.name}</p>
                     <Badge variant="outline">{o.turnaround.split('.')[0]}</Badge>
                   </div>
-                  <p className="text-xs text-muted-foreground mb-1"><strong>Cost:</strong> {o.cost}</p>
-                  <p className="text-xs text-muted-foreground mb-1"><strong>What they fix:</strong> {o.fixes}</p>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {o.whoFor}</p>
+                  <p className="text-sm text-muted-foreground mb-1"><strong>Cost:</strong> {o.cost}</p>
+                  <p className="text-sm text-muted-foreground mb-1"><strong>What they fix:</strong> {o.fixes}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {o.whoFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {o.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}
+                        {o.pros.map((p, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {o.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                        {o.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -214,15 +214,15 @@ export default function ComputerRepairOptions() {
             )}
           </div>
 
-          <Card className="border-red-300 bg-red-50 dark:bg-red-950/20 mb-6">
+          <Card className="border-danger-foreground/25 bg-danger mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-red-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
-                <p className="font-semibold mb-1 text-red-800 dark:text-red-200">Scam alert: "your computer is infected" callers</p>
-                <p className="text-xs text-red-900 dark:text-red-100 mb-2">
+                <p className="font-semibold mb-1 text-danger-foreground ">Scam alert: "your computer is infected" callers</p>
+                <p className="text-sm text-danger-foreground mb-2">
                   If anyone calls, emails, or shows a popup saying your computer is infected and offers to fix it remotely — it is always a scam. Microsoft, Apple, Google, and Norton do not call you. Real repair starts with you reaching out, in person or through a known website. Hang up. Close the popup. Never let a stranger remote-control your computer.
                 </p>
-                <p className="text-xs text-red-900 dark:text-red-100">
+                <p className="text-sm text-danger-foreground ">
                   Common red flags: a phone number on a popup, a "tech" who wants gift-card payment, a request to install AnyDesk or TeamViewer, urgent threats your bank will be drained. Real shops have a storefront, a published phone number, and they let you walk away.
                 </p>
               </div>
@@ -231,11 +231,11 @@ export default function ComputerRepairOptions() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">When to give up and replace</p>
-              <p className="text-xs text-muted-foreground mb-2">
+              <p className="text-base font-semibold mb-2">When to give up and replace</p>
+              <p className="text-sm text-muted-foreground mb-2">
                 A rough rule: if the repair quote is more than 50 percent of the cost of a new comparable computer, replace it. Other strong signals to walk away from a repair:
               </p>
-              <ul className="text-xs text-muted-foreground space-y-1 ml-4 list-disc">
+              <ul className="text-sm text-muted-foreground space-y-1 ml-4 list-disc">
                 <li>The device is more than 7 years old (Macs and PCs both).</li>
                 <li>It will no longer receive security updates from Apple, Microsoft, or Google.</li>
                 <li>It is the second major repair in 12 months.</li>
@@ -247,8 +247,8 @@ export default function ComputerRepairOptions() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Worth knowing about repair quotes</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Worth knowing about repair quotes</p>
+              <p className="text-sm text-muted-foreground">
                 Always get the quote in writing before any work begins. Ask three questions: what parts will be used (original or aftermarket), what the warranty is on the repair (most reputable shops give 90 days minimum), and what happens to your data. A shop that refuses to put numbers on paper is a shop to avoid.
               </p>
             </CardContent>
@@ -258,20 +258,20 @@ export default function ComputerRepairOptions() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/remote-tech-help" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Remote Tech Help</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Trusted services that help by phone or screen-share.</p>
+                <p className="font-medium text-base">Remote Tech Help</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Trusted services that help by phone or screen-share.</p>
               </Link>
               <Link to="/tools/speed-up-device" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Speed Up Device</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Free fixes before you pay for a repair.</p>
+                <p className="font-medium text-base">Speed Up Device</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Free fixes before you pay for a repair.</p>
               </Link>
               <Link to="/tools/device-retirement-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Device Retirement Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">When the answer is to replace, do it safely.</p>
+                <p className="font-medium text-base">Device Retirement Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">When the answer is to replace, do it safely.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: take a photo of every cable and port before you hand the computer over. If anything is missing or scratched on return, you have proof.
           </p>
         </div>

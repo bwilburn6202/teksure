@@ -204,15 +204,15 @@ export default function DeviceHealthDashboard() {
                         <h2 className="text-xl font-bold">Overall Health Score</h2>
                         {overallStatus === 'good' && <CheckCircle2 className="h-5 w-5 text-[hsl(var(--teksure-success))]" />}
                         {overallStatus === 'warning' && <AlertTriangle className="h-5 w-5 text-[hsl(var(--teksure-warning))]" />}
-                        {overallStatus === 'critical' && <AlertTriangle className="h-5 w-5 text-red-500" />}
+                        {overallStatus === 'critical' && <AlertTriangle className="h-5 w-5 text-danger-foreground" />}
                       </div>
-                      <p className="text-muted-foreground text-sm mb-3">
+                      <p className="text-muted-foreground text-base mb-3">
                         {overallStatus === 'good' && 'Your device is in great shape! Keep up the good habits.'}
                         {overallStatus === 'warning' && `${warningCount} area${warningCount !== 1 ? 's' : ''} need${warningCount === 1 ? 's' : ''} your attention.`}
                         {overallStatus === 'critical' && `${criticalCount} critical issue${criticalCount !== 1 ? 's' : ''} found. Review the items below.`}
                       </p>
                       <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
-                        {criticalCount > 0 && <Badge variant="outline" className="bg-red-50 text-red-600 border-red-200 dark:bg-red-950/20 dark:text-red-400">{criticalCount} Critical</Badge>}
+                        {criticalCount > 0 && <Badge variant="outline" className="bg-danger text-danger-foreground border-danger-foreground/25 ">{criticalCount} Critical</Badge>}
                         {warningCount > 0 && <Badge variant="outline" className="bg-[hsl(var(--teksure-warning)/0.1)] text-[hsl(var(--teksure-warning))] border-[hsl(var(--teksure-warning)/0.3)]">{warningCount} Warning</Badge>}
                         <Badge variant="outline" className="bg-[hsl(var(--teksure-success)/0.1)] text-[hsl(var(--teksure-success))] border-[hsl(var(--teksure-success)/0.3)]">
                           {items.filter(i => i.status === 'good').length} Good
@@ -254,20 +254,20 @@ export default function DeviceHealthDashboard() {
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center justify-between gap-2">
-                              <span className="font-semibold text-sm">{item.label}</span>
-                              <span className={`text-sm font-bold ${statusColors[item.status]}`}>{item.score}</span>
+                              <span className="font-semibold text-base">{item.label}</span>
+                              <span className={`text-base font-bold ${statusColors[item.status]}`}>{item.score}</span>
                             </div>
                           </div>
                         </div>
                         <Progress value={item.score} className={`h-2 mb-2 ${progressColor[item.status]}`} />
-                        <p className="text-xs text-muted-foreground">{item.detail}</p>
+                        <p className="text-sm text-muted-foreground">{item.detail}</p>
                         {isExpanded && (
                           <div
                             className="mt-3 pt-3 border-t border-border/50"
                           >
                             <div className="flex items-start gap-2">
                               <Info className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                              <p className="text-sm text-foreground">{item.tip}</p>
+                              <p className="text-base text-foreground">{item.tip}</p>
                             </div>
                           </div>
                         )}

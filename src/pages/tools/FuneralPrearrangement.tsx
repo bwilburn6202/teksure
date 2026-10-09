@@ -53,7 +53,7 @@ export default function FuneralPrearrangement() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pre-payment scams</h2>
             <ul className="list-disc pl-5 space-y-2 text-base">
@@ -78,7 +78,7 @@ export default function FuneralPrearrangement() {
               <li>Burial plot (if owned) — show family the deed.</li>
               <li>Veterans benefits — VA covers some military burial costs (free flag, headstone, vet cemetery).</li>
             </ul>
-            <p className="text-sm mt-3">Write all this on ONE page. Title it "When I die — wishes". Keep with will.</p>
+            <p className="text-base mt-3">Write all this on ONE page. Title it "When I die — wishes". Keep with will.</p>
           </CardContent>
         </Card>
 

@@ -1202,7 +1202,7 @@ const Glossary = () => {
             />
             <p
               id="glossary-search-help"
-              className="mt-2 text-xs text-muted-foreground"
+              className="mt-2 text-sm text-muted-foreground"
             >
               Press <kbd className="px-1.5 py-0.5 rounded border border-border bg-muted text-xs font-mono">Enter</kbd> to jump to the first match.
             </p>
@@ -1289,9 +1289,9 @@ const Glossary = () => {
                     >
                       <div className="glow-card">
                         <h3 className="font-semibold text-base text-foreground mb-2">{item.term}</h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed mb-3">{item.definition}</p>
+                        <p className="text-base text-muted-foreground leading-relaxed mb-3">{item.definition}</p>
                         {item.analogy && (
-                          <p className="text-xs text-primary flex items-start gap-2">
+                          <p className="text-sm text-primary flex items-start gap-2">
                             <span className="shrink-0 mt-0.5"></span>
                             <span className="italic">{item.analogy}</span>
                           </p>

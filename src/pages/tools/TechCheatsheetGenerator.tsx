@@ -266,7 +266,7 @@ export default function TechCheatsheetGenerator() {
                         phone === p ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50 hover:bg-primary/5'
                       }`}
                     >
-                      <p className="font-medium text-sm">{p === 'iphone' ? 'iPhone' : 'Android phone'}</p>
+                      <p className="font-medium text-base">{p === 'iphone' ? 'iPhone' : 'Android phone'}</p>
                     </button>
                   ))}
                 </div>
@@ -294,7 +294,7 @@ export default function TechCheatsheetGenerator() {
                           disabled={!picked.has(t.id) && picked.size >= 6}
                           className="mt-0.5"
                         />
-                        <span className="text-sm">{t.label}</span>
+                        <span className="text-base">{t.label}</span>
                       </label>
                     ))}
                   </div>
@@ -313,16 +313,16 @@ export default function TechCheatsheetGenerator() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/practice-mode" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Practice Mode</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Try things in a safe simulator.</p>
+                <p className="font-medium text-base">Practice Mode</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Try things in a safe simulator.</p>
               </Link>
               <Link to="/tools/settings-finder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Settings Finder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Where is that setting on my phone?</p>
+                <p className="font-medium text-base">Settings Finder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Where is that setting on my phone?</p>
               </Link>
               <Link to="/tools/family-tech-roundtable" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Family Tech Roundtable</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Plan tech help with the whole family.</p>
+                <p className="font-medium text-base">Family Tech Roundtable</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Plan tech help with the whole family.</p>
               </Link>
             </div>
           </div>
@@ -332,7 +332,7 @@ export default function TechCheatsheetGenerator() {
         <div className="hidden print:block px-8 py-6">
           <header className="border-b-2 border-black pb-3 mb-5">
             <h1 className="text-2xl font-bold">{name || 'My phone cheatsheet'}</h1>
-            <p className="text-sm text-gray-700 mt-1">
+            <p className="text-base text-foreground mt-1">
               {phone === 'iphone' ? 'iPhone' : 'Android'} — kept simple by TekSure.com
             </p>
           </header>
@@ -341,7 +341,7 @@ export default function TechCheatsheetGenerator() {
             {pickedTasks.map((t, i) => (
               <section key={t.id} className="break-inside-avoid">
                 <p className="font-bold text-base mb-1">{i + 1}. {t.label}</p>
-                <ol className="list-decimal pl-5 text-sm leading-snug">
+                <ol className="list-decimal pl-5 text-base leading-snug">
                   {t.steps[phone!].map((s, j) => (
                     <li key={j} className="mb-0.5">{s}</li>
                   ))}
@@ -350,7 +350,7 @@ export default function TechCheatsheetGenerator() {
             ))}
           </div>
 
-          <footer className="mt-8 pt-3 border-t border-gray-300 text-xs text-gray-600">
+          <footer className="mt-8 pt-3 border-t border-border text-xs text-muted-foreground">
             More free guides at TekSure.com — plain-English tech help for everyone.
           </footer>
         </div>

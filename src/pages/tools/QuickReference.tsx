@@ -179,7 +179,7 @@ export default function QuickReference() {
               <CardContent className="flex-1 flex flex-col">
                 <ul className="space-y-2 flex-1 mb-4">
                   {card.tips.map((tip, j) => (
-                    <li key={j} className="text-sm text-muted-foreground flex gap-2">
+                    <li key={j} className="text-base text-muted-foreground flex gap-2">
                       <span className="text-primary shrink-0">•</span>
                       {tip}
                     </li>

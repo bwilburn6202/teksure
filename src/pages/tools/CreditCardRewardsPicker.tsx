@@ -173,7 +173,7 @@ export default function CreditCardRewardsPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <CreditCard className="h-8 w-8 text-emerald-600" />
+                <CreditCard className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Credit Card Rewards Picker</h1>
@@ -188,8 +188,8 @@ export default function CreditCardRewardsPicker() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Before you pick a card</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Before you pick a card</p>
+              <p className="text-sm text-muted-foreground">
                 Rewards only matter if you pay the full balance every month. If you carry a balance, the interest (often 22-29% a year) wipes out every dollar of cash back. Pay in full, on time, and treat rewards as a small bonus on spending you would do anyway. Never spend more to chase a category bonus.
               </p>
             </CardContent>
@@ -197,7 +197,7 @@ export default function CreditCardRewardsPicker() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-6">
-              <p className="text-sm font-semibold mb-3">What matters most to you?</p>
+              <p className="text-base font-semibold mb-3">What matters most to you?</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 <Button
                   variant={priority === 'cash-back' ? 'default' : 'outline'}
@@ -229,7 +229,7 @@ export default function CreditCardRewardsPicker() {
                 </Button>
               </div>
               {priority && (
-                <p className="text-xs text-muted-foreground mt-3">
+                <p className="text-sm text-muted-foreground mt-3">
                   Pick changed? Tap a different option above and the highlights update.
                 </p>
               )}
@@ -237,7 +237,7 @@ export default function CreditCardRewardsPicker() {
           </Card>
 
           {highlighted.length > 0 && (
-            <Card className="border-2 border-emerald-300 bg-emerald-50 dark:bg-emerald-950/20 mb-6">
+            <Card className="border-2 border-success-foreground/25 bg-success mb-6">
               <CardContent className="p-6">
                 <Badge className="mb-2">Best fit for you</Badge>
                 <h2 className="text-xl font-bold mb-3">
@@ -253,8 +253,8 @@ export default function CreditCardRewardsPicker() {
                         <p className="font-semibold">{card.name}</p>
                         <Badge variant="outline">{card.annualFee} annual fee</Badge>
                       </div>
-                      <p className="text-sm text-muted-foreground mb-1">{card.baseRate}</p>
-                      <p className="text-xs text-muted-foreground"><strong>Best for:</strong> {card.whoFor}</p>
+                      <p className="text-base text-muted-foreground mb-1">{card.baseRate}</p>
+                      <p className="text-sm text-muted-foreground"><strong>Best for:</strong> {card.whoFor}</p>
                     </div>
                   ))}
                 </div>
@@ -262,7 +262,7 @@ export default function CreditCardRewardsPicker() {
             </Card>
           )}
 
-          <p className="text-sm font-semibold mb-3">All six cards compared</p>
+          <p className="text-base font-semibold mb-3">All six cards compared</p>
           <div className="space-y-4 mb-6">
             {visibleCards.map(card => (
               <Card key={card.id} className="border-border">
@@ -270,34 +270,34 @@ export default function CreditCardRewardsPicker() {
                   <div className="flex items-start justify-between gap-3 mb-2 flex-wrap">
                     <div>
                       <p className="font-semibold text-base">{card.name}</p>
-                      <p className="text-xs text-muted-foreground">Issued by {card.issuer}</p>
+                      <p className="text-sm text-muted-foreground">Issued by {card.issuer}</p>
                     </div>
                     <Badge variant="outline">{card.annualFee} annual fee</Badge>
                   </div>
 
                   <div className="bg-muted/40 rounded-md p-3 mb-3">
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Rewards rate</p>
-                    <p className="text-sm mb-2">{card.baseRate}</p>
+                    <p className="text-base mb-2">{card.baseRate}</p>
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Signup bonus</p>
-                    <p className="text-sm">{card.signupBonus}</p>
+                    <p className="text-base">{card.signupBonus}</p>
                   </div>
 
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {card.whoFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {card.whoFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
                         {card.pros.map((p, i) => (
-                          <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>
+                          <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>
                         ))}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
                         {card.cons.map((c, i) => (
-                          <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>
+                          <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>
                         ))}
                       </ul>
                     </div>
@@ -310,19 +310,19 @@ export default function CreditCardRewardsPicker() {
             )}
           </div>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch out for fake card offers</p>
                 <p className="text-muted-foreground mb-2">
                   Some pre-approved card mailers in your mailbox are real. Many phone calls and emails offering "instant approval" are not.
                 </p>
                 <ul className="space-y-1.5 mt-2">
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">1.</span><span>Real card issuers (Chase, Citi, AmEx, Discover, Capital One) never call you to demand your Social Security number, mother's maiden name, or bank login.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">2.</span><span>Never give out your SSN or card numbers to anyone who called YOU. If you want a card, hang up and apply yourself by going to the issuer's official website.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">3.</span><span>If a mailer says "guaranteed approval" with no credit check and a fee up front, it is a scam. Real cards check your credit and never charge a fee before approval.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">4.</span><span>To stop most pre-approved mail, go to optoutprescreen.com (the official site set up by the credit bureaus).</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">1.</span><span>Real card issuers (Chase, Citi, AmEx, Discover, Capital One) never call you to demand your Social Security number, mother's maiden name, or bank login.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">2.</span><span>Never give out your SSN or card numbers to anyone who called YOU. If you want a card, hang up and apply yourself by going to the issuer's official website.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">3.</span><span>If a mailer says "guaranteed approval" with no credit check and a fee up front, it is a scam. Real cards check your credit and never charge a fee before approval.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">4.</span><span>To stop most pre-approved mail, go to optoutprescreen.com (the official site set up by the credit bureaus).</span></li>
                 </ul>
               </div>
             </CardContent>
@@ -330,8 +330,8 @@ export default function CreditCardRewardsPicker() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Honest tradeoff: annual fee or no fee?</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Honest tradeoff: annual fee or no fee?</p>
+              <p className="text-sm text-muted-foreground">
                 A $95 annual fee is only worth paying if the rewards beat it by a comfortable margin. Quick math: at 2% cash back, you would need to spend $4,750 a year on groceries to earn back the $95 fee on the AmEx Blue Cash Preferred (versus the Citi Double Cash). If you spend less than that at supermarkets, the no-fee Citi card wins. If you travel only once a year, the Chase Sapphire Preferred is probably not worth its fee either — a no-fee 2% card plus a separate vacation savings account is often the better choice.
               </p>
             </CardContent>
@@ -339,8 +339,8 @@ export default function CreditCardRewardsPicker() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Worth knowing about credit scores</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Worth knowing about credit scores</p>
+              <p className="text-sm text-muted-foreground">
                 Applying for a card causes a small temporary dip in your credit score (usually 5-10 points) that recovers in a few months. Do not apply for three cards in one week — pick one. If your score is below 670, you may not be approved for the travel cards listed here; the Discover it Secured or Capital One Platinum are gentler starting points.
               </p>
             </CardContent>
@@ -350,20 +350,20 @@ export default function CreditCardRewardsPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/online-banking-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Online Banking Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Protect the account you pay the card from.</p>
+                <p className="font-medium text-base">Online Banking Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Protect the account you pay the card from.</p>
               </Link>
               <Link to="/tools/credit-freeze-walkthrough" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Credit Freeze Walkthrough</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Stop crooks from opening cards in your name.</p>
+                <p className="font-medium text-base">Credit Freeze Walkthrough</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Stop crooks from opening cards in your name.</p>
               </Link>
               <Link to="/tools/credit-report-reader" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Credit Report Reader</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Read your free annual credit report.</p>
+                <p className="font-medium text-base">Credit Report Reader</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Read your free annual credit report.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: pull a free credit report once a year at annualcreditreport.com (the only federally authorized free site) before you apply. Knowing your score saves you from being declined.
           </p>
         </div>

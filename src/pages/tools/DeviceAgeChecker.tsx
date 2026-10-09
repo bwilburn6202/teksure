@@ -4,20 +4,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Badge } from '@/components/ui/badge';
-import {
-  Shield,
-  AlertTriangle,
-  XCircle,
-  CheckCircle,
-  ChevronLeft,
-  ChevronRight,
-  Info,
-  Lock,
-  HelpCircle,
-  Wallet,
-  MessageCircle,
-  Sparkles,
-} from 'lucide-react';
+import { Shield, AlertTriangle, XCircle, CheckCircle, ChevronLeft, ChevronRight, Info, Lock, HelpCircle, Wallet, MessageCircle, Sparkles } from 'lucide-react';
 
 type DeviceType = 'iphone' | 'ipad' | 'android' | 'android-tablet' | 'chromebook' | 'mac' | 'windows';
 
@@ -146,10 +133,10 @@ function getResult(device: DeviceType, model: ModelOption): SupportResult {
       status: 'unknown',
       headline: "We can't tell for sure without more info.",
       detail:
-        "Device support varies a lot between brands and models. If you're not sure which exact model you have, don't worry — TekBrain (our tech helper) can walk you through finding the model name on your device in plain English.",
+        "Device support varies a lot between brands and models. If you're not sure which exact model you have, don't worry — a real person can walk you through finding the model name on your device in plain English.",
       recommendation: 'ask',
       recommendationText:
-        'Ask TekBrain for help figuring out exactly what you have. It only takes a minute, and once you know the model you can come back here for a precise answer.',
+        'Ask a real person for help figuring out exactly what you have. It only takes a minute, and once you know the model you can come back here for a precise answer.',
     };
   }
 
@@ -335,28 +322,28 @@ const statusConfig: Record<
     color: 'text-green-700 dark:text-green-400',
     bg: 'bg-green-50 dark:bg-green-950/30',
     border: 'border-green-200 dark:border-green-800',
-    icon: <CheckCircle className="h-6 w-6 text-green-600" aria-hidden="true" />,
+    icon: <CheckCircle className="h-6 w-6 text-success-foreground" aria-hidden="true" />,
     label: 'Fully Supported',
   },
   limited: {
     color: 'text-yellow-800 dark:text-yellow-300',
     bg: 'bg-yellow-50 dark:bg-yellow-950/20',
     border: 'border-yellow-200 dark:border-yellow-700',
-    icon: <AlertTriangle className="h-6 w-6 text-yellow-600" aria-hidden="true" />,
+    icon: <AlertTriangle className="h-6 w-6 text-warn-foreground" aria-hidden="true" />,
     label: 'Limited Support',
   },
   unsupported: {
     color: 'text-red-700 dark:text-red-400',
     bg: 'bg-red-50 dark:bg-red-950/20',
     border: 'border-red-200 dark:border-red-700',
-    icon: <XCircle className="h-6 w-6 text-red-600" aria-hidden="true" />,
+    icon: <XCircle className="h-6 w-6 text-danger-foreground" aria-hidden="true" />,
     label: 'No Longer Supported',
   },
   unknown: {
     color: 'text-blue-700 dark:text-blue-400',
     bg: 'bg-blue-50 dark:bg-blue-950/30',
     border: 'border-blue-200 dark:border-blue-800',
-    icon: <HelpCircle className="h-6 w-6 text-blue-600" aria-hidden="true" />,
+    icon: <HelpCircle className="h-6 w-6 text-info-foreground" aria-hidden="true" />,
     label: 'Need More Info',
   },
 };
@@ -370,7 +357,7 @@ function getGuideLinks(device: DeviceType, status: SupportStatus): GuideLink[] {
   const links: GuideLink[] = [];
 
   if (status === 'unknown') {
-    links.push({ label: 'Ask TekBrain which model I have', to: '/tekbrain' });
+    links.push({ label: 'Ask us which model you have', to: '/get-help' });
     return links;
   }
 
@@ -396,7 +383,7 @@ function getGuideLinks(device: DeviceType, status: SupportStatus): GuideLink[] {
     links.push({ label: 'Run a full device health check', to: '/tools/device-health' });
   }
 
-  links.push({ label: 'Ask TekBrain a follow-up question', to: '/tekbrain' });
+  links.push({ label: 'Ask us a follow-up question', to: '/get-help' });
   return links;
 }
 
@@ -443,8 +430,8 @@ export default function DeviceAgeChecker() {
         <section className="border-b bg-gradient-to-b from-indigo-50/60 to-transparent dark:from-indigo-950/20">
           <div className="container py-14 md:py-20 max-w-3xl">
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-14 w-14 rounded-2xl bg-indigo-100 dark:bg-indigo-950/40 flex items-center justify-center flex-shrink-0">
-                <Shield className="h-7 w-7 text-indigo-600" aria-hidden="true" />
+              <div className="h-14 w-14 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Shield className="h-7 w-7 text-primary" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool · 30 seconds</Badge>
             </div>
@@ -520,7 +507,7 @@ export default function DeviceAgeChecker() {
                   <Info className="h-4 w-4 text-primary" aria-hidden="true" />
                   What are "security updates" and why do they matter?
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Every few weeks, the companies that make your phone or computer discover new
                   security holes — tricks hackers can use to get into your device. They fix those
                   holes and send the fix to your device as a "security update." When a device
@@ -565,13 +552,13 @@ export default function DeviceAgeChecker() {
                     onClick={() => handleModelSelect(m)}
                     className={`flex items-center justify-between gap-3 p-4 rounded-2xl border-2 transition-colors text-left min-h-[60px] ${
                       m.status === 'unknown'
-                        ? 'border-dashed border-blue-300 bg-blue-50/40 hover:border-blue-500 hover:bg-blue-50 dark:border-blue-700 dark:bg-blue-950/20'
+                        ? 'border-dashed border-info-foreground/25 bg-blue-50/40 hover:border-blue-500 hover:bg-info dark:bg-blue-950/20'
                         : 'border-border bg-card hover:border-primary hover:bg-primary/5'
                     }`}
                   >
                     <div className="flex items-center gap-3">
                       {m.status === 'unknown' ? (
-                        <HelpCircle className="h-5 w-5 text-blue-600 flex-shrink-0" aria-hidden="true" />
+                        <HelpCircle className="h-5 w-5 text-info-foreground flex-shrink-0" aria-hidden="true" />
                       ) : null}
                       <span className="font-medium text-base">{m.label}</span>
                     </div>
@@ -629,7 +616,7 @@ export default function DeviceAgeChecker() {
                   <Info className="h-4 w-4 text-primary" aria-hidden="true" />
                   A quick reminder: why this matters
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Security updates plug holes that hackers use to steal passwords, bank info,
                   and photos. A supported device gets new fixes every month. An unsupported
                   device doesn't — which means any new hole discovered stays open forever. The
@@ -649,24 +636,23 @@ export default function DeviceAgeChecker() {
                 </p>
               </div>
 
-              {/* Unknown: TekBrain nudge */}
+              {/* Unknown: ask-a-person nudge */}
               {result.status === 'unknown' && (
-                <div className="rounded-2xl border-2 border-blue-300 dark:border-blue-700 bg-blue-50 dark:bg-blue-950/30 p-6 mb-5">
-                  <h3 className="font-semibold text-base mb-2 flex items-center gap-2 text-blue-800 dark:text-blue-300">
+                <div className="rounded-2xl border-2 border-info-foreground/25 bg-info p-6 mb-5">
+                  <h3 className="font-semibold text-base mb-2 flex items-center gap-2 text-info-foreground ">
                     <MessageCircle className="h-5 w-5" aria-hidden="true" />
                     Not sure which model you have?
                   </h3>
-                  <p className="text-sm text-blue-900/80 dark:text-blue-200/80 leading-relaxed mb-4">
-                    TekBrain is our friendly tech helper. Tell it what your device looks like —
-                    color, size, how old you think it is — and it'll help you find the exact
-                    model name, usually in under a minute.
+                  <p className="text-base text-blue-900/80 dark:text-blue-200/80 leading-relaxed mb-4">
+                    Tell us what your device looks like — color, size, how old you think it
+                    is — and a real person will help you find the exact model name.
                   </p>
                   <Link
-                    to="/tekbrain"
+                    to="/get-help"
                     className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm transition-colors"
                   >
                     <MessageCircle className="h-4 w-4" aria-hidden="true" />
-                    Ask TekBrain for help
+                    Ask a real person
                   </Link>
                 </div>
               )}
@@ -675,12 +661,12 @@ export default function DeviceAgeChecker() {
               {(result.status === 'unsupported' || result.status === 'limited') && (
                 <div className="rounded-2xl border border-border bg-card p-6 mb-5">
                   <h3 className="font-semibold text-base mb-3 flex items-center gap-2">
-                    <Wallet className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+                    <Wallet className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                     Upgrading on a budget
                   </h3>
-                  <ul className="space-y-3 text-sm text-muted-foreground">
+                  <ul className="space-y-3 text-base text-muted-foreground">
                     <li className="flex gap-3">
-                      <span className="flex-shrink-0 text-emerald-600 font-bold">1.</span>
+                      <span className="flex-shrink-0 text-success-foreground font-bold">1.</span>
                       <span>
                         <strong className="text-foreground">Buy refurbished.</strong>{' '}
                         {selectedDevice.id === 'iphone' || selectedDevice.id === 'ipad' || selectedDevice.id === 'mac'
@@ -690,7 +676,7 @@ export default function DeviceAgeChecker() {
                       </span>
                     </li>
                     <li className="flex gap-3">
-                      <span className="flex-shrink-0 text-emerald-600 font-bold">2.</span>
+                      <span className="flex-shrink-0 text-success-foreground font-bold">2.</span>
                       <span>
                         <strong className="text-foreground">Trade in your current device.</strong>{' '}
                         Apple, Samsung, Best Buy, and all major carriers offer trade-in credit —
@@ -703,7 +689,7 @@ export default function DeviceAgeChecker() {
                       </span>
                     </li>
                     <li className="flex gap-3">
-                      <span className="flex-shrink-0 text-emerald-600 font-bold">3.</span>
+                      <span className="flex-shrink-0 text-success-foreground font-bold">3.</span>
                       <span>
                         <strong className="text-foreground">Consider the "one-generation-old" model.</strong>{' '}
                         When a new iPhone or Samsung comes out, the previous year's model drops
@@ -711,7 +697,7 @@ export default function DeviceAgeChecker() {
                       </span>
                     </li>
                     <li className="flex gap-3">
-                      <span className="flex-shrink-0 text-emerald-600 font-bold">4.</span>
+                      <span className="flex-shrink-0 text-success-foreground font-bold">4.</span>
                       <span>
                         <strong className="text-foreground">Carrier promotions are real — sometimes.</strong>{' '}
                         "Free with trade-in" offers often require a 36-month contract. Read the
@@ -720,7 +706,7 @@ export default function DeviceAgeChecker() {
                       </span>
                     </li>
                     <li className="flex gap-3">
-                      <span className="flex-shrink-0 text-emerald-600 font-bold">5.</span>
+                      <span className="flex-shrink-0 text-success-foreground font-bold">5.</span>
                       <span>
                         <strong className="text-foreground">Second-hand from trusted marketplaces.</strong>{' '}
                         Swappa, Gazelle, and Back Market specialize in tested used phones and
@@ -738,7 +724,7 @@ export default function DeviceAgeChecker() {
                   <Lock className="h-5 w-5 text-primary" aria-hidden="true" />
                   Habits that matter more than hardware age
                 </h3>
-                <p className="text-sm text-muted-foreground mb-3">
+                <p className="text-base text-muted-foreground mb-3">
                   Whatever your device's age, these habits dramatically reduce your risk:
                 </p>
                 <ul className="space-y-2 text-base text-muted-foreground">

@@ -23,7 +23,7 @@ export default function MemorialFacebookGuide() {
               <li><strong>Memorialize</strong> — account stays, "Remembering" appears next to name. Friends/family can post tributes. Doesn&apos;t appear in birthday reminders or "people you may know".</li>
               <li><strong>Delete</strong> — account permanently removed. Posts, photos, profile gone. Cannot undo.</li>
             </ul>
-            <p className="text-sm mt-3">If unsure — memorialize. You can delete later. You cannot undo deletion.</p>
+            <p className="text-base mt-3">If unsure — memorialize. You can delete later. You cannot undo deletion.</p>
           </CardContent>
         </Card>
 

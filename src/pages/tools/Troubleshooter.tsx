@@ -257,7 +257,7 @@ export default function Troubleshooter() {
                     {tree.label}
                   </Badge>
                 )}
-                <span className="text-xs text-muted-foreground">{questionsDone + 1} of ~{totalSteps} questions</span>
+                <span className="text-sm text-muted-foreground">{questionsDone + 1} of ~{totalSteps} questions</span>
               </div>
 
               <Progress value={progress} className="h-1.5 mb-8" />
@@ -266,7 +266,7 @@ export default function Troubleshooter() {
                 <CardContent className="py-8">
                   <p className="text-xl font-semibold text-center mb-2">{currentNode.text}</p>
                   {currentNode.subtext && (
-                    <p className="text-sm text-muted-foreground text-center mt-2 max-w-md mx-auto">{currentNode.subtext}</p>
+                    <p className="text-base text-muted-foreground text-center mt-2 max-w-md mx-auto">{currentNode.subtext}</p>
                   )}
                 </CardContent>
               </Card>
@@ -319,7 +319,7 @@ export default function Troubleshooter() {
                               <div className="h-6 w-6 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
                                 {i + 1}
                               </div>
-                              <p className="text-sm leading-relaxed">{step}</p>
+                              <p className="text-base leading-relaxed">{step}</p>
                             </div>
                           ))}
                         </div>

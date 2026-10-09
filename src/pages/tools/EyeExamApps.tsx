@@ -29,11 +29,11 @@ export default function EyeExamApps() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why you STILL need eye doctor</h2>
-            <p className="text-sm">Online "exams" only test refraction (glasses strength). They DON&apos;T check for:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Online "exams" only test refraction (glasses strength). They DON&apos;T check for:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Cataracts.</li>
               <li>Glaucoma.</li>
               <li>Macular degeneration.</li>
@@ -41,7 +41,7 @@ export default function EyeExamApps() {
               <li>Eye cancer (rare but real).</li>
               <li>Detached retina.</li>
             </ul>
-            <p className="text-sm mt-2">For seniors — full in-person eye exam every 1-2 years is essential. Online apps are good for off-year prescription updates.</p>
+            <p className="text-base mt-2">For seniors — full in-person eye exam every 1-2 years is essential. Online apps are good for off-year prescription updates.</p>
           </CardContent>
         </Card>
 

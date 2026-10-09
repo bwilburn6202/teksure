@@ -46,42 +46,42 @@ export default function ScamRecoveryChecklist() {
   const completedCount = Object.values(done).filter(Boolean).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Scam Recovery Checklist | TekSure" description="A dignified step-by-step guide for what to do AFTER being scammed. Reporting, credit freeze, bank dispute, identity lockdown, and emotional recovery." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <ShieldAlert className="h-7 w-7 text-red-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Scam Recovery Checklist</h1>
+            <ShieldAlert className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Scam Recovery Checklist</h1>
           </div>
-          <p className="text-gray-600 text-lg">If a scam has already happened. Take it one step at a time. The shame you may be feeling is the scammer's last weapon — set it down.</p>
+          <p className="text-muted-foreground text-lg">If a scam has already happened. Take it one step at a time. The shame you may be feeling is the scammer's last weapon — set it down.</p>
         </div>
 
         {completedCount > 0 && (
-          <Card className="mb-4 bg-red-50 border-red-200">
+          <Card className="mb-4 bg-danger border-danger-foreground/25">
             <CardContent className="py-3 px-4 text-center">
-              <p className="text-red-900 font-semibold">{completedCount} of {STEPS.length} done</p>
+              <p className="text-danger-foreground font-semibold">{completedCount} of {STEPS.length} done</p>
             </CardContent>
           </Card>
         )}
 
-        <Card className="mb-4 bg-amber-50 border-amber-300 border-2">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 border-2">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-amber-900"><span className="font-semibold">You were targeted, not stupid.</span> Scammers run professional psychological attacks designed by teams. Millions of Americans get scammed every year. You are not alone, and reporting helps stop them from doing this to someone else.</p>
+            <p className="text-base text-warn-foreground"><span className="font-semibold">You were targeted, not stupid.</span> Scammers run professional psychological attacks designed by teams. Millions of Americans get scammed every year. You are not alone, and reporting helps stop them from doing this to someone else.</p>
           </CardContent>
         </Card>
 
         {CATEGORIES.map(cat => (
           <Card key={cat} className="mb-4">
             <CardContent className="py-4 px-4">
-              <h2 className="text-xl font-bold text-gray-900 mb-3">{cat}</h2>
+              <h2 className="text-xl font-bold text-foreground mb-3">{cat}</h2>
               <div className="space-y-3">
                 {STEPS.filter(s => s.category === cat).map(s => (
-                  <div key={s.id} className="flex items-start gap-3 p-3 rounded-lg border border-gray-200 bg-white">
+                  <div key={s.id} className="flex items-start gap-3 p-3 rounded-lg border border-border bg-card">
                     <Checkbox checked={!!done[s.id]} onCheckedChange={() => toggle(s.id)} className="mt-1 print:hidden" />
                     <div className="flex-1 min-w-0">
                       <p className={`font-semibold ${done[s.id] ? "line-through text-gray-400" : "text-gray-900"}`}>{s.title}</p>
-                      <p className="text-sm text-gray-600 mt-1">{s.detail}</p>
+                      <p className="text-base text-muted-foreground mt-1">{s.detail}</p>
                     </div>
                   </div>
                 ))}
@@ -96,6 +96,6 @@ export default function ScamRecoveryChecklist() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

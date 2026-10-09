@@ -131,7 +131,7 @@ export default function NutritionAppPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <Apple className="h-8 w-8 text-emerald-600" />
+                <Apple className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Nutrition App Picker</h1>
@@ -144,13 +144,13 @@ export default function NutritionAppPicker() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Nutrition App Picker' }]} />
 
-          <Card className="border-amber-300 dark:border-amber-700 bg-amber-50/60 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-amber-50/60 dark:bg-amber-950/20 mb-6">
             <CardContent className="p-5">
               <div className="flex gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-warn-foreground flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm font-semibold mb-2">Skip the extreme-diet TikTok content</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-base font-semibold mb-2">Skip the extreme-diet TikTok content</p>
+                  <p className="text-sm text-muted-foreground">
                     Apple-cider-vinegar cleanses, "carnivore for seniors", 600-calorie one-meal-a-day plans, and similar TikTok or Instagram fads can be dangerous if you take blood-pressure pills, blood thinners, insulin, or have kidney issues. For any serious condition (diabetes, heart disease, kidney disease, recent surgery, cancer treatment), work with a Registered Dietitian (RD or RDN). Medicare Part B covers nutrition counseling for diabetes and kidney disease — ask your doctor for a referral.
                   </p>
                 </div>
@@ -166,19 +166,19 @@ export default function NutritionAppPicker() {
                     <p className="font-semibold text-base">{p.name}</p>
                     <Badge variant="outline">{p.cost}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {p.bestFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {p.bestFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {p.pros.map((pr, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{pr}</span></li>)}
+                        {p.pros.map((pr, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{pr}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {p.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                        {p.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -197,8 +197,8 @@ export default function NutritionAppPicker() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Free is plenty for most people</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Free is plenty for most people</p>
+              <p className="text-sm text-muted-foreground">
                 You do not need a Premium subscription to log meals, count carbs, or watch sodium. Start on the free tier of MyFitnessPal or Cronometer, give it 30 days, and only pay for Premium if a specific feature (no ads, deeper macro splits, the diabetes dashboard) would actually change how you eat.
               </p>
             </CardContent>
@@ -208,20 +208,20 @@ export default function NutritionAppPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/senior-fitness-apps" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Senior Fitness Apps</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair nutrition tracking with movement.</p>
+                <p className="font-medium text-base">Senior Fitness Apps</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair nutrition tracking with movement.</p>
               </Link>
               <Link to="/tools/medication-reminder-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Medication Reminders</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Time meds with meals and carbs.</p>
+                <p className="font-medium text-base">Medication Reminders</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Time meds with meals and carbs.</p>
               </Link>
               <Link to="/tools/medicare-plan-chooser" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Medicare Plan Chooser</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Find a plan that covers a dietitian.</p>
+                <p className="font-medium text-base">Medicare Plan Chooser</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Find a plan that covers a dietitian.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: log everything for the first two weeks, even sips of soda. The honest picture is the whole point.
           </p>
         </div>

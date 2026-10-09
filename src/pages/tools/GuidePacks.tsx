@@ -232,9 +232,9 @@ export default function GuidePacks() {
         </div>
 
         <div className="container max-w-5xl py-12">
-          <div className="flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8">
-            <Printer className="h-5 w-5 text-blue-600 shrink-0" />
-            <p className="text-sm text-blue-800">Free packs open a print-ready window — use your browser's Print function (Ctrl+P / Cmd+P) to save as PDF or print directly.</p>
+          <div className="flex items-center gap-2 bg-info border border-info-foreground/25 rounded-xl p-4 mb-8">
+            <Printer className="h-5 w-5 text-info-foreground shrink-0" />
+            <p className="text-base text-info-foreground">Free packs open a print-ready window — use your browser's Print function (Ctrl+P / Cmd+P) to save as PDF or print directly.</p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -251,7 +251,7 @@ export default function GuidePacks() {
                         <Badge variant="outline" className="text-xs ml-2 shrink-0 flex items-center gap-1"><Lock className="h-3 w-3" />Premium</Badge>
                       )}
                     </div>
-                    <p className="text-sm text-muted-foreground mb-3 leading-relaxed flex-1">{pack.desc}</p>
+                    <p className="text-base text-muted-foreground mb-3 leading-relaxed flex-1">{pack.desc}</p>
                     <div className="flex items-center gap-3 text-xs text-muted-foreground mb-4">
                       <span className="flex items-center gap-1"><FileText className="h-3.5 w-3.5" />{pack.guideCount} guides</span>
                       <span>{pack.pages} pages</span>
@@ -271,7 +271,7 @@ export default function GuidePacks() {
                       )}
                     </Button>
                     {pack.free && (
-                      <p className="text-xs text-muted-foreground text-center mt-2 flex items-center justify-center gap-1"><CheckCircle2 className="h-3 w-3 text-green-500" />No sign-in required</p>
+                      <p className="text-sm text-muted-foreground text-center mt-2 flex items-center justify-center gap-1"><CheckCircle2 className="h-3 w-3 text-success-foreground" />No sign-in required</p>
                     )}
                   </CardContent>
                 </Card>

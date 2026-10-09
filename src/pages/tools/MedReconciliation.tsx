@@ -16,18 +16,18 @@ export default function MedReconciliation() {
           <p className="text-lg text-muted-foreground">One accurate list across all doctors.</p>
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why this matters</h2>
-            <p className="text-sm">7,000-9,000 deaths/year from medication errors. Most happen because doctors don&apos;t know all the drugs you take. Your job — be the keeper of the list. Bring it to every visit.</p>
+            <p className="text-base">7,000-9,000 deaths/year from medication errors. Most happen because doctors don&apos;t know all the drugs you take. Your job — be the keeper of the list. Bring it to every visit.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Build the list</h2>
-            <p className="text-sm">For each medication, write:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">For each medication, write:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Name (brand + generic).</li>
               <li>Strength (e.g., 20mg).</li>
               <li>How often (e.g., once a day).</li>
@@ -37,7 +37,7 @@ export default function MedReconciliation() {
               <li>Pharmacy.</li>
               <li>Start date.</li>
             </ul>
-            <p className="text-sm mt-3">Include OTC, vitamins, supplements, herbs. ALL of them. They interact too.</p>
+            <p className="text-base mt-3">Include OTC, vitamins, supplements, herbs. ALL of them. They interact too.</p>
           </CardContent>
         </Card>
 

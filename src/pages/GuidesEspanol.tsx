@@ -95,12 +95,12 @@ export default function GuidesEspanol() {
             <div className="text-center py-20">
               <p className="text-3xl mb-3"></p>
               <p className="font-medium mb-1">No se encontraron guías</p>
-              <p className="text-sm text-muted-foreground">Intenta con otras palabras clave.</p>
+              <p className="text-base text-muted-foreground">Intenta con otras palabras clave.</p>
             </div>
           ) : search.trim() ? (
             // Flat list when searching
             <div className="space-y-2">
-              <p className="text-sm text-muted-foreground mb-6">{filtered.length} resultado{filtered.length !== 1 ? 's' : ''}</p>
+              <p className="text-base text-muted-foreground mb-6">{filtered.length} resultado{filtered.length !== 1 ? 's' : ''}</p>
               {filtered.map(guide => (
                 <Link key={guide.slug} to={`/guides/${guide.slug}`} className="group block">
                   <div className="flex items-center gap-4 p-4 rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-sm transition-all">
@@ -110,7 +110,7 @@ export default function GuidesEspanol() {
                       <p className="text-xs text-muted-foreground line-clamp-1 mt-0.5">{guide.excerpt}</p>
                     </div>
                     <div className="flex items-center gap-2 shrink-0">
-                      <span className="text-xs text-muted-foreground flex items-center gap-1"><Clock className="h-3 w-3" />{guide.readTime}</span>
+                      <span className="text-sm text-muted-foreground flex items-center gap-1"><Clock className="h-3 w-3" />{guide.readTime}</span>
                       <ChevronRight className="h-4 w-4 text-muted-foreground/30 group-hover:text-primary transition-colors" />
                     </div>
                   </div>
@@ -135,9 +135,9 @@ export default function GuidesEspanol() {
                         <div className="flex items-start gap-3 p-4 rounded-xl border border-border bg-card hover:border-primary/30 hover:shadow-sm transition-all h-full">
                           <GuideThumbnail category={guide.category} size="h-5 w-5" className="rounded-xl shrink-0 mt-0.5 p-2" useAccent />
                           <div className="flex-1 min-w-0">
-                            <p className="font-medium text-sm group-hover:text-primary transition-colors leading-snug mb-1">{guide.title}</p>
+                            <p className="font-medium text-base group-hover:text-primary transition-colors leading-snug mb-1">{guide.title}</p>
                             <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">{guide.excerpt}</p>
-                            <p className="text-xs text-muted-foreground mt-2 flex items-center gap-1">
+                            <p className="text-sm text-muted-foreground mt-2 flex items-center gap-1">
                               <Clock className="h-3 w-3" />{guide.readTime}
                             </p>
                           </div>
@@ -154,7 +154,7 @@ export default function GuidesEspanol() {
           <div className="mt-16 text-center p-10 rounded-2xl bg-primary/[0.04] border border-primary/10">
             <p className="text-2xl mb-3"></p>
             <h2 className="text-lg font-bold mb-2">¿Buscas ayuda en inglés también?</h2>
-            <p className="text-sm text-muted-foreground mb-5 max-w-sm mx-auto">
+            <p className="text-base text-muted-foreground mb-5 max-w-sm mx-auto">
               TekSure tiene más de {guides.filter(g => !g.slug.startsWith('es-')).length.toLocaleString()} guías en inglés disponibles gratis.
             </p>
             <Button asChild variant="outline" className="rounded-xl gap-2">

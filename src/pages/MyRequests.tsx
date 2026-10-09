@@ -164,7 +164,7 @@ const MyRequests = () => {
                   <div key={b.id} className="bg-card border border-border rounded-2xl p-5 space-y-4">
                     {/* Top: booking date + status */}
                     <div className="flex items-center justify-between gap-2">
-                      <span className="text-sm font-semibold text-foreground">{formatBookingDate(b.preferred_date)}</span>
+                      <span className="text-base font-semibold text-foreground">{formatBookingDate(b.preferred_date)}</span>
                       <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border ${status.color}`}>
                         <StatusIcon className="h-3 w-3" />
                         {status.label}
@@ -207,7 +207,7 @@ const MyRequests = () => {
                       </div>
                     )}
 
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                       Booked {formatDate(b.created_at)}
                     </p>
                   </div>
@@ -229,7 +229,7 @@ const MyRequests = () => {
                 return (
                   <div key={req.id} className="bg-card border border-border rounded-2xl p-5 space-y-4">
                     <div className="flex items-center justify-between gap-2">
-                      <span className="text-sm text-muted-foreground">{formatDate(req.created_at)}</span>
+                      <span className="text-base text-muted-foreground">{formatDate(req.created_at)}</span>
                       <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border ${status.color}`}>
                         <StatusIcon className="h-3 w-3" />
                         {status.label}

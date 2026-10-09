@@ -88,70 +88,7 @@ Once paired, your phone will connect automatically every time you start the car.
     ],
   },
   // ── CAREGIVER TECH ──────────────────────────────────────────────────────────
-  {
-    slug: 'set-up-family-sharing-apple',
-    title: 'How to Set Up Apple Family Sharing',
-    excerpt: 'Share Apple subscriptions, purchases, photos, and locations with up to five family members — all from one Apple ID.',
-    category: 'essential-skills',
-    tags: ['Family Sharing', 'Apple', 'iCloud', 'subscriptions', 'family'],
-    readTime: '7 min',
-    thumbnailEmoji: '‍‍',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Apple Family Sharing lets up to six people share Apple subscriptions (iCloud, Apple Music, Apple TV+) and App Store purchases without paying multiple times. It also includes location sharing and parental controls for kids.
-
-One person acts as the "family organizer" and invites everyone else. Each person keeps their own Apple ID, photos, and messages private — only the shared items are visible to the family.`,
-    steps: [
-      { title: 'Open Family Sharing settings', content: 'On the iPhone of the person who will be the organizer, open Settings, tap your name at the top, then tap Family Sharing. Tap Set Up Your Family.' },
-      { title: 'Pick what you want to share', content: 'Apple will ask if you want to share subscriptions, purchases, location, or screen time. You can pick all of them now or turn any on later.' },
-      { title: 'Invite family members', content: 'Tap Invite People and enter their phone numbers or Apple ID email addresses. They will get a message with a link to join the family.' },
-      { title: 'Add a child under 13', content: `Tap Create an Account for a Child from the Family Sharing screen. You will need the child's birthday and your permission as a parent — this gives them their own Apple ID with safety limits.` },
-      { title: 'Check shared subscriptions', content: 'Go back to Settings, tap your name, then Subscriptions. Any subscription that supports sharing — like Apple Music Family or iCloud+ — will now show "Shared with Family" under the name.' },
-    ],
-  },
-  {
-    slug: 'set-up-google-family-link',
-    title: 'How to Set Up Google Family Link',
-    excerpt: `Monitor a child's Android phone, approve app downloads, set screen time limits, and see their location with Google Family Link.`,
-    category: 'essential-skills',
-    tags: ['Family Link', 'Google', 'Android', 'parental controls', 'kids'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Google Family Link is a free app that lets parents manage a child's Android phone or Chromebook from their own phone. You can approve every app they download, set daily screen time limits, lock the device at bedtime, and see where the device is on a map.
-
-Family Link works for kids under 13 (who need parent permission for a Google account) and teenagers (who can use the app voluntarily). Both parent and child install the app, and the parent runs the setup.`,
-    steps: [
-      { title: 'Install Family Link on the parent phone', content: `On the parent's iPhone or Android, open the App Store or Play Store, search for "Google Family Link," and install it. Sign in with the parent's Google account.` },
-      { title: `Create or link the child's Google account`, content: 'In the app, tap the plus icon and choose Add Child. If your child does not have a Google account, Family Link walks you through creating one — a child account is free but needs parent consent.' },
-      { title: `Install Family Link on the child's phone`, content: `On the child's Android phone, sign in with the child's Google account. The phone will prompt you to install Family Link and link it to the parent account.` },
-      { title: 'Set daily screen time limits', content: `In the parent app, tap the child's name, then Controls, then Daily Limit. Set how many hours the phone can be used each day — when time runs out, the phone locks (calls still work).` },
-      { title: 'Approve apps and in-app purchases', content: 'Turn on the App Approval toggle under Controls. From then on, every time your child tries to download an app, you will get a notification asking you to approve or deny it.' },
-    ],
-  },
-  {
-    slug: 'use-chrome-remote-desktop',
-    title: 'How to Use Chrome Remote Desktop to Help Family',
-    excerpt: `See and control a family member's computer from your own — great for fixing problems over the phone without being in the room.`,
-    category: 'how-to',
-    tags: ['remote desktop', 'Chrome', 'Google', 'tech support', 'family'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Intermediate',
-    body: `Chrome Remote Desktop is a free Google tool that lets you see and control another computer over the internet. It is perfect for helping a parent or grandparent fix a problem. You can click around on their screen as if you were sitting in front of it.
-
-Both computers need the Chrome browser and a Google account. The person asking for help generates a short access code, shares it with you, and your computer connects to theirs within seconds.`,
-    steps: [
-      { title: 'Open Chrome Remote Desktop', content: 'On both computers, open the Chrome browser and go to remotedesktop.google.com. Sign in with any Google account.' },
-      { title: `On the helper's computer, click Remote Support`, content: 'On the screen, click Remote Support. This is the section for helping someone else — not for connecting to your own computer.' },
-      { title: `On the family member's computer, generate a code`, content: 'Have them click Remote Support, then under "Get Support" click Generate Code. A 12-digit code appears — they read it to you over the phone.' },
-      { title: `Enter the code on the helper's computer`, content: 'Under "Give Support," type the 12-digit code and click Connect. The family member will see a pop-up asking to share their screen — they click Share.' },
-      { title: 'End the session when done', content: 'When you finish helping, either person can click the Stop Sharing button. The code expires after five minutes. So you cannot reconnect without a new code — this keeps things secure.' },
-    ],
-  },
-  {
+        {
     slug: 'make-phone-senior-friendly',
     title: 'How to Make a Smartphone Senior-Friendly',
     excerpt: 'Large text, louder ringtones, emergency contacts, and simplified home screens can make any iPhone or Android easier for older adults.',
@@ -172,92 +109,8 @@ These changes work on both iPhone and Android. The exact menu names differ sligh
       { title: 'Set up a simple home screen', content: 'Remove games and rarely used apps from the home screen by holding an icon and choosing Remove. Keep only Phone, Messages, Camera, Maps, and a weather app on the first screen.' },
     ],
   },
-  {
-    slug: 'set-up-medical-id-iphone',
-    title: 'How to Set Up Medical ID on iPhone',
-    excerpt: 'Store your allergies, medications, and emergency contacts on your iPhone so first responders can see them even when the phone is locked.',
-    category: 'health-tech',
-    tags: ['Medical ID', 'iPhone', 'emergency', 'health', 'safety'],
-    readTime: '5 min',
-    thumbnailEmoji: '🆘',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Medical ID is a built-in iPhone feature that shows your medical information on the lock screen during an emergency. Paramedics and hospital staff are trained to look for it. They can see your allergies, medications, and emergency contacts without needing your passcode.
-
-Setting it up takes about five minutes and could save your life. The information stays private at all other times — only someone pressing the emergency button on a locked phone will see it.`,
-    steps: [
-      { title: 'Open the Health app', content: 'Find the Health app on your iPhone — the icon is a white heart on a pink background. If you cannot find it, swipe down on the home screen and search for "Health."' },
-      { title: 'Tap your profile picture', content: 'Tap the small profile picture or initials in the top-right corner of the Health app. Scroll down and tap Medical ID.' },
-      { title: 'Tap Edit and fill in your info', content: 'Tap Edit in the top-right. Enter your date of birth, height, weight, blood type, allergies, and any medications. Leave blanks if you do not know — do not guess.' },
-      { title: 'Add emergency contacts', content: 'Scroll to Emergency Contacts, tap the green plus, and pick someone from your contacts. You can add more than one — include at least one family member and your doctor.' },
-      { title: 'Turn on Show When Locked', content: 'Near the top of the edit screen, toggle Show When Locked to on. This lets emergency responders see your Medical ID from the lock screen without your passcode. Tap Done to save.' },
-    ],
-  },
-  // ── ACCESSIBILITY DEEP DIVES ────────────────────────────────────────────────
-  {
-    slug: 'use-voiceover-iphone',
-    title: 'How to Use VoiceOver on iPhone (Screen Reader)',
-    excerpt: 'VoiceOver reads everything on your iPhone screen aloud — designed for blind and low-vision users, but helpful for anyone with tired eyes.',
-    category: 'tips-tricks',
-    tags: ['VoiceOver', 'iPhone', 'accessibility', 'screen reader', 'blind'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Intermediate',
-    body: `VoiceOver is Apple's built-in screen reader for iPhone and iPad. When it is on, the phone speaks whatever your finger touches — button names, text messages, web pages — so you can use the phone without looking at the screen.
-
-VoiceOver changes how you interact with the phone: single-tap to hear an item, double-tap to activate it, and swipe with three fingers to scroll. It takes practice, but millions of blind and low-vision users rely on it every day.`,
-    steps: [
-      { title: 'Turn on VoiceOver', content: 'Open Settings, tap Accessibility, then VoiceOver, and flip the switch on. A warning will explain that gestures will change — tap OK to continue.' },
-      { title: 'Learn the basic gestures', content: 'Single-tap anything to hear its name read aloud. Double-tap anywhere on the screen to activate whatever VoiceOver last spoke. Swipe right or left with one finger to move between items.' },
-      { title: 'Practice with the built-in tutorial', content: 'In the VoiceOver settings screen, tap VoiceOver Practice. This gives you a safe area to try gestures — the phone will tell you what each gesture does without actually doing it.' },
-      { title: 'Adjust the speaking speed', content: 'Back in VoiceOver settings, drag the Speaking Rate slider. Start slower until you get used to hearing the voice, then speed up as you get more comfortable.' },
-      { title: 'Set a triple-click shortcut', content: 'Open Settings, tap Accessibility, then Accessibility Shortcut at the bottom, and pick VoiceOver. Now you can triple-click the side button to turn VoiceOver on or off quickly.' },
-    ],
-  },
-  {
-    slug: 'use-talkback-android',
-    title: 'How to Use TalkBack on Android (Screen Reader)',
-    excerpt: `TalkBack is Android's free screen reader. It speaks everything on your phone so blind and low-vision users can navigate without seeing the screen.`,
-    category: 'tips-tricks',
-    tags: ['TalkBack', 'Android', 'accessibility', 'screen reader', 'blind'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Intermediate',
-    body: `TalkBack is Google's screen reader built into every Android phone. When turned on, it reads aloud whatever you touch and changes how gestures work — single-tap to hear, double-tap to select, swipe with two fingers to scroll.
-
-TalkBack takes time to learn. But it makes Android fully usable without sight. Most major apps — Gmail, Maps, Chrome — are designed to work well with TalkBack.`,
-    steps: [
-      { title: 'Turn on TalkBack', content: 'Open Settings, tap Accessibility, then TalkBack, and flip the switch on. A screen will explain that gestures will change — tap OK.' },
-      { title: 'Use one finger to explore', content: 'Slide your finger around the screen. TalkBack reads aloud whatever is under your finger — "Back button," "Gmail," and so on. Nothing is activated yet.' },
-      { title: 'Double-tap to activate', content: 'Once you hear the name of the thing you want, lift your finger and double-tap anywhere on the screen. Android will open that app or press that button.' },
-      { title: 'Swipe to scroll', content: 'To scroll through a list or page, use two fingers instead of one — swipe up or down with both fingers together. One finger is for exploring. Two fingers is for scrolling.' },
-      { title: 'Adjust speech speed', content: 'Open Settings, tap Accessibility, then TalkBack, then Text-to-Speech. Drag the speech rate slider — start slow and speed it up as you practice.' },
-    ],
-  },
-  {
-    slug: 'pair-hearing-aids-iphone',
-    title: 'How to Pair Hearing Aids with iPhone',
-    excerpt: 'Connect Made for iPhone (MFi) hearing aids over Bluetooth to stream calls, music, and notifications straight to your ears.',
-    category: 'health-tech',
-    tags: ['hearing aids', 'iPhone', 'Bluetooth', 'MFi', 'accessibility'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Made for iPhone (MFi) hearing aids connect directly to an iPhone over Bluetooth, so phone calls, music, and even GPS directions play right in your ears. Most major brands — including Phonak, Oticon, ReSound, and Starkey — now make MFi models.
-
-Once paired, you can also change hearing-aid settings from the phone's Accessibility menu: volume, program, and background-noise reduction. No extra app needed for most features.`,
-    steps: [
-      { title: 'Turn on your hearing aids', content: 'Open the battery doors or place the hearing aids in their charger, then take them out and put them in your ears. They need to be on and near the phone for pairing.' },
-      { title: 'Open iPhone Accessibility settings', content: 'Go to Settings, tap Accessibility, then scroll down and tap Hearing Devices. The phone will start searching for nearby hearing aids.' },
-      { title: 'Wait for the hearing aids to appear', content: 'Your hearing aid model (with your name, if your audiologist set it up) should appear on the screen. Tap it.' },
-      { title: 'Confirm pairing on the iPhone', content: 'A pairing request will pop up for each ear — tap Pair on both. This only happens the first time. After that, the hearing aids reconnect automatically.' },
-      { title: 'Test a phone call', content: 'Call someone and check that their voice plays clearly in the hearing aids. If the sound is too quiet or too loud, go back to Settings, Accessibility, Hearing Devices, and adjust the volume sliders.' },
-    ],
-  },
-  {
+    // ── ACCESSIBILITY DEEP DIVES ────────────────────────────────────────────────
+        {
     slug: 'use-live-captions-phone',
     title: 'How to Turn On Live Captions on Your Phone',
     excerpt: 'Live Captions add real-time subtitles to any video, call, or podcast — useful for hard-of-hearing users or noisy environments.',
@@ -321,49 +174,7 @@ You can set the magnification level, pick how it follows your mouse, and even ha
     ],
   },
   // ── PARENTAL CONTROLS ───────────────────────────────────────────────────────
-  {
-    slug: 'set-up-screen-time-iphone',
-    title: 'How to Set Up Screen Time on iPhone for Kids',
-    excerpt: `Limit your child's daily app usage, block inappropriate content, and see exactly what they do on their iPhone — all free from Apple.`,
-    category: 'safety-guides',
-    tags: ['Screen Time', 'iPhone', 'parental controls', 'kids', 'Apple'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Screen Time is Apple's free parental-control system. On a family-shared iPhone, you can see how much time your child spends in each app, block apps during homework or bedtime, and stop them from buying apps without your permission.
-
-You set it up through Family Sharing — the parent sends a request from their own phone to the child's phone. A four-digit passcode (different from the phone passcode) protects the settings so the child cannot change them.`,
-    steps: [
-      { title: 'Set up Family Sharing first', content: 'Screen Time for kids only works if the child is part of your Apple Family Sharing group. If you have not set that up, do that before continuing — see the Family Sharing guide.' },
-      { title: 'Open Screen Time on the parent phone', content: `Open Settings, tap Screen Time, then scroll down and tap your child's name under Family. Tap Turn On Screen Time.` },
-      { title: 'Set Downtime and App Limits', content: 'Tap Downtime to block all apps during specific hours (for example, 9 PM to 7 AM). Tap App Limits to set daily minutes for categories like Games or Social.' },
-      { title: 'Turn on Content & Privacy Restrictions', content: 'Tap Content & Privacy Restrictions and flip it on. Pick Content Restrictions to block adult websites, mature movies, and explicit music.' },
-      { title: 'Set a Screen Time passcode', content: 'Tap Change Screen Time Passcode and pick a four-digit code that your child does not know. Without it, they cannot change the limits you set.' },
-    ],
-  },
-  {
-    slug: 'set-up-parental-controls-android',
-    title: 'How to Set Up Parental Controls on Android',
-    excerpt: 'Use Google Family Link plus Play Store settings to control what your child downloads, sees, and does on their Android phone or tablet.',
-    category: 'safety-guides',
-    tags: ['parental controls', 'Android', 'Family Link', 'Google', 'kids'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Android has two layers of parental control: Google Family Link (covers the whole device) and Play Store restrictions (covers what can be downloaded). Together they let you approve apps, set screen time, filter content, and lock the device at night.
-
-Family Link is free and works for kids under 13 automatically. For teenagers, both parent and teen have to agree to turn it on — but it still gives parents strong oversight.`,
-    steps: [
-      { title: 'Install Family Link and link accounts', content: `Follow the Google Family Link setup guide first — install the app on both phones, create or link the child's Google account, and make sure the child's phone shows up in your parent app.` },
-      { title: 'Open Play Store restrictions', content: `On the child's phone, open the Play Store app, tap the profile icon, then Settings, then Family, then Parental Controls. Flip the switch on and create a PIN only you know.` },
-      { title: 'Pick content ratings', content: 'Tap each category — Apps & games, Movies, TV, Books, Music — and pick the maturity level you want. Everything above that level will be hidden or require your approval.' },
-      { title: 'Turn on Google SafeSearch', content: `In Family Link, tap your child's name, then Controls, then Google Search, then SafeSearch. Turn it on — this filters adult content out of Google search results.` },
-      { title: 'Set bedtime and app limits', content: 'In Family Link, tap Controls, then Daily Limit for total screen time. Tap Bedtime to lock the phone automatically during sleep hours. Calls and emergency features still work when the phone is locked.' },
-    ],
-  },
-  {
+      {
     slug: 'set-up-youtube-kids',
     title: 'How to Set Up YouTube Kids',
     excerpt: 'YouTube Kids is a free, child-safe version of YouTube with parental controls, age-based content filters, and no comments section.',
@@ -512,28 +323,7 @@ Setup takes under 15 minutes. You create a Google account (Fitbit accounts moved
       { title: 'Set daily goals', content: 'The app will ask for your age, height, weight, and goals. A common default is 10,000 steps per day and 8 hours of sleep. You can change these any time from Settings.' },
     ],
   },
-  {
-    slug: 'set-up-galaxy-watch',
-    title: 'How to Set Up Samsung Galaxy Watch',
-    excerpt: 'Connect your Samsung Galaxy Watch to an Android phone, install apps, and turn on health features like heart rate and sleep tracking.',
-    category: 'health-tech',
-    tags: ['Galaxy Watch', 'Samsung', 'Android', 'wearable', 'setup'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Samsung Galaxy Watch is a smart watch that works best with Android phones — especially Samsung Galaxy phones. It tracks steps, sleep, heart rate, and blood oxygen, and can even take an EKG reading. Newer models (Watch 4 and later) run Google's Wear OS.
-
-Setup uses two apps: Galaxy Wearable (to pair and manage the watch) and Samsung Health (to track fitness). Both are free in the Play Store.`,
-    steps: [
-      { title: 'Charge the watch before setup', content: 'Place the Galaxy Watch on its wireless charger until the battery shows at least 50%. The watch ships partially charged but a full battery makes setup smoother.' },
-      { title: 'Install Galaxy Wearable on your phone', content: 'On your Android phone, open the Play Store, search "Galaxy Wearable," and install it. Apple iPhones cannot fully pair with newer Galaxy Watches.' },
-      { title: 'Put the watch on your wrist and turn on', content: 'Hold the Home button (top right) for 3 seconds until the watch turns on. Pick your language.' },
-      { title: 'Pair through Galaxy Wearable', content: 'Open the Galaxy Wearable app and tap Start. The app finds the watch over Bluetooth — tap your model name, then confirm the pairing PIN matches on both screens.' },
-      { title: 'Set up Samsung Health', content: 'Install Samsung Health from the Play Store if you do not have it. Open it, sign in with your Samsung account, and enter age, height, weight, and goals. Turn on Continuous Heart Rate and Sleep Tracking in the settings.' },
-    ],
-  },
-  {
+    {
     slug: 'use-fall-detection-wearables',
     title: 'How to Turn On Fall Detection on Your Device',
     excerpt: `Apple Watch, Pixel phones, and many medical alerts can detect a hard fall and automatically call for help — here's how to turn it on.`,
@@ -576,28 +366,7 @@ Filters work best on a computer — mobile apps do not let you create them, thou
       { title: 'Apply to existing messages', content: 'Check the box that says Also apply filter to matching conversations. This runs the filter backwards on every email you have ever received that matches, not just new ones.' },
     ],
   },
-  {
-    slug: 'organize-email-folders-labels',
-    title: 'How to Organize Email with Folders and Labels',
-    excerpt: 'Take control of a messy inbox with folders, labels, and a simple system that works in Gmail, Outlook, and Apple Mail.',
-    category: 'essential-skills',
-    tags: ['email', 'organization', 'folders', 'labels', 'productivity'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Organizing email with folders or labels makes it much easier to find an old message and keeps your inbox from feeling overwhelming. Gmail calls them labels. Outlook and Apple Mail call them folders. They work the same way.
-
-A simple system works best: one folder for each big category (Bills, Family, Work, Travel) rather than many tiny ones. Most people do not need more than five or six.`,
-    steps: [
-      { title: 'Pick 4–6 big categories', content: 'Think about what emails you receive most: Bills, Family, Work, Travel, Shopping, Newsletters. Pick a small number — too many folders make it harder to find things, not easier.' },
-      { title: 'Create the folders or labels', content: 'In Gmail on a computer, click the plus sign next to Labels in the left sidebar. In Outlook, right-click your email account and pick New Folder. In Apple Mail, click Mailbox, then New Mailbox.' },
-      { title: 'Move existing emails', content: 'Drag messages from the inbox onto a folder or label in the sidebar. To move many at once, hold the Shift key while clicking the first and last message, then drag them all together.' },
-      { title: 'Set up a filter or rule for future email', content: 'Create a filter (Gmail) or rule (Outlook, Apple Mail) so future emails from the same senders go straight into the right folder. See the Gmail filters guide for step-by-step instructions.' },
-      { title: 'Archive instead of delete', content: 'When you finish reading an email, archive it instead of leaving it in the inbox. Archive means "keep it but hide it". You can still search for it later. But it clears out the inbox.' },
-    ],
-  },
-  {
+    {
     slug: 'set-up-email-signature',
     title: 'How to Set Up an Email Signature',
     excerpt: 'Add your name, phone number, and any contact info at the bottom of every email you send — set it once and forget it.',

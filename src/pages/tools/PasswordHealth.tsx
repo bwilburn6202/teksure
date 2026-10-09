@@ -157,8 +157,8 @@ export default function PasswordHealth() {
                 )}
               </div>
 
-              <div className="mt-4 p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
-                <p className="text-xs text-blue-700 dark:text-blue-300">
+              <div className="mt-4 p-3 rounded-lg bg-info border border-info-foreground/25 ">
+                <p className="text-sm text-info-foreground ">
                   <strong>Privacy:</strong> we never see your password. We send only the first 5 characters of a one-way scrambled version (a SHA-1 hash) to the breach database, then check the rest right here in your browser. This is called &quot;k-anonymity&quot; — it is the same method 1Password and Firefox use.
                 </p>
               </div>
@@ -167,39 +167,39 @@ export default function PasswordHealth() {
 
           {result && (
             <Card className={`mb-6 border ${
-              result.errored ? 'border-amber-300 bg-amber-50 dark:bg-amber-900/20' :
-              result.pwned ? 'border-red-300 bg-red-50 dark:bg-red-950/20' :
-              'border-green-300 bg-green-50 dark:bg-green-950/20'
+              result.errored ? 'border-amber-300 bg-warn dark:bg-amber-900/20' :
+              result.pwned ? 'border-red-300 bg-danger dark:bg-red-950/20' :
+              'border-green-300 bg-success dark:bg-green-950/20'
             }`}>
               <CardContent className="p-5">
                 {result.errored ? (
                   <div className="flex gap-3">
-                    <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                    <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold text-sm">We could not reach the breach database.</p>
-                      <p className="text-xs text-muted-foreground mt-1">
+                      <p className="font-semibold text-base">We could not reach the breach database.</p>
+                      <p className="text-sm text-muted-foreground mt-1">
                         Check your internet connection and try again.
                       </p>
                     </div>
                   </div>
                 ) : result.pwned ? (
                   <div className="flex gap-3">
-                    <AlertTriangle className="h-5 w-5 text-red-600 shrink-0 mt-0.5" />
+                    <AlertTriangle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" />
                     <div>
-                      <Badge className="bg-red-100 text-red-700 border-red-300 mb-2">Found in {result.count.toLocaleString()} breaches</Badge>
-                      <p className="font-semibold text-sm mb-1">Change this password right away.</p>
-                      <p className="text-xs text-muted-foreground">
+                      <Badge className="bg-danger text-danger-foreground border-danger-foreground/25 mb-2">Found in {result.count.toLocaleString()} breaches</Badge>
+                      <p className="font-semibold text-base mb-1">Change this password right away.</p>
+                      <p className="text-sm text-muted-foreground">
                         This exact password has been found in known data leaks. Anywhere you used it, the account is at risk. Pick a new passphrase below and update every site where you used the old one.
                       </p>
                     </div>
                   </div>
                 ) : (
                   <div className="flex gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" />
                     <div>
-                      <Badge className="bg-green-100 text-green-700 border-green-300 mb-2">Not found in any known breach</Badge>
-                      <p className="font-semibold text-sm mb-1">Good news — this one has not leaked.</p>
-                      <p className="text-xs text-muted-foreground">
+                      <Badge className="bg-success text-success-foreground border-success-foreground/25 mb-2">Not found in any known breach</Badge>
+                      <p className="font-semibold text-base mb-1">Good news — this one has not leaked.</p>
+                      <p className="text-sm text-muted-foreground">
                         That said, length still matters. Aim for at least 16 characters and never reuse the same password on more than one site.
                       </p>
                     </div>
@@ -217,7 +217,7 @@ export default function PasswordHealth() {
                   <Sparkles className="h-4 w-4" /> Generate
                 </Button>
               </div>
-              <p className="text-sm text-muted-foreground mb-3">
+              <p className="text-base text-muted-foreground mb-3">
                 Four random everyday words plus two digits. Easy to remember. Hard for a computer to guess. Tap to copy.
               </p>
               {generated.length === 0 ? (
@@ -234,7 +234,7 @@ export default function PasswordHealth() {
                     >
                       <code className="font-mono text-sm">{p}</code>
                       {copied === p ? (
-                        <span className="text-xs text-green-600 inline-flex items-center gap-1"><Check className="h-3 w-3" /> Copied</span>
+                        <span className="text-sm text-success-foreground inline-flex items-center gap-1"><Check className="h-3 w-3" /> Copied</span>
                       ) : (
                         <Copy className="h-4 w-4 text-muted-foreground" />
                       )}
@@ -249,16 +249,16 @@ export default function PasswordHealth() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/password-strength" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Password Strength</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Quickly score how strong any password is.</p>
+                <p className="font-medium text-base">Password Strength</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Quickly score how strong any password is.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Paste a message — see if it is a scam.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Paste a message — see if it is a scam.</p>
               </Link>
               <Link to="/scam-defense" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Defense Center</p>
-                <p className="text-xs text-muted-foreground mt-0.5">All scam protection tools in one place.</p>
+                <p className="font-medium text-base">Scam Defense Center</p>
+                <p className="text-sm text-muted-foreground mt-0.5">All scam protection tools in one place.</p>
               </Link>
             </div>
           </div>

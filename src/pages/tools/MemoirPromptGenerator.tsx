@@ -65,20 +65,20 @@ export default function MemoirPromptGenerator() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Memoir Prompt Generator | TekSure" description="40 thoughtful writing prompts for older adults capturing their life story. Pick a theme, get a prompt, write for 15 minutes. Repeat tomorrow." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <BookOpen className="h-7 w-7 text-amber-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Memoir Prompts</h1>
+            <BookOpen className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Memoir Prompts</h1>
           </div>
-          <p className="text-gray-600 text-lg">One prompt per day. Write 10-15 minutes. By the end of three months you will have a memoir.</p>
+          <p className="text-muted-foreground text-lg">One prompt per day. Write 10-15 minutes. By the end of three months you will have a memoir.</p>
         </div>
 
         <Card className="mb-4 print:hidden">
           <CardContent className="py-4 px-4">
-            <p className="text-sm font-semibold text-gray-700 mb-2">Pick a theme (or leave All Themes selected for a random prompt)</p>
+            <p className="text-base font-semibold text-foreground mb-2">Pick a theme (or leave All Themes selected for a random prompt)</p>
             <div className="flex flex-wrap gap-2">
               <Button size="sm" variant={selectedTheme === null ? "default" : "outline"} onClick={() => setSelectedTheme(null)}>All Themes</Button>
               {THEMES.map(t => (
@@ -88,10 +88,10 @@ export default function MemoirPromptGenerator() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-amber-50 border-amber-200 border-2">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 border-2">
           <CardContent className="py-6 px-6">
-            <Badge variant="outline" className="mb-3 bg-white">{currentPrompt.theme}</Badge>
-            <p className="text-2xl font-semibold text-gray-900 leading-snug">{currentPrompt.text}</p>
+            <Badge variant="outline" className="mb-3 bg-card">{currentPrompt.theme}</Badge>
+            <p className="text-2xl font-semibold text-foreground leading-snug">{currentPrompt.text}</p>
           </CardContent>
         </Card>
 
@@ -104,18 +104,18 @@ export default function MemoirPromptGenerator() {
           </Button>
         </div>
 
-        <Card className="mt-6 bg-blue-50 border-blue-200">
+        <Card className="mt-6 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Tip:</span> If writing by hand or typing is hard, use your phone's Voice Memo (iPhone) or Recorder (Android) to speak your answer. Free transcription is available at otter.ai or in the Voice Memos app. The recording IS the memoir — your voice in your family's hands.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Tip:</span> If writing by hand or typing is hard, use your phone's Voice Memo (iPhone) or Recorder (Android) to speak your answer. Free transcription is available at otter.ai or in the Voice Memos app. The recording IS the memoir — your voice in your family's hands.</p>
           </CardContent>
         </Card>
 
-        <Card className="mt-3 bg-emerald-50 border-emerald-200">
+        <Card className="mt-3 bg-success border-success-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-emerald-900"><span className="font-semibold">Want a bound book?</span> StoryWorth.com mails a weekly prompt for a year and binds your answers into a hardcover book ($99-149). Remento.co does the same with voice recordings. Lulu.com and Amazon KDP let you self-publish for $0 setup once you have a manuscript.</p>
+            <p className="text-base text-success-foreground"><span className="font-semibold">Want a bound book?</span> StoryWorth.com mails a weekly prompt for a year and binds your answers into a hardcover book ($99-149). Remento.co does the same with voice recordings. Lulu.com and Amazon KDP let you self-publish for $0 setup once you have a manuscript.</p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

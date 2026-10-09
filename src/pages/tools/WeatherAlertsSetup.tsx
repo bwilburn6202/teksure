@@ -85,7 +85,7 @@ export default function WeatherAlertsSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-sky-500/10 rounded-full">
-                <CloudRain className="h-8 w-8 text-sky-600" />
+                <CloudRain className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Weather Alerts Setup</h1>
@@ -100,7 +100,7 @@ export default function WeatherAlertsSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your phone</p>
+              <p className="text-base font-semibold mb-3">Pick your phone</p>
               <div className="flex gap-2">
                 {(['iphone', 'android'] as Phone[]).map(p => (
                   <Button key={p} variant={phone === p ? 'default' : 'outline'} onClick={() => setPhone(p)}>
@@ -116,7 +116,7 @@ export default function WeatherAlertsSetup() {
             <CardContent className="p-5">
               <ol className="space-y-3">
                 {setup.government.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <div>
                       <p className="font-semibold">{s.title}</p>
@@ -133,7 +133,7 @@ export default function WeatherAlertsSetup() {
             <CardContent className="p-5">
               <ol className="space-y-3">
                 {setup.weatherApp.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <div>
                       <p className="font-semibold">{s.title}</p>
@@ -151,10 +151,10 @@ export default function WeatherAlertsSetup() {
               <Card key={a.name} className="border-border">
                 <CardContent className="p-5">
                   <p className="font-semibold mb-1">{a.name}</p>
-                  <p className="text-sm text-muted-foreground mb-2">{a.what}</p>
+                  <p className="text-base text-muted-foreground mb-2">{a.what}</p>
                   <ul className="space-y-1 mb-3">
                     {a.notes.map((n, i) => (
-                      <li key={i} className="flex gap-2 text-xs text-muted-foreground"><span className="text-primary">•</span><span>{n}</span></li>
+                      <li key={i} className="flex gap-2 text-sm text-muted-foreground"><span className="text-primary">•</span><span>{n}</span></li>
                     ))}
                   </ul>
                   <a href={a.link} target="_blank" rel="noreferrer"
@@ -166,9 +166,9 @@ export default function WeatherAlertsSetup() {
             ))}
           </div>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">If you live in a tornado, hurricane, or wildfire area</p>
                 <p className="text-muted-foreground">
@@ -180,8 +180,8 @@ export default function WeatherAlertsSetup() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A note on alert fatigue</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A note on alert fatigue</p>
+              <p className="text-sm text-muted-foreground">
                 Some areas get a LOT of weather alerts. If your phone is buzzing daily, you can mute "Hourly Forecasts" in Apple Weather (Notifications → Weather → tone down) without losing the severe ones. The severe alerts have their own special tone — keep those loud.
               </p>
             </CardContent>
@@ -191,16 +191,16 @@ export default function WeatherAlertsSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/fall-detection-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Fall Detection Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For other emergencies.</p>
+                <p className="font-medium text-base">Fall Detection Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For other emergencies.</p>
               </Link>
               <Link to="/tools/travel-tech-checklist" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Travel Tech Checklist</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For weather alerts at the destination.</p>
+                <p className="font-medium text-base">Travel Tech Checklist</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For weather alerts at the destination.</p>
               </Link>
               <Link to="/emergency-help" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Emergency Help</p>
-                <p className="text-xs text-muted-foreground mt-0.5">When you need someone right now.</p>
+                <p className="font-medium text-base">Emergency Help</p>
+                <p className="text-sm text-muted-foreground mt-0.5">When you need someone right now.</p>
               </Link>
             </div>
           </div>

@@ -43,7 +43,7 @@ export function CopyButton({ text, className = '' }: CopyButtonProps) {
         </Button>
       </TooltipTrigger>
       <TooltipContent>
-        <p className="text-xs">{copied ? 'Copied!' : 'Copy'}</p>
+        <p className="text-sm">{copied ? 'Copied!' : 'Copy'}</p>
       </TooltipContent>
     </Tooltip>
   );

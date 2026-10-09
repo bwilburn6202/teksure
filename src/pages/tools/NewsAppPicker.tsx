@@ -109,7 +109,7 @@ export default function NewsAppPicker() {
       <main className="min-h-screen bg-background">
         <section className="bg-gradient-to-br from-blue-50 via-background to-slate-50 dark:from-blue-950/20 dark:to-slate-950/20 border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto text-center">
-            <div className="flex justify-center mb-3"><div className="p-3 bg-blue-500/10 rounded-full"><Newspaper className="h-8 w-8 text-blue-600" /></div></div>
+            <div className="flex justify-center mb-3"><div className="p-3 bg-blue-500/10 rounded-full"><Newspaper className="h-8 w-8 text-info-foreground" /></div></div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">News App Picker for Seniors</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">Eight calmer ways to read the news, with prices and what each one is best at.</p>
           </div>
@@ -126,11 +126,11 @@ export default function NewsAppPicker() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick a source</p>
+              <p className="text-base font-semibold mb-3">Pick a source</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {SOURCES.map(o => (
                   <button key={o.id} onClick={() => setS(o.id)} className={`p-3 rounded-lg border text-left transition-all ${s === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'}`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -142,14 +142,14 @@ export default function NewsAppPicker() {
               <Badge variant="outline" className="mb-2">{pick.name}</Badge>
               <Badge variant="outline" className="ml-2 mb-2">{pick.cost}</Badge>
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-3 mb-2">Best for</p>
-              <p className="text-sm mb-4">{pick.whoFor}</p>
+              <p className="text-base mb-4">{pick.whoFor}</p>
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">What is great</p>
               <ul className="space-y-2 mb-4">
-                {pick.highlights.map((h, i) => (<li key={i} className="flex gap-3 text-sm"><span className="shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2" /><span>{h}</span></li>))}
+                {pick.highlights.map((h, i) => (<li key={i} className="flex gap-3 text-base"><span className="shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2" /><span>{h}</span></li>))}
               </ul>
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Watch out for</p>
               <ul className="space-y-2 mb-4">
-                {pick.watchOuts.map((w, i) => (<li key={i} className="flex gap-3 text-sm"><span className="shrink-0 w-1.5 h-1.5 rounded-full bg-amber-500 mt-2" /><span>{w}</span></li>))}
+                {pick.watchOuts.map((w, i) => (<li key={i} className="flex gap-3 text-base"><span className="shrink-0 w-1.5 h-1.5 rounded-full bg-amber-500 mt-2" /><span>{w}</span></li>))}
               </ul>
               <a href={pick.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 mt-1 text-xs text-primary hover:underline">Visit official site <ExternalLink className="h-3 w-3" /></a>
             </CardContent>
@@ -157,9 +157,9 @@ export default function NewsAppPicker() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Bonus: news in audio form</p>
-              <p className="text-xs text-muted-foreground mb-2">Pocket Casts (free, with a 4/mo Plus tier) is a clean podcast app for iPhone and Android. Use it for The Daily (NYT), Up First (NPR), What&rsquo;s News (WSJ), and Post Reports (Washington Post). Listening while you cook breakfast is a calmer start to the day than scrolling.</p>
-              <p className="text-xs text-muted-foreground">Yahoo News (free with ads) is fine as a quick headline scan, but it pulls from many sources of varying quality — treat it as a starting point, not a destination.</p>
+              <p className="text-base font-semibold mb-2">Bonus: news in audio form</p>
+              <p className="text-sm text-muted-foreground mb-2">Pocket Casts (free, with a 4/mo Plus tier) is a clean podcast app for iPhone and Android. Use it for The Daily (NYT), Up First (NPR), What&rsquo;s News (WSJ), and Post Reports (Washington Post). Listening while you cook breakfast is a calmer start to the day than scrolling.</p>
+              <p className="text-sm text-muted-foreground">Yahoo News (free with ads) is fine as a quick headline scan, but it pulls from many sources of varying quality — treat it as a starting point, not a destination.</p>
             </CardContent>
           </Card>
 
@@ -167,16 +167,16 @@ export default function NewsAppPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/library-power-pack" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Library Power Pack</p>
-                <p className="text-xs text-muted-foreground mt-0.5">PressReader free with a library card.</p>
+                <p className="font-medium text-base">Library Power Pack</p>
+                <p className="text-sm text-muted-foreground mt-0.5">PressReader free with a library card.</p>
               </Link>
               <Link to="/tools/podcast-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Podcast Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Find your first three podcasts.</p>
+                <p className="font-medium text-base">Podcast Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Find your first three podcasts.</p>
               </Link>
               <Link to="/tools/ai-image-spotter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">AI Image Spotter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Tell real photos from AI fakes.</p>
+                <p className="font-medium text-base">AI Image Spotter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Tell real photos from AI fakes.</p>
               </Link>
             </div>
           </div>

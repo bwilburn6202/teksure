@@ -467,14 +467,14 @@ export default function DeepfakeDefenseHub() {
       <main id="main-content" className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Hero */}
         <section className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-red-100 dark:bg-red-950/40 text-red-700 dark:text-red-300">
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-danger text-danger-foreground ">
             <ShieldAlert className="w-4 h-4" />
-            <span className="text-sm font-medium">Deepfake Defense Hub</span>
+            <span className="text-base font-medium">Deepfake Defense Hub</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             AI Is Being Used Against You.
             <br />
-            <span className="text-red-600 dark:text-red-400">Here's How to Fight Back.</span>
+            <span className="text-danger-foreground ">Here's How to Fight Back.</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Voice clones. Fake videos. "Your grandchild is in jail" calls that sound exactly like
@@ -487,7 +487,7 @@ export default function DeepfakeDefenseHub() {
               <a
                 key={s.id}
                 href={`#${s.id}`}
-                className="text-sm px-4 py-2 rounded-full border border-border hover:border-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors"
+                className="text-sm px-4 py-2 rounded-full border border-border hover:border-red-400 hover:bg-danger transition-colors"
               >
                 {s.title}
               </a>
@@ -530,7 +530,7 @@ export default function DeepfakeDefenseHub() {
                           className="p-4 rounded-lg bg-background/80 backdrop-blur border border-border/60"
                         >
                           <div className="flex items-start gap-3">
-                            <Eye className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                            <Eye className="w-5 h-5 text-danger-foreground shrink-0 mt-0.5" />
                             <div className="flex-1 min-w-0">
                               <div className="flex items-center gap-2 flex-wrap mb-1">
                                 {item.url ? (
@@ -551,7 +551,7 @@ export default function DeepfakeDefenseHub() {
                                   <span className="font-semibold">{item.name}</span>
                                 )}
                               </div>
-                              <p className="text-sm text-muted-foreground leading-relaxed">
+                              <p className="text-base text-muted-foreground leading-relaxed">
                                 {item.description}
                               </p>
                             </div>
@@ -589,7 +589,7 @@ export default function DeepfakeDefenseHub() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="bg-transparent border-white text-white hover:bg-white hover:text-red-700"
+                  className="bg-transparent border-white text-white hover:bg-card hover:text-danger-foreground"
                 >
                   <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener noreferrer">
                     <Flag className="w-4 h-4 mr-2" />

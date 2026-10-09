@@ -21,7 +21,7 @@ import {
 import { SEOHead } from '@/components/SEOHead';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { guides } from '@/data/guides';
+import { GUIDE_COUNT_LABEL } from '@/data/site-stats';
 
 /**
  * TekSure — About page.
@@ -32,9 +32,6 @@ import { guides } from '@/data/guides';
  * an 80-year-old who has never used a computer.
  */
 
-const guideCount = guides.length;
-// Round down to the nearest hundred for a friendlier, less-brittle number.
-const guideCountRounded = Math.floor(guideCount / 100) * 100;
 
 const pillars = [
   {
@@ -73,7 +70,7 @@ const audience = [
 const differences = [
   {
     icon: BookOpen,
-    title: `${guideCountRounded.toLocaleString()}+ guides, read-aloud tested`,
+    title: `${GUIDE_COUNT_LABEL} guides, read-aloud tested`,
     body:
       'Every guide is written to be read aloud by an 80-year-old who’s never used a computer. If a sentence stumbles, we rewrite it.',
   },
@@ -90,12 +87,6 @@ const differences = [
       'We don’t track you across the web. We don’t sell your data. We don’t build a profile of who you are. Full stop.',
   },
   {
-    icon: Sparkles,
-    title: 'TekBrain answers only from our verified guides',
-    body:
-      'Our AI assistant won’t make things up. It answers from our written, reviewed guides — and tells you where every answer came from.',
-  },
-  {
     icon: Calendar,
     title: 'Book a real human when you need one',
     body:
@@ -104,7 +95,7 @@ const differences = [
 ];
 
 const trustStats = [
-  { value: `${guideCountRounded.toLocaleString()}+`, label: 'Plain-English guides' },
+  { value: GUIDE_COUNT_LABEL, label: 'Plain-English guides' },
   { value: '150+', label: 'Friendly tools & wizards' },
   { value: 'Free', label: 'No paywalls on guides or tools' },
 ];
@@ -459,45 +450,6 @@ const About = () => {
         }
 
         /* TEKBRAIN */
-        .teksure-about .brain-card {
-          background: linear-gradient(135deg, #EDE4FF 0%, #E6F0FF 100%);
-          border: 1px solid #D7CCFA;
-          border-radius: 24px;
-          padding: 44px 40px;
-          display: grid;
-          grid-template-columns: auto 1fr;
-          gap: 32px; align-items: center;
-        }
-        .teksure-about .brain-icon {
-          width: 96px; height: 96px; border-radius: 28px;
-          display: grid; place-items: center;
-          background: #fff;
-          color: #513C9C;
-          box-shadow: 0 10px 26px rgba(81,60,156,0.18);
-        }
-        .teksure-about .brain-icon svg { width: 44px; height: 44px; stroke-width: 1.8; }
-        .teksure-about .brain-card h2 {
-          margin-bottom: 10px;
-          color: #2A1E5A;
-        }
-        .teksure-about .brain-card p {
-          font-size: 18px; line-height: 1.6;
-          color: #3a2f6a; margin: 0 0 18px;
-        }
-        .teksure-about .brain-cta {
-          display: inline-flex; align-items: center; gap: 10px;
-          background: #2A5FCC; color: #fff;
-          padding: 12px 22px; border-radius: 12px;
-          font-weight: 700; font-size: 16px;
-          text-decoration: none;
-          box-shadow: 0 4px 14px rgba(42,95,204,0.35);
-          transition: transform .15s, box-shadow .15s, background .15s;
-        }
-        .teksure-about .brain-cta:hover {
-          transform: translateY(-1px);
-          box-shadow: 0 10px 24px rgba(42,95,204,0.4);
-          background: #234FB0;
-        }
 
         /* FUNDING */
         .teksure-about .funding-box {
@@ -624,11 +576,6 @@ const About = () => {
           .teksure-about .pillars { grid-template-columns: 1fr; }
           .teksure-about .diff-list { grid-template-columns: 1fr; }
           .teksure-about .involve-grid { grid-template-columns: 1fr; }
-          .teksure-about .brain-card {
-            grid-template-columns: 1fr; text-align: center;
-            padding: 36px 28px;
-          }
-          .teksure-about .brain-icon { margin: 0 auto; }
           .teksure-about .who-list { grid-template-columns: 1fr; }
           .teksure-about .funding-box { flex-direction: column; align-items: flex-start; }
           .teksure-about .stats { grid-template-columns: 1fr; gap: 28px; padding: 36px 24px; }
@@ -646,7 +593,6 @@ const About = () => {
           .teksure-about .pillar:hover,
           .teksure-about .involve-card:hover,
           .teksure-about .c-btn:hover,
-          .teksure-about .brain-cta:hover { transform: none; }
         }
       `}</style>
 
@@ -857,43 +803,6 @@ const About = () => {
 
         <div className="divider" />
 
-        {/* ============ MEET TEKBRAIN ============ */}
-        <section aria-labelledby="brain-heading">
-          <div className="wrap">
-            <div className="brain-card">
-              <div className="brain-icon" aria-hidden="true">
-                <Sparkles />
-              </div>
-              <div>
-                <span className="eyebrow" style={{ color: '#513C9C' }}>
-                  Meet TekBrain
-                </span>
-                <h2 id="brain-heading">Your patient, plain-English helper</h2>
-                <p>
-                  TekBrain is a friendly AI assistant that can answer your
-                  tech questions any time of day. Here’s the important part:
-                  TekBrain only answers from our verified, human-reviewed
-                  guides — so it can’t make things up, invent fake steps, or
-                  wander off into strange corners of the internet. When it
-                  replies, it shows you exactly which guide the answer came
-                  from.
-                </p>
-                <p>
-                  No scary robot. No surveillance. Just a calm, patient second
-                  opinion — available whenever you need one.
-                </p>
-                <Link to="/brain" className="brain-cta">
-                  <MessageCircle size={20} aria-hidden="true" />
-                  Ask TekBrain a question
-                  <ArrowRight size={18} aria-hidden="true" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div className="divider" />
-
         {/* ============ HOW WE'RE FUNDED ============ */}
         <section aria-labelledby="fund-heading">
           <div className="wrap-narrow">
@@ -995,7 +904,7 @@ const About = () => {
                   <Calendar size={20} aria-hidden="true" />
                   Book a session
                 </Link>
-                <Link to="/forum" className="c-btn c-tertiary">
+                <Link to="/get-help" className="c-btn c-tertiary">
                   <Users size={20} aria-hidden="true" />
                   Community forum
                 </Link>

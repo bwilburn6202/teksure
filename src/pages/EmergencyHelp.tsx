@@ -184,8 +184,8 @@ export default function EmergencyHelp() {
       <section className="bg-gradient-to-br from-red-500/10 via-background to-amber-500/10 border-b border-border py-12 px-4">
         <div className="container max-w-3xl mx-auto text-center">
           <div className="flex justify-center mb-4">
-            <div className="p-4 bg-red-100 dark:bg-red-950/40 rounded-full">
-              <Shield className="h-10 w-10 text-red-600 dark:text-red-400" />
+            <div className="p-4 bg-danger rounded-full">
+              <Shield className="h-10 w-10 text-danger-foreground " />
             </div>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold mb-3">Emergency Tech Help</h1>
@@ -200,7 +200,7 @@ export default function EmergencyHelp() {
         {/* Quick jump */}
         <Card className="mb-8 bg-muted/40">
           <CardContent className="py-5">
-            <p className="font-semibold text-sm mb-3">Jump to your situation:</p>
+            <p className="font-semibold text-base mb-3">Jump to your situation:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {scenarios.map((s) => (
                 <a
@@ -252,9 +252,9 @@ export default function EmergencyHelp() {
                 </Accordion>
 
                 {/* Tip */}
-                <div className="mt-6 rounded-lg border border-amber-300/50 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-700/40 px-4 py-3">
-                  <p className="text-xs font-bold text-amber-700 dark:text-amber-400 mb-1">Quick Tip</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{scenario.tip}</p>
+                <div className="mt-6 rounded-lg border border-amber-300/50 bg-warn dark:border-amber-700/40 px-4 py-3">
+                  <p className="text-sm font-bold text-warn-foreground mb-1">Quick Tip</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{scenario.tip}</p>
                 </div>
 
                 {/* Related link */}

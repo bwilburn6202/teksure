@@ -47,6 +47,7 @@ const PasswordStrength = () => {
         path="/tools/password-strength"
       />
       <Navbar />
+      <main className="flex-1">
 
       <div className="container pt-4">
         <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Password Strength' }]} />
@@ -90,8 +91,8 @@ const PasswordStrength = () => {
             {password.length > 0 && (
               <div className="space-y-2">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Strength:</span>
-                  <span className={`text-sm font-semibold ${strength.color}`}>{strength.label}</span>
+                  <span className="text-base text-muted-foreground">Strength:</span>
+                  <span className={`text-base font-semibold ${strength.color}`}>{strength.label}</span>
                 </div>
                 <div className="h-3 rounded-full bg-muted overflow-hidden">
                   <div
@@ -104,7 +105,7 @@ const PasswordStrength = () => {
 
             {/* Checklist */}
             <div className="space-y-3">
-              <p className="text-sm font-medium">Requirements:</p>
+              <p className="text-base font-medium">Requirements:</p>
               {checkItems.map(item => (
                 <div key={item.key} className="flex items-center gap-3">
                   {item.met ? (
@@ -112,20 +113,21 @@ const PasswordStrength = () => {
                   ) : (
                     <X className="h-4 w-4 text-muted-foreground" />
                   )}
-                  <span className={`text-sm ${item.met ? 'text-foreground' : 'text-muted-foreground'}`}>
+                  <span className={`text-base ${item.met ? 'text-foreground' : 'text-muted-foreground'}`}>
                     {item.label}
                   </span>
                 </div>
               ))}
             </div>
 
-            <p className="text-xs text-muted-foreground text-center pt-2">
+            <p className="text-sm text-muted-foreground text-center pt-2">
                Your password is checked locally in your browser. Nothing is stored or sent anywhere.
             </p>
           </CardContent>
         </Card>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

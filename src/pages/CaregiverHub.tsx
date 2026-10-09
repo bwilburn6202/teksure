@@ -75,7 +75,7 @@ const situations = [
       'Better yet, record a short screen recording on your phone and text it to them. They can watch it as many times as they need without calling.',
       'Our printable Quick Reference Cards are built for exactly this — one card per task, large type, no jargon.',
     ],
-    cta: { to: '/quick-reference-cards', label: 'Print a quick reference card' },
+    cta: { to: '/reference-cards', label: 'Print a quick reference card' },
   },
   {
     id: 'falling-for-scams',
@@ -125,7 +125,7 @@ const situations = [
       'Start with the thing they actually want to do. "Let me show you how to video call your grandkids" works better than "Let me teach you your phone."',
       'Never take over. Put the device in their hands and talk them through it. Doing it for them confirms their worst fear: that they cannot.',
     ],
-    cta: { to: '/tech-anxiety', label: 'Tech anxiety resources' },
+    cta: { to: '/get-help', label: 'Book a patient helper for them' },
   },
   {
     id: 'different-states',
@@ -157,7 +157,7 @@ const caregiverTools = [
     title: 'Apple Family Sharing',
     description:
       'Share subscriptions, locations, and screen time with up to six family members. The best way to help manage an Apple ID without sharing the password.',
-    to: '/guides/set-up-family-sharing-apple',
+    to: '/guides/how-to-set-up-family-sharing-caregiving',
   },
   {
     icon: Users,
@@ -278,7 +278,7 @@ export default function CaregiverHub() {
                   <h3 className="font-semibold text-foreground mb-2 leading-snug">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-4 flex-1">
                     {item.description}
                   </p>
                   <Link
@@ -371,7 +371,7 @@ export default function CaregiverHub() {
                       {tool.title}
                     </h3>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-4 flex-1">
                     {tool.description}
                   </p>
                   <Link
@@ -416,8 +416,8 @@ export default function CaregiverHub() {
                       </div>
                       <h3 className="font-semibold text-foreground">{s.topic}</h3>
                     </div>
-                    <p className="text-xs text-muted-foreground/90 italic mb-3">{s.intro}</p>
-                    <blockquote className="border-l-2 border-primary/40 pl-4 text-sm text-foreground/90 leading-relaxed">
+                    <p className="text-sm text-muted-foreground/90 italic mb-3">{s.intro}</p>
+                    <blockquote className="border-l-2 border-primary/40 pl-4 text-base text-foreground/90 leading-relaxed">
                       {s.script}
                     </blockquote>
                   </CardContent>
@@ -438,7 +438,7 @@ export default function CaregiverHub() {
                 <h3 className="text-lg font-bold text-foreground mb-2">
                   Free programs for seniors
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                <p className="text-base text-muted-foreground leading-relaxed mb-5">
                   Affordable Connectivity, discounted phone plans, free tablet programs from AARP,
                   and local library tech classes. Real programs, with real eligibility rules.
                 </p>
@@ -457,12 +457,12 @@ export default function CaregiverHub() {
                   <MessageSquare className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-2">Caregiver community</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                <p className="text-base text-muted-foreground leading-relaxed mb-5">
                   Ask questions, share what worked, and learn from other people doing exactly what
                   you are doing. Moderated, free, and no judgment.
                 </p>
                 <Button asChild variant="outline" className="rounded-xl gap-2">
-                  <Link to="/forum">
+                  <Link to="/get-help">
                     Visit the forum
                     <ArrowRight className="h-4 w-4" />
                   </Link>
@@ -488,9 +488,6 @@ export default function CaregiverHub() {
                     <Phone className="h-4 w-4" />
                     Book support for them
                   </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="rounded-xl">
-                  <Link to="/tech-anxiety">Tech anxiety resources</Link>
                 </Button>
               </div>
             </CardContent>

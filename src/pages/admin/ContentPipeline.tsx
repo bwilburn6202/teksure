@@ -62,7 +62,7 @@ const STATUS_CONFIG: Record<ScrapeStatus, { label: string; color: string; dot: s
 };
 
 function QualityBar({ score }: { score: number | null }) {
-  if (score === null) return <span className="text-muted-foreground text-xs">—</span>;
+  if (score === null) return <span className="text-muted-foreground text-sm">—</span>;
   const pct = Math.round(score * 100);
   const color =
     pct >= 70 ? 'bg-green-500' :
@@ -73,7 +73,7 @@ function QualityBar({ score }: { score: number | null }) {
       <div className="flex-1 h-1.5 rounded-full bg-muted overflow-hidden">
         <div className={`h-full rounded-full ${color}`} style={{ width: `${pct}%` }} />
       </div>
-      <span className="text-xs text-muted-foreground tabular-nums">{pct}%</span>
+      <span className="text-sm text-muted-foreground tabular-nums">{pct}%</span>
     </div>
   );
 }
@@ -113,7 +113,7 @@ function StatCard({
         </div>
         <div>
           <p className="text-2xl font-bold tabular-nums">{value}</p>
-          <p className="text-sm text-muted-foreground">{label}</p>
+          <p className="text-base text-muted-foreground">{label}</p>
         </div>
       </CardContent>
     </Card>
@@ -231,7 +231,7 @@ export default function ContentPipeline() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
           <div>
             <h1 className="text-2xl font-bold">Content Pipeline</h1>
-            <p className="text-muted-foreground text-sm mt-1">
+            <p className="text-muted-foreground text-base mt-1">
               Manage scraped articles from auto-categorization through to publication.
             </p>
           </div>
@@ -287,9 +287,9 @@ export default function ContentPipeline() {
                 ) : filtered.length === 0 ? (
                   <div className="flex flex-col items-center justify-center py-16 text-center text-muted-foreground gap-2">
                     <AlertTriangle className="h-8 w-8 opacity-30" />
-                    <p className="text-sm">No articles in this stage yet.</p>
+                    <p className="text-base">No articles in this stage yet.</p>
                     {activeTab === 'pending' && (
-                      <p className="text-xs">Articles appear here after the scraper runs.</p>
+                      <p className="text-sm">Articles appear here after the scraper runs.</p>
                     )}
                   </div>
                 ) : (
@@ -372,7 +372,7 @@ export default function ContentPipeline() {
                                   <Button
                                     size="sm"
                                     variant="outline"
-                                    className="h-7 px-2 text-xs text-green-600 border-green-200 hover:bg-green-50"
+                                    className="h-7 px-2 text-xs text-success-foreground border-success-foreground/25 hover:bg-success"
                                     disabled={updatingId === article.id}
                                     onClick={() => updateStatus(
                                       article.id,
@@ -388,7 +388,7 @@ export default function ContentPipeline() {
                                   <Button
                                     size="sm"
                                     variant="outline"
-                                    className="h-7 px-2 text-xs text-red-500 border-red-200 hover:bg-red-50"
+                                    className="h-7 px-2 text-xs text-danger-foreground border-danger-foreground/25 hover:bg-danger"
                                     disabled={updatingId === article.id}
                                     onClick={() => updateStatus(article.id, 'rejected')}
                                   >

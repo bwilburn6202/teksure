@@ -19,7 +19,7 @@ export default function DigitalLegacyPlanner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why this matters</h2>
-            <p className="text-sm">When someone passes, families get locked out of email, photos, social media, banking — even with a death certificate. Setting up these legacy options now saves your family weeks of paperwork and lost memories.</p>
+            <p className="text-base">When someone passes, families get locked out of email, photos, social media, banking — even with a death certificate. Setting up these legacy options now saves your family weeks of paperwork and lost memories.</p>
           </CardContent>
         </Card>
 
@@ -66,8 +66,8 @@ export default function DigitalLegacyPlanner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Password manager</h2>
-            <p className="text-sm">Most password managers (1Password, Bitwarden, LastPass) have an "Emergency Access" feature. Family member can request access. After waiting period, they get all passwords.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Most password managers (1Password, Bitwarden, LastPass) have an "Emergency Access" feature. Family member can request access. After waiting period, they get all passwords.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li><strong>1Password</strong> — share Family vault, recovery codes.</li>
               <li><strong>Bitwarden</strong> — Emergency Access (paid plan).</li>
               <li><strong>Apple Passwords (iCloud Keychain)</strong> — uses Legacy Contact.</li>

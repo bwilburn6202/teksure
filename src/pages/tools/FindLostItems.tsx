@@ -130,7 +130,7 @@ export default function FindLostItems() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-yellow-500/10 rounded-full">
-                <MapPin className="h-8 w-8 text-yellow-600" />
+                <MapPin className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Find Lost Items</h1>
@@ -145,7 +145,7 @@ export default function FindLostItems() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">What phone do you have?</p>
+              <p className="text-base font-semibold mb-3">What phone do you have?</p>
               <div className="flex gap-2">
                 {(['iphone', 'android'] as Phone[]).map(p => (
                   <Button key={p} variant={phone === p ? 'default' : 'outline'} onClick={() => setPhone(p)}>
@@ -158,7 +158,7 @@ export default function FindLostItems() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">What are you trying to track?</p>
+              <p className="text-base font-semibold mb-3">What are you trying to track?</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {ITEM_OPTIONS.map(o => {
                   const Icon = o.icon;
@@ -169,15 +169,15 @@ export default function FindLostItems() {
                       }`}>
                       <Icon className="h-5 w-5 text-muted-foreground shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-medium text-sm">{o.label}</p>
+                        <p className="font-medium text-base">{o.label}</p>
                       </div>
                     </button>
                   );
                 })}
               </div>
               {item && (
-                <div className="mt-3 p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
-                  <p className="text-xs text-blue-700 dark:text-blue-300">
+                <div className="mt-3 p-3 rounded-lg bg-info border border-info-foreground/25 ">
+                  <p className="text-sm text-info-foreground ">
                     <strong>For this:</strong> {ITEM_OPTIONS.find(o => o.id === item)?.tip}
                   </p>
                 </div>
@@ -194,13 +194,13 @@ export default function FindLostItems() {
                     <p className="font-semibold text-base">{t.brand}</p>
                     <Badge variant="outline">{t.price}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-2"><strong>Best for:</strong> {t.whoFor}</p>
-                  <p className="text-sm mb-3">{t.whatItDoes}</p>
+                  <p className="text-base text-muted-foreground mb-2"><strong>Best for:</strong> {t.whoFor}</p>
+                  <p className="text-base mb-3">{t.whatItDoes}</p>
 
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Setup</p>
                   <ol className="space-y-2 mb-3">
                     {t.setup.map((s, i) => (
-                      <li key={i} className="flex gap-2 text-sm">
+                      <li key={i} className="flex gap-2 text-base">
                         <span className="shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary text-xs font-semibold flex items-center justify-center mt-0.5">{i + 1}</span>
                         <span>{s}</span>
                       </li>
@@ -210,7 +210,7 @@ export default function FindLostItems() {
                   {t.notes && (
                     <ul className="space-y-1 mt-3 pt-3 border-t border-border">
                       {t.notes.map((n, i) => (
-                        <li key={i} className="flex gap-2 text-xs text-muted-foreground">
+                        <li key={i} className="flex gap-2 text-sm text-muted-foreground">
                           <span className="text-primary">•</span><span>{n}</span>
                         </li>
                       ))}
@@ -226,9 +226,9 @@ export default function FindLostItems() {
             ))}
           </div>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">A note about car tracking</p>
                 <p className="text-muted-foreground">
@@ -242,20 +242,20 @@ export default function FindLostItems() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/fall-detection-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Fall Detection Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Find your phone if you fall.</p>
+                <p className="font-medium text-base">Fall Detection Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Find your phone if you fall.</p>
               </Link>
               <Link to="/tools/smart-home-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Smart Home Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">First smart-home device picks.</p>
+                <p className="font-medium text-base">Smart Home Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">First smart-home device picks.</p>
               </Link>
               <Link to="/tools/bluetooth-pairing-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Bluetooth Pairing Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair any device to your phone.</p>
+                <p className="font-medium text-base">Bluetooth Pairing Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair any device to your phone.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: name each tag clearly ("Mom\'s keys", "blue wallet"). When you have three or four, generic names get confusing.
           </p>
         </div>

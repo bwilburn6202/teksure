@@ -59,34 +59,34 @@ export default function ReverseImageSearch() {
             <div className="grid sm:grid-cols-2 gap-3">{ENGINES.map(e => (
               <Card key={e.name}><CardContent className="p-4">
                 <div className="flex items-start justify-between mb-2"><h3 className="font-semibold text-sm">{e.name}</h3><Badge variant={e.free ? 'default' : 'secondary'} className="text-xs">{e.free ? 'Free' : 'Paid'}</Badge></div>
-                <p className="text-xs text-muted-foreground mb-2">{e.description}</p>
-                <p className="text-xs font-medium text-primary mb-3">{e.strength}</p>
+                <p className="text-sm text-muted-foreground mb-2">{e.description}</p>
+                <p className="text-sm font-medium text-primary mb-3">{e.strength}</p>
                 <a href={e.url} target="_blank" rel="noopener noreferrer" className="text-xs text-primary font-medium flex items-center gap-1 hover:underline">Open <ExternalLink className="h-3 w-3" /></a>
               </CardContent></Card>
             ))}</div>
           </TabsContent>
 
           <TabsContent value="face">
-            <div className="rounded-lg bg-amber-500/10 border border-amber-500/30 p-4 mb-6 flex gap-3"><AlertTriangle className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" /><div className="text-sm"><strong>Privacy notice.</strong> Facial recognition tools are powerful but raise serious privacy concerns. Only search for faces with good reason and never use them to stalk, harass, or discriminate against anyone.</div></div>
+            <div className="rounded-lg bg-amber-500/10 border border-amber-500/30 p-4 mb-6 flex gap-3"><AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" /><div className="text-sm"><strong>Privacy notice.</strong> Facial recognition tools are powerful but raise serious privacy concerns. Only search for faces with good reason and never use them to stalk, harass, or discriminate against anyone.</div></div>
             <div className="grid sm:grid-cols-2 gap-3">{FACE_ENGINES.map(e => (
-              <Card key={e.name}><CardContent className="p-4"><h3 className="font-semibold text-sm mb-1">{e.name}</h3><p className="text-xs text-muted-foreground mb-2">{e.description}</p><div className="flex items-center justify-between"><Badge variant="outline" className="text-xs">{e.pricing}</Badge><a href={e.url} target="_blank" rel="noopener noreferrer" className="text-xs text-primary font-medium flex items-center gap-1 hover:underline">Visit <ExternalLink className="h-3 w-3" /></a></div></CardContent></Card>
+              <Card key={e.name}><CardContent className="p-4"><h3 className="font-semibold text-sm mb-1">{e.name}</h3><p className="text-sm text-muted-foreground mb-2">{e.description}</p><div className="flex items-center justify-between"><Badge variant="outline" className="text-xs">{e.pricing}</Badge><a href={e.url} target="_blank" rel="noopener noreferrer" className="text-xs text-primary font-medium flex items-center gap-1 hover:underline">Visit <ExternalLink className="h-3 w-3" /></a></div></CardContent></Card>
             ))}</div>
           </TabsContent>
 
           <TabsContent value="enhance">
-            <p className="text-sm text-muted-foreground mb-4">Low-quality images can be enhanced with AI before running a reverse search. These tools increase resolution and clarity.</p>
+            <p className="text-base text-muted-foreground mb-4">Low-quality images can be enhanced with AI before running a reverse search. These tools increase resolution and clarity.</p>
             <div className="grid sm:grid-cols-2 gap-3">{UPSCALE.map(e => (
-              <Card key={e.name}><CardContent className="p-4"><h3 className="font-semibold text-sm mb-1">{e.name}</h3><p className="text-xs text-muted-foreground mb-2">{e.description}</p><div className="flex items-center justify-between"><Badge variant="outline" className="text-xs">{e.pricing}</Badge><a href={e.url} target="_blank" rel="noopener noreferrer" className="text-xs text-primary font-medium flex items-center gap-1 hover:underline">Visit <ExternalLink className="h-3 w-3" /></a></div></CardContent></Card>
+              <Card key={e.name}><CardContent className="p-4"><h3 className="font-semibold text-sm mb-1">{e.name}</h3><p className="text-sm text-muted-foreground mb-2">{e.description}</p><div className="flex items-center justify-between"><Badge variant="outline" className="text-xs">{e.pricing}</Badge><a href={e.url} target="_blank" rel="noopener noreferrer" className="text-xs text-primary font-medium flex items-center gap-1 hover:underline">Visit <ExternalLink className="h-3 w-3" /></a></div></CardContent></Card>
             ))}</div>
           </TabsContent>
 
           <TabsContent value="howto">
             <Card><CardContent className="p-6"><h2 className="text-lg font-semibold mb-4">How to Do a Reverse Image Search</h2>
               <div className="space-y-4">{HOW_TO_STEPS.map((step, i) => (
-                <div key={i} className="flex gap-4"><div className="bg-primary text-primary-foreground rounded-full h-8 w-8 flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</div><div><h3 className="font-medium text-sm">{step.title}</h3><p className="text-xs text-muted-foreground mt-1">{step.desc}</p></div></div>
+                <div key={i} className="flex gap-4"><div className="bg-primary text-primary-foreground rounded-full h-8 w-8 flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</div><div><h3 className="font-medium text-sm">{step.title}</h3><p className="text-sm text-muted-foreground mt-1">{step.desc}</p></div></div>
               ))}</div>
-              <div className="mt-6 p-4 rounded-lg bg-muted"><h3 className="text-sm font-semibold mb-2 flex items-center gap-2"><CheckCircle className="h-4 w-4 text-green-500" /> When to use reverse image search</h3>
-                <ul className="space-y-1 text-xs text-muted-foreground">{['Verify if a social media profile photo is real or stolen', 'Find the original source of an image', 'Check if a product photo is legitimate or copied from another site', 'Identify a landmark, plant, or animal in a photo', 'Find higher-resolution versions of an image'].map((t, i) => <li key={i} className="flex items-center gap-2"><CheckCircle className="h-3 w-3 text-green-500 shrink-0" />{t}</li>)}</ul>
+              <div className="mt-6 p-4 rounded-lg bg-muted"><h3 className="text-sm font-semibold mb-2 flex items-center gap-2"><CheckCircle className="h-4 w-4 text-success-foreground" /> When to use reverse image search</h3>
+                <ul className="space-y-1 text-sm text-muted-foreground">{['Verify if a social media profile photo is real or stolen', 'Find the original source of an image', 'Check if a product photo is legitimate or copied from another site', 'Identify a landmark, plant, or animal in a photo', 'Find higher-resolution versions of an image'].map((t, i) => <li key={i} className="flex items-center gap-2"><CheckCircle className="h-3 w-3 text-success-foreground shrink-0" />{t}</li>)}</ul>
               </div>
             </CardContent></Card>
           </TabsContent>

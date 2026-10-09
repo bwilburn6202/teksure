@@ -30,9 +30,9 @@ export default function RideshareForSeniors() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
+                <p className="text-base">{a.best}</p>
                 <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>

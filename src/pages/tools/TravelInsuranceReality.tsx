@@ -50,7 +50,7 @@ export default function TravelInsuranceReality() {
               <li><strong>AmEx Platinum</strong> ($695/yr) — premium trip and medical coverage.</li>
               <li><strong>Capital One Venture X</strong> ($395/yr) — trip cancellation, lost luggage.</li>
             </ul>
-            <p className="text-sm mt-3">Catch — you must pay for the trip with that card. Read the benefits guide BEFORE the trip.</p>
+            <p className="text-base mt-3">Catch — you must pay for the trip with that card. Read the benefits guide BEFORE the trip.</p>
           </CardContent>
         </Card>
 
@@ -70,7 +70,7 @@ export default function TravelInsuranceReality() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">"Cancel for any reason" rider</h2>
-            <p className="text-sm">Standard insurance only covers listed reasons (illness, weather, etc.). "CFAR" (Cancel For Any Reason) lets you cancel for ANY reason and get 50-75% back. Adds 40-50% to premium. Worth it for big trips when you&apos;re unsure.</p>
+            <p className="text-base">Standard insurance only covers listed reasons (illness, weather, etc.). "CFAR" (Cancel For Any Reason) lets you cancel for ANY reason and get 50-75% back. Adds 40-50% to premium. Worth it for big trips when you&apos;re unsure.</p>
           </CardContent>
         </Card>
 

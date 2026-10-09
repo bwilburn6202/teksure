@@ -123,8 +123,8 @@ export default function PasswordPhraseGenerator() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-violet-50 dark:bg-violet-950/30 flex items-center justify-center flex-shrink-0">
-                <KeyRound className="h-6 w-6 text-violet-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <KeyRound className="h-6 w-6 text-primary" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -141,14 +141,14 @@ export default function PasswordPhraseGenerator() {
             <CardHeader><CardTitle className="text-lg">Format options</CardTitle></CardHeader>
             <CardContent className="space-y-5">
               <div>
-                <p className="text-sm font-medium mb-2">How many words?</p>
+                <p className="text-base font-medium mb-2">How many words?</p>
                 <div className="grid grid-cols-3 gap-2">
                   {([4, 5, 6] as const).map((c) => (
                     <button
                       key={c}
                       onClick={() => setFormat((p) => ({ ...p, count: c }))}
                       className={`py-3 rounded-xl border text-sm font-medium transition-colors ${
-                        format.count === c ? 'border-violet-500 bg-violet-50 dark:bg-violet-950/30' : 'hover:border-primary hover:bg-muted/50'
+                        format.count === c ? 'border-violet-500 bg-primary/10 dark:bg-violet-950/30' : 'hover:border-primary hover:bg-muted/50'
                       }`}
                     >
                       <div className="font-semibold">{c} words</div>
@@ -162,15 +162,15 @@ export default function PasswordPhraseGenerator() {
 
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-sm">Capitalize words</span>
+                  <span className="text-base">Capitalize words</span>
                   <Switch checked={format.capitalize} onCheckedChange={(v) => setFormat((p) => ({ ...p, capitalize: v }))} />
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm">Add a number on the end</span>
+                  <span className="text-base">Add a number on the end</span>
                   <Switch checked={format.numbers} onCheckedChange={(v) => setFormat((p) => ({ ...p, numbers: v }))} />
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm">Add a symbol on the end</span>
+                  <span className="text-base">Add a symbol on the end</span>
                   <Switch checked={format.symbols} onCheckedChange={(v) => setFormat((p) => ({ ...p, symbols: v }))} />
                 </div>
               </div>
@@ -191,7 +191,7 @@ export default function PasswordPhraseGenerator() {
               <div className="h-3 bg-muted rounded-full overflow-hidden">
                 <div className={`h-full rounded-full ${strength.color} transition-all`} style={{ width: `${strength.pct}%` }} />
               </div>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 A 4-word random passphrase has roughly 44 bits of entropy. 5 words pushes it to 55. That is stronger than most 10-character random passwords — and far easier to type and remember.
               </p>
             </CardContent>
@@ -206,7 +206,7 @@ export default function PasswordPhraseGenerator() {
                   <div key={i} className="flex items-center gap-2">
                     <code className="flex-1 bg-muted rounded-lg px-4 py-3 text-base font-mono break-all select-all">{p}</code>
                     <Button variant="outline" size="icon" onClick={() => copyToClipboard(p)} aria-label={`Copy passphrase ${i + 1}`}>
-                      {copied === p ? <Check className="h-4 w-4 text-emerald-600" /> : <Copy className="h-4 w-4" />}
+                      {copied === p ? <Check className="h-4 w-4 text-success-foreground" /> : <Copy className="h-4 w-4" />}
                     </Button>
                   </div>
                 ))}
@@ -215,10 +215,10 @@ export default function PasswordPhraseGenerator() {
           )}
 
           {/* Why this works */}
-          <Card className="border-violet-200 dark:border-violet-800/50">
+          <Card className="border-primary/25 ">
             <CardContent className="pt-6">
               <div className="flex gap-3">
-                <ShieldCheck className="h-5 w-5 text-violet-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <ShieldCheck className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div className="text-sm">
                   <p className="font-semibold mb-1">Why passphrases beat "P@ssw0rd1"</p>
                   <p className="text-muted-foreground">
@@ -233,14 +233,14 @@ export default function PasswordPhraseGenerator() {
           <Card>
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-amber-500" aria-hidden="true" /> Quick Tips
+                <Lightbulb className="h-5 w-5 text-warn-foreground" aria-hidden="true" /> Quick Tips
               </CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2">
                 {TIPS.map((tip, i) => (
-                  <li key={i} className="flex gap-3 text-sm text-muted-foreground">
-                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 dark:bg-amber-950/30 text-amber-700 text-xs flex items-center justify-center font-medium">{i + 1}</span>
+                  <li key={i} className="flex gap-3 text-base text-muted-foreground">
+                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-warn text-warn-foreground text-xs flex items-center justify-center font-medium">{i + 1}</span>
                     {tip}
                   </li>
                 ))}
@@ -256,12 +256,12 @@ export default function PasswordPhraseGenerator() {
           {/* Cross-links */}
           <div className="grid sm:grid-cols-2 gap-3">
             <a href="/tools/password-leak-checker" className="rounded-xl border p-4 hover:border-primary hover:bg-muted/50 transition-colors">
-              <p className="font-semibold text-sm">Has your password been leaked? <ArrowRight className="inline h-4 w-4" /></p>
-              <p className="text-xs text-muted-foreground mt-1">Check safely against known breaches.</p>
+              <p className="font-semibold text-base">Has your password been leaked? <ArrowRight className="inline h-4 w-4" /></p>
+              <p className="text-sm text-muted-foreground mt-1">Check safely against known breaches.</p>
             </a>
             <a href="/guides/how-to-create-strong-password" className="rounded-xl border p-4 hover:border-primary hover:bg-muted/50 transition-colors">
-              <p className="font-semibold text-sm">Guide: how to create a strong password <ArrowRight className="inline h-4 w-4" /></p>
-              <p className="text-xs text-muted-foreground mt-1">Plain-English walkthrough with examples.</p>
+              <p className="font-semibold text-base">Guide: how to create a strong password <ArrowRight className="inline h-4 w-4" /></p>
+              <p className="text-sm text-muted-foreground mt-1">Plain-English walkthrough with examples.</p>
             </a>
           </div>
         </div>

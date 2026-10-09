@@ -28,7 +28,6 @@ import { useToast } from '@/hooks/use-toast';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 
 /* ── Types ─────────────────────────────────────────── */
 type BillType = 'cable' | 'internet' | 'phone' | 'cell' | 'streaming';
@@ -368,12 +367,6 @@ export default function BillNegotiator() {
       <main className="container py-10 min-h-[80vh] max-w-3xl mx-auto text-lg">
         <div className="relative no-print">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="bill-negotiator"
-              title="Bill Negotiator"
-              url="/tools/bill-negotiator"
-            />
           </div>
           <div className="flex items-center gap-3 mb-2 pr-14">
             <PhoneCall className="h-8 w-8 text-primary" aria-hidden="true" />
@@ -642,11 +635,11 @@ export default function BillNegotiator() {
             </Card>
 
             {/* Safety / realism note */}
-            <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 p-4 no-print">
-              <p className="text-base font-semibold text-amber-800 dark:text-amber-300 mb-1">
+            <div className="rounded-xl bg-warn border border-warn-foreground/25 p-4 no-print">
+              <p className="text-base font-semibold text-warn-foreground mb-1">
                  A few things to remember
               </p>
-              <ul className="text-sm text-amber-800/90 dark:text-amber-200/90 list-disc pl-5 space-y-1">
+              <ul className="text-base text-amber-800/90 dark:text-amber-200/90 list-disc pl-5 space-y-1">
                 <li>Not every call succeeds. If the first rep won&apos;t budge, hang up politely and call back later — you may reach someone more flexible.</li>
                 <li>
                   Be kind. Reps are people too, and politeness gets you further than pressure.

@@ -94,7 +94,7 @@ export default function LanguageLearningApps() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <Languages className="h-8 w-8 text-amber-600" />
+                <Languages className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Language Learning Apps for Seniors</h1>
@@ -107,10 +107,10 @@ export default function LanguageLearningApps() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Language Learning Apps' }]} />
 
-          <Card className="border-border bg-amber-50 dark:bg-amber-950/30 mb-6">
+          <Card className="border-border bg-warn mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Try Mango first — it is free</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Try Mango first — it is free</p>
+              <p className="text-sm text-muted-foreground">
                 Around 80% of US public libraries pay for Mango Languages so you do not have to. Sign up with your library card number for full access to 70+ languages — no trial limit, no ads, no upsell. Confirm your library participates by visiting the Mango library lookup page or calling your branch.
               </p>
             </CardContent>
@@ -124,18 +124,18 @@ export default function LanguageLearningApps() {
                     <p className="font-semibold text-base">{p.name}</p>
                     <Badge variant="outline">{p.cost}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {p.bestFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {p.bestFor}</p>
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {p.pros.map((pr, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{pr}</span></li>)}
+                        {p.pros.map((pr, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{pr}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {p.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                        {p.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -150,8 +150,8 @@ export default function LanguageLearningApps() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Quick Tip on staying with it</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Quick Tip on staying with it</p>
+              <p className="text-sm text-muted-foreground">
                 Pick a 10-minute window you already keep — after morning coffee, after the news, before bed. Daily 10 minutes beats a weekend cram every time. Pair the app with a weekly call to a friend or family member who speaks the language.
               </p>
             </CardContent>
@@ -161,20 +161,20 @@ export default function LanguageLearningApps() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/library-power-pack" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Library Power Pack</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Free apps your library card unlocks.</p>
+                <p className="font-medium text-base">Library Power Pack</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Free apps your library card unlocks.</p>
               </Link>
               <Link to="/tools/dictation-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Dictation Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Speak instead of type — great for practice.</p>
+                <p className="font-medium text-base">Dictation Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Speak instead of type — great for practice.</p>
               </Link>
               <Link to="/tools/translation-tools" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Translation Tools</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For travel, signs, and real-time chat.</p>
+                <p className="font-medium text-base">Translation Tools</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For travel, signs, and real-time chat.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: a new language at any age sharpens memory and lifts mood. Ten minutes a day is plenty.
           </p>
         </div>

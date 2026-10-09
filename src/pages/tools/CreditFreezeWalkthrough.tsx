@@ -118,7 +118,7 @@ export default function CreditFreezeWalkthrough() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <Lock className="h-8 w-8 text-blue-600" />
+                <Lock className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Credit Freeze Walkthrough</h1>
@@ -133,12 +133,12 @@ export default function CreditFreezeWalkthrough() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Why freeze your credit?</p>
+              <p className="text-base font-semibold mb-3">Why freeze your credit?</p>
               <div className="space-y-2">
                 {REASONS.map((r, i) => (
                   <div key={i} className="p-3 rounded-lg border border-border bg-muted/30">
-                    <p className="font-medium text-sm">{r.title}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{r.detail}</p>
+                    <p className="font-medium text-base">{r.title}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{r.detail}</p>
                   </div>
                 ))}
               </div>
@@ -146,7 +146,7 @@ export default function CreditFreezeWalkthrough() {
           </Card>
 
           <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Freeze each of the three bureaus</p>
-          <p className="text-xs text-muted-foreground mb-3">{done.size} of 3 done</p>
+          <p className="text-sm text-muted-foreground mb-3">{done.size} of 3 done</p>
 
           <div className="space-y-4 mb-6">
             {BUREAUS.map((b, idx) => {
@@ -166,7 +166,7 @@ export default function CreditFreezeWalkthrough() {
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Steps</p>
                     <ol className="space-y-1.5 mb-3">
                       {b.steps.map((s, i) => (
-                        <li key={i} className="flex gap-2 text-sm">
+                        <li key={i} className="flex gap-2 text-base">
                           <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                           <span>{s}</span>
                         </li>
@@ -175,7 +175,7 @@ export default function CreditFreezeWalkthrough() {
 
                     <ul className="space-y-1 mt-3 pt-3 border-t border-border">
                       {b.notes.map((n, i) => (
-                        <li key={i} className="text-xs text-muted-foreground flex gap-2">
+                        <li key={i} className="text-sm text-muted-foreground flex gap-2">
                           <span className="text-primary">•</span><span>{n}</span>
                         </li>
                       ))}
@@ -192,31 +192,31 @@ export default function CreditFreezeWalkthrough() {
           </div>
 
           {done.size === 3 && (
-            <Card className="border-green-300 bg-green-50 dark:bg-green-950/20 mb-6">
+            <Card className="border-success-foreground/25 bg-success mb-6">
               <CardContent className="p-5 text-center">
-                <Badge className="mb-2 bg-green-100 text-green-700 border-green-300">All three frozen</Badge>
+                <Badge className="mb-2 bg-success text-success-foreground border-success-foreground/25">All three frozen</Badge>
                 <p className="font-semibold">No new credit can open in your name.</p>
-                <p className="text-sm text-muted-foreground mt-1">Save your three PINs in a safe place. You will need them when you want to lift a freeze for a real loan or mortgage.</p>
+                <p className="text-base text-muted-foreground mt-1">Save your three PINs in a safe place. You will need them when you want to lift a freeze for a real loan or mortgage.</p>
               </CardContent>
             </Card>
           )}
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Bonus: also freeze ChexSystems and Innovis</p>
-              <p className="text-xs text-muted-foreground mb-2">
+              <p className="text-base font-semibold mb-2">Bonus: also freeze ChexSystems and Innovis</p>
+              <p className="text-sm text-muted-foreground mb-2">
                 Two smaller credit bureaus that ID thieves sometimes use. The same federal protections apply, also free.
               </p>
-              <ul className="space-y-1 text-xs">
+              <ul className="space-y-1 text-sm">
                 <li><a href="https://www.chexsystems.com/security-freeze" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">ChexSystems freeze <ExternalLink className="h-3 w-3" /></a> — used by banks for new checking accounts</li>
                 <li><a href="https://www.innovis.com/personal/securityFreeze" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">Innovis freeze <ExternalLink className="h-3 w-3" /></a> — used by some lenders</li>
               </ul>
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20">
+          <Card className="border-warn-foreground/25 bg-warn ">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">"Credit lock" vs "credit freeze" — they are not the same</p>
                 <p className="text-muted-foreground">
@@ -230,20 +230,20 @@ export default function CreditFreezeWalkthrough() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/id-theft-recovery" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">ID Theft Recovery</p>
-                <p className="text-xs text-muted-foreground mt-0.5">If something has already happened.</p>
+                <p className="font-medium text-base">ID Theft Recovery</p>
+                <p className="text-sm text-muted-foreground mt-0.5">If something has already happened.</p>
               </Link>
               <Link to="/tools/credit-report-reader" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Credit Report Reader</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pull and read your reports.</p>
+                <p className="font-medium text-base">Credit Report Reader</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pull and read your reports.</p>
               </Link>
               <Link to="/tools/online-banking-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Online Banking Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Lock down accounts you have.</p>
+                <p className="font-medium text-base">Online Banking Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Lock down accounts you have.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: write all three PINs on the same card with your tech-will (see /tools/tech-will-builder). Family will need them eventually.
           </p>
         </div>

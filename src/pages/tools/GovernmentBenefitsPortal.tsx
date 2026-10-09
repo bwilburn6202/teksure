@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -645,12 +644,6 @@ export default function GovernmentBenefitsPortal() {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-slate-900 to-blue-900" aria-hidden="true" />
           <div className="container relative py-12 md:py-16 text-white">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="government-benefits-portal"
-                title="Government Portals — What's Real, What's Free"
-                url="/tools/government-benefits-portal"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <div className="p-2 rounded-lg bg-white/10">
@@ -674,7 +667,7 @@ export default function GovernmentBenefitsPortal() {
           <Card className="border-red-500/60 bg-red-50/60 dark:bg-red-950/20">
             <CardContent className="p-6 md:p-8">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-red-600/10 text-red-700 dark:text-red-400 shrink-0">
+                <div className="p-3 rounded-full bg-red-600/10 text-danger-foreground shrink-0">
                   <ShieldAlert className="w-7 h-7" />
                 </div>
                 <div className="space-y-3">
@@ -739,7 +732,7 @@ export default function GovernmentBenefitsPortal() {
                     <div className="flex-1">
                       <h3 className="text-lg md:text-xl font-semibold mb-1 leading-tight">{p.name}</h3>
                       <p className="text-base text-muted-foreground leading-relaxed">{p.tagline}</p>
-                      <p className="text-sm text-primary font-medium mt-2 break-all">{p.urlLabel}</p>
+                      <p className="text-base text-primary font-medium mt-2 break-all">{p.urlLabel}</p>
                     </div>
                   </div>
                 </button>
@@ -777,7 +770,7 @@ export default function GovernmentBenefitsPortal() {
                           <ExternalLink className="w-5 h-5" />
                         </a>
                       </Button>
-                      <p className="text-sm text-muted-foreground mt-2">
+                      <p className="text-base text-muted-foreground mt-2">
                         Exact address: <strong>{selected.urlLabel}</strong>
                       </p>
                     </div>
@@ -811,13 +804,13 @@ export default function GovernmentBenefitsPortal() {
                 <Card>
                   <CardContent className="p-6 space-y-3">
                     <h3 className="text-xl font-semibold flex items-center gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400" />
+                      <CheckCircle2 className="w-5 h-5 text-success-foreground " />
                       What you can do there
                     </h3>
                     <ul className="space-y-2">
                       {selected.canDo.map((c, i) => (
                         <li key={i} className="flex gap-2 text-base leading-relaxed">
-                          <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" />
                           <span>{c}</span>
                         </li>
                       ))}
@@ -825,16 +818,16 @@ export default function GovernmentBenefitsPortal() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+                <Card className="bg-warn border-amber-500/40">
                   <CardContent className="p-6 space-y-3">
                     <h3 className="text-xl font-semibold flex items-center gap-2">
-                      <AlertTriangle className="w-5 h-5 text-amber-700 dark:text-amber-400" />
+                      <AlertTriangle className="w-5 h-5 text-warn-foreground " />
                       Common gotchas
                     </h3>
                     <ul className="space-y-2">
                       {selected.gotchas.map((g, i) => (
                         <li key={i} className="flex gap-2 text-base leading-relaxed">
-                          <AlertTriangle className="w-5 h-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
+                          <AlertTriangle className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                           <span>{g}</span>
                         </li>
                       ))}
@@ -1006,7 +999,7 @@ export default function GovernmentBenefitsPortal() {
           <div className="container py-10 md:py-14">
             <div className="mb-6">
               <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-                <ShieldAlert className="w-7 h-7 text-red-600 dark:text-red-400" />
+                <ShieldAlert className="w-7 h-7 text-danger-foreground " />
                 Red flags of scam &ldquo;help&rdquo; sites and callers
               </h2>
               <p className="text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
@@ -1019,7 +1012,7 @@ export default function GovernmentBenefitsPortal() {
                 <ul className="space-y-3">
                   {RED_FLAGS.map((r, i) => (
                     <li key={i} className="flex gap-3 text-base leading-relaxed">
-                      <XCircle className="w-5 h-5 text-red-700 dark:text-red-400 shrink-0 mt-0.5" />
+                      <XCircle className="w-5 h-5 text-danger-foreground shrink-0 mt-0.5" />
                       <span>{r}</span>
                     </li>
                   ))}
@@ -1076,25 +1069,25 @@ export default function GovernmentBenefitsPortal() {
                 </div>
                 <ul className="space-y-3">
                   <li className="flex gap-3 text-base md:text-lg leading-relaxed">
-                    <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-1" />
                     <span>
                       Use a unique password for every portal. A password manager like Bitwarden (free) or 1Password does
                       the remembering for you.
                     </span>
                   </li>
                   <li className="flex gap-3 text-base md:text-lg leading-relaxed">
-                    <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-1" />
                     <span>Turn on two-step login everywhere it is offered. This is the single biggest security step you can take.</span>
                   </li>
                   <li className="flex gap-3 text-base md:text-lg leading-relaxed">
-                    <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-1" />
                     <span>
                       Never click a &ldquo;verify your account&rdquo; link in an email. Type the address into your
                       browser yourself, or use a bookmark you saved.
                     </span>
                   </li>
                   <li className="flex gap-3 text-base md:text-lg leading-relaxed">
-                    <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-1" />
                     <span>
                       Bookmark the real URL the first time you visit, then use the bookmark going forward. Scammers rely
                       on misspelled copycat addresses.
@@ -1123,7 +1116,7 @@ export default function GovernmentBenefitsPortal() {
               <Card key={t.title}>
                 <CardContent className="p-5">
                   <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
-                    <AlertTriangle className="w-5 h-5 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+                    <AlertTriangle className="w-5 h-5 text-warn-foreground " aria-hidden="true" />
                     {t.title}
                   </h3>
                   <p className="text-base leading-relaxed">{t.body}</p>
@@ -1185,7 +1178,7 @@ export default function GovernmentBenefitsPortal() {
                 <p className="text-base leading-relaxed text-muted-foreground">
                   Test your portal passwords for strength.
                 </p>
-                <Link to="/tools/password-strength-tester" className="text-primary underline font-medium text-base">
+                <Link to="/tools/password-strength" className="text-primary underline font-medium text-base">
                   Open tool →
                 </Link>
               </CardContent>

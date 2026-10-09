@@ -241,35 +241,35 @@ export default function DigitalSpringCleaning() {
         title="Digital Spring Cleaning — TekSure"
         description="An annual checklist of 22 digital tasks to keep your phone, computer, and online accounts safe and tidy. Check off items as you complete them."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4 print:bg-white">
+      <main className="min-h-screen bg-muted py-8 px-4 print:bg-card">
         <div className="max-w-2xl mx-auto">
           {/* Header */}
           <div className="text-center mb-6 print:mb-3">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-pink-100 dark:bg-pink-950/60 mb-4 print:hidden">
               <Sparkles className="w-8 h-8 text-pink-600 dark:text-pink-400" />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Digital Spring Cleaning</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 print:hidden">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Digital Spring Cleaning</h1>
+            <p className="text-lg text-muted-foreground print:hidden">
               22 things to do once a year to keep your phone, computer, and accounts safe and tidy.
               Total time: about {Math.floor(totalEstMinutes / 60)} hours{totalEstMinutes % 60 > 0 ? ` ${totalEstMinutes % 60} min` : ''}.
             </p>
           </div>
 
           {/* Progress */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-4 mb-5 shadow-sm print:hidden">
+          <div className="bg-card rounded-2xl border border-border p-4 mb-5 shadow-sm print:hidden">
             <div className="flex justify-between items-center mb-2">
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Progress</span>
-              <span className="text-sm font-bold text-pink-600 dark:text-pink-400">
+              <span className="text-base font-medium text-foreground ">Progress</span>
+              <span className="text-base font-bold text-pink-600 dark:text-pink-400">
                 {completedCount} of {totalCount} ({pct}%)
               </span>
             </div>
-            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-2.5">
+            <div className="w-full bg-muted rounded-full h-2.5">
               <div className="bg-pink-500 h-2.5 rounded-full transition-all" style={{ width: `${pct}%` }} />
             </div>
             {pct === 100 && (
               <div className="mt-3 text-center">
-                <Trophy className="w-6 h-6 text-yellow-500 inline mr-1" />
-                <span className="font-semibold text-green-700 dark:text-green-400">All done — see you next year!</span>
+                <Trophy className="w-6 h-6 text-warn-foreground inline mr-1" />
+                <span className="font-semibold text-success-foreground ">All done — see you next year!</span>
               </div>
             )}
           </div>
@@ -281,38 +281,38 @@ export default function DigitalSpringCleaning() {
               const isOpen = expanded === section.id;
 
               return (
-                <div key={section.id} className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm">
+                <div key={section.id} className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm">
                   {/* Print header always visible */}
-                  <div className="hidden print:block px-5 pt-4 border-b border-gray-200">
-                    <h2 className="text-lg font-bold text-gray-900">{section.emoji} {section.title}</h2>
-                    <p className="text-sm text-gray-500 mb-3">{section.description}</p>
+                  <div className="hidden print:block px-5 pt-4 border-b border-border">
+                    <h2 className="text-lg font-bold text-foreground">{section.emoji} {section.title}</h2>
+                    <p className="text-base text-muted-foreground mb-3">{section.description}</p>
                   </div>
 
                   <button
                     onClick={() => toggleSection(section.id)}
-                    className="print:hidden w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+                    className="print:hidden w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-muted transition-colors"
                   >
                     <span className="text-3xl">{section.emoji}</span>
                     <div className="flex-1 min-w-0">
-                      <p className="font-semibold text-gray-900 dark:text-gray-100">{section.title}</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">
+                      <p className="font-semibold text-foreground ">{section.title}</p>
+                      <p className="text-base text-muted-foreground ">
                         {sectionDone} of {section.tasks.length} done
                       </p>
                     </div>
                     {sectionDone === section.tasks.length
-                      ? <CheckCircle2 className="w-6 h-6 text-green-500" />
-                      : isOpen ? <ChevronUp className="w-5 h-5 text-gray-400" /> : <ChevronDown className="w-5 h-5 text-gray-400" />}
+                      ? <CheckCircle2 className="w-6 h-6 text-success-foreground" />
+                      : isOpen ? <ChevronUp className="w-5 h-5 text-muted-foreground" /> : <ChevronDown className="w-5 h-5 text-muted-foreground" />}
                   </button>
 
-                  <div className={`${isOpen ? 'block' : 'hidden'} print:block border-t border-gray-100 dark:border-gray-800`}>
-                    <p className="px-5 py-3 text-sm text-gray-600 dark:text-gray-400 italic bg-pink-50/50 dark:bg-pink-950/20 print:bg-transparent print:hidden">
+                  <div className={`${isOpen ? 'block' : 'hidden'} print:block border-t border-border `}>
+                    <p className="px-5 py-3 text-base text-muted-foreground italic bg-pink-50/50 dark:bg-pink-950/20 print:bg-transparent print:hidden">
                       {section.description}
                     </p>
                     <div className="divide-y divide-gray-50 dark:divide-gray-800/50">
                       {section.tasks.map(task => {
                         const isDone = completed[task.id] || false;
                         return (
-                          <label key={task.id} className="flex gap-3 px-5 py-3 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800/30 print:py-2">
+                          <label key={task.id} className="flex gap-3 px-5 py-3 cursor-pointer hover:bg-muted print:py-2">
                             <input
                               type="checkbox"
                               checked={isDone}
@@ -323,15 +323,15 @@ export default function DigitalSpringCleaning() {
                               <p className={`font-medium ${isDone ? 'text-gray-400 dark:text-gray-600 line-through' : 'text-gray-900 dark:text-gray-100'}`}>
                                 {task.title}
                               </p>
-                              <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
+                              <p className="text-base text-muted-foreground mt-0.5">
                                 <strong>How:</strong> {task.how}
                               </p>
                               <div className="flex gap-3 mt-1.5 text-xs">
-                                <span className="text-gray-400 dark:text-gray-500 flex items-center gap-1">
+                                <span className="text-muted-foreground flex items-center gap-1">
                                   <Clock className="w-3 h-3" />
                                   {task.estTime}
                                 </span>
-                                <span className="text-gray-400 dark:text-gray-500 italic">{task.why}</span>
+                                <span className="text-muted-foreground italic">{task.why}</span>
                               </div>
                             </div>
                           </label>
@@ -348,7 +348,7 @@ export default function DigitalSpringCleaning() {
           <div className="flex gap-3 mt-6 print:hidden">
             <button
               onClick={reset}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm font-medium"
+              className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-border text-muted-foreground hover:bg-muted transition-colors text-sm font-medium"
             >
               <RotateCcw className="w-4 h-4" />
               Reset
@@ -363,13 +363,13 @@ export default function DigitalSpringCleaning() {
           </div>
 
           {/* Footer note */}
-          <div className="mt-6 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-xl p-4 text-center print:hidden">
-            <p className="text-sm text-blue-800 dark:text-blue-200">
+          <div className="mt-6 bg-info border border-info-foreground/25 rounded-xl p-4 text-center print:hidden">
+            <p className="text-base text-info-foreground ">
               <strong>Quick Tip:</strong> Set a yearly reminder on the same date — for example, the first day of spring or your birthday — so you do not forget to do this again.
             </p>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }

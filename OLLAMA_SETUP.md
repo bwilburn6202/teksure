@@ -1,5 +1,9 @@
 # TekSure Local AI Setup (Ollama)
 
+> **Status as of 2026-08-30: NOT DEPLOYED.** Hosted Ollama is an open blocker in
+> `CLAUDE.md` — it needs the Hetzner CX22. This document describes local setup and
+> the intended deployment, neither of which is running in production today.
+
 Complete guide to run TekSure with **free, local AI** using Ollama.
 
 ---

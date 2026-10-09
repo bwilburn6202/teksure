@@ -788,13 +788,13 @@ function ChecklistThumb({
             {totalSteps} steps
           </span>
         </div>
-        <h3 className="text-lg font-extrabold leading-tight mb-1 text-slate-900">
+        <h3 className="text-lg font-extrabold leading-tight mb-1 text-foreground">
           {checklist.title}
         </h3>
-        <p className="text-sm text-slate-700 mb-4">{checklist.tagline}</p>
+        <p className="text-base text-foreground mb-4">{checklist.tagline}</p>
         <ul className="space-y-1.5">
           {previewItems.map((line, i) => (
-            <li key={i} className="flex gap-2 text-xs text-slate-700">
+            <li key={i} className="flex gap-2 text-sm text-foreground">
               <span
                 className="mt-0.5 h-3 w-3 shrink-0 rounded-sm border"
                 style={{ borderColor: checklist.accent }}
@@ -806,7 +806,7 @@ function ChecklistThumb({
         </ul>
       </div>
       <div className="flex items-center justify-between gap-2 p-3 border-t bg-white/60 backdrop-blur-sm">
-        <span className="text-xs text-slate-600">8.5 × 11 • Printable</span>
+        <span className="text-sm text-muted-foreground">8.5 × 11 • Printable</span>
         <Button
           size="sm"
           onClick={onOpen}
@@ -878,7 +878,7 @@ export default function Checklists() {
               <ChecklistContent checklist={selected} />
             </PrintFrame>
 
-            <p className="print:hidden text-center text-sm text-muted-foreground pb-8 px-4">
+            <p className="print:hidden text-center text-base text-muted-foreground pb-8 px-4">
               Tip: in the print dialog, choose <strong>Letter</strong>, margins{' '}
               <strong>None</strong>, and enable <strong>Background graphics</strong>{' '}
               to keep the color tint — or turn it off for a pure black-and-white
@@ -898,7 +898,7 @@ export default function Checklists() {
                   Do-this-now action lists. Print. Tape to the fridge. Check
                   them off with a pen.
                 </p>
-                <p className="text-sm text-muted-foreground mt-4 max-w-md mx-auto">
+                <p className="text-base text-muted-foreground mt-4 max-w-md mx-auto">
                   Different from our Reference Cards (which are info-dense).
                   These are the next step, and the one after that.
                 </p>
@@ -921,7 +921,7 @@ export default function Checklists() {
                 <h2 className="text-xl font-semibold mb-2">
                   Reference Cards vs. Checklists
                 </h2>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   <strong>Reference Cards</strong> are what-to-know — pin them
                   up so you can <em>look</em> at them. <strong>Checklists</strong>{' '}
                   are what-to-do — print them, and <em>work through</em> them.

@@ -231,7 +231,7 @@ export default function EmailMigration() {
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
               Move off AOL, Yahoo, or any old email — without losing a single contact or message.
             </p>
-            <p className="text-sm text-muted-foreground mt-3">About 30 minutes today, plus a little waiting in the background.</p>
+            <p className="text-base text-muted-foreground mt-3">About 30 minutes today, plus a little waiting in the background.</p>
           </div>
         </section>
 
@@ -242,15 +242,15 @@ export default function EmailMigration() {
             <Card className="border-border shadow-sm">
               <CardContent className="p-6 space-y-6">
                 <div>
-                  <p className="text-sm font-semibold mb-3">1. Where is your email today?</p>
+                  <p className="text-base font-semibold mb-3">1. Where is your email today?</p>
                   <div className="grid sm:grid-cols-2 gap-2">
                     {FROM_OPTIONS.map(o => (
                       <button key={o.id} onClick={() => setFrom(o.id)}
                         className={`p-3 rounded-lg border text-left transition-all ${
                           from === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                         }`}>
-                        <p className="font-medium text-sm">{PROVIDER_LABEL[o.id]}</p>
-                        <p className="text-xs text-muted-foreground mt-0.5">{o.sub}</p>
+                        <p className="font-medium text-base">{PROVIDER_LABEL[o.id]}</p>
+                        <p className="text-sm text-muted-foreground mt-0.5">{o.sub}</p>
                       </button>
                     ))}
                   </div>
@@ -258,19 +258,19 @@ export default function EmailMigration() {
 
                 {from && (
                   <div>
-                    <p className="text-sm font-semibold mb-3">2. Where do you want to move to?</p>
+                    <p className="text-base font-semibold mb-3">2. Where do you want to move to?</p>
                     <div className="grid sm:grid-cols-3 gap-2">
                       {TO_OPTIONS.map(o => (
                         <button key={o.id} onClick={() => setTo(o.id)}
                           className={`p-3 rounded-lg border text-left transition-all ${
                             to === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                           }`}>
-                          <p className="font-medium text-sm">{PROVIDER_LABEL[o.id]}</p>
-                          <p className="text-xs text-muted-foreground mt-0.5">{o.sub}</p>
+                          <p className="font-medium text-base">{PROVIDER_LABEL[o.id]}</p>
+                          <p className="text-sm text-muted-foreground mt-0.5">{o.sub}</p>
                         </button>
                       ))}
                     </div>
-                    <p className="text-xs text-muted-foreground mt-3">
+                    <p className="text-sm text-muted-foreground mt-3">
                       Not sure? Most people pick Gmail — it works on every phone and computer.
                     </p>
                   </div>
@@ -314,7 +314,7 @@ export default function EmailMigration() {
                     <CardContent className="p-5">
                       <ol className="space-y-3">
                         {section.steps.map((s, i) => (
-                          <li key={i} className="flex gap-3 text-sm">
+                          <li key={i} className="flex gap-3 text-base">
                             <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                             <div className="flex-1">
                               <p className="font-semibold">{s.title}</p>
@@ -341,9 +341,9 @@ export default function EmailMigration() {
                 </section>
               ))}
 
-              <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+              <Card className="border-warn-foreground/25 bg-warn mb-6">
                 <CardContent className="p-5 flex gap-3">
-                  <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                   <div className="text-sm">
                     <p className="font-semibold mb-1">Watch out for fake "email migration" calls</p>
                     <p className="text-muted-foreground">
@@ -353,9 +353,9 @@ export default function EmailMigration() {
                 </CardContent>
               </Card>
 
-              <Card className="border-green-300 bg-green-50 dark:bg-green-950/20">
+              <Card className="border-success-foreground/25 bg-success ">
                 <CardContent className="p-5 flex gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" />
                   <div className="text-sm">
                     <p className="font-semibold mb-1">Done? One last thing.</p>
                     <p className="text-muted-foreground">
@@ -374,20 +374,20 @@ export default function EmailMigration() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/email-spam-manager" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Email Spam Manager</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Tame the new inbox after you switch.</p>
+                <p className="font-medium text-base">Email Spam Manager</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Tame the new inbox after you switch.</p>
               </Link>
               <Link to="/tools/password-health" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Password Health Check</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Make sure your new password is safe.</p>
+                <p className="font-medium text-base">Password Health Check</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Make sure your new password is safe.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Check those "your account will be deleted" emails.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Check those "your account will be deleted" emails.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: keep the old address forwarding for at least 60 days. That is how long it takes for stragglers to update.
           </p>
         </div>

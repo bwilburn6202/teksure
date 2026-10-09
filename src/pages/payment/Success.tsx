@@ -37,8 +37,8 @@ export default function PaymentSuccess() {
         <div className="max-w-md w-full text-center space-y-6">
 
           <div className="flex justify-center">
-            <div className="h-24 w-24 rounded-full bg-green-100 flex items-center justify-center">
-              <CheckCircle2 className="h-12 w-12 text-green-600" />
+            <div className="h-24 w-24 rounded-full bg-success flex items-center justify-center">
+              <CheckCircle2 className="h-12 w-12 text-success-foreground" />
             </div>
           </div>
 
@@ -49,12 +49,12 @@ export default function PaymentSuccess() {
             </p>
           </div>
 
-          <Card className="rounded-2xl border border-green-200 bg-green-50">
+          <Card className="rounded-2xl border border-success-foreground/25 bg-success">
             <CardContent className="p-5">
               <p className="text-xs text-muted-foreground mb-1 font-medium uppercase tracking-wide">
                 Booking reference
               </p>
-              <p className="text-3xl font-mono font-bold tracking-widest text-green-700">
+              <p className="text-3xl font-mono font-bold tracking-widest text-success-foreground">
                 {bookingRef}
               </p>
             </CardContent>
@@ -62,7 +62,7 @@ export default function PaymentSuccess() {
 
           <Card className="rounded-2xl border border-border bg-card">
             <CardContent className="p-5 text-left space-y-3">
-              <p className="font-semibold text-sm mb-2">What happens next</p>
+              <p className="font-semibold text-base mb-2">What happens next</p>
               <div className="flex items-start gap-3 text-sm">
                 <Mail className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-muted-foreground">
@@ -99,7 +99,7 @@ export default function PaymentSuccess() {
             </Button>
           </div>
 
-          <p className="text-xs text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             Redirecting to your bookings in {countdown}s…{' '}
             <button onClick={() => navigate('/my-requests')} className="underline hover:text-foreground">
               go now

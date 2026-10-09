@@ -91,9 +91,9 @@ export default function ScamReport() {
             <div className="text-6xl mb-4"></div>
             <h2 className="text-2xl font-bold mb-3">Report Received — Thank You</h2>
             <p className="text-muted-foreground mb-6">Your report helps protect other TekSure members. Our team reviews every submission and shares patterns with relevant authorities where appropriate.</p>
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-left mb-6">
-              <p className="font-semibold text-amber-800 mb-2 flex items-center gap-2"><AlertTriangle className="h-4 w-4" /> If you lost money or shared personal details:</p>
-              <ul className="text-sm text-amber-700 space-y-1">
+            <div className="bg-warn border border-warn-foreground/25 rounded-xl p-4 text-left mb-6">
+              <p className="font-semibold text-warn-foreground mb-2 flex items-center gap-2"><AlertTriangle className="h-4 w-4" /> If you lost money or shared personal details:</p>
+              <ul className="text-base text-warn-foreground space-y-1">
                 <li>• <strong>Call your bank immediately</strong> to freeze the account or cancel any payments.</li>
             <li>• Report to the <strong>FTC</strong>: <SafeLink to="https://reportfraud.ftc.gov" className="underline" target="_blank" rel="noopener noreferrer">ReportFraud.ftc.gov</SafeLink> or 1-877-382-4357.</li>
                 <li>• Change your passwords on any affected accounts straight away.</li>
@@ -124,9 +124,9 @@ export default function ScamReport() {
           <p className="text-muted-foreground max-w-md mx-auto">Spotted a scam? Tell us about it. Your report helps us warn other members and keep the community safe.</p>
         </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8 flex items-start gap-3">
-          <Shield className="h-5 w-5 text-blue-600 mt-0.5 shrink-0" />
-          <div className="text-sm text-blue-800">
+        <div className="bg-info border border-info-foreground/25 rounded-xl p-4 mb-8 flex items-start gap-3">
+          <Shield className="h-5 w-5 text-info-foreground mt-0.5 shrink-0" />
+          <div className="text-sm text-info-foreground">
             <strong>Your report is confidential.</strong> We never share your personal details publicly. If you lost money or personal information, please also contact the FTC (1-877-382-4357 or ReportFraud.ftc.gov) and your bank.
           </div>
         </div>
@@ -135,7 +135,7 @@ export default function ScamReport() {
           <Card>
             <CardContent className="pt-6 space-y-5">
               <div>
-                <Label className="mb-1.5 block">Type of scam <span className="text-red-500">*</span></Label>
+                <Label className="mb-1.5 block">Type of scam <span className="text-danger-foreground">*</span></Label>
                 <Select onValueChange={v => update('type', v)}>
                   <SelectTrigger><SelectValue placeholder="Choose scam type…" /></SelectTrigger>
                   <SelectContent>
@@ -145,7 +145,7 @@ export default function ScamReport() {
               </div>
 
               <div>
-                <Label className="mb-1.5 block">What happened? <span className="text-red-500">*</span></Label>
+                <Label className="mb-1.5 block">What happened? <span className="text-danger-foreground">*</span></Label>
                 <Textarea
                   placeholder="Describe the scam in as much detail as you can — what did it say, how did you receive it, what were you asked to do?"
                   rows={5}
@@ -195,7 +195,7 @@ export default function ScamReport() {
           <Button type="submit" size="lg" disabled={loading} className="w-full bg-primary text-primary-foreground hover:bg-primary/90 gap-2">
             {loading ? 'Submitting…' : <><CheckCircle2 className="h-4 w-4" /> Submit Report</>}
           </Button>
-          <p className="text-xs text-muted-foreground text-center">Fields marked with * are required. All other fields are optional but help us investigate.</p>
+          <p className="text-sm text-muted-foreground text-center">Fields marked with * are required. All other fields are optional but help us investigate.</p>
         </form>
       </main>
       <Footer />

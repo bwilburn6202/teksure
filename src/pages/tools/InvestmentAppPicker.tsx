@@ -123,7 +123,7 @@ export default function InvestmentAppPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <TrendingUp className="h-8 w-8 text-emerald-700 dark:text-emerald-300" />
+                <TrendingUp className="h-8 w-8 text-success-foreground " />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Investment App Picker</h1>
@@ -138,8 +138,8 @@ export default function InvestmentAppPicker() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Read this first</p>
-              <p className="text-xs text-muted-foreground mb-3">
+              <p className="text-base font-semibold mb-2">Read this first</p>
+              <p className="text-sm text-muted-foreground mb-3">
                 Where you hold your money matters less than what you hold and how often you trade. A boring index fund at any of the top three brokers below will out-perform a fancy advisor charging 1.5% per year over the long run. The big three — Fidelity, Vanguard, and Schwab — are all reputable, all charge zero for stock trades, and all carry SIPC insurance up to 500,000 dollars per account. Pick whichever feels most comfortable to you and your family.
               </p>
             </CardContent>
@@ -153,19 +153,19 @@ export default function InvestmentAppPicker() {
                     <p className="font-semibold text-base">{b.name}</p>
                     <Badge variant="outline">{b.fees}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {b.whoFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {b.whoFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {b.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}
+                        {b.pros.map((p, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {b.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                        {b.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -184,36 +184,36 @@ export default function InvestmentAppPicker() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Do not time the market</p>
-              <p className="text-xs text-muted-foreground mb-2">
+              <p className="text-base font-semibold mb-2">Do not time the market</p>
+              <p className="text-sm text-muted-foreground mb-2">
                 The single biggest mistake retirees make: pulling money out when the market drops, then waiting on the sidelines for it to feel safe again. By the time it feels safe, the rebound has already happened.
               </p>
-              <p className="text-xs text-muted-foreground mb-2">
+              <p className="text-sm text-muted-foreground mb-2">
                 A study by Fidelity found that the best-performing customer accounts belonged to people who had forgotten the account existed — they did nothing for years. The worst-performing accounts belonged to people who reacted to every headline.
               </p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 A common rule of thumb for retirees: keep one to two years of living expenses in cash or short-term bonds, and leave the rest invested. That cash buffer means you do not have to sell stocks during a downturn. Talk to a fee-only fiduciary (one who charges by the hour, not by your balance) if you want a personalized plan.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">If they found you on social media — they are not your friend</p>
-                <p className="text-xs mb-2">
+                <p className="text-sm mb-2">
                   TikTok and YouTube are flooded with confident-looking people calling themselves "wealth coaches", "trading mentors", or "private group" leaders. Many run paid Discord servers, Telegram channels, or "exclusive" investor groups. Almost all of them are unregistered and illegal under US law.
                 </p>
-                <p className="text-xs mb-2">
+                <p className="text-sm mb-2">
                   By federal law, anyone giving paid investment advice to the public must be registered with the SEC or a state regulator, and must register as a broker-dealer or investment advisor representative. Influencers who skip this step are committing a crime — and you have no recourse when their picks lose your money.
                 </p>
-                <p className="text-xs font-semibold mb-1">Before sending anyone money or following their picks:</p>
+                <p className="text-sm font-semibold mb-1">Before sending anyone money or following their picks:</p>
                 <ol className="space-y-1.5 mt-2">
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">1.</span><span>Run their full legal name through <a href="https://brokercheck.finra.org" target="_blank" rel="noreferrer" className="underline">finra.org/brokercheck</a> — free, takes 30 seconds. If they are not in there, walk away.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">2.</span><span>Check the SEC's investment advisor database at <a href="https://adviserinfo.sec.gov" target="_blank" rel="noreferrer" className="underline">adviserinfo.sec.gov</a>.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">3.</span><span>Anyone promising "guaranteed returns", crypto pumps, or "secret" trades is running a scam. Real advisors cannot promise returns — that is securities fraud.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">4.</span><span>"Pig butchering" scams (where someone befriends you online, then walks you into a fake trading platform) cost Americans over 4 billion dollars in 2024. Never invest through a platform someone you met online told you about.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">1.</span><span>Run their full legal name through <a href="https://brokercheck.finra.org" target="_blank" rel="noreferrer" className="underline">finra.org/brokercheck</a> — free, takes 30 seconds. If they are not in there, walk away.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">2.</span><span>Check the SEC's investment advisor database at <a href="https://adviserinfo.sec.gov" target="_blank" rel="noreferrer" className="underline">adviserinfo.sec.gov</a>.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">3.</span><span>Anyone promising "guaranteed returns", crypto pumps, or "secret" trades is running a scam. Real advisors cannot promise returns — that is securities fraud.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">4.</span><span>"Pig butchering" scams (where someone befriends you online, then walks you into a fake trading platform) cost Americans over 4 billion dollars in 2024. Never invest through a platform someone you met online told you about.</span></li>
                 </ol>
               </div>
             </CardContent>
@@ -221,8 +221,8 @@ export default function InvestmentAppPicker() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Worth knowing about transferring accounts</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Worth knowing about transferring accounts</p>
+              <p className="text-sm text-muted-foreground">
                 If you already have an account at Edward Jones or another high-fee broker, you can move it to Fidelity, Vanguard, or Schwab without selling anything (an "ACATS transfer"). This avoids tax. The new broker handles the paperwork — you sign one form, it takes about 5-10 business days. The old firm may charge a 75 dollar exit fee, which the new firm often reimburses. Call the broker you want to move TO and ask them to start the transfer.
               </p>
             </CardContent>
@@ -232,20 +232,20 @@ export default function InvestmentAppPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/social-security-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Social Security Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Create your my Social Security account.</p>
+                <p className="font-medium text-base">Social Security Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Create your my Social Security account.</p>
               </Link>
               <Link to="/tools/online-banking-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Online Banking Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Lock down your bank login.</p>
+                <p className="font-medium text-base">Online Banking Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Lock down your bank login.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Spot fake "advisor" texts and DMs.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Spot fake "advisor" texts and DMs.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: open the account at the broker, then call them on the phone with your first deposit question. The quality of that first call tells you everything about how they will treat you for the next 20 years.
           </p>
         </div>

@@ -184,7 +184,7 @@ export default function HearingAidPairingWizard() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-purple-500/10 rounded-full">
-                <Ear className="h-8 w-8 text-purple-600" />
+                <Ear className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Hearing Aid Pairing Wizard</h1>
@@ -200,13 +200,13 @@ export default function HearingAidPairingWizard() {
           {!brand ? (
             <Card className="border-border shadow-sm">
               <CardContent className="p-6">
-                <p className="text-sm font-semibold mb-3">Which brand are your hearing aids?</p>
-                <p className="text-xs text-muted-foreground mb-4">Look on the case, the device itself, or in your audiologist&apos;s paperwork.</p>
+                <p className="text-base font-semibold mb-3">Which brand are your hearing aids?</p>
+                <p className="text-sm text-muted-foreground mb-4">Look on the case, the device itself, or in your audiologist&apos;s paperwork.</p>
                 <div className="grid sm:grid-cols-2 gap-2">
                   {BRANDS.map(b => (
                     <button key={b.id} onClick={() => setBrand(b.id)}
                       className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all text-left">
-                      <p className="font-medium text-sm">{b.label}</p>
+                      <p className="font-medium text-base">{b.label}</p>
                     </button>
                   ))}
                 </div>
@@ -233,7 +233,7 @@ export default function HearingAidPairingWizard() {
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Pairing steps for {phone === 'iphone' ? 'iPhone' : 'Android'}</p>
                   <ol className="space-y-3">
                     {steps.map((s, i) => (
-                      <li key={i} className="flex gap-3 text-sm">
+                      <li key={i} className="flex gap-3 text-base">
                         <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                         <span>{s}</span>
                       </li>
@@ -247,7 +247,7 @@ export default function HearingAidPairingWizard() {
                         className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
                         {guide!.appName} <ExternalLink className="h-4 w-4" />
                       </a>
-                      <p className="text-xs text-muted-foreground mt-1">Lets you adjust volume, switch programs, and find lost hearing aids.</p>
+                      <p className="text-sm text-muted-foreground mt-1">Lets you adjust volume, switch programs, and find lost hearing aids.</p>
                     </div>
                   )}
 
@@ -255,8 +255,8 @@ export default function HearingAidPairingWizard() {
                     <div className="mt-5 pt-4 border-t border-border">
                       <ul className="space-y-2">
                         {guide!.notes.map((n, i) => (
-                          <li key={i} className="flex gap-2 text-xs text-muted-foreground">
-                            <Check className="h-3 w-3 text-green-600 shrink-0 mt-0.5" />
+                          <li key={i} className="flex gap-2 text-sm text-muted-foreground">
+                            <Check className="h-3 w-3 text-success-foreground shrink-0 mt-0.5" />
                             <span>{n}</span>
                           </li>
                         ))}
@@ -268,8 +268,8 @@ export default function HearingAidPairingWizard() {
 
               <Card className="border-border bg-muted/30">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-2">Trouble pairing?</p>
-                  <ul className="space-y-1.5 text-xs text-muted-foreground">
+                  <p className="text-base font-semibold mb-2">Trouble pairing?</p>
+                  <ul className="space-y-1.5 text-sm text-muted-foreground">
                     <li className="flex gap-2"><span className="text-primary">•</span><span>Forget the device first: iPhone Settings → Accessibility → Hearing Devices → tap the device → "Forget".</span></li>
                     <li className="flex gap-2"><span className="text-primary">•</span><span>Make sure both Bluetooth and Wi-Fi are on — pairing uses both.</span></li>
                     <li className="flex gap-2"><span className="text-primary">•</span><span>Restart your phone too, not just the hearing aids.</span></li>
@@ -284,20 +284,20 @@ export default function HearingAidPairingWizard() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/hearing-aid-tech-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Hearing Aid Tech Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Daily-use tips and troubleshooting.</p>
+                <p className="font-medium text-base">Hearing Aid Tech Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Daily-use tips and troubleshooting.</p>
               </Link>
               <Link to="/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Low-Vision Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For sight as well as hearing.</p>
+                <p className="font-medium text-base">Low-Vision Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For sight as well as hearing.</p>
               </Link>
               <Link to="/accessibility" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Accessibility Hub</p>
-                <p className="text-xs text-muted-foreground mt-0.5">All accessibility resources.</p>
+                <p className="font-medium text-base">Accessibility Hub</p>
+                <p className="text-sm text-muted-foreground mt-0.5">All accessibility resources.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Pairing only needs to happen once. After that, your hearing aids reconnect automatically every time they turn on.
           </p>
         </div>

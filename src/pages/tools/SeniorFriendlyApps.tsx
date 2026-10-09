@@ -239,7 +239,7 @@ export default function SeniorFriendlyApps() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-orange-500/10 rounded-full">
-                <Sparkles className="h-8 w-8 text-orange-600" />
+                <Sparkles className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Senior-Friendly Apps Roundup</h1>
@@ -275,12 +275,12 @@ export default function SeniorFriendlyApps() {
                   <div className="flex items-start justify-between gap-3 mb-2 flex-wrap">
                     <div>
                       <p className="font-semibold text-base">{app.name}</p>
-                      <p className="text-sm text-muted-foreground mt-0.5">{app.what}</p>
+                      <p className="text-base text-muted-foreground mt-0.5">{app.what}</p>
                     </div>
                     <Badge variant="outline" className="shrink-0">{app.cost}</Badge>
                   </div>
 
-                  <p className="text-xs text-muted-foreground mb-3"><strong>Best for:</strong> {app.whoFor}</p>
+                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {app.whoFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div className="p-2 rounded bg-muted/40 border border-border text-xs flex gap-2">
@@ -294,9 +294,9 @@ export default function SeniorFriendlyApps() {
                   </div>
 
                   {app.watchOut && (
-                    <div className="p-2 rounded bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 text-xs">
-                      <strong className="text-amber-700 dark:text-amber-300">Watch out:</strong>{' '}
-                      <span className="text-amber-700 dark:text-amber-300">{app.watchOut}</span>
+                    <div className="p-2 rounded bg-warn border border-warn-foreground/25 text-xs">
+                      <strong className="text-warn-foreground ">Watch out:</strong>{' '}
+                      <span className="text-warn-foreground ">{app.watchOut}</span>
                     </div>
                   )}
                 </CardContent>
@@ -306,8 +306,8 @@ export default function SeniorFriendlyApps() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">How to install an app safely</p>
-              <ol className="space-y-1.5 text-sm text-muted-foreground">
+              <p className="text-base font-semibold mb-2">How to install an app safely</p>
+              <ol className="space-y-1.5 text-base text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary shrink-0">1.</span><span>Only download from the official App Store (iPhone) or Play Store (Android). Never sideload from a website link.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">2.</span><span>Match the spelling exactly — scammers create lookalike apps with similar names.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">3.</span><span>Look for high download counts (millions) and recent updates. New apps with few downloads are riskier.</span></li>
@@ -325,20 +325,20 @@ export default function SeniorFriendlyApps() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/app-recommender" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">App Recommender</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Personalized picks by interest.</p>
+                <p className="font-medium text-base">App Recommender</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Personalized picks by interest.</p>
               </Link>
               <Link to="/tools/app-cleanup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">App Cleanup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Delete the apps you do not use.</p>
+                <p className="font-medium text-base">App Cleanup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Delete the apps you do not use.</p>
               </Link>
               <Link to="/tools/free-resource-hub" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Free Resource Hub</p>
-                <p className="text-xs text-muted-foreground mt-0.5">More free tools and services.</p>
+                <p className="font-medium text-base">Free Resource Hub</p>
+                <p className="text-sm text-muted-foreground mt-0.5">More free tools and services.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: install one app at a time, use it for a week, then add the next. Easier on the brain.
           </p>
         </div>

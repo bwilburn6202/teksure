@@ -6,7 +6,6 @@ import { Progress } from '@/components/ui/progress';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Link } from 'react-router-dom';
 
 /* ── Types ───────────────────────────────── */
@@ -152,7 +151,7 @@ const guidesByLevel: Record<Level, { heading: string; emoji: string; message: st
       "You've got the basics down — nice work! Now it's time to level up your skills. These guides will help you get more done, stay safer online, and feel confident with everyday tech tasks.",
     guides: [
       { title: 'Password Manager Guide', description: 'Stop reusing passwords — set up a secure password manager in minutes.', path: '/tools/password-manager', emoji: '' },
-      { title: 'Meeting Setup Helper', description: 'Join Zoom, FaceTime, and other video calls without the stress.', path: '/tools/meeting-setup-helper', emoji: '' },
+      { title: 'Meeting Setup Helper', description: 'Join Zoom, FaceTime, and other video calls without the stress.', path: '/tools/meeting-setup', emoji: '' },
       { title: 'App Recommender', description: 'Find the best apps for your device and needs — personalized picks.', path: '/tools/app-recommender', emoji: '' },
       { title: 'Phishing Scanner', description: 'Learn to spot fake emails and messages before they trick you.', path: '/tools/phishing-scanner', emoji: '' },
       { title: 'Backup Wizard', description: "Make sure your photos, contacts, and files are backed up — so you never lose what matters.", path: '/tools/backup-wizard', emoji: '' },
@@ -227,12 +226,6 @@ export default function TechComfortQuiz() {
         {/* Header */}
         <div className="relative">
           <div className="absolute right-0 top-0">
-            <BookmarkButton
-              type="tool"
-              slug="tech-comfort-quiz"
-              title="Tech Comfort Assessment"
-              url="/tools/tech-comfort-quiz"
-            />
           </div>
           <div className="flex items-center gap-3 mb-2 pr-14">
             <ClipboardCheck className="h-8 w-8 text-primary" />
@@ -261,7 +254,7 @@ export default function TechComfortQuiz() {
           <div>
             <Card className="border-2 border-primary/20">
               <CardContent className="p-6 sm:p-8">
-                <p className="text-sm text-primary font-semibold mb-1">
+                <p className="text-base text-primary font-semibold mb-1">
                   Question {questions[currentQ].id} of {totalQuestions}
                 </p>
                 <h2 className="text-xl sm:text-2xl font-bold mb-1">{questions[currentQ].text}</h2>
@@ -291,8 +284,8 @@ export default function TechComfortQuiz() {
               </CardContent>
             </Card>
 
-            <div className="mt-4 rounded-xl bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 p-4">
-              <p className="text-sm text-blue-700 dark:text-blue-300">
+            <div className="mt-4 rounded-xl bg-info border border-info-foreground/25 p-4">
+              <p className="text-base text-info-foreground ">
                  <strong>No pressure!</strong> There are no right or wrong answers. Just pick what feels closest to your experience.
               </p>
             </div>
@@ -355,11 +348,11 @@ export default function TechComfortQuiz() {
             </div>
 
             {/* Encouragement box */}
-            <div className="rounded-xl bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 p-5 mb-6">
-              <p className="text-base font-semibold text-green-700 dark:text-green-400 mb-1">
+            <div className="rounded-xl bg-success border border-success-foreground/25 p-5 mb-6">
+              <p className="text-base font-semibold text-success-foreground mb-1">
                  You're already making progress!
               </p>
-              <p className="text-sm text-green-700/90 dark:text-green-300/90">
+              <p className="text-base text-green-700/90 dark:text-green-300/90">
                 Just by taking this assessment, you've shown that you're ready to learn. Technology is a tool — and like any tool, it gets easier with practice. We're here to help every step of the way.
               </p>
             </div>

@@ -100,7 +100,7 @@ export default function MarketplaceScamSpotter() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <ShoppingBag className="h-8 w-8 text-amber-600" />
+                <ShoppingBag className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Marketplace Scam Spotter</h1>
@@ -115,7 +115,7 @@ export default function MarketplaceScamSpotter() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Are you buying or selling?</p>
+              <p className="text-base font-semibold mb-3">Are you buying or selling?</p>
               <div className="flex gap-2">
                 {(['buyer', 'seller'] as Role[]).map(r => (
                   <Button key={r} variant={role === r ? 'default' : 'outline'} onClick={() => switchRole(r)}>
@@ -130,7 +130,7 @@ export default function MarketplaceScamSpotter() {
             <CardContent className="p-5">
               <Badge className="mb-1">{flagged.size} flag{flagged.size !== 1 ? 's' : ''} ({score} pts)</Badge>
               <p className="font-semibold text-lg">{v.label}</p>
-              <p className="text-sm text-muted-foreground mt-1">{v.explain}</p>
+              <p className="text-base text-muted-foreground mt-1">{v.explain}</p>
             </CardContent>
           </Card>
 
@@ -147,8 +147,8 @@ export default function MarketplaceScamSpotter() {
                     }`}>
                     <Checkbox checked={flagged.has(f.id)} onCheckedChange={() => toggle(f.id)} className="mt-1" />
                     <div className="flex-1">
-                      <p className="font-medium text-sm">{f.question}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{f.detail}</p>
+                      <p className="font-medium text-base">{f.question}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{f.detail}</p>
                     </div>
                   </label>
                 ))}
@@ -158,8 +158,8 @@ export default function MarketplaceScamSpotter() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Safer ways to meet in person</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Safer ways to meet in person</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Most US police stations now have "Safe Exchange Zones" — well-lit parking spots with cameras specifically for online sales meet-ups. Free.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Bank lobbies during business hours work too — bring a friend.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Inspect the item with the same charger / SIM / battery the seller showed in photos. Test before paying.</span></li>
@@ -168,9 +168,9 @@ export default function MarketplaceScamSpotter() {
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20">
+          <Card className="border-warn-foreground/25 bg-warn ">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">If you have already been scammed</p>
                 <p className="text-muted-foreground">
@@ -184,16 +184,16 @@ export default function MarketplaceScamSpotter() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Paste any text-message scam.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Paste any text-message scam.</p>
               </Link>
               <Link to="/tools/scam-witness-statement" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Witness Statement Builder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Report a scam properly.</p>
+                <p className="font-medium text-base">Witness Statement Builder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Report a scam properly.</p>
               </Link>
               <Link to="/tools/online-banking-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Online Banking Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Lock down before you transact.</p>
+                <p className="font-medium text-base">Online Banking Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Lock down before you transact.</p>
               </Link>
             </div>
           </div>

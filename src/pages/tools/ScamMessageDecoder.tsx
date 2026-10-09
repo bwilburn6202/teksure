@@ -200,7 +200,7 @@ export default function ScamMessageDecoder() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-red-500/10 rounded-full">
-                <ShieldAlert className="h-8 w-8 text-red-600" />
+                <ShieldAlert className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Scam Message Decoder</h1>
@@ -222,7 +222,7 @@ export default function ScamMessageDecoder() {
             <>
               <Card className="border-border shadow-sm">
                 <CardContent className="p-6">
-                  <label htmlFor="msg" className="block text-sm font-semibold mb-2">
+                  <label htmlFor="msg" className="block text-base font-semibold mb-2">
                     Paste the message you got
                   </label>
                   <Textarea
@@ -232,7 +232,7 @@ export default function ScamMessageDecoder() {
                     placeholder="Example: USPS: Your package cannot be delivered. Confirm within 24 hours: http://..."
                     className="min-h-[160px] text-base"
                   />
-                  <p className="text-xs text-muted-foreground mt-2">
+                  <p className="text-sm text-muted-foreground mt-2">
                     Nothing you paste leaves your device. The check happens right here in your browser.
                   </p>
 
@@ -248,7 +248,7 @@ export default function ScamMessageDecoder() {
               </Card>
 
               <div className="mt-6">
-                <p className="text-sm font-semibold text-muted-foreground mb-3">Or try a real scam example</p>
+                <p className="text-base font-semibold text-muted-foreground mb-3">Or try a real scam example</p>
                 <div className="grid sm:grid-cols-3 gap-3">
                   {SAMPLES.map((s) => {
                     const Icon = s.icon;
@@ -259,7 +259,7 @@ export default function ScamMessageDecoder() {
                         className="text-left p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
                       >
                         <Icon className="h-5 w-5 text-muted-foreground mb-2" />
-                        <p className="font-medium text-sm">{s.label}</p>
+                        <p className="font-medium text-base">{s.label}</p>
                         <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{s.text}</p>
                       </button>
                     );
@@ -277,7 +277,7 @@ export default function ScamMessageDecoder() {
                 }`}>
                   <Badge className={`mb-3 ${riskBadge!.cls}`}>{riskBadge!.label}</Badge>
                   <p className="text-2xl font-bold mb-1">{result.score}/100 risk score</p>
-                  <p className="text-sm text-muted-foreground max-w-lg mx-auto">{result.plainExplanation}</p>
+                  <p className="text-base text-muted-foreground max-w-lg mx-auto">{result.plainExplanation}</p>
                 </div>
 
                 {result.flags.length > 0 && (
@@ -286,10 +286,10 @@ export default function ScamMessageDecoder() {
                     <div className="space-y-3">
                       {result.flags.map((f, i) => (
                         <div key={i} className="flex gap-3 p-3 rounded-lg bg-muted/40 border border-border">
-                          <AlertTriangle className="h-4 w-4 text-amber-500 shrink-0 mt-0.5" />
+                          <AlertTriangle className="h-4 w-4 text-warn-foreground shrink-0 mt-0.5" />
                           <div>
-                            <p className="font-medium text-sm">{f.label}</p>
-                            <p className="text-xs text-muted-foreground mt-0.5">{f.why}</p>
+                            <p className="font-medium text-base">{f.label}</p>
+                            <p className="text-sm text-muted-foreground mt-0.5">{f.why}</p>
                           </div>
                         </div>
                       ))}
@@ -300,12 +300,12 @@ export default function ScamMessageDecoder() {
 
               <Card className="mb-6 border-border">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-3 flex items-center gap-2">
+                  <p className="text-base font-semibold mb-3 flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-primary" /> What to do next
                   </p>
                   <ul className="space-y-2">
                     {result.nextSteps.map((step, i) => (
-                      <li key={i} className="flex gap-2 text-sm">
+                      <li key={i} className="flex gap-2 text-base">
                         <span className="text-primary font-semibold">{i + 1}.</span>
                         <span>{step}</span>
                       </li>
@@ -329,16 +329,16 @@ export default function ScamMessageDecoder() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/phishing-scanner" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">URL Safety Scanner</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Check if a website link looks safe.</p>
+                <p className="font-medium text-base">URL Safety Scanner</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Check if a website link looks safe.</p>
               </Link>
               <Link to="/tools/scam-witness-statement" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Report a Scam</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Build an FTC/IC3 report from your story.</p>
+                <p className="font-medium text-base">Report a Scam</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Build an FTC/IC3 report from your story.</p>
               </Link>
               <Link to="/scam-defense" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Defense Center</p>
-                <p className="text-xs text-muted-foreground mt-0.5">All our scam protection tools in one place.</p>
+                <p className="font-medium text-base">Scam Defense Center</p>
+                <p className="text-sm text-muted-foreground mt-0.5">All our scam protection tools in one place.</p>
               </Link>
             </div>
           </div>

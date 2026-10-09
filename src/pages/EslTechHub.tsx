@@ -309,10 +309,10 @@ export default function EslTechHub() {
                     </div>
                     <h3 className="font-semibold text-foreground pt-1.5">{tool.name}</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-3">
                     {tool.description}
                   </p>
-                  <p className="text-xs text-foreground/80 bg-primary/5 rounded-lg p-3 border border-primary/10">
+                  <p className="text-sm text-foreground/80 bg-primary/5 rounded-lg p-3 border border-primary/10">
                     <strong>Quick Tip:</strong> {tool.tip}
                   </p>
                 </CardContent>
@@ -342,7 +342,7 @@ export default function EslTechHub() {
                       <BookOpen className="h-4 w-4 text-primary" />
                       <h3 className="font-semibold text-foreground">{app.name}</h3>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    <p className="text-base text-muted-foreground leading-relaxed mb-3">
                       {app.description}
                     </p>
                     <Badge variant="secondary" className="text-xs">{app.price}</Badge>
@@ -374,7 +374,7 @@ export default function EslTechHub() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">{setting.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                      <p className="text-base text-muted-foreground leading-relaxed">
                         {setting.description}
                       </p>
                     </div>
@@ -403,10 +403,10 @@ export default function EslTechHub() {
                   <CardContent className="p-5">
                     <Smartphone className="h-5 w-5 text-primary mb-3" />
                     <h3 className="font-semibold text-foreground mb-2">{app.name}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    <p className="text-base text-muted-foreground leading-relaxed mb-3">
                       {app.description}
                     </p>
-                    <p className="text-xs text-primary font-medium">{app.url}</p>
+                    <p className="text-sm text-primary font-medium">{app.url}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -436,7 +436,7 @@ export default function EslTechHub() {
                     </div>
                     <div className="flex-1">
                       <h3 className="font-semibold text-foreground mb-2">{service.name}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                      <p className="text-base text-muted-foreground leading-relaxed mb-3">
                         {service.description}
                       </p>
                       <div className="flex flex-wrap gap-3 text-sm">
@@ -473,10 +473,10 @@ export default function EslTechHub() {
                   <CardContent className="p-6">
                     <GraduationCap className="h-6 w-6 text-primary mb-3" />
                     <h3 className="font-semibold text-foreground mb-2">{cls.name}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    <p className="text-base text-muted-foreground leading-relaxed mb-3">
                       {cls.description}
                     </p>
-                    <p className="text-xs text-primary font-medium">{cls.url}</p>
+                    <p className="text-sm text-primary font-medium">{cls.url}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -537,7 +537,7 @@ export default function EslTechHub() {
                   <CardContent className="p-5">
                     <div className="flex items-start gap-3">
                       <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
-                      <p className="text-sm text-foreground/90 leading-relaxed">{sign}</p>
+                      <p className="text-base text-foreground/90 leading-relaxed">{sign}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -546,7 +546,7 @@ export default function EslTechHub() {
 
             <Card className="rounded-2xl border border-border bg-card mt-6">
               <CardContent className="p-6">
-                <p className="text-sm text-foreground/90 leading-relaxed">
+                <p className="text-base text-foreground/90 leading-relaxed">
                   <strong>If you think you were scammed:</strong> Report it at{' '}
                   <span className="text-primary">reportfraud.ftc.gov</span> (available in Spanish
                   at reportefraude.ftc.gov). It is free. You will not get in trouble with
@@ -577,7 +577,7 @@ export default function EslTechHub() {
                     {lang.resources.map((r, i) => (
                       <li
                         key={i}
-                        className="text-sm text-muted-foreground flex items-start gap-2"
+                        className="text-base text-muted-foreground flex items-start gap-2"
                       >
                         <ArrowRight className="h-3.5 w-3.5 text-primary shrink-0 mt-0.5" />
                         <span>{r}</span>

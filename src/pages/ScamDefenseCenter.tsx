@@ -283,12 +283,12 @@ export default function ScamDefenseCenter() {
             <strong className="text-white">$10 billion from Americans in 2023</strong>. Seniors are
             the #1 target. Here&apos;s everything you need to stay safe.
           </p>
-          <p className="mt-3 text-sm text-white/70">Source: FTC Consumer Sentinel Network Data Book 2023</p>
+          <p className="mt-3 text-base text-white/70">Source: FTC Consumer Sentinel Network Data Book 2023</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
             <Button
               asChild
               size="lg"
-              className="bg-white text-red-600 hover:bg-white/90 font-semibold min-h-[44px]"
+              className="bg-card text-danger-foreground hover:bg-white/90 font-semibold min-h-[44px]"
             >
               <a href="#checklist">Check for Warning Signs</a>
             </Button>
@@ -308,17 +308,17 @@ export default function ScamDefenseCenter() {
 
         {/* ── 2. Quick Checklist ────────────────────────────────────────────── */}
         <section id="checklist" className="scroll-mt-20">
-          <Card className="border-2 border-red-200 dark:border-red-800/50 overflow-hidden">
-            <CardHeader className="bg-red-50 dark:bg-red-950/30 border-b border-red-200 dark:border-red-800/50 pb-4">
+          <Card className="border-2 border-danger-foreground/25 overflow-hidden">
+            <CardHeader className="bg-danger border-b border-danger-foreground/25 pb-4">
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-red-100 dark:bg-red-900/50 rounded-lg shrink-0">
-                  <AlertTriangle className="h-6 w-6 text-red-600 dark:text-red-400" />
+                <div className="p-2 bg-danger rounded-lg shrink-0">
+                  <AlertTriangle className="h-6 w-6 text-danger-foreground " />
                 </div>
                 <div>
-                  <CardTitle className="text-xl text-red-900 dark:text-red-100">
+                  <CardTitle className="text-xl text-danger-foreground ">
                     Is This a Scam? Check These 5 Warning Signs
                   </CardTitle>
-                  <p className="text-sm text-red-700/80 dark:text-red-300/80 mt-1">
+                  <p className="text-base text-red-700/80 dark:text-red-300/80 mt-1">
                     Check every box that applies to your situation right now.
                   </p>
                 </div>
@@ -335,8 +335,8 @@ export default function ScamDefenseCenter() {
                         onClick={() => toggleItem(sign.id)}
                         className={`w-full flex items-center gap-4 px-4 py-3 rounded-xl border-2 text-left transition-all min-h-[52px] ${
                           checked
-                            ? 'border-red-400 bg-red-50 dark:bg-red-950/40 dark:border-red-600'
-                            : 'border-border hover:border-red-300 hover:bg-red-50/30 dark:hover:bg-red-950/20'
+                            ? 'border-red-400 bg-danger dark:border-red-600'
+                            : 'border-border hover:border-danger-foreground/25 hover:bg-red-50/30 dark:hover:bg-red-950/20'
                         }`}
                         aria-pressed={checked}
                       >
@@ -379,15 +379,15 @@ export default function ScamDefenseCenter() {
               <div
                 className={`mt-5 rounded-xl px-5 py-4 border-2 transition-all ${
                   anyChecked
-                    ? 'border-red-400 bg-red-50 dark:bg-red-950/40 dark:border-red-600'
+                    ? 'border-red-400 bg-danger dark:border-red-600'
                     : 'border-border bg-muted/30'
                 }`}
               >
                 {anyChecked ? (
                   <div className="flex items-start gap-3">
-                    <AlertTriangle className="h-5 w-5 text-red-600 dark:text-red-400 shrink-0 mt-0.5" />
+                    <AlertTriangle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-bold text-red-800 dark:text-red-200 text-base">
+                      <p className="font-bold text-danger-foreground text-base">
                         Stop — this may be a scam.
                       </p>
                       <p className="text-red-700/80 dark:text-red-300/80 mt-1 leading-relaxed">
@@ -399,7 +399,7 @@ export default function ScamDefenseCenter() {
                     </div>
                   </div>
                 ) : (
-                  <p className="text-muted-foreground text-sm text-center">
+                  <p className="text-muted-foreground text-base text-center">
                     Check the boxes above that apply to your situation.
                   </p>
                 )}
@@ -438,24 +438,24 @@ export default function ScamDefenseCenter() {
                       </Badge>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-3">
                     {scam.description}
                   </p>
                   <div className="rounded-lg bg-background/80 border border-border/60 px-3 py-2.5">
                     <p className="text-xs font-bold text-foreground/70 uppercase tracking-wide mb-1">
                       How to spot it
                     </p>
-                    <p className="text-sm leading-relaxed">{scam.spotIt}</p>
+                    <p className="text-base leading-relaxed">{scam.spotIt}</p>
                   </div>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          <Card className="mt-5 border-amber-200 dark:border-amber-800/40 bg-amber-50/50 dark:bg-amber-950/20">
+          <Card className="mt-5 border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/20">
             <CardContent className="py-4 px-5 flex items-start gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
-              <p className="text-sm leading-relaxed">
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
+              <p className="text-base leading-relaxed">
                 <strong>Looking for the latest scam alerts?</strong> Our{' '}
                 <Link
                   to="/safety/scam-alerts"
@@ -491,11 +491,11 @@ export default function ScamDefenseCenter() {
                     <option.icon className={`h-5 w-5 ${option.iconColor}`} />
                   </div>
                   <h3 className="font-bold text-base mb-1">{option.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-3">
                     {option.description}
                   </p>
                   {option.phone && (
-                    <p className="text-sm font-semibold mb-3">
+                    <p className="text-base font-semibold mb-3">
                       <Phone className="h-3.5 w-3.5 inline mr-1.5 text-muted-foreground" />
                       {option.phone}
                     </p>
@@ -526,12 +526,12 @@ export default function ScamDefenseCenter() {
             </p>
           </div>
 
-          <Card className="border-2 border-green-200 dark:border-green-800/40">
+          <Card className="border-2 border-success-foreground/25 ">
             <CardContent className="p-0">
-              <div className="bg-green-50 dark:bg-green-950/30 border-b border-green-200 dark:border-green-800/40 px-6 py-4 rounded-t-lg">
+              <div className="bg-success border-b border-success-foreground/25 px-6 py-4 rounded-t-lg">
                 <div className="flex items-center gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400" />
-                  <p className="font-semibold text-green-900 dark:text-green-100">
+                  <CheckCircle2 className="h-6 w-6 text-success-foreground " />
+                  <p className="font-semibold text-success-foreground ">
                     Billions of dollars are lost to scams every year. Anyone can be targeted. What
                     matters now is taking these steps.
                   </p>
@@ -547,7 +547,7 @@ export default function ScamDefenseCenter() {
                   >
                     <AccordionTrigger className="hover:no-underline py-4 min-h-[52px]">
                       <span className="flex items-center gap-3 text-left">
-                        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300 text-sm font-bold shrink-0">
+                        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-success text-success-foreground text-sm font-bold shrink-0">
                           {i + 1}
                         </span>
                         <span className="font-semibold text-base leading-snug">{step.title}</span>
@@ -563,14 +563,14 @@ export default function ScamDefenseCenter() {
           </Card>
 
           {/* AARP callout */}
-          <Card className="mt-5 border-red-200 dark:border-red-800/40 bg-red-50/40 dark:bg-red-950/20">
+          <Card className="mt-5 border-danger-foreground/25 bg-red-50/40 dark:bg-red-950/20">
             <CardContent className="py-5 px-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <div className="p-3 bg-red-100 dark:bg-red-900/50 rounded-full shrink-0">
-                <Phone className="h-6 w-6 text-red-600 dark:text-red-400" />
+              <div className="p-3 bg-danger rounded-full shrink-0">
+                <Phone className="h-6 w-6 text-danger-foreground " />
               </div>
               <div className="flex-1">
                 <p className="font-bold text-base">AARP Fraud Watch Helpline</p>
-                <p className="text-muted-foreground text-sm mt-0.5">
+                <p className="text-muted-foreground text-base mt-0.5">
                   Free, confidential support from people who understand what you&apos;re going
                   through. Available Monday–Friday, 8 AM–8 PM ET.
                 </p>
@@ -600,17 +600,17 @@ export default function ScamDefenseCenter() {
 
           <div className="grid gap-4 sm:grid-cols-3">
             {/* Scam Simulator */}
-            <Card className="border-2 border-orange-200 dark:border-orange-800/40 hover:shadow-md transition-shadow group">
+            <Card className="border-2 border-warn-foreground/25 hover:shadow-md transition-shadow group">
               <CardContent className="p-5 h-full flex flex-col">
                 <div className="text-3xl mb-3" aria-hidden="true"></div>
                 <h3 className="font-bold text-base mb-2">Practice Spotting Scams</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                <p className="text-base text-muted-foreground leading-relaxed flex-1">
                   Try real-world examples in a safe environment. The more you practice, the easier
                   it is to recognize a scam when it really happens.
                 </p>
                 <Link
                   to="/practice"
-                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-600 dark:text-orange-400 hover:underline min-h-[44px]"
+                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-warn-foreground hover:underline min-h-[44px]"
                 >
                   Open Practice Rooms
                   <ChevronRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
@@ -619,17 +619,17 @@ export default function ScamDefenseCenter() {
             </Card>
 
             {/* Freeze Credit Guide */}
-            <Card className="border-2 border-blue-200 dark:border-blue-800/40 hover:shadow-md transition-shadow group">
+            <Card className="border-2 border-info-foreground/25 hover:shadow-md transition-shadow group">
               <CardContent className="p-5 h-full flex flex-col">
                 <div className="text-3xl mb-3" aria-hidden="true"></div>
                 <h3 className="font-bold text-base mb-2">Freeze Your Credit</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                <p className="text-base text-muted-foreground leading-relaxed flex-1">
                   A credit freeze is free and one of the most powerful tools against identity theft.
                   This guide walks you through it step by step.
                 </p>
                 <Link
                   to="/guides/freeze-credit-identity-theft"
-                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline min-h-[44px]"
+                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-info-foreground hover:underline min-h-[44px]"
                 >
                   Read the Guide
                   <ChevronRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
@@ -638,17 +638,17 @@ export default function ScamDefenseCenter() {
             </Card>
 
             {/* Strong Passwords Guide */}
-            <Card className="border-2 border-green-200 dark:border-green-800/40 hover:shadow-md transition-shadow group">
+            <Card className="border-2 border-success-foreground/25 hover:shadow-md transition-shadow group">
               <CardContent className="p-5 h-full flex flex-col">
                 <div className="text-3xl mb-3" aria-hidden="true"></div>
                 <h3 className="font-bold text-base mb-2">Create Strong Passwords</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                <p className="text-base text-muted-foreground leading-relaxed flex-1">
                   Weak passwords make it easy for scammers to break into your accounts. Learn how to
                   create strong ones you can actually remember.
                 </p>
                 <Link
                   to="/guides/how-to-create-strong-password"
-                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-green-600 dark:text-green-400 hover:underline min-h-[44px]"
+                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-success-foreground hover:underline min-h-[44px]"
                 >
                   Read the Guide
                   <ChevronRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
@@ -662,7 +662,7 @@ export default function ScamDefenseCenter() {
             <CardContent className="py-7 px-6 text-center">
               <Lock className="h-8 w-8 text-primary mx-auto mb-3" />
               <h2 className="text-xl font-bold mb-2">Want a personalized safety score?</h2>
-              <p className="text-muted-foreground mb-5 max-w-md mx-auto text-sm leading-relaxed">
+              <p className="text-muted-foreground mb-5 max-w-md mx-auto text-base leading-relaxed">
                 Our free Cyber Scorecard checks your passwords, accounts, and devices and tells you
                 exactly where to focus — no technical knowledge required.
               </p>

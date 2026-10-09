@@ -85,7 +85,7 @@ export default function GroupTextSetupWizard() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Group Text Setup Wizard | TekSure"
         description="Step-by-step walkthrough to start a group text on iPhone or Android — perfect for staying in touch with family."
@@ -94,10 +94,10 @@ export default function GroupTextSetupWizard() {
       <div className="max-w-xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <MessageSquare className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Group Text Setup</h1>
+            <MessageSquare className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Group Text Setup</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             A step-by-step walkthrough to start a group text with your family or friends.
           </p>
         </div>
@@ -126,14 +126,14 @@ export default function GroupTextSetupWizard() {
           <div>
             <div className="flex items-center justify-between mb-4">
               <Badge variant="secondary" className="text-sm">{platform === "iphone" ? "iPhone" : "Android"}</Badge>
-              <button onClick={reset} className="text-sm text-blue-600 underline">Switch phone</button>
+              <button onClick={reset} className="text-sm text-info-foreground underline">Switch phone</button>
             </div>
 
             {/* Progress */}
             <div className="mb-4">
               <div className="flex items-center justify-between mb-1">
-                <span className="text-sm font-medium text-gray-700">Step {stepIndex + 1} of {total}</span>
-                <span className="text-sm text-gray-500">{Math.round(((stepIndex + 1) / total) * 100)}%</span>
+                <span className="text-base font-medium text-foreground">Step {stepIndex + 1} of {total}</span>
+                <span className="text-base text-muted-foreground">{Math.round(((stepIndex + 1) / total) * 100)}%</span>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
                 <div
@@ -154,10 +154,10 @@ export default function GroupTextSetupWizard() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-base text-gray-700 mb-3">{steps[stepIndex].detail}</p>
+                <p className="text-base text-foreground mb-3">{steps[stepIndex].detail}</p>
                 {steps[stepIndex].tip && (
-                  <div className="bg-amber-50 border-l-4 border-amber-400 p-3 rounded">
-                    <p className="text-sm text-amber-900">
+                  <div className="bg-warn border-l-4 border-amber-400 p-3 rounded">
+                    <p className="text-base text-warn-foreground">
                       <span className="font-semibold">Quick Tip: </span>
                       {steps[stepIndex].tip}
                     </p>
@@ -189,15 +189,15 @@ export default function GroupTextSetupWizard() {
 
             {/* Bonus tips after last step */}
             {isLast && (
-              <Card className="bg-blue-50 border-blue-200">
+              <Card className="bg-info border-info-foreground/25">
                 <CardHeader className="pb-2">
-                  <CardTitle className="text-base text-blue-800">Group Texting Tips</CardTitle>
+                  <CardTitle className="text-base text-info-foreground">Group Texting Tips</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2">
                     {TIPS.map((t, i) => (
-                      <li key={i} className="text-sm text-blue-900 flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
+                      <li key={i} className="text-base text-info-foreground flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-info-foreground mt-0.5 shrink-0" />
                         <span>{t}</span>
                       </li>
                     ))}
@@ -208,6 +208,6 @@ export default function GroupTextSetupWizard() {
           </div>
         )}
       </div>
-    </div>
+    </main>
   );
 }

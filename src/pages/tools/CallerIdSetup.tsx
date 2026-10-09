@@ -95,7 +95,7 @@ export default function CallerIdSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <PhoneOff className="h-8 w-8 text-blue-600" />
+                <PhoneOff className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Caller ID and Call Screening Setup</h1>
@@ -110,7 +110,7 @@ export default function CallerIdSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your phone</p>
+              <p className="text-base font-semibold mb-3">Pick your phone</p>
               <div className="flex flex-wrap gap-2">
                 {(['iphone', 'pixel', 'samsung', 'android'] as Phone[]).map(p => (
                   <Button key={p} variant={phone === p ? 'default' : 'outline'} onClick={() => setPhone(p)}>
@@ -126,7 +126,7 @@ export default function CallerIdSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Setup steps</p>
               <ol className="space-y-3">
                 {SETUP[phone].map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <div>
                       <p className="font-semibold">{s.title}</p>
@@ -144,17 +144,17 @@ export default function CallerIdSetup() {
               <div className="space-y-3">
                 {TIPS.map((t, i) => (
                   <div key={i} className="p-3 rounded-lg border border-border">
-                    <p className="font-medium text-sm">{t.title}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{t.detail}</p>
+                    <p className="font-medium text-base">{t.title}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{t.detail}</p>
                   </div>
                 ))}
               </div>
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20">
+          <Card className="border-warn-foreground/25 bg-warn ">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Caller ID can be faked</p>
                 <p className="text-muted-foreground">
@@ -168,20 +168,20 @@ export default function CallerIdSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/robocall-blocker-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Robocall Blocker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Turn on the carrier-side blocker too.</p>
+                <p className="font-medium text-base">Robocall Blocker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Turn on the carrier-side blocker too.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Check that suspicious voicemail or text.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Check that suspicious voicemail or text.</p>
               </Link>
               <Link to="/tools/voicemail-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Voicemail Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Read silenced calls on screen.</p>
+                <p className="font-medium text-base">Voicemail Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Read silenced calls on screen.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <Phone className="h-3 w-3" /> Quick Tip: a real caller will leave a message. Silence is the best filter you have.
           </p>
         </div>

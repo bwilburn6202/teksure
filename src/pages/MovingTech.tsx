@@ -221,7 +221,7 @@ export default function MovingTech() {
               <Card key={item.title} className="border-2">
                 <CardContent className="p-6">
                   <h3 className="mb-2 font-semibold">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-base text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -254,7 +254,7 @@ export default function MovingTech() {
                           <CheckCircle2 className="h-4 w-4 text-muted-foreground" />
                           <span className="font-medium">{item.name}</span>
                         </div>
-                        <p className="ml-6 mt-1 text-sm text-muted-foreground">{item.note}</p>
+                        <p className="ml-6 mt-1 text-base text-muted-foreground">{item.note}</p>
                       </div>
                       {item.url && (
                         <a
@@ -295,11 +295,11 @@ export default function MovingTech() {
               return (
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
+                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-info text-info-foreground ">
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -328,11 +328,11 @@ export default function MovingTech() {
                 return (
                   <Card key={item.title} className="border-2">
                     <CardContent className="p-6">
-                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-warn text-warn-foreground ">
                         <Icon className="h-5 w-5" />
                       </div>
                       <h3 className="mb-2 font-semibold">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                      <p className="text-base text-muted-foreground">{item.description}</p>
                     </CardContent>
                   </Card>
                 );
@@ -361,11 +361,11 @@ export default function MovingTech() {
               return (
                 <Card key={item.title}>
                   <CardContent className="p-6">
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
+                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-success text-success-foreground ">
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -393,7 +393,7 @@ export default function MovingTech() {
               <Card className="border-2">
                 <CardContent className="p-6">
                   <h3 className="mb-2 text-lg font-semibold">Internet Plan Comparator</h3>
-                  <p className="mb-4 text-sm text-muted-foreground">
+                  <p className="mb-4 text-base text-muted-foreground">
                     Compare home internet plans by speed, price, and contract length. Cuts through
                     the marketing noise to show actual cost per Mbps.
                   </p>
@@ -408,7 +408,7 @@ export default function MovingTech() {
               <Card className="border-2">
                 <CardContent className="p-6">
                   <h3 className="mb-2 text-lg font-semibold">Phone Plan Comparator</h3>
-                  <p className="mb-4 text-sm text-muted-foreground">
+                  <p className="mb-4 text-base text-muted-foreground">
                     A move is a great moment to re-shop your phone plan. Coverage, price, and data
                     needs may have changed. Side-by-side comparison.
                   </p>
@@ -440,11 +440,11 @@ export default function MovingTech() {
               return (
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
+                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-info text-info-foreground ">
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="mb-4 text-sm text-muted-foreground">{item.description}</p>
+                    <p className="mb-4 text-base text-muted-foreground">{item.description}</p>
                     {item.cta && (
                       <Button asChild variant="outline" size="sm">
                         <Link to={item.cta.to}>

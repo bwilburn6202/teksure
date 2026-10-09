@@ -16,7 +16,7 @@ export default function ScamDatingFlags() {
           <p className="text-lg text-muted-foreground">$1.3 billion/yr lost to romance scams.</p>
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Scammer playbook</h2>
             <ol className="list-decimal pl-5 space-y-2 text-base">

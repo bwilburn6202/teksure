@@ -73,8 +73,8 @@ export default function DataBreachChecker() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-amber-50 dark:bg-amber-950/30 flex items-center justify-center flex-shrink-0">
-                <ShieldCheck className="h-6 w-6 text-amber-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-warn flex items-center justify-center flex-shrink-0">
+                <ShieldCheck className="h-6 w-6 text-warn-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -91,7 +91,7 @@ export default function DataBreachChecker() {
             <h2 className="font-semibold flex items-center gap-2 mb-3">
               <Info className="h-5 w-5 text-primary" aria-hidden="true" /> What is a data breach?
             </h2>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="text-base text-muted-foreground leading-relaxed">
               A data breach happens when hackers break into a company's computer systems and steal customer information. This can include your name, email address, phone number, passwords, Social Security number, or credit card information. Even if you did everything right to protect yourself, your data can be stolen from a company you trusted with it.
             </p>
           </div>
@@ -99,7 +99,7 @@ export default function DataBreachChecker() {
           {/* Email check */}
           <div className="p-6 rounded-2xl border border-border bg-card mb-8">
             <h2 className="font-semibold text-lg mb-2">Check your email address</h2>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               Enter your email below to see which major breaches may have included accounts associated with your email address. Your email is not sent anywhere — this check runs entirely on your device.
             </p>
             <div className="flex gap-3">
@@ -128,19 +128,19 @@ export default function DataBreachChecker() {
           {hasChecked && (
             <>
               {/* Results */}
-              <div className="p-5 rounded-2xl border-2 border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-950/20 mb-8">
+              <div className="p-5 rounded-2xl border-2 border-warn-foreground/25 bg-warn mb-8">
                 <div className="flex items-start gap-3">
-                  <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <AlertTriangle className="h-6 w-6 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <h3 className="font-semibold text-amber-800 dark:text-amber-300 mb-1">Your email has likely been in data breaches</h3>
-                    <p className="text-sm text-amber-700 dark:text-amber-400 leading-relaxed">
+                    <h3 className="font-semibold text-warn-foreground mb-1">Your email has likely been in data breaches</h3>
+                    <p className="text-base text-warn-foreground leading-relaxed">
                       If you have had an online account for more than a few years, your email address has almost certainly been part of at least one data breach. The breaches below affected billions of people. Review the list and follow the recovery steps.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 For a real-time check against all known breaches, visit the trusted resource below:
               </p>
               <a
@@ -161,15 +161,15 @@ export default function DataBreachChecker() {
                       <h3 className="font-semibold">{breach.name}</h3>
                       <Badge variant="outline" className="whitespace-nowrap">{breach.date}</Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-3">{breach.description}</p>
+                    <p className="text-base text-muted-foreground mb-3">{breach.description}</p>
                     <div className="flex flex-wrap gap-4 text-xs">
                       <span className="flex items-center gap-1 text-muted-foreground">
-                        <AlertTriangle className="h-3 w-3 text-amber-500" aria-hidden="true" /> {breach.recordsAffected}
+                        <AlertTriangle className="h-3 w-3 text-warn-foreground" aria-hidden="true" /> {breach.recordsAffected}
                       </span>
                     </div>
                     <div className="flex flex-wrap gap-1.5 mt-3">
                       {breach.dataExposed.map(d => (
-                        <span key={d} className="px-2 py-0.5 rounded-full bg-red-50 dark:bg-red-950/20 text-red-700 dark:text-red-400 text-xs font-medium">{d}</span>
+                        <span key={d} className="px-2 py-0.5 rounded-full bg-danger text-danger-foreground text-xs font-medium">{d}</span>
                       ))}
                     </div>
                   </div>
@@ -180,7 +180,7 @@ export default function DataBreachChecker() {
               <h2 className="font-semibold text-lg mb-2 flex items-center gap-2">
                 <Lock className="h-5 w-5 text-primary" aria-hidden="true" /> What to Do After a Data Breach
               </h2>
-              <p className="text-sm text-muted-foreground mb-4">Check off each step as you complete it. These are the most important things you can do to protect yourself.</p>
+              <p className="text-base text-muted-foreground mb-4">Check off each step as you complete it. These are the most important things you can do to protect yourself.</p>
 
               <div className="p-4 rounded-2xl border border-border bg-card mb-4">
                 <div className="flex justify-between text-sm mb-2">
@@ -201,11 +201,11 @@ export default function DataBreachChecker() {
                       aria-label={step.label}
                     />
                     <div className="flex-1">
-                      <label htmlFor={step.id} className={`text-sm font-medium cursor-pointer flex items-center gap-2 ${checkedSteps[step.id] ? 'line-through text-muted-foreground' : ''}`}>
+                      <label htmlFor={step.id} className={`text-base font-medium cursor-pointer flex items-center gap-2 ${checkedSteps[step.id] ? 'line-through text-muted-foreground' : ''}`}>
                         <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-primary/10 text-primary text-xs font-bold flex-shrink-0">{i + 1}</span>
                         {step.label}
                       </label>
-                      <p className="text-xs text-muted-foreground mt-1 leading-relaxed ml-7">{step.why}</p>
+                      <p className="text-sm text-muted-foreground mt-1 leading-relaxed ml-7">{step.why}</p>
                       {step.link && (
                         <a href={step.link} target="_blank" rel="noopener noreferrer" className="text-xs text-primary hover:underline inline-flex items-center gap-1 mt-1 ml-7">
                           <ExternalLink className="h-3 w-3" aria-hidden="true" /> {step.linkLabel}
@@ -220,7 +220,7 @@ export default function DataBreachChecker() {
 
           {/* Prevention tips */}
           <h2 className="font-semibold text-lg mb-4 flex items-center gap-2">
-            <CheckCircle className="h-5 w-5 text-green-500" aria-hidden="true" /> How to Protect Yourself Going Forward
+            <CheckCircle className="h-5 w-5 text-success-foreground" aria-hidden="true" /> How to Protect Yourself Going Forward
           </h2>
           <div className="space-y-3 mb-8">
             {[
@@ -233,16 +233,16 @@ export default function DataBreachChecker() {
               <div key={tip.title} className="flex gap-3 p-4 rounded-xl border border-border bg-card">
                 <ArrowRight className="h-4 w-4 text-primary flex-shrink-0 mt-1" aria-hidden="true" />
                 <div>
-                  <p className="text-sm font-medium mb-1">{tip.title}</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{tip.desc}</p>
+                  <p className="text-base font-medium mb-1">{tip.title}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{tip.desc}</p>
                 </div>
               </div>
             ))}
           </div>
 
           {/* Resources */}
-          <div className="p-6 rounded-2xl bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800">
-            <p className="text-sm text-blue-800 dark:text-blue-300 font-medium mb-3">Official Resources</p>
+          <div className="p-6 rounded-2xl bg-info border border-info-foreground/25 ">
+            <p className="text-base text-info-foreground font-medium mb-3">Official Resources</p>
             <div className="space-y-2">
               {[
                 { url: 'https://www.identitytheft.gov/', label: 'IdentityTheft.gov — FTC identity theft recovery' },
@@ -250,7 +250,7 @@ export default function DataBreachChecker() {
                 { url: 'https://www.annualcreditreport.com/', label: 'AnnualCreditReport.com — free credit reports' },
                 { url: 'https://consumer.ftc.gov/features/identity-theft', label: 'FTC: Identity Theft resources' },
               ].map(r => (
-                <a key={r.url} href={r.url} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-700 dark:text-blue-400 hover:underline flex items-center gap-1">
+                <a key={r.url} href={r.url} target="_blank" rel="noopener noreferrer" className="text-sm text-info-foreground hover:underline flex items-center gap-1">
                   <ExternalLink className="h-3.5 w-3.5 flex-shrink-0" aria-hidden="true" /> {r.label}
                 </a>
               ))}

@@ -191,30 +191,7 @@ Tablet screens are wide enough that split screen actually feels comfortable — 
   },
 
   // ── EMAIL PLATFORMS ──────────────────────────────────────────────────────────
-  {
-    slug: 'use-outlook-hotmail-email',
-    title: 'How to Set Up and Use Outlook (Hotmail) Email',
-    excerpt: `Set up a free Outlook.com (formerly Hotmail) email account and learn to send, receive, and organize your messages with Microsoft's email service.`,
-    category: 'essential-skills',
-    tags: ['Outlook', 'Hotmail', 'email', 'Microsoft', 'beginners'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner',
-    body: `Outlook.com (which was previously called Hotmail) is Microsoft's free email service. If you have an email address ending in @outlook.com, @hotmail.com, or @live.com, you already have a Microsoft account. Outlook.com works well in any web browser and also has a free app for iPhone and Android phones.
-
-Having a Microsoft account also gives you access to the free web versions of Microsoft Word, Excel, and PowerPoint at office.com — a helpful bonus if you ever need to work on those types of files. Setting up a new Outlook account takes about five minutes.
-
-Outlook is a good choice if you use a Windows PC, because your email account can connect to the built-in Outlook desktop app that comes with Windows.`,
-    steps: [
-      { title: 'Create a Microsoft account', content: 'Go to outlook.com and click "Create free account." Choose an email address ending in @outlook.com, then set a password. You will also provide your name, birthdate, and country.' },
-      { title: 'Verify your account', content: 'Microsoft may ask you to verify your identity by entering a code sent to a phone number or another email address. This step protects your account from being created by automated programs.' },
-      { title: 'Explore your inbox', content: 'Once inside, your inbox appears on the left side. Unread emails are shown in bold. Click any email to read it in the panel on the right side of the screen.' },
-      { title: 'Write and send an email', content: `Click the "+ New message" button at the top left. Fill in the "To" field with the recipient's email address, add a subject, write your message, and click "Send."` },
-      { title: 'Organize with folders', content: 'Right-click on any email to see options including "Move to folder." You can create folders — like "Family" or "Bills" — to keep emails organized. Click the folder names in the left sidebar to view them.' },
-    ],
-  },
-  {
+    {
     slug: 'use-yahoo-mail',
     title: 'How to Set Up and Use Yahoo Mail',
     excerpt: `Create a free Yahoo Mail account and learn to send emails, manage your inbox, and stay organized with Yahoo's email service.`,
@@ -450,31 +427,7 @@ Funds from a mobile deposit usually become available within one business day, th
       { title: 'Confirm the amount and submit', content: 'The app will ask you to confirm or enter the check amount. Review the information, select which account to deposit into, and tap "Submit." Keep the physical check in a safe place for 2–3 weeks in case any questions arise, then shred it.' },
     ],
   },
-  {
-    slug: 'pay-bills-online',
-    canonicalSlug: 'pay-bills-online-safely',
-    title: 'How to Pay Bills Online Safely',
-    excerpt: `Pay your electric, phone, and other bills online through official websites or your bank's bill pay feature — and avoid scams in the process.`,
-    category: 'financial-tech',
-    tags: ['bill pay', 'online banking', 'utilities', 'financial', 'safety', 'beginners'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner',
-    body: `Paying bills online saves time and stamps, and most utility companies, insurance providers, and lenders make it straightforward to do. There are two main ways to pay a bill online: go directly to the company's website and pay through their customer portal, or use your bank's bill pay feature to send a payment from your checking account. Both methods are safe when you use official websites and your bank's secure app.
-
-The biggest risk with online bill pay is accidentally giving your payment information to a scam website that looks like a real company's site. Always type the company's web address directly into your browser bar rather than clicking a link from an email — scammers sometimes send fake invoices with links to fraudulent payment pages.
-
-Your bank's bill pay feature is often the safest option because you enter the company's information once, and the bank sends the payment. You never have to enter your bank details on a third-party website.`,
-    steps: [
-      { title: 'Find the official website for your bill', content: `Look at your paper bill or the company's name on your account statement. Type their official web address directly into your browser — do not search and click on ads or links from emails. The correct site should have "https://" at the beginning of the address (the "s" stands for secure).` },
-      { title: 'Create an online account with the company', content: 'Most companies ask you to register for an online account using your account number (found on your paper bill), your email address, and a password. This takes about five minutes and only needs to be done once.' },
-      { title: 'Log in and navigate to Pay Bill', content: 'Sign in to your account and look for a button labeled "Pay Bill," "Make a Payment," or "Pay Now." Click it to start the payment process.' },
-      { title: 'Enter your payment information', content: 'Choose your payment method: checking account (using your routing and account numbers from the bottom of a check) or debit/credit card. Enter the payment amount and the date you want the payment to post. Review the details carefully before confirming.' },
-      { title: `Use your bank's bill pay as an alternative`, content: `Log into your bank's website or app and look for "Bill Pay." Add the company as a payee. You will need the company's name, your account number with them, and their mailing address. Once added, you can schedule payments without ever visiting the company's site.` },
-    ],
-  },
-  {
+    {
     slug: 'use-apple-pay-google-pay',
     title: 'How to Use Apple Pay or Google Pay',
     excerpt: 'Pay in stores and online using your phone instead of your physical card — Apple Pay and Google Pay are more secure than swiping a card.',

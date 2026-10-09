@@ -47,7 +47,7 @@ export function MasteryPicker({ slug, compact = false, onPick }: MasteryPickerPr
       className={compact ? 'space-y-2' : 'space-y-3'}
     >
       {!compact && (
-        <p className="text-sm font-medium text-foreground">
+        <p className="text-base font-medium text-foreground">
           How well did this guide stick with you?
         </p>
       )}
@@ -89,7 +89,7 @@ export function MasteryPicker({ slug, compact = false, onPick }: MasteryPickerPr
                 </span>
               </span>
               {!compact && (
-                <span className="text-xs text-muted-foreground leading-snug">
+                <span className="text-sm text-muted-foreground leading-snug">
                   {meta.description}
                 </span>
               )}
@@ -99,7 +99,7 @@ export function MasteryPicker({ slug, compact = false, onPick }: MasteryPickerPr
       </div>
 
       {!compact && current !== 'not-started' && (
-        <p className="text-xs text-muted-foreground">
+        <p className="text-sm text-muted-foreground">
           Saved. You can change this any time — your progress will follow you across devices when you sign in.
         </p>
       )}

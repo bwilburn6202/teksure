@@ -287,13 +287,13 @@ export default function BereavementTech() {
       {/* Disclaimer */}
       <section className="container mx-auto px-4 pt-10">
         <div className="mx-auto max-w-3xl">
-          <Card className="border-2 border-slate-300 bg-slate-50 dark:border-slate-700 dark:bg-slate-900/40">
+          <Card className="border-2 border-border bg-muted ">
             <CardContent className="p-6">
               <div className="flex items-start gap-3">
-                <Heart className="mt-1 h-5 w-5 shrink-0 text-slate-700 dark:text-slate-300" />
+                <Heart className="mt-1 h-5 w-5 shrink-0 text-foreground " />
                 <div>
                   <h3 className="mb-2 font-semibold">Before you begin</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     There is no rush. This guide is here when you're ready — not before. Start
                     wherever feels right. Skip what doesn't apply. Come back later for the parts
                     you can't face today. Grief does not move in a straight line, and neither
@@ -324,7 +324,7 @@ export default function BereavementTech() {
               <Card key={item.title} className="border-2">
                 <CardContent className="p-6">
                   <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-base text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -352,11 +352,11 @@ export default function BereavementTech() {
                 return (
                   <Card key={item.title} className="border-2">
                     <CardContent className="p-6">
-                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-foreground ">
                         <Icon className="h-5 w-5" />
                       </div>
                       <h3 className="mb-2 font-semibold">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                      <p className="text-base text-muted-foreground">{item.description}</p>
                     </CardContent>
                   </Card>
                 );
@@ -384,7 +384,7 @@ export default function BereavementTech() {
               <Card key={item.title} className="border-2">
                 <CardContent className="p-6">
                   <h3 className="mb-2 font-semibold">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-base text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -412,7 +412,7 @@ export default function BereavementTech() {
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -441,7 +441,7 @@ export default function BereavementTech() {
               <Card key={item.title} className="border-2">
                 <CardContent className="p-6">
                   <h3 className="mb-2 font-semibold">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-base text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -469,11 +469,11 @@ export default function BereavementTech() {
                 return (
                   <Card key={item.title} className="border-2">
                     <CardContent className="p-6">
-                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-foreground ">
                         <Icon className="h-5 w-5" />
                       </div>
                       <h3 className="mb-2 font-semibold">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                      <p className="text-base text-muted-foreground">{item.description}</p>
                     </CardContent>
                   </Card>
                 );
@@ -501,7 +501,7 @@ export default function BereavementTech() {
               <Card key={item.title} className="border-2">
                 <CardContent className="p-6">
                   <h3 className="mb-2 font-semibold">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-base text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -529,11 +529,11 @@ export default function BereavementTech() {
                 return (
                   <Card key={item.title} className="border-2">
                     <CardContent className="p-6">
-                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-foreground ">
                         <Icon className="h-5 w-5" />
                       </div>
                       <h3 className="mb-2 font-semibold">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                      <p className="text-base text-muted-foreground">{item.description}</p>
                     </CardContent>
                   </Card>
                 );
@@ -558,10 +558,10 @@ export default function BereavementTech() {
           </div>
           <div className="space-y-4">
             {overwhelming.map((item) => (
-              <Card key={item.title} className="border-2 border-rose-200 dark:border-rose-900">
+              <Card key={item.title} className="border-2 border-danger-foreground/25 ">
                 <CardContent className="p-6">
                   <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-base text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -573,7 +573,7 @@ export default function BereavementTech() {
       <section className="border-t bg-gradient-to-b from-slate-50 to-background dark:from-slate-900/40">
         <div className="container mx-auto px-4 py-20">
           <div className="mx-auto max-w-3xl text-center">
-            <Flower className="mx-auto mb-6 h-12 w-12 text-slate-600 dark:text-slate-400" />
+            <Flower className="mx-auto mb-6 h-12 w-12 text-muted-foreground " />
             <h2 className="mb-4 text-2xl font-bold md:text-3xl">You'll find your own timeline.</h2>
             <p className="mb-8 text-lg text-muted-foreground">
               Take all the time you need. The logistics will still be there tomorrow, and next

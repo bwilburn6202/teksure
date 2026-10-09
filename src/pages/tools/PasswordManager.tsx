@@ -196,8 +196,8 @@ export default function PasswordManager() {
                 <CardContent className="p-5 flex items-start gap-3">
                   <AlertTriangle className="h-5 w-5 text-[hsl(var(--teksure-warning))] shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold text-sm">The most common way accounts get hacked</p>
-                    <p className="text-sm text-muted-foreground mt-0.5">
+                    <p className="font-semibold text-base">The most common way accounts get hacked</p>
+                    <p className="text-base text-muted-foreground mt-0.5">
                       When one website gets breached, hackers try your email and password on every other site. If you reuse passwords, they get in. A password manager gives every account a unique, unguessable password — so one breach can't spread.
                     </p>
                   </div>
@@ -236,11 +236,11 @@ export default function PasswordManager() {
                         <div className={`h-2 rounded-full transition-all ${strength.color}`} style={{ width: `${strength.score}%` }} />
                       </div>
                       {strength.score < 70 && (
-                        <p className="text-xs text-muted-foreground">Tip: use 12+ characters, mix uppercase, numbers, and symbols like ! or #</p>
+                        <p className="text-sm text-muted-foreground">Tip: use 12+ characters, mix uppercase, numbers, and symbols like ! or #</p>
                       )}
                     </div>
                   )}
-                  <p className="text-xs text-muted-foreground flex items-center gap-1">
+                  <p className="text-sm text-muted-foreground flex items-center gap-1">
                     <Lock className="h-3 w-3" /> This check runs entirely in your browser — nothing is sent anywhere.
                   </p>
                 </CardContent>
@@ -254,7 +254,7 @@ export default function PasswordManager() {
                 <CardContent className="space-y-3">
                   <div className="flex gap-2">
                     <div className="flex-1 px-3 py-2 rounded-lg border border-border bg-muted font-mono text-sm tracking-wide break-all min-h-[38px]">
-                      {generatedPwd || <span className="text-muted-foreground text-xs">Click "Generate" to create a strong password</span>}
+                      {generatedPwd || <span className="text-muted-foreground text-sm">Click "Generate" to create a strong password</span>}
                     </div>
                     <Button variant="outline" size="icon" onClick={handleCopy} disabled={!generatedPwd} className="shrink-0" title="Copy">
                       {copied ? <CheckCircle2 className="h-4 w-4 text-[hsl(var(--teksure-success))]" /> : <Copy className="h-4 w-4" />}
@@ -263,7 +263,7 @@ export default function PasswordManager() {
                   <Button onClick={handleGenerate} className="w-full">
                     <RefreshCw className="h-4 w-4 mr-2" /> Generate Strong Password
                   </Button>
-                  <p className="text-xs text-muted-foreground">16 characters, mixed case, numbers and symbols. Generated locally — never stored.</p>
+                  <p className="text-sm text-muted-foreground">16 characters, mixed case, numbers and symbols. Generated locally — never stored.</p>
                 </CardContent>
               </Card>
             </div>
@@ -279,8 +279,8 @@ export default function PasswordManager() {
                         {i + 1}
                       </div>
                       <div>
-                        <p className="font-semibold text-sm">{step.title}</p>
-                        <p className="text-sm text-muted-foreground mt-0.5">{step.detail}</p>
+                        <p className="font-semibold text-base">{step.title}</p>
+                        <p className="text-base text-muted-foreground mt-0.5">{step.detail}</p>
                       </div>
                     </div>
                   ))}
@@ -304,9 +304,9 @@ export default function PasswordManager() {
                               <div className="flex items-center gap-2 flex-wrap">
                                 <span className="font-semibold">{mgr.name}</span>
                                 {mgr.free && <Badge variant="outline" className="text-xs bg-[hsl(var(--teksure-success)/0.1)] text-[hsl(var(--teksure-success))] border-[hsl(var(--teksure-success)/0.3)]">Free</Badge>}
-                                <span className="text-xs text-muted-foreground">{mgr.price}</span>
+                                <span className="text-sm text-muted-foreground">{mgr.price}</span>
                               </div>
-                              <p className="text-xs text-muted-foreground mt-0.5">{mgr.bestFor}</p>
+                              <p className="text-sm text-muted-foreground mt-0.5">{mgr.bestFor}</p>
                             </div>
                           </div>
                           <div className="flex items-center gap-2 shrink-0">
@@ -323,7 +323,7 @@ export default function PasswordManager() {
                             <div className="mt-3 pt-3 border-t border-border">
                               <ul className="space-y-1.5 mb-3">
                                 {mgr.pros.map((p, pi) => (
-                                  <li key={pi} className="flex items-start gap-2 text-sm">
+                                  <li key={pi} className="flex items-start gap-2 text-base">
                                     <CheckCircle2 className="h-3.5 w-3.5 text-[hsl(var(--teksure-success))] shrink-0 mt-0.5" />
                                     {p}
                                   </li>
@@ -350,11 +350,11 @@ export default function PasswordManager() {
                   <Card key={i} className="cursor-pointer" onClick={() => setExpandedFaq(expandedFaq === i ? null : i)}>
                     <CardContent className="p-4">
                       <div className="flex items-center justify-between gap-2">
-                        <span className="font-medium text-sm">{faq.q}</span>
+                        <span className="font-medium text-base">{faq.q}</span>
                         {expandedFaq === i ? <ChevronUp className="h-4 w-4 text-muted-foreground shrink-0" /> : <ChevronDown className="h-4 w-4 text-muted-foreground shrink-0" />}
                       </div>
                       {expandedFaq === i && (
-                        <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                        <p className="mt-3 text-base text-muted-foreground leading-relaxed">
                           {faq.a}
                         </p>
                       )}

@@ -80,7 +80,7 @@ export default function GroceryListApps() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <ShoppingCart className="h-8 w-8 text-emerald-600" />
+                <ShoppingCart className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Best Shared Grocery List Apps</h1>
@@ -95,8 +95,8 @@ export default function GroceryListApps() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">What to look for</p>
-              <ul className="space-y-1.5 text-sm text-muted-foreground">
+              <p className="text-base font-semibold mb-2">What to look for</p>
+              <ul className="space-y-1.5 text-base text-muted-foreground">
                 <li className="flex gap-2"><Users className="h-4 w-4 text-primary shrink-0 mt-0.5" /><span><strong>Sharing with a spouse:</strong> both phones see the same list, in real time. Add bread at home, your spouse sees it at the store.</span></li>
                 <li className="flex gap-2"><Mic className="h-4 w-4 text-primary shrink-0 mt-0.5" /><span><strong>Voice entry:</strong> say "Hey Siri, add milk to the grocery list" while your hands are full at the fridge.</span></li>
                 <li className="flex gap-2"><Check className="h-4 w-4 text-primary shrink-0 mt-0.5" /><span><strong>Checking off in-store:</strong> tap an item once and it grays out or disappears, so you do not double-buy.</span></li>
@@ -112,24 +112,24 @@ export default function GroceryListApps() {
                     <p className="font-semibold text-lg">{app.name}</p>
                     <Badge variant="outline" className="shrink-0">{app.cost}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Who it fits:</strong> {app.whoFits}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Who it fits:</strong> {app.whoFits}</p>
 
                   <div className="grid sm:grid-cols-2 gap-3 mb-3">
-                    <div className="p-3 rounded bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900">
-                      <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-300 mb-1.5">Pros</p>
+                    <div className="p-3 rounded bg-success border border-success-foreground/25 ">
+                      <p className="text-sm font-semibold text-success-foreground mb-1.5">Pros</p>
                       <ul className="space-y-1">
                         {app.pros.map((p, i) => (
-                          <li key={i} className="flex gap-1.5 text-xs text-emerald-900 dark:text-emerald-100">
+                          <li key={i} className="flex gap-1.5 text-sm text-success-foreground ">
                             <Check className="h-3.5 w-3.5 shrink-0 mt-0.5" /><span>{p}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
-                    <div className="p-3 rounded bg-rose-50 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-900">
-                      <p className="text-xs font-semibold text-rose-700 dark:text-rose-300 mb-1.5">Cons</p>
+                    <div className="p-3 rounded bg-danger border border-danger-foreground/25 ">
+                      <p className="text-sm font-semibold text-danger-foreground mb-1.5">Cons</p>
                       <ul className="space-y-1">
                         {app.cons.map((c, i) => (
-                          <li key={i} className="flex gap-1.5 text-xs text-rose-900 dark:text-rose-100">
+                          <li key={i} className="flex gap-1.5 text-sm text-danger-foreground ">
                             <X className="h-3.5 w-3.5 shrink-0 mt-0.5" /><span>{c}</span>
                           </li>
                         ))}
@@ -150,20 +150,20 @@ export default function GroceryListApps() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/dictation-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Dictation Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Talk to your phone instead of typing.</p>
+                <p className="font-medium text-base">Dictation Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Talk to your phone instead of typing.</p>
               </Link>
               <Link to="/tools/shared-family-calendar" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Shared Family Calendar</p>
-                <p className="text-xs text-muted-foreground mt-0.5">One calendar the whole household sees.</p>
+                <p className="font-medium text-base">Shared Family Calendar</p>
+                <p className="text-sm text-muted-foreground mt-0.5">One calendar the whole household sees.</p>
               </Link>
               <Link to="/tools/senior-friendly-apps" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Senior-Friendly Apps</p>
-                <p className="text-xs text-muted-foreground mt-0.5">20 apps worth installing.</p>
+                <p className="font-medium text-base">Senior-Friendly Apps</p>
+                <p className="text-sm text-muted-foreground mt-0.5">20 apps worth installing.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: pick one app, set it up with your spouse, and use it for two weeks before switching. Switching apps mid-month leaves items stranded.
           </p>
         </div>

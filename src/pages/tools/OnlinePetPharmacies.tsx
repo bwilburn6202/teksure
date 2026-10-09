@@ -30,9 +30,9 @@ export default function OnlinePetPharmacies() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
+                <p className="text-base">{p.best}</p>
                 <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
@@ -66,10 +66,10 @@ export default function OnlinePetPharmacies() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t skimp on flea/tick/heartworm</h2>
-            <p className="text-sm">Cheap online "flea/tick" meds from non-veterinary sources can be counterfeit or under-dosed. Buy from US-licensed pharmacies (Chewy, 1800PetMeds, vet) only. Avoid Amazon/eBay third-party sellers for pet meds.</p>
+            <p className="text-base">Cheap online "flea/tick" meds from non-veterinary sources can be counterfeit or under-dosed. Buy from US-licensed pharmacies (Chewy, 1800PetMeds, vet) only. Avoid Amazon/eBay third-party sellers for pet meds.</p>
           </CardContent>
         </Card>
 

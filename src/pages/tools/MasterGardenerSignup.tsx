@@ -19,7 +19,7 @@ export default function MasterGardenerSignup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it is</h2>
-            <p className="text-sm">USDA-certified program through state Cooperative Extension. 40-50 hours of advanced gardening + horticulture training. Pay back with 40-50 volunteer hours teaching others. Senior favorite.</p>
+            <p className="text-base">USDA-certified program through state Cooperative Extension. 40-50 hours of advanced gardening + horticulture training. Pay back with 40-50 volunteer hours teaching others. Senior favorite.</p>
           </CardContent>
         </Card>
 

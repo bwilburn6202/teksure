@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -596,15 +595,9 @@ const HearingAidTechHelper = () => {
         <section className="border-b border-border bg-gradient-to-br from-amber-50 via-yellow-50 to-white dark:from-amber-950/20 dark:via-yellow-950/10 dark:to-background">
           <div className="container py-10 md:py-14 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="hearing-aid-tech-helper"
-                title="Hearing Aid Tech Helper"
-                url="/tools/hearing-aid-tech-helper"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="p-3 rounded-2xl bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300">
+              <div className="p-3 rounded-2xl bg-warn text-warn-foreground ">
                 <Ear className="w-7 h-7" />
               </div>
               <Badge variant="outline" className="text-xs">Health Tech · Setup &amp; Troubleshooting</Badge>
@@ -634,8 +627,8 @@ const HearingAidTechHelper = () => {
 
         <div className="container py-10 md:py-14 space-y-14 max-w-6xl">
           {/* Intro note */}
-          <Alert className="border-amber-200 bg-amber-50 dark:bg-amber-950/20">
-            <Info className="h-5 w-5 text-amber-700" />
+          <Alert className="border-warn-foreground/25 bg-warn ">
+            <Info className="h-5 w-5 text-warn-foreground" />
             <AlertTitle className="text-lg">About this guide</AlertTitle>
             <AlertDescription className="text-base leading-relaxed">
               Modern hearing aids are tiny computers. This page helps with the tech side — pairing,
@@ -663,8 +656,8 @@ const HearingAidTechHelper = () => {
                     onClick={() => setSelectedBrand(isSelected ? null : b.id)}
                     className={`text-left rounded-xl border-2 p-5 transition-all min-h-14 ${
                       isSelected
-                        ? 'border-amber-600 bg-amber-50 dark:bg-amber-950/20 shadow-md'
-                        : 'border-border bg-card hover:border-amber-300 hover:shadow-sm'
+                        ? 'border-amber-600 bg-warn shadow-md'
+                        : 'border-border bg-card hover:border-warn-foreground/25 hover:shadow-sm'
                     }`}
                     aria-pressed={isSelected}
                   >
@@ -673,7 +666,7 @@ const HearingAidTechHelper = () => {
                         className={`w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 ${
                           isSelected
                             ? 'bg-amber-600 text-white'
-                            : 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300'
+                            : 'bg-amber-100 text-warn-foreground dark:bg-amber-900/30 dark:text-amber-300'
                         }`}
                       >
                         <Ear className="w-6 h-6" />
@@ -687,7 +680,7 @@ const HearingAidTechHelper = () => {
                             </Badge>
                           )}
                         </div>
-                        <p className="text-sm text-muted-foreground mb-2">{b.tagline}</p>
+                        <p className="text-base text-muted-foreground mb-2">{b.tagline}</p>
                         <Badge variant="secondary" className="text-xs">
                           App: {b.appName}
                         </Badge>
@@ -699,8 +692,8 @@ const HearingAidTechHelper = () => {
             </div>
 
             {/* MFi callout */}
-            <Alert className="mt-6 border-blue-200 bg-blue-50 dark:bg-blue-950/20">
-              <Apple className="h-5 w-5 text-blue-700" />
+            <Alert className="mt-6 border-info-foreground/25 bg-info ">
+              <Apple className="h-5 w-5 text-info-foreground" />
               <AlertTitle className="text-lg">Apple Made-for-iPhone hearing aids</AlertTitle>
               <AlertDescription className="text-base leading-relaxed">
                 Every brand above supports MFi. That means you pair through Settings → Accessibility →
@@ -711,7 +704,7 @@ const HearingAidTechHelper = () => {
 
             {/* Brand detail */}
             {brand && (
-              <Card className="mt-6 border-2 border-amber-200 dark:border-amber-900/50">
+              <Card className="mt-6 border-2 border-warn-foreground/25 ">
                 <CardHeader>
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <div>
@@ -844,7 +837,7 @@ const HearingAidTechHelper = () => {
               <CardHeader>
                 <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
                   <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-xl bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300">
+                    <div className="p-2.5 rounded-xl bg-warn text-warn-foreground ">
                       <current.icon className="w-6 h-6" />
                     </div>
                     <div>
@@ -874,8 +867,8 @@ const HearingAidTechHelper = () => {
                   </div>
                 </div>
                 {current.note && (
-                  <Alert className="border-blue-200 bg-blue-50 dark:bg-blue-950/20">
-                    <Info className="h-5 w-5 text-blue-700" />
+                  <Alert className="border-info-foreground/25 bg-info ">
+                    <Info className="h-5 w-5 text-info-foreground" />
                     <AlertDescription className="text-base leading-relaxed">
                       {current.note}
                     </AlertDescription>
@@ -935,7 +928,7 @@ const HearingAidTechHelper = () => {
                 <AccordionItem key={t.issue} value={`t${idx}`}>
                   <AccordionTrigger className="text-lg text-left">
                     <span className="flex items-center gap-3">
-                      <span className="w-8 h-8 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300 flex items-center justify-center text-sm font-bold shrink-0">
+                      <span className="w-8 h-8 rounded-full bg-warn text-warn-foreground flex items-center justify-center text-sm font-bold shrink-0">
                         {idx + 1}
                       </span>
                       {t.issue}
@@ -950,8 +943,8 @@ const HearingAidTechHelper = () => {
                       <p className="font-semibold text-foreground mb-2">Try this</p>
                       <NumberedSteps steps={t.fixSteps} color="amber" />
                     </div>
-                    <Alert className="border-amber-200 bg-amber-50 dark:bg-amber-950/20">
-                      <Phone className="h-5 w-5 text-amber-700" />
+                    <Alert className="border-warn-foreground/25 bg-warn ">
+                      <Phone className="h-5 w-5 text-warn-foreground" />
                       <AlertTitle className="text-base">When to call your audiologist</AlertTitle>
                       <AlertDescription className="text-base leading-relaxed">
                         {t.callDoctor}
@@ -975,7 +968,7 @@ const HearingAidTechHelper = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-xl flex items-center gap-2">
-                    <Heart className="w-5 h-5 text-red-600" /> Medicare
+                    <Heart className="w-5 h-5 text-danger-foreground" /> Medicare
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-base text-muted-foreground leading-relaxed">
@@ -988,7 +981,7 @@ const HearingAidTechHelper = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-xl flex items-center gap-2">
-                    <ShieldCheck className="w-5 h-5 text-blue-600" /> VA benefits
+                    <ShieldCheck className="w-5 h-5 text-info-foreground" /> VA benefits
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-base text-muted-foreground leading-relaxed">
@@ -1000,7 +993,7 @@ const HearingAidTechHelper = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-xl flex items-center gap-2">
-                    <DollarSign className="w-5 h-5 text-emerald-600" /> HSA &amp; FSA
+                    <DollarSign className="w-5 h-5 text-success-foreground" /> HSA &amp; FSA
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-base text-muted-foreground leading-relaxed">
@@ -1011,7 +1004,7 @@ const HearingAidTechHelper = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-xl flex items-center gap-2">
-                    <Star className="w-5 h-5 text-amber-600" /> OTC vs prescription
+                    <Star className="w-5 h-5 text-warn-foreground" /> OTC vs prescription
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-base text-muted-foreground leading-relaxed">
@@ -1087,7 +1080,7 @@ const HearingAidTechHelper = () => {
                 <CardContent className="text-base text-muted-foreground leading-relaxed">
                   Zoom: click CC during a call. YouTube: tap the CC icon on the player. Netflix,
                   Prime Video, and Hulu all have captions in each title's audio menu. See our{' '}
-                  <Link to="/tools/streaming-service-picker" className="text-amber-700 underline">
+                  <Link to="/tools/streaming-service-picker" className="text-warn-foreground underline">
                     Streaming Service Picker
                   </Link>{' '}
                   if you haven't chosen services yet.
@@ -1097,8 +1090,8 @@ const HearingAidTechHelper = () => {
           </section>
 
           {/* Tinnitus */}
-          <Alert className="border-purple-200 bg-purple-50 dark:bg-purple-950/20">
-            <Sparkles className="h-5 w-5 text-purple-700" />
+          <Alert className="border-primary/25 bg-primary/10 ">
+            <Sparkles className="h-5 w-5 text-primary" />
             <AlertTitle className="text-lg">Tinnitus masking</AlertTitle>
             <AlertDescription className="text-base leading-relaxed">
               Most modern hearing aids include a tinnitus masking program — soft background tones
@@ -1120,7 +1113,7 @@ const HearingAidTechHelper = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-2">
-                    <Users className="w-5 h-5 text-amber-700" /> Remote adjustments
+                    <Users className="w-5 h-5 text-warn-foreground" /> Remote adjustments
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-base text-muted-foreground leading-relaxed">
@@ -1131,7 +1124,7 @@ const HearingAidTechHelper = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-2">
-                    <Ear className="w-5 h-5 text-amber-700" /> Find my aids
+                    <Ear className="w-5 h-5 text-warn-foreground" /> Find my aids
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-base text-muted-foreground leading-relaxed">
@@ -1142,7 +1135,7 @@ const HearingAidTechHelper = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-2">
-                    <BellRing className="w-5 h-5 text-amber-700" /> Can't hear the doorbell?
+                    <BellRing className="w-5 h-5 text-warn-foreground" /> Can't hear the doorbell?
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-base text-muted-foreground leading-relaxed">
@@ -1279,12 +1272,12 @@ const HearingAidTechHelper = () => {
           </section>
 
           {/* Emergency */}
-          <Alert className="border-red-300 bg-red-50 dark:bg-red-950/20">
-            <AlertTriangle className="h-5 w-5 text-red-700" />
-            <AlertTitle className="text-lg text-red-900 dark:text-red-200">
+          <Alert className="border-danger-foreground/25 bg-danger ">
+            <AlertTriangle className="h-5 w-5 text-danger-foreground" />
+            <AlertTitle className="text-lg text-danger-foreground ">
               Sudden hearing loss is a medical emergency
             </AlertTitle>
-            <AlertDescription className="text-base text-red-900 dark:text-red-200 leading-relaxed">
+            <AlertDescription className="text-base text-danger-foreground leading-relaxed">
               If you wake up unable to hear on one side, or lose hearing suddenly, call your
               audiologist same-day — or 911 if you also have dizziness or facial weakness. Sudden
               sensorineural hearing loss is often reversible if treated within 72 hours.
@@ -1393,7 +1386,7 @@ interface MaintenanceCardProps {
 const MaintenanceCard = ({ icon: Icon, title, body }: MaintenanceCardProps) => (
   <Card>
     <CardContent className="p-5 flex gap-4 items-start">
-      <div className="w-11 h-11 rounded-lg bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300 flex items-center justify-center flex-shrink-0">
+      <div className="w-11 h-11 rounded-lg bg-warn text-warn-foreground flex items-center justify-center flex-shrink-0">
         <Icon className="w-6 h-6" />
       </div>
       <div>
@@ -1417,14 +1410,14 @@ const RelatedCard = ({ to, icon: Icon, title, body }: RelatedCardProps) => (
     className="group rounded-xl border-2 border-border bg-card p-5 hover:border-amber-400 hover:shadow-sm transition-all min-h-14 block"
   >
     <div className="flex items-start gap-3">
-      <div className="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300 flex items-center justify-center flex-shrink-0">
+      <div className="w-10 h-10 rounded-lg bg-warn text-warn-foreground flex items-center justify-center flex-shrink-0">
         <Icon className="w-5 h-5" />
       </div>
       <div>
-        <h4 className="font-semibold text-base text-foreground mb-1 group-hover:text-amber-700">
+        <h4 className="font-semibold text-base text-foreground mb-1 group-hover:text-warn-foreground">
           {title}
         </h4>
-        <p className="text-sm text-muted-foreground leading-relaxed">{body}</p>
+        <p className="text-base text-muted-foreground leading-relaxed">{body}</p>
       </div>
     </div>
   </Link>

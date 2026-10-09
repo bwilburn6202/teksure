@@ -96,7 +96,7 @@ export default function AnnualTechCheckup() {
   const statusColor = pct === 100 ? "text-green-700" : pct >= 50 ? "text-blue-700" : "text-gray-700";
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Annual Tech Checkup Checklist | TekSure"
         description="A yearly tech maintenance checklist for seniors. Update passwords, back up devices, review privacy settings, and more — all in one place."
@@ -105,10 +105,10 @@ export default function AnnualTechCheckup() {
       <div className="max-w-2xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <ShieldCheck className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Annual Tech Checkup</h1>
+            <ShieldCheck className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Annual Tech Checkup</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Once a year, go through this checklist to keep your devices, accounts, and personal information in good shape.
           </p>
         </div>
@@ -129,7 +129,7 @@ export default function AnnualTechCheckup() {
               />
             </div>
             {pct === 100 && (
-              <p className="text-green-700 font-semibold mt-2 text-center">
+              <p className="text-success-foreground font-semibold mt-2 text-center">
                 Your annual tech checkup is complete!
               </p>
             )}
@@ -160,20 +160,20 @@ export default function AnnualTechCheckup() {
                         className={`w-full text-left flex items-start gap-3 p-3 rounded-lg border transition-colors ${
                           isDone
                             ? "bg-green-50 border-green-200"
-                            : "bg-white border-gray-200 hover:bg-gray-50"
+                            : "bg-white border-border hover:bg-gray-50"
                         }`}
                       >
                         <span className="mt-0.5 shrink-0">
                           {isDone
-                            ? <CheckCircle2 className="h-5 w-5 text-green-600" />
-                            : <Circle className="h-5 w-5 text-gray-400" />}
+                            ? <CheckCircle2 className="h-5 w-5 text-success-foreground" />
+                            : <Circle className="h-5 w-5 text-muted-foreground" />}
                         </span>
                         <span>
-                          <span className={`block text-sm font-semibold ${isDone ? "line-through text-gray-400" : "text-gray-900"}`}>
+                          <span className={`block text-base font-semibold ${isDone ? "line-through text-gray-400" : "text-gray-900"}`}>
                             {item.task}
                           </span>
                           {!isDone && (
-                            <span className="block text-sm text-gray-500 mt-0.5">{item.detail}</span>
+                            <span className="block text-base text-muted-foreground mt-0.5">{item.detail}</span>
                           )}
                         </span>
                       </button>
@@ -191,16 +191,16 @@ export default function AnnualTechCheckup() {
             <Printer className="h-4 w-4" />
             Print Checklist
           </Button>
-          <Button variant="ghost" onClick={reset} className="gap-2 text-gray-500">
+          <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground">
             <RotateCcw className="h-4 w-4" />
             Start Over
           </Button>
         </div>
 
-        <p className="text-sm text-gray-400 mt-4">
+        <p className="text-base text-muted-foreground mt-4">
           Tip: Set a reminder each January (or on your birthday) to run through this checklist again.
         </p>
       </div>
-    </div>
+    </main>
   );
 }

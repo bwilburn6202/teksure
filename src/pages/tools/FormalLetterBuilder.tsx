@@ -347,22 +347,22 @@ export default function FormalLetterBuilder() {
         title="Formal Letter Builder — TekSure"
         description="Build a professional formal letter in minutes — dispute a bill, cancel a subscription, appeal an insurance denial, request medical records, or file a complaint."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4 print:bg-white">
+      <main className="min-h-screen bg-muted py-8 px-4 print:bg-card">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-6 print:mb-3">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-indigo-100 dark:bg-indigo-950/60 mb-4 print:hidden">
-              <FileText className="w-8 h-8 text-indigo-600 dark:text-indigo-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-4 print:hidden">
+              <FileText className="w-8 h-8 text-primary " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Formal Letter Builder</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 print:hidden">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Formal Letter Builder</h1>
+            <p className="text-lg text-muted-foreground print:hidden">
               Answer a few questions and we'll write a professional letter for you.
             </p>
           </div>
 
           {/* Step 1: Pick letter type */}
           {step === 'pick' && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
-              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-4 text-lg">What kind of letter do you need?</p>
+            <div className="bg-card rounded-2xl border border-border p-5 shadow-sm">
+              <p className="font-semibold text-foreground mb-4 text-lg">What kind of letter do you need?</p>
               <div className="space-y-2">
                 {LETTER_TYPES.map(type => {
                   const t = TEMPLATES[type];
@@ -370,10 +370,10 @@ export default function FormalLetterBuilder() {
                     <button
                       key={type}
                       onClick={() => { setLetterType(type); setFormData({}); setStep('fill'); }}
-                      className="w-full text-left px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-indigo-500 hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition-all"
+                      className="w-full text-left px-4 py-3 rounded-xl border-2 border-border hover:border-indigo-500 hover:bg-primary/10 transition-all"
                     >
-                      <p className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{t.label}</p>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{t.description}</p>
+                      <p className="font-semibold text-foreground text-base">{t.label}</p>
+                      <p className="text-sm text-muted-foreground mt-0.5">{t.description}</p>
                     </button>
                   );
                 })}
@@ -383,14 +383,14 @@ export default function FormalLetterBuilder() {
 
           {/* Step 2: Fill in fields */}
           {step === 'fill' && template && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
-              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1 text-lg">{template.label}</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">Fill in the information below. We'll write the letter for you.</p>
+            <div className="bg-card rounded-2xl border border-border p-5 shadow-sm">
+              <p className="font-semibold text-foreground mb-1 text-lg">{template.label}</p>
+              <p className="text-base text-muted-foreground mb-5">Fill in the information below. We'll write the letter for you.</p>
 
               <div className="space-y-4">
                 {template.fields.map(field => (
                   <div key={field.key}>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                    <label className="block text-base font-medium text-foreground mb-1">
                       {field.label}
                     </label>
                     {field.multiline ? (
@@ -399,7 +399,7 @@ export default function FormalLetterBuilder() {
                         onChange={e => setField(field.key, e.target.value)}
                         placeholder={field.placeholder}
                         rows={3}
-                        className="w-full px-3 py-2 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        className="w-full px-3 py-2 rounded-xl border border-border bg-card text-foreground text-sm resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500"
                       />
                     ) : (
                       <input
@@ -407,7 +407,7 @@ export default function FormalLetterBuilder() {
                         value={formData[field.key] || ''}
                         onChange={e => setField(field.key, e.target.value)}
                         placeholder={field.placeholder}
-                        className="w-full px-3 py-2 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        className="w-full px-3 py-2 rounded-xl border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
                       />
                     )}
                   </div>
@@ -415,7 +415,7 @@ export default function FormalLetterBuilder() {
               </div>
 
               <div className="mt-5 flex gap-3 items-center">
-                <button onClick={() => setStep('pick')} className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                <button onClick={() => setStep('pick')} className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground ">
                   <ChevronLeft className="w-4 h-4" /> Back
                 </button>
                 <button
@@ -427,7 +427,7 @@ export default function FormalLetterBuilder() {
                 </button>
               </div>
               {!allFilled && (
-                <p className="text-xs text-gray-400 dark:text-gray-500 text-right mt-2">Fill in all fields above to continue.</p>
+                <p className="text-sm text-muted-foreground text-right mt-2">Fill in all fields above to continue.</p>
               )}
             </div>
           )}
@@ -435,38 +435,38 @@ export default function FormalLetterBuilder() {
           {/* Step 3: Preview */}
           {step === 'preview' && template && (
             <>
-              <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm print:border-gray-400">
+              <div className="bg-card rounded-2xl border border-border p-5 shadow-sm print:border-gray-400">
                 <div className="flex items-center justify-between mb-4">
-                  <h2 className="font-bold text-gray-900 dark:text-gray-100 text-lg">{template.label}</h2>
-                  <span className="text-xs text-gray-400 dark:text-gray-500 print:hidden">Your letter is below</span>
+                  <h2 className="font-bold text-foreground text-lg">{template.label}</h2>
+                  <span className="text-sm text-muted-foreground print:hidden">Your letter is below</span>
                 </div>
-                <pre className="whitespace-pre-wrap text-sm text-gray-800 dark:text-gray-200 font-sans leading-relaxed">
+                <pre className="whitespace-pre-wrap text-sm text-foreground font-sans leading-relaxed">
                   {letterText}
                 </pre>
               </div>
 
-              <div className="mt-4 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-xl p-4 print:hidden">
-                <p className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">Next steps</p>
-                <p className="text-sm text-blue-700 dark:text-blue-300">Copy this letter and paste it into Word, Google Docs, or your email — or print this page. Sign your name and keep a copy for your records before sending.</p>
+              <div className="mt-4 bg-info border border-info-foreground/25 rounded-xl p-4 print:hidden">
+                <p className="text-base font-semibold text-info-foreground mb-1">Next steps</p>
+                <p className="text-base text-info-foreground ">Copy this letter and paste it into Word, Google Docs, or your email — or print this page. Sign your name and keep a copy for your records before sending.</p>
               </div>
 
               <div className="mt-4 flex flex-wrap gap-3 print:hidden">
                 <button
                   onClick={() => setStep('fill')}
-                  className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+                  className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground "
                 >
                   <ChevronLeft className="w-4 h-4" /> Edit
                 </button>
                 <button
                   onClick={reset}
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 text-sm font-medium transition-colors"
+                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-border text-muted-foreground hover:bg-muted text-sm font-medium transition-colors"
                 >
                   <RotateCcw className="w-4 h-4" />
                   Start Over
                 </button>
                 <button
                   onClick={copyLetter}
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-indigo-300 dark:border-indigo-700 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/30 text-sm font-medium transition-colors"
+                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-primary/25 text-primary hover:bg-primary/10 text-sm font-medium transition-colors"
                 >
                   {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
                   {copied ? 'Copied!' : 'Copy Letter'}
@@ -482,7 +482,7 @@ export default function FormalLetterBuilder() {
             </>
           )}
         </div>
-      </div>
+      </main>
     </>
   );
 }

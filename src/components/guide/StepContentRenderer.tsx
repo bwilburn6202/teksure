@@ -131,7 +131,7 @@ function KeyboardShortcut({ keys }: { keys: string[] }) {
     <span className="inline-flex items-center gap-0.5 mx-0.5">
       {keys.map((key, i) => (
         <React.Fragment key={i}>
-          {i > 0 && <span className="text-muted-foreground text-xs mx-0.5">+</span>}
+          {i > 0 && <span className="text-muted-foreground text-sm mx-0.5">+</span>}
           <KeyCap label={normalizeKey(key)} />
         </React.Fragment>
       ))}
@@ -333,7 +333,7 @@ export function StepContent({ text }: { text: string }) {
             return <MenuPath key={i} segments={token.segments!} />;
           case 'code':
             return (
-              <span key={i} className="inline-flex items-center gap-1 bg-muted px-1.5 py-0.5 rounded font-mono text-sm">
+              <span key={i} className="inline-flex items-center gap-1 bg-muted px-1.5 py-0.5 rounded font-mono text-base">
                 {token.value}
                 <CopyButton text={token.value} />
               </span>

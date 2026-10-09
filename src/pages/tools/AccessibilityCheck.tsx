@@ -240,7 +240,7 @@ export default function AccessibilityCheck() {
                       count === total
                         ? 'bg-primary/10 border-primary/30 text-primary'
                         : count > 0
-                        ? 'bg-amber-50 dark:bg-amber-900/20 border-amber-300 dark:border-amber-700 text-amber-700 dark:text-amber-300'
+                        ? 'bg-amber-50 dark:bg-amber-900/20 border-warn-foreground/25 text-warn-foreground dark:text-amber-300'
                         : 'bg-muted border-border text-muted-foreground'
                     }`}
                   >
@@ -266,9 +266,9 @@ export default function AccessibilityCheck() {
                   <Badge variant="outline" className="mb-3 text-xs">{question.category}</Badge>
                   <h2 className="text-lg font-semibold mb-2 leading-snug">{question.text}</h2>
                   {question.helpText && (
-                    <div className="flex items-start gap-2 p-2.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 mb-4">
-                      <Info className="h-3.5 w-3.5 text-blue-600 shrink-0 mt-0.5" />
-                      <p className="text-xs text-blue-700 dark:text-blue-300">{question.helpText}</p>
+                    <div className="flex items-start gap-2 p-2.5 rounded-lg bg-info border border-info-foreground/25 mb-4">
+                      <Info className="h-3.5 w-3.5 text-info-foreground shrink-0 mt-0.5" />
+                      <p className="text-sm text-info-foreground ">{question.helpText}</p>
                     </div>
                   )}
 
@@ -316,7 +316,7 @@ export default function AccessibilityCheck() {
                     <span className="absolute text-2xl font-bold">{score!.pct}%</span>
                   </div>
                   <p className={`text-lg font-semibold ${score!.color}`}>{score!.label}</p>
-                  <p className="text-sm text-muted-foreground mt-1">Based on your {QUESTIONS.length} answers</p>
+                  <p className="text-base text-muted-foreground mt-1">Based on your {QUESTIONS.length} answers</p>
                 </div>
 
                 {/* Category breakdown */}
@@ -349,7 +349,7 @@ export default function AccessibilityCheck() {
               {recommendations.length > 0 && (
                 <div className="mb-6">
                   <h2 className="text-base font-semibold mb-3 flex items-center gap-2">
-                    <AlertTriangle className="h-4 w-4 text-amber-500" />
+                    <AlertTriangle className="h-4 w-4 text-warn-foreground" />
                     Personalized recommendations
                   </h2>
                   <div className="space-y-3">
@@ -359,8 +359,8 @@ export default function AccessibilityCheck() {
                           <div className="flex gap-3">
                             <span className="text-2xl shrink-0">{rec.emoji}</span>
                             <div>
-                              <p className="font-medium text-sm mb-1">{rec.title}</p>
-                              <p className="text-xs text-muted-foreground leading-relaxed">{rec.description}</p>
+                              <p className="font-medium text-base mb-1">{rec.title}</p>
+                              <p className="text-sm text-muted-foreground leading-relaxed">{rec.description}</p>
                               {rec.guideSlug && (
                                 <Link
                                   to={rec.guideSlug.startsWith('/') ? rec.guideSlug : `/guides/${rec.guideSlug}`}
@@ -379,12 +379,12 @@ export default function AccessibilityCheck() {
               )}
 
               {recommendations.length === 0 && (
-                <Card className="mb-6 border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950/20">
+                <Card className="mb-6 border-success-foreground/25 bg-success ">
                   <CardContent className="p-5 flex gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-medium text-sm text-green-800 dark:text-green-200">Excellent accessibility setup!</p>
-                      <p className="text-xs text-green-700 dark:text-green-300 mt-1">Your answers suggest your device is already well set up for your needs. Keep an eye on our guides for new tips.</p>
+                      <p className="font-medium text-base text-success-foreground ">Excellent accessibility setup!</p>
+                      <p className="text-sm text-success-foreground mt-1">Your answers suggest your device is already well set up for your needs. Keep an eye on our guides for new tips.</p>
                     </div>
                   </CardContent>
                 </Card>

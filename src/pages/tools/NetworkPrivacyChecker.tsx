@@ -105,7 +105,7 @@ export default function NetworkPrivacyChecker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-cyan-500/10 rounded-full">
-                <Wifi className="h-8 w-8 text-cyan-600" />
+                <Wifi className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Home Network Privacy Checker</h1>
@@ -118,13 +118,13 @@ export default function NetworkPrivacyChecker() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Network Privacy Checker' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5">
               <div className="flex gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-sm mb-1">"Hide my SSID" is mostly theater</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="font-semibold text-base mb-1">"Hide my SSID" is mostly theater</p>
+                  <p className="text-sm text-muted-foreground">
                     Hiding your network name (SSID) does not actually hide it. Any free app on a phone can list hidden networks within seconds. All hiding does is make your own devices slower to reconnect and more likely to leak the network name elsewhere. Skip the hide-SSID checkbox. A long, strong Wi-Fi password is what truly keeps people out — not invisibility.
                   </p>
                 </div>
@@ -132,7 +132,7 @@ export default function NetworkPrivacyChecker() {
             </CardContent>
           </Card>
 
-          <p className="text-sm text-muted-foreground mb-3">{done.size} of {AUDIT_ITEMS.length} done</p>
+          <p className="text-base text-muted-foreground mb-3">{done.size} of {AUDIT_ITEMS.length} done</p>
 
           <div className="space-y-3 mb-6">
             {AUDIT_ITEMS.map(item => (
@@ -141,9 +141,9 @@ export default function NetworkPrivacyChecker() {
                   <label className="flex items-start gap-3 cursor-pointer">
                     <Checkbox checked={done.has(item.id)} onCheckedChange={() => toggle(item.id)} className="mt-1" />
                     <div className="flex-1">
-                      <p className={`font-medium text-sm ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{item.detail}</p>
-                      <p className="text-xs italic text-muted-foreground mt-1"><strong>Why:</strong> {item.why}</p>
+                      <p className={`font-medium text-base ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{item.detail}</p>
+                      <p className="text-sm italic text-muted-foreground mt-1"><strong>Why:</strong> {item.why}</p>
                     </div>
                   </label>
                 </CardContent>
@@ -152,19 +152,19 @@ export default function NetworkPrivacyChecker() {
           </div>
 
           {done.size === AUDIT_ITEMS.length && (
-            <Card className="border-green-300 bg-green-50 dark:bg-green-950/20 mb-6">
+            <Card className="border-success-foreground/25 bg-success mb-6">
               <CardContent className="p-5 text-center">
-                <Badge className="mb-2 bg-green-100 text-green-700 border-green-300">All done</Badge>
+                <Badge className="mb-2 bg-success text-success-foreground border-success-foreground/25">All done</Badge>
                 <p className="font-semibold">Your home network is locked down.</p>
-                <p className="text-sm text-muted-foreground mt-1">Set a calendar reminder to repeat this audit every six months.</p>
+                <p className="text-base text-muted-foreground mt-1">Set a calendar reminder to repeat this audit every six months.</p>
               </CardContent>
             </Card>
           )}
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A twice-a-year habit</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A twice-a-year habit</p>
+              <p className="text-sm text-muted-foreground">
                 Devices come and go. Old phones, ex-roommates, retired smart plugs — they pile up on your network until you check. Run this audit twice a year. It takes 15 minutes and shuts the door on people who should not still have access.
               </p>
             </CardContent>
@@ -174,20 +174,20 @@ export default function NetworkPrivacyChecker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/router-upgrade-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Router Upgrade Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Time for new hardware? Find out.</p>
+                <p className="font-medium text-base">Router Upgrade Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Time for new hardware? Find out.</p>
               </Link>
               <Link to="/tools/guest-wifi-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Guest Wi-Fi Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">A safe lane for visitors.</p>
+                <p className="font-medium text-base">Guest Wi-Fi Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">A safe lane for visitors.</p>
               </Link>
               <Link to="/tools/online-banking-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Online Banking Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Bank from a network you trust.</p>
+                <p className="font-medium text-base">Online Banking Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Bank from a network you trust.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: write the new admin password and Wi-Fi password on a sticky note inside a kitchen drawer. Paper at home is safer than a default password printed on a sticker stuck to the router.
           </p>
         </div>

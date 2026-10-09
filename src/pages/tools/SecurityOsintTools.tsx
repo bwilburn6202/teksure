@@ -91,15 +91,15 @@ function CategorySection({
     <div className="border border-border rounded-xl overflow-hidden bg-card">
       <button
         onClick={() => setExpanded(!expanded)}
-        className="w-full flex items-center justify-between p-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors text-left"
+        className="w-full flex items-center justify-between p-5 hover:bg-muted transition-colors text-left"
       >
         <div className="flex items-center gap-3">
           <span className="text-2xl">{category.emoji}</span>
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            <h3 className="text-lg font-semibold text-foreground dark:text-white">
               {category.name}
             </h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
+            <p className="text-base text-muted-foreground mt-0.5">
               {category.description}
             </p>
           </div>
@@ -109,15 +109,15 @@ function CategorySection({
             {filteredTools.length} tool{filteredTools.length !== 1 ? 's' : ''}
           </Badge>
           {isExpanded ? (
-            <ChevronUp className="w-5 h-5 text-gray-400" />
+            <ChevronUp className="w-5 h-5 text-muted-foreground" />
           ) : (
-            <ChevronDown className="w-5 h-5 text-gray-400" />
+            <ChevronDown className="w-5 h-5 text-muted-foreground" />
           )}
         </div>
       </button>
 
       {isExpanded && (
-        <div className="border-t border-gray-200 dark:border-gray-700 divide-y divide-gray-100 dark:divide-gray-800">
+        <div className="border-t border-border divide-y divide-gray-100 dark:divide-gray-800">
           {filteredTools.map((tool) => (
             <a
               key={tool.url}
@@ -128,7 +128,7 @@ function CategorySection({
             >
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <h4 className={`font-medium text-gray-900 dark:text-white ${hoverText} transition-colors`}>
+                  <h4 className={`font-medium text-foreground dark:text-white ${hoverText} transition-colors`}>
                     {tool.name}
                   </h4>
                   {tool.pricing && (
@@ -137,11 +137,11 @@ function CategorySection({
                     </span>
                   )}
                 </div>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
+                <p className="text-base text-muted-foreground mt-1 leading-relaxed">
                   {tool.description}
                 </p>
               </div>
-              <ExternalLink className="w-4 h-4 text-gray-300 group-hover:text-gray-500 mt-1 shrink-0 transition-colors" />
+              <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-muted-foreground mt-1 shrink-0 transition-colors" />
             </a>
           ))}
         </div>
@@ -163,15 +163,15 @@ function ModuleCard({ module }: { module: CyberSecModule }) {
             {module.name}
           </div>
           {module.isNew && (
-            <span className="bg-amber-500 text-gray-900 text-xs font-bold px-2 py-0.5 rounded shrink-0">
+            <span className="bg-amber-500 text-foreground text-sm font-bold px-2 py-0.5 rounded shrink-0">
               NEW
             </span>
           )}
         </div>
-        <p className="text-gray-400 text-xs mb-3">{module.description}</p>
+        <p className="text-muted-foreground text-sm mb-3">{module.description}</p>
         <div className="flex items-center justify-between">
-          <span className="text-gray-500 text-xs">{module.category}</span>
-          <span className={`text-xs font-semibold px-2 py-0.5 rounded ${severityColors[module.severity]}`}>
+          <span className="text-muted-foreground text-sm">{module.category}</span>
+          <span className={`text-sm font-semibold px-2 py-0.5 rounded ${severityColors[module.severity]}`}>
             {module.severity.toUpperCase()}
           </span>
         </div>
@@ -193,12 +193,12 @@ function CollectionCard({ collection }: { collection: OsintCollection }) {
       className="group block border border-border rounded-xl p-5 hover:shadow-md transition-all bg-card"
     >
       <div className="flex items-start justify-between gap-3 mb-3">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+        <h3 className="text-lg font-semibold text-foreground dark:text-white group-hover:text-primary transition-colors">
           {collection.name}
         </h3>
-        <ExternalLink className="w-4 h-4 text-gray-300 group-hover:text-purple-500 mt-1 shrink-0 transition-colors" />
+        <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary mt-1 shrink-0 transition-colors" />
       </div>
-      <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+      <p className="text-base text-muted-foreground leading-relaxed mb-4">
         {collection.description}
       </p>
       <div className="flex items-center gap-2 flex-wrap">
@@ -210,7 +210,7 @@ function CollectionCard({ collection }: { collection: OsintCollection }) {
           {collection.toolCount} tools
         </Badge>
         {collection.tags.slice(0, 2).map((tag) => (
-          <Badge key={tag} variant="outline" className="text-xs text-gray-500 dark:text-gray-400">
+          <Badge key={tag} variant="outline" className="text-xs text-muted-foreground ">
             {tag}
           </Badge>
         ))}
@@ -224,7 +224,7 @@ function PricingFilter({ value, onChange }: { value: string; onChange: (v: strin
   const options = ['all', 'free', 'freemium', 'paid'] as const;
   return (
     <div className="flex items-center gap-2">
-      <Filter className="w-4 h-4 text-gray-400" />
+      <Filter className="w-4 h-4 text-muted-foreground" />
       {options.map((opt) => (
         <Button
           key={opt}
@@ -354,16 +354,16 @@ export default function SecurityOsintTools() {
               <BreadcrumbList>
                 <BreadcrumbItem>
                   <BreadcrumbLink asChild>
-                    <Link to="/" className="text-gray-400 hover:text-white">Home</Link>
+                    <Link to="/" className="text-muted-foreground hover:text-white">Home</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
-                <BreadcrumbSeparator className="text-gray-600" />
+                <BreadcrumbSeparator className="text-muted-foreground" />
                 <BreadcrumbItem>
                   <BreadcrumbLink asChild>
-                    <Link to="/tools" className="text-gray-400 hover:text-white">Tools</Link>
+                    <Link to="/tools" className="text-muted-foreground hover:text-white">Tools</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
-                <BreadcrumbSeparator className="text-gray-600" />
+                <BreadcrumbSeparator className="text-muted-foreground" />
                 <BreadcrumbItem>
                   <BreadcrumbPage className="text-white">Security & OSINT Tools</BreadcrumbPage>
                 </BreadcrumbItem>
@@ -371,44 +371,44 @@ export default function SecurityOsintTools() {
             </Breadcrumb>
 
             <div className="flex items-center gap-4 mb-4">
-              <Shield className="w-10 h-10 text-red-500" />
+              <Shield className="w-10 h-10 text-danger-foreground" />
               <h1 className="text-4xl md:text-5xl font-bold">
                 Security & OSINT Tools
               </h1>
             </div>
-            <p className="text-gray-300 text-lg max-w-2xl mb-8">
+            <p className="text-muted-foreground text-lg max-w-2xl mb-8">
               {totalTools}+ tools across cybersecurity modules, OSINT directories, geospatial intelligence, and curated resource collections.
             </p>
 
             {/* Stats */}
             <div className="flex flex-wrap gap-6 mb-8 text-sm">
               <div className="flex items-center gap-2">
-                <Shield className="w-4 h-4 text-red-400" />
-                <span className="text-gray-300">{cyberSecModuleCount} Security Modules</span>
+                <Shield className="w-4 h-4 text-danger-foreground" />
+                <span className="text-muted-foreground">{cyberSecModuleCount} Security Modules</span>
               </div>
               <div className="flex items-center gap-2">
-                <Globe className="w-4 h-4 text-indigo-400" />
-                <span className="text-gray-300">{osintToolCount} OSINT Tools</span>
+                <Globe className="w-4 h-4 text-primary" />
+                <span className="text-muted-foreground">{osintToolCount} OSINT Tools</span>
               </div>
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-emerald-400" />
-                <span className="text-gray-300">{geointToolCount} GEOINT Tools</span>
+                <MapPin className="w-4 h-4 text-success-foreground" />
+                <span className="text-muted-foreground">{geointToolCount} GEOINT Tools</span>
               </div>
               <div className="flex items-center gap-2">
-                <BookOpen className="w-4 h-4 text-purple-400" />
-                <span className="text-gray-300">{collectionCount} Collections</span>
+                <BookOpen className="w-4 h-4 text-primary" />
+                <span className="text-muted-foreground">{collectionCount} Collections</span>
               </div>
             </div>
 
             {/* Search */}
             <div className="max-w-xl relative">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
               <Input
                 type="text"
                 placeholder="Search all tools by name or description..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="pl-12 h-12 bg-white/10 border-white/20 text-white placeholder:text-gray-400 backdrop-blur rounded-xl text-base focus:bg-white/20"
+                className="pl-12 h-12 bg-white/10 border-white/20 text-white placeholder:text-muted-foreground backdrop-blur rounded-xl text-base focus:bg-white/20"
               />
             </div>
           </div>
@@ -451,8 +451,8 @@ export default function SecurityOsintTools() {
               {showCyber && filteredCyberSec.length > 0 && (
                 <section>
                   <div className="flex items-center gap-2 mb-4">
-                    <Shield className="w-5 h-5 text-red-500" />
-                    <h2 className="text-xl font-bold text-gray-900 dark:text-white">Cybersecurity Modules</h2>
+                    <Shield className="w-5 h-5 text-danger-foreground" />
+                    <h2 className="text-xl font-bold text-foreground dark:text-white">Cybersecurity Modules</h2>
                     <Badge variant="secondary" className="text-xs">{cyberCount}</Badge>
                   </div>
                   {filteredCyberSec.map((team) => (
@@ -475,8 +475,8 @@ export default function SecurityOsintTools() {
               {showOsint && filteredOsint.length > 0 && (
                 <section>
                   <div className="flex items-center gap-2 mb-4">
-                    <Globe className="w-5 h-5 text-indigo-500" />
-                    <h2 className="text-xl font-bold text-gray-900 dark:text-white">OSINT Tools</h2>
+                    <Globe className="w-5 h-5 text-primary" />
+                    <h2 className="text-xl font-bold text-foreground dark:text-white">OSINT Tools</h2>
                     <Badge variant="secondary" className="text-xs">{osintCount}</Badge>
                   </div>
                   <div className="space-y-3">
@@ -491,8 +491,8 @@ export default function SecurityOsintTools() {
               {showGeoint && filteredGeoint.length > 0 && (
                 <section>
                   <div className="flex items-center gap-2 mb-4">
-                    <MapPin className="w-5 h-5 text-emerald-500" />
-                    <h2 className="text-xl font-bold text-gray-900 dark:text-white">GEOINT & Mapping</h2>
+                    <MapPin className="w-5 h-5 text-success-foreground" />
+                    <h2 className="text-xl font-bold text-foreground dark:text-white">GEOINT & Mapping</h2>
                     <Badge variant="secondary" className="text-xs">{geointCount}</Badge>
                   </div>
                   <div className="space-y-3">
@@ -507,8 +507,8 @@ export default function SecurityOsintTools() {
               {showCollections && filteredCollections.length > 0 && (
                 <section>
                   <div className="flex items-center gap-2 mb-4">
-                    <BookOpen className="w-5 h-5 text-purple-500" />
-                    <h2 className="text-xl font-bold text-gray-900 dark:text-white">Curated Collections</h2>
+                    <BookOpen className="w-5 h-5 text-primary" />
+                    <h2 className="text-xl font-bold text-foreground dark:text-white">Curated Collections</h2>
                     <Badge variant="secondary" className="text-xs">{collCount}</Badge>
                   </div>
                   <div className="grid gap-4 md:grid-cols-2">
@@ -522,7 +522,7 @@ export default function SecurityOsintTools() {
               {/* Empty state */}
               {cyberCount === 0 && osintCount === 0 && geointCount === 0 && collCount === 0 && (
                 <div className="text-center py-16">
-                  <p className="text-gray-500 dark:text-gray-400 text-lg">
+                  <p className="text-muted-foreground text-lg">
                     No tools found matching &ldquo;{search}&rdquo;.
                   </p>
                 </div>
@@ -546,7 +546,7 @@ export default function SecurityOsintTools() {
               ))}
               {filteredCyberSec.length === 0 && (
                 <div className="text-center py-16">
-                  <p className="text-gray-500 dark:text-gray-400">No modules match your search.</p>
+                  <p className="text-muted-foreground ">No modules match your search.</p>
                 </div>
               )}
             </TabsContent>
@@ -558,7 +558,7 @@ export default function SecurityOsintTools() {
               ))}
               {filteredOsint.length === 0 && (
                 <div className="text-center py-16">
-                  <p className="text-gray-500 dark:text-gray-400">No OSINT tools match your search.</p>
+                  <p className="text-muted-foreground ">No OSINT tools match your search.</p>
                 </div>
               )}
             </TabsContent>
@@ -570,7 +570,7 @@ export default function SecurityOsintTools() {
               ))}
               {filteredGeoint.length === 0 && (
                 <div className="text-center py-16">
-                  <p className="text-gray-500 dark:text-gray-400">No GEOINT tools match your search.</p>
+                  <p className="text-muted-foreground ">No GEOINT tools match your search.</p>
                 </div>
               )}
             </TabsContent>
@@ -584,15 +584,15 @@ export default function SecurityOsintTools() {
               </div>
               {filteredCollections.length === 0 && (
                 <div className="text-center py-16">
-                  <p className="text-gray-500 dark:text-gray-400">No collections match your search.</p>
+                  <p className="text-muted-foreground ">No collections match your search.</p>
                 </div>
               )}
             </TabsContent>
           </Tabs>
 
           {/* Disclaimer */}
-          <div className="mt-12 mb-4 bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl p-6 text-center">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+          <div className="mt-12 mb-4 bg-muted border border-border rounded-xl p-6 text-center">
+            <p className="text-base text-muted-foreground ">
               These tools are listed for educational and research purposes. External collections are maintained
               by independent researchers and organizations. Always verify tools before use and follow all
               applicable laws when conducting research.

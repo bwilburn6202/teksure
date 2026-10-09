@@ -45,9 +45,8 @@ export function Footer() {
       title: 'Quick Help',
       links: [
         { to: '/start', label: 'Start Here' },
-        { to: '/tekbrain', label: 'Ask TekBrain' },
         { to: '/scam-defense', label: 'Scam Help' },
-        { to: '/get-help', label: 'Book Help' },
+        { to: '/get-help', label: 'Get Help' },
         { to: '/tools', label: 'Find a Tool' },
         { to: '/glossary', label: 'Tech Glossary A–Z' },
         { to: '/tech-problem-of-week', label: "This Week's Tech Problem" },
@@ -56,18 +55,14 @@ export function Footer() {
     {
       title: 'For Families',
       links: [
-        { to: '/family-sharing', label: 'Family Sharing' },
         { to: '/caregiver-hub', label: 'Caregiver Resources' },
         { to: '/accessibility', label: 'Accessibility Hub' },
-        { to: '/stories', label: 'Stories' },
       ],
     },
     {
       title: 'Company',
       links: [
         { to: '/about', label: 'About TekSure' },
-        { to: '/technicians', label: 'Book a Technician' },
-        { to: '/volunteer', label: 'Volunteer' },
         { to: '/whats-new', label: "What's New" },
         { to: 'mailto:hello@teksure.com', label: 'hello@teksure.com', external: true },
       ],
@@ -84,7 +79,7 @@ export function Footer() {
         <div className="container py-3">
           <ul
             aria-label="Why you can trust TekSure"
-            className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm"
+            className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-base"
           >
             <li className="flex items-center gap-2 text-foreground/80">
               <CheckCircle2 className="h-4 w-4 text-teksure-success" aria-hidden="true" />
@@ -95,7 +90,7 @@ export function Footer() {
               <span className="font-medium text-foreground">No tracking</span>
             </li>
             <li className="flex items-center gap-2 text-foreground/80">
-              <Heart className="h-4 w-4 text-rose-500" aria-hidden="true" />
+              <Heart className="h-4 w-4 text-danger-foreground" aria-hidden="true" />
               <span><strong className="text-foreground">Plain-English help</strong> for non-technical users</span>
             </li>
           </ul>
@@ -135,7 +130,7 @@ export function Footer() {
             <h4 className="text-base font-semibold text-foreground mb-2">
               Weekly tips in plain English
             </h4>
-            <p className="text-sm text-foreground/70 mb-4">
+            <p className="text-base text-foreground/70 mb-4">
               One helpful tech tip every Sunday. No spam, ever.
             </p>
             {subscribed ? (
@@ -166,7 +161,7 @@ export function Footer() {
                     setError('');
                   }}
                   placeholder="your@email.com"
-                  className="h-11 text-base flex-1 bg-white dark:bg-background"
+                  className="h-11 text-base flex-1 bg-card dark:bg-background"
                 />
                 <Button
                   type="submit"
@@ -178,7 +173,7 @@ export function Footer() {
               </form>
             )}
             {error && (
-              <p role="alert" className="mt-2 text-sm text-destructive">
+              <p role="alert" className="mt-2 text-base text-destructive">
                 {error}
               </p>
             )}
@@ -221,9 +216,9 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-amber-200/60 dark:border-border/60 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-foreground/65 text-center md:text-left">
+          <p className="text-base text-foreground/65 text-center md:text-left">
             &copy; {currentYear} TekSure. Made with{' '}
-            <Heart className="inline-block h-3.5 w-3.5 text-rose-500 align-middle" aria-hidden="true" />{' '}
+            <Heart className="inline-block h-3.5 w-3.5 text-danger-foreground align-middle" aria-hidden="true" />{' '}
             for everyday people.
           </p>
 
@@ -270,7 +265,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Follow TekSure on Facebook"
-                className="inline-flex items-center justify-center h-11 w-11 rounded-full text-foreground/65 hover:text-primary hover:bg-white dark:hover:bg-background transition-colors"
+                className="inline-flex items-center justify-center h-11 w-11 rounded-full text-foreground/65 hover:text-primary hover:bg-card dark:hover:bg-background transition-colors"
               >
                 <Facebook className="h-5 w-5" aria-hidden="true" />
               </a>
@@ -279,7 +274,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Subscribe to TekSure on YouTube"
-                className="inline-flex items-center justify-center h-11 w-11 rounded-full text-foreground/65 hover:text-primary hover:bg-white dark:hover:bg-background transition-colors"
+                className="inline-flex items-center justify-center h-11 w-11 rounded-full text-foreground/65 hover:text-primary hover:bg-card dark:hover:bg-background transition-colors"
               >
                 <Youtube className="h-5 w-5" aria-hidden="true" />
               </a>

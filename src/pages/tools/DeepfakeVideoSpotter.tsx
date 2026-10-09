@@ -148,7 +148,7 @@ export default function DeepfakeVideoSpotter() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-rose-500/10 rounded-full">
-                <Video className="h-8 w-8 text-rose-600" />
+                <Video className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Deepfake Video Spotter</h1>
@@ -168,7 +168,7 @@ export default function DeepfakeVideoSpotter() {
                 <p className={`font-semibold text-lg ${verdict.tone === 'red' ? 'text-red-700 dark:text-red-300' : verdict.tone === 'amber' ? 'text-amber-700 dark:text-amber-300' : ''}`}>
                   {verdict.label}
                 </p>
-                <p className="text-sm text-muted-foreground mt-1">{verdict.explain}</p>
+                <p className="text-base text-muted-foreground mt-1">{verdict.explain}</p>
               </div>
               {flagged.size > 0 && (
                 <Button variant="ghost" size="sm" onClick={reset}>Reset</Button>
@@ -192,10 +192,10 @@ export default function DeepfakeVideoSpotter() {
                       <Checkbox checked={checked} onCheckedChange={() => toggle(c.id)} className="mt-1" />
                       <div className="flex-1">
                         <div className="flex items-center gap-2 flex-wrap mb-1">
-                          <p className="font-medium text-sm">{c.question}</p>
+                          <p className="font-medium text-base">{c.question}</p>
                           <Badge variant="outline" className="text-xs">{c.category}</Badge>
                         </div>
-                        <p className="text-xs text-muted-foreground">{c.detail}</p>
+                        <p className="text-sm text-muted-foreground">{c.detail}</p>
                       </div>
                     </label>
                   );
@@ -206,8 +206,8 @@ export default function DeepfakeVideoSpotter() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">The single best move: find a second source</p>
-              <p className="text-xs text-muted-foreground mb-3">
+              <p className="text-base font-semibold mb-2">The single best move: find a second source</p>
+              <p className="text-sm text-muted-foreground mb-3">
                 If a politician really said it, a celebrity really endorsed it, or a family member really called for help, more than one place will have proof. Search the exact quote on Google News. Check AP, Reuters, or your local TV station. If only one Facebook page or TikTok account has the clip, treat it as a fake until proven real.
               </p>
               <a href="https://news.google.com" target="_blank" rel="noreferrer"
@@ -217,9 +217,9 @@ export default function DeepfakeVideoSpotter() {
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20">
+          <Card className="border-warn-foreground/25 bg-warn ">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Election seasons are peak deepfake season</p>
                 <p className="text-muted-foreground">
@@ -233,20 +233,20 @@ export default function DeepfakeVideoSpotter() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/ai-image-spotter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">AI Image Spotter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For still photos that look too good to be true.</p>
+                <p className="font-medium text-base">AI Image Spotter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For still photos that look too good to be true.</p>
               </Link>
               <Link to="/tools/ai-voice-defense" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">AI Voice Defense</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For voice-only calls that sound like a loved one.</p>
+                <p className="font-medium text-base">AI Voice Defense</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For voice-only calls that sound like a loved one.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For text and email scams.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For text and email scams.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: Deepfake quality keeps improving. The single-source test works no matter how realistic the fake looks — real news has more than one camera.
           </p>
         </div>

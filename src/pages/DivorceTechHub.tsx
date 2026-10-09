@@ -285,7 +285,7 @@ export default function DivorceTechHub() {
                   <h2 className="font-bold text-foreground mb-2">
                     This is not legal advice
                   </h2>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     Always follow your lawyer's guidance during divorce proceedings. Some actions
                     on this page may be prohibited by court order or local law until assets are
                     formally divided. Locking a spouse out of shared accounts before separation is
@@ -344,7 +344,7 @@ export default function DivorceTechHub() {
               <Card key={a.name} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{a.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{a.steps}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{a.steps}</p>
                 </CardContent>
               </Card>
             ))}
@@ -370,7 +370,7 @@ export default function DivorceTechHub() {
                 <Card key={e.title} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{e.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{e.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{e.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -396,7 +396,7 @@ export default function DivorceTechHub() {
               <Card key={f.title} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{f.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{f.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{f.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -422,7 +422,7 @@ export default function DivorceTechHub() {
                 <Card key={s.title} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{s.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{s.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{s.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -448,7 +448,7 @@ export default function DivorceTechHub() {
               <Card key={p.name} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{p.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{p.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{p.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -474,7 +474,7 @@ export default function DivorceTechHub() {
                 <Card key={h.title} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{h.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{h.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{h.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -500,7 +500,7 @@ export default function DivorceTechHub() {
               <Card key={s.name} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{s.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{s.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -526,7 +526,7 @@ export default function DivorceTechHub() {
                 <Card key={p.title} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{p.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{p.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{p.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -552,7 +552,7 @@ export default function DivorceTechHub() {
               <Card key={i.title} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{i.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{i.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{i.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -568,7 +568,7 @@ export default function DivorceTechHub() {
                 <h2 className="text-xl md:text-2xl font-bold text-primary mb-3">
                   Mental health support
                 </h2>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                <p className="text-base text-muted-foreground leading-relaxed mb-5">
                   Divorce is one of the most stressful things a person can go through. Getting
                   support is not weakness — it is basic maintenance.
                 </p>

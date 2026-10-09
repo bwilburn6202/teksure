@@ -1,13 +1,14 @@
 /**
  * generate-tools-directory.mjs
  * ----------------------------
- * Scans src/App.tsx for every concrete /tools/* route and writes
+ * Reads every live tool slug from src/data/tools-registry.ts and writes
  * src/data/tools-directory.ts — the data source for the "All Tools A–Z"
  * directory page (/tools/all). Runs in prebuild, so the directory always
  * matches the real route table and no tool page can be orphaned.
  */
 
 import { readFileSync, writeFileSync } from 'fs';
+import { readToolSlugs } from './tool-slugs.mjs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -31,14 +32,9 @@ function labelFromSlug(slug) {
     .join(' ');
 }
 
-const appTsx = readFileSync(join(ROOT, 'src', 'App.tsx'), 'utf8');
-const paths = new Set();
-for (const m of appTsx.matchAll(/path="(\/tools\/[^"]+)"/g)) {
-  const p = m[1];
-  if (p.includes(':') || p.includes('*')) continue;
-  if (p === '/tools/all') continue; // the directory itself
-  paths.add(p);
-}
+// Source of truth is src/data/tools-registry.ts, not the route table — App.tsx
+// now has a single dynamic /tools/:slug route.
+const paths = new Set(readToolSlugs().map((s) => `/tools/${s}`));
 
 const items = [...paths].sort().map((p) => ({
   path: p,

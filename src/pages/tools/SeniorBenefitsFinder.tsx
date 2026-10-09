@@ -167,22 +167,22 @@ export default function SeniorBenefitsFinder() {
         title="Senior Benefits Finder — TekSure"
         description="Find government and non-profit programs that may help you with health care costs, food, utilities, prescriptions, phone, internet, and more."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4">
+      <main className="min-h-screen bg-muted py-8 px-4">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-green-100 dark:bg-green-950/60 mb-4">
-              <Gift className="w-8 h-8 text-green-600 dark:text-green-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-success mb-4">
+              <Gift className="w-8 h-8 text-success-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Senior Benefits Finder</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Senior Benefits Finder</h1>
+            <p className="text-lg text-muted-foreground ">
               Many seniors qualify for programs that can save hundreds or thousands of dollars a year — but never apply because they don't know about them.
             </p>
           </div>
 
           {!showResults ? (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
-              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1 text-lg">What would help you the most?</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Choose all that apply — or leave all unchecked to see every program.</p>
+            <div className="bg-card rounded-2xl border border-border p-5 shadow-sm">
+              <p className="font-semibold text-foreground mb-1 text-lg">What would help you the most?</p>
+              <p className="text-base text-muted-foreground mb-4">Choose all that apply — or leave all unchecked to see every program.</p>
               <div className="space-y-2">
                 {SITUATIONS.map(s => {
                   const isSelected = selected.includes(s.key);
@@ -192,16 +192,16 @@ export default function SeniorBenefitsFinder() {
                       onClick={() => toggleSituation(s.key)}
                       className={`w-full flex items-start gap-3 p-4 rounded-xl border-2 text-left transition-all ${
                         isSelected
-                          ? 'border-green-500 bg-green-50 dark:bg-green-950/30'
+                          ? 'border-green-500 bg-success dark:bg-green-950/30'
                           : 'border-gray-200 dark:border-gray-700 hover:border-green-400'
                       }`}
                     >
                       <span className="text-2xl flex-shrink-0">{s.emoji}</span>
                       <div className="flex-1">
-                        <p className={`font-semibold text-sm ${isSelected ? 'text-green-800 dark:text-green-200' : 'text-gray-900 dark:text-gray-100'}`}>{s.label}</p>
-                        <p className="text-xs text-gray-500 dark:text-gray-400">{s.description}</p>
+                        <p className={`font-semibold text-base ${isSelected ? 'text-green-800 dark:text-green-200' : 'text-gray-900 dark:text-gray-100'}`}>{s.label}</p>
+                        <p className="text-sm text-muted-foreground ">{s.description}</p>
                       </div>
-                      {isSelected && <span className="text-green-600 dark:text-green-400 text-lg flex-shrink-0">✓</span>}
+                      {isSelected && <span className="text-success-foreground text-lg flex-shrink-0">✓</span>}
                     </button>
                   );
                 })}
@@ -217,13 +217,13 @@ export default function SeniorBenefitsFinder() {
           ) : (
             <>
               <div className="mb-4 flex items-center justify-between">
-                <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                <p className="text-base font-medium text-foreground ">
                   {matchedBenefits.length} program{matchedBenefits.length !== 1 ? 's' : ''} found
                   {selected.length > 0 && ` for your selections`}
                 </p>
                 <button
                   onClick={() => { setShowResults(false); setSelected([]); }}
-                  className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+                  className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground "
                 >
                   <RotateCcw className="w-3.5 h-3.5" /> Start Over
                 </button>
@@ -231,18 +231,18 @@ export default function SeniorBenefitsFinder() {
 
               <div className="space-y-3">
                 {matchedBenefits.map((b, i) => (
-                  <div key={i} className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-4 shadow-sm">
-                    <h3 className="font-bold text-gray-900 dark:text-gray-100 mb-1">{b.name}</h3>
-                    <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">{b.what}</p>
+                  <div key={i} className="bg-card rounded-2xl border border-border p-4 shadow-sm">
+                    <h3 className="font-bold text-foreground mb-1">{b.name}</h3>
+                    <p className="text-base text-foreground mb-2">{b.what}</p>
                     <div className="space-y-1.5 text-sm">
-                      <p><span className="font-medium text-gray-600 dark:text-gray-400">Who qualifies:</span> <span className="text-gray-700 dark:text-gray-300">{b.who}</span></p>
-                      <p><span className="font-medium text-gray-600 dark:text-gray-400">How to apply:</span> <span className="text-gray-700 dark:text-gray-300">{b.howToApply}</span></p>
+                      <p><span className="font-medium text-muted-foreground ">Who qualifies:</span> <span className="text-foreground ">{b.who}</span></p>
+                      <p><span className="font-medium text-muted-foreground ">How to apply:</span> <span className="text-foreground ">{b.howToApply}</span></p>
                     </div>
                     <a
                       href={`https://${b.url}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 mt-3 text-sm text-green-600 dark:text-green-400 hover:underline"
+                      className="inline-flex items-center gap-1 mt-3 text-sm text-success-foreground hover:underline"
                     >
                       <ExternalLink className="w-3.5 h-3.5" />
                       {b.url}
@@ -251,23 +251,23 @@ export default function SeniorBenefitsFinder() {
                 ))}
               </div>
 
-              <div className="mt-5 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-xl p-4">
-                <p className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">Want a full screening?</p>
-                <p className="text-sm text-blue-700 dark:text-blue-300">
+              <div className="mt-5 bg-info border border-info-foreground/25 rounded-xl p-4">
+                <p className="text-base font-semibold text-info-foreground mb-1">Want a full screening?</p>
+                <p className="text-base text-info-foreground ">
                   For the most thorough check, use BenefitsCheckUp (benefitscheckup.org) from the National Council on Aging — it screens for 2,500+ programs in your specific state and county. It's free and takes about 10 minutes.
                 </p>
               </div>
 
               <button
                 onClick={() => setShowResults(false)}
-                className="mt-4 flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+                className="mt-4 flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground "
               >
                 <ChevronLeft className="w-4 h-4" /> Change selections
               </button>
             </>
           )}
         </div>
-      </div>
+      </main>
     </>
   );
 }

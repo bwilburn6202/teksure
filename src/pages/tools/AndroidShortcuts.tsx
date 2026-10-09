@@ -191,7 +191,7 @@ export default function AndroidShortcuts() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-green-500/10 rounded-full">
-                <Smartphone className="h-8 w-8 text-green-600" />
+                <Smartphone className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">20 Android Shortcuts &amp; Tricks</h1>
@@ -207,7 +207,7 @@ export default function AndroidShortcuts() {
           <Card className="border-amber-500/30 bg-amber-500/5 mb-6">
             <CardContent className="p-5">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                 <div className="text-sm">
                   <p className="font-semibold mb-1">A note before you start</p>
                   <p className="text-muted-foreground">
@@ -238,7 +238,7 @@ export default function AndroidShortcuts() {
                         <p className="font-semibold text-base">{t.title}</p>
                       </div>
                     </div>
-                    <p className="text-sm text-muted-foreground ml-12">{t.detail}</p>
+                    <p className="text-base text-muted-foreground ml-12">{t.detail}</p>
                   </CardContent>
                 </Card>
               );
@@ -247,8 +247,8 @@ export default function AndroidShortcuts() {
 
           <Card className="border-border bg-muted/30 mt-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">One thing not to do</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">One thing not to do</p>
+              <p className="text-sm text-muted-foreground">
                 Do not turn on every gesture and shortcut at once. Pick two or three from this list, practice them for a week, then come back for more. Muscle memory takes a few days, and learning twenty new motions in one sitting is a recipe for forgetting all of them.
               </p>
             </CardContent>
@@ -258,20 +258,20 @@ export default function AndroidShortcuts() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/dictation-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Dictation Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Talk to type in any app on your phone.</p>
+                <p className="font-medium text-base">Dictation Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Talk to type in any app on your phone.</p>
               </Link>
               <Link to="/tools/voicemail-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Voicemail Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Get your greeting and inbox working right.</p>
+                <p className="font-medium text-base">Voicemail Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Get your greeting and inbox working right.</p>
               </Link>
               <Link to="/tools/tech-cheatsheet-generator" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Tech Cheatsheet Generator</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Print a one-page reference of your favorite shortcuts.</p>
+                <p className="font-medium text-base">Tech Cheatsheet Generator</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Print a one-page reference of your favorite shortcuts.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: the two-finger swipe down for full Quick Settings is the single biggest time-saver. Practice it five times today and it sticks for life.
           </p>
         </div>

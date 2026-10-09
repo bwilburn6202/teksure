@@ -42,21 +42,21 @@ export default function RVPreTripChecklist() {
   const completedCount = Object.values(done).filter(Boolean).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="RV Pre-Trip Departure Checklist for Seniors | TekSure" description="16 essential items to check before driving your RV. Slides, hookups, tires, hitch, and route. Designed for older RVers who want a stress-free departure." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Truck className="h-7 w-7 text-stone-700" />
-            <h1 className="text-3xl font-bold text-gray-900">RV Pre-Trip Checklist</h1>
+            <Truck className="h-7 w-7 text-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">RV Pre-Trip Checklist</h1>
           </div>
-          <p className="text-gray-600 text-lg">16 things to verify before you turn the key. Walk through it the same way every time and you will not leave a slide out again.</p>
+          <p className="text-muted-foreground text-lg">16 things to verify before you turn the key. Walk through it the same way every time and you will not leave a slide out again.</p>
         </div>
 
         {completedCount > 0 && (
-          <Card className="mb-4 bg-stone-50 border-stone-200">
+          <Card className="mb-4 bg-muted border-border">
             <CardContent className="py-3 px-4 text-center">
-              <p className="text-stone-900 font-semibold">{completedCount} of {ITEMS.length} done</p>
+              <p className="text-foreground font-semibold">{completedCount} of {ITEMS.length} done</p>
             </CardContent>
           </Card>
         )}
@@ -64,14 +64,14 @@ export default function RVPreTripChecklist() {
         {CATEGORIES.map(cat => (
           <Card key={cat} className="mb-4">
             <CardContent className="py-4 px-4">
-              <h2 className="text-xl font-bold text-gray-900 mb-3">{cat}</h2>
+              <h2 className="text-xl font-bold text-foreground mb-3">{cat}</h2>
               <div className="space-y-3">
                 {ITEMS.filter(i => i.category === cat).map(i => (
-                  <div key={i.id} className="flex items-start gap-3 p-3 rounded-lg border border-gray-200 bg-white">
+                  <div key={i.id} className="flex items-start gap-3 p-3 rounded-lg border border-border bg-card">
                     <Checkbox checked={!!done[i.id]} onCheckedChange={() => toggle(i.id)} className="mt-1 print:hidden" />
                     <div className="flex-1 min-w-0">
                       <p className={`font-semibold ${done[i.id] ? "line-through text-gray-400" : "text-gray-900"}`}>{i.title}</p>
-                      <p className="text-sm text-gray-600 mt-1">{i.detail}</p>
+                      <p className="text-base text-muted-foreground mt-1">{i.detail}</p>
                     </div>
                   </div>
                 ))}
@@ -80,9 +80,9 @@ export default function RVPreTripChecklist() {
           </Card>
         ))}
 
-        <Card className="bg-blue-50 border-blue-200 mb-4">
+        <Card className="bg-info border-info-foreground/25 mb-4">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Pro pattern:</span> Do this same checklist the same way every time, even when you only moved 50 feet. Muscle memory protects you when you are tired, distracted, or rushed. Many RVers run the list out loud with their spouse confirming each item.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Pro pattern:</span> Do this same checklist the same way every time, even when you only moved 50 feet. Muscle memory protects you when you are tired, distracted, or rushed. Many RVers run the list out loud with their spouse confirming each item.</p>
           </CardContent>
         </Card>
 
@@ -92,6 +92,6 @@ export default function RVPreTripChecklist() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

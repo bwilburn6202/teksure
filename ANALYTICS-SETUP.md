@@ -1,5 +1,10 @@
 # TekSure Analytics Setup Guide
 
+> **Status as of 2026-08-30: NOT LIVE.** Analytics wiring is still an open blocker
+> in `CLAUDE.md` -- the steps below describe the intended setup, not the current one.
+> Verify in the GA4 dashboard before assuming any of this is running.
+
+
 ## Step 1: Create a Google Analytics 4 Property
 
 1. Go to [analytics.google.com](https://analytics.google.com)

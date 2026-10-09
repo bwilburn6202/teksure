@@ -98,7 +98,7 @@ export default function OnlineShoppingSafety() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-orange-500/10 rounded-full">
-                <ShoppingCart className="h-8 w-8 text-orange-600" />
+                <ShoppingCart className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Online Shopping Safety Checklist</h1>
@@ -111,7 +111,7 @@ export default function OnlineShoppingSafety() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Online Shopping Safety' }]} />
 
-          <p className="text-sm text-muted-foreground mb-3">{done.size} of {total} done</p>
+          <p className="text-base text-muted-foreground mb-3">{done.size} of {total} done</p>
 
           {SECTIONS.map(s => {
             const Icon = s.icon;
@@ -133,8 +133,8 @@ export default function OnlineShoppingSafety() {
                           }`}>
                           <Checkbox checked={done.has(item.id)} onCheckedChange={() => toggle(item.id)} className="mt-1" />
                           <div className="flex-1">
-                            <p className={`font-medium text-sm ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
-                            <p className="text-xs text-muted-foreground mt-1">{item.detail}</p>
+                            <p className={`font-medium text-base ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
+                            <p className="text-sm text-muted-foreground mt-1">{item.detail}</p>
                           </div>
                         </label>
                       ))}
@@ -147,8 +147,8 @@ export default function OnlineShoppingSafety() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Quick tip: the "Honey" / coupon-extension caution</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Quick tip: the "Honey" / coupon-extension caution</p>
+              <p className="text-sm text-muted-foreground">
                 Browser extensions like Honey and Capital One Shopping promise automatic coupons. They DO sometimes work — but they also sometimes intercept commission from the seller without giving the discount to you, and sometimes track your shopping. If you use them, install only the official versions, and skip the third-party "coupon helper" tools that come from random sites.
               </p>
             </CardContent>
@@ -158,16 +158,16 @@ export default function OnlineShoppingSafety() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/amazon-review-spotter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Amazon Review Spotter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Spot fake reviews.</p>
+                <p className="font-medium text-base">Amazon Review Spotter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Spot fake reviews.</p>
               </Link>
               <Link to="/tools/refund-and-return-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Refund &amp; Return Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">When the package was wrong.</p>
+                <p className="font-medium text-base">Refund &amp; Return Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">When the package was wrong.</p>
               </Link>
               <Link to="/tools/online-banking-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Online Banking Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Protect the card you shop with.</p>
+                <p className="font-medium text-base">Online Banking Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Protect the card you shop with.</p>
               </Link>
             </div>
           </div>

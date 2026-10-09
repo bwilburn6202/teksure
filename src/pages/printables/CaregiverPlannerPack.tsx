@@ -26,7 +26,6 @@ import {
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -592,12 +591,6 @@ export default function CaregiverPlannerPack() {
               <Badge variant="outline" className="text-base min-h-8 border-emerald-300 text-emerald-800 dark:text-emerald-200">
                 8 pages
               </Badge>
-              <BookmarkButton
-                type="tool"
-                slug="caregiver-planner"
-                title="Caregiver Planner"
-                url="/printables/caregiver-planner"
-              />
             </div>
             <div className="flex items-start gap-4">
               <div className="hidden md:flex w-16 h-16 rounded-2xl bg-emerald-600 text-white items-center justify-center shrink-0 shadow-lg">

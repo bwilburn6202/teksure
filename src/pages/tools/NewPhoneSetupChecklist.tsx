@@ -161,42 +161,42 @@ export default function NewPhoneSetupChecklist() {
         title="New Phone Setup Checklist — TekSure"
         description="Step-by-step checklist for setting up a new iPhone or Android phone. Tick off each task as you go — from security and backup to apps and personalization."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4 print:bg-white">
+      <main className="min-h-screen bg-muted py-8 px-4 print:bg-card">
         <div className="max-w-2xl mx-auto">
 
           <div className="text-center mb-6 print:hidden">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-100 dark:bg-blue-950/60 mb-4">
-              <Smartphone className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-info mb-4">
+              <Smartphone className="w-8 h-8 text-info-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">New Phone Setup Checklist</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">New Phone Setup Checklist</h1>
+            <p className="text-lg text-muted-foreground ">
               Setting up a new phone? Work through this checklist step by step so nothing gets missed.
             </p>
           </div>
 
           {/* Phone picker */}
           {!phoneType ? (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm p-6">
-              <p className="font-bold text-gray-900 dark:text-gray-100 text-lg mb-4 text-center">What kind of phone are you setting up?</p>
+            <div className="bg-card rounded-2xl border border-border shadow-sm p-6">
+              <p className="font-bold text-foreground text-lg mb-4 text-center">What kind of phone are you setting up?</p>
               <div className="grid grid-cols-2 gap-4">
                 <button
                   onClick={() => setPhoneType('iphone')}
-                  className="flex flex-col items-center gap-3 p-5 rounded-2xl border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/20 transition-all"
+                  className="flex flex-col items-center gap-3 p-5 rounded-2xl border-2 border-border hover:border-blue-500 hover:bg-info transition-all"
                 >
                   <span className="text-5xl">🍎</span>
                   <div>
-                    <p className="font-bold text-gray-900 dark:text-gray-100">iPhone</p>
-                    <p className="text-xs text-gray-500">Apple iOS</p>
+                    <p className="font-bold text-foreground ">iPhone</p>
+                    <p className="text-sm text-muted-foreground">Apple iOS</p>
                   </div>
                 </button>
                 <button
                   onClick={() => setPhoneType('android')}
-                  className="flex flex-col items-center gap-3 p-5 rounded-2xl border-2 border-gray-200 dark:border-gray-700 hover:border-green-500 hover:bg-green-50 dark:hover:bg-green-950/20 transition-all"
+                  className="flex flex-col items-center gap-3 p-5 rounded-2xl border-2 border-border hover:border-green-500 hover:bg-success transition-all"
                 >
                   <span className="text-5xl">🤖</span>
                   <div>
-                    <p className="font-bold text-gray-900 dark:text-gray-100">Android</p>
-                    <p className="text-xs text-gray-500">Samsung, Pixel, etc.</p>
+                    <p className="font-bold text-foreground ">Android</p>
+                    <p className="text-sm text-muted-foreground">Samsung, Pixel, etc.</p>
                   </div>
                 </button>
               </div>
@@ -204,17 +204,17 @@ export default function NewPhoneSetupChecklist() {
           ) : (
             <>
               {/* Progress bar */}
-              <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm p-4 mb-4 print:hidden">
+              <div className="bg-card rounded-2xl border border-border shadow-sm p-4 mb-4 print:hidden">
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">
                     <span className="text-lg">{phoneType === 'iphone' ? '🍎' : '🤖'}</span>
-                    <span className="font-semibold text-gray-900 dark:text-gray-100">
+                    <span className="font-semibold text-foreground ">
                       {phoneType === 'iphone' ? 'iPhone' : 'Android'} Setup
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-sm font-medium text-gray-600 dark:text-gray-400">{doneCount}/{allItems.length} done</span>
-                    {pct === 100 && <span className="text-green-600 dark:text-green-400 font-bold text-sm">All done! 🎉</span>}
+                    <span className="text-base font-medium text-muted-foreground ">{doneCount}/{allItems.length} done</span>
+                    {pct === 100 && <span className="text-success-foreground font-bold text-base">All done! 🎉</span>}
                   </div>
                 </div>
                 <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
@@ -230,25 +230,25 @@ export default function NewPhoneSetupChecklist() {
                 const sectionDone = section.items.filter(i => checked.has(i.id)).length;
                 const isCollapsed = collapsed.has(section.title);
                 return (
-                  <div key={section.title} className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm mb-3 overflow-hidden">
+                  <div key={section.title} className="bg-card rounded-2xl border border-border shadow-sm mb-3 overflow-hidden">
                     <button
                       onClick={() => toggleSection(section.title)}
                       className="w-full flex items-center justify-between p-4 text-left print:hidden"
                     >
                       <div className="flex items-center gap-2">
                         <span className="text-xl">{section.emoji}</span>
-                        <span className="font-bold text-gray-900 dark:text-gray-100">{section.title}</span>
+                        <span className="font-bold text-foreground ">{section.title}</span>
                         {sectionDone === section.items.length && (
-                          <span className="text-xs bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 px-2 py-0.5 rounded-full font-medium">Done</span>
+                          <span className="text-xs bg-success text-success-foreground px-2 py-0.5 rounded-full font-medium">Done</span>
                         )}
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className="text-xs text-gray-400">{sectionDone}/{section.items.length}</span>
-                        {isCollapsed ? <ChevronDown className="w-4 h-4 text-gray-400" /> : <ChevronUp className="w-4 h-4 text-gray-400" />}
+                        <span className="text-sm text-muted-foreground">{sectionDone}/{section.items.length}</span>
+                        {isCollapsed ? <ChevronDown className="w-4 h-4 text-muted-foreground" /> : <ChevronUp className="w-4 h-4 text-muted-foreground" />}
                       </div>
                     </button>
                     {!isCollapsed && (
-                      <div className="px-4 pb-4 pt-1 space-y-2 border-t border-gray-100 dark:border-gray-800">
+                      <div className="px-4 pb-4 pt-1 space-y-2 border-t border-border ">
                         {section.items.map(item => {
                           const done = checked.has(item.id);
                           return (
@@ -256,7 +256,7 @@ export default function NewPhoneSetupChecklist() {
                               key={item.id}
                               onClick={() => toggle(item.id)}
                               className={`w-full flex items-start gap-3 p-3 rounded-xl text-left transition-all ${
-                                done ? 'bg-green-50 dark:bg-green-950/20' : 'hover:bg-gray-50 dark:hover:bg-gray-800'
+                                done ? 'bg-green-50 dark:bg-green-950/20' : 'hover:bg-muted dark:hover:bg-gray-800'
                               }`}
                             >
                               <div className={`w-6 h-6 rounded-full border-2 flex-shrink-0 flex items-center justify-center mt-0.5 transition-all ${
@@ -265,12 +265,12 @@ export default function NewPhoneSetupChecklist() {
                                 {done && <Check className="w-3.5 h-3.5 text-white" />}
                               </div>
                               <div className="flex-1 min-w-0">
-                                <p className={`font-semibold text-sm ${done ? 'text-green-800 dark:text-green-200 line-through opacity-70' : 'text-gray-900 dark:text-gray-100'}`}>
+                                <p className={`font-semibold text-base ${done ? 'text-green-800 dark:text-green-200 line-through opacity-70' : 'text-gray-900 dark:text-gray-100'}`}>
                                   {item.label}
                                 </p>
-                                <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{item.detail}</p>
+                                <p className="text-sm text-muted-foreground mt-0.5">{item.detail}</p>
                                 {item.where && item.where !== 'N/A' && (
-                                  <p className="text-xs text-blue-600 dark:text-blue-400 mt-0.5 font-medium">📍 {item.where}</p>
+                                  <p className="text-sm text-info-foreground mt-0.5 font-medium">📍 {item.where}</p>
                                 )}
                               </div>
                             </button>
@@ -291,7 +291,7 @@ export default function NewPhoneSetupChecklist() {
                 </button>
                 <button
                   onClick={() => { setPhoneType(null); setChecked(new Set()); setCollapsed(new Set()); }}
-                  className="flex items-center gap-2 px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                  className="flex items-center gap-2 px-4 py-3 rounded-xl border border-border text-muted-foreground hover:bg-muted transition-colors"
                 >
                   <RotateCcw className="w-4 h-4" />
                 </button>
@@ -299,7 +299,7 @@ export default function NewPhoneSetupChecklist() {
             </>
           )}
         </div>
-      </div>
+      </main>
     </>
   );
 }

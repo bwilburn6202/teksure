@@ -166,14 +166,14 @@ export default function FallDetectionSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-red-500/10 rounded-full">
-                <ShieldPlus className="h-8 w-8 text-red-600" />
+                <ShieldPlus className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Fall Detection Setup</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
               Set it up once. If you fall and cannot move, your watch or phone calls for help — and texts your family.
             </p>
-            <p className="text-sm text-muted-foreground mt-3">Takes about 5 minutes. Free if you already own the device.</p>
+            <p className="text-base text-muted-foreground mt-3">Takes about 5 minutes. Free if you already own the device.</p>
           </div>
         </section>
 
@@ -183,12 +183,12 @@ export default function FallDetectionSetup() {
           {!device ? (
             <Card className="border-border shadow-sm">
               <CardContent className="p-6">
-                <p className="text-sm font-semibold mb-3">Which device do you have or are you considering?</p>
+                <p className="text-base font-semibold mb-3">Which device do you have or are you considering?</p>
                 <div className="grid sm:grid-cols-2 gap-2">
                   {DEVICE_OPTIONS.map(o => (
                     <button key={o.id} onClick={() => setDevice(o.id)}
                       className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all text-left">
-                      <p className="font-medium text-sm">{o.label}</p>
+                      <p className="font-medium text-base">{o.label}</p>
                     </button>
                   ))}
                 </div>
@@ -210,7 +210,7 @@ export default function FallDetectionSetup() {
                   <div className="space-y-4">
                     <div className="p-4 rounded-lg border border-border">
                       <p className="font-semibold">A medical-alert pendant ($30–$50/month)</p>
-                      <p className="text-sm text-muted-foreground mt-1">
+                      <p className="text-base text-muted-foreground mt-1">
                         The simplest option. No phone or watch needed. Press the button or fall — a real person calls you and dispatches help. Best if you do not want to learn a smartwatch.
                       </p>
                       <Button variant="outline" size="sm" className="mt-2" onClick={() => setDevice('medical-alert')}>
@@ -220,7 +220,7 @@ export default function FallDetectionSetup() {
 
                     <div className="p-4 rounded-lg border border-border">
                       <p className="font-semibold">An Apple Watch SE (~$250 one-time, no monthly fee)</p>
-                      <p className="text-sm text-muted-foreground mt-1">
+                      <p className="text-base text-muted-foreground mt-1">
                         Best if you also want texts, calls, and step counts. Pairs with an iPhone. Same medical-alert features as a pendant, plus a lot more.
                       </p>
                       <Button variant="outline" size="sm" className="mt-2" onClick={() => setDevice('apple-watch')}>
@@ -230,7 +230,7 @@ export default function FallDetectionSetup() {
 
                     <div className="p-4 rounded-lg border border-border">
                       <p className="font-semibold">A Pixel Watch or Galaxy Watch (~$200–$300 one-time)</p>
-                      <p className="text-sm text-muted-foreground mt-1">
+                      <p className="text-base text-muted-foreground mt-1">
                         Same idea, for Android users. Pixel Watch with a Pixel phone is the smoothest setup.
                       </p>
                       <Button variant="outline" size="sm" className="mt-2" onClick={() => setDevice('pixel-watch')}>
@@ -256,28 +256,28 @@ export default function FallDetectionSetup() {
               <Card className="border-border mb-6">
                 <CardContent className="p-5">
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Who this fits</p>
-                  <p className="text-sm text-muted-foreground mb-5">{guide.whoFor}</p>
+                  <p className="text-base text-muted-foreground mb-5">{guide.whoFor}</p>
 
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Setup steps</p>
                   <ol className="space-y-3 mb-5">
                     {guide.setup.map((s, i) => (
-                      <li key={i} className="flex gap-3 text-sm">
+                      <li key={i} className="flex gap-3 text-base">
                         <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                         <span>{s}</span>
                       </li>
                     ))}
                   </ol>
 
-                  <div className="p-4 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 mb-5">
-                    <p className="text-sm font-semibold text-blue-900 dark:text-blue-100 mb-1">Add 2 to 3 emergency contacts</p>
-                    <p className="text-xs text-blue-800 dark:text-blue-200">{guide.contactsHow}</p>
+                  <div className="p-4 rounded-lg bg-info border border-info-foreground/25 mb-5">
+                    <p className="text-base font-semibold text-info-foreground mb-1">Add 2 to 3 emergency contacts</p>
+                    <p className="text-sm text-info-foreground ">{guide.contactsHow}</p>
                   </div>
 
                   {guide.notes && guide.notes.length > 0 && (
                     <ul className="space-y-2 mb-3">
                       {guide.notes.map((n, i) => (
-                        <li key={i} className="flex gap-2 text-xs text-muted-foreground">
-                          <CheckCircle2 className="h-3 w-3 text-green-600 shrink-0 mt-0.5" />
+                        <li key={i} className="flex gap-2 text-sm text-muted-foreground">
+                          <CheckCircle2 className="h-3 w-3 text-success-foreground shrink-0 mt-0.5" />
                           <span>{n}</span>
                         </li>
                       ))}
@@ -293,9 +293,9 @@ export default function FallDetectionSetup() {
                 </CardContent>
               </Card>
 
-              <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+              <Card className="border-warn-foreground/25 bg-warn mb-6">
                 <CardContent className="p-5 flex gap-3">
-                  <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                   <div className="text-sm">
                     <p className="font-semibold mb-1">Test it once, with someone present</p>
                     <p className="text-muted-foreground">
@@ -305,9 +305,9 @@ export default function FallDetectionSetup() {
                 </CardContent>
               </Card>
 
-              <Card className="border-green-300 bg-green-50 dark:bg-green-950/20">
+              <Card className="border-success-foreground/25 bg-success ">
                 <CardContent className="p-5 flex gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" />
                   <div className="text-sm">
                     <p className="font-semibold mb-1">One more thing</p>
                     <p className="text-muted-foreground">
@@ -323,20 +323,20 @@ export default function FallDetectionSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/hearing-aid-pairing-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Hearing Aid Pairing</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Connect hearing aids to your phone.</p>
+                <p className="font-medium text-base">Hearing Aid Pairing</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Connect hearing aids to your phone.</p>
               </Link>
               <Link to="/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Low-Vision Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Make your screen easier to see.</p>
+                <p className="font-medium text-base">Low-Vision Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Make your screen easier to see.</p>
               </Link>
               <Link to="/accessibility" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Accessibility Hub</p>
-                <p className="text-xs text-muted-foreground mt-0.5">All accessibility resources.</p>
+                <p className="font-medium text-base">Accessibility Hub</p>
+                <p className="text-sm text-muted-foreground mt-0.5">All accessibility resources.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: charge your watch every night on the same nightstand, so it is always ready in the morning.
           </p>
         </div>

@@ -182,7 +182,7 @@ export default function CordCutterWizard() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <Scissors className="h-8 w-8 text-blue-600" />
+                <Scissors className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Cord Cutter Wizard</h1>
@@ -197,7 +197,7 @@ export default function CordCutterWizard() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-6">
-              <p className="text-sm font-semibold mb-3">What do you actually watch? Pick everything that applies.</p>
+              <p className="text-base font-semibold mb-3">What do you actually watch? Pick everything that applies.</p>
               <div className="space-y-2 mb-4">
                 {WATCH_OPTIONS.map(o => (
                   <label key={o.id}
@@ -206,8 +206,8 @@ export default function CordCutterWizard() {
                     }`}>
                     <Checkbox checked={picks.has(o.id)} onCheckedChange={() => toggle(o.id)} className="mt-1" />
                     <div>
-                      <p className="font-medium text-sm">{o.label}</p>
-                      <p className="text-xs text-muted-foreground mt-0.5">{o.sub}</p>
+                      <p className="font-medium text-base">{o.label}</p>
+                      <p className="text-sm text-muted-foreground mt-0.5">{o.sub}</p>
                     </div>
                   </label>
                 ))}
@@ -217,21 +217,21 @@ export default function CordCutterWizard() {
                 <Label htmlFor="bill">Your current cable bill (optional)</Label>
                 <Input id="bill" type="number" placeholder="e.g. 145" value={cableBill}
                   onChange={(e) => setCableBill(e.target.value)} className="mt-1 max-w-[200px]" />
-                <p className="text-xs text-muted-foreground mt-1">Lets us show what you would save per year.</p>
+                <p className="text-sm text-muted-foreground mt-1">Lets us show what you would save per year.</p>
               </div>
             </CardContent>
           </Card>
 
           {recs.length > 0 && (
             <>
-              <Card className="border-2 border-green-300 bg-green-50 dark:bg-green-950/20 mb-6">
+              <Card className="border-2 border-success-foreground/25 bg-success mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-2">Your streaming bill</p>
-                  <p className="text-4xl font-bold text-green-700 dark:text-green-300">
+                  <p className="text-base font-semibold mb-2">Your streaming bill</p>
+                  <p className="text-4xl font-bold text-success-foreground ">
                     ${monthlyTotal}<span className="text-lg font-medium text-muted-foreground">/month</span>
                   </p>
                   {yearSaved > 0 && (
-                    <p className="text-sm text-muted-foreground mt-2">
+                    <p className="text-base text-muted-foreground mt-2">
                       You would save about <strong>${yearSaved.toLocaleString()}</strong> per year vs your current cable bill.
                     </p>
                   )}
@@ -247,9 +247,9 @@ export default function CordCutterWizard() {
                         <p className="font-semibold">{r.rec.name}</p>
                         <Badge variant="outline">{r.rec.monthly === 0 ? 'Free' : `$${r.rec.monthly}/mo`}</Badge>
                       </div>
-                      <p className="text-sm text-muted-foreground mb-2">{r.rec.why}</p>
+                      <p className="text-base text-muted-foreground mb-2">{r.rec.why}</p>
                       {r.rec.notes && (
-                        <p className="text-xs text-muted-foreground italic mb-2">{r.rec.notes}</p>
+                        <p className="text-sm text-muted-foreground italic mb-2">{r.rec.notes}</p>
                       )}
                       <a href={r.rec.link} target="_blank" rel="noreferrer"
                         className="inline-flex items-center gap-1 text-xs text-primary hover:underline">
@@ -262,8 +262,8 @@ export default function CordCutterWizard() {
 
               <Card className="border-border bg-muted/30 mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-2">Before you cancel</p>
-                  <ol className="space-y-1.5 text-sm text-muted-foreground">
+                  <p className="text-base font-semibold mb-2">Before you cancel</p>
+                  <ol className="space-y-1.5 text-base text-muted-foreground">
                     <li className="flex gap-2"><span className="text-primary shrink-0">1.</span><span>Run a 1-week test. Subscribe to the streaming services first, leave cable connected. Make sure everything you watch is actually there.</span></li>
                     <li className="flex gap-2"><span className="text-primary shrink-0">2.</span><span>Buy a Roku ($30) or Amazon Fire Stick ($30) for any TV that is not already smart. Plugs into HDMI, runs every streaming app.</span></li>
                     <li className="flex gap-2"><span className="text-primary shrink-0">3.</span><span>Call your cable company\'s "retention" line — when you say you are cancelling, they often offer 50% off for a year. Worth asking before pulling the plug.</span></li>
@@ -272,9 +272,9 @@ export default function CordCutterWizard() {
                 </CardContent>
               </Card>
 
-              <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20">
+              <Card className="border-warn-foreground/25 bg-warn ">
                 <CardContent className="p-5 flex gap-3">
-                  <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                   <div className="text-sm">
                     <p className="font-semibold mb-1">Watch out for "internet-only" rate hikes</p>
                     <p className="text-muted-foreground">
@@ -290,16 +290,16 @@ export default function CordCutterWizard() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/streaming-service-picker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Streaming Service Picker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Senior-friendly recommendations.</p>
+                <p className="font-medium text-base">Streaming Service Picker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Senior-friendly recommendations.</p>
               </Link>
               <Link to="/tools/streaming-calculator" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Streaming Calculator</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Total cost of all your services.</p>
+                <p className="font-medium text-base">Streaming Calculator</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Total cost of all your services.</p>
               </Link>
               <Link to="/tools/bill-negotiator" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Bill Negotiator</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Negotiate before you cancel.</p>
+                <p className="font-medium text-base">Bill Negotiator</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Negotiate before you cancel.</p>
               </Link>
             </div>
           </div>

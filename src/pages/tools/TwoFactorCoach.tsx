@@ -121,13 +121,13 @@ export default function TwoFactorCoach() {
                       <p className="text-base text-muted-foreground">{s.why}</p>
                     </div>
                   </div>
-                  <span className="text-sm text-primary font-medium">{open === s.id ? 'Hide' : 'Show steps'}</span>
+                  <span className="text-base text-primary font-medium">{open === s.id ? 'Hide' : 'Show steps'}</span>
                 </button>
                 {open === s.id && (
                   <div className="mt-4 pt-4 border-t space-y-3">
-                    <p className="text-sm bg-muted/50 p-3 rounded"><strong>Best choice:</strong> {s.best}</p>
+                    <p className="text-base bg-muted/50 p-3 rounded"><strong>Best choice:</strong> {s.best}</p>
                     <ol className="space-y-2 list-decimal pl-5">
-                      {s.steps.map((step, i) => <li key={i} className="text-sm">{step}</li>)}
+                      {s.steps.map((step, i) => <li key={i} className="text-base">{step}</li>)}
                     </ol>
                     <Button asChild variant="outline" className="w-full"><a href={s.link.url} target="_blank" rel="noopener noreferrer">{s.link.label} <ExternalLink className="w-3 h-3 ml-2" /></a></Button>
                   </div>

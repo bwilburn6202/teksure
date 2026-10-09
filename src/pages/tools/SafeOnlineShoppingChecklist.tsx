@@ -144,7 +144,7 @@ export default function SafeOnlineShoppingChecklist() {
         description="8 quick checks before you enter payment info on any website. Catch fake sites before they catch you."
       />
       <Navbar />
-      <main className="min-h-screen bg-gray-50 dark:bg-gray-950 pb-16">
+      <main className="min-h-screen bg-muted pb-16">
         <div className="max-w-xl mx-auto px-4 pt-6">
           <PageBreadcrumb
             items={[
@@ -155,20 +155,20 @@ export default function SafeOnlineShoppingChecklist() {
 
           <div className="text-center mb-8 mt-4">
             <div className="text-5xl mb-3">🛒</div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+            <h1 className="text-3xl font-bold text-foreground dark:text-white mb-2">
               Safe Online Shopping Checklist
             </h1>
-            <p className="text-gray-600 dark:text-gray-300 text-lg">
+            <p className="text-muted-foreground text-lg">
               Answer 8 quick questions before buying from an unfamiliar website. Takes 60 seconds.
             </p>
           </div>
 
           {/* Progress */}
           <div className="flex items-center justify-between mb-3">
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-base text-muted-foreground ">
               {answered}/{CHECKS.length} checks done
             </p>
-            <Button variant="ghost" size="sm" onClick={reset} className="text-gray-500">
+            <Button variant="ghost" size="sm" onClick={reset} className="text-muted-foreground">
               <RotateCcw size={14} className="mr-1" /> Start over
             </Button>
           </div>
@@ -201,22 +201,22 @@ export default function SafeOnlineShoppingChecklist() {
                       className="w-full flex items-start gap-3 p-4 text-left"
                       onClick={() => setExpanded(isOpen ? null : check.id)}
                     >
-                      <span className="shrink-0 mt-0.5 text-sm font-bold text-gray-400 w-5 text-center">
+                      <span className="shrink-0 mt-0.5 text-sm font-bold text-muted-foreground w-5 text-center">
                         {idx + 1}
                       </span>
                       {ans === 'yes' ? (
-                        <CheckCircle2 size={20} className="text-green-500 shrink-0 mt-0.5" />
+                        <CheckCircle2 size={20} className="text-success-foreground shrink-0 mt-0.5" />
                       ) : ans === 'no' ? (
                         <XCircle size={20} className={`shrink-0 mt-0.5 ${check.isSafetyKiller ? 'text-red-500' : 'text-orange-400'}`} />
                       ) : (
-                        <Circle size={20} className="text-gray-300 dark:text-gray-600 shrink-0 mt-0.5" />
+                        <Circle size={20} className="text-muted-foreground shrink-0 mt-0.5" />
                       )}
                       <div className="flex-1 min-w-0">
-                        <p className={`text-sm font-medium ${ans ? 'text-gray-600 dark:text-gray-400' : 'text-gray-900 dark:text-white'}`}>
+                        <p className={`text-base font-medium ${ans ? 'text-gray-600 dark:text-gray-400' : 'text-gray-900 dark:text-white'}`}>
                           {check.question}
                         </p>
                         {check.isSafetyKiller && ans === null && (
-                          <Badge className="mt-1 text-xs bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300">
+                          <Badge className="mt-1 text-xs bg-danger text-danger-foreground ">
                             Critical check
                           </Badge>
                         )}
@@ -224,22 +224,22 @@ export default function SafeOnlineShoppingChecklist() {
                     </button>
 
                     {isOpen && (
-                      <div className="border-t border-gray-100 dark:border-gray-700 p-4 space-y-3">
-                        <p className="text-sm text-gray-600 dark:text-gray-300">
+                      <div className="border-t border-border p-4 space-y-3">
+                        <p className="text-base text-muted-foreground ">
                           {check.whyItMatters}
                         </p>
                         <div className="grid grid-cols-2 gap-2 text-xs">
-                          <div className="bg-green-50 dark:bg-green-900/20 rounded p-2 text-green-800 dark:text-green-200">
+                          <div className="bg-success rounded p-2 text-success-foreground ">
                             <span className="font-semibold block mb-0.5">✅ Good sign</span>
                             {check.goodSign}
                           </div>
-                          <div className="bg-red-50 dark:bg-red-900/20 rounded p-2 text-red-800 dark:text-red-200">
+                          <div className="bg-danger rounded p-2 text-danger-foreground ">
                             <span className="font-semibold block mb-0.5">🚩 Red flag</span>
                             {check.badSign}
                           </div>
                         </div>
                         {check.tip && (
-                          <p className="text-xs bg-amber-50 dark:bg-amber-900/20 text-amber-800 dark:text-amber-200 rounded p-2">
+                          <p className="text-sm bg-warn text-warn-foreground rounded p-2">
                             💡 {check.tip}
                           </p>
                         )}
@@ -254,7 +254,7 @@ export default function SafeOnlineShoppingChecklist() {
                           <Button
                             size="sm"
                             variant="outline"
-                            className="flex-1 border-red-300 dark:border-red-700 text-red-700 dark:text-red-300 hover:bg-red-50 dark:hover:bg-red-900/20"
+                            className="flex-1 border-danger-foreground/25 text-danger-foreground hover:bg-danger "
                             onClick={() => setAnswer(check.id, 'no')}
                           >
                             <XCircle size={14} className="mr-1.5" /> No
@@ -282,11 +282,11 @@ export default function SafeOnlineShoppingChecklist() {
               <CardContent className="p-5 space-y-3">
                 <div className="flex items-center gap-2">
                   {rating === 'safe' ? (
-                    <ShieldCheck size={24} className="text-green-500" />
+                    <ShieldCheck size={24} className="text-success-foreground" />
                   ) : rating === 'caution' ? (
-                    <Shield size={24} className="text-yellow-500" />
+                    <Shield size={24} className="text-warn-foreground" />
                   ) : (
-                    <ShieldAlert size={24} className="text-red-500" />
+                    <ShieldAlert size={24} className="text-danger-foreground" />
                   )}
                   <h2
                     className={`text-lg font-bold ${
@@ -306,23 +306,23 @@ export default function SafeOnlineShoppingChecklist() {
                 </div>
 
                 {rating === 'safe' && (
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                  <p className="text-base text-foreground ">
                     This site passes all the key safety checks. Use a credit card (not debit) for the strongest fraud protection if anything goes wrong later.
                   </p>
                 )}
 
                 {rating === 'caution' && (
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                  <p className="text-base text-foreground ">
                     This site passed some checks but not all. Consider buying the same product from a retailer you already know and trust, like Amazon, Walmart.com, or Target.com.
                   </p>
                 )}
 
                 {rating === 'danger' && killerFailed.length > 0 && (
                   <div className="space-y-2">
-                    <p className="text-sm text-red-700 dark:text-red-300 font-medium">
+                    <p className="text-base text-danger-foreground font-medium">
                       This site failed critical safety checks:
                     </p>
-                    <ul className="text-sm text-red-700 dark:text-red-300 space-y-1">
+                    <ul className="text-base text-danger-foreground space-y-1">
                       {killerFailed.map((c) => (
                         <li key={c.id} className="flex items-start gap-1.5">
                           <AlertTriangle size={14} className="shrink-0 mt-0.5" />
@@ -330,7 +330,7 @@ export default function SafeOnlineShoppingChecklist() {
                         </li>
                       ))}
                     </ul>
-                    <p className="text-sm text-red-700 dark:text-red-300">
+                    <p className="text-base text-danger-foreground ">
                       Close this site. Find what you need at a retailer you already know and trust.
                     </p>
                   </div>
@@ -341,7 +341,7 @@ export default function SafeOnlineShoppingChecklist() {
                     href="https://www.bbb.org"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline"
+                    className="flex items-center gap-1 text-info-foreground hover:underline"
                   >
                     <ExternalLink size={12} /> Check BBB.org
                   </a>
@@ -349,7 +349,7 @@ export default function SafeOnlineShoppingChecklist() {
                     href="https://www.trustpilot.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline"
+                    className="flex items-center gap-1 text-info-foreground hover:underline"
                   >
                     <ExternalLink size={12} /> Check Trustpilot
                   </a>
@@ -357,7 +357,7 @@ export default function SafeOnlineShoppingChecklist() {
                     href="https://reportfraud.ftc.gov"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-blue-600 dark:text-blue-400 hover:underline"
+                    className="flex items-center gap-1 text-info-foreground hover:underline"
                   >
                     <ExternalLink size={12} /> Report to FTC
                   </a>
@@ -367,9 +367,9 @@ export default function SafeOnlineShoppingChecklist() {
           )}
 
           {!rating && answered === 0 && (
-            <div className="text-center py-6 text-gray-400 dark:text-gray-600">
+            <div className="text-center py-6 text-muted-foreground ">
               <Lock size={36} className="mx-auto mb-2 opacity-30" />
-              <p className="text-sm">Tap each check above to answer yes or no.</p>
+              <p className="text-base">Tap each check above to answer yes or no.</p>
             </div>
           )}
         </div>

@@ -118,10 +118,12 @@ const TechDashboard = () => {
     return (
       <div className="min-h-screen bg-background">
         <Navbar />
+        <main className="flex-1">
         <div className="container py-24 flex flex-col items-center justify-center gap-4">
           <Loader2 className="h-8 w-8 animate-spin text-primary" />
           <p className="text-muted-foreground text-lg">Loading your dashboard...</p>
         </div>
+        </main>
         <Footer />
       </div>
     );
@@ -131,6 +133,7 @@ const TechDashboard = () => {
     <div className="min-h-screen bg-background">
       <SEOHead title="Tech Dashboard | TekSure" description="Manage your jobs, availability, and earnings." path="/tech" />
       <Navbar />
+      <main className="flex-1">
 
       <div className="container py-8 space-y-8">
         {/* Header */}
@@ -161,7 +164,7 @@ const TechDashboard = () => {
                   <stat.icon className={`h-5 w-5 ${stat.color}`} />
                 </div>
                 <div>
-                  <p className="text-xs text-muted-foreground">{stat.label}</p>
+                  <p className="text-sm text-muted-foreground">{stat.label}</p>
                   <p className="text-xl font-bold tracking-tight">{stat.value}</p>
                 </div>
               </CardContent>
@@ -172,7 +175,7 @@ const TechDashboard = () => {
         {/* Pending / Offered Jobs */}
         <section>
           <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-            <Clock className="h-5 w-5 text-amber-500" />
+            <Clock className="h-5 w-5 text-warn-foreground" />
             Job Offers
             {pendingBookings.length > 0 && (
               <Badge variant="secondary" className="ml-1">{pendingBookings.length}</Badge>
@@ -184,7 +187,7 @@ const TechDashboard = () => {
               <CardContent className="py-12 text-center">
                 <Inbox className="h-10 w-10 text-muted-foreground/50 mx-auto mb-3" />
                 <p className="text-muted-foreground">No pending job offers right now.</p>
-                <p className="text-sm text-muted-foreground/70 mt-1">New offers will appear here when customers book appointments.</p>
+                <p className="text-base text-muted-foreground/70 mt-1">New offers will appear here when customers book appointments.</p>
               </CardContent>
             </Card>
           ) : (
@@ -205,7 +208,7 @@ const TechDashboard = () => {
         {activeBookings.length > 0 && (
           <section>
             <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-              <Wrench className="h-5 w-5 text-blue-500" />
+              <Wrench className="h-5 w-5 text-info-foreground" />
               Active Jobs
               <Badge variant="secondary" className="ml-1">{activeBookings.length}</Badge>
             </h2>
@@ -225,7 +228,7 @@ const TechDashboard = () => {
         {/* Completed Jobs */}
         <section>
           <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-            <CheckCircle2 className="h-5 w-5 text-green-500" />
+            <CheckCircle2 className="h-5 w-5 text-success-foreground" />
             Completed Jobs
             {completedBookings.length > 0 && (
               <Badge variant="secondary" className="ml-1">{completedBookings.length}</Badge>
@@ -237,7 +240,7 @@ const TechDashboard = () => {
               <CardContent className="py-12 text-center">
                 <CheckCircle2 className="h-10 w-10 text-muted-foreground/50 mx-auto mb-3" />
                 <p className="text-muted-foreground">No completed jobs yet.</p>
-                <p className="text-sm text-muted-foreground/70 mt-1">Jobs you finish will be recorded here.</p>
+                <p className="text-base text-muted-foreground/70 mt-1">Jobs you finish will be recorded here.</p>
               </CardContent>
             </Card>
           ) : (
@@ -250,6 +253,7 @@ const TechDashboard = () => {
         </section>
       </div>
 
+      </main>
       <Footer />
     </div>
   );
@@ -289,7 +293,7 @@ function BookingCard({
             </div>
 
             {booking.service_type && (
-              <p className="text-sm font-medium text-primary capitalize">{booking.service_type.replace(/_/g, ' ')}</p>
+              <p className="text-base font-medium text-primary capitalize">{booking.service_type.replace(/_/g, ' ')}</p>
             )}
 
             {booking.problem_description && (

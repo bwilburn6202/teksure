@@ -59,7 +59,7 @@ export function FontSizeToggle() {
         </Button>
       </TooltipTrigger>
       <TooltipContent>
-        <p className="text-xs">Text: {LABELS[size]}</p>
+        <p className="text-sm">Text: {LABELS[size]}</p>
       </TooltipContent>
     </Tooltip>
   );

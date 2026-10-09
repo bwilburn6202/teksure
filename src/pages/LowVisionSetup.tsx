@@ -200,7 +200,7 @@ export default function LowVisionSetup() {
 
           <Card className="border-border shadow-sm mb-8">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your device</p>
+              <p className="text-base font-semibold mb-3">Pick your device</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {PLATFORMS.map(p => (
                   <button
@@ -212,7 +212,7 @@ export default function LowVisionSetup() {
                         : 'border-border hover:border-primary/50 hover:bg-primary/5'
                     }`}
                   >
-                    <p className="font-medium text-sm">{p.label}</p>
+                    <p className="font-medium text-base">{p.label}</p>
                   </button>
                 ))}
               </div>
@@ -220,7 +220,7 @@ export default function LowVisionSetup() {
           </Card>
 
           <div className="flex items-center justify-between mb-4">
-            <p className="text-sm text-muted-foreground">{done.size} of {STEPS.length} done</p>
+            <p className="text-base text-muted-foreground">{done.size} of {STEPS.length} done</p>
             {done.size > 0 && (
               <Button variant="ghost" size="sm" onClick={() => setDone(new Set())}>Reset</Button>
             )}
@@ -232,7 +232,7 @@ export default function LowVisionSetup() {
               const id = `step-${i}`;
               const isDone = done.has(id);
               return (
-                <Card key={id} id={id} className={`border-border scroll-mt-24 transition-colors ${isDone ? 'bg-green-50 dark:bg-green-950/20 border-green-300 dark:border-green-800' : ''}`}>
+                <Card key={id} id={id} className={`border-border scroll-mt-24 transition-colors ${isDone ? 'bg-green-50 dark:bg-green-950/20 border-success-foreground/25 dark:border-green-800' : ''}`}>
                   <CardContent className="p-5">
                     <div className="flex items-start gap-3 mb-3">
                       <button
@@ -249,7 +249,7 @@ export default function LowVisionSetup() {
                           <Icon className="h-4 w-4 text-primary" />
                           <h2 className="font-semibold">{step.title}</h2>
                         </div>
-                        <ol className="space-y-1.5 text-sm mt-2">
+                        <ol className="space-y-1.5 text-base mt-2">
                           {step.steps[platform].map((s, j) => (
                             <li key={j} className="flex gap-2">
                               <span className="text-muted-foreground shrink-0">{j + 1}.</span>
@@ -266,11 +266,11 @@ export default function LowVisionSetup() {
           </div>
 
           {done.size === STEPS.length && (
-            <Card className="border-green-300 bg-green-50 dark:bg-green-950/20 mt-6">
+            <Card className="border-success-foreground/25 bg-success mt-6">
               <CardContent className="p-6 text-center">
-                <Badge className="mb-2 bg-green-100 text-green-700 border-green-300">All done</Badge>
+                <Badge className="mb-2 bg-success text-success-foreground border-success-foreground/25">All done</Badge>
                 <p className="font-semibold">Your device is set up for easier viewing.</p>
-                <p className="text-sm text-muted-foreground mt-1">Come back any time — these settings can always be adjusted.</p>
+                <p className="text-base text-muted-foreground mt-1">Come back any time — these settings can always be adjusted.</p>
               </CardContent>
             </Card>
           )}
@@ -279,19 +279,19 @@ export default function LowVisionSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/low-vision-tech-hub" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Low-Vision Tech Hub</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Apps, tools, and devices for low vision.</p>
+                <p className="font-medium text-base">Low-Vision Tech Hub</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Apps, tools, and devices for low vision.</p>
               </Link>
               <Link to="/tools/screen-reader-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Screen Reader Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Learn VoiceOver and TalkBack.</p>
+                <p className="font-medium text-base">Screen Reader Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Learn VoiceOver and TalkBack.</p>
               </Link>
               <Link to="/accessibility" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Accessibility Hub</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Hearing, motor, cognitive support too.</p>
+                <p className="font-medium text-base">Accessibility Hub</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Hearing, motor, cognitive support too.</p>
               </Link>
             </div>
-            <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+            <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
               <ChevronRight className="h-3 w-3" /> Tip: TekSure has its own font-size and contrast toggles in the top toolbar. Use them right now.
             </p>
           </div>

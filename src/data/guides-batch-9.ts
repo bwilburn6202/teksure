@@ -173,49 +173,7 @@ The service keeps checking every three months to see if your info has come back,
   },
 
   // ── LOCATION PRIVACY ────────────────────────────────────────────────────────
-  {
-    slug: 'turn-off-location-tracking-iphone',
-    title: 'How to Turn Off Location Tracking on iPhone',
-    excerpt: 'Stop apps and Apple from collecting your location history on your iPhone to keep your movements private.',
-    category: 'safety-guides',
-    tags: ['iPhone', 'location', 'privacy', 'tracking', 'iOS'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Your iPhone records where you go all day, every day. Apple uses this for features like suggesting traffic routes home. But you can turn it off without losing Maps or weather.
-
-You can also control which specific apps get to see your location. This is a good idea because many apps ask for location permission even when they do not really need it.`,
-    steps: [
-      { title: 'Open the Settings app', content: 'Tap the gray gear icon on your home screen. This is the Settings app.' },
-      { title: 'Go to Privacy & Security', content: 'Scroll down and tap Privacy & Security. Then tap Location Services at the top of the list.' },
-      { title: 'Turn off location history tracking', content: 'Scroll to the bottom and tap System Services. Tap Significant Locations, enter your passcode, and turn off the switch. This stops your iPhone from keeping a log of places you visit.' },
-      { title: 'Review which apps can see your location', content: 'Go back to the main Location Services page. Tap each app in the list and pick "Never" for apps that do not need your location — like flashlights, games, or calculators.' },
-      { title: 'Turn off Location Services completely (optional)', content: 'If you want full privacy, go back to the top of the Location Services page and flip the main switch off. Be aware that Maps, Weather, and Find My will stop working until you turn it back on.' },
-    ],
-  },
-  {
-    slug: 'turn-off-location-tracking-android',
-    title: 'How to Turn Off Location Tracking on Android',
-    excerpt: 'Stop Google and Android apps from recording your location history to protect your privacy.',
-    category: 'safety-guides',
-    tags: ['Android', 'location', 'privacy', 'tracking', 'Google'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Android phones save a detailed record of everywhere you go, and Google keeps a long history in something called Timeline. You can shut this off entirely or pick which apps get to see where you are.
-
-Turning off location tracking does not break your phone. You can still use Maps for directions when you need it. You just stop the always-on logging in the background.`,
-    steps: [
-      { title: 'Open Settings', content: 'Swipe down from the top of your screen and tap the gear icon. Or find the Settings app in your app drawer.' },
-      { title: 'Tap Location', content: 'Scroll down and tap Location. This shows all location settings for your phone.' },
-      { title: 'Turn off Location Services', content: 'At the top, flip the Use Location switch off if you want to stop all location tracking. You can turn it on briefly when you need Maps.' },
-      { title: 'Review app permissions', content: 'If you want location on but controlled, tap App Location Permissions. For each app, pick "Deny" or "Allow only while using the app" — avoid giving permission all the time unless the app truly needs it.' },
-      { title: 'Delete your Google location history', content: 'Open maps.google.com/timeline in a browser, sign in with your Google account, and click "Delete all Location History". This erases the log Google has been keeping about your movements.' },
-    ],
-  },
-  {
+      {
     slug: 'remove-photo-location-data',
     title: 'How to Remove Location Data from Photos',
     excerpt: 'Strip the hidden GPS tag off photos before you post or send them so people cannot find where you took them.',
@@ -236,72 +194,9 @@ Most social networks strip this data automatically, but texting and email usuall
       { title: 'Share without location', content: 'Send the adjusted photo by text, email, or upload. The receiver can still see the picture. But they cannot see where you were when you took it.' },
     ],
   },
-  {
-    slug: 'find-my-iphone-setup',
-    title: 'How to Set Up Find My iPhone Safely',
-    excerpt: 'Turn on Find My iPhone so you can locate, lock, or erase your phone if it is ever lost or stolen.',
-    category: 'safety-guides',
-    tags: ['Find My', 'iPhone', 'lost phone', 'Apple', 'security'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Find My iPhone lets you see your phone on a map, play a sound to help find it under the couch, lock it remotely, or erase everything if you cannot get it back. It is free and built into every iPhone.
-
-Turn it on before you lose the phone. You cannot add it after a device is missing. It takes about 2 minutes to set up.`,
-    steps: [
-      { title: 'Open Settings and tap your name', content: 'Open the Settings app and tap your name at the very top of the screen. This opens your Apple ID settings.' },
-      { title: 'Tap Find My', content: 'Scroll down and tap Find My. This is where all the lost-phone settings live.' },
-      { title: 'Turn on Find My iPhone', content: 'Tap Find My iPhone and flip the main switch on. Also turn on "Find My network" so your phone can be located even when it is offline, and "Send Last Location" so it sends its spot when the battery is low.' },
-      { title: 'Turn on Share My Location (optional)', content: 'Go back to the Find My settings and turn on Share My Location if you want a family member to help find it. You can pick specific people to share with.' },
-      { title: 'Test it from another device', content: 'On another phone or a computer, go to icloud.com/find and sign in with your Apple ID. You should see your iPhone on a map. If that works, you are all set.' },
-    ],
-  },
-
+  
   // ── HOME SECURITY ───────────────────────────────────────────────────────────
-  {
-    slug: 'set-up-ring-alarm',
-    title: 'How to Set Up Ring Alarm Home Security',
-    excerpt: 'Install a Ring Alarm system yourself in about an hour with no tools and no installer visit.',
-    category: 'smart-home',
-    tags: ['Ring', 'alarm', 'home security', 'DIY', 'smart home'],
-    readTime: '10 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Intermediate',
-    body: `Ring Alarm is a do-it-yourself home security system that comes in a kit with a base station, keypad, door sensors, and a motion detector. You stick the sensors on doors and windows with peel-off tape — no drilling.
-
-The monthly monitoring plan costs about $20 and includes professional 24/7 monitoring that will call the police if the alarm goes off. Without the plan, you still get alerts on your phone.`,
-    steps: [
-      { title: 'Download the Ring app and make an account', content: 'On your phone, open the App Store (iPhone) or Play Store (Android) and install the Ring app. Open it and tap "Create Account" with your email.' },
-      { title: 'Plug in the base station', content: 'Place the round base station somewhere central, like a hallway or living room, and plug it into a wall outlet. The light on the front will turn blue when it is ready.' },
-      { title: 'Add the base station in the app', content: 'In the Ring app, tap "Set Up a Device" and pick Alarm Base Station. Scan the QR code sticker on the bottom of the base with your phone, and follow the prompts to connect to your Wi-Fi.' },
-      { title: 'Add sensors one at a time', content: 'In the app, tap "Set Up a Device" again and pick Contact Sensor or Motion Detector. Pull the plastic tab on the back of each sensor to wake it up, then stick it on the door or window frame with the included tape.' },
-      { title: 'Turn on professional monitoring (optional)', content: 'In the app menu, tap Ring Protect Plans and choose Ring Protect Pro ($20/month). This unlocks 24/7 monitoring that calls police when the alarm goes off and you do not answer.' },
-    ],
-  },
-  {
-    slug: 'set-up-simplisafe',
-    title: 'How to Set Up SimpliSafe Home Security',
-    excerpt: 'Install a SimpliSafe alarm system yourself in under an hour and have police dispatch ready on day one.',
-    category: 'smart-home',
-    tags: ['SimpliSafe', 'alarm', 'home security', 'DIY', 'smart home'],
-    readTime: '10 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Intermediate',
-    body: `SimpliSafe is a do-it-yourself alarm system you order online and set up in under an hour. Everything is wireless and sticks to walls with removable tape. So you do not need tools or a contractor.
-
-Monitoring costs around $30 a month for the full plan, which includes phone app alerts, video recording, and 24/7 police dispatch. You can cancel any time without a contract.`,
-    steps: [
-      { title: 'Unbox and plug in the base station', content: 'The big cylinder is the base station. Put it somewhere central in your home — usually the living room or hallway — and plug it into a wall outlet.' },
-      { title: 'Download the SimpliSafe app', content: 'Install the SimpliSafe app from the App Store or Play Store. Open it and create an account with your email and a strong password.' },
-      { title: 'Add the keypad and connect Wi-Fi', content: 'Mount the keypad near your front door using the sticky tape on the back. In the app, tap Add Device and follow the prompts to connect the base station to your home Wi-Fi.' },
-      { title: 'Place door, window, and motion sensors', content: 'Peel the tape off each sensor and stick them on door frames, window sills, and a wall corner for the motion detector. The app shows you exactly where each sensor goes.' },
-      { title: 'Activate monitoring', content: 'In the app, tap the menu and pick "Professional Monitoring". Pick the Core or Pro plan, enter your payment info, and your system will be live within minutes. Test it by arming then walking in front of a motion sensor.' },
-    ],
-  },
-  {
+      {
     slug: 'set-up-nest-cam',
     title: 'How to Set Up Google Nest Cam',
     excerpt: 'Install a Nest Cam in your home or yard and watch live video on your phone from anywhere.',
@@ -987,28 +882,7 @@ You can also share lists with family members, so everyone can add to a grocery l
       { title: 'Use Siri to add reminders hands-free', content: 'Say "Hey Siri, remind me to call Mom at 7 PM" or "Remind me to buy milk when I get to the store". Siri will add the reminder with the right time or place, no typing needed.' },
     ],
   },
-  {
-    slug: 'use-google-keep-notes',
-    title: 'How to Use Google Keep for Notes and Lists',
-    excerpt: 'Use Google Keep, a free note app, to write notes, make checklists, and save photos that sync across all your devices.',
-    category: 'tips-tricks',
-    tags: ['Google Keep', 'notes', 'lists', 'productivity'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Google Keep is a free note-taking app that works on any phone, tablet, or computer. Notes sync instantly between your devices. So you can start a grocery list on your phone and see it on your laptop when you sit down to plan meals.
-
-Notes can be plain text, checklists, photos, or even voice recordings that Google transcribes to text automatically.`,
-    steps: [
-      { title: 'Install Google Keep', content: 'Download the Google Keep app from the App Store or Play Store. Or go to keep.google.com in any browser. Sign in with your Google (Gmail) account.' },
-      { title: 'Create a note', content: 'Tap "Take a note" at the bottom. Type a title and your note content, then tap the back arrow. The note saves automatically.' },
-      { title: 'Make a checklist', content: 'Tap the plus sign at the bottom and pick "New list". Type each item on a separate line. Tap a box to check off items as you go — great for groceries or to-dos.' },
-      { title: 'Add labels to stay organized', content: 'Open any note, tap the three-dot menu, and pick "Labels". Create labels like Work, Personal, or Recipes. Then filter your notes by label from the main screen.' },
-      { title: 'Set reminders on notes', content: 'Open a note and tap the bell icon at the top. Pick a time or place to be reminded. The note will pop up on your phone when the time comes or when you get to that location.' },
-    ],
-  },
-  {
+    {
     slug: 'use-todoist-task-management',
     title: 'How to Use Todoist for Task Management',
     excerpt: 'Keep all your to-dos organized across work and life with Todoist — a powerful free task app used by millions.',

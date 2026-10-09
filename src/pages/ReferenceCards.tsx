@@ -729,13 +729,13 @@ function CardThumb({
           <Icon className="h-4 w-4" />
           Reference Card
         </div>
-        <h3 className="text-lg font-extrabold leading-tight mb-1 text-slate-900">
+        <h3 className="text-lg font-extrabold leading-tight mb-1 text-foreground">
           {card.title}
         </h3>
-        <p className="text-sm text-slate-700 mb-4">{card.tagline}</p>
+        <p className="text-base text-foreground mb-4">{card.tagline}</p>
         <ul className="space-y-1.5">
           {card.preview.map((line, i) => (
-            <li key={i} className="flex gap-2 text-xs text-slate-700">
+            <li key={i} className="flex gap-2 text-sm text-foreground">
               <span
                 className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full"
                 style={{ backgroundColor: card.accent }}
@@ -746,7 +746,7 @@ function CardThumb({
         </ul>
       </div>
       <div className="flex items-center justify-between gap-2 p-3 border-t bg-white/60 backdrop-blur-sm">
-        <span className="text-xs text-slate-600">8.5 × 11 • Prints clean in B&amp;W</span>
+        <span className="text-sm text-muted-foreground">8.5 × 11 • Prints clean in B&amp;W</span>
         <Button
           size="sm"
           onClick={onOpen}
@@ -835,7 +835,7 @@ export default function ReferenceCards() {
             {/* The printable page */}
             <PrintFrame card={selected}>{renderContent(selected.id)}</PrintFrame>
 
-            <p className="print:hidden text-center text-sm text-muted-foreground pb-8">
+            <p className="print:hidden text-center text-base text-muted-foreground pb-8">
               Tip: in the print dialog, choose <strong>Letter</strong>, margins{' '}
               <strong>None</strong>, and enable <strong>Background graphics</strong> to keep the
               color tint. Or uncheck it for a pure black-and-white copy.
@@ -853,7 +853,7 @@ export default function ReferenceCards() {
                 <p className="text-muted-foreground text-lg md:text-xl max-w-xl mx-auto">
                   One page. No jargon. Keep it handy.
                 </p>
-                <p className="text-sm text-muted-foreground mt-4 max-w-md mx-auto">
+                <p className="text-base text-muted-foreground mt-4 max-w-md mx-auto">
                   Pin one to the fridge. Keep one by the computer. Print an extra for your mom.
                 </p>
               </div>
@@ -873,7 +873,7 @@ export default function ReferenceCards() {
 
               <div className="mt-12 rounded-2xl border bg-muted/40 p-6 md:p-8">
                 <h2 className="text-xl font-semibold mb-2">Why these exist</h2>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Most tech help lives on a screen — right where you need it least. These cards are
                   designed to live on paper: large, readable type, warm backgrounds that still print
                   cleanly in black and white, and a URL at the bottom so anyone holding the page can

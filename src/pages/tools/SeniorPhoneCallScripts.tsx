@@ -256,29 +256,29 @@ export default function SeniorPhoneCallScripts() {
         title="Phone Call Scripts for Seniors — TekSure"
         description="Copy-paste scripts for common phone calls seniors need to make: cancel subscriptions, ask for senior discounts, dispute charges, report scams, and more."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4 print:bg-white">
+      <main className="min-h-screen bg-muted py-8 px-4 print:bg-card">
         <div className="max-w-2xl mx-auto">
           {/* Header */}
           <div className="text-center mb-6 print:hidden">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-100 dark:bg-blue-950/60 mb-4">
-              <Phone className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-info mb-4">
+              <Phone className="w-8 h-8 text-info-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Phone Call Scripts</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Phone Call Scripts</h1>
+            <p className="text-lg text-muted-foreground ">
               Word-for-word scripts for common phone calls. Copy, print, or read straight from your screen.
             </p>
           </div>
 
           {/* Search + filters */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-4 shadow-sm mb-4 print:hidden">
+          <div className="bg-card rounded-2xl border border-border p-4 shadow-sm mb-4 print:hidden">
             <div className="relative mb-3">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
               <input
                 type="text"
                 placeholder="Search scripts (e.g. 'cancel', 'discount')"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 outline-none focus:border-blue-400"
+                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-muted border border-border text-foreground outline-none focus:border-blue-400"
               />
             </div>
             <div className="flex flex-wrap gap-2">
@@ -289,7 +289,7 @@ export default function SeniorPhoneCallScripts() {
                   className={`text-sm px-3 py-1.5 rounded-full transition-colors ${
                     category === c
                       ? 'bg-blue-600 text-white'
-                      : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+                      : 'bg-gray-100 dark:bg-gray-800 text-muted-foreground hover:bg-gray-200 dark:hover:bg-gray-700'
                   }`}
                 >
                   {c}
@@ -303,49 +303,49 @@ export default function SeniorPhoneCallScripts() {
             {filtered.map(s => {
               const isOpen = expanded === s.id;
               return (
-                <div key={s.id} className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm">
+                <div key={s.id} className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm">
                   <button
                     onClick={() => toggle(s.id)}
-                    className="w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors print:hidden"
+                    className="w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-muted transition-colors print:hidden"
                   >
                     <span className="text-3xl">{s.emoji}</span>
                     <div className="flex-1 min-w-0">
-                      <p className="font-semibold text-gray-900 dark:text-gray-100">{s.title}</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">{s.scenario}</p>
+                      <p className="font-semibold text-foreground ">{s.title}</p>
+                      <p className="text-base text-muted-foreground ">{s.scenario}</p>
                     </div>
-                    {isOpen ? <ChevronUp className="w-5 h-5 text-gray-400" /> : <ChevronDown className="w-5 h-5 text-gray-400" />}
+                    {isOpen ? <ChevronUp className="w-5 h-5 text-muted-foreground" /> : <ChevronDown className="w-5 h-5 text-muted-foreground" />}
                   </button>
 
                   <div className="hidden print:block px-5 pt-4">
                     <h2 className="text-lg font-bold">{s.emoji} {s.title}</h2>
-                    <p className="text-sm text-gray-500 mb-3">{s.scenario}</p>
+                    <p className="text-base text-muted-foreground mb-3">{s.scenario}</p>
                   </div>
 
                   {(isOpen || true) && (
-                    <div className={`${isOpen ? 'block' : 'hidden'} print:block px-5 pb-5 border-t border-gray-100 dark:border-gray-800 pt-4 space-y-4`}>
+                    <div className={`${isOpen ? 'block' : 'hidden'} print:block px-5 pb-5 border-t border-border pt-4 space-y-4`}>
                       {/* Script */}
-                      <div className="bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-xl p-4 relative">
+                      <div className="bg-info border border-info-foreground/25 rounded-xl p-4 relative">
                         <div className="flex justify-between items-start mb-2">
-                          <p className="font-semibold text-blue-800 dark:text-blue-200 text-sm uppercase tracking-wide">What to Say</p>
+                          <p className="font-semibold text-info-foreground text-sm uppercase tracking-wide">What to Say</p>
                           <button
                             onClick={() => copyScript(s.id, s.script)}
-                            className="print:hidden flex items-center gap-1 text-xs text-blue-700 dark:text-blue-300 hover:text-blue-900 dark:hover:text-blue-100"
+                            className="print:hidden flex items-center gap-1 text-xs text-info-foreground hover:text-info-foreground "
                           >
                             {copiedId === s.id ? <><Check className="w-3.5 h-3.5" /> Copied!</> : <><Copy className="w-3.5 h-3.5" /> Copy</>}
                           </button>
                         </div>
-                        <p className="text-gray-800 dark:text-gray-200 text-sm whitespace-pre-line leading-relaxed">{s.script}</p>
+                        <p className="text-foreground text-base whitespace-pre-line leading-relaxed">{s.script}</p>
                       </div>
 
                       {/* Pushback handling */}
                       {s.pushback.length > 0 && (
                         <div>
-                          <p className="font-semibold text-gray-800 dark:text-gray-200 text-sm uppercase tracking-wide mb-2">If They Push Back</p>
+                          <p className="font-semibold text-foreground text-sm uppercase tracking-wide mb-2">If They Push Back</p>
                           <div className="space-y-2">
                             {s.pushback.map((p, i) => (
-                              <div key={i} className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-3">
-                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>If they say:</strong> {p.theySay}</p>
-                                <p className="text-sm text-gray-800 dark:text-gray-200"><strong>You say:</strong> {p.youSay}</p>
+                              <div key={i} className="bg-muted rounded-lg p-3">
+                                <p className="text-base text-muted-foreground mb-1"><strong>If they say:</strong> {p.theySay}</p>
+                                <p className="text-base text-foreground "><strong>You say:</strong> {p.youSay}</p>
                               </div>
                             ))}
                           </div>
@@ -354,12 +354,12 @@ export default function SeniorPhoneCallScripts() {
 
                       {/* Tips */}
                       {s.tips.length > 0 && (
-                        <div className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl p-3">
-                          <p className="font-semibold text-amber-800 dark:text-amber-200 text-sm uppercase tracking-wide mb-2">Quick Tips</p>
+                        <div className="bg-warn border border-warn-foreground/25 rounded-xl p-3">
+                          <p className="font-semibold text-warn-foreground text-sm uppercase tracking-wide mb-2">Quick Tips</p>
                           <ul className="space-y-1">
                             {s.tips.map((tip, i) => (
-                              <li key={i} className="flex gap-2 text-sm text-amber-900 dark:text-amber-100">
-                                <span className="text-amber-600 dark:text-amber-400">•</span>
+                              <li key={i} className="flex gap-2 text-base text-warn-foreground ">
+                                <span className="text-warn-foreground ">•</span>
                                 <span>{tip}</span>
                               </li>
                             ))}
@@ -384,7 +384,7 @@ export default function SeniorPhoneCallScripts() {
             </button>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }

@@ -100,7 +100,7 @@ export default function BrainGamesApps() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-violet-500/10 rounded-full">
-                <Brain className="h-8 w-8 text-violet-600" />
+                <Brain className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Brain Games and Cognitive Apps for Seniors</h1>
@@ -113,12 +113,12 @@ export default function BrainGamesApps() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Brain Games & Cognitive Apps' }]} />
 
-          <Card className="border-border bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-border bg-warn mb-6">
             <CardContent className="p-5 flex items-start gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground flex-shrink-0 mt-0.5" />
               <div>
-                <p className="text-sm font-semibold mb-2 text-amber-900 dark:text-amber-100">Scam alert: "doctor-recommended brain games" cold callers</p>
-                <p className="text-xs text-amber-900/80 dark:text-amber-100/80">
+                <p className="text-base font-semibold mb-2 text-warn-foreground ">Scam alert: "doctor-recommended brain games" cold callers</p>
+                <p className="text-sm text-amber-900/80 dark:text-amber-100/80">
                   If someone calls, emails, or texts claiming to offer "doctor-recommended brain training to prevent Alzheimer's" or "Medicare-covered cognitive screening kits" — hang up. No legitimate brain-game company cold-calls seniors. The FTC fined Lumosity $2 million in 2016 for overpromising dementia prevention. Real doctors recommend the apps below by name; they do not sell them through phone calls.
                 </p>
               </div>
@@ -127,8 +127,8 @@ export default function BrainGamesApps() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Honest note: brain games are FUN, not magic</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Honest note: brain games are FUN, not magic</p>
+              <p className="text-sm text-muted-foreground">
                 Scientific evidence that brain-training apps prevent dementia is mixed at best. The FTC and large research reviews say there is no strong proof these apps slow cognitive decline. What IS proven to help: sleep, walking, socializing, treating high blood pressure, and learning genuinely new skills (a language, an instrument, a craft). Pick a brain game because it is enjoyable — not because it is medicine. A daily Wordle with your grandkid beats a $130/yr subscription you stop opening.
               </p>
             </CardContent>
@@ -142,15 +142,15 @@ export default function BrainGamesApps() {
                     <p className="font-semibold text-base">{p.name}</p>
                     <Badge variant="outline">{p.cost}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {p.bestFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {p.bestFor}</p>
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
-                      <ul className="space-y-0.5">{p.pros.map((pr, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{pr}</span></li>)}</ul>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
+                      <ul className="space-y-0.5">{p.pros.map((pr, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{pr}</span></li>)}</ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
-                      <ul className="space-y-0.5">{p.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}</ul>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
+                      <ul className="space-y-0.5">{p.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}</ul>
                     </div>
                   </div>
                   <a href={p.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-primary hover:underline">
@@ -167,13 +167,13 @@ export default function BrainGamesApps() {
             <div className="grid sm:grid-cols-3 gap-3">
               {RELATED.map(r => (
                 <Link key={r.to} to={r.to} className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                  <p className="font-medium text-sm">{r.title}</p>
-                  <p className="text-xs text-muted-foreground mt-0.5">{r.blurb}</p>
+                  <p className="font-medium text-base">{r.title}</p>
+                  <p className="text-sm text-muted-foreground mt-0.5">{r.blurb}</p>
                 </Link>
               ))}
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: pair a daily puzzle with a phone call. Doing Wordle and texting your score to a friend gives you the brain bump AND the social bump — and the social bump is the one with real evidence behind it.
           </p>
         </div>

@@ -145,7 +145,7 @@ export default function CommonScamsLibrary() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-red-500/10 rounded-full">
-                <ShieldAlert className="h-8 w-8 text-red-600" />
+                <ShieldAlert className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Common Scams Library</h1>
@@ -177,7 +177,7 @@ export default function CommonScamsLibrary() {
             </CardContent>
           </Card>
 
-          <p className="text-sm text-muted-foreground mb-3">{filtered.length} {filtered.length === 1 ? 'scam' : 'scams'}</p>
+          <p className="text-base text-muted-foreground mb-3">{filtered.length} {filtered.length === 1 ? 'scam' : 'scams'}</p>
 
           <div className="space-y-4 mb-6">
             {filtered.map(s => (
@@ -189,16 +189,16 @@ export default function CommonScamsLibrary() {
                   </div>
 
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-3 mb-1">Hook</p>
-                  <p className="text-sm italic p-2 rounded bg-muted/40 border border-border">{s.hook}</p>
+                  <p className="text-base italic p-2 rounded bg-muted/40 border border-border">{s.hook}</p>
 
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-3 mb-1">How it works</p>
-                  <p className="text-sm">{s.pattern}</p>
+                  <p className="text-base">{s.pattern}</p>
 
-                  <p className="text-xs font-semibold text-red-700 dark:text-red-300 uppercase tracking-wider mt-3 mb-1">Red flag</p>
-                  <p className="text-sm p-2 rounded bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800">{s.redFlag}</p>
+                  <p className="text-xs font-semibold text-danger-foreground uppercase tracking-wider mt-3 mb-1">Red flag</p>
+                  <p className="text-base p-2 rounded bg-danger border border-danger-foreground/25 ">{s.redFlag}</p>
 
-                  <p className="text-xs font-semibold text-green-700 dark:text-green-300 uppercase tracking-wider mt-3 mb-1">What to do</p>
-                  <p className="text-sm p-2 rounded bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800">{s.whatToDo}</p>
+                  <p className="text-xs font-semibold text-success-foreground uppercase tracking-wider mt-3 mb-1">What to do</p>
+                  <p className="text-base p-2 rounded bg-success border border-success-foreground/25 ">{s.whatToDo}</p>
                 </CardContent>
               </Card>
             ))}
@@ -212,8 +212,8 @@ export default function CommonScamsLibrary() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Where to report a scam</p>
-              <ul className="space-y-1.5 text-sm">
+              <p className="text-base font-semibold mb-2">Where to report a scam</p>
+              <ul className="space-y-1.5 text-base">
                 <li><a href="https://reportfraud.ftc.gov" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">reportfraud.ftc.gov <ExternalLink className="h-3 w-3" /></a> — Federal Trade Commission</li>
                 <li><a href="https://www.ic3.gov" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">ic3.gov <ExternalLink className="h-3 w-3" /></a> — FBI internet crime</li>
                 <li>1-800-MEDICARE — for Medicare-related scams</li>
@@ -226,20 +226,20 @@ export default function CommonScamsLibrary() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Paste any text and check it.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Paste any text and check it.</p>
               </Link>
               <Link to="/tools/scam-witness-statement" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Witness Statement Builder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Build a clean report.</p>
+                <p className="font-medium text-base">Witness Statement Builder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Build a clean report.</p>
               </Link>
               <Link to="/tools/id-theft-recovery" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">ID Theft Recovery</p>
-                <p className="text-xs text-muted-foreground mt-0.5">If you have already been scammed.</p>
+                <p className="font-medium text-base">ID Theft Recovery</p>
+                <p className="text-sm text-muted-foreground mt-0.5">If you have already been scammed.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: read one entry per week with a family member. Pattern recognition is what saves you in the moment.
           </p>
         </div>

@@ -173,34 +173,34 @@ export default function ScamOrLegitQuiz() {
           title="Scam or Legit? Quiz — TekSure"
           description="Test your ability to spot scams. 10 real-world scenarios — texts, calls, emails, and pop-ups. Learn to recognize the red flags before scammers reach you."
         />
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4">
+        <div className="min-h-screen bg-muted py-8 px-4">
           <div className="max-w-xl mx-auto text-center">
-            <Trophy className="w-16 h-16 mx-auto text-yellow-500 mb-4" />
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Quiz Complete!</h1>
+            <Trophy className="w-16 h-16 mx-auto text-warn-foreground mb-4" />
+            <h1 className="text-3xl font-bold text-foreground mb-2">Quiz Complete!</h1>
             <p className="text-6xl font-bold my-6 tabular-nums">
               <span className={gradeColor}>{score}</span>
-              <span className="text-gray-400 text-3xl"> / {QUESTIONS.length}</span>
+              <span className="text-muted-foreground text-3xl"> / {QUESTIONS.length}</span>
             </p>
             <p className={`text-2xl font-semibold mb-2 ${gradeColor}`}>{grade}</p>
-            <p className="text-gray-500 dark:text-gray-400 mb-8">{pct}% of scenarios identified correctly</p>
+            <p className="text-muted-foreground mb-8">{pct}% of scenarios identified correctly</p>
 
             {/* Per-question review */}
             <div className="text-left space-y-3 mb-8">
               {answers.map((a, i) => {
                 const qq = QUESTIONS[i];
                 return (
-                  <div key={qq.id} className={`rounded-xl p-4 border ${a.correct ? 'bg-green-50 dark:bg-green-950/20 border-green-200 dark:border-green-900' : 'bg-red-50 dark:bg-red-950/20 border-red-200 dark:border-red-900'}`}>
+                  <div key={qq.id} className={`rounded-xl p-4 border ${a.correct ? 'bg-green-50 dark:bg-green-950/20 border-success-foreground/25 dark:border-green-900' : 'bg-red-50 dark:bg-red-950/20 border-danger-foreground/25 dark:border-red-900'}`}>
                     <div className="flex items-start gap-2">
                       {a.correct
-                        ? <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                        : <XCircle className="w-5 h-5 text-red-500 dark:text-red-400 flex-shrink-0 mt-0.5" />
+                        ? <CheckCircle2 className="w-5 h-5 text-success-foreground flex-shrink-0 mt-0.5" />
+                        : <XCircle className="w-5 h-5 text-danger-foreground flex-shrink-0 mt-0.5" />
                       }
                       <div>
-                        <p className="text-sm font-medium text-gray-800 dark:text-gray-200">
+                        <p className="text-base font-medium text-foreground ">
                           #{i + 1} {qq.typeLabel} — {qq.answer === 'scam' ? '🚨 Scam' : '✅ Legit'}
                         </p>
                         {!a.correct && (
-                          <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">{qq.explanation}</p>
+                          <p className="text-sm text-muted-foreground mt-1">{qq.explanation}</p>
                         )}
                       </div>
                     </div>
@@ -209,8 +209,8 @@ export default function ScamOrLegitQuiz() {
               })}
             </div>
 
-            <div className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl p-4 mb-6 text-left">
-              <p className="text-sm text-amber-800 dark:text-amber-200">
+            <div className="bg-warn border border-warn-foreground/25 rounded-xl p-4 mb-6 text-left">
+              <p className="text-base text-warn-foreground ">
                 <strong>Remember:</strong> When in doubt, hang up and call back using a number you look up yourself.
                 Report scams to the FTC at <strong>ReportFraud.ftc.gov</strong> or call 1-877-382-4357.
               </p>
@@ -235,21 +235,21 @@ export default function ScamOrLegitQuiz() {
         title="Scam or Legit? Quiz — TekSure"
         description="Test your ability to spot scams. 10 real-world scenarios — texts, calls, emails, and pop-ups. Learn to recognize the red flags before scammers reach you."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4">
+      <main className="min-h-screen bg-muted py-8 px-4">
         <div className="max-w-xl mx-auto">
 
           {/* Header */}
           <div className="text-center mb-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-red-100 dark:bg-red-950/60 mb-4">
-              <ShieldAlert className="w-8 h-8 text-red-600 dark:text-red-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-danger mb-4">
+              <ShieldAlert className="w-8 h-8 text-danger-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-1">Scam or Legit?</h1>
-            <p className="text-gray-500 dark:text-gray-400">10 real-world scenarios. Can you spot the scam?</p>
+            <h1 className="text-3xl font-bold text-foreground mb-1">Scam or Legit?</h1>
+            <p className="text-muted-foreground ">10 real-world scenarios. Can you spot the scam?</p>
           </div>
 
           {/* Progress */}
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">
+            <span className="text-sm text-muted-foreground whitespace-nowrap">
               {current + 1} of {QUESTIONS.length}
             </span>
             <div className="flex-1 bg-gray-200 dark:bg-gray-800 rounded-full h-2">
@@ -258,20 +258,20 @@ export default function ScamOrLegitQuiz() {
                 style={{ width: `${((current + (showResult ? 1 : 0)) / QUESTIONS.length) * 100}%` }}
               />
             </div>
-            <span className="text-sm font-medium text-gray-600 dark:text-gray-400">{score} correct</span>
+            <span className="text-base font-medium text-muted-foreground ">{score} correct</span>
           </div>
 
           {/* Question card */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm overflow-hidden mb-4">
+          <div className="bg-card rounded-2xl border border-border shadow-sm overflow-hidden mb-4">
             <div className="px-5 pt-5 pb-4">
               <span className={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full mb-3 ${typeColors[q.type]}`}>
                 {q.typeLabel}
               </span>
-              <p className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed font-medium">
+              <p className="text-foreground text-lg leading-relaxed font-medium">
                 {q.scenario}
               </p>
               {q.detail && (
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">{q.detail}</p>
+                <p className="text-base text-muted-foreground mt-2">{q.detail}</p>
               )}
             </div>
 
@@ -280,13 +280,13 @@ export default function ScamOrLegitQuiz() {
               <div className="px-5 pb-5 grid grid-cols-2 gap-3">
                 <button
                   onClick={() => handleAnswer('scam')}
-                  className="flex items-center justify-center gap-2 py-4 rounded-xl border-2 border-red-200 dark:border-red-900 bg-red-50 dark:bg-red-950/30 hover:border-red-400 hover:bg-red-100 dark:hover:bg-red-950/60 text-red-700 dark:text-red-300 font-semibold text-lg transition-all"
+                  className="flex items-center justify-center gap-2 py-4 rounded-xl border-2 border-danger-foreground/25 bg-danger hover:border-red-400 hover:bg-danger text-danger-foreground font-semibold text-lg transition-all"
                 >
                   🚨 Scam
                 </button>
                 <button
                   onClick={() => handleAnswer('legit')}
-                  className="flex items-center justify-center gap-2 py-4 rounded-xl border-2 border-green-200 dark:border-green-900 bg-green-50 dark:bg-green-950/30 hover:border-green-400 hover:bg-green-100 dark:hover:bg-green-950/60 text-green-700 dark:text-green-300 font-semibold text-lg transition-all"
+                  className="flex items-center justify-center gap-2 py-4 rounded-xl border-2 border-success-foreground/25 bg-success hover:border-green-400 hover:bg-success text-success-foreground font-semibold text-lg transition-all"
                 >
                   ✅ Legit
                 </button>
@@ -298,24 +298,24 @@ export default function ScamOrLegitQuiz() {
               <div className={`mx-5 mb-5 rounded-xl border p-4 ${getFeedbackColor()}`}>
                 <div className="flex items-start gap-2 mb-2">
                   {selected === q.answer
-                    ? <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                    : <XCircle className="w-5 h-5 text-red-500 dark:text-red-400 flex-shrink-0 mt-0.5" />
+                    ? <CheckCircle2 className="w-5 h-5 text-success-foreground flex-shrink-0 mt-0.5" />
+                    : <XCircle className="w-5 h-5 text-danger-foreground flex-shrink-0 mt-0.5" />
                   }
-                  <p className="font-semibold text-gray-900 dark:text-gray-100">
+                  <p className="font-semibold text-foreground ">
                     {selected === q.answer
                       ? 'Correct!'
                       : `Not quite — this was a ${q.answer === 'scam' ? '🚨 scam' : '✅ legitimate message'}`
                     }
                   </p>
                 </div>
-                <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">{q.explanation}</p>
+                <p className="text-base text-foreground mb-3">{q.explanation}</p>
                 {q.redFlags && q.redFlags.length > 0 && (
                   <div>
-                    <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1">Red flags</p>
+                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Red flags</p>
                     <ul className="space-y-1">
                       {q.redFlags.map((f, i) => (
-                        <li key={i} className="flex gap-1.5 text-sm text-gray-700 dark:text-gray-300">
-                          <span className="text-red-500 flex-shrink-0">•</span>
+                        <li key={i} className="flex gap-1.5 text-base text-foreground ">
+                          <span className="text-danger-foreground flex-shrink-0">•</span>
                           <span>{f}</span>
                         </li>
                       ))}
@@ -337,7 +337,7 @@ export default function ScamOrLegitQuiz() {
             </button>
           )}
         </div>
-      </div>
+      </main>
     </>
   );
 }

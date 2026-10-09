@@ -16,6 +16,7 @@ import { createHash } from 'crypto';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { readNavigateRedirects } from './generate-redirects.mjs';
+import { readToolSlugs, readToolRedirects } from './tool-slugs.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -163,7 +164,10 @@ const appTsx = readFileSync(join(ROOT, 'src', 'App.tsx'), 'utf8');
 const appRoutes = new Set();
 // A sitemap must not advertise URLs that redirect — those are served as 308s
 // (scripts/generate-redirects.mjs) and listing them wastes crawl budget.
-const redirectSources = new Set(readNavigateRedirects().map((r) => r.source));
+const redirectSources = new Set([
+  ...readNavigateRedirects().map((r) => r.source),
+  ...readToolRedirects().map((r) => r.source),
+]);
 for (const m of appTsx.matchAll(/path="(\/[^"]*)"/g)) {
   const p = m[1];
   if (p.includes(':') || p.includes('*')) continue; // dynamic/wildcard
@@ -171,6 +175,10 @@ for (const m of appTsx.matchAll(/path="(\/[^"]*)"/g)) {
   if (redirectSources.has(p)) continue;
   appRoutes.add(p);
 }
+
+// Tool pages share one dynamic /tools/:slug route, so they are not in the route
+// table any more — they come from the registry (see scripts/tool-slugs.mjs).
+for (const slug of readToolSlugs()) appRoutes.add(`/tools/${slug}`);
 
 // Map each concrete route to the page component file behind it, so a route's
 // <lastmod> tracks edits to that page rather than the deploy date.

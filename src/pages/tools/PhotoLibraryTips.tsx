@@ -119,7 +119,7 @@ export default function PhotoLibraryTips() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your phone</p>
+              <p className="text-base font-semibold mb-3">Pick your phone</p>
               <div className="flex gap-2">
                 {(['iphone', 'android'] as Platform[]).map(p => (
                   <Button key={p} variant={phone === p ? 'default' : 'outline'} onClick={() => setPhone(p)}>
@@ -145,7 +145,7 @@ export default function PhotoLibraryTips() {
                         <p className="font-semibold text-base">{t.title}</p>
                       </div>
                     </div>
-                    <p className="text-sm text-muted-foreground ml-12">{t.detail[phone]}</p>
+                    <p className="text-base text-muted-foreground ml-12">{t.detail[phone]}</p>
                   </CardContent>
                 </Card>
               );
@@ -154,8 +154,8 @@ export default function PhotoLibraryTips() {
 
           <Card className="border-border bg-muted/30 mt-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">One thing not to do</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">One thing not to do</p>
+              <p className="text-sm text-muted-foreground">
                 Do not delete an entire camera roll to "start over". You will regret it the next year. Instead, scroll to your oldest photos, and from there work forward. Use "Recently Deleted" as a 30-day safety net (Photos → Albums → Recently Deleted) before anything is permanent.
               </p>
             </CardContent>
@@ -165,20 +165,20 @@ export default function PhotoLibraryTips() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/backup-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Backup Wizard</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Make sure photos are safe somewhere else.</p>
+                <p className="font-medium text-base">Backup Wizard</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Make sure photos are safe somewhere else.</p>
               </Link>
               <Link to="/tools/storage-cleanup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Storage Cleanup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">More ways to free up phone space.</p>
+                <p className="font-medium text-base">Storage Cleanup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">More ways to free up phone space.</p>
               </Link>
               <Link to="/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Grandparent Device Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Set up shared photo albums for family.</p>
+                <p className="font-medium text-base">Grandparent Device Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Set up shared photo albums for family.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: spend 5 minutes naming the 3 or 4 people you photograph most often. That single move makes search 10× more useful forever.
           </p>
         </div>

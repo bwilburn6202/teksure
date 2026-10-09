@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { BookmarkButton } from '@/components/BookmarkButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -1124,12 +1123,6 @@ export default function TechGiftGuide() {
         <section className="relative border-b border-border bg-gradient-to-br from-rose-50 via-orange-50 to-amber-50 dark:from-rose-950/30 dark:via-orange-950/20 dark:to-amber-950/20">
           <div className="container py-10 md:py-14 relative">
             <div className="absolute top-6 right-6">
-              <BookmarkButton
-                type="tool"
-                slug="tech-gift-guide"
-                title="Tech Gift Guide"
-                url="/tools/tech-gift-guide"
-              />
             </div>
             <div className="flex items-center gap-2 mb-4">
               <div className="p-2 rounded-xl bg-gradient-to-br from-rose-500 to-orange-500 text-white shadow-sm">
@@ -1362,28 +1355,28 @@ export default function TechGiftGuide() {
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                         <div className="rounded-xl border border-green-600/40 bg-green-50/40 dark:bg-green-950/20 p-4">
-                          <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-green-800 dark:text-green-300">
+                          <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-success-foreground ">
                             <CheckCircle2 className="w-5 h-5" />
                             Pros
                           </h4>
                           <ul className="space-y-1.5">
                             {p.pros.map((pro) => (
                               <li key={pro} className="text-base leading-relaxed flex gap-2">
-                                <span className="text-green-700 dark:text-green-400 shrink-0" aria-hidden="true">+</span>
+                                <span className="text-success-foreground shrink-0" aria-hidden="true">+</span>
                                 <span>{pro}</span>
                               </li>
                             ))}
                           </ul>
                         </div>
                         <div className="rounded-xl border border-amber-500/40 bg-amber-50/40 dark:bg-amber-950/20 p-4">
-                          <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-amber-800 dark:text-amber-300">
+                          <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-warn-foreground ">
                             <XCircle className="w-5 h-5" />
                             Cons
                           </h4>
                           <ul className="space-y-1.5">
                             {p.cons.map((con) => (
                               <li key={con} className="text-base leading-relaxed flex gap-2">
-                                <span className="text-amber-700 dark:text-amber-400 shrink-0" aria-hidden="true">−</span>
+                                <span className="text-warn-foreground shrink-0" aria-hidden="true">−</span>
                                 <span>{con}</span>
                               </li>
                             ))}
@@ -1468,8 +1461,8 @@ export default function TechGiftGuide() {
         {/* Don't get these as surprises */}
         <section className="container py-10 md:py-14">
           <Alert className="border-rose-500/40 bg-rose-50/40 dark:bg-rose-950/20">
-            <AlertTriangle className="w-5 h-5 text-rose-700 dark:text-rose-400" />
-            <AlertTitle className="text-xl md:text-2xl font-semibold text-rose-900 dark:text-rose-200">
+            <AlertTriangle className="w-5 h-5 text-danger-foreground " />
+            <AlertTitle className="text-xl md:text-2xl font-semibold text-danger-foreground ">
               Don&apos;t get these as surprises
             </AlertTitle>
             <AlertDescription className="text-base md:text-lg leading-relaxed text-foreground">
@@ -1478,31 +1471,31 @@ export default function TechGiftGuide() {
               </p>
               <ul className="space-y-3">
                 <li className="flex gap-3">
-                  <XCircle className="w-5 h-5 text-rose-700 dark:text-rose-400 shrink-0 mt-1" />
+                  <XCircle className="w-5 h-5 text-danger-foreground shrink-0 mt-1" />
                   <div>
                     <strong>A new phone.</strong> Transferring a phone number, contacts, and apps is a multi-hour job. Almost no one enjoys it as a surprise.
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <XCircle className="w-5 h-5 text-rose-700 dark:text-rose-400 shrink-0 mt-1" />
+                  <XCircle className="w-5 h-5 text-danger-foreground shrink-0 mt-1" />
                   <div>
                     <strong>A smart speaker without asking first.</strong> Some people feel strongly about an always-on microphone in the living room. That is a conversation, not a surprise.
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <XCircle className="w-5 h-5 text-rose-700 dark:text-rose-400 shrink-0 mt-1" />
+                  <XCircle className="w-5 h-5 text-danger-foreground shrink-0 mt-1" />
                   <div>
                     <strong>Any subscription billed to their card.</strong> Auto-renewals on an older person&apos;s card become a nightmare to untangle. Gift the hardware; let them choose the subscription.
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <XCircle className="w-5 h-5 text-rose-700 dark:text-rose-400 shrink-0 mt-1" />
+                  <XCircle className="w-5 h-5 text-danger-foreground shrink-0 mt-1" />
                   <div>
                     <strong>A VR headset without asking about motion sickness.</strong> About one in three adults gets queasy in VR. Gifting one blind is a gamble.
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <XCircle className="w-5 h-5 text-rose-700 dark:text-rose-400 shrink-0 mt-1" />
+                  <XCircle className="w-5 h-5 text-danger-foreground shrink-0 mt-1" />
                   <div>
                     <strong>&quot;Helpful&quot; features that override their choices.</strong> Location tracking, remote camera access, or monitoring apps installed without consent cross a line. Consent is the gift.
                   </div>

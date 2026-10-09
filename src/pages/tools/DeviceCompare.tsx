@@ -119,6 +119,7 @@ export default function DeviceCompare() {
     <div className="min-h-screen">
       <SEOHead title="Device Comparison Tool | TekSure" description="Compare two devices side by side — price, battery, ease of use, and more." path="/tools/device-compare" />
       <Navbar />
+      <main className="flex-1">
 
       <section className="border-b">
         <div className="container py-16 md:py-20">
@@ -144,7 +145,7 @@ export default function DeviceCompare() {
         {/* Dropdowns */}
         <div className="grid grid-cols-2 gap-4 mb-8">
           <div>
-            <label className="text-sm font-medium mb-2 block">Device 1</label>
+            <label className="text-base font-medium mb-2 block">Device 1</label>
             <Select value={device1} onValueChange={setDevice1}>
               <SelectTrigger><SelectValue placeholder="Select a device..." /></SelectTrigger>
               <SelectContent>
@@ -155,7 +156,7 @@ export default function DeviceCompare() {
             </Select>
           </div>
           <div>
-            <label className="text-sm font-medium mb-2 block">Device 2</label>
+            <label className="text-base font-medium mb-2 block">Device 2</label>
             <Select value={device2} onValueChange={setDevice2}>
               <SelectTrigger><SelectValue placeholder="Select a device..." /></SelectTrigger>
               <SelectContent>
@@ -203,6 +204,7 @@ export default function DeviceCompare() {
         )}
       </section>
 
+      </main>
       <Footer />
     </div>
   );

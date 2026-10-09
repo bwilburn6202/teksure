@@ -195,7 +195,7 @@ const Login = () => {
                       <p className="text-muted-foreground mb-6">
                         We sent a password reset link to <strong className="text-foreground">{resetEmail}</strong>. Click the link in your email to set a new password.
                       </p>
-                      <p className="text-sm text-muted-foreground mb-6">Don't see it? Check your spam folder.</p>
+                      <p className="text-base text-muted-foreground mb-6">Don't see it? Check your spam folder.</p>
                       <Button onClick={() => { setShowResetForm(false); setResetStatus('idle'); }} className="w-full">
                         Back to Sign In
                       </Button>

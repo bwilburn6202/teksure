@@ -1861,8 +1861,8 @@ export default function BluetoothPairingHelper() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-sky-50 dark:bg-sky-950/30 flex items-center justify-center flex-shrink-0">
-                <Bluetooth className="h-6 w-6 text-sky-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-info flex items-center justify-center flex-shrink-0">
+                <Bluetooth className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -1916,7 +1916,7 @@ export default function BluetoothPairingHelper() {
                   className="w-full flex items-center gap-2 text-left font-medium"
                   aria-expanded={showWhyFinicky}
                 >
-                  <Info className="h-5 w-5 text-sky-600" aria-hidden="true" />
+                  <Info className="h-5 w-5 text-info-foreground" aria-hidden="true" />
                   <span>Why is Bluetooth so finicky? (Read this first)</span>
                   {showWhyFinicky ? (
                     <ChevronUp className="h-5 w-5 ml-auto" aria-hidden="true" />
@@ -1927,31 +1927,31 @@ export default function BluetoothPairingHelper() {
                 {showWhyFinicky && (
                   <ul className="mt-4 space-y-3 text-base">
                     <li className="flex gap-2">
-                      <ArrowRight className="h-5 w-5 text-sky-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                      <ArrowRight className="h-5 w-5 text-info-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                       <span>
                         <strong>Bluetooth needs close proximity.</strong> Stay within 10–30 feet, and ideally within 3 feet during first-time pairing.
                       </span>
                     </li>
                     <li className="flex gap-2">
-                      <ArrowRight className="h-5 w-5 text-sky-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                      <ArrowRight className="h-5 w-5 text-info-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                       <span>
                         <strong>Both devices must be in "pairing mode" at the same time.</strong> Your phone is ready when the Bluetooth settings screen is open and scanning. Your device is ready when its LED is flashing quickly.
                       </span>
                     </li>
                     <li className="flex gap-2">
-                      <ArrowRight className="h-5 w-5 text-sky-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                      <ArrowRight className="h-5 w-5 text-info-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                       <span>
                         <strong>Most Bluetooth devices only connect to one phone at a time.</strong> If your earbuds are already paired to a tablet, turn the tablet off so they can connect to your phone.
                       </span>
                     </li>
                     <li className="flex gap-2">
-                      <ArrowRight className="h-5 w-5 text-sky-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                      <ArrowRight className="h-5 w-5 text-info-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                       <span>
                         <strong>Low battery breaks pairing.</strong> A Bluetooth device below 20% battery often won't pair reliably — charge it first.
                       </span>
                     </li>
                     <li className="flex gap-2">
-                      <ArrowRight className="h-5 w-5 text-sky-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                      <ArrowRight className="h-5 w-5 text-info-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                       <span>
                         <strong>It's not you — it's the technology.</strong> Bluetooth is finicky for everyone. If a step doesn't work the first time, try again.
                       </span>
@@ -1989,7 +1989,7 @@ export default function BluetoothPairingHelper() {
               {needsSubtype && !subtype && (
                 <div className="mb-8">
                   <h3 className="font-semibold text-lg mb-2">Which kind?</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-base text-muted-foreground mb-4">
                     Pick the closest match — we'll tailor the steps.
                   </p>
                   <div className="grid sm:grid-cols-2 gap-3">
@@ -2013,7 +2013,7 @@ export default function BluetoothPairingHelper() {
               {(!needsSubtype || subtype) && !phoneOS && (
                 <div>
                   <h3 className="font-semibold text-lg mb-2">What phone are you using?</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-base text-muted-foreground mb-4">
                     The steps are a little different for each.
                   </p>
                   <div className="grid sm:grid-cols-2 gap-3">
@@ -2101,7 +2101,7 @@ export default function BluetoothPairingHelper() {
                   <div className="border-t border-border">
                     <button
                       onClick={() => setShowStuck(!showStuck)}
-                      className="w-full p-4 flex items-center gap-2 text-sm font-medium text-amber-700 dark:text-amber-400 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 transition-colors min-h-[44px]"
+                      className="w-full p-4 flex items-center gap-2 text-sm font-medium text-warn-foreground hover:bg-amber-50/50 dark:hover:bg-amber-950/20 transition-colors min-h-[44px]"
                       aria-expanded={showStuck}
                     >
                       <HelpCircle className="h-4 w-4" aria-hidden="true" />
@@ -2117,7 +2117,7 @@ export default function BluetoothPairingHelper() {
                         {step.stuckTips.map((tip, i) => (
                           <div key={i} className="flex gap-2 text-sm text-muted-foreground">
                             <ArrowRight
-                              className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5"
+                              className="h-4 w-4 text-warn-foreground flex-shrink-0 mt-0.5"
                               aria-hidden="true"
                             />
                             <span>{tip}</span>
@@ -2152,8 +2152,8 @@ export default function BluetoothPairingHelper() {
           {flow && finished && (
             <div>
               <div className="text-center py-8">
-                <div className="h-20 w-20 rounded-full bg-green-100 dark:bg-green-950/30 flex items-center justify-center mx-auto mb-6">
-                  <PartyPopper className="h-10 w-10 text-green-600" aria-hidden="true" />
+                <div className="h-20 w-20 rounded-full bg-success flex items-center justify-center mx-auto mb-6">
+                  <PartyPopper className="h-10 w-10 text-success-foreground" aria-hidden="true" />
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold mb-2">You're paired!</h2>
                 <p className="text-muted-foreground max-w-md mx-auto mb-6 text-base">
@@ -2182,19 +2182,19 @@ export default function BluetoothPairingHelper() {
               {flow.testSound && flow.testSound.length > 0 && (
                 <div className="mt-6 p-6 rounded-2xl border border-border bg-card">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="h-10 w-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 flex items-center justify-center flex-shrink-0">
-                      <Volume2 className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+                    <div className="h-10 w-10 rounded-xl bg-success flex items-center justify-center flex-shrink-0">
+                      <Volume2 className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                     </div>
                     <h3 className="font-semibold text-lg">Test your sound</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3">
+                  <p className="text-base text-muted-foreground mb-3">
                     Easy ways to confirm everything's working:
                   </p>
                   <ul className="space-y-2">
                     {flow.testSound.map((tip, i) => (
                       <li key={i} className="flex gap-2 text-base">
                         <CheckCircle
-                          className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5"
+                          className="h-5 w-5 text-success-foreground flex-shrink-0 mt-0.5"
                           aria-hidden="true"
                         />
                         <span>{tip}</span>
@@ -2208,8 +2208,8 @@ export default function BluetoothPairingHelper() {
               {flow.troubleshooting.length > 0 && (
                 <div className="mt-6 p-6 rounded-2xl border border-border bg-card">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="h-10 w-10 rounded-xl bg-amber-50 dark:bg-amber-950/30 flex items-center justify-center flex-shrink-0">
-                      <HelpCircle className="h-5 w-5 text-amber-600" aria-hidden="true" />
+                    <div className="h-10 w-10 rounded-xl bg-warn flex items-center justify-center flex-shrink-0">
+                      <HelpCircle className="h-5 w-5 text-warn-foreground" aria-hidden="true" />
                     </div>
                     <h3 className="font-semibold text-lg">Common problems</h3>
                   </div>
@@ -2220,7 +2220,7 @@ export default function BluetoothPairingHelper() {
                           <ChevronDown className="h-4 w-4 transition-transform details-chevron" aria-hidden="true" />
                           <span>{item.problem}</span>
                         </summary>
-                        <ul className="mt-3 space-y-2 pl-6 text-sm text-muted-foreground">
+                        <ul className="mt-3 space-y-2 pl-6 text-base text-muted-foreground">
                           {item.fix.map((f, j) => (
                             <li key={j} className="list-disc">
                               {f}
@@ -2237,14 +2237,14 @@ export default function BluetoothPairingHelper() {
               {flow.forget.length > 0 && (
                 <div className="mt-6 p-6 rounded-2xl border border-border bg-card">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="h-10 w-10 rounded-xl bg-rose-50 dark:bg-rose-950/30 flex items-center justify-center flex-shrink-0">
-                      <X className="h-5 w-5 text-rose-600" aria-hidden="true" />
+                    <div className="h-10 w-10 rounded-xl bg-danger flex items-center justify-center flex-shrink-0">
+                      <X className="h-5 w-5 text-danger-foreground" aria-hidden="true" />
                     </div>
                     <h3 className="font-semibold text-lg">
                       How to disconnect or forget this device
                     </h3>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3">
+                  <p className="text-base text-muted-foreground mb-3">
                     On {phoneOS === 'iphone' ? 'iPhone' : 'Android'}:
                   </p>
                   <ol className="space-y-2">

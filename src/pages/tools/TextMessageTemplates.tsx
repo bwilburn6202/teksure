@@ -59,7 +59,7 @@ export default function TextMessageTemplates() {
   const visible = filter === "All" ? TEMPLATES : TEMPLATES.filter(t => t.category === filter);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Text Message Templates | TekSure"
         description="Ready-to-use text messages for everyday situations, family, sympathy, asking for help, and appointments. One tap to copy."
@@ -68,10 +68,10 @@ export default function TextMessageTemplates() {
       <div className="max-w-2xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <MessageSquare className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Text Message Templates</h1>
+            <MessageSquare className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Text Message Templates</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             When the right words don't come easily, pick a template, tap copy, and paste it into a text. Edit before sending.
           </p>
         </div>
@@ -80,7 +80,7 @@ export default function TextMessageTemplates() {
         <div className="flex flex-wrap gap-2 mb-4">
           <button
             onClick={() => setFilter("All")}
-            className={`px-3 py-1 rounded-full text-sm font-medium ${filter === "All" ? "bg-blue-600 text-white" : "bg-white border border-gray-200 text-gray-700"}`}
+            className={`px-3 py-1 rounded-full text-sm font-medium ${filter === "All" ? "bg-blue-600 text-white" : "bg-white border border-border text-gray-700"}`}
           >
             All ({TEMPLATES.length})
           </button>
@@ -88,7 +88,7 @@ export default function TextMessageTemplates() {
             <button
               key={c}
               onClick={() => setFilter(c)}
-              className={`px-3 py-1 rounded-full text-sm font-medium ${filter === c ? "bg-blue-600 text-white" : "bg-white border border-gray-200 text-gray-700"}`}
+              className={`px-3 py-1 rounded-full text-sm font-medium ${filter === c ? "bg-blue-600 text-white" : "bg-white border border-border text-gray-700"}`}
             >
               {c} ({TEMPLATES.filter(t => t.category === c).length})
             </button>
@@ -106,7 +106,7 @@ export default function TextMessageTemplates() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-700 italic mb-2">"{t.text}"</p>
+                <p className="text-base text-foreground italic mb-2">"{t.text}"</p>
                 <Button size="sm" variant="outline" onClick={() => copy(t.id, t.text)} className="gap-1">
                   {copiedId === t.id ? <><Check className="h-3 w-3" /> Copied!</> : <><Copy className="h-3 w-3" /> Copy text</>}
                 </Button>
@@ -115,15 +115,15 @@ export default function TextMessageTemplates() {
           ))}
         </div>
 
-        <Card className="mt-6 bg-blue-50 border-blue-200">
+        <Card className="mt-6 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               These are starters — feel free to make them your own. Add a name, a memory, or a personal note. The most meaningful text is one that sounds like you.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

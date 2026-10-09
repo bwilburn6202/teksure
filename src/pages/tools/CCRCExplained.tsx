@@ -19,7 +19,7 @@ export default function CCRCExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What CCRC means</h2>
-            <p className="text-sm">Continuing Care Retirement Community. ALL levels of care in one place — independent → assisted → memory → skilled nursing. Move once + age in place. Often called "Life Plan" community.</p>
+            <p className="text-base">Continuing Care Retirement Community. ALL levels of care in one place — independent → assisted → memory → skilled nursing. Move once + age in place. Often called "Life Plan" community.</p>
           </CardContent>
         </Card>
 
@@ -62,7 +62,7 @@ export default function CCRCExplained() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cons + risks</h2>
             <ul className="list-disc pl-5 space-y-2 text-base">
