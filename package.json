@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node --import tsx scripts/generate-guide-data.mjs",
     "dev": "vite",
     "dev:ssr": "node --import tsx server.ts",
     "validate:slugs": "node scripts/validate-slugs.mjs",
-    "prebuild": "npm run validate:slugs && node scripts/generate-tools-directory.mjs && node scripts/generate-site-stats.mjs && node scripts/generate-redirects.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-llms-txt.mjs",
+    "prebuild": "npm run validate:slugs && node --import tsx scripts/generate-guide-data.mjs && node scripts/generate-tools-directory.mjs && node scripts/generate-site-stats.mjs && node scripts/generate-redirects.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-llms-txt.mjs",
     "build": "vite build && npm run prerender:safe && node scripts/write-build-info.mjs",
     "build:spa": "vite build",
     "prerender": "vite build --ssr src/entry-server.tsx --outDir dist/server --logLevel warn && node scripts/prerender-sharded.mjs --concurrency=2 && node scripts/prerender-cleanup.mjs",

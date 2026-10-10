@@ -78,6 +78,11 @@ export default defineConfig(() => ({
             id.includes('node_modules/class-variance-authority')
           ) return 'vendor-ui';
 
+          // Guide category names are imported by guides.ts AND by ordinary pages.
+          // Left unassigned, Rollup folds them into the guide-data chunk below,
+          // and any page that needs a category label downloads all 17 MB.
+          if (id.includes('src/data/guide-categories')) return 'guide-meta';
+
           // Guide data — large dataset, split into its own cacheable chunk
           if (id.includes('src/data/guides') && !id.includes('node_modules')) {
             return 'guide-data';

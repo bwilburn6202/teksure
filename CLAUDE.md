@@ -33,6 +33,18 @@ answering.** The global Cmd+K `SearchModal` is lazy-loaded and its hook lives in
 17 MB guide-data chunk on every page. Category labels live in `data/guide-categories.ts`
 for the same reason.
 
+**Guide pages load one guide, not the library (2026-10-09).** `/guides/:slug` gets its data
+from `src/lib/guide-data.ts`: the server renderer reads the full library through
+`GuideSourceContext`, the prerendered HTML embeds that guide as
+`<script id="guide-data">` (captured in `main.tsx` before React mounts), and client-side
+navigation fetches `public/guide-data/<slug>.json`. List pages use `src/lib/guide-index.ts`
+(`src/data/guide-index.json`, committed, ~430 KB gz). Both are written by
+`scripts/generate-guide-data.mjs` in `predev`/`prebuild`; `guide-index.test.ts` fails if the
+index is stale — rerun `node --import tsx scripts/generate-guide-data.mjs` after editing
+guides. Only `/search`, the Cmd+K modal and `/tools/guide-packs` still import the full
+library. `vite.config.ts` pins `guide-categories` to its own chunk; without that rule Rollup
+folds it into guide-data and any page showing a category name downloads 17 MB.
+
 **Thin-content cut, 2026-08-30.** `/tools` went from 2,970 pages to 387. 2,246 of the
 removed pages were under 300 words, 2,480 had no editorial inbound link, and 207
 near-duplicate topic clusters covered 443 of them. This was the guide-count problem

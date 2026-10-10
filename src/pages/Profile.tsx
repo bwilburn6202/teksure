@@ -14,7 +14,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { supabase } from '@/integrations/supabase/client';
 import { evaluateBadges, type Badge as TekBadge } from '@/lib/badges';
 import { getProgressCount, getCompletedGuides } from '@/lib/progress';
-import { guides } from '@/data/guides';
+import { guideIndex as guides } from '@/lib/guide-index';
 import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 
 const roleColors: Record<string, string> = {
