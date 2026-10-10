@@ -15,7 +15,7 @@ import { Footer } from '@/components/layout/Footer';
 import { StatusBadge } from '@/components/StatusBadge';
 import { useAuth } from '@/contexts/AuthContext';
 import { getCompletedGuides } from '@/lib/progress';
-import { guides } from '@/data/guides';
+import { guideIndex as guides } from '@/lib/guide-index';
 import { getGuideThumbnailSmall } from '@/lib/guideThumbnails';
 import { supabase } from '@/integrations/supabase/client';
 

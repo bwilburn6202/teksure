@@ -13,7 +13,10 @@ import { SEOHead } from '@/components/SEOHead';
 import { ShareGuideButton } from '@/components/ShareGuideButton';
 import { ReportBrokenLink } from '@/components/ReportBrokenLink';
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from '@/components/ui/breadcrumb';
-import { guides, categoryLabels, type GuideStep, type ScreenshotAnnotation } from '@/data/guides';
+import type { GuideStep, ScreenshotAnnotation } from '@/data/guides';
+import { categoryLabels } from '@/data/guide-categories';
+import { useGuide, guideToEmbeddedJson, EMBEDDED_GUIDE_ID } from '@/lib/guide-data';
+import { calcReadTime } from '@/lib/guide-nav';
 import { guideRedirects } from '@/data/guide-redirects';
 import { BeforeAfterSlider } from '@/components/BeforeAfterSlider';
 import { GuideVideoSection } from '@/components/GuideVideoSection';
@@ -121,13 +124,6 @@ const CATEGORY_RESOURCES: Record<string, { label: string; url: string }[]> = {
 
 /* ── Helpers ────────────────────────────────────── */
 
-function calcReadTime(guide: { title: string; excerpt: string; steps?: GuideStep[]; body?: string }): string {
-  let words = `${guide.title} ${guide.excerpt}`.split(/\s+/).length;
-  if (guide.steps) guide.steps.forEach(s => { words += (s.title + ' ' + s.content + ' ' + (s.tip || '') + ' ' + (s.warning || '')).split(/\s+/).length; });
-  if (guide.body) words += guide.body.split(/\s+/).length;
-  const mins = Math.max(1, Math.ceil(words / 200));
-  return `${mins} min read`;
-}
 
 function calcStepTime(step: GuideStep): string {
   const words = (step.title + ' ' + step.content + ' ' + (step.tip || '') + ' ' + (step.warning || '')).split(/\s+/).length;
@@ -350,19 +346,48 @@ const useStepProgress = (stepCount: number) => {
   return { activeStep, stepsRef };
 };
 
+/** Shown for the moment it takes to fetch one guide on client-side navigation. */
+const GuideLoading = ({ failed }: { failed: boolean }) => (
+  <>
+    <Navbar />
+    <main id="main-content" className="container max-w-3xl py-16 min-h-[60vh]">
+      {failed ? (
+        <div className="text-center space-y-4">
+          <p className="text-xl font-semibold">We couldn't load this guide.</p>
+          <p className="text-lg text-muted-foreground">Check your internet connection, then try again.</p>
+          <Button size="lg" onClick={() => window.location.reload()}>Try again</Button>
+        </div>
+      ) : (
+        <div className="space-y-4" role="status" aria-live="polite">
+          <span className="sr-only">Loading guide…</span>
+          <div className="h-10 w-3/4 rounded-lg bg-muted animate-pulse" />
+          <div className="h-5 w-1/2 rounded bg-muted animate-pulse" />
+          <div className="h-48 w-full rounded-xl bg-muted animate-pulse mt-8" />
+        </div>
+      )}
+    </main>
+    <Footer />
+  </>
+);
+
 /* ── Main component ─────────────────────────────── */
 
 const GuideDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const { user } = useAuth();
   const location = useLocation();
-  const guide = guides.find(g => g.slug === slug);
+  const guideState = useGuide(slug);
+  const guide = guideState.guide;
 
   // Hoisted before early returns to satisfy Rules of Hooks
   const estimatedReadTime = useMemo(() => guide ? calcReadTime(guide) : '', [guide]);
 
   const stepCount = guide?.steps?.length || 0;
   const { activeStep, stepsRef } = useStepProgress(stepCount);
+
+  if (guideState.status === 'loading' || guideState.status === 'error') {
+    return <GuideLoading failed={guideState.status === 'error'} />;
+  }
 
   if (!guide) {
     if (slug && guideRedirects[slug]) {
@@ -373,13 +398,7 @@ const GuideDetail = () => {
 
   // Guides are free for everyone — no auth required to read
 
-  const currentIndex = guides.findIndex(g => g.slug === slug);
-  const prevGuide = currentIndex > 0 ? guides[currentIndex - 1] : null;
-  const nextGuide = currentIndex < guides.length - 1 ? guides[currentIndex + 1] : null;
-
-  const relatedGuides = guides
-    .filter(g => g.slug !== slug && g.category === guide.category)
-    .slice(0, 3);
+  const { prev: prevGuide, next: nextGuide, related: relatedGuides } = guide.nav;
 
   const learnMoreResources = getGuideResources(guide);
 
@@ -451,6 +470,14 @@ const GuideDetail = () => {
             : undefined
         }
         jsonLd={[howToJsonLd, videoJsonLd, breadcrumbJsonLd, faqJsonLd].filter(Boolean) as Record<string, unknown>[]}
+      />
+      {/* This guide's data, embedded so the browser can show it on first load
+          without fetching it (see src/lib/guide-data.ts). */}
+      <script
+        type="application/json"
+        id={EMBEDDED_GUIDE_ID}
+        data-slug={guide.slug}
+        dangerouslySetInnerHTML={{ __html: guideToEmbeddedJson(guide) }}
       />
       <Navbar />
 
@@ -838,7 +865,7 @@ const GuideDetail = () => {
                         <img src={getGuideThumbnailSmall(g)} alt="" className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" />
                         <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{g.title}</p>
                         <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{g.excerpt}</p>
-                        <p className="text-base text-muted-foreground mt-1">{calcReadTime(g)}</p>
+                        <p className="text-base text-muted-foreground mt-1">{g.readTimeLabel}</p>
                       </CardContent>
                     </Card>
                   </Link>

@@ -2,6 +2,17 @@ import { renderToPipeableStream } from "react-dom/server";
 import { StaticRouter } from "react-router-dom/server";
 import { HelmetServerState } from "react-helmet-async";
 import { AppShell } from "./App";
+import { guides } from "./data/guides";
+import { GuideSourceContext } from "./lib/guide-data";
+import { buildGuideNav, type GuideWithNav } from "./lib/guide-nav";
+
+// The server has the whole library, so prerendered guide pages carry their full
+// text. The browser bundle never imports it (see src/lib/guide-data.ts).
+const slugIndex = new Map(guides.map((g, i) => [g.slug, i]));
+const lookupGuide = (slug: string): GuideWithNav | undefined => {
+  const i = slugIndex.get(slug);
+  return i === undefined ? undefined : { ...guides[i], nav: buildGuideNav(guides, i) };
+};
 import { PassThrough } from "node:stream";
 
 /**
@@ -45,9 +56,11 @@ export function render(
     passThrough.on("error", reject);
 
     const { pipe } = renderToPipeableStream(
-      <StaticRouter location={url}>
-        <AppShell helmetContext={helmetContext} />
-      </StaticRouter>,
+      <GuideSourceContext.Provider value={lookupGuide}>
+        <StaticRouter location={url}>
+          <AppShell helmetContext={helmetContext} />
+        </StaticRouter>
+      </GuideSourceContext.Provider>,
       {
         onAllReady() {
           // All Suspense boundaries have resolved — pipe the complete HTML

@@ -1,5 +1,6 @@
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
+import { captureEmbeddedGuide } from "./lib/embedded-guide";
 import "./index.css";
 
 // ── Re-apply saved accessibility profile before first paint ───────────────
@@ -37,6 +38,9 @@ try {
 } catch {
   /* ignore — no saved profile or storage disabled */
 }
+
+// Must run before React replaces the prerendered markup (see embedded-guide.ts).
+captureEmbeddedGuide();
 
 createRoot(document.getElementById("root")!).render(<App />);
 

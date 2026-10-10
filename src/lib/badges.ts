@@ -1,5 +1,5 @@
 import { getCompletedGuides } from './progress';
-import { guides } from '@/data/guides';
+import { guideIndex as guides } from '@/lib/guide-index';
 
 export interface Badge {
   id: string;
