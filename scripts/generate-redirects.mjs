@@ -32,6 +32,32 @@ export function readNavigateRedirects() {
   return out;
 }
 
+// Prerender skips these (scripts/prerender.mjs EXCLUDE): they show per-user
+// state, so there is no static page for them.
+const PRIVATE = /^\/(admin|customer|tech|profile|my-requests|my-path|favorites|setup|payment|api)(\/|$)/;
+
+// Dynamic routes whose every value is prerendered. Any other value is a page
+// that does not exist and should get a real 404.
+const FULLY_PRERENDERED = new Set(['/guides/:slug', '/tools/:slug']);
+
+/**
+ * Routes the app serves that have no prerendered HTML file: account, booking,
+ * payment and admin screens. Vercel has to rewrite these to an app shell so
+ * the browser can load the app and render them.
+ */
+export function readAppShellRoutes() {
+  const appTsx = readFileSync(join(ROOT, 'src', 'App.tsx'), 'utf8');
+  const out = new Set();
+  const re = /path="(\/[^"]*)"\s+element=\{\s*<(\w+)/g;
+  for (const m of appTsx.matchAll(re)) {
+    const [, path, element] = m;
+    if (element === 'Navigate' || path.includes('*')) continue;
+    if (FULLY_PRERENDERED.has(path)) continue;
+    if (PRIVATE.test(path) || path.includes(':')) out.add(path);
+  }
+  return [...out].sort();
+}
+
 // Running as a script (not just imported as a helper).
 if (process.argv[1] && process.argv[1].endsWith('generate-redirects.mjs')) {
   const redirects = [...readNavigateRedirects(), ...readToolRedirects(), ...readGuideRedirects()];
@@ -55,6 +81,18 @@ if (process.argv[1] && process.argv[1].endsWith('generate-redirects.mjs')) {
     permanent: true,
   }));
 
+  // Rewrites: only the app-shell routes, never a catch-all. A catch-all
+  // `/(.*) -> /404` rewrite used to serve every unknown URL — including the
+  // ~3,000 guides retired on 2026-10-11 — the not-found page with HTTP 200,
+  // a soft 404 that search engines keep recrawling. Without it, Vercel serves
+  // dist/404.html (written by scripts/prerender-cleanup.mjs) with a real 404.
+  // The app-shell routes still rewrite to /404: its HTML loads the full app,
+  // and main.tsx renders with createRoot, so the right screen replaces it.
+  config.rewrites = readAppShellRoutes().map((source) => ({ source, destination: '/404' }));
+
   writeFileSync(vercelPath, JSON.stringify(config, null, 2) + '\n');
-  console.log(`[generate-redirects] wrote ${redirects.length} permanent redirects to vercel.json`);
+  console.log(
+    `[generate-redirects] wrote ${redirects.length} permanent redirects and ` +
+      `${config.rewrites.length} app-shell rewrites to vercel.json`
+  );
 }

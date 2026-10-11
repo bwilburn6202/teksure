@@ -1139,7 +1139,7 @@ const Glossary = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Tech Glossary A–Z — Every Tech Word Explained in Plain English | TekSure"
-        description="Browse 150+ tech terms explained in plain English — from Wi-Fi to phishing, algorithm to zero-day. A senior-friendly A–Z dictionary for anyone who wants to understand technology without the jargon."
+        description="150+ tech terms explained in plain English, from Wi-Fi to phishing. An A–Z dictionary for anyone who wants to understand technology without the jargon."
         path="/glossary"
         jsonLd={{
           '@context': 'https://schema.org',

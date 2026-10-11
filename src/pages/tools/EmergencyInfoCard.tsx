@@ -543,7 +543,7 @@ export default function EmergencyInfoCard() {
     <>
       <SEOHead
         title="Emergency Info Card — Free Printable Wallet & Lockscreen Card | TekSure"
-        description="A free, printable emergency info card with your medical info, contacts, and meds. Wallet, fridge, and phone lockscreen formats. All data stays on your device — never sent anywhere."
+        description="Make a free, printable emergency card with your medical info, contacts and medicines. Wallet, fridge and lock-screen sizes. Nothing leaves your device."
         path="/tools/emergency-info-card"
       />
 

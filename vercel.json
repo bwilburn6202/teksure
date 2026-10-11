@@ -61,7 +61,47 @@
   ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/admin",
+      "destination": "/404"
+    },
+    {
+      "source": "/admin/content",
+      "destination": "/404"
+    },
+    {
+      "source": "/admin/newsletter",
+      "destination": "/404"
+    },
+    {
+      "source": "/customer",
+      "destination": "/404"
+    },
+    {
+      "source": "/customer/jobs/:id",
+      "destination": "/404"
+    },
+    {
+      "source": "/my-requests",
+      "destination": "/404"
+    },
+    {
+      "source": "/payment/cancel",
+      "destination": "/404"
+    },
+    {
+      "source": "/payment/success",
+      "destination": "/404"
+    },
+    {
+      "source": "/profile",
+      "destination": "/404"
+    },
+    {
+      "source": "/tech",
+      "destination": "/404"
+    },
+    {
+      "source": "/tech/jobs/:id",
       "destination": "/404"
     }
   ],
@@ -379,6 +419,11 @@
     {
       "source": "/quick-fixes",
       "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/safety",
+      "destination": "/guides?category=safety",
       "permanent": true
     },
     {

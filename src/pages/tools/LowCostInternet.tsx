@@ -132,7 +132,7 @@ export default function LowCostInternet() {
     <>
       <SEOHead
         title="Low-Cost Internet Helper"
-        description="Free or under-$25 home internet programs for seniors, low-income households, and families. Lifeline, Internet Essentials, AT&T Access, Spectrum Internet Assist, T-Mobile Project 10Million."
+        description="Free or under-$25 home internet for seniors and low-income households: Lifeline, Internet Essentials, AT&T Access, Spectrum Internet Assist and more."
         path="/tools/low-cost-internet"
       />
       <Navbar />

@@ -323,6 +323,7 @@ const AppContent = () => {
           <Route path="/how-it-works" element={<Navigate to="/get-help" replace />} />
           <Route path="/guias" element={<Navigate to="/guides" replace />} />
           <Route path="/quick-fixes" element={<Navigate to="/guides" replace />} />
+          <Route path="/safety" element={<Navigate to="/guides?category=safety" replace />} />
           <Route path="/safety/scam-alerts" element={<Navigate to="/scam-defense" replace />} />
           <Route path="/safety/parental-controls" element={<Navigate to="/guides/child-safety-online" replace />} />
           <Route path="/reference-cards" element={<Navigate to="/guides" replace />} />

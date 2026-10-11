@@ -882,7 +882,7 @@ export default function PrinterTroubleshooter() {
     <>
       <SEOHead
         title="Printer Troubleshooter | TekSure"
-        description="Printer acting up? Answer a couple of simple questions and get clear, step-by-step fixes — won't print, paper jams, WiFi, offline, blank pages, error lights, ink and more. Senior-friendly and 100% plain language."
+        description="Printer acting up? Answer a few questions and get step-by-step fixes for paper jams, Wi-Fi, offline errors, blank pages, error lights and ink."
         path="/tools/printer-troubleshooter"
       />
       <Navbar />
