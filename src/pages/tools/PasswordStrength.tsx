@@ -25,9 +25,9 @@ const PasswordStrength = () => {
   const strength = useMemo(() => {
     if (password.length === 0) return { label: '', color: '', percent: 0 };
     if (score <= 1) return { label: 'Weak', color: 'text-destructive', percent: 25 };
-    if (score === 2) return { label: 'Fair', color: 'text-[hsl(var(--teksure-warning))]', percent: 50 };
-    if (score === 3) return { label: 'Good', color: 'text-[hsl(var(--teksure-info))]', percent: 75 };
-    return { label: 'Strong', color: 'text-[hsl(var(--teksure-success))]', percent: 100 };
+    if (score === 2) return { label: 'Fair', color: 'text-warn-foreground', percent: 50 };
+    if (score === 3) return { label: 'Good', color: 'text-info-foreground', percent: 75 };
+    return { label: 'Strong', color: 'text-success-foreground', percent: 100 };
   }, [password, score]);
 
   const barColor = score <= 1 ? 'bg-destructive' : score === 2 ? 'bg-[hsl(var(--teksure-warning))]' : score === 3 ? 'bg-[hsl(var(--teksure-info))]' : 'bg-[hsl(var(--teksure-success))]';

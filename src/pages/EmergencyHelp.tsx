@@ -181,7 +181,7 @@ export default function EmergencyHelp() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-red-500/10 via-background to-amber-500/10 border-b border-border py-12 px-4">
+      <section className="bg-muted/50 border-b border-border py-12 px-4">
         <div className="container max-w-3xl mx-auto text-center">
           <div className="flex justify-center mb-4">
             <div className="p-4 bg-danger rounded-full">

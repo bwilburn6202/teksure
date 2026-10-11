@@ -15,14 +15,18 @@
 ## 2. Color Palette & Roles
 
 ### Primary Colors
+The live values are in `src/index.css` (plain theme, 2026-10-11). White page, near-black text, one strong blue, visible borders. No gradients, glass or mesh backgrounds.
+
 | Role | Light Mode | Dark Mode | Usage |
 |------|-----------|-----------|-------|
-| Primary (Teal) | `hsl(172 50% 40%)` | `hsl(172 50% 50%)` | CTAs, links, TekBot accent |
-| Secondary (Blue) | `hsl(220 70% 50%)` | `hsl(220 70% 60%)` | Secondary buttons, highlights |
-| Background | `hsl(0 0% 100%)` | `hsl(220 20% 10%)` | Page background |
-| Card | `hsl(0 0% 100%)` | `hsl(220 20% 14%)` | Card surfaces |
-| Muted | `hsl(210 25% 97%)` | `hsl(220 20% 18%)` | Subtle backgrounds, chat area |
-| Border | `hsl(220 15% 90%)` | `hsl(220 15% 25%)` | Borders, dividers |
+| Primary (Blue) | `hsl(221 83% 40%)` | `hsl(213 94% 72%)` | CTAs, links, icon tiles (`bg-primary/10 text-primary`) |
+| Background | `hsl(0 0% 100%)` | `hsl(0 0% 7%)` | Page background |
+| Card | `hsl(0 0% 100%)` | `hsl(0 0% 10%)` | Card surfaces |
+| Muted | `hsl(220 14% 95%)` | `hsl(0 0% 14%)` | Hero bands and footer (`bg-muted/50`) |
+| Muted text | `hsl(220 9% 30%)` | `hsl(0 0% 80%)` | Captions, descriptions |
+| Border | `hsl(220 9% 72%)` | `hsl(0 0% 35%)` | Card borders, dividers |
+
+For tinted callouts use the AA-safe surfaces: `bg-info` / `text-info-foreground` (Quick Tip), `bg-danger` / `text-danger-foreground` (warnings, scam alerts), `bg-warn`, `bg-success`. Never use `--teksure-warning` or `--teksure-info` as text — they are about 2:1 on white.
 
 ### Semantic Colors
 | Role | Color | Usage |

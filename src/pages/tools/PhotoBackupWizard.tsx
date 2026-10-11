@@ -399,9 +399,7 @@ export default function PhotoBackupWizard() {
 
       <main className="min-h-screen bg-background">
         {/* ── Hero ─────────────────────────────────── */}
-        <section className="relative overflow-hidden border-b border-border">
-          <div className="absolute inset-0 bg-gradient-to-br from-sky-100 via-blue-50 to-indigo-50 dark:from-sky-950/40 dark:via-blue-950/30 dark:to-indigo-950/20" />
-          <div className="absolute inset-0 opacity-60 bg-[radial-gradient(ellipse_at_top_right,rgba(56,189,248,0.25),transparent_60%)]" />
+        <section className="relative overflow-hidden border-b border-border bg-muted/50">
           <div className="container relative py-10 md:py-14">
             <div className="absolute top-6 right-6">
             </div>
