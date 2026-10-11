@@ -3,7 +3,7 @@ import type { Guide } from './guides';
 export const internetGuides: Guide[] = [
   {
     slug: "wifi-band-guide",
-    title: "2.4 GHz vs 5 GHz WiFi: Which One Should You Connect To?",
+    title: "2.4 GHz vs 5 GHz Wi-Fi: Which Should You Use?",
     excerpt: "Most routers broadcast two WiFi networks. The 2.4 GHz band has better range. The 5 GHz band is faster but shorter range. Here's when to use each.",
     category: "internet",
     tags: [
@@ -50,7 +50,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "google-voice-phone-number",
-    title: "Google Voice: Get a Free Phone Number, Voicemail, and Wi-Fi Calling",
+    title: "Google Voice: Get a Free Phone Number",
     excerpt: "Google Voice gives you a free US phone number that you can use to make calls, send texts, and set up voicemail — all through an app or a web browser.",
     category: "internet",
     tags: [
@@ -145,7 +145,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "how-to-block-someone-on-facebook-2026",
-    title: "How to Block, Unfriend, or Restrict Someone on Facebook",
+    title: "Block, Unfriend, or Restrict Someone on Facebook",
     excerpt: "Learn the difference between unfriending, blocking, and restricting on Facebook — and how to do each one.",
     category: "internet",
     tags: [
@@ -240,7 +240,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "how-to-check-internet-outage-before-calling-2026",
-    title: "How to Check if Your Internet Is Out — Before You Call Your Provider",
+    title: "Check if Your Internet Is Out Before Calling",
     excerpt: "Before spending time on hold with your internet provider, find out in minutes whether the outage is on their end, your router, or your building.",
     category: "internet",
     tags: [
@@ -292,7 +292,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "choose-right-internet-plan",
-    title: "How to Choose the Right Internet Plan for Your Home",
+    title: "How to Choose the Right Home Internet Plan",
     excerpt: "Understand internet speeds, plan types, and how to pick the best plan for your household without overpaying.",
     category: "internet",
     tags: [
@@ -333,7 +333,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "facebook-memories-download-guide",
-    title: "How to Download Your Facebook Photos and Data Before Leaving",
+    title: "Download Your Facebook Photos and Data",
     excerpt: "Facebook lets you download a copy of everything — your photos, messages, posts, and profile data.",
     category: "internet",
     tags: [
@@ -373,7 +373,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "zoom-host-meeting-guide",
-    title: "How to Host a Zoom Meeting: Waiting Rooms, Muting, and Invites",
+    title: "How to Host a Zoom Meeting",
     excerpt: "Hosting a Zoom meeting differs from joining one. How to start a meeting, admit people from the waiting room, mute participants, and stay on track.",
     category: "internet",
     tags: [
@@ -467,7 +467,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "router-access-guide",
-    title: "How to Log Into Your Home Router to Change Your WiFi Settings",
+    title: "Log Into Your Router to Change Wi-Fi Settings",
     excerpt: "Access your router's settings page by typing 192.168.1.1 in a browser to change your WiFi name, password, or see connected devices.",
     category: "internet",
     tags: [
@@ -559,7 +559,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "how-to-manage-joint-email-after-spouse-passes",
-    title: "How to Manage a Joint Email Account After a Spouse Passes Away",
+    title: "Managing a Joint Email After a Spouse Dies",
     excerpt: "A compassionate guide to handling a shared Gmail, Yahoo, or AOL account after losing a spouse — preserving messages, paying bills, and closing it.",
     category: "internet",
     tags: [
@@ -1058,7 +1058,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "internet-speed-test-tips",
-    title: "How to Test Your Internet Speed and What the Results Mean",
+    title: "Test Your Internet Speed and Read the Results",
     excerpt: "Running a speed test tells you if you're getting the internet speed you're paying for — and helps diagnose slow connections.",
     body: "When your internet feels slow, the first step is figuring out whether it actually is slow — or if something else is causing the problem. An internet speed test measures exactly how fast data moves between your home network and the internet, and the whole process takes about 30 seconds.\n\nEvery speed test shows you three numbers: download speed, upload speed, and ping. Understanding what each one means helps you figure out what kind of connection you actually need.\n\nDownload speed is how fast your connection can receive data from the internet. This is the number that affects streaming videos, loading websites, and downloading files. A higher number is better. Upload speed is how fast you can send data out — this matters for video calls, sending email attachments, and backing up photos to the cloud. Ping, also called latency, measures the delay in milliseconds between your device and a server. For most tasks, ping does not matter much. But for video games and video calls, a low ping (under 50 milliseconds) makes a noticeable difference.\n\nThe three most reliable tools for testing are Speedtest.net by Ookla, Fast.com (created by Netflix), and Google's built-in speed test (search \"internet speed test\" in Google). Each one works from a web browser — no downloads required.\n\nFor the most accurate results, connect your computer directly to your router with an Ethernet cable and close any apps that use the internet. Wi-Fi tests from different rooms of your home can show you where coverage is weakest.\n\nWhat counts as \"good\" internet varies by how many people and devices are using it. For one person streaming HD video, 25 Mbps download is enough. A family with multiple devices watching different things simultaneously needs 100 Mbps or more. Homes with 4K streaming, gaming, and video calls at the same time benefit from 500 Mbps or higher.\n\nIf your speed test shows numbers a lot lower than what your internet plan promises, start by restarting your router. If that does not help, call your internet provider. They can sometimes push a fix remotely or schedule a technician visit.",
     category: "internet",
@@ -1102,7 +1102,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "zoom-captions-guide",
-    title: "How to Turn On Live Captions in Zoom for Easier Listening",
+    title: "How to Turn On Live Captions in Zoom",
     excerpt: "Zoom can display live captions during calls — showing what each person says as on-screen text.",
     category: "internet",
     tags: [
@@ -1146,7 +1146,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "turn-on-rcs-messaging-iphone-android",
-    title: "How to Turn On RCS Messaging Between iPhone and Android",
+    title: "Turn On RCS Texting Between iPhone and Android",
     excerpt: "Learn what RCS messaging is and how to turn it on so texts between iPhone and Android include read receipts, better photo quality, and typing indicators.",
     category: "internet",
     tags: [
@@ -1229,7 +1229,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "upload-video-youtube-guide",
-    title: "How to Upload a Video to YouTube From Your Phone or Computer",
+    title: "How to Upload a Video to YouTube",
     excerpt: "Share home videos on YouTube with the right privacy setting so only the people you choose can see them. Step-by-step for phone and computer.",
     category: "internet",
     tags: [
@@ -1333,7 +1333,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "facebook-messenger-app-guide",
-    title: "How to Use Facebook Messenger to Send Messages and Make Video Calls",
+    title: "Facebook Messenger: Send Messages and Video Call",
     excerpt: "Facebook Messenger lets you send text messages, share photos, and make free video calls to friends and family — no phone plan minutes needed.",
     category: "internet",
     tags: [
@@ -1379,7 +1379,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "facetime-reactions-guide",
-    title: "How to Use FaceTime Reactions and Effects During a Video Call",
+    title: "FaceTime Reactions and Effects During a Call",
     excerpt: "FaceTime lets you send fun visual reactions — confetti, hearts, fireworks, and more — during calls. Here's how to trigger them with just a hand gesture.",
     category: "internet",
     tags: [
@@ -1419,7 +1419,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "gmail-help-me-write-gemini-ai",
-    title: "How to Use Gmail's \"Help Me Write\" AI to Draft Emails Faster",
+    title: "Gmail \"Help Me Write\": Draft Emails With AI",
     excerpt: "Gmail has a built-in AI button called \"Help Me Write.\" Type a few words about what you need and it drafts the full email. Here is how to use it.",
     category: "internet",
     tags: [
@@ -1653,7 +1653,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "whatsapp-status-guide",
-    title: "How to Use WhatsApp Status to Share Photos and Updates",
+    title: "Share Photos and Updates With WhatsApp Status",
     excerpt: "WhatsApp Status lets you share photos, videos, and text with your contacts that disappear after 24 hours — similar to stories on Facebook and Instagram.",
     category: "internet",
     tags: [
@@ -1696,7 +1696,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "facetime-android-link-guide",
-    title: "How to Video Call Android and Windows Users Using FaceTime",
+    title: "FaceTime With Android and Windows Users",
     excerpt: "FaceTime links let you invite anyone — Android or Windows users — to a FaceTime video call. Here's how to create a link and share it.",
     category: "internet",
     tags: [
@@ -1739,7 +1739,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "how-to-video-call-family-with-facetime-or-google-duo",
-    title: "How to Video Call Family and Friends (FaceTime, Google Meet, and More)",
+    title: "How to Video Call Family and Friends",
     excerpt: "A simple guide to starting a video call on iPhone, Android, or computer so you can see loved ones face to face, no matter what device they use.",
     category: "internet",
     tags: [
@@ -1780,7 +1780,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "facetime-shareplay-watch-together",
-    title: "How to Watch Movies and TV Together Over FaceTime Using SharePlay",
+    title: "Watch TV Together on FaceTime With SharePlay",
     excerpt: "SharePlay lets you and a family member watch the same movie at the same time on a FaceTime call. You each watch on your own device, fully synced.",
     category: "internet",
     tags: [
@@ -1964,7 +1964,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "ios-mail-app-categories-explained",
-    title: "iPhone Mail App \"Categories\": What They Are and How to Use Them",
+    title: "iPhone Mail Categories: What They Are",
     excerpt: "Your iPhone Mail app now sorts email into tabs like Primary, Transactions, and Promotions. Here is what each category means and how to move a misfiled email.",
     category: "internet",
     tags: [
@@ -2008,7 +2008,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "powerline-adapter-guide",
-    title: "Powerline Adapters: Get Fast Internet to Any Room Using Your Electrical Outlets",
+    title: "Powerline Adapters: Internet in Any Room",
     excerpt: "Powerline adapters send your internet signal through your home's electrical wiring — no new cables, no drilling, no technical setup required.",
     category: "internet",
     tags: [
@@ -2098,7 +2098,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "signal-safety-tips-guide",
-    title: "Signal App: Privacy Settings and Disappearing Messages",
+    title: "Signal App: Privacy and Disappearing Messages",
     excerpt: "Signal is one of the most private messaging apps available. Learn how to use disappearing messages, Note to Self, and key privacy settings.",
     category: "internet",
     tags: [
@@ -2189,7 +2189,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "fix-slow-internet-connection",
-    title: "What to Do When Your Internet Is Slow or Keeps Dropping",
+    title: "What to Do When Your Internet Is Slow",
     excerpt: "Slow or unreliable internet is frustrating but usually fixable. Walk through these steps to find the cause and get things running smoothly again.",
     category: "internet",
     tags: [
@@ -2236,7 +2236,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "wifi-analyzer-guide",
-    title: "Wi-Fi Analyzer Apps: Find the Strongest Spot and the Best Channel",
+    title: "Wi-Fi Analyzer Apps: Find the Strongest Signal",
     excerpt: "A Wi-Fi analyzer app shows you signal strength throughout your home and which Wi-Fi channels are congested.",
     category: "internet",
     tags: [
@@ -2282,7 +2282,7 @@ export const internetGuides: Guide[] = [
   },
   {
     slug: "wifi-extender-guide",
-    title: "Wi-Fi Range Extenders: When to Use One, Where to Place It, and How to Set It Up",
+    title: "Wi-Fi Extenders: When and How to Use One",
     excerpt: "A Wi-Fi range extender boosts your wireless signal into rooms where the connection is weak or drops out.",
     category: "internet",
     tags: [

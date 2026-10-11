@@ -3,7 +3,7 @@ import type { Guide } from './guides';
 export const safetyGuides: Guide[] = [
   {
     slug: "medicare-wellness-visit-scam-2026",
-    title: "2026 Medicare Wellness Visit Scam: How to Spot It and Hang Up",
+    title: "Medicare Wellness Visit Scam: Spot It, Hang Up",
     excerpt: "Callers pretending to be from Medicare are offering a \"free wellness visit\" to steal your number. Here is how to recognize and stop the scam.",
     category: "safety",
     tags: [
@@ -58,7 +58,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "after-a-loss-gentle-guide-to-spouse-digital-life",
-    title: "After a Loss: A Gentle Guide to Your Spouse's Digital Life",
+    title: "After a Loss: Your Spouse's Digital Life",
     excerpt: "A gentle, step-by-step guide for widows and widowers facing a spouse's phone, email, banking, and accounts. There is no rush and no right way.",
     category: "safety",
     tags: [
@@ -157,7 +157,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "ai-voice-scam-call-how-to-spot-and-defend",
-    title: "AI Voice Scam Calls — How to Spot Them and Protect Your Family",
+    title: "AI Voice Scam Calls: How to Spot Them",
     excerpt: "Scammers are using AI to clone voices from social media and call relatives pretending to be in trouble. Here is how to recognize the scam and stop it cold.",
     category: "safety",
     tags: [
@@ -212,7 +212,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "call-blocker-app-guide",
-    title: "Apps That Automatically Block Spam and Scam Calls: Hiya, RoboKiller, and Nomorobo",
+    title: "Apps That Block Spam and Scam Calls",
     excerpt: "Call-blocking apps like Hiya, RoboKiller, and Nomorobo screen incoming calls and automatically stop robocalls and scam calls before your phone even rings.",
     category: "safety",
     tags: [
@@ -301,7 +301,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "check-fraud-mail-theft-protection",
-    title: "Check Fraud and Mail Theft: How to Protect Your Paper Checks",
+    title: "Check Fraud and Mail Theft: Protect Your Checks",
     excerpt: "Check fraud and mail theft targeting seniors have risen sharply. Here is what check washing is, how to recognize it, and exactly how to protect yourself.",
     category: "safety",
     tags: [
@@ -353,7 +353,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "venmo-cash-app-scam-guide",
-    title: "Common Venmo and Cash App Scams — and How to Avoid Them",
+    title: "Common Venmo and Cash App Scams to Avoid",
     excerpt: "Payment apps are convenient but attract scammers. Learn the most common tricks used on Venmo, Cash App, and Zelle — and how to stay protected.",
     category: "safety",
     tags: [
@@ -392,7 +392,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "va-benefits-impersonation-scam",
-    title: "Fake \"VA Benefits\" Calls: How to Tell a Real Veterans Affairs Contact From a Scam",
+    title: "Fake \"VA Benefits\" Calls: How to Spot the Scam",
     excerpt: "Scammers pose as VA staff and charge veterans for help that is always free. Here is how to recognize the calls and where to get real help.",
     category: "safety",
     tags: [
@@ -438,7 +438,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "random-sounds-chinese-voices-from-laptop-what-to-do",
-    title: "Hearing Random Sounds or Voices From Your Laptop? Here's What To Do",
+    title: "Strange Sounds or Voices From Your Laptop?",
     excerpt: "Unexplained audio from an idle laptop can be a sign of malware or a compromised app. Here's how to investigate and secure your machine.",
     category: "safety",
     tags: [
@@ -520,7 +520,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "block-political-text-messages-iphone-2026",
-    title: "How to Block Political Text Messages on Your iPhone in 2026",
+    title: "How to Block Political Texts on iPhone",
     excerpt: "Stop the flood of political fundraising and campaign texts on your iPhone — three settings that cut 95% of them out.",
     category: "safety",
     tags: [
@@ -663,7 +663,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "check-personal-data-leaks",
-    title: "How to Check If Your Personal Information Has Been Leaked Online",
+    title: "Check if Your Personal Data Has Leaked Online",
     excerpt: "Find out if your email, password, or personal data appears in known data breaches — and what to do about it.",
     category: "safety",
     tags: [
@@ -711,7 +711,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "check-windows-malware",
-    title: "How to Check Your Windows Computer for Malware (Free)",
+    title: "Check Your Windows PC for Malware for Free",
     excerpt: "Run a free malware scan on your Windows PC using tools you already have — Microsoft Defender and Malwarebytes Free.",
     category: "safety",
     tags: [
@@ -754,7 +754,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "facebook-account-recovery-guide",
-    title: "How to Get Back Into a Locked or Hacked Facebook Account",
+    title: "Get Back Into a Locked or Hacked Facebook",
     excerpt: "If you're locked out of Facebook or your account was hacked, Facebook's official recovery process can help you get back in and secure your account.",
     category: "safety",
     tags: [
@@ -858,7 +858,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "email-security-best-practices",
-    title: "How to Keep Your Email Account Safe from Hackers and Scammers",
+    title: "How to Keep Your Email Account Safe",
     excerpt: "Your email account is the key to all your other accounts. Here's how to lock it down with a strong password, two-factor authentication, and smart habits.",
     category: "safety",
     tags: [
@@ -996,7 +996,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "how-to-recognize-email-phishing-2026",
-    title: "How to Recognize a Phishing Email — 7 Red Flags to Check Every Time",
+    title: "Phishing Emails: 7 Red Flags to Check",
     excerpt: "Phishing emails try to trick you into giving away your password or personal information. Learn the 7 warning signs and how to protect yourself.",
     category: "safety",
     tags: [
@@ -1183,7 +1183,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "recognize-grandparent-scam-2026",
-    title: "How to Recognize the Grandparent Scam (and What to Say if You Get the Call)",
+    title: "How to Recognize the Grandparent Scam",
     excerpt: "A frantic call from someone claiming to be your grandchild in trouble is almost always a scam. Here is exactly how to tell — and what to say.",
     category: "safety",
     tags: [
@@ -1276,7 +1276,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "reset-your-smartphone-ad-tracking-id-for-privacy",
-    title: "How to Reset Your Smartphone's Ad Tracking ID for More Privacy",
+    title: "Reset Your Phone's Ad Tracking ID",
     excerpt: "Your phone has a unique advertising ID that follows you across apps. You can reset it — or turn it off entirely — in just a few taps.",
     category: "safety",
     tags: [
@@ -1310,7 +1310,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "reverse-image-search-scams",
-    title: "How to Reverse Image Search to Spot Fake Photos and Scams",
+    title: "Reverse Image Search to Spot Fake Photos",
     excerpt: "Use reverse image search to verify if someone is using a real photo or a stolen one — great for catching romance scams and fake profiles.",
     category: "safety",
     tags: [
@@ -1402,7 +1402,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "facebook-privacy-checkup",
-    title: "How to Review and Tighten Your Facebook Privacy Settings",
+    title: "How to Tighten Your Facebook Privacy Settings",
     excerpt: "Facebook's default settings share more than most people realize — a quick privacy checkup takes 10 minutes and makes a big difference.",
     body: "Facebook's default settings are designed for sharing, not for privacy. When you first create an account, many things — your posts, your friend list, your phone number — may be visible to strangers, not only your friends. Changing these settings takes about 10 minutes and makes a meaningful difference in who can see your information.\n\nFacebook actually has a built-in tool called Privacy Checkup that walks you through the most important settings. To find it: tap the three horizontal lines (menu) on your phone, go to Settings & Privacy, then tap Privacy Checkup. It walks you through five categories: who can see your posts, how people find you, data from other apps, ad settings, and profile information.\n\nThe most important setting to change is who can see your future posts. The default is often \"Friends,\" but older accounts may still be set to \"Public.\" In Privacy Checkup, change your default audience to \"Friends\" so strangers cannot see what you post.\n\nYour phone number and email address deserve protection too. In Privacy Checkup or Settings > Privacy > Your Facebook Information, set \"Who can look you up using your phone number\" to \"Friends of Friends\" or \"Only Me.\" The same goes for your email address.\n\nYour friends list is often public by default, which lets strangers see everyone you know — useful information for scammers. Go to your profile, tap Friends, then tap the pencil icon to set your friends list visibility to \"Only Me\" or \"Friends.\"\n\nOff-Facebook Activity is a lesser-known setting that reveals how many websites and apps share your browsing data with Facebook. Go to Settings > Your Facebook Information > Off-Facebook Activity to review this list. You can clear your history and limit future tracking.\n\nFor ad personalization, go to Settings > Ads > Ad Settings. Here you can reduce how much Facebook uses your data to target ads — including data from data brokers and your activity off Facebook.\n\nThird-party apps connected to your Facebook account can read your profile and post on your behalf. Go to Settings > Apps and Websites to see the full list. Remove any app you no longer use.\n\nTwo-factor authentication is critical. Go to Settings > Security and Login > Two-Factor Authentication and turn it on using your phone number or an authenticator app.\n\nFinally, you can download everything Facebook has stored about you. Go to Settings > Your Facebook Information > Download Your Information to request a full copy. This shows you exactly what data Facebook holds.",
     category: "safety",
@@ -1445,7 +1445,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "apple-google-two-factor-recovery-codes",
-    title: "How to Save Backup Codes So You're Never Locked Out of Your Account",
+    title: "Save Backup Codes So You're Never Locked Out",
     excerpt: "Generate and safely store two-factor authentication backup codes for your Apple ID or Google account before you lose your phone.",
     category: "safety",
     tags: [
@@ -1596,7 +1596,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "how-to-set-up-emergency-contacts-live-alone",
-    title: "How to Set Up Emergency Contacts When You Live Alone",
+    title: "Emergency Contacts When You Live Alone",
     excerpt: "A reassuring, step-by-step plan for making sure help can find you fast if you fall, take ill, or cannot answer the door.",
     category: "safety",
     tags: [
@@ -1701,7 +1701,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "child-safety-online",
-    title: "How to Set Up Parental Controls and Keep Kids Safe Online",
+    title: "Parental Controls to Keep Kids Safe Online",
     excerpt: "Practical steps to protect children from online dangers while still letting them learn and explore.",
     category: "safety",
     tags: [
@@ -1741,7 +1741,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "windows-family-safety-guide",
-    title: "How to Set Up Parental Controls on Windows with Microsoft Family Safety",
+    title: "Parental Controls on Windows: Microsoft Family",
     excerpt: "Microsoft Family Safety lets you set screen time limits, content filters, and spending limits for children using Windows — here's how to set it up.",
     category: "safety",
     tags: [
@@ -1831,7 +1831,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "apple-google-trusted-contacts-account-recovery",
-    title: "How to Set Up Trusted Contacts for Account Recovery",
+    title: "Set Up Trusted Contacts for Account Recovery",
     excerpt: "Add a family member as a trusted contact so you never get permanently locked out of your Apple or Google account if you forget your password.",
     category: "safety",
     tags: [
@@ -2335,7 +2335,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "android-scam-call-detection-feature",
-    title: "How to Turn On Android's Built-In Scam Call Detection",
+    title: "Turn On Android's Scam Call Detection",
     excerpt: "Google Phone app can now listen for scam patterns during a call and warn you in real time. Here's how to turn the feature on.",
     category: "safety",
     tags: [
@@ -2461,7 +2461,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "stolen-device-protection-iphone-turn-on-2026",
-    title: "iPhone Stolen Device Protection — Turn It On Today (2026 Guide)",
+    title: "Turn On iPhone Stolen Device Protection",
     excerpt: "A thief who watches you type your passcode can lock you out of your accounts in minutes. Apple's free Stolen Device Protection stops that cold.",
     category: "safety",
     tags: [
@@ -2639,7 +2639,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "online-shopping-safety",
-    title: "Online Shopping Safety: How to Buy Without Getting Scammed",
+    title: "Online Shopping: How to Buy Without Scams",
     excerpt: "Shop online with confidence — learn how to spot fake websites, use safe payment methods, and get your money back if things go wrong.",
     category: "safety",
     thumbnailEmoji: "🛒",
@@ -2694,7 +2694,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "social-media-privacy-checkup",
-    title: "Run a Privacy Checkup on Facebook, Instagram, LinkedIn, and X",
+    title: "Privacy Checkup for Facebook, Instagram, and X",
     excerpt: "Spend 30 minutes reviewing what's public on your social accounts. Most people are surprised by how much has changed since they first signed up.",
     category: "safety",
     tags: [
@@ -2774,7 +2774,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "emergency-contacts-medical-info-phone-setup",
-    title: "Setting Up Emergency Contacts and Medical Info on Your Phone",
+    title: "Set Up Emergency Contacts and Medical ID",
     excerpt: "Set up Medical ID, Emergency SOS, and ICE contacts on iPhone or Android so first responders can help faster — even when your phone is locked.",
     category: "safety",
     tags: [
@@ -2864,7 +2864,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "two-factor-auth",
-    title: "Setting Up Two-Factor Authentication (2FA) on Any Account",
+    title: "How to Set Up Two-Factor Authentication (2FA)",
     excerpt: "Add a second layer of security to your most important accounts. This one change stops most account takeovers cold.",
     category: "safety",
     tags: [
@@ -3011,7 +3011,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "unpaid-toll-text-scam",
-    title: "That \"Unpaid Toll\" Text Is Almost Certainly Fake — Here Is How to Check",
+    title: "That \"Unpaid Toll\" Text Is Almost Certainly Fake",
     excerpt: "Texts demanding a small toll payment are one of the most common scams in the country. Here is how to verify a toll balance safely.",
     category: "safety",
     tags: [
@@ -3061,7 +3061,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "fake-browser-update-popup-how-to-spot",
-    title: "That \"Update Your Browser\" Popup Is Probably a Scam",
+    title: "\"Update Your Browser\" Popups Are Often Scams",
     excerpt: "Fake browser update warnings have become the #1 way malware spreads in 2026. Here is how to spot them and what to do.",
     category: "safety",
     tags: [
@@ -3112,7 +3112,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "toll-road-unpaid-text-scam-2026",
-    title: "The \"Unpaid Toll\" Text Scam Is Back in 2026: How to Spot and Stop It",
+    title: "The 2026 Unpaid Toll Text Scam: Spot and Stop It",
     excerpt: "Texts claiming you owe a toll fee are flooding U.S. phones again in 2026. Here is how to recognize the scam and protect yourself.",
     category: "safety",
     tags: [
@@ -3167,7 +3167,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "fake-geek-squad-renewal-email-scam",
-    title: "The Fake Geek Squad Renewal Email Scam: How to Spot It",
+    title: "The Fake Geek Squad Renewal Email Scam",
     excerpt: "An email claiming your Best Buy Geek Squad plan renewed for $400+ is one of the most reported tech scams right now. Here is how to tell it from a real receipt.",
     category: "safety",
     tags: [
@@ -3211,7 +3211,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "jury-duty-phone-scam-how-to-hang-up",
-    title: "The Jury Duty Phone Scam — Why It Works and How to Hang Up",
+    title: "The Jury Duty Phone Scam: Why It Works",
     excerpt: "The fake jury duty warrant scam has scammed seniors out of over $200 million since 2022. Here is why it feels real and how to stop it.",
     category: "safety",
     tags: [
@@ -3264,7 +3264,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "ai-voice-cloning-grandparent-scam",
-    title: "The New \"Grandparent Scam\": How AI Voice Cloning Fools Families",
+    title: "AI Voice Cloning and the Grandparent Scam",
     excerpt: "Scammers now clone a real family member's voice from a few seconds of audio. Here is how the scam works and how to protect yourself.",
     category: "safety",
     tags: [
@@ -3308,7 +3308,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "smart-tv-ad-tracking-turn-off-2026",
-    title: "Turn Off Smart TV Ad Tracking — Vizio, Samsung, LG, Roku",
+    title: "Turn Off Smart TV Ad Tracking",
     excerpt: "Your TV is watching you. Every major smart TV tracks what you watch and sells it. Here is how to switch the spying off.",
     category: "safety",
     tags: [
@@ -3364,7 +3364,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "two-factor-authentication-extra-lock",
-    title: "Two-Factor Authentication: The Extra Lock on Your Digital Door",
+    title: "Two-Factor Login: An Extra Lock on Your Door",
     excerpt: "Two-factor authentication adds a second layer to your accounts, like needing two keys instead of one. What it is, why it matters, how to set it up.",
     category: "safety",
     tags: [
@@ -3485,7 +3485,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "password-manager-basics-for-beginners",
-    title: "What Is a Password Manager, and Do You Actually Need One?",
+    title: "Password Managers: Do You Need One?",
     excerpt: "A password manager remembers strong, unique passwords for every account so you do not have to. Here is what one does and how to start using it.",
     category: "safety",
     tags: [
@@ -3636,7 +3636,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "courier-pickup-and-gold-bar-scam",
-    title: "When a Scammer Sends Someone to Your Door: The Courier and Gold Bar Scam",
+    title: "The Courier and Gold Bar Scam",
     excerpt: "A fast-growing scam ends with a stranger collecting cash or gold from your home. Here is how it starts and how to stop it early.",
     category: "safety",
     tags: [
@@ -3686,7 +3686,7 @@ export const safetyGuides: Guide[] = [
   },
   {
     slug: "zelle-venmo-scam-refund-rules-2026",
-    title: "Zelle and Venmo Scam Refunds: What the Rules Actually Say in 2026",
+    title: "Zelle and Venmo Scam Refunds: The 2026 Rules",
     excerpt: "If you were tricked into sending money on Zelle or Venmo, here's what banks are and aren't required to refund, and how to report it.",
     category: "safety",
     tags: [

@@ -3,7 +3,7 @@ import type { Guide } from './guides';
 export const appsGuides: Guide[] = [
   {
     slug: "choose-best-smart-speaker",
-    title: "Alexa Echo, Google Nest, or Apple HomePod: Which Smart Speaker Is Right for You",
+    title: "Echo, Nest, or HomePod: Which Smart Speaker?",
     excerpt: "Three major smart speakers serve different households. Here's how to choose based on what devices you already own and what you'll use it for.",
     category: "apps",
     tags: [
@@ -46,7 +46,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "audacity-beginners",
-    title: "Audacity: Free Audio Recording and Editing Software for Windows and Mac",
+    title: "Audacity: Free Audio Recording and Editing",
     excerpt: "Audacity lets you record from a microphone, edit audio clips, remove background noise, and export finished files — all for free on Windows or Mac.",
     category: "apps",
     tags: [
@@ -90,7 +90,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "cable-to-streaming-switch-cost-comparison-2026",
-    title: "Cancel Cable in 2026 — A Senior's Cost & Channel Guide",
+    title: "Cancel Cable: A Senior's Cost and Channel Guide",
     excerpt: "Cable still costs $200/month for most people. Here is the streaming math, the channels you actually get, and the catches.",
     category: "apps",
     tags: [
@@ -149,7 +149,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "chatbooks-photo-books",
-    title: "Chatbooks: Turn Your Phone Photos Into Printed Photo Books Automatically",
+    title: "Chatbooks: Turn Phone Photos Into Photo Books",
     excerpt: "Chatbooks connects to your camera roll or social media and automatically creates printed photo books shipped to your door.",
     category: "apps",
     tags: [
@@ -198,7 +198,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "garageband-iphone-guide",
-    title: "GarageBand for iPhone and iPad: Make Music With Drums, Keys, Guitar, and Loops",
+    title: "GarageBand for iPhone and iPad: Make Music",
     excerpt: "GarageBand turns your iPhone or iPad into a full music studio — free, with no experience required to start making your own beats and recordings.",
     category: "apps",
     tags: [
@@ -242,7 +242,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "gmail-manage-subscriptions-2026-cleanup",
-    title: "Gmail Manage Subscriptions — Clean Out Your Inbox in 10 Minutes",
+    title: "Gmail Manage Subscriptions: Clean Your Inbox",
     excerpt: "Gmail's new Manage Subscriptions page shows every mailing list you are on. Here is how to use it to unsubscribe in bulk.",
     category: "apps",
     tags: [
@@ -294,7 +294,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "fix-gmail-not-working-in-outlook-apple-mail",
-    title: "Gmail Stopped Working in Outlook or Apple Mail? Here Is How to Fix It",
+    title: "Gmail Stopped Working in Outlook or Apple Mail?",
     excerpt: "If Gmail suddenly stopped syncing in Outlook or Apple Mail, Google's updated sign-in requirement is likely why. Re-adding your account takes about 3 minutes.",
     category: "apps",
     tags: [
@@ -344,7 +344,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "gmail-tips-tricks",
-    title: "Gmail Tips & Tricks: Organize, Search & Master Your Inbox",
+    title: "Gmail Tips: Organize and Search Your Inbox",
     excerpt: "Take control of your Gmail — labels, filters, search tricks, undo send, and keeping your inbox clean.",
     category: "apps",
     tags: [
@@ -385,7 +385,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "google-family-group-shared-photos-setup",
-    title: "Google Family Group — Share Photos and Subscriptions With the People You Love",
+    title: "Google Family Group: Share Photos and Plans",
     excerpt: "A Google Family Group lets you share Google One storage, YouTube Premium, and photo albums with up to 5 family members. Here is how to set it up.",
     category: "apps",
     tags: [
@@ -445,7 +445,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "netflix-offline-downloads-guide",
-    title: "How to Download Netflix Shows to Watch Without Wi-Fi",
+    title: "Download Netflix Shows to Watch Without Wi-Fi",
     excerpt: "Netflix lets you download movies and shows to your phone or tablet to watch without internet — good for travel, road trips, or spotty service.",
     category: "apps",
     tags: [
@@ -490,7 +490,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "google-photos-edit-guide",
-    title: "How to Edit Photos in Google Photos: Brightness, Contrast, Crop, and Magic Eraser",
+    title: "How to Edit Photos in Google Photos",
     excerpt: "Use the free editing tools in Google Photos to improve your pictures — adjust lighting, crop, apply filters, and remove unwanted objects with Magic Eraser.",
     category: "apps",
     tags: [
@@ -541,7 +541,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "photo-editing-phone",
-    title: "How to Edit Photos on Your Phone: Simple Fixes & Filters",
+    title: "How to Edit Photos on Your Phone",
     excerpt: "Make your photos look amazing with free built-in editing tools — crop, brighten, add filters, and remove unwanted objects.",
     category: "apps",
     tags: [
@@ -625,7 +625,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "walmart-photo-center-guide",
-    title: "How to Order Photo Prints and Gifts Through Walmart Photo Center",
+    title: "Order Prints and Gifts at Walmart Photo Center",
     excerpt: "Walmart Photo Center lets you upload photos and order prints, photo books, canvas prints, and personalized gifts for pickup or delivery.",
     category: "apps",
     tags: [
@@ -861,7 +861,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "streaming-device-setup",
-    title: "How to Set Up a Streaming Device: Roku, Fire Stick & Chromecast",
+    title: "Set Up a Roku, Fire Stick, or Chromecast",
     excerpt: "Get Netflix, YouTube, and more on your TV — set up and use Roku, Amazon Fire Stick, Chromecast, or Apple TV.",
     category: "apps",
     tags: [
@@ -902,7 +902,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "tv-antenna-setup-cord-cutting-2026",
-    title: "How to Set Up a TV Antenna in 2026: Free Local Channels in 20 Minutes",
+    title: "Set Up a TV Antenna for Free Local Channels",
     excerpt: "A modern indoor antenna picks up 30 to 80 free channels in HD — no cable bill. Plain-language setup for any TV in your home.",
     category: "apps",
     tags: [
@@ -962,7 +962,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "fire-tv-stick-guide",
-    title: "How to Set Up an Amazon Fire TV Stick and Start Streaming",
+    title: "How to Set Up an Amazon Fire TV Stick",
     excerpt: "Plug the Fire TV Stick into your TV, connect to Wi-Fi, sign in to your Amazon account, and start watching your favorite streaming apps.",
     category: "apps",
     tags: [
@@ -1008,7 +1008,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "smart-speaker-guide",
-    title: "How to Set Up and Use a Smart Speaker (Alexa, Google Home)",
+    title: "Set Up a Smart Speaker: Alexa or Google Home",
     excerpt: "Get the most from your Amazon Echo or Google Home — setup, voice commands, routines, and smart home control.",
     category: "apps",
     tags: [
@@ -1095,7 +1095,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "set-up-google-photos-automatic-backup-2026",
-    title: "How to Set Up Google Photos to Automatically Back Up Your Photos",
+    title: "Back Up Your Photos Automatically With Google",
     excerpt: "Never lose a photo again. Turn on Google Photos automatic backup on iPhone or Android and access your pictures from any device.",
     category: "apps",
     tags: [
@@ -1152,7 +1152,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "google-tv-setup-guide",
-    title: "How to Set Up Google TV (Chromecast with Google TV)",
+    title: "How to Set Up Google TV (Chromecast)",
     excerpt: "Google TV is a smart streaming device that plugs into your TV's HDMI port and gives you access to Netflix, YouTube, HBO.",
     body: "Google TV is Google's streaming platform, available as a standalone device (Chromecast with Google TV) or built into certain smart TVs. The Chromecast with Google TV is a small dongle that plugs into any TV's HDMI port and transforms it into a smart TV.\n\nThe device costs $29.99 (HD version) or $49.99 (4K version) and provides access to thousands of streaming apps including Netflix, YouTube, HBO Max, Disney+, Hulu, Paramount+, and more. It also integrates with Google services — Gmail, Google Photos, and Google Assistant — and works with Google Home smart home devices.\n\n**Key advantages of Google TV over basic Chromecast**: Earlier Chromecasts required you to cast content from your phone. Google TV has a full remote control and an on-screen interface. So you can browse and watch without needing your phone at all.\n\nGoogle TV features a personalized home screen that pulls in recommendations from multiple streaming services in one place. Rather than opening each app separately to look for something to watch, Google TV shows a combined \"For You\" feed based on your preferences.\n\nGoogle Assistant is built in. Press the microphone button on the remote and say \"Show me comedies on Netflix\" or \"What is the weather tomorrow?\" to search and get information hands-free.\n\nSetup takes about 10 minutes and requires a smartphone (Android or iPhone), a Google account, and your home Wi-Fi password.",
     category: "apps",
@@ -1194,7 +1194,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "how-to-share-netflix-with-family-under-new-rules",
-    title: "How to Share Netflix With Family Under the New Password Sharing Rules",
+    title: "Sharing Netflix With Family Under the New Rules",
     excerpt: "Netflix changed its sharing rules — learn the right way to add a household member or set up a new account without paying more than you need to.",
     category: "apps",
     tags: [
@@ -1290,7 +1290,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "whatsapp-transfer-new-phone",
-    title: "How to Transfer WhatsApp to a New Phone Without Losing Messages",
+    title: "Move WhatsApp to a New Phone Without Losing Chats",
     excerpt: "Moving to a new iPhone or Android? Back up your WhatsApp chats and photos first so nothing gets lost when you switch.",
     category: "apps",
     tags: [
@@ -1342,7 +1342,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "how-to-turn-on-closed-captions-on-netflix-hulu-and-youtube-2026",
-    title: "How to Turn On Closed Captions on Netflix, Hulu, and YouTube",
+    title: "Turn On Captions on Netflix, Hulu, and YouTube",
     excerpt: "How to turn on closed captions for Netflix, Hulu, YouTube, Disney+, and Amazon Prime Video — and how to make the on-screen text larger.",
     category: "apps",
     tags: [
@@ -1395,7 +1395,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "use-airpods-with-iphone-mac-and-tv",
-    title: "How to Use AirPods with iPhone, Mac, Apple TV, and Even Some Hearing Aids",
+    title: "Use AirPods With iPhone, Mac, and Apple TV",
     excerpt: "AirPods do more than music. They work as hearing assistants, take phone calls hands-free, and stream TV audio privately. Here is how.",
     category: "apps",
     tags: [
@@ -1494,7 +1494,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "how-to-use-facebook",
-    title: "How to Use Facebook: Connecting with Friends & Family",
+    title: "How to Use Facebook With Friends and Family",
     excerpt: "A gentle guide to setting up Facebook, finding friends, posting updates, and using Marketplace safely.",
     category: "apps",
     tags: [
@@ -1540,7 +1540,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "microsoft-learn-guide",
-    title: "How to Use Microsoft Learn for Free Training on Windows and Microsoft 365",
+    title: "Microsoft Learn: Free Windows and Office Training",
     excerpt: "Microsoft Learn offers free courses on Windows, Microsoft 365, Excel, Word, and more — directly from Microsoft. No account required to start.",
     category: "apps",
     tags: [
@@ -1624,7 +1624,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "sling-tv-guide",
-    title: "How to Use Sling TV: America's Most Affordable Live TV Streaming",
+    title: "How to Use Sling TV for Low-Cost Live TV",
     excerpt: "Sling TV is one of the cheapest ways to get live TV streaming — starting at $40/month with no contract.",
     body: "Sling TV is a live TV streaming service built for people who want cable channels without a cable bill. It is one of the most affordable options on the market, starting at $40 per month with no contracts and no equipment to return.\n\nSling offers two base packages, and understanding the difference between them is the most important step.\n\nSling Orange costs $40 per month and focuses on sports and family entertainment. It includes ESPN, ESPN2, Disney Channel, and Freeform, plus news and lifestyle channels like CNN, HGTV, and Food Network. It allows one stream at a time, which means only one person in your household can watch at once.\n\nSling Blue costs $45 per month and leans toward news and entertainment. It includes Fox News, MSNBC, NBC Sports, Comedy Central, and more. It allows three simultaneous streams, making it better for households where different people want to watch different things. If you want both packages, Sling offers them together for $60 per month.\n\nYou can add channel extras to either package for around $6–11 per month each. Sports Extra adds NFL Network and more ESPN channels. Comedy Extra adds more comedy channels. News Extra adds more news networks. HBO, Showtime, and Starz are also available as add-ons.\n\nOne important limitation to know before signing up: Sling TV does not include local ABC, CBS, NBC, or Fox affiliates in most markets. If you want to watch local news or network primetime shows, you will need a separate over-the-air antenna (available for $20–40 at most electronics stores) to pick up those channels for free.\n\nSling includes 50 hours of free cloud DVR storage with all plans. Recordings are available for 30 days.\n\nTo get started, go to sling.com and sign up. A free trial is sometimes available. Download the Sling app on Roku, Amazon Fire TV, Apple TV, iPhone, Android, smart TVs, or watch in a browser. The interface shows a live guide, your recorded content, and on-demand shows available in each channel.\n\nFor sports fans on a budget who do not need local channels, Sling Orange + Sports Extra at around $51 per month delivers strong sports coverage at a low price compared to other live TV services.",
     category: "apps",
@@ -1667,7 +1667,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "outlook-mobile-guide",
-    title: "How to Use the Microsoft Outlook App on iPhone or Android",
+    title: "How to Use the Outlook App on Your Phone",
     excerpt: "The Outlook mobile app combines email, calendar, and contacts in one place. It works with Gmail too — not just Outlook accounts.",
     category: "apps",
     tags: [
@@ -1711,7 +1711,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "how-to-use-whatsapp",
-    title: "How to Use WhatsApp: Setup, Messaging & Video Calls",
+    title: "How to Use WhatsApp: Messages and Video Calls",
     excerpt: "Get started with WhatsApp — the world's most popular messaging app for free texts, calls, and video chats.",
     category: "apps",
     tags: [
@@ -1753,7 +1753,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "youtube-guide",
-    title: "How to Use YouTube: Search, Watch, Subscribe & Stay Safe",
+    title: "How to Use YouTube: Search, Watch, Subscribe",
     excerpt: "Master YouTube — find videos, subscribe to channels, create playlists, and avoid scams and misinformation.",
     category: "apps",
     tags: [
@@ -1795,7 +1795,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "inshot-guide",
-    title: "InShot: Trim, Cut, Add Music, Text, and Filters to Video on Your Phone",
+    title: "InShot: Edit Videos on Your Phone",
     excerpt: "InShot is a free mobile video editor for iPhone and Android that makes it fast to trim footage, add music, put text on screen, and export for social media.",
     category: "apps",
     tags: [
@@ -1839,7 +1839,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "microsoft-to-do-tips",
-    title: "Microsoft To Do Tips: Get the Most Out of This Free Task Manager Built Into Windows",
+    title: "Microsoft To Do: Tips for the Free Task App",
     excerpt: "Microsoft To Do is a free, built-in task manager that syncs across your phone, PC, and browser. Learn tips to organize tasks, set reminders, and share lists.",
     category: "apps",
     tags: [
@@ -1884,7 +1884,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "nest-doorbell-battery-2nd-gen-setup",
-    title: "Nest Doorbell (Battery, 2nd Gen) — Setup Walkthrough in 30 Minutes",
+    title: "How to Set Up a Nest Doorbell (Battery)",
     excerpt: "Google's newest wireless video doorbell installs without wiring. Here is how to mount it, connect to WiFi, and get useful notifications.",
     category: "apps",
     tags: [
@@ -1949,7 +1949,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "netflix-account-sharing-rules-2026",
-    title: "Netflix Account Sharing in 2026 — What Costs Extra and What Does Not",
+    title: "Netflix Account Sharing: What Costs Extra",
     excerpt: "Netflix cracked down on password sharing in 2023. Here is what the rules are today and how to legally share your account with family.",
     category: "apps",
     tags: [
@@ -2003,7 +2003,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "streaming-service-comparison-guide",
-    title: "Netflix vs Hulu vs Disney+ vs Max: Which Streaming Service Is Right for You",
+    title: "Netflix vs Hulu vs Disney+ vs Max Compared",
     excerpt: "There are dozens of streaming services now, but most people only need one or two. This guide breaks down what each one offers and what it costs.",
     category: "apps",
     tags: [
@@ -2044,7 +2044,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "picsart-guide",
-    title: "PicsArt: Photo Editing, Collage Making, and AI Art Generation in One Free App",
+    title: "PicsArt: Free Photo Editing and Collages",
     excerpt: "PicsArt combines photo editing tools, a sticker library, collage templates, and AI image generation — all in one free app for iPhone and Android.",
     category: "apps",
     tags: [
@@ -2087,7 +2087,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "pixlr-guide",
-    title: "Pixlr E: Edit Photos in Your Browser With No Software Download or Account Needed",
+    title: "Pixlr E: Edit Photos in Your Browser for Free",
     excerpt: "Pixlr E is a free, browser-based photo editor with Photoshop-style tools — layers, selection tools, and healing brush — with nothing to install.",
     category: "apps",
     tags: [
@@ -2338,7 +2338,7 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "zoom-complete-guide",
-    title: "Zoom Made Simple: Join, Host & Troubleshoot Video Calls",
+    title: "Zoom Basics: Join, Host, and Fix Video Calls",
     excerpt: "Everything you need to know about Zoom — joining meetings, hosting your own, screen sharing, and fixing common issues.",
     category: "apps",
     tags: [

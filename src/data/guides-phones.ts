@@ -3,7 +3,7 @@ import type { Guide } from './guides';
 export const phonesGuides: Guide[] = [
   {
     slug: "how-to-fix-airdrop-not-working-iphone-2026",
-    title: "AirDrop Not Working on Your iPhone? Here Is How to Fix It in 2026",
+    title: "AirDrop Not Working on iPhone? How to Fix It",
     excerpt: "A plain-English checklist for the most common AirDrop problems on iPhone in 2026 — most fixes take less than a minute.",
     category: "phones",
     tags: [
@@ -57,7 +57,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "android-tablet-seniors-guide",
-    title: "Android Tablets for Seniors: Samsung Galaxy Tab Setup and Tips",
+    title: "Set Up a Samsung Galaxy Tab: Tips for Seniors",
     excerpt: "How to set up a Samsung Galaxy Tab or similar Android tablet, find and download apps, and get comfortable using it every day.",
     category: "phones",
     tags: [
@@ -103,7 +103,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "android-voice-access-guide",
-    title: "Android Voice Access: Control Your Android Phone Hands-Free by Speaking",
+    title: "Voice Access: Control Android by Speaking",
     excerpt: "Voice Access lets you control every part of your Android phone using spoken commands — open apps, tap buttons, scroll, and type without touching the screen.",
     category: "phones",
     tags: [
@@ -149,7 +149,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "hidden-accessibility-features-your-phone-already-has",
-    title: "Hidden Accessibility Features Your Phone Already Has",
+    title: "Hidden Accessibility Features on Your Phone",
     excerpt: "Free features hiding in your iPhone or Android settings — bigger text, voice commands, read-aloud, a magnifier, live captions, and much more.",
     category: "phones",
     tags: [
@@ -261,7 +261,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "icloud-photos-explained",
-    title: "How iCloud Photos Works and How to Manage Your Storage",
+    title: "How iCloud Photos Works and Uses Storage",
     excerpt: "iCloud Photos keeps all your iPhone photos backed up and synced across your Apple devices — but it can fill up your iCloud storage.",
     category: "phones",
     tags: [
@@ -346,7 +346,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "add-email-account-iphone",
-    title: "How to Add Gmail, Yahoo, or Outlook to iPhone's Mail App",
+    title: "Add Gmail, Yahoo, or Outlook to iPhone Mail",
     excerpt: "iPhone's built-in Mail app can show all your email accounts in one place. Here's how to add Gmail, Yahoo Mail, or Outlook in a few easy steps.",
     category: "phones",
     tags: [
@@ -389,7 +389,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "ios-widget-guide",
-    title: "How to Add Widgets to Your iPhone or iPad Home Screen",
+    title: "How to Add Widgets to iPhone or iPad",
     excerpt: "Widgets show live info — weather, calendar, battery — right on your home screen. Here is how to add and arrange them on iOS 17 and later.",
     category: "phones",
     tags: [
@@ -479,7 +479,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "backup-contacts-android",
-    title: "How to Back Up Your Contacts on Android So You Never Lose Them",
+    title: "How to Back Up Your Contacts on Android",
     excerpt: "Your contacts are too important to lose. Learn how to automatically back them up to Google and save a copy to your phone storage.",
     category: "phones",
     tags: [
@@ -934,7 +934,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "google-photos-locked-folder",
-    title: "How to Hide Photos in Google Photos Using Locked Folder",
+    title: "Hide Photos in Google Photos With Locked Folder",
     excerpt: "Google Photos has a Locked Folder feature that lets you store sensitive photos and videos behind your fingerprint or PIN — hidden from your main photo library.",
     category: "phones",
     tags: [
@@ -979,7 +979,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "android-font-size-guide",
-    title: "How to Increase Font Size and Display Size on Your Android Phone",
+    title: "Make Text Bigger on Your Android Phone",
     excerpt: "Android phones have simple settings to make text and everything on screen much larger. Learn how to adjust font size and display size in just a few taps.",
     category: "phones",
     tags: [
@@ -1063,7 +1063,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "imovie-basics-guide",
-    title: "How to Make a Simple Video With iMovie on iPhone or iPad",
+    title: "Make a Simple Video With iMovie on iPhone",
     excerpt: "iMovie is a free Apple app that lets you trim clips, add titles and music, and share polished videos — no experience needed.",
     category: "phones",
     tags: [
@@ -1113,7 +1113,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "iphone-display-zoom-guide",
-    title: "How to Make Everything Bigger on iPhone with Display Zoom",
+    title: "Make Everything Bigger With iPhone Display Zoom",
     excerpt: "iPhone's Display Zoom feature enlarges the entire interface — text, icons, and buttons — so your phone is more comfortable to use without squinting.",
     category: "phones",
     tags: [
@@ -1203,7 +1203,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "apple-id-manage-guide",
-    title: "How to Manage Your Apple ID: Password, Payment, and Privacy",
+    title: "Manage Your Apple ID: Password and Payment",
     excerpt: "Your Apple ID is the key to your iPhone, iCloud, and all Apple services. Here's how to update your password, manage payment methods.",
     category: "phones",
     tags: [
@@ -1378,7 +1378,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "restore-android-backup",
-    title: "How to Restore Your Android Phone from a Google Backup",
+    title: "Restore Your Android Phone From a Google Backup",
     excerpt: "When setting up a new Android phone, signing into your Google account can restore your apps, contacts, and settings automatically.",
     category: "phones",
     tags: [
@@ -1421,7 +1421,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "restore-iphone-backup",
-    title: "How to Restore Your iPhone from an iCloud or Computer Backup",
+    title: "How to Restore Your iPhone From a Backup",
     excerpt: "Restoring an iPhone from backup brings back all your apps, photos, and settings — here's how to do it when setting up a new or repaired phone.",
     category: "phones",
     tags: [
@@ -1464,7 +1464,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "iphone-storage-breakdown-guide",
-    title: "How to See What's Using Your iPhone Storage — and Fix It",
+    title: "See What's Filling Your iPhone Storage",
     excerpt: "Go to Settings > General > iPhone Storage to see exactly what's taking up space, then delete large apps or offload unused ones to free storage fast.",
     category: "phones",
     tags: [
@@ -1555,7 +1555,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "how-to-set-recurring-reminder-phone",
-    title: "How to Set a Recurring Reminder on iPhone or Android",
+    title: "Set a Repeating Reminder on iPhone or Android",
     excerpt: "Set a reminder that repeats every day, week, month, or year so your phone helps you remember important tasks.",
     body: "A recurring reminder is a friendly note from your phone that shows up over and over on a schedule you choose. You can set one to remind yourself to take medicine every morning, water the plants every Tuesday, pay a bill on the first of the month, or call a friend every Sunday afternoon. Once you set it up, your phone does the remembering for you. You will see a small message on your screen and hear a gentle sound at the time you picked. Recurring reminders are one of the most helpful features on any smartphone. And they are surprisingly painless to set up. This guide covers both iPhone and Android phones. On iPhone, you will use the built-in Reminders app, which has a white icon with colored dots. On Android, you will use Google Keep or Google Assistant, both of which come pre-installed on most Android phones. The steps are clear, and you do not need to download anything new. If you have never used the Reminders app or Google Keep before, do not worry. The first time you open it, the app may ask if it can send you notifications. Tap \"Allow\" so the reminders can actually pop up on your screen. After that, you can add as many recurring reminders as you like. There is no limit, and they will not slow your phone down. If you ever want to stop a reminder, you can delete it in two taps. Take your time with each step, and feel free to start with one simple reminder, like a daily reminder to drink a glass of water. Once you see how helpful it is, you will likely want to add more.",
     category: "phones",
@@ -1596,7 +1596,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "how-to-set-do-not-disturb-iphone-android-2026",
-    title: "How to Set Up Do Not Disturb on Your iPhone or Android Phone",
+    title: "Set Up Do Not Disturb on iPhone or Android",
     excerpt: "Silence calls and alerts at night or during activities — and still let important people reach you in an emergency.",
     category: "phones",
     tags: [
@@ -1651,7 +1651,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "how-to-set-up-find-my-iphone",
-    title: "How to Set Up Find My on iPhone to Locate a Lost Phone",
+    title: "Set Up Find My to Locate a Lost iPhone",
     excerpt: "Set up the Find My feature on your iPhone so you can track it on a map, lock it, or erase it if it ever gets lost or stolen.",
     body: "Losing your iPhone can be a stressful experience, but Apple's Find My feature gives you a real chance of getting it back. Once set up, Find My lets you see your phone's location on a map, play a sound to help you find it nearby, lock it with a message for whoever finds it, or erase everything on it remotely if necessary.\n\nThe good news is that setting up Find My takes only a few minutes, and once it is turned on, it works automatically in the background.\n\n**What Find My does**\n\nFind My is a free Apple service that connects your iPhone to your Apple Account (formerly called Apple ID). When you sign in to your Apple Account on your iPhone, Find My can use the phone's GPS to report its location to Apple's servers. You can then log in from any web browser at icloud.com or use the Find My app on another Apple device to see where your phone is.\n\nFind My also works even when your iPhone is offline, thanks to a feature called the Find My network. Hundreds of millions of Apple devices quietly and anonymously relay location signals, so your phone can often be found even without a cellular or Wi-Fi connection.\n\n**Before you start**\n\nYou will need an Apple Account to use Find My. If you already have one — you use it for the App Store, iCloud email, or FaceTime — you are ready to go. If you do not have one yet, you can create one for free at appleid.apple.com.\n\n**Turning on Find My**\n\nOpen the Settings app on your iPhone. At the very top, tap your name (this is your Apple Account area). Then tap Find My. On the next screen, tap Find My iPhone and make sure the main toggle at the top is turned on (green). You should also turn on Send Last Location, which automatically saves your phone's last known position to Apple when the battery is about to die.\n\n**How to find your phone if it goes missing**\n\nIf your phone goes missing, go to icloud.com/find on any computer or phone, sign in with your Apple Account, and click Find Devices. You will see your iPhone on a map. From there you can play a sound, put it in Lost Mode (which locks the phone and displays your contact information), or erase it entirely.\n\n**Quick Tip:** Find My also works for your iPad, Mac, AirPods, and Apple Watch — all from the same Find My app or iCloud website.",
     category: "phones",
@@ -1791,7 +1791,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "set-up-new-android-beginners",
-    title: "How to Set Up Your New Android Phone (Complete Beginner's Guide)",
+    title: "How to Set Up Your New Android Phone",
     excerpt: "Everything you need to know to set up your new Android phone, step by step, from first power-on.",
     category: "phones",
     tags: [
@@ -1853,7 +1853,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "set-up-new-iphone-beginners",
-    title: "How to Set Up Your New iPhone (Complete Beginner's Guide)",
+    title: "How to Set Up Your New iPhone: Beginner Guide",
     excerpt: "Step-by-step instructions to set up your new iPhone from the moment you take it out of the box.",
     category: "phones",
     tags: [
@@ -1921,7 +1921,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "how-to-share-photos-grandchildren-facetime",
-    title: "How to Share Family Photos with Grandchildren on FaceTime",
+    title: "Share Photos With Grandchildren on FaceTime",
     excerpt: "A FaceTime call with photos turns a quick chat into a real visit. Here is the plain way to show pictures while you talk to your grandchildren.",
     category: "phones",
     tags: [
@@ -2012,7 +2012,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "switch-android-to-iphone-guide",
-    title: "How to Switch From Android to iPhone and Keep Your Stuff",
+    title: "Switch From Android to iPhone Without Losing Data",
     excerpt: "Moving from Android to iPhone is easier than ever — Apple's free Move to iOS app transfers your contacts, photos, messages, and more.",
     category: "phones",
     tags: [
@@ -2050,7 +2050,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "iphone-full-page-screenshot-guide",
-    title: "How to Take a Full-Page Screenshot in Safari on iPhone",
+    title: "Take a Full-Page Screenshot in Safari on iPhone",
     excerpt: "Capture an entire webpage as a single PDF on your iPhone using Safari — not just what's visible, but the whole page from top to bottom.",
     category: "phones",
     tags: [
@@ -2174,7 +2174,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "always-on-display-guide",
-    title: "How to Turn On and Customize Always-On Display on iPhone and Android",
+    title: "Always-On Display on iPhone and Android",
     excerpt: "Always-On Display keeps the time, date, and notifications visible on your screen even when your phone is locked — here is how to set it up.",
     category: "phones",
     tags: [
@@ -2217,7 +2217,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "how-to-set-up-automatic-app-updates-2026",
-    title: "How to Turn On Automatic App Updates (iPhone, Android, Mac, and Windows)",
+    title: "How to Turn On Automatic App Updates",
     excerpt: "App updates fix security problems and add new features. Learn how to turn on automatic updates on any device so your apps stay current without extra effort.",
     category: "phones",
     tags: [
@@ -2274,7 +2274,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "how-to-use-voice-dictation-on-your-phone-2026",
-    title: "How to Type by Speaking: Voice Dictation on iPhone and Android",
+    title: "Type by Speaking: Voice Dictation on Your Phone",
     excerpt: "Skip the small keyboard and speak your messages instead. Voice dictation turns your spoken words into text — works in texts, emails, notes, and more.",
     category: "phones",
     tags: [
@@ -2371,7 +2371,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "android-battery-saver-guide",
-    title: "How to Use Battery Saver Mode on Android to Extend Battery Life",
+    title: "Use Android Battery Saver to Last Longer",
     excerpt: "Android's Battery Saver mode reduces background activity when you are running low on battery.",
     category: "phones",
     tags: [
@@ -2514,7 +2514,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "visual-intelligence-iphone-2026",
-    title: "How to Use Visual Intelligence on iPhone in 2026 (iPhone 16 and 17)",
+    title: "How to Use Visual Intelligence on iPhone",
     excerpt: "Point your iPhone camera at anything and get instant answers — restaurants, plants, products, signs. A plain-language guide to Apple Visual Intelligence.",
     category: "phones",
     tags: [
@@ -2699,7 +2699,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "iphone-16-camera-control-button-full-guide",
-    title: "iPhone 16 Camera Control Button — A Plain-English Guide",
+    title: "iPhone 16 Camera Control Button Explained",
     excerpt: "The new button on the side of every iPhone 16 is more than a shutter. Here is what every press, slide, and tap does.",
     category: "phones",
     tags: [
@@ -2751,7 +2751,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "fix-iphone-battery-drain-after-update",
-    title: "iPhone Battery Draining Fast After an Update? Here Is How to Fix It",
+    title: "iPhone Battery Draining After an Update? Fix It",
     excerpt: "It's normal for an iPhone to use extra battery for 24–48 hours after a big iOS update while it catches up on background tasks.",
     category: "phones",
     tags: [
@@ -2800,7 +2800,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "iphone-battery-80-percent-limit-2026",
-    title: "iPhone Battery: Should You Use the 80% Charge Limit? (2026 Guide)",
+    title: "Should You Use the iPhone 80% Charge Limit?",
     excerpt: "Apple's 80% Limit and Adaptive Charging can double your iPhone battery life — but they slow daily charging. Here is when to use each.",
     category: "phones",
     tags: [
@@ -2854,7 +2854,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "iphone-photos-clean-up-remove-strangers",
-    title: "iPhone Photos Clean Up — Erase a Stranger From Your Vacation Photo",
+    title: "Erase Strangers From Photos With iPhone Clean Up",
     excerpt: "The iOS 18 Photos app has a hidden Clean Up tool that removes strangers, cars, and clutter from any picture. Here is how to find and use it.",
     category: "phones",
     tags: [
@@ -2912,7 +2912,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "fix-iphone-not-enough-storage-to-update",
-    title: "iPhone Says \"Not Enough Storage\" to Update? Here Is How to Free Up Space",
+    title: "iPhone \"Not Enough Storage\" to Update? Fix It",
     excerpt: "Your iPhone needs free space to download and install iOS updates. These steps will clear enough room in minutes without permanently deleting your photos.",
     category: "phones",
     tags: [
@@ -2960,7 +2960,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "organize-icloud-storage-iphone-backup",
-    title: "Make Sense of iCloud Storage (and Stop Getting \"Storage Full\" Warnings)",
+    title: "Stop iCloud \"Storage Full\" Warnings",
     excerpt: "Apple's \"iCloud Storage Full\" warning is one of the most confusing notifications. Here is what it actually means and how to fix it.",
     category: "phones",
     tags: [
@@ -3008,7 +3008,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "samsung-galaxy-s25-galaxy-ai-for-seniors",
-    title: "Samsung Galaxy S25 — The AI Features Worth Using (and the Ones to Skip)",
+    title: "Galaxy S25 AI Features Worth Using",
     excerpt: "The Galaxy S25 has a long list of AI features. Here are the four worth turning on and the ones to leave alone.",
     category: "phones",
     tags: [
@@ -3067,7 +3067,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "samsung-quick-share-galaxy-phones-2026",
-    title: "Samsung Quick Share — Send Photos Between Galaxy Phones in Seconds",
+    title: "Samsung Quick Share: Send Photos Between Phones",
     excerpt: "Quick Share is the Samsung answer to AirDrop. Here is how to use it to send photos, videos, and files between Galaxy phones with no Wi-Fi or text needed.",
     category: "phones",
     tags: [
@@ -3289,7 +3289,7 @@ export const phonesGuides: Guide[] = [
   },
   {
     slug: "fix-phone-battery-draining-fast",
-    title: "Why Is My Phone Battery Dying So Fast? (And How to Fix It)",
+    title: "Why Is My Phone Battery Dying So Fast?",
     excerpt: "If your phone battery isn't lasting the day, these simple changes can double your battery life.",
     category: "phones",
     tags: [
