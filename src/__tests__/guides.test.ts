@@ -79,13 +79,13 @@ describe("Guide Schema Validation", () => {
       "mac-guides",
       "essential-skills",
       "tips-tricks",
-      "ai-guides",
+      "ai",
       "ai-advanced",
-      "safety-guides",
+      "safety",
       "how-to",
       "app-guides",
       "health-tech",
-      "phone-guides",
+      "phones",
       "social-media",
     ];
     const guide = mockGuides[0];
@@ -96,7 +96,7 @@ describe("Guide Schema Validation", () => {
 
 describe("Guide Search Filtering", () => {
   it("should filter guides by category", () => {
-    const category = "safety-guides";
+    const category = "safety";
     const filtered = mockGuides.filter((g) => g.category === category);
 
     expect(filtered.length).toBeGreaterThan(0);
@@ -139,7 +139,7 @@ describe("Guide Search Filtering", () => {
   });
 
   it("should combine multiple filters", () => {
-    const category = "phone-guides";
+    const category = "phones";
     const tag = "backup";
     const filtered = mockGuides.filter(
       (g) => g.category === category && g.tags.includes(tag)

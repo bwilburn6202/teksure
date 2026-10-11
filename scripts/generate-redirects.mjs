@@ -15,7 +15,7 @@
  * list and skip them.
  */
 import { readFileSync, writeFileSync } from 'fs';
-import { readToolRedirects } from './tool-slugs.mjs';
+import { readToolRedirects, readGuideRedirects } from './tool-slugs.mjs';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -34,33 +34,27 @@ export function readNavigateRedirects() {
 
 // Running as a script (not just imported as a helper).
 if (process.argv[1] && process.argv[1].endsWith('generate-redirects.mjs')) {
-  const redirects = [...readNavigateRedirects(), ...readToolRedirects()];
+  const redirects = [...readNavigateRedirects(), ...readToolRedirects(), ...readGuideRedirects()];
   const vercelPath = join(ROOT, 'vercel.json');
   const config = JSON.parse(readFileSync(vercelPath, 'utf8'));
 
-  // Preserve any hand-written redirects that aren't derived from App.tsx.
+  // The redirect list is rebuilt from source every time: App.tsx <Navigate>
+  // routes, src/data/tool-redirects.ts and src/data/guide-redirects.ts, nothing else. This file used to
+  // keep any entry it no longer found in App.tsx, treating it as hand-written.
+  // That kept stale 308s alive after their source was removed or their target
+  // deleted — 414 of 620 entries pointed at deleted pages by 2026-10-11, and a
+  // kept redirect once shadowed a restored /pricing page for a whole session.
+  // To add a redirect, add a <Navigate> route; never edit vercel.json by hand.
   //
-  // NOTE: entries must contain ONLY keys Vercel's schema allows (source,
-  // destination, permanent, statusCode, has, missing). Vercel validates
-  // vercel.json strictly and rejects the whole deployment on an unknown
-  // property — a "generated": true marker here, and a "comment" key on the
-  // rewrite, silently failed several deploys in a row while the previous build
-  // stayed live. Derived entries are identified by matching App.tsx instead.
-  const derivedSources = new Set(redirects.map((r) => r.source));
-  const manual = (config.redirects ?? []).filter((r) => !derivedSources.has(r.source));
-
-  config.redirects = [
-    ...manual,
-    ...redirects.map((r) => ({
-      source: r.source,
-      destination: r.destination,
-      permanent: true,
-    })),
-  ];
+  // Entries must contain ONLY keys Vercel's schema allows (source, destination,
+  // permanent, statusCode, has, missing). Vercel rejects the whole deployment
+  // on an unknown property.
+  config.redirects = redirects.map((r) => ({
+    source: r.source,
+    destination: r.destination,
+    permanent: true,
+  }));
 
   writeFileSync(vercelPath, JSON.stringify(config, null, 2) + '\n');
-  console.log(
-    `[generate-redirects] wrote ${redirects.length} permanent redirects to vercel.json` +
-      (manual.length ? ` (kept ${manual.length} manual)` : '')
-  );
+  console.log(`[generate-redirects] wrote ${redirects.length} permanent redirects to vercel.json`);
 }

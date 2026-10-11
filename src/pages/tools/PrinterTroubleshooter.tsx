@@ -298,7 +298,6 @@ const tree: Record<string, Node> = {
     ifFails: 'If rollers are new and paper is fresh but jams continue, something inside the paper path is bent or broken. Take it to a shop for an assessment.',
     proHelp: 'If the printer is 5+ years old and jamming constantly, replace it. A new entry-level printer ($80–$150) costs less than a repair visit.',
     replaceOrRepair: 'Repair rollers ($15–$30) if the printer is newer than 3 years and the main problem is misfeeds. Replace the printer if it\'s older and having multiple issues.',
-    guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
   },
 
   /* ── 6. WiFi connect ────────────────────────────────────── */
@@ -328,7 +327,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If the printer supports WPS, press the WPS button on your router, then press the WPS button on the printer within two minutes. This skips network selection entirely.',
     proHelp: 'If the printer never lists any network at all — not even a neighbor\'s — the wireless radio inside the printer may have failed. Connect it with a USB cable as a reliable workaround.',
-    guide: { label: 'WiFi help', to: '/tools/wifi-speed' },
+    guide: { label: 'WiFi help', to: '/tools/internet-speed-doctor' },
   },
 
   fix_wifiPassword: {
@@ -364,7 +363,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If the wizard cannot finish, install your printer maker\'s free app on your phone — HP Smart, Canon PRINT, Epson Smart Panel, or Brother Mobile Connect. These walk you through setup and are usually easier than the printer buttons.',
     proHelp: 'If setup fails repeatedly, connect the printer to your computer with a USB cable. It will print reliably that way while you sort out wireless later.',
-    guide: { label: 'New device setup', to: '/tools/new-phone-setup-assistant' },
+    guide: { label: 'New device setup', to: '/tools/new-phone-setup' },
   },
 
   // ── Print quality flow ────────────────────────────────────────
@@ -412,7 +411,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If the password is definitely right but the printer still rejects it, the password may have special characters (& $ # !) that the printer\'s keypad handles poorly. Temporarily change the router password to letters and numbers only, connect the printer, then change it back.',
     proHelp: 'Using the manufacturer\'s phone/tablet setup app is much easier than typing on the printer — HP Smart, Canon PRINT, Epson Smart Panel, etc. Download your brand\'s app.',
-    guide: { label: 'WiFi password finder', to: '/tools/wifi-password-finder' },
+    guide: { label: 'WiFi password finder', to: '/tools/wifi-troubleshooter' },
   },
   quality_streaky: {
     kind: 'fix',
@@ -428,7 +427,7 @@ const tree: Record<string, Node> = {
     ],
     ifFails: 'If both are on the same network and it still won\'t print, remove and re-add the printer in your computer\'s settings. Windows: Settings → Printers & scanners → remove → Add device. Mac: System Settings → Printers & Scanners → minus → plus.',
     proHelp: 'If you use a mesh system (Eero, Google WiFi, Orbi) and keep losing the printer, enable "IoT" mode or turn off "Device Isolation" in the router settings — mesh routers sometimes quarantine older devices.',
-    guide: { label: 'Home network map', to: '/tools/home-network-map' },
+    guide: { label: 'Home network map', to: '/tools/wifi-troubleshooter' },
   },
   quality_blurry: {
     kind: 'fix',
@@ -478,7 +477,6 @@ const tree: Record<string, Node> = {
     ifFails: 'If the printer still won\'t add, try the IP address method. Click the "+" → IP tab → type the printer\'s IP address (from the printer\'s Settings → Network screen) → pick "Line Printer Daemon – LPD" as the protocol.',
     proHelp: 'Very old printers (10+ years) have no Mac driver and no AirPrint. Time to replace the printer.',
     replaceOrRepair: 'If your printer was released before 2012, there\'s often no Mac support at all. A $80 new printer beats days of troubleshooting.',
-    guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
   },
   ink_not_recognized: {
     kind: 'fix',
@@ -649,7 +647,6 @@ const tree: Record<string, Node> = {
     ifFails: 'If everything looks fine but red stays solid, the printer\'s control board or internal sensor has failed. On home printers, this is a replace-not-repair situation.',
     proHelp: 'Note the light pattern when you contact support — the exact blink pattern is a code that technicians can decode.',
     replaceOrRepair: 'Solid red that survives a full reset on a 4+ year-old home printer = replace. New entry-level printers start at $80.',
-    guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
   },
 
   fix_blinkingRed: {
@@ -689,7 +686,6 @@ const tree: Record<string, Node> = {
     proHelp: 'If you print very rarely (less than once a month), consider switching to a laser printer or ink-tank printer (Epson EcoTank, HP Smart Tank). Inkjet cartridges dry out between uses; laser toner doesn\'t.',
     buying: 'XL or high-yield cartridges print 2–3× more pages than standard — usually the better value. A genuine HP 67XL prints ~240 pages; the standard HP 67 prints ~120 pages for 70% of the price. The XL wins every time. Keep receipts — faulty cartridges can be returned.',
     replaceOrRepair: 'If a full set of genuine cartridges costs more than half the price of a new printer, buy a new printer. The new one comes with starter cartridges too.',
-    guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
   },
 
   /* ── 12. Duplex ─────────────────────────────────────────── */
@@ -825,7 +821,6 @@ const tree: Record<string, Node> = {
     ifFails: 'If the scanner still errors, the scan head may be stuck. Gently lift the scanner lid and look for any obstruction. Never force the scanner mechanism with your hands.',
     proHelp: 'A scanner that errors with nothing on the bed and no lock engaged needs professional attention — the scan head motor or sensor has failed.',
     replaceOrRepair: 'On an all-in-one that\'s 4+ years old, a failed scanner is rarely worth repairing. Replacement AIO printers start at $120.',
-    guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
   },
 
   fix_scannerBlank: {
@@ -844,7 +839,6 @@ const tree: Record<string, Node> = {
     ifFails: 'If scans are still black, the scanner lamp (the bright bar under the glass) may have failed. Open the lid, press Start Scan, and look for the moving light — if you see no light, the lamp is dead.',
     proHelp: 'A dead scanner lamp is usually not economical to repair on home printers. Time to replace.',
     replaceOrRepair: 'Dead scanner lamp on a 3+ year-old home AIO = replace. Lamps cost $40–$80 plus labour to install.',
-    guide: { label: 'Find the right printer', to: '/tools/device-chooser' },
   },
 
   fix_scanEmail: {

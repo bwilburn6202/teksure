@@ -32,9 +32,10 @@ stuck — not another page that exists mainly to raise the count.
 }
 ```
 
-Put it in the highest-numbered `src/data/guides-batch-NNN.ts`, or make the next one —
-and **import AND spread it in `src/data/guides.ts`**. A batch that is imported but not
-spread silently does not exist. That has happened before.
+Put it in the file for its category, `src/data/guides-<category>.ts` (e.g. `guides-safety.ts`).
+Keep keys unquoted (`slug: "…"`) — the sitemap and prerender scripts find guides by matching
+`slug:`. Then run `node --import tsx scripts/generate-guide-data.mjs`. The library was cut to
+500 guides on purpose; a new guide must cover something none of them does.
 
 ## Writing standards
 

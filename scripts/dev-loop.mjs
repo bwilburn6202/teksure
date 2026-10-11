@@ -357,8 +357,8 @@ function checkSiteMetrics() {
   // auto-generated directory instead, and keep the curated count as its own
   // metric so the gap between "pages that exist" and "pages a human can reach
   // from /tools" stays visible instead of being silently averaged away.
-  const curated = safeRead(path.join(ROOT, 'src', 'pages', 'Tools.tsx'));
-  const toolsDir = safeRead(path.join(ROOT, 'src', 'data', 'tools-directory.ts'));
+  const curated = safeRead(path.join(ROOT, 'src', 'data', 'tools-list.ts'));
+  const toolsDir = safeRead(path.join(ROOT, 'src', 'data', 'tools-registry.ts'));
   const dataDir = path.join(ROOT, 'src', 'data');
   let guideCount = 0;
   if (fs.existsSync(dataDir)) {
@@ -375,8 +375,8 @@ function checkSiteMetrics() {
       guideCount += (content.match(/(?:^|[{,\s])slug:\s*['"`]/gm) ?? []).length;
     }
   }
-  const toolCount = (toolsDir.match(/\{\s*path:\s*'\/tools\//g) ?? []).length;
-  const curatedTools = (curated.match(/\n\s*title:\s*['"]/g) ?? []).length;
+  const toolCount = (toolsDir.match(/^ {2}'[^']+':\s*lazy\(/gm) ?? []).length;
+  const curatedTools = (curated.match(/\{\s*slug:\s*'/g) ?? []).length;
   const routes = (app.match(/<Route\s+path=/g) ?? []).length;
   return {
     name: 'metrics',

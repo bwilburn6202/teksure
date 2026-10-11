@@ -60,7 +60,7 @@ function buildPlan(picked: Set<StolenItem>): Plan {
     plan.urgent.push({
       title: 'Change the password on every other account that uses the same one',
       detail: 'If you reuse passwords, the attacker can hop to your email, Amazon, PayPal, and so on within hours. Start with email — that is the master key.',
-      link: { label: 'Password Health Check', href: '/tools/password-health' },
+      link: { label: 'Password Health Check', href: '/tools/password-strength' },
     });
   }
 
@@ -306,7 +306,6 @@ export default function IdTheftRecovery() {
               <div className="flex flex-wrap gap-3 mt-6">
                 <Button variant="outline" onClick={restart}>Start over</Button>
                 <Button asChild>
-                  <Link to="/tools/scam-witness-statement">Build a witness statement</Link>
                 </Button>
               </div>
             </>
@@ -319,7 +318,7 @@ export default function IdTheftRecovery() {
                 <p className="font-medium text-base">Scam Message Decoder</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Spot the next attempt before you click.</p>
               </Link>
-              <Link to="/tools/password-health" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/tools/password-strength" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Password Health Check</p>
                 <p className="text-sm text-muted-foreground mt-0.5">See if your password is in a known breach.</p>
               </Link>

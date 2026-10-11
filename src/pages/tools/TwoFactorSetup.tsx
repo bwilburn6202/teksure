@@ -285,10 +285,8 @@ export default function TwoFactorSetup() {
 
             <div className="flex flex-col sm:flex-row gap-3 pb-4">
               <Button variant="outline" asChild className="flex-1">
-                <Link to="/tools/app-permissions">Review App Permissions</Link>
               </Button>
               <Button asChild className="flex-1">
-                <Link to="/tools/cyber-scorecard">Full Security Scorecard →</Link>
               </Button>
             </div>
           </div>

@@ -1,793 +1,126 @@
-import { useState, useMemo, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Search, Monitor, Apple, Lightbulb, Sparkles, Bot, Clock, CheckCircle2, ShieldCheck, BookOpen, Phone, Heart, Wifi, CreditCard, Tv, MessageSquare, ArrowRightLeft, Landmark, EyeOff, Building2, ShoppingCart, Cpu, Wrench, Briefcase, Shield, KeyRound, Video, PiggyBank, Home, GraduationCap, Star, Flame, ArrowRight, ArrowLeft, TrendingUp, Brain, MessageCircle, Compass, type LucideIcon } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Progress } from '@/components/ui/progress';
+import { useMemo, useState } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guide-categories';
-import { guideIndex as guides, type GuideSummary as Guide } from '@/lib/guide-index';
-import { getCompletedGuides, getProgressCount } from '@/lib/progress';
-import { getGuideThumbnailUrl, getGuideThumbnailSmall } from '@/lib/guideThumbnails';
-import { GuideThumbnail } from '@/components/GuideThumbnail';
-import { getCategoryAccent } from '@/lib/categoryAccent';
-import { StarRating } from '@/components/StarRating';
+import { GUIDE_CATEGORIES, categoryLabels, categoryDescriptions, type GuideCategory } from '@/data/guide-categories';
+import { guideIndex } from '@/lib/guide-index';
+import { GUIDE_COUNT_LABEL } from '@/data/site-stats';
 
-/* ══════════════════════════════════════════════════════════════════════
-   Icon + color mapping per category
-   ══════════════════════════════════════════════════════════════════════ */
-const categoryIcons: Record<GuideCategory, typeof Monitor> = {
-  'windows-guides': Monitor,
-  'mac-guides': Apple,
-  'essential-skills': Lightbulb,
-  'tips-tricks': Sparkles,
-  'ai-guides': Bot,
-  'ai-advanced': Bot,
-  'safety-guides': ShieldCheck,
-  'how-to': BookOpen,
-  'app-guides': Phone,
-  'phone-guides': Phone,
-  'social-media': MessageSquare,
-  'health-tech': Heart,
-  'government-civic': Landmark,
-  'financial-tech': CreditCard,
-  'smart-home': Tv,
-  'entertainment': Sparkles,
-  'communication': MessageSquare,
-  'life-transitions': ArrowRightLeft,
-  'internet-connectivity': Wifi,
-  'online-privacy': EyeOff,
-  'online-banking': Building2,
-  'buying-guides': ShoppingCart,
-  'tech-explained': Cpu,
-  'troubleshooting': Wrench,
-  'work-from-home': Briefcase,
-  travel: Compass,
-};
+const isCategory = (v: string | null): v is GuideCategory =>
+  !!v && (GUIDE_CATEGORIES as readonly string[]).includes(v);
 
-const categoryTints: Partial<Record<GuideCategory, string>> = {
-  'windows-guides': 'from-sky-100 to-blue-50 dark:from-sky-950/40 dark:to-blue-950/30',
-  'mac-guides': 'from-slate-100 to-zinc-50 dark:from-slate-900/60 dark:to-zinc-950/30',
-  'essential-skills': 'from-amber-100 to-yellow-50 dark:from-amber-950/40 dark:to-yellow-950/30',
-  'tips-tricks': 'from-fuchsia-100 to-pink-50 dark:from-fuchsia-950/40 dark:to-pink-950/30',
-  'ai-guides': 'from-purple-100 to-violet-50 dark:from-purple-950/40 dark:to-violet-950/30',
-  'ai-advanced': 'from-violet-100 to-purple-50 dark:from-violet-950/40 dark:to-purple-950/30',
-  'safety-guides': 'from-red-100 to-orange-50 dark:from-red-950/40 dark:to-orange-950/30',
-  'how-to': 'from-emerald-100 to-green-50 dark:from-emerald-950/40 dark:to-green-950/30',
-  'app-guides': 'from-indigo-100 to-blue-50 dark:from-indigo-950/40 dark:to-blue-950/30',
-  'phone-guides': 'from-blue-100 to-sky-50 dark:from-blue-950/40 dark:to-sky-950/30',
-  'social-media': 'from-pink-100 to-rose-50 dark:from-pink-950/40 dark:to-rose-950/30',
-  'health-tech': 'from-rose-100 to-red-50 dark:from-rose-950/40 dark:to-red-950/30',
-  'government-civic': 'from-slate-100 to-stone-50 dark:from-slate-900/60 dark:to-stone-950/30',
-  'financial-tech': 'from-emerald-100 to-teal-50 dark:from-emerald-950/40 dark:to-teal-950/30',
-  'smart-home': 'from-teal-100 to-cyan-50 dark:from-teal-950/40 dark:to-cyan-950/30',
-  'entertainment': 'from-fuchsia-100 to-purple-50 dark:from-fuchsia-950/40 dark:to-purple-950/30',
-  'communication': 'from-cyan-100 to-blue-50 dark:from-cyan-950/40 dark:to-blue-950/30',
-  'life-transitions': 'from-stone-100 to-amber-50 dark:from-stone-900/60 dark:to-amber-950/30',
-  'internet-connectivity': 'from-sky-100 to-cyan-50 dark:from-sky-950/40 dark:to-cyan-950/30',
-  'online-privacy': 'from-zinc-100 to-slate-50 dark:from-zinc-900/60 dark:to-slate-950/30',
-  'online-banking': 'from-green-100 to-emerald-50 dark:from-green-950/40 dark:to-emerald-950/30',
-  'buying-guides': 'from-orange-100 to-amber-50 dark:from-orange-950/40 dark:to-amber-950/30',
-  'tech-explained': 'from-indigo-100 to-violet-50 dark:from-indigo-950/40 dark:to-violet-950/30',
-  'troubleshooting': 'from-red-100 to-rose-50 dark:from-red-950/40 dark:to-rose-950/30',
-  'work-from-home': 'from-blue-100 to-indigo-50 dark:from-blue-950/40 dark:to-indigo-950/30',
-};
+/**
+ * /guides — every guide, grouped by category, with a text filter.
+ * `?category=<id>` narrows the list to one category (the old hub pages
+ * redirect here with it).
+ */
+export default function Guides() {
+  const [params, setParams] = useSearchParams();
+  const active = isCategory(params.get('category')) ? (params.get('category') as GuideCategory) : null;
+  const [filter, setFilter] = useState('');
 
-const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => {
-  const [imgError, setImgError] = useState(false);
-  return (
-  <Link to={`/guides/${guide.slug}`} className="group block h-full">
-    <div className={`rounded-2xl border h-full transition-all hover:shadow-md overflow-hidden ${
-      completed ? 'border-green-500/30 bg-green-50/50 dark:bg-green-950/20' : 'border-border bg-card'
-    }`}>
-      <div className="relative h-36 overflow-hidden bg-muted">
-        {imgError ? (
-          <div className="w-full h-full flex items-center justify-center" aria-hidden="true">
-            <GuideThumbnail category={guide.category} size="h-12 w-12" useAccent />
-          </div>
-        ) : (
-        <img
-          src={getGuideThumbnailUrl(guide)}
-          alt=""
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          loading="lazy"
-          onError={() => setImgError(true)}
-        />
-        )}
-        {completed && (
-          <div className="absolute top-2 right-2 bg-green-500 text-white rounded-full p-1">
-            <CheckCircle2 className="h-3.5 w-3.5" />
-          </div>
-        )}
-        {guide.difficulty && (
-          <span className={`absolute top-2 left-2 text-sm font-semibold px-2 py-0.5 rounded-full ${
-            guide.difficulty === 'Beginner' ? 'bg-green-100 text-success-foreground dark:bg-green-900/80 dark:text-green-300' :
-            guide.difficulty === 'Intermediate' ? 'bg-amber-100 text-warn-foreground dark:bg-amber-900/80 dark:text-amber-300' :
-            'bg-red-100 text-danger-foreground dark:bg-red-900/80 dark:text-red-300'
-          }`}>
-            {guide.difficulty}
-          </span>
-        )}
-      </div>
-      <div className="p-4">
-        <div className="flex items-center gap-2 mb-2 flex-wrap">
-          <Badge variant="secondary" className="text-sm font-medium">
-            {categoryLabels[guide.category]}
-          </Badge>
-          {guide.verifiedHelpful && (
-            <Badge variant="outline" className="text-sm border-green-500/50 text-success-foreground gap-1">
-              <CheckCircle2 className="h-2.5 w-2.5" /> Verified Helpful
-            </Badge>
-          )}
-          <span className="flex items-center gap-1 text-base text-muted-foreground">
-            <Clock className="h-2.5 w-2.5" /> {guide.readTime}
-          </span>
-        </div>
-        <h3 className="font-semibold text-sm mb-1.5 group-hover:text-primary transition-colors leading-snug line-clamp-2">
-          {guide.title}
-        </h3>
-        <p className="text-sm text-foreground/70 line-clamp-2 leading-relaxed">{guide.excerpt}</p>
-        <div className="mt-2.5">
-          <StarRating guideSlug={guide.slug} readOnly size="sm" />
-        </div>
-      </div>
-    </div>
-  </Link>
-  );
-};
+  const groups = useMemo(() => {
+    const q = filter.trim().toLowerCase();
+    return (active ? [active] : GUIDE_CATEGORIES).map((cat) => ({
+      cat,
+      guides: guideIndex
+        .filter((g) => g.category === cat)
+        .filter((g) => !q || g.title.toLowerCase().includes(q) || g.excerpt.toLowerCase().includes(q))
+        .sort((a, b) => a.title.localeCompare(b.title)),
+    }));
+  }, [active, filter]);
 
-const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; completed?: boolean }) => (
-  <Link to={`/guides/${guide.slug}`} className="group block">
-    <div className={`flex items-center gap-3 px-3 py-2.5 min-h-[44px] border-b border-border hover:bg-accent/50 transition-colors ${
-      completed ? 'bg-green-50/50 dark:bg-green-950/10' : ''
-    }`}>
-      <img
-        src={getGuideThumbnailSmall(guide)}
-        alt=""
-        className="w-8 h-8 rounded-md object-cover shrink-0"
-        loading="lazy"
-        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
-      />
-      <div className="flex-1 min-w-0">
-        <p className="text-sm font-medium group-hover:text-primary transition-colors truncate">{guide.title}</p>
-      </div>
-      <Badge variant="secondary" className="text-sm font-medium shrink-0 hidden sm:inline-flex">
-        {categoryLabels[guide.category]}
-      </Badge>
-      <span aria-label={guide.difficulty ? `Difficulty: ${guide.difficulty}` : undefined} className={`text-base font-medium shrink-0 hidden md:inline ${
-        guide.difficulty === 'Beginner' ? 'text-green-600' :
-        guide.difficulty === 'Intermediate' ? 'text-amber-600' : 'text-red-500'
-      }`}>
-        <span aria-hidden="true">{guide.difficulty === 'Beginner' ? '●' : guide.difficulty === 'Intermediate' ? '●●' : '●●●'}</span>
-      </span>
-      <span className="text-sm text-muted-foreground shrink-0 w-12 text-right">{guide.readTime}</span>
-      {completed && <CheckCircle2 className="h-3.5 w-3.5 text-success-foreground shrink-0" />}
-    </div>
-  </Link>
-);
-
-
-const POPULAR_SEARCHES = ['WiFi not working', 'forgot password', 'how to print', 'update Windows', 'slow computer'];
-
-function GuidesEmptyState({
-  search,
-  activeTab,
-  onClear,
-  onSearch,
-}: {
-  search: string;
-  activeTab: string;
-  onClear: () => void;
-  onSearch: (term: string) => void;
-}) {
-  if (search.trim() && activeTab !== 'all') {
-    return (
-      <div className="text-center py-20 max-w-md mx-auto">
-        <p className="text-4xl mb-4 select-none"></p>
-        <h2 className="text-lg font-semibold mb-2">
-          No guides found for "{search}" in {categoryLabels[activeTab as GuideCategory]}
-        </h2>
-        <p className="text-base text-muted-foreground mb-6">
-          Try searching in all categories, or use a different word.
-        </p>
-        <button
-          onClick={onClear}
-          className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
-        >
-          Show all guides
-        </button>
-      </div>
-    );
-  }
-
-  if (search.trim()) {
-    return (
-      <div className="text-center py-20 max-w-md mx-auto">
-        <p className="text-4xl mb-4 select-none"></p>
-        <h2 className="text-lg font-semibold mb-2">
-          No guides matched "{search}"
-        </h2>
-        <p className="text-base text-muted-foreground mb-6">
-          Try using a simpler word, or pick one of these popular topics:
-        </p>
-        <div className="flex flex-wrap justify-center gap-2 mb-6">
-          {POPULAR_SEARCHES.map(term => (
-            <button
-              key={term}
-              onClick={() => onSearch(term)}
-              className="rounded-full border border-border bg-muted px-3 py-1 text-sm font-medium hover:bg-primary/10 hover:border-primary/30 transition-colors"
-            >
-              {term}
-            </button>
-          ))}
-        </div>
-        <button
-          onClick={onClear}
-          className="text-sm text-primary hover:underline font-medium"
-        >
-          Clear search and browse all guides
-        </button>
-      </div>
-    );
-  }
-  return null;
-}
-
-function pickGuide(opts: { slug?: string; keywords?: string[]; category?: GuideCategory }): Guide | undefined {
-  if (opts.slug) {
-    const strict = guides.find(g => g.slug === opts.slug);
-    if (strict) return strict;
-  }
-  if (opts.keywords?.length) {
-    const kws = opts.keywords.map(k => k.toLowerCase());
-    const loose = guides.find(g =>
-      kws.some(k =>
-        g.slug.includes(k) ||
-        g.title.toLowerCase().includes(k) ||
-        g.tags.some(t => t.toLowerCase().includes(k))
-      )
-    );
-    if (loose) return loose;
-  }
-  if (opts.category) {
-    return guides.find(g => g.category === opts.category);
-  }
-  return undefined;
-}
-
-/* ══════════════════════════════════════════════════════════════════════
-   Featured slots — hand-picked topics
-   ══════════════════════════════════════════════════════════════════════ */
-type FeaturedSlot = {
-  heading: string;
-  blurb: string;
-  Icon: LucideIcon;
-  tint: string;
-  keywords: string[];
-  preferredSlug?: string;
-};
-
-const FEATURED_SLOTS: FeaturedSlot[] = [
-  {
-    heading: 'Scam Defense',
-    blurb: 'Spot phony calls, texts, and emails before they trick you or someone you love.',
-    Icon: Shield,
-    tint: 'from-red-50 to-orange-50 dark:from-red-950/40 dark:to-orange-950/30',
-    preferredSlug: 'social-media-safety',
-    keywords: ['scam', 'phishing', 'spot'],
-  },
-  {
-    heading: 'Password Managers',
-    blurb: 'Let an app safely remember every password so you never lose another login.',
-    Icon: KeyRound,
-    tint: 'from-amber-50 to-yellow-50 dark:from-amber-950/40 dark:to-yellow-950/30',
-    preferredSlug: 'create-strong-password',
-    keywords: ['password', 'manager'],
-  },
-  {
-    heading: 'Video Calling',
-    blurb: 'See the grandkids on Zoom, FaceTime, or WhatsApp — with confidence.',
-    Icon: Video,
-    tint: 'from-sky-50 to-blue-50 dark:from-sky-950/40 dark:to-blue-950/30',
-    preferredSlug: 'how-to-video-call-on-zoom',
-    keywords: ['video', 'call'],
-  },
-  {
-    heading: 'Online Banking',
-    blurb: 'Check balances and pay bills from the couch — safely, in a few taps.',
-    Icon: PiggyBank,
-    tint: 'from-emerald-50 to-green-50 dark:from-emerald-950/40 dark:to-green-950/30',
-    keywords: ['banking', 'online'],
-  },
-  {
-    heading: 'Smart Home',
-    blurb: 'Alexa, Nest, Ring — set them up once and enjoy a home that listens.',
-    Icon: Home,
-    tint: 'from-teal-50 to-cyan-50 dark:from-teal-950/40 dark:to-cyan-950/30',
-    keywords: ['smart', 'home'],
-  },
-  {
-    heading: 'Everyday AI',
-    blurb: 'Use ChatGPT and friends like a patient, helpful assistant in your pocket.',
-    Icon: Bot,
-    tint: 'from-fuchsia-50 to-purple-50 dark:from-fuchsia-950/40 dark:to-purple-950/30',
-    keywords: ['chatgpt', 'ai'],
-  },
-];
-
-/* ══════════════════════════════════════════════════════════════════════
-   Quick-pick chips
-   ══════════════════════════════════════════════════════════════════════ */
-type QuickPick = 'popular' | 'newest' | 'beginner' | 'helpful';
-const QUICK_PICKS: { key: QuickPick; label: string; icon: typeof Flame }[] = [
-  { key: 'popular',  label: 'Most popular', icon: Flame },
-  { key: 'newest',   label: 'Newest',       icon: Sparkles },
-  { key: 'beginner', label: 'Beginner',     icon: GraduationCap },
-  { key: 'helpful',  label: 'Most helpful', icon: Star },
-];
-
-function FeaturedCard({ slot }: { slot: FeaturedSlot }) {
-  const guide = useMemo(
-    () => pickGuide({ slug: slot.preferredSlug, keywords: slot.keywords }),
-    [slot.preferredSlug, slot.keywords]
-  );
-  if (!guide) return null;
-  return (
-    <Link
-      to={`/guides/${guide.slug}`}
-      className={`group relative block rounded-3xl border-2 border-border bg-gradient-to-br ${slot.tint} p-6 md:p-7 transition-all hover:shadow-xl hover:-translate-y-0.5 min-h-[44px]`}
-    >
-      <div className="flex items-start gap-4">
-        <span className="inline-flex items-center justify-center h-16 w-16 md:h-20 md:w-20 rounded-2xl bg-background/70 backdrop-blur shrink-0 shadow-sm" aria-hidden="true">
-          <slot.Icon className="h-8 w-8 md:h-10 md:w-10 text-primary" />
-        </span>
-        <div className="flex-1 min-w-0">
-          <p className="text-sm font-bold uppercase tracking-wider text-foreground/60 mb-1">
-            Featured
-          </p>
-          <h3 className="font-bold text-xl md:text-2xl leading-tight mb-2 group-hover:text-primary transition-colors">
-            {slot.heading}
-          </h3>
-          <p className="text-base text-foreground/80 leading-relaxed mb-3">
-            {slot.blurb}
-          </p>
-          <p className="text-base font-medium text-foreground/90 mb-3 line-clamp-1">
-            Start here: <span className="underline underline-offset-4 decoration-2">{guide.title}</span>
-          </p>
-          <span className="inline-flex items-center gap-1.5 text-base font-semibold text-primary">
-            Read guide <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </span>
-        </div>
-      </div>
-    </Link>
-  );
-}
-
-function CategoryCard({ cat, topGuides, count }: { cat: GuideCategory; topGuides: Guide[]; count: number }) {
-  const Icon = categoryIcons[cat] ?? BookOpen;
-  const accent = getCategoryAccent(cat);
-  // Origin "Themed Content Card" header — solid accent block per category.
-  // Contrast text against the accent based on its declared foreground.
-  const onAccent = accent.foreground === 'light' ? 'text-origin-ghost' : 'text-origin-slate';
-  return (
-    <Link
-      to={`/guides?category=${cat}`}
-      className="group block rounded-origin-card border border-border/60 bg-card overflow-hidden transition-all hover:shadow-origin-lg hover:-translate-y-0.5 min-h-[44px] dark:border-white/[0.06]"
-    >
-      <div
-        className={`p-5 flex items-center gap-3 ${onAccent}`}
-        style={{ backgroundColor: `hsl(var(${accent.cssVar}))` }}
-      >
-        <div className="h-14 w-14 rounded-2xl bg-white/25 backdrop-blur flex items-center justify-center shrink-0">
-          <Icon className={`h-7 w-7 ${onAccent}`} />
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="font-bold text-xl leading-tight">
-            {categoryLabels[cat]}
-          </h3>
-          <p className={`text-base font-semibold ${onAccent} opacity-80`}>
-            {count} {count === 1 ? 'guide' : 'guides'}
-          </p>
-        </div>
-      </div>
-      <div className="p-5 space-y-2">
-        {topGuides.slice(0, 3).map(g => (
-          <div key={g.slug} className="flex items-start gap-2 text-base leading-snug">
-            <ArrowRight className="h-4 w-4 mt-1 text-primary/70 shrink-0" aria-hidden="true" />
-            <span className="line-clamp-1 text-foreground/80 group-hover:text-foreground transition-colors">
-              {g.title}
-            </span>
-          </div>
-        ))}
-        <div className="pt-2 text-sm font-semibold text-primary inline-flex items-center gap-1">
-          Browse all <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
-        </div>
-      </div>
-    </Link>
-  );
-}
-
-/* ══════════════════════════════════════════════════════════════════════
-   Page
-   ══════════════════════════════════════════════════════════════════════ */
-const Guides = () => {
-  const navigate = useNavigate();
-  const [search, setSearch] = useState('');
-  const [quickPick, setQuickPick] = useState<QuickPick>('popular');
-  const [activeCategory, setActiveCategory] = useState<GuideCategory | null>(null);
-  const [completedSlugs, setCompletedSlugs] = useState<Set<string>>(() => getCompletedGuides());
-
-  // Pick up ?q= and ?category= URL params (links into the hub from elsewhere or category cards)
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const q = params.get('q');
-    if (q) setSearch(q);
-    const cat = params.get('category') as GuideCategory | null;
-    if (cat && categoryLabels[cat]) setActiveCategory(cat);
-  }, []);
-
-  const clearCategory = () => {
-    setActiveCategory(null);
-    window.history.replaceState(null, '', '/guides');
+  const shown = groups.reduce((n, g) => n + g.guides.length, 0);
+  const pick = (cat: GuideCategory | null) => {
+    const next = new URLSearchParams(params);
+    if (cat) next.set('category', cat);
+    else next.delete('category');
+    setParams(next, { replace: true });
   };
 
-  const categoryGuides = useMemo(
-    () => (activeCategory ? guides.filter(g => g.category === activeCategory) : []),
-    [activeCategory]
-  );
-
-  useEffect(() => {
-    const handleUpdate = () => setCompletedSlugs(getCompletedGuides());
-    window.addEventListener('teksure-progress-update', handleUpdate);
-    return () => window.removeEventListener('teksure-progress-update', handleUpdate);
-  }, []);
-
-  const allSlugs = useMemo(() => guides.map(g => g.slug), []);
-  const progressStats = useMemo(() => getProgressCount(allSlugs), [allSlugs]);
-
-  /* Category summaries for the grid — surfaces the 3 best guides per category as previews. */
-  const categorySummaries = useMemo(() => {
-    const cats = Object.keys(categoryLabels) as GuideCategory[];
-    return cats
-      .map(cat => {
-        const inCat = guides.filter(g => g.category === cat);
-        const top = [...inCat].sort((a, b) => {
-          const av = a.verifiedHelpful ? 0 : 1;
-          const bv = b.verifiedHelpful ? 0 : 1;
-          if (av !== bv) return av - bv;
-          const ab = a.difficulty === 'Beginner' ? 0 : 1;
-          const bb = b.difficulty === 'Beginner' ? 0 : 1;
-          return ab - bb;
-        }).slice(0, 3);
-        return { cat, count: inCat.length, top };
-      })
-      .filter(c => c.count > 0);
-  }, []);
-
-  /* Quick-pick list (driven by the chip above the grid). */
-  const popularPicks = useMemo(() => {
-    const base = [...guides];
-    if (quickPick === 'newest') {
-      return base
-        .sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || ''))
-        .slice(0, 6);
-    }
-    if (quickPick === 'beginner') {
-      return base.filter(g => g.difficulty === 'Beginner').slice(0, 6);
-    }
-    if (quickPick === 'helpful') {
-      return base.filter(g => g.verifiedHelpful).slice(0, 6);
-    }
-    // popular (default): verifiedHelpful first, then newest-first
-    return base
-      .sort((a, b) => {
-        const av = a.verifiedHelpful ? 0 : 1;
-        const bv = b.verifiedHelpful ? 0 : 1;
-        if (av !== bv) return av - bv;
-        return (b.publishedAt || '').localeCompare(a.publishedAt || '');
-      })
-      .slice(0, 6);
-  }, [quickPick]);
-
-  /* Trending this week — newest 6 guides published in the last 3 weeks. SSR-safe. */
-  const trendingThisWeek = useMemo(() => {
-    const threeWeeksMs = 21 * 24 * 60 * 60 * 1000;
-    const cutoff = Date.now() - threeWeeksMs;
-    const recent = guides.filter(g => {
-      if (!g.publishedAt) return false;
-      const t = Date.parse(g.publishedAt);
-      return !Number.isNaN(t) && t >= cutoff;
-    });
-    const pool = recent.length >= 6 ? recent : [...guides];
-    return pool
-      .sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || ''))
-      .slice(0, 6);
-  }, []);
-
-  const handleSearchSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const q = search.trim();
-    if (q) navigate(`/search?q=${encodeURIComponent(q)}`);
-  };
+  const chip = (on: boolean) =>
+    `min-h-[44px] px-4 rounded-md border-2 text-base font-semibold ${
+      on ? 'border-primary bg-primary text-primary-foreground' : 'border-border hover:border-primary'
+    }`;
 
   return (
-    <div id="main-content" className="min-h-screen bg-background">
+    <>
       <SEOHead
-        title={`Find a Guide for Anything | ${guides.length.toLocaleString()}+ Free Tech Guides | TekSure`}
-        description={`Browse ${guides.length.toLocaleString()}+ free step-by-step tech guides for Windows, Mac, iPhone, Android, safety, banking, smart home, and everyday apps. Written in plain language for beginners.`}
+        title={active ? `${categoryLabels[active]} Guides | TekSure` : 'Tech Guides for Beginners & Seniors | TekSure'}
+        description={
+          active
+            ? categoryDescriptions[active]
+            : `${GUIDE_COUNT_LABEL} free, step-by-step tech guides in plain English: phones, computers, email, scams, Medicare and more.`
+        }
         path="/guides"
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'CollectionPage',
-          name: 'TekSure Technology Guides',
-          description: 'Free step-by-step technology guides written in plain language for everyday people.',
-          url: 'https://www.teksure.com/guides',
-          isPartOf: { '@type': 'WebSite', name: 'TekSure', url: 'https://www.teksure.com' },
-          numberOfItems: guides.length,
-        }}
       />
       <Navbar />
+      <main id="main-content" tabIndex={-1} className="mx-auto max-w-5xl px-4 pt-10 outline-none">
+        <h1 className="text-4xl font-bold">{active ? categoryLabels[active] : 'Guides'}</h1>
+        <p className="mt-3 text-xl text-muted-foreground">
+          {active ? categoryDescriptions[active] : 'Step-by-step help in plain English. Pick a topic or type a word to narrow the list.'}
+        </p>
 
-      <main id="main-content" tabIndex={-1} className="outline-none">
-      {/* Header — Origin "Midnight Ink" hero gradient on dark, soft radial on light */}
-      <section className="border-b hero-glow">
-        <div className="container py-14 md:py-20">
-          <div className="max-w-2xl mx-auto text-center">
-            <p className="text-muted-foreground text-lg mb-3 dark:text-white/70">
-              {guides.length}+ free step-by-step guides. No jargon, just answers.
-            </p>
-            <h1 className="text-4xl md:text-6xl origin-display tracking-tight mb-5 dark:text-white">
-              Find a guide for{' '}
-              <span className="text-gradient">
-                anything
-              </span>
-            </h1>
-            <p className="text-lg md:text-2xl text-foreground/80 dark:text-white/80 mb-8 leading-relaxed">
-              Written in plain language. No jargon. Ever.
-            </p>
-
-            <form onSubmit={handleSearchSubmit} className="relative max-w-2xl mx-auto">
-              <label htmlFor="guides-search" className="sr-only">Search guides</label>
-              <Search className="absolute left-5 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground pointer-events-none z-10" />
-              <input
-                id="guides-search"
-                placeholder={`Search ${guides.length.toLocaleString()}+ guides...`}
-                aria-label="Search guides"
-                className="pill-input pl-14 pr-32 h-14 text-lg"
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-              />
-              <Button
-                type="submit"
-                className="absolute right-2 top-1/2 -translate-y-1/2 h-11 px-5 rounded-origin-btn text-base font-semibold gap-1"
-              >
-                Search <ArrowRight className="h-4 w-4" />
-              </Button>
-            </form>
-
-            <div className="flex flex-wrap justify-center gap-2 mt-6">
-              {QUICK_PICKS.map(({ key, label, icon: Icon }) => {
-                const active = quickPick === key;
-                return (
-                  <button
-                    key={key}
-                    onClick={() => setQuickPick(key)}
-                    aria-pressed={active}
-                    className={`inline-flex items-center gap-2 rounded-full border-2 px-4 py-2 text-base font-semibold min-h-[44px] transition-all ${
-                      active
-                        ? 'bg-foreground text-background border-foreground shadow-md'
-                        : 'bg-card border-border hover:border-foreground/40 hover:bg-accent'
-                    }`}
-                  >
-                    <Icon className="h-4 w-4" /> {label}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Progress banner */}
-      {progressStats.completed > 0 && (
-        <div className="container mt-6">
-          <div className="flex items-center gap-4 p-4 rounded-2xl bg-success border-2 border-success-foreground/25 ">
-            <CheckCircle2 className="h-6 w-6 text-success-foreground shrink-0" />
-            <div className="flex-1 min-w-0">
-              <p className="text-base font-semibold text-success-foreground ">
-                You've completed {progressStats.completed} of {progressStats.total} guides — nicely done.
-              </p>
-              <Progress value={progressStats.pct} className="h-2 mt-2 bg-green-200 dark:bg-green-900" />
-            </div>
-            <span className="text-lg font-bold text-success-foreground ">{progressStats.pct}%</span>
-          </div>
-        </div>
-      )}
-
-      {/* ══════════════════════════════════════════
-            CATEGORY VIEW (shown when ?category=X is set)
-         ══════════════════════════════════════════ */}
-      {activeCategory && (
-        <section className="container py-12 md:py-16">
-          <button
-            onClick={clearCategory}
-            className="inline-flex items-center gap-2 text-base font-semibold text-foreground/70 hover:text-foreground transition-colors mb-6 min-h-[44px]"
-          >
-            <ArrowLeft className="h-4 w-4" /> All guides
-          </button>
-          <div className="flex items-start gap-4 mb-8">
-            {(() => {
-              const Icon = categoryIcons[activeCategory] ?? BookOpen;
-              return (
-                <div className={`h-16 w-16 rounded-2xl bg-gradient-to-br ${categoryTints[activeCategory] ?? ''} border-2 border-border flex items-center justify-center shrink-0`}>
-                  <Icon className="h-8 w-8 text-foreground" />
-                </div>
-              );
-            })()}
-            <div className="flex-1 min-w-0">
-              <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-1">
-                {categoryLabels[activeCategory]}
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                {categoryDescriptions[activeCategory]} · {categoryGuides.length} {categoryGuides.length === 1 ? 'guide' : 'guides'}
-              </p>
-            </div>
-          </div>
-          {categoryGuides.length === 0 ? (
-            <div className="text-center py-16">
-              <p className="text-5xl mb-4 select-none" aria-hidden="true"></p>
-              <p className="text-lg text-muted-foreground">No guides in this category yet — check back soon.</p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-              {categoryGuides.map(g => (
-                <GuideCard key={g.slug} guide={g} completed={completedSlugs.has(g.slug)} />
-              ))}
-            </div>
-          )}
-        </section>
-      )}
-
-      {/* ══════════════════════════════════════════
-            QUICK-PICK SECTION (driven by chip)
-         ══════════════════════════════════════════ */}
-      {!activeCategory && (
-      <>
-      <section className="container py-12 md:py-16">
-        <div className="flex items-end justify-between gap-4 mb-6">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
-              {quickPick === 'popular'  && 'Most popular right now'}
-              {quickPick === 'newest'   && 'Just published'}
-              {quickPick === 'beginner' && 'Great for beginners'}
-              {quickPick === 'helpful'  && 'Most helpful — reader verified'}
-            </h2>
-            <p className="text-lg text-muted-foreground mt-1">
-              Tap any chip above the search bar to swap the picks.
-            </p>
-          </div>
-          <Link
-            to="/search"
-            className="hidden md:inline-flex items-center gap-1 text-base font-semibold text-primary hover:underline min-h-[44px]"
-          >
-            See all <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-          {popularPicks.map(g => (
-            <GuideCard key={g.slug} guide={g} completed={completedSlugs.has(g.slug)} />
-          ))}
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════
-            FEATURED GUIDES (6 hand-picked topics)
-         ══════════════════════════════════════════ */}
-      <section className="bg-gradient-to-b from-background via-amber-50/40 to-background dark:via-amber-950/10 py-12 md:py-16 border-y-2 border-border">
-        <div className="container">
-          <div className="max-w-2xl mb-8 md:mb-10">
-            <p className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-warn-foreground mb-2">
-              <Flame className="h-4 w-4" /> Featured
-            </p>
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-2">
-              Six topics worth your time
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              The guides readers come back to the most. Start anywhere.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
-            {FEATURED_SLOTS.map(slot => (
-              <FeaturedCard key={slot.heading} slot={slot} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════
-            CATEGORY GRID
-         ══════════════════════════════════════════ */}
-      <section className="container py-12 md:py-16">
-        <div className="max-w-2xl mb-8 md:mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-2">
-            Browse by topic
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Pick a category that matches what you're trying to do today.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-          {categorySummaries.map(({ cat, top, count }) => (
-            <CategoryCard key={cat} cat={cat} topGuides={top} count={count} />
-          ))}
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════
-            TRENDING THIS WEEK
-         ══════════════════════════════════════════ */}
-      <section className="bg-muted/40 border-y-2 border-border py-12 md:py-16">
-        <div className="container">
-          <div className="flex items-end justify-between gap-4 mb-6">
-            <div>
-              <p className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-danger-foreground mb-2">
-                <TrendingUp className="h-4 w-4" /> Trending this week
-              </p>
-              <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
-                Fresh from our writers
-              </h2>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-            {trendingThisWeek.map(g => (
-              <GuideCard key={g.slug} guide={g} completed={completedSlugs.has(g.slug)} />
-            ))}
-          </div>
-        </div>
-      </section>
-      </>
-      )}
-
-      {/* ══════════════════════════════════════════
-            BOTTOM CTA — ask a real person
-         ══════════════════════════════════════════ */}
-      <section className="container py-16 md:py-20">
-        <div className="relative overflow-hidden rounded-3xl border-2 border-border bg-gradient-to-br from-amber-100 via-orange-50 to-rose-100 dark:from-amber-950/40 dark:via-orange-950/30 dark:to-rose-950/40 p-8 md:p-12 text-center">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-0 opacity-60"
-            style={{
-              background:
-                'radial-gradient(500px circle at 50% 0%, rgb(253 186 116 / 0.3), transparent 70%)',
-            }}
+        <div className="mt-6">
+          <label htmlFor="guide-filter" className="block text-lg font-semibold">
+            Filter guides
+          </label>
+          <input
+            id="guide-filter"
+            type="search"
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+            placeholder="For example: WhatsApp, printer, Medicare"
+            className="mt-2 h-12 w-full max-w-xl rounded-md border-2 border-input bg-background px-4 text-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           />
-          <div className="relative">
-            <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-background/80 backdrop-blur shadow-md mb-4">
-              <Brain className="h-8 w-8 text-warn-foreground" />
-            </div>
-            <h2 className="text-2xl md:text-4xl font-bold tracking-tight mb-3">
-              Can't find what you need?
-            </h2>
-            <p className="text-lg md:text-xl text-foreground/80 max-w-xl mx-auto mb-8 leading-relaxed">
-              Tell us what's wrong and a real person will walk you through it, step by step, in plain language.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <Button asChild size="lg" className="h-14 text-lg px-8 rounded-2xl gap-2 shadow-md">
-                <Link to="/get-help">
-                  <MessageCircle className="h-5 w-5" /> Talk to a person
-                </Link>
-              </Button>
-            </div>
-          </div>
         </div>
-      </section>
+
+        <nav aria-label="Guide topics" className="mt-6 flex flex-wrap gap-2">
+          <button onClick={() => pick(null)} className={chip(!active)} aria-pressed={!active}>
+            All topics
+          </button>
+          {GUIDE_CATEGORIES.map((c) => (
+            <button key={c} onClick={() => pick(c)} className={chip(active === c)} aria-pressed={active === c}>
+              {categoryLabels[c]}
+            </button>
+          ))}
+        </nav>
+
+        <p className="mt-6 text-base text-muted-foreground" aria-live="polite">
+          Showing {shown} {shown === 1 ? 'guide' : 'guides'}.
+        </p>
+
+        {groups.map(({ cat, guides }) =>
+          guides.length === 0 ? null : (
+            <section key={cat} aria-labelledby={`cat-${cat}`} className="mt-10">
+              {!active && (
+                <h2 id={`cat-${cat}`} className="text-2xl font-bold border-b-2 border-border pb-2">
+                  {categoryLabels[cat]}
+                </h2>
+              )}
+              <ul className="mt-2 divide-y divide-border">
+                {guides.map((g) => (
+                  <li key={g.slug} className="py-3">
+                    <Link to={`/guides/${g.slug}`} className="text-lg font-semibold text-primary underline-offset-4 hover:underline">
+                      {g.title}
+                    </Link>
+                    <p className="mt-1 text-base text-muted-foreground">{g.excerpt}</p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ),
+        )}
+
+        {shown === 0 && (
+          <p className="mt-10 text-lg">
+            No guides match “{filter}”. Try a shorter word, or{' '}
+            <Link to={`/search?q=${encodeURIComponent(filter)}`} className="text-primary underline">search the whole site</Link>.
+          </p>
+        )}
       </main>
-
       <Footer />
-    </div>
+    </>
   );
-};
-
-export default Guides;
+}

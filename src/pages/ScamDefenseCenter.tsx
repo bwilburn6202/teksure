@@ -267,44 +267,19 @@ export default function ScamDefenseCenter() {
       />
       <Navbar />
 
-      {/* ── 1. Hero ────────────────────────────────────────────────────────── */}
-      <section className="bg-gradient-to-br from-red-600 via-red-500 to-orange-500 text-white py-16 px-4">
-        <div className="container max-w-4xl mx-auto text-center">
-          <div className="flex justify-center mb-5">
-            <div className="p-4 bg-white/20 rounded-full backdrop-blur-sm">
-              <Shield className="h-12 w-12 text-white" />
-            </div>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Scam Defense Center
-          </h1>
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Scammers stole over{' '}
-            <strong className="text-white">$10 billion from Americans in 2023</strong>. Seniors are
-            the #1 target. Here&apos;s everything you need to stay safe.
+      <main id="main-content" tabIndex={-1} className="mx-auto max-w-4xl px-4 py-10 space-y-16 outline-none">
+        <section>
+          <h1 className="text-4xl md:text-5xl font-bold">Scam Defense Center</h1>
+          <p className="mt-4 text-xl leading-relaxed">
+            Scammers took over <strong>$10 billion from Americans in 2023</strong>, and older adults are a
+            top target. Here is how to spot a scam, and what to do if one already got you.
           </p>
-          <p className="mt-3 text-base text-white/70">Source: FTC Consumer Sentinel Network Data Book 2023</p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-            <Button
-              asChild
-              size="lg"
-              className="bg-card text-danger-foreground hover:bg-white/90 font-semibold min-h-[44px]"
-            >
-              <a href="#checklist">Check for Warning Signs</a>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white/60 text-white hover:bg-white/10 min-h-[44px]"
-            >
-              <a href="#got-scammed">I Already Got Scammed</a>
-            </Button>
+          <p className="mt-2 text-base text-muted-foreground">Source: FTC Consumer Sentinel Network Data Book 2023</p>
+          <div className="mt-6 flex flex-col sm:flex-row gap-3">
+            <Button asChild size="lg"><a href="#checklist">Check for warning signs</a></Button>
+            <Button asChild size="lg" variant="outline"><a href="#got-scammed">I already got scammed</a></Button>
           </div>
-        </div>
-      </section>
-
-      <main id="main-content" className="container max-w-4xl mx-auto px-4 py-12 space-y-16">
+        </section>
 
         {/* ── 2. Quick Checklist ────────────────────────────────────────────── */}
         <section id="checklist" className="scroll-mt-20">
@@ -458,7 +433,7 @@ export default function ScamDefenseCenter() {
               <p className="text-base leading-relaxed">
                 <strong>Looking for the latest scam alerts?</strong> Our{' '}
                 <Link
-                  to="/safety/scam-alerts"
+                  to="/scam-defense"
                   className="text-primary font-medium hover:underline"
                 >
                   Scam Alerts page
@@ -599,20 +574,20 @@ export default function ScamDefenseCenter() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-3">
-            {/* Scam Simulator */}
+            {/* Is This a Scam? */}
             <Card className="border-2 border-warn-foreground/25 hover:shadow-md transition-shadow group">
               <CardContent className="p-5 h-full flex flex-col">
                 <div className="text-3xl mb-3" aria-hidden="true"></div>
-                <h3 className="font-bold text-base mb-2">Practice Spotting Scams</h3>
+                <h3 className="font-bold text-base mb-2">Is This a Scam?</h3>
                 <p className="text-base text-muted-foreground leading-relaxed flex-1">
-                  Try real-world examples in a safe environment. The more you practice, the easier
-                  it is to recognize a scam when it really happens.
+                  Answer a few questions about a call, text or email you are not sure about, and
+                  get a plain answer about what to do next.
                 </p>
                 <Link
-                  to="/practice"
+                  to="/tools/is-this-a-scam"
                   className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-warn-foreground hover:underline min-h-[44px]"
                 >
-                  Open Practice Rooms
+                  Check a message
                   <ChevronRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </CardContent>
@@ -624,14 +599,14 @@ export default function ScamDefenseCenter() {
                 <div className="text-3xl mb-3" aria-hidden="true"></div>
                 <h3 className="font-bold text-base mb-2">Freeze Your Credit</h3>
                 <p className="text-base text-muted-foreground leading-relaxed flex-1">
-                  A credit freeze is free and one of the most powerful tools against identity theft.
-                  This guide walks you through it step by step.
+                  A credit freeze is free and one of the strongest protections against identity
+                  theft. This tool walks you through it step by step.
                 </p>
                 <Link
-                  to="/guides/freeze-credit-identity-theft"
+                  to="/tools/credit-freeze-walkthrough"
                   className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-info-foreground hover:underline min-h-[44px]"
                 >
-                  Read the Guide
+                  Freeze your credit
                   <ChevronRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </CardContent>
@@ -643,39 +618,19 @@ export default function ScamDefenseCenter() {
                 <div className="text-3xl mb-3" aria-hidden="true"></div>
                 <h3 className="font-bold text-base mb-2">Create Strong Passwords</h3>
                 <p className="text-base text-muted-foreground leading-relaxed flex-1">
-                  Weak passwords make it easy for scammers to break into your accounts. Learn how to
-                  create strong ones you can actually remember.
+                  Weak passwords make it easy for scammers to break into your accounts. Make a
+                  strong one you can actually remember.
                 </p>
                 <Link
-                  to="/guides/how-to-create-strong-password"
+                  to="/tools/password-generator"
                   className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-success-foreground hover:underline min-h-[44px]"
                 >
-                  Read the Guide
+                  Make a password
                   <ChevronRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
                 </Link>
               </CardContent>
             </Card>
           </div>
-
-          {/* CTA bottom */}
-          <Card className="mt-8 border-primary/30 bg-primary/5">
-            <CardContent className="py-7 px-6 text-center">
-              <Lock className="h-8 w-8 text-primary mx-auto mb-3" />
-              <h2 className="text-xl font-bold mb-2">Want a personalized safety score?</h2>
-              <p className="text-muted-foreground mb-5 max-w-md mx-auto text-base leading-relaxed">
-                Our free Cyber Scorecard checks your passwords, accounts, and devices and tells you
-                exactly where to focus — no technical knowledge required.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Button asChild size="lg" className="min-h-[44px]">
-                  <Link to="/tools/cyber-scorecard">Take the Cyber Scorecard</Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="min-h-[44px]">
-                  <Link to="/safety/scam-alerts">Latest Scam Alerts</Link>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
         </section>
 
       </main>

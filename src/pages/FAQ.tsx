@@ -1,749 +1,175 @@
-import { useState, useMemo, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, HelpCircle, Info, MousePointerClick, Shield, Users, HeartHandshake, Wrench } from 'lucide-react';
-import { Input } from '@/components/ui/input';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
-import { PageBreadcrumb } from '@/components/PageBreadcrumb';
-import { FIRST_HOUR_PRICE, ADDITIONAL_HOUR_PRICE, formatPrice } from '@/data/pricing';
+import {
+  FIRST_HOUR_PRICE,
+  ADDITIONAL_HOUR_PRICE,
+  DEPOSIT_AMOUNT,
+  FREE_CANCELLATION_HOURS,
+  formatPrice,
+} from '@/data/pricing';
 
-/**
- * Each FAQ has:
- *  - q: the question
- *  - a: a React node (so we can embed <Link> to related guides)
- *  - plain: a plain-text version used for the schema.org JSON-LD payload
- */
 interface FAQItem {
   q: string;
-  a: ReactNode;
-  plain: string;
+  a: string;
+  link?: { to: string; label: string };
 }
 
-interface FAQCategory {
-  id: string;
-  title: string;
-  blurb: string;
-  icon: typeof HelpCircle;
-  items: FAQItem[];
-}
-
-const categories: FAQCategory[] = [
+/**
+ * Every answer here must be true of the site as it is. Prices come from
+ * src/data/pricing.ts — never type a price into this file.
+ */
+const SECTIONS: { title: string; items: FAQItem[] }[] = [
   {
-    id: 'about',
     title: 'About TekSure',
-    blurb: 'Who we are and why we built this.',
-    icon: Info,
     items: [
       {
         q: 'What is TekSure?',
-        plain:
-          'TekSure is a friendly tech-help website that turns scary technology into simple, step-by-step answers. We publish free guides, clear explainers, and safety tools for everyday people — with no jargon, ever.',
-        a: (
-          <>
-            TekSure is a friendly tech-help website that turns scary
-            technology into simple, step-by-step answers. We publish{' '}
-            <Link to="/guides" className="text-primary hover:underline">free guides</Link>,
-            clear explainers, and safety tools for everyday people &mdash; with
-            no jargon, ever. If you&rsquo;ve ever felt stuck with a phone,
-            computer, Wi-Fi, or a suspicious email, TekSure is built for you.
-          </>
-        ),
+        a: 'Free, step-by-step tech help in plain English for phones, computers, the internet and avoiding scams. It is written for seniors and beginners, and for the family members who help them.',
       },
       {
-        q: 'Who is it for?',
-        plain:
-          'TekSure is for anyone who wants tech to feel less scary — seniors, caregivers, busy parents, non-native English speakers, first-time device owners, and anyone who prefers plain language over jargon.',
-        a: (
-          <>
-            TekSure is for anyone who wants tech to feel less scary &mdash;
-            seniors, caregivers, busy parents, non-native English speakers,
-            first-time device owners, and anyone who prefers plain language
-            over jargon. We have special hubs for{' '}
-            <Link to="/guides" className="text-primary hover:underline">seniors</Link>,{' '}
-            <Link to="/caregiver-hub" className="text-primary hover:underline">caregivers</Link>,
-            and{' '}
-            <Link to="/kids-online-safety" className="text-primary hover:underline">families</Link>.
-          </>
-        ),
+        q: 'Is it really free?',
+        a: 'Yes. Every guide and every tool is free, with no sign-up. You only pay if you choose to book a session with a real person.',
+        link: { to: '/guides', label: 'Browse the guides' },
       },
       {
-        q: 'Who built this?',
-        plain:
-          'TekSure was built by a small American team who got tired of watching family members struggle with tech that was supposed to make life easier. Read our full story on the About page.',
-        a: (
-          <>
-            TekSure was built by a small American team who got tired of
-            watching family members struggle with tech that was supposed to
-            make life easier. Read our full story on the{' '}
-            <Link to="/about" className="text-primary hover:underline">About page</Link>.
-          </>
-        ),
-      },
-      {
-        q: 'Is TekSure really free?',
-        plain:
-          'Yes. All of our guides, tools, and scam alerts are free to use. You only pay if you choose to book a one-on-one session with a real technician — and even that is transparently priced up front.',
-        a: (
-          <>
-            Yes. All of our{' '}
-            <Link to="/guides" className="text-primary hover:underline">guides</Link>,{' '}
-            <Link to="/tools" className="text-primary hover:underline">tools</Link>,{' '}
-            and{' '}
-            <Link to="/safety/scam-alerts" className="text-primary hover:underline">scam alerts</Link>{' '}
-            are free to use. You only pay if you
-            choose to book a one-on-one session with a real technician &mdash;
-            and even that is transparently priced up front.
-          </>
-        ),
-      },
-      {
-        q: 'How do you make money if it is free?',
-        plain:
-          'We earn revenue from optional paid technician sessions, a small number of tastefully-placed affiliate links in gift guides, and donations. We never sell your data, and we never run ads that track you.',
-        a: (
-          <>
-            We earn revenue from optional paid technician sessions (you can{' '}
-            <Link to="/get-help" className="text-primary hover:underline">book one here</Link>),
-            a small number of tastefully-placed affiliate links in gift guides,
-            and donations. We never sell your data, and we never run ads that
-            track you around the internet.
-          </>
-        ),
-      },
-      {
-        q: 'Can I trust TekSure with my information?',
-        plain:
-          'Yes. We only collect the minimum we need to run the site. We do not sell data, we do not share it with advertisers, and we explain exactly what we collect in plain English on our Privacy page.',
-        a: (
-          <>
-            Yes. We only collect the minimum we need to run the site. We do
-            not sell data, we do not share it with advertisers, and we explain
-            exactly what we collect in plain English on our{' '}
-            <Link to="/privacy" className="text-primary hover:underline">Privacy page</Link>.
-          </>
-        ),
+        q: 'Do I need an account?',
+        a: 'No. You can read every guide and use every tool without one. An account lets you follow a help request you have booked.',
       },
     ],
   },
   {
-    id: 'using-the-site',
-    title: 'Using the Site',
-    blurb: 'Getting around TekSure — the basics.',
-    icon: MousePointerClick,
+    title: 'Reading the guides',
     items: [
       {
-        q: 'Do I need an account?',
-        plain:
-          'No. You can read every guide and use every tool without signing up. You only need an account to book real-human help and follow your requests.',
-        a: (
-          <>
-            No. You can read every guide and use every tool without signing up.
-            You only need an account to book real-human help and follow your
-            requests. You can{' '}
-            <Link to="/signup" className="text-primary hover:underline">create a free account</Link>{' '}
-            in under a minute.
-          </>
-        ),
+        q: 'Can I print a guide?',
+        a: 'Yes. Every guide has a Print button near the top. The printed page leaves out the menus and buttons.',
       },
       {
-        q: 'Can I print guides?',
-        plain:
-          'Yes. Every guide has a print button near the top. We strip out menus, buttons, and ads so the paper version is clean and clutter-free — great for sticking on the fridge or next to the computer.',
-        a: (
-          <>
-            Yes. Every guide has a print button near the top. We strip out
-            menus, buttons, and ads so the paper version is clean and
-            clutter-free &mdash; great for sticking on the fridge or next to the
-            computer. Our{' '}
-            <Link to="/reference-cards" className="text-primary hover:underline">Quick Reference Cards</Link>{' '}
-            are designed to be printed and kept handy.
-          </>
-        ),
-      },
-      {
-        q: 'Can I read guides aloud?',
-        plain:
-          'Yes. Every guide works with your device’s built-in read-aloud feature — like Narrator on Windows, VoiceOver on Mac and iPhone, or Select-to-Speak on Android. Open our Accessibility Hub for step-by-step setup.',
-        a: (
-          <>
-            Yes. Every guide works with your device&rsquo;s built-in read-aloud
-            feature &mdash; like Narrator on Windows, VoiceOver on Mac and
-            iPhone, or Select-to-Speak on Android. Open our{' '}
-            <Link to="/accessibility" className="text-primary hover:underline">Accessibility Hub</Link>{' '}
-            for step-by-step setup instructions.
-          </>
-        ),
+        q: 'Can a guide be read aloud to me?',
+        a: 'Yes. Press "Read aloud" near the top of any guide and your device reads it to you. Press it again to stop.',
       },
       {
         q: 'How do I make the text bigger?',
-        plain:
-          'Look for the "A" button at the top of any page — it cycles through normal, large, and extra-large text sizes. Your choice is remembered on your device, so you only have to set it once.',
-        a: (
-          <>
-            Look for the &ldquo;A&rdquo; button at the top of any page
-            &mdash; it cycles through normal, large, and extra-large text
-            sizes. Your choice is remembered on your device, so you only have
-            to set it once. Need more? The{' '}
-            <Link to="/accessibility" className="text-primary hover:underline">Accessibility Hub</Link>{' '}
-            shows how to enlarge text system-wide on any device.
-          </>
-        ),
+        a: 'Use the text size button at the top of the page. Your choice is remembered on this device. You can also make text bigger on your whole phone or computer.',
+        link: { to: '/guides/hidden-accessibility-features-your-phone-already-has', label: 'Make text bigger on your phone' },
       },
       {
-        q: 'I have trouble with bright screens — is there a dark mode?',
-        plain:
-          'Yes. Look for the sun/moon toggle in the top navigation bar. Dark mode uses warmer colors that are easier on tired eyes, especially at night. Your choice is remembered between visits.',
-        a: (
-          <>
-            Yes. Look for the sun/moon toggle in the top navigation bar. Dark
-            mode uses warmer colors that are easier on tired eyes, especially
-            at night. Your choice is remembered between visits. We also offer a
-            high-contrast mode and larger touch targets &mdash; see the{' '}
-            <Link to="/accessibility" className="text-primary hover:underline">Accessibility Hub</Link>{' '}
-            for all the options.
-          </>
-        ),
-      },
-      {
-        q: 'Do guides work on my phone?',
-        plain:
-          'Yes. TekSure is built mobile-first, so every guide, tool, and page works on phones and tablets as well as on a computer. Large tap targets, big text, and swipe-friendly navigation throughout.',
-        a: (
-          <>
-            Yes. TekSure is built mobile-first, so every guide, tool, and page
-            works on phones and tablets as well as on a computer. Large tap
-            targets, big text, and swipe-friendly navigation throughout.
-          </>
-        ),
+        q: 'Is there a dark mode?',
+        a: 'Yes. Use the sun and moon button at the top of the page. Your choice is remembered between visits.',
       },
     ],
   },
   {
-    id: 'safety-privacy',
-    title: 'Safety & Privacy',
-    blurb: 'Scams, tracking, cookies, and keeping you safe.',
-    icon: Shield,
+    title: 'Scams and safety',
     items: [
       {
+        q: 'I think I have been scammed. What do I do?',
+        a: 'Stop talking to the scammer and do not send more money. Then call your bank using the number on the back of your card. Our checklist walks you through the rest in order.',
+        link: { to: '/emergency-help', label: 'What to do right now' },
+      },
+      {
         q: 'How do I report a scam?',
-        plain:
-          'Use our free Scam Report tool. Paste the email, text, or phone number, and we will check it against known scam patterns and tell you what to do next — plus forward it to the right authorities.',
-        a: (
-          <>
-            Use our free{' '}
-            <Link to="/tools/scam-report" className="text-primary hover:underline">Scam Report tool</Link>.
-            Paste the email, text, or phone number, and we will check it
-            against known scam patterns and tell you what to do next &mdash;
-            plus forward it to the right authorities. You can also browse
-            current threats on our{' '}
-            <Link to="/safety/scam-alerts" className="text-primary hover:underline">Scam Alerts page</Link>.
-          </>
-        ),
+        a: 'Report it to the Federal Trade Commission at ReportFraud.ftc.gov. If you lost money, also call your bank and file a report with your local police.',
+        link: { to: '/tools/scam-recovery-checklist', label: 'Scam recovery checklist' },
       },
       {
-        q: 'I think I got scammed — what do I do?',
-        plain:
-          'Take a breath. Visit our Scam Defense Center — it has a minute-by-minute checklist: change your password, freeze your cards, contact your bank, and file a report. Fast action recovers most losses.',
-        a: (
-          <>
-            Take a breath. Visit our{' '}
-            <Link to="/scam-defense" className="text-primary hover:underline">Scam Defense Center</Link>{' '}
-            &mdash; it has a minute-by-minute checklist: change your password,
-            freeze your cards, contact your bank, and file a report. Fast
-            action recovers most losses. If you need a human, you can also{' '}
-            <Link to="/emergency-help" className="text-primary hover:underline">get emergency help</Link>.
-          </>
-        ),
-      },
-      {
-        q: 'Do you track me on this site?',
-        plain:
-          'We use basic, anonymous analytics to know which pages are popular. We do not profile you, follow you around the web, or sell your activity. You can opt out at any time from the cookie banner.',
-        a: (
-          <>
-            We use basic, anonymous analytics to know which pages are popular.
-            We do not profile you, follow you around the web, or sell your
-            activity. You can opt out at any time from the cookie banner or
-            read the full breakdown on our{' '}
-            <Link to="/privacy" className="text-primary hover:underline">Privacy page</Link>.
-          </>
-        ),
+        q: 'How can I tell if a message is a scam?',
+        a: 'Answer a few questions about the call, text or email and our tool tells you how worried to be and what to do next.',
+        link: { to: '/tools/is-this-a-scam', label: 'Is This a Scam?' },
       },
       {
         q: 'Do you sell my data?',
-        plain:
-          'No. We have never sold user data and we never will. It is written into our Privacy Policy, and it is one of the reasons TekSure exists in the first place.',
-        a: (
-          <>
-            No. We have never sold user data and we never will. It is written
-            into our{' '}
-            <Link to="/privacy" className="text-primary hover:underline">Privacy Policy</Link>,
-            and it is one of the reasons TekSure exists in the first place.
-          </>
-        ),
-      },
-      {
-        q: 'Do you use cookies?',
-        plain:
-          'Yes — but only the helpful kind. We use cookies to remember your text size, dark mode choice, and whether you are logged in. No advertising or cross-site tracking cookies.',
-        a: (
-          <>
-            Yes &mdash; but only the helpful kind. We use cookies to remember
-            your text size, dark mode choice, and whether you are logged in.
-            No advertising or cross-site tracking cookies. You can review
-            exactly which cookies we use on our{' '}
-            <Link to="/privacy" className="text-primary hover:underline">Privacy page</Link>.
-          </>
-        ),
-      },
-      {
-        q: 'How is my TekSure account kept secure?',
-        plain:
-          'Passwords are encrypted, you can turn on two-factor authentication, and we log every sign-in for review. If anything looks off, we notify you by email within minutes.',
-        a: (
-          <>
-            Passwords are encrypted, you can turn on{' '}
-            <Link to="/tools/two-factor-setup" className="text-primary hover:underline">two-factor authentication</Link>,
-            and we log every sign-in for review. If anything looks off, we
-            notify you by email within minutes.
-          </>
-        ),
-      },
-      {
-        q: 'Will you email me spam?',
-        plain:
-          'No. If you join our newsletter, you get one short tip per week — nothing else. You can unsubscribe with one click from the bottom of any email. We never share your address with anyone.',
-        a: (
-          <>
-            No. If you join our newsletter, you get one short tip per week
-            &mdash; nothing else. You can unsubscribe with one click from the
-            bottom of any email. We never share your address with anyone.
-          </>
-        ),
+        a: 'No. Our Privacy page explains what we collect and why, in plain English.',
+        link: { to: '/privacy', label: 'Read the privacy policy' },
       },
     ],
   },
   {
-    id: 'real-human-help',
-    title: 'Real Human Help',
-    blurb: 'When you want a real person, not a chatbot.',
-    icon: HeartHandshake,
+    title: 'Getting help from a person',
     items: [
       {
-        q: 'How do I book a technician?',
-        plain:
-          'Open the Get Help page, choose the kind of problem, pick a day and time, and describe what is going on in your own words. You do not need an account. We confirm by email, then call you at the agreed time.',
-        a: (
-          <>
-            Open the{' '}
-            <Link to="/get-help" className="text-primary hover:underline">Get Help page</Link>,
-            choose the kind of problem, pick a day and time, and describe what is
-            going on in your own words. You do not need an account to book. We
-            send a confirmation by email and then call you at the time you chose.
-            Sessions are remote, so this works anywhere in the United States.
-          </>
-        ),
+        q: 'How do I book a session?',
+        a: 'Open the Get Help page, choose the kind of problem, pick a time, and describe what is going on in your own words.',
+        link: { to: '/get-help', label: 'Get help from a person' },
       },
       {
-        q: 'What’s a typical session like?',
-        plain:
-          'Most sessions happen by video call and last 20–45 minutes. The technician introduces themselves, asks a few questions, and walks you through the fix. You never have to hand over passwords — ever.',
-        a: (
-          <>
-            Most sessions happen by video call and last 20&ndash;45 minutes.
-            The technician introduces themselves, asks a few questions, and
-            walks you through the fix. You never have to hand over passwords
-            &mdash; ever.
-          </>
-        ),
+        q: 'How much does it cost?',
+        a: `${formatPrice(FIRST_HOUR_PRICE)} for the first hour and ${formatPrice(ADDITIONAL_HOUR_PRICE)} for each extra hour. A ${formatPrice(DEPOSIT_AMOUNT)} deposit holds your time. You see the price before you book.`,
+        link: { to: '/pricing', label: 'See pricing' },
       },
       {
-        q: 'How much does a booking cost?',
-        plain:
-          `Sessions are ${formatPrice(FIRST_HOUR_PRICE)} for the first hour and ${formatPrice(ADDITIONAL_HOUR_PRICE)} for each additional hour. Most jobs take about an hour. You see the price before you book, you only pay for the time spent, and if we cannot fix it you pay nothing. No subscriptions, no hidden fees.`,
-        a: (
-          <>
-            Sessions are <strong>{formatPrice(FIRST_HOUR_PRICE)} for the first hour</strong> and {formatPrice(ADDITIONAL_HOUR_PRICE)} for
-            each additional hour. Most jobs take about an hour. You see the
-            price before you book, you only pay for the time actually spent,
-            and if we cannot fix your problem you pay nothing. No
-            subscriptions, no hidden fees. Prefer local, in-person
-            help? Try{' '}
-            <Link to="/tech-help-near-me" className="text-primary hover:underline">tech help near you</Link>.
-          </>
-        ),
+        q: 'What if you cannot fix it?',
+        a: `If we cannot solve the problem you booked us for, you pay nothing. You can cancel up to ${FREE_CANCELLATION_HOURS} hours before your session and get your deposit back.`,
+        link: { to: '/refund-policy', label: 'Read the refund policy' },
       },
       {
-        q: 'What if the technician can’t help?',
-        plain:
-          'If your session does not solve the problem, you do not pay. Period. We also tell you honestly when a job needs a specialist — like a phone repair shop or your internet provider.',
-        a: (
-          <>
-            If your session does not solve the problem, you do not pay.
-            Period. We also tell you honestly when a job needs a specialist
-            &mdash; like a phone repair shop or your internet provider
-            &mdash; and we will point you in the right direction.
-          </>
-        ),
-      },
-      {
-        q: 'Can a family member join the session?',
-        plain:
-          'Absolutely. Many of our bookings include a caregiver or adult child sitting in. Just let us know when booking — we will send the video link to both of you.',
-        a: (
-          <>
-            Absolutely. Many of our bookings include a caregiver or adult
-            child sitting in. Just let us know when{' '}
-            <Link to="/get-help" className="text-primary hover:underline">booking</Link>{' '}
-            &mdash; we will send the video link to both of you. Our{' '}
-            <Link to="/caregiver-hub" className="text-primary hover:underline">Caregiver Hub</Link>{' '}
-            has more tips for helping a loved one remotely.
-          </>
-        ),
+        q: 'Can a family member join?',
+        a: 'Yes. Mention it when you book and we will make sure they can join the call.',
       },
     ],
   },
   {
-    id: 'families-caregivers',
-    title: 'For Families & Caregivers',
-    blurb: 'Helping a parent, grandparent, or loved one.',
-    icon: Users,
+    title: 'Trouble with this website',
     items: [
       {
-        q: 'Can I use TekSure to help my parent?',
-        plain:
-          'Yes — many of our users are adult children helping aging parents. Start at the Caregiver Hub for how-tos on setting up devices, filtering scam calls, and simplifying a loved one’s phone or computer.',
-        a: (
-          <>
-            Yes &mdash; many of our users are adult children helping aging
-            parents. Start at the{' '}
-            <Link to="/caregiver-hub" className="text-primary hover:underline">Caregiver Hub</Link>{' '}
-            for how-tos on setting up devices, filtering scam calls, and
-            simplifying a loved one&rsquo;s phone or computer.
-          </>
-        ),
-      },
-      {
-        q: 'My parent is losing memory — can TekSure help?',
-        plain:
-          'Yes. Our Dementia Care Tech Hub covers simplified home screens, photo-dial phones, scam-filtering tools, and gentle routines that reduce confusion and fear around technology.',
-        a: (
-          <>
-            Yes. Our{' '}
-            <Link to="/dementia-care-tech" className="text-primary hover:underline">Dementia Care Tech Hub</Link>{' '}
-            covers simplified home screens, photo-dial phones, scam-filtering
-            tools, and gentle routines that reduce confusion and fear around
-            technology.
-          </>
-        ),
-      },
-      {
-        q: 'What if English isn’t their first language?',
-        plain:
-          'We publish a growing set of guides in Spanish, and our ESL Tech Hub has simplified English guides written at a 5th-grade reading level. Every page works with your browser’s translate feature too.',
-        a: (
-          <>
-            We publish a growing set of guides in{' '}
-            <Link to="/guias" className="text-primary hover:underline">Spanish (Espa&ntilde;ol)</Link>,
-            and our{' '}
-            <Link to="/esl-tech-hub" className="text-primary hover:underline">ESL Tech Hub</Link>{' '}
-            has simplified English guides written at a 5th-grade reading
-            level. Every page works with your browser&rsquo;s translate
-            feature too.
-          </>
-        ),
-      },
-    ],
-  },
-  {
-    id: 'technical',
-    title: 'Technical',
-    blurb: 'Site glitches, browsers, and offline use.',
-    icon: Wrench,
-    items: [
-      {
-        q: 'Why won’t a page load?',
-        plain:
-          'Try refreshing the page first (Ctrl+R on Windows, Cmd+R on Mac). If that does not work, check your internet connection. Still stuck? Email us at hello@teksure.com — we answer within a day.',
-        a: (
-          <>
-            Try refreshing the page first (Ctrl+R on Windows, Cmd+R on Mac).
-            If that does not work, check your internet connection using our{' '}
-            <Link to="/tools/wifi-speed" className="text-primary hover:underline">Wi-Fi Speed tool</Link>.
-            Still stuck? Email us at{' '}
-            <a href="mailto:hello@teksure.com" className="text-primary hover:underline">
-              hello@teksure.com
-            </a>{' '}
-            &mdash; we answer within a day.
-          </>
-        ),
-      },
-      {
-        q: 'Why is the site slow?',
-        plain:
-          'Usually it is a slow internet connection, not TekSure. Run our free Wi-Fi Speed test to check. If the site itself is slow for everyone, we post updates on the What’s New page.',
-        a: (
-          <>
-            Usually it is a slow internet connection, not TekSure. Run our
-            free{' '}
-            <Link to="/tools/wifi-speed" className="text-primary hover:underline">Wi-Fi Speed test</Link>{' '}
-            to check. If the site itself is slow for everyone, we post updates
-            on the{' '}
-            <Link to="/whats-new" className="text-primary hover:underline">What&rsquo;s New page</Link>.
-          </>
-        ),
+        q: 'A page will not load. What do I do?',
+        a: 'Refresh the page (Ctrl+R on Windows, Cmd+R on Mac) and check your internet connection. Still stuck? Email hello@teksure.com.',
       },
       {
         q: 'Which browsers does TekSure work on?',
-        plain:
-          'TekSure works on any modern browser — Chrome, Safari, Firefox, and Edge — on phones, tablets, and computers. If you are using a very old browser, you may see a gentle prompt to update.',
-        a: (
-          <>
-            TekSure works on any modern browser &mdash; Chrome, Safari,
-            Firefox, and Edge &mdash; on phones, tablets, and computers. If
-            you are using a very old browser, you may see a gentle prompt to
-            update. Our{' '}
-            <Link to="/glossary" className="text-primary hover:underline">Glossary</Link>{' '}
-            explains what a browser is, if you are curious.
-          </>
-        ),
-      },
-      {
-        q: 'Can I use TekSure offline?',
-        plain:
-          'Partly. Guides you have already visited stay readable offline, and an offline banner tells you when you have lost connection. Booking a technician needs an active internet connection.',
-        a: (
-          <>
-            Partly. Guides you have already visited stay readable offline, and
-            an offline banner tells you when you have lost connection.
-            Booking a technician needs an active internet connection.
-          </>
-        ),
+        a: 'Any up-to-date version of Chrome, Safari, Edge or Firefox, on a phone, tablet or computer.',
       },
     ],
   },
 ];
 
-// Build the schema.org FAQPage JSON-LD from the plain-text answers.
-// All questions across all categories are included.
-const faqJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: categories.flatMap((cat) =>
-    cat.items.map((item) => ({
-      '@type': 'Question',
-      name: item.q,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.plain,
-      },
-    }))
-  ),
-};
-
-const FAQ = () => {
-  const [search, setSearch] = useState('');
-
-  const normalized = search.trim().toLowerCase();
-
-  const filteredCategories = useMemo(() => {
-    if (!normalized) return categories;
-    return categories
-      .map((cat) => ({
-        ...cat,
-        items: cat.items.filter(
-          (item) =>
-            item.q.toLowerCase().includes(normalized) ||
-            item.plain.toLowerCase().includes(normalized)
-        ),
-      }))
-      .filter((cat) => cat.items.length > 0);
-  }, [normalized]);
-
-  const totalVisible = filteredCategories.reduce(
-    (sum, cat) => sum + cat.items.length,
-    0
-  );
-
-  const totalAll = categories.reduce((sum, cat) => sum + cat.items.length, 0);
+export default function FAQ() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: SECTIONS.flatMap((s) =>
+      s.items.map((i) => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a } })),
+    ),
+  };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <>
       <SEOHead
-        title="Frequently Asked Questions — Plain-English Answers | TekSure"
-        description={`Everything you want to know about TekSure, in plain English. ${totalAll}+ answers on our free guides, privacy, real-human help, and more.`}
+        title="Frequently Asked Questions | TekSure"
+        description="Answers about TekSure: what is free, how to print or listen to a guide, what to do about a scam, and how booking a real person works."
         path="/faq"
-        jsonLd={faqJsonLd}
+        jsonLd={[jsonLd]}
       />
       <Navbar />
-
-      <div className="max-w-4xl mx-auto pt-4 px-4 w-full">
-        <PageBreadcrumb segments={[{ label: 'FAQ' }]} />
-      </div>
-
-      <main className="flex-1">
-        {/* Hero */}
-        <section className="border-b border-border">
-          <div className="max-w-4xl mx-auto py-16 md:py-20 px-4 text-center">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 mb-6">
-              <HelpCircle className="h-7 w-7 text-primary" aria-hidden="true" />
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-              Questions, Answered
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-              Everything you want to know about TekSure, in plain English.
-            </p>
-
-            {/* Search */}
-            <div className="relative max-w-xl mx-auto">
-              <Search
-                className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground/60"
-                aria-hidden="true"
-              />
-              <label htmlFor="faq-search" className="sr-only">
-                Search frequently asked questions
-              </label>
-              <Input
-                id="faq-search"
-                placeholder="Search questions… (try “dark mode” or “scam”)"
-                className="pl-12 h-14 text-base md:text-lg bg-card rounded-2xl border-border shadow-sm focus:border-primary/40 focus:shadow-md transition-all"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                autoComplete="off"
-              />
-            </div>
-
-            {normalized && (
-              <p className="mt-4 text-base text-muted-foreground" aria-live="polite">
-                Showing {totalVisible} {totalVisible === 1 ? 'answer' : 'answers'} for
-                &ldquo;{search}&rdquo;
-              </p>
-            )}
-          </div>
-        </section>
-
-        {/* Category jump nav (hidden when searching) */}
-        {!normalized && (
-          <nav
-            aria-label="FAQ categories"
-            className="sticky top-16 z-30 bg-background/95 backdrop-blur-sm border-b border-border"
-          >
-            <div className="max-w-4xl mx-auto px-4 py-3 flex flex-wrap gap-2 justify-center">
-              {categories.map((cat) => (
-                <a
-                  key={cat.id}
-                  href={`#${cat.id}`}
-                  className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-full bg-card border border-border hover:border-primary hover:text-primary transition-colors"
-                >
-                  <cat.icon className="h-4 w-4" aria-hidden="true" />
-                  {cat.title}
-                </a>
+      <main id="main-content" tabIndex={-1} className="mx-auto max-w-3xl px-4 pt-10 outline-none">
+        <h1 className="text-4xl font-bold">Frequently asked questions</h1>
+        {SECTIONS.map((section) => (
+          <section key={section.title} className="mt-10">
+            <h2 className="text-2xl font-bold border-b-2 border-border pb-2">{section.title}</h2>
+            <dl className="mt-4 space-y-6">
+              {section.items.map((item) => (
+                <div key={item.q}>
+                  <dt className="text-xl font-semibold">{item.q}</dt>
+                  <dd className="mt-2 text-lg">
+                    {item.a}
+                    {item.link && (
+                      <>
+                        {' '}
+                        <Link to={item.link.to} className="text-primary underline underline-offset-4">
+                          {item.link.label}
+                        </Link>
+                      </>
+                    )}
+                  </dd>
+                </div>
               ))}
-            </div>
-          </nav>
-        )}
-
-        {/* Categories */}
-        <section className="py-12 md:py-16 px-4">
-          <div className="max-w-3xl mx-auto space-y-14">
-            {filteredCategories.length === 0 ? (
-              <div className="text-center py-16">
-                <p className="text-5xl mb-4" aria-hidden="true"></p>
-                <p className="text-xl font-semibold mb-2">No answers found</p>
-                <p className="text-muted-foreground text-base">
-                  Try a different search term, or{' '}
-                  <Link
-                    to="/get-help"
-                    className="text-primary hover:underline font-medium"
-                  >
-                    ask a real person
-                  </Link>
-                  .
-                </p>
-              </div>
-            ) : (
-              filteredCategories.map((cat) => {
-                const Icon = cat.icon;
-                return (
-                  <div
-                    key={cat.id}
-                    id={cat.id}
-                    className="scroll-mt-36"
-                  >
-                    <header className="mb-6 pb-4 border-b border-border">
-                      <div className="flex items-center gap-3 mb-2">
-                        <div className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-primary/10">
-                          <Icon
-                            className="h-5 w-5 text-primary"
-                            aria-hidden="true"
-                          />
-                        </div>
-                        <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
-                          {cat.title}
-                        </h2>
-                      </div>
-                      <p className="text-muted-foreground text-base">
-                        {cat.blurb}
-                      </p>
-                    </header>
-
-                    <Accordion
-                      type="multiple"
-                      className="bg-card rounded-2xl border border-border divide-y divide-border"
-                    >
-                      {cat.items.map((item, idx) => (
-                        <AccordionItem
-                          key={item.q}
-                          value={`${cat.id}-${idx}`}
-                          className="border-b-0 px-5 md:px-6"
-                        >
-                          <AccordionTrigger className="text-left text-base md:text-lg font-semibold hover:no-underline py-5">
-                            {item.q}
-                          </AccordionTrigger>
-                          <AccordionContent className="text-base md:text-lg text-muted-foreground leading-relaxed pb-5">
-                            {item.a}
-                          </AccordionContent>
-                        </AccordionItem>
-                      ))}
-                    </Accordion>
-                  </div>
-                );
-              })
-            )}
-          </div>
-        </section>
-
-        {/* Still stuck? CTA */}
-        <section className="bg-foreground text-background">
-          <div className="container py-16 md:py-20 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
-              Still stuck? We&rsquo;ve got you.
-            </h2>
-            <p className="text-background/70 text-lg mb-8 max-w-md mx-auto leading-relaxed">
-              Tell us what&rsquo;s wrong and a real person will help you
-              sort it out.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="gap-2 rounded-xl h-12 px-6 border-background/20 text-background hover:bg-background/10"
-              >
-                <Link to="/get-help">Book a Human</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+            </dl>
+          </section>
+        ))}
       </main>
-
       <Footer />
-    </div>
+    </>
   );
-};
-
-export default FAQ;
+}

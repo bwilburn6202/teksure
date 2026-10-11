@@ -171,17 +171,17 @@ export default function SpeedUpDevice() {
           <div className="mt-10 pt-8 border-t border-border">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
-              <Link to="/tools/storage-cleanup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-base">Storage Cleanup</p>
-                <p className="text-sm text-muted-foreground mt-0.5">More space-saving tactics.</p>
+              <Link to="/tools/troubleshooter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+                <p className="font-medium text-base">Tech Troubleshooter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Fixes for other common problems.</p>
               </Link>
-              <Link to="/tools/device-age-checker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-base">Device Age Checker</p>
-                <p className="text-sm text-muted-foreground mt-0.5">When to replace instead.</p>
+              <Link to="/tools/error-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+                <p className="font-medium text-base">Error Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">What a confusing message means.</p>
               </Link>
-              <Link to="/tools/update-decision-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-base">Update Decision Helper</p>
-                <p className="text-sm text-muted-foreground mt-0.5">Should you install that update?</p>
+              <Link to="/tools/photo-backup-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+                <p className="font-medium text-base">Photo Backup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Save photos before you delete anything.</p>
               </Link>
             </div>
           </div>

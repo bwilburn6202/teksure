@@ -233,14 +233,6 @@ export default function CreditFreezeWalkthrough() {
                 <p className="font-medium text-base">ID Theft Recovery</p>
                 <p className="text-sm text-muted-foreground mt-0.5">If something has already happened.</p>
               </Link>
-              <Link to="/tools/credit-report-reader" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-base">Credit Report Reader</p>
-                <p className="text-sm text-muted-foreground mt-0.5">Pull and read your reports.</p>
-              </Link>
-              <Link to="/tools/online-banking-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-base">Online Banking Safety</p>
-                <p className="text-sm text-muted-foreground mt-0.5">Lock down accounts you have.</p>
-              </Link>
             </div>
           </div>
           <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">

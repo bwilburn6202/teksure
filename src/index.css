@@ -5,36 +5,31 @@
 /* Google Fonts loaded via <link> in index.html for better performance */
 
 @layer base {
-  /* ──────────────────────────────────────────────────────────────────
-     Origin "Midnight Command Center" theme.
-     Light mode = airy, Origin-flavored: Faded Mist canvas, Slate text,
-     Violet Haze primary, Ocean Glimmer accent.
-     Dark mode  = Origin Midnight Ink: deep grey-black canvas, Elevated
-     Charcoal cards, Ghost White text, same accent palette so brand
-     identity stays consistent across modes.
-     ────────────────────────────────────────────────────────────────── */
+  /* Plain theme (2026-10-11): white page, near-black text, one strong blue
+     for links and buttons, visible borders. Every text/background pair is
+     WCAG AA or better; primary on white is 7:1. No gradients, no glass. */
   :root {
     /* Origin-flavored light: Faded Mist canvas, Ghost White cards */
-    --background: 240 17% 96%;          /* #f5f5f7 Faded Mist */
-    --foreground: 0 0% 6%;              /* near-Slate-Canvas */
-    --card: 0 0% 100%;                  /* #ffffff Ghost White */
-    --card-foreground: 0 0% 6%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 6%;
-    --primary: 243 66% 62%;            /* #655ede Violet Haze - AA (4.99:1 w/ white) */
+    --popover-foreground: 0 0% 7%;
+    --primary: 221 83% 40%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 240 6% 92%;
-    --secondary-foreground: 0 0% 6%;
-    --muted: 240 5% 90%;
-    --muted-foreground: 240 1% 42%;     /* #6a6b6b Whisper Blue */
-    --accent: 192 99% 29%;            /* #017693 Ocean Glimmer - AA (5.24:1 w/ white, 4.73:1 on canvas) */
+    --secondary: 220 14% 95%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 220 14% 95%;
+    --muted-foreground: 220 9% 30%;
+    --accent: 221 83% 40%;
     --accent-foreground: 0 0% 100%;
-    --destructive: 0 72% 55%;
+    --destructive: 0 74% 42%;
     --destructive-foreground: 0 0% 100%;
-    --border: 240 6% 88%;
-    --input: 240 6% 88%;
-    --ring: 243 66% 62%;
-    --radius: 1rem;                     /* 16px — Origin card radius */
+    --border: 220 9% 72%;
+    --input: 220 9% 46%;
+    --ring: 221 83% 40%;
+    --radius: 0.5rem;
 
     --teksure-success: 152 55% 42%;
     --teksure-warning: 38 85% 52%;
@@ -93,25 +88,25 @@
 
   /* Origin Midnight Ink dark — the canonical Origin look */
   .dark {
-    --background: 220 8% 6%;            /* #0f1011 Midnight Ink */
-    --foreground: 0 0% 100%;            /* #ffffff Ghost White */
-    --card: 0 0% 18%;                   /* #2e2e2e Elevated Charcoal */
-    --card-foreground: 0 0% 100%;
-    --popover: 0 0% 18%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 246 100% 81%;            /* #a99fff - AA on card (5.9) and bg (8.2) */
-    --primary-foreground: 220 8% 6%;            /* dark label on bright violet */
-    --secondary: 0 0% 0%;               /* #000000 Slate Canvas */
-    --secondary-foreground: 0 0% 100%;
-    --muted: 220 8% 12%;
-    --muted-foreground: 0 0% 79%;       /* #cacaca Subtle Ash */
-    --accent: 192 100% 43%;             /* #00b3dd Ocean Glimmer */
-    --accent-foreground: 220 8% 6%;            /* dark label on Ocean Glimmer */
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 213 94% 72%;
+    --primary-foreground: 0 0% 7%;
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 80%;
+    --accent: 213 94% 72%;
+    --accent-foreground: 0 0% 7%;
     --destructive: 0 62% 48%;
     --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 20%;
-    --input: 0 0% 0%;                   /* Slate Canvas — Origin input bg */
-    --ring: 246 100% 81%;
+    --border: 0 0% 35%;
+    --input: 0 0% 60%;
+    --ring: 213 94% 72%;
 
     --teksure-success: 192 100% 43%;
     --teksure-warning: 304 56% 71%;
@@ -151,32 +146,15 @@
     @apply border-border;
   }
   html {
-    /* Senior-friendly default. Was 16px; raised to 17px so the
-       20+ million seniors on this site don't have to find the
-       hidden Senior Mode toggle to get readable text. All Tailwind
-       text-* sizes scale with root. */
-    font-size: 17px;
+    /* Senior-friendly default: 18px. All Tailwind text-* sizes scale with root. */
+    font-size: 18px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    letter-spacing: -0.011em;
     overflow-x: hidden;
-  }
-  /* Site-wide mesh wallpaper canvas — fixed behind every route so page
-     content sits on top. Without this rule the canvas flows inline at
-     full viewport size and pushes content off-screen. */
-  canvas.teksure-mesh-bg {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    pointer-events: none;
-    transform: translateZ(0);
-    will-change: transform;
   }
   button, a[role="button"], [role="button"] {
     min-height: 44px;
@@ -192,287 +170,6 @@
     outline: 2px solid hsl(var(--ring));
     outline-offset: 2px;
     border-radius: 2px;
-  }
-}
-
-@layer components {
-  /* Clean section backgrounds */
-  .section-alt {
-    @apply bg-muted/50;
-  }
-
-  /* Clean header */
-  .glass {
-    @apply bg-background/90 backdrop-blur-xl;
-    border-bottom: 1px solid hsl(var(--border) / 0.6);
-  }
-
-
-  /* Origin "Midnight Ink" hero gradient — atmospheric depth on dark */
-  .hero-glow {
-    background:
-      radial-gradient(ellipse 80% 60% at 50% 20%, hsl(var(--primary) / 0.06) 0%, transparent 70%),
-      hsl(var(--muted));
-  }
-  .dark .hero-glow {
-    background: linear-gradient(
-      rgb(15, 16, 17) 0%,
-      rgb(19, 29, 39) 18%,
-      rgb(26, 71, 136) 37%,
-      rgb(64, 138, 193) 69%,
-      rgb(64, 138, 193) 102%
-    );
-  }
-
-  .mesh-gradient {
-    background:
-      radial-gradient(ellipse 80% 60% at 50% 20%, hsl(var(--primary) / 0.06) 0%, transparent 70%),
-      hsl(var(--muted));
-  }
-  .dark .mesh-gradient {
-    background: linear-gradient(135deg, rgb(43, 43, 44), rgb(19, 19, 19));
-  }
-
-  /* Origin Midnight Ink full-bleed gradient — for hero sections */
-  .midnight-canvas {
-    background: linear-gradient(
-      rgb(15, 16, 17) 0%,
-      rgb(19, 29, 39) 18%,
-      rgb(26, 71, 136) 37%,
-      rgb(64, 138, 193) 69%,
-      rgb(64, 138, 193) 102%
-    );
-    color: hsl(var(--origin-ghost));
-  }
-
-  /* Origin Dark Sky gradient — quieter alternative for sections */
-  .dark-sky-gradient {
-    background: linear-gradient(135deg, rgb(43, 43, 44), rgb(19, 19, 19));
-    color: hsl(var(--origin-ghost));
-  }
-
-  /* Grain texture overlay (disabled — kept for backward compat) */
-  .grain {
-    position: relative;
-  }
-
-  /* Dot grid pattern (keep for backward compat) */
-  .dot-grid {
-    background-image: radial-gradient(circle, hsl(var(--muted-foreground) / 0.08) 1px, transparent 1px);
-    background-size: 32px 32px;
-  }
-
-  /* Origin "Floating Data Card" — Elevated Charcoal in dark, white in light.
-     The Origin system uses distinct color (not heavy shadows) for elevation. */
-  .glow-card {
-    @apply rounded-2xl border border-border/60 bg-card p-6 transition-all duration-200;
-    box-shadow: 0 1px 3px hsl(var(--foreground) / 0.04), 0 1px 2px hsl(var(--foreground) / 0.02);
-  }
-  .glow-card:hover {
-    box-shadow: 0 8px 24px hsl(var(--foreground) / 0.08), 0 2px 8px hsl(var(--foreground) / 0.04);
-    border-color: hsl(var(--primary) / 0.25);
-    transform: translateY(-1px);
-  }
-  .dark .glow-card {
-    border-color: hsl(0 0% 100% / 0.06);
-    box-shadow: none;
-  }
-  .dark .glow-card:hover {
-    border-color: hsl(var(--primary) / 0.35);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 20px 0px;
-  }
-
-  /* Origin "Floating Data Card" — exact spec: 30px radius, Elevated Charcoal */
-  .floating-data-card {
-    border-radius: 30px;
-    background-color: hsl(var(--card));
-    padding: 32px;
-    color: hsl(var(--card-foreground));
-  }
-  .dark .floating-data-card {
-    background-color: hsl(var(--origin-charcoal));
-  }
-
-  /* Origin "Themed Content Card" — vivid background, used for category/data
-     accents. Pair with `.themed-card-{accent}` to set the background. */
-  .themed-card {
-    border-radius: 16px;
-    padding: 32px;
-    color: hsl(var(--origin-ghost));
-    transition: transform 200ms ease-out;
-  }
-  .themed-card-ocean    { background-color: hsl(var(--origin-ocean));    color: hsl(var(--origin-ghost)); }
-  .themed-card-violet   { background-color: hsl(var(--origin-violet));   color: hsl(var(--origin-ghost)); }
-  .themed-card-rose     { background-color: hsl(var(--origin-rose));     color: hsl(var(--origin-slate)); }
-  .themed-card-indigo   { background-color: hsl(var(--origin-indigo));   color: hsl(var(--origin-ghost)); }
-  .themed-card-sky      { background-color: hsl(var(--origin-sky));      color: hsl(var(--origin-slate)); }
-  .themed-card-lavender { background-color: hsl(var(--origin-lavender)); color: hsl(var(--origin-slate)); }
-  .themed-card-deep-sea { background-color: hsl(var(--origin-deep-sea)); color: hsl(var(--origin-ghost)); }
-  .themed-card-mist     { background-color: hsl(var(--origin-mist));     color: hsl(var(--origin-slate)); }
-
-  /* Origin "Pill Input" — Slate Canvas, 1440px radius, white text */
-  .pill-input {
-    background-color: hsl(var(--input));
-    border-radius: 9999px;
-    border: 1px solid hsl(var(--border));
-    color: hsl(var(--foreground));
-    padding: 0 32px;
-    height: 48px;
-    font-size: 16px;
-    width: 100%;
-  }
-  .pill-input::placeholder {
-    color: hsl(var(--origin-whisper));
-  }
-  .dark .pill-input {
-    background-color: hsl(var(--origin-slate));
-    border-color: hsl(0 0% 100% / 0.15);
-    color: hsl(var(--origin-ghost));
-  }
-
-  /* Origin "Primary Ghost Button" — transparent, subtle border, white text */
-  .origin-ghost-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    color: hsl(var(--foreground));
-    background: transparent;
-    border: 1px solid hsl(var(--border));
-    border-radius: 8px;
-    padding: 12px 18px;
-    font-size: 16px;
-    font-weight: 400;
-    transition: background 200ms ease-out;
-  }
-  .origin-ghost-btn:hover {
-    background: hsl(var(--foreground) / 0.08);
-  }
-  .dark .origin-ghost-btn {
-    color: hsl(var(--origin-ghost));
-    border-color: hsl(0 0% 100% / 0.18);
-  }
-  .dark .origin-ghost-btn:hover {
-    background: hsl(0 0% 100% / 0.08);
-  }
-
-  /* Origin "Light Filled Button" — Ghost White bg, Slate text, 8px radius */
-  .origin-filled-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    color: hsl(var(--origin-slate));
-    background: hsl(var(--origin-ghost));
-    border-radius: 8px;
-    padding: 12px 18px;
-    font-size: 16px;
-    font-weight: 400;
-    transition: opacity 200ms ease-out, transform 200ms ease-out;
-  }
-  .origin-filled-btn:hover {
-    opacity: 0.92;
-    transform: translateY(-1px);
-  }
-
-  /* Origin "Circular Micro Button" — small interactive dot */
-  .origin-micro-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 9999px;
-    background: hsl(0 0% 100% / 0.2);
-    color: hsl(var(--origin-ghost));
-    border: none;
-    transition: background 200ms ease-out;
-  }
-  .origin-micro-btn:hover {
-    background: hsl(0 0% 100% / 0.3);
-  }
-
-  /* Origin "Seamless Card" — flush with background, no border, no shadow */
-  .seamless-card {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-  }
-
-  /* Origin display heading — Lyondisplay App stand-in (Inter at 300 weight) */
-  .origin-display {
-    font-weight: 300;
-    line-height: 0.9;
-    letter-spacing: -0.025em;
-  }
-
-  /* Zone-colored sections */
-  .zone-guides { background-color: hsl(var(--zone-guides)); }
-  .zone-tools { background-color: hsl(var(--zone-tools)); }
-  .zone-safety { background-color: hsl(var(--zone-safety)); }
-  .zone-support { background-color: hsl(var(--zone-support)); }
-
-  /* Section divider — subtle gradient line */
-  .section-divider {
-    height: 1px;
-    background: linear-gradient(to right, transparent, hsl(var(--border)), transparent);
-  }
-
-
-  /* Stagger animation */
-  @keyframes stagger-fade {
-    from { opacity: 0; transform: translateY(12px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  .stagger > * {
-    opacity: 0;
-    animation: stagger-fade 0.5s ease-out forwards;
-  }
-  .stagger > *:nth-child(1) { animation-delay: 0.05s; }
-  .stagger > *:nth-child(2) { animation-delay: 0.1s; }
-  .stagger > *:nth-child(3) { animation-delay: 0.15s; }
-  .stagger > *:nth-child(4) { animation-delay: 0.2s; }
-  .stagger > *:nth-child(5) { animation-delay: 0.25s; }
-  .stagger > *:nth-child(6) { animation-delay: 0.3s; }
-  .stagger > *:nth-child(7) { animation-delay: 0.35s; }
-  .stagger > *:nth-child(8) { animation-delay: 0.4s; }
-  .stagger > *:nth-child(9) { animation-delay: 0.45s; }
-  .stagger > *:nth-child(10) { animation-delay: 0.5s; }
-  .stagger > *:nth-child(11) { animation-delay: 0.55s; }
-  .stagger > *:nth-child(12) { animation-delay: 0.6s; }
-
-  /* Scroll reveal — subtler entrance */
-  .reveal {
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* Display heading */
-  .display-heading {
-    @apply font-bold tracking-tight leading-[1.05];
-    letter-spacing: -0.035em;
-  }
-
-  /* Bottom nav (mobile) */
-  .bottom-nav {
-    @apply fixed bottom-0 left-0 right-0 z-40 bg-background/95 backdrop-blur-xl border-t border-border/50 md:hidden;
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-  }
-
-  /* Minimal top bar */
-  .top-bar {
-    @apply sticky top-0 z-50 w-full bg-background/90 backdrop-blur-xl border-b border-border/30;
-  }
-
-  /* Full-viewport section */
-  .viewport-section {
-    @apply min-h-[80vh] flex items-center py-16 md:py-24;
   }
 }
 
@@ -500,13 +197,13 @@
 
 /* Font size adjuster classes */
 html.font-size-large {
-  font-size: 18px;
-}
-html.font-size-xl {
   font-size: 20px;
 }
+html.font-size-xl {
+  font-size: 22px;
+}
 html.font-size-xxl {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 /* Print styles */
@@ -527,11 +224,6 @@ html.font-size-xxl {
   * {
     color: #000 !important;
     background: #fff !important;
-  }
-
-  .hero-gradient {
-    background: none !important;
-    color: #000 !important;
   }
 
   /* Show link URLs after text */
@@ -580,19 +272,6 @@ html.font-size-xxl {
 }
 
 @layer utilities {
-  /* Origin-flavored gradient text — Violet Haze → Ocean Glimmer */
-  .text-gradient {
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(135deg, hsl(var(--origin-violet)), hsl(var(--origin-ocean)));
-  }
-  .gradient-text {
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(135deg, hsl(var(--origin-violet)), hsl(var(--origin-ocean)));
-  }
   .status-requested {
     @apply bg-muted text-muted-foreground;
   }

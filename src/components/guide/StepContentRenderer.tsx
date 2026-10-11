@@ -348,3 +348,72 @@ export function StepContent({ text }: { text: string }) {
     </>
   );
 }
+
+/** Inline text with **bold** spans; everything else goes through StepContent. */
+function Inline({ text }: { text: string }) {
+  const parts = text.split(/\*\*([^*]+)\*\*/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? <strong key={i}>{part}</strong> : <StepContent key={i} text={part} />,
+      )}
+    </>
+  );
+}
+
+/**
+ * Guide prose: blank lines separate paragraphs, "- " lines make a bulleted
+ * list, "1. " lines a numbered list, and a line that is all **bold** becomes a
+ * subheading. Guide content is written in this small subset of Markdown.
+ */
+export function RichText({ text, className = 'space-y-4' }: { text: string; className?: string }) {
+  // Group consecutive lines by kind, so "Here is how:\n- one\n- two" becomes a
+  // paragraph followed by a list even without a blank line between them.
+  type Run = { kind: 'p' | 'ul' | 'ol' | 'h'; lines: string[] };
+  const runs: Run[] = [];
+  for (const block of text.trim().split(/\n\s*\n/)) {
+    let prev: Run | null = null;
+    for (const raw of block.split('\n')) {
+      const line = raw.trim();
+      if (!line) continue;
+      const kind: Run['kind'] = /^[-•*]\s/.test(line)
+        ? 'ul'
+        : /^\d+[.)]\s/.test(line)
+          ? 'ol'
+          : /^\*\*[^*]+\*\*:?$/.test(line)
+            ? 'h'
+            : 'p';
+      if (prev && prev.kind === kind && kind !== 'h') prev.lines.push(line);
+      else runs.push((prev = { kind, lines: [line] }));
+    }
+  }
+  return (
+    <div className={className}>
+      {runs.map((run, i) => {
+        if (run.kind === 'h') {
+          return <h3 key={i} className="pt-2 text-xl font-bold">{run.lines[0].replace(/\*\*|:$/g, '')}</h3>;
+        }
+        if (run.kind === 'ul' || run.kind === 'ol') {
+          const List = run.kind;
+          return (
+            <List key={i} className={`${run.kind === 'ul' ? 'list-disc' : 'list-decimal'} space-y-2 pl-6`}>
+              {run.lines.map((l, j) => (
+                <li key={j}><Inline text={l.replace(/^([-•*]|\d+[.)])\s*/, '')} /></li>
+              ))}
+            </List>
+          );
+        }
+        return (
+          <p key={i}>
+            {run.lines.map((l, j) => (
+              <span key={j}>
+                {j > 0 && <br />}
+                <Inline text={l} />
+              </span>
+            ))}
+          </p>
+        );
+      })}
+    </div>
+  );
+}

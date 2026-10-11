@@ -328,13 +328,9 @@ export default function ScamMessageDecoder() {
           <div className="mt-10 pt-8 border-t border-border">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
-              <Link to="/tools/phishing-scanner" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/tools/url-safety-checker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">URL Safety Scanner</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Check if a website link looks safe.</p>
-              </Link>
-              <Link to="/tools/scam-witness-statement" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-base">Report a Scam</p>
-                <p className="text-sm text-muted-foreground mt-0.5">Build an FTC/IC3 report from your story.</p>
               </Link>
               <Link to="/scam-defense" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Scam Defense Center</p>
