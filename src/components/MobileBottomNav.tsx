@@ -4,8 +4,8 @@ import { BookOpen, Wrench, Shield, Phone } from 'lucide-react';
 /**
  * Persistent bottom navigation for mobile/tablet screens.
  *
- * Five labeled icon buttons — Learn, Tools, Safety, Ask, Help — that cover
- * 90% of what someone needs on a small screen without forcing them to open a
+ * Four labeled icon buttons — Guides, Tools, Scams, Get Help — the same links
+ * and labels as the top bar, so someone on a small screen never has to open a
  * hamburger menu. Labels are always visible (not on hover) so the nav reads
  * like a set of physical buttons, which is what senior-UX research calls for.
  *
@@ -15,8 +15,8 @@ import { BookOpen, Wrench, Shield, Phone } from 'lucide-react';
 const items = [
   { to: '/guides', label: 'Guides', icon: BookOpen },
   { to: '/tools', label: 'Tools', icon: Wrench },
-  { to: '/scam-defense', label: 'Safety', icon: Shield },
-  { to: '/get-help', label: 'Help', icon: Phone },
+  { to: '/scam-defense', label: 'Scams', icon: Shield },
+  { to: '/get-help', label: 'Get Help', icon: Phone },
 ] as const;
 
 const HIDDEN_PREFIXES = ['/customer', '/tech', '/admin'];
@@ -31,7 +31,7 @@ export function MobileBottomNav() {
       aria-label="Primary — mobile"
       className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_16px_rgba(0,0,0,.05)] backdrop-blur lg:hidden"
     >
-      <ul className="grid grid-cols-5">
+      <ul className="grid grid-cols-4">
         {items.map((item) => {
           const Icon = item.icon;
           return (

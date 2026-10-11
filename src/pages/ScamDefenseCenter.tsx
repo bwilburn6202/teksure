@@ -431,15 +431,17 @@ export default function ScamDefenseCenter() {
             <CardContent className="py-4 px-5 flex items-start gap-3">
               <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <p className="text-base leading-relaxed">
-                <strong>Looking for the latest scam alerts?</strong> Our{' '}
-                <Link
-                  to="/scam-defense"
+                <strong>Looking for the latest scam alerts?</strong> The FTC posts new scam
+                warnings as they are reported. Read them at{' '}
+                <a
+                  href="https://consumer.ftc.gov/consumer-alerts"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-primary font-medium hover:underline"
                 >
-                  Scam Alerts page
-                </Link>{' '}
-                is updated regularly with new threats reported by the FTC and AARP — including AI
-                voice clone scams, fake traffic ticket texts, and more.
+                  consumer.ftc.gov/consumer-alerts
+                </a>
+                .
               </p>
             </CardContent>
           </Card>
