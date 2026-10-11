@@ -232,7 +232,7 @@ export default function ScamDefenseCenter() {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Scam Defense Center — Protect Yourself from Tech Scams | TekSure"
-        description="Real FTC statistics, a quick scam checklist, the top 8 scams targeting seniors right now, reporting links, and a step-by-step recovery guide. Everything you need to stay safe."
+        description="FTC numbers, a quick scam checklist, the top 8 scams aimed at seniors, where to report one, and step-by-step help if you were caught."
         path="/scam-defense"
         jsonLd={{
           '@context': 'https://schema.org',

@@ -108,7 +108,7 @@ export default function CreditFreezeWalkthrough() {
     <>
       <SEOHead
         title="Credit Freeze Walkthrough"
-        description="Freeze your credit at Equifax, Experian, and TransUnion in 15 minutes total. Free, federal-law-protected, the single strongest ID-theft prevention. Step-by-step."
+        description="Freeze your credit at Equifax, Experian and TransUnion in about 15 minutes. It is free by federal law and the strongest step against ID theft."
         path="/tools/credit-freeze-walkthrough"
       />
       <Navbar />

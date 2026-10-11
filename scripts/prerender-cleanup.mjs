@@ -18,7 +18,7 @@
  * refusal made a build with 4,449 of 4,449 pages written and 0 failed report
  * itself as a total prerender failure.
  */
-import { rmSync, existsSync, renameSync } from 'node:fs';
+import { rmSync, existsSync, renameSync, copyFileSync } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -61,6 +61,17 @@ if (leftovers.length > 0) {
       '\nPrerendering itself is unaffected: check dist/prerender-report.json for the ' +
       'page counts. Clear these by hand if the deploy size matters.\n'
   );
+}
+
+// Vercel serves dist/404.html, with HTTP 404, for any URL that matches no
+// file, redirect or rewrite. Prerender writes the not-found page to
+// dist/404/index.html (the /404 route); copy it to the name Vercel looks for.
+const notFoundPage = join(DIST, '404', 'index.html');
+if (existsSync(notFoundPage)) {
+  copyFileSync(notFoundPage, join(DIST, '404.html'));
+  console.log('[prerender-cleanup] wrote dist/404.html');
+} else {
+  console.warn('[prerender-cleanup] WARNING — dist/404/index.html is missing, so unknown URLs get Vercel\'s plain 404 page');
 }
 
 // Always succeed. See the header comment.

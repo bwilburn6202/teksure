@@ -392,7 +392,7 @@ export default function PhotoBackupWizard() {
     <>
       <SEOHead
         title="Photo Backup Wizard — Protect Your Photos in 15 Minutes | TekSure"
-        description="Senior-friendly guide to backing up your photos. Compare iCloud, Google Photos, Amazon Photos, Dropbox, OneDrive, Flickr, and SmugMug — then follow step-by-step setup."
+        description="Back up your photos safely. Compare iCloud, Google Photos, Amazon Photos, Dropbox, OneDrive and more, then follow step-by-step setup."
         path="/tools/photo-backup-wizard"
       />
       <Navbar />

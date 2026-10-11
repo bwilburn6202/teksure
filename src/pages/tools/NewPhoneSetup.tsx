@@ -330,7 +330,7 @@ export default function NewPhoneSetup() {
     <>
       <SEOHead
         title="New Phone Setup Guide — Step-by-Step for iPhone and Android | TekSure"
-        description="Set up your new iPhone or Android phone with clear, step-by-step instructions. Covers Apple ID, Google Account, security, privacy, and transferring data from your old phone."
+        description="Set up a new iPhone or Android phone step by step: Apple ID or Google Account, security, privacy, and moving data from your old phone."
         path="/tools/new-phone-setup"
       />
       <Navbar />

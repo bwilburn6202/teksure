@@ -104,7 +104,7 @@ const Login = () => {
   if (passwordRecoveryMode) {
     return (
       <>
-        <SEOHead title="Set New Password — TekSure" description="Create a new password for your TekSure account" path="/login" />
+        <SEOHead title="Set New Password — TekSure" description="Create a new password for your TekSure account" path="/login" noindex />
         <Navbar />
         <main id="main-content" className="min-h-screen bg-background">
           <div className="container mx-auto px-4 max-w-sm py-20 flex items-center justify-center">
@@ -181,7 +181,7 @@ const Login = () => {
   if (showResetForm) {
     return (
       <>
-        <SEOHead title="Reset Password — TekSure" description="Reset your TekSure account password" path="/login" />
+        <SEOHead title="Reset Password — TekSure" description="Reset your TekSure account password" path="/login" noindex />
         <Navbar />
         <main className="min-h-screen bg-background">
           <div className="container mx-auto px-4 max-w-sm py-20 flex items-center justify-center">
@@ -250,6 +250,7 @@ const Login = () => {
     return (
       <>
         <SEOHead
+          noindex
           title="Verify Your Email — TekSure"
           description="Check your email to verify your TekSure account"
           path="/login"
@@ -287,6 +288,7 @@ const Login = () => {
   return (
     <>
       <SEOHead
+        noindex
         title="Sign In — TekSure"
         description="Sign in to your TekSure account or create a free account"
         path="/login"

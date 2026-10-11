@@ -44,21 +44,11 @@ const STATIC_PAGES = [
   { path: '/',              changefreq: 'weekly',  priority: '1.0' },
   { path: '/guides',        changefreq: 'daily',   priority: '0.9' },
   { path: '/tools',         changefreq: 'weekly',  priority: '0.9' },
-  { path: '/quick-fixes',   changefreq: 'weekly',  priority: '0.8' },
-  { path: '/tips',          changefreq: 'weekly',  priority: '0.8' },
-  { path: '/safety',        changefreq: 'weekly',  priority: '0.8' },
   { path: '/scam-defense',  changefreq: 'weekly',  priority: '0.8' },
-  { path: '/guias',         changefreq: 'weekly',  priority: '0.8' },
-  { path: '/free-resources',changefreq: 'weekly',  priority: '0.7' },
+  { path: '/get-help',      changefreq: 'monthly', priority: '0.8' },
   { path: '/glossary',      changefreq: 'monthly', priority: '0.7' },
-  { path: '/news',          changefreq: 'daily',   priority: '0.7' },
-  { path: '/blog',          changefreq: 'weekly',  priority: '0.7' },
-  { path: '/book',          changefreq: 'monthly', priority: '0.7' },
-  { path: '/brain',         changefreq: 'monthly', priority: '0.6' },
-  { path: '/how-it-works',  changefreq: 'monthly', priority: '0.6' },
   { path: '/pricing',       changefreq: 'monthly', priority: '0.6' },
   { path: '/about',         changefreq: 'monthly', priority: '0.5' },
-  { path: '/roadmap',       changefreq: 'weekly',  priority: '0.5' },
   // Legal pages. Low priority for ranking, but they must be crawlable and
   // reachable — Stripe expects terms and a refund policy to be discoverable
   // from the site, and customers look for them before paying.
@@ -224,6 +214,14 @@ for (const page of STATIC_PAGES) {
   // /get-help (found 2026-09-02). Apply the same two rules here.
   if (EXCLUDE.test(page.path)) continue;
   if (redirectSources.has(page.path)) continue;
+  // A hand-listed path with no route behind it is a page that does not exist.
+  // /safety sat here after the 2026-10-11 revamp: it was neither a route nor a
+  // redirect, so it passed both filters above and the sitemap submitted a URL
+  // that serves "Page Not Found".
+  if (page.path !== '/' && !appRoutes.has(page.path)) {
+    console.warn(`[generate-sitemap] skipping ${page.path}: no route in App.tsx`);
+    continue;
+  }
   seen.add(page.path);
   const loc = `${BASE_URL}${page.path}`;
   entries.push(buildEntry({ loc, lastmod: lastmodFor(loc, routeHash.get(page.path) ?? null), changefreq: page.changefreq, priority: page.priority }));

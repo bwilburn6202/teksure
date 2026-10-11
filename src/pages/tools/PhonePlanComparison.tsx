@@ -871,7 +871,7 @@ export default function PhonePlanComparison() {
     <>
       <SEOHead
         title="Find the Right Phone Plan — Without the Pushy Sales"
-        description="A senior-friendly phone plan chooser. Compare real plans across Verizon, AT&T, T-Mobile, Mint, Consumer Cellular, Lively, and more. Deterministic recommendations — no sales pitch."
+        description="Compare real phone plans from Verizon, AT&T, T-Mobile, Mint, Consumer Cellular, Lively and more, and see which fits you. No sales pitch."
         path="/tools/phone-plan-comparison"
       />
       <Navbar />

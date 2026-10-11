@@ -104,6 +104,28 @@ const GuideDetail = () => {
         step: guide.steps.map((s, i) => ({ '@type': 'HowToStep', position: i + 1, name: s.title, text: s.content })),
       }
     : undefined;
+  // Article carries the dates and publisher that search engines and AI answer
+  // engines use to judge freshness. Google stopped showing HowTo rich results
+  // in 2023, so HowTo alone told them little.
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: guide.title.length > 110 ? `${guide.title.slice(0, 107)}...` : guide.title,
+    description: guide.excerpt,
+    url,
+    mainEntityOfPage: url,
+    image: 'https://www.teksure.com/og-image.png',
+    inLanguage: 'en-US',
+    datePublished: guide.publishedAt,
+    dateModified: guide.lastVerifiedAt ?? guide.publishedAt,
+    author: { '@type': 'Organization', name: 'TekSure', url: 'https://www.teksure.com' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TekSure',
+      url: 'https://www.teksure.com',
+      logo: { '@type': 'ImageObject', url: 'https://www.teksure.com/favicon-512.png' },
+    },
+  };
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -118,13 +140,13 @@ const GuideDetail = () => {
   return (
     <>
       <SEOHead
-        title={`${guide.title} — Step-by-Step Guide | TekSure`}
+        title={`${guide.title} | TekSure`}
         description={guide.excerpt}
         path={`/guides/${guide.slug}`}
         type="article"
         publishedTime={guide.publishedAt}
         modifiedTime={guide.lastVerifiedAt}
-        jsonLd={[howToJsonLd, breadcrumbJsonLd].filter(Boolean) as Record<string, unknown>[]}
+        jsonLd={[articleJsonLd, howToJsonLd, breadcrumbJsonLd].filter(Boolean) as Record<string, unknown>[]}
       />
       {/* This guide's data, embedded so the browser can show it on first load
           without fetching it (see src/lib/guide-data.ts). */}

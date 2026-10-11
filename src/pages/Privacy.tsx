@@ -135,7 +135,7 @@ const Privacy = () => {
                 <li><strong>Change your mind</strong> — Withdraw consent at any time without penalty.</li>
               </ul>
               <p>
-                Use the buttons below to export or delete data stored on your device. To manage your account data (stored on our servers), visit your <a href="/profile" className="text-primary underline">profile page</a>.
+                Use the buttons below to export or delete data stored on your device. To manage your account data (stored on our servers), visit your <a href="/profile" rel="nofollow" className="text-primary underline">profile page</a>.
               </p>
             </CardContent>
           </Card>

@@ -184,7 +184,7 @@ export default function IdTheftRecovery() {
     <>
       <SEOHead
         title="ID Theft Recovery Wizard"
-        description="Stolen SSN, hacked card, drained bank account? Pick what was taken and get a clear, prioritised recovery plan — calls to make today, things to do this week, and what to watch for next."
+        description="Stolen SSN, hacked card or drained bank account? Pick what was taken and get a recovery plan: calls to make today, steps for this week, and what to watch."
         path="/tools/id-theft-recovery"
       />
       <Navbar />

@@ -175,7 +175,7 @@ export default function EmergencyHelp() {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Emergency Tech Help — What to Do Right Now | TekSure"
-        description="Step-by-step instructions for what to do right now if your phone is lost, your account is hacked, you clicked a suspicious link, or your screen shows a scary warning."
+        description="What to do right now if your phone is lost, an account is hacked, you clicked a bad link, or your screen shows a scary warning."
         path="/emergency-help"
       />
       <Navbar />
