@@ -249,10 +249,6 @@ export default function RobocallBlockerSetup() {
                 <p className="font-medium text-base">Scam Message Decoder</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Got a weird text? Check it here.</p>
               </Link>
-              <Link to="/tools/scam-witness-statement" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-base">Report a Scam Call</p>
-                <p className="text-sm text-muted-foreground mt-0.5">Build an FTC report.</p>
-              </Link>
               <Link to="/scam-defense" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Scam Defense Center</p>
                 <p className="text-sm text-muted-foreground mt-0.5">All scam protection in one place.</p>

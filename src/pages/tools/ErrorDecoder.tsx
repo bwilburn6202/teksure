@@ -87,7 +87,7 @@ const errorMatchers: ErrorMatcher[] = [
       'If no computer can read it, the drive may be failing. Stop using it and try data recovery software like Disk Drill.',
     ],
     whenToWorry: 'Worry if this drive has important files and no computer can read it — that is a sign of hardware failure.',
-    relatedGuide: { label: 'Back up files before it is too late', href: '/tools/backup-wizard' },
+    relatedGuide: { label: 'Back up files before it is too late', href: '/tools/photo-backup-wizard' },
   },
   {
     id: 'storage-full',
@@ -111,7 +111,7 @@ const errorMatchers: ErrorMatcher[] = [
       'Restart the device after clearing space.',
     ],
     whenToWorry: 'Not urgent, but do not ignore it — your device may fail to back up or update until you free space.',
-    relatedGuide: { label: 'Free up space on your device', href: '/tools/computer-cleanup-wizard' },
+    relatedGuide: { label: 'Free up space on your device', href: '/tools/speed-up-device' },
   },
   {
     id: 'no-internet',
@@ -266,7 +266,6 @@ const errorMatchers: ErrorMatcher[] = [
       'Consider Google One — the 100 GB plan is about $2/month.',
     ],
     whenToWorry: 'Important — once full, your Gmail will stop receiving new messages.',
-    relatedGuide: { label: 'Clean up Gmail and Google Drive', href: '/tools/email-declutter' },
   },
   {
     id: 'low-battery',
@@ -340,7 +339,7 @@ const errorMatchers: ErrorMatcher[] = [
       'Keep the two devices within 3 feet of each other during pairing.',
     ],
     whenToWorry: 'Not a real concern — Bluetooth pairing often takes two or three tries.',
-    relatedGuide: { label: 'Fix Bluetooth pairing problems', href: '/tools/bluetooth-troubleshooter' },
+    relatedGuide: { label: 'Fix Bluetooth pairing problems', href: '/tools/troubleshooter' },
   },
   {
     id: 'printer-offline',
@@ -401,7 +400,6 @@ const errorMatchers: ErrorMatcher[] = [
       'On Windows: Settings → Privacy & Security → pick the category and toggle the app on.',
     ],
     whenToWorry: 'Be careful about what you approve — do not give microphone or location access to apps that should not need it.',
-    relatedGuide: { label: 'Review app permissions', href: '/tools/app-permissions' },
   },
   {
     id: 'unexpected-error',

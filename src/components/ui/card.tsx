@@ -3,16 +3,10 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const Card = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(({ className, ...props }, ref) => (
-  // Origin "Floating Data Card": 16px radius (rounded-2xl) on Elevated Charcoal.
-  // Origin uses distinct background colors for elevation rather than heavy
-  // drop shadows, so we drop the shadow in dark mode and tighten the border.
+  // Plain card: visible border, no shadow.
   <div
     ref={ref}
-    className={cn(
-      "rounded-2xl border border-border/60 bg-card text-card-foreground shadow-sm transition-all duration-200",
-      "dark:border-white/[0.06] dark:shadow-none",
-      className,
-    )}
+    className={cn("rounded-md border-2 border-border bg-card text-card-foreground", className)}
     {...props}
   />
 ));

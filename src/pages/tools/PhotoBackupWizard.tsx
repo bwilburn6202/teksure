@@ -982,10 +982,10 @@ export default function PhotoBackupWizard() {
                     </p>
                     <div className="mt-3 flex flex-wrap gap-2">
                       <Button asChild variant="secondary" className="min-h-14 text-base">
-                        <Link to="/guides?category=devices">Browse device guides</Link>
+                        <Link to="/guides?category=phones">Browse device guides</Link>
                       </Button>
                       <Button asChild variant="outline" className="min-h-14 text-base">
-                        <Link to="/tools/my-first-smartphone">New-smartphone wizard</Link>
+                        <Link to="/tools/new-phone-setup">New Phone Setup tool</Link>
                       </Button>
                     </div>
                   </div>
@@ -1037,7 +1037,6 @@ export default function PhotoBackupWizard() {
                 <AccordionContent className="text-base leading-relaxed text-muted-foreground">
                   Apple, Google, and Microsoft all let you name a "Legacy Contact" who can access your
                   photos after you pass. It takes 5 minutes to set up. See our{' '}
-                  <Link to="/tools/grief-tech-helper" className="text-primary underline">Grief Tech Helper</Link>
                   {' '}for a full walkthrough.
                 </AccordionContent>
               </AccordionItem>
@@ -1049,10 +1048,8 @@ export default function PhotoBackupWizard() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Related tools</h2>
             <div className="grid md:grid-cols-2 gap-3">
               {[
-                { to: '/tools/backup-wizard', title: 'Data Backup Wizard', body: 'Personalized plan for photos, documents, and contacts.' },
-                { to: '/tools/my-first-smartphone', title: 'My First Smartphone', body: 'Walk through every setup step on a brand-new phone.' },
-                { to: '/tools/ipad-for-seniors', title: 'iPad for Seniors', body: 'A gentle, senior-friendly iPad starter guide.' },
-                { to: '/guides?category=devices', title: 'All device guides', body: 'Browse every TekSure device guide.' },
+                { to: '/tools/new-phone-setup', title: 'New Phone Setup', body: 'Move your contacts, photos and apps to a new phone.' },
+                { to: '/guides?category=phones', title: 'Phone and tablet guides', body: 'Browse every TekSure phone and tablet guide.' },
               ].map((r) => (
                 <Card key={r.to} className="hover:shadow-md transition-shadow">
                   <CardContent className="py-5">

@@ -191,14 +191,6 @@ export default function FindLostPhone() {
           <div className="mt-10 pt-8 border-t border-border">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
-              <Link to="/tools/find-lost-items" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-base">Find Lost Items</p>
-                <p className="text-sm text-muted-foreground mt-0.5">For keys, wallet, bag.</p>
-              </Link>
-              <Link to="/tools/tech-buddy-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-base">Tech Buddy Setup</p>
-                <p className="text-sm text-muted-foreground mt-0.5">Have a buddy who can help find it.</p>
-              </Link>
               <Link to="/tools/id-theft-recovery" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">ID Theft Recovery</p>
                 <p className="text-sm text-muted-foreground mt-0.5">If it was stolen and accounts are at risk.</p>

@@ -11,10 +11,8 @@ import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 /**
  * Tech Glossary (A–Z) — browse-first reference.
  *
- * This complements the Jargon Translator (/tools/jargon-translator), which is
- * search-first. The Glossary is for readers who want to skim, scroll, and
- * browse 150+ plain-English tech terms — the Jargon Translator is where they
- * go if they want a fuller example and context for a single word.
+ * For readers who want to skim, scroll, and browse plain-English tech terms.
+ * The old /tools/jargon-translator URLs redirect here.
  *
  * Content rules:
  *   • No jargon inside a definition — if you reference another term, it
@@ -1207,18 +1205,6 @@ const Glossary = () => {
               Press <kbd className="px-1.5 py-0.5 rounded border border-border bg-muted text-xs font-mono">Enter</kbd> to jump to the first match.
             </p>
           </div>
-
-          {/* Pointer to the complementary tool */}
-          <div className="mt-6 text-sm text-muted-foreground">
-            Looking for a single word with an example?{' '}
-            <Link
-              to="/tools/jargon-translator"
-              className="text-primary font-medium hover:underline underline-offset-4 inline-flex items-center gap-1"
-            >
-              <Languages className="h-3.5 w-3.5" aria-hidden="true" />
-              Try the Jargon Translator
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -1287,7 +1273,7 @@ const Glossary = () => {
                     <div
                       key={item.term}
                     >
-                      <div className="glow-card">
+                      <div className="rounded-md border-2 border-border">
                         <h3 className="font-semibold text-base text-foreground mb-2">{item.term}</h3>
                         <p className="text-base text-muted-foreground leading-relaxed mb-3">{item.definition}</p>
                         {item.analogy && (
@@ -1315,22 +1301,6 @@ const Glossary = () => {
                               ))}
                             </div>
                           )}
-
-                          {/* Deep-dive link to the Jargon Translator */}
-                          <div className="mt-4 pt-3 border-t border-border/60">
-                            <Link
-                              to="/tools/jargon-translator"
-                              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline underline-offset-4"
-                              aria-label={`Deep dive into ${item.term} in the Jargon Translator`}
-                            >
-                              <Languages className="h-3.5 w-3.5" aria-hidden="true" />
-                              Deep dive in the Jargon Translator
-                              <ArrowRight
-                                className="h-3.5 w-3.5"
-                                aria-hidden="true"
-                              />
-                            </Link>
-                          </div>
                         </div>
                       </div>
                     ))}

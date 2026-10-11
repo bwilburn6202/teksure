@@ -12,60 +12,57 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 - **Repo:** github.com/bwilburn6202/teksure · **Live:** https://www.teksure.com (canonical host is `www`; apex currently **307s**, not 301 — see blockers)
 - **Local:** `~/Documents/Claude/Projects/TekSure` · dev on :5173
 
-## Current state (2026-10-09) — overhaul branch, pending merge
-3,939 guides · 385 tools · 4,395 sitemap URLs · TypeScript clean · 103/103 tests · 4,397/4,397 prerendered
+## Current state (2026-10-11) — complete revamp
+500 guides · 24 tools · 539 sitemap URLs · 541/541 prerendered · TypeScript clean · 108/108 tests · avg reading grade 7.1
 
-> Branch `overhaul/minimize-2026-10-09` = the 2026-08-30 cut merged with `origin/main`
-> plus the minimize overhaul below. Until it merges, production (`origin/main`) still serves
-> ~7,128 URLs. Check `curl -s https://www.teksure.com/build-info.json` before trusting counts.
+Check `curl -s https://www.teksure.com/build-info.json` before trusting counts.
 
-**Minimize overhaul, 2026-10-09.** 57 more routes removed, chosen by Supabase usage, not
-taste: forum (3 threads, 0 replies), community Q&A (0), TekBrain chat (its `tekbrain-chat`
-edge function was never deployed — every "Ask TekBrain" button led to a 404), learning
-paths / progress / favorites / achievements (`guide_progress` = 0 rows), empty aggregators
-(articles, sources, videos), stale blog/news/webinars, fictional stories, nonexistent
-programs (volunteer, ambassadors), internal pages (`/memory`, `/opportunity-dashboard`,
-`/llm-knowledge-base`), and duplicate front doors. Each with an equivalent is a
-`<Navigate>`; the internal ones 404. "Ask a real person" (`/get-help`) is the single help
-path. **Do not reintroduce an AI-chat CTA until the function behind it is deployed and
-answering.** The global Cmd+K `SearchModal` is lazy-loaded and its hook lives in
-`hooks/useSearchModal.ts`: importing `@/data/guides` anywhere in the entry graph puts the
-17 MB guide-data chunk on every page. Category labels live in `data/guide-categories.ts`
-for the same reason.
+**Complete revamp, 2026-10-11 ("minimal, delete, reshape").** Bailey asked for the deepest
+cut and a plain visual reset. What changed:
+- **Guides 3,939 → 500**, chosen by `score` = length (capped), steps, official source,
+  video, core-library membership and core-topic title (iPhone, email, scam, Medicare…), with
+  off-topic titles (casino, hospice, dating, estate…) penalised and near-duplicate titles
+  removed. 26 categories became 10 (`safety`, `phones`, `computers`, `internet`, `apps`,
+  `money`, `health`, `life`, `ai`, `basics`). The 328 batch files became one file per
+  category, `src/data/guides-<category>.ts`. 405 retired slugs with a genuine equivalent
+  are 308s (`src/data/guide-redirects.ts`); the other ~3,000 404 on purpose.
+- **Tools 385 → 24**, listed by hand in `src/data/tools-list.ts` (grouped; a test checks it
+  matches the registry). Doc Browser (an AI chat) was removed with the rest.
+- **Pages:** every topic hub, printable, calculator, quiz, practice sim, course, toolkit,
+  `/how-it-works`, `/guias`, `/quick-fixes`, `/safety/scam-alerts`, `/site-index`,
+  `/start`, `/tech-problem-of-week` and `/whats-new` deleted; each redirects to its closest
+  live page. Real pages left: home, guides, tools, scam-defense, get-help, search, glossary,
+  emergency-help, about, faq, pricing, terms, privacy, refund-policy, plus account,
+  booking, payment and admin routes.
+- **Look:** white page, near-black text, one blue (`--primary`, 7:1 on white), visible
+  borders, 18px base text, no gradients, glass, mesh wallpaper or stock photos. The Cmd+K
+  search modal is gone; the navbar links to `/search`.
+- **Cadence pages are gone**, so there is no weekly/monthly page to keep fresh. Do not add a
+  page that promises a schedule unless something real keeps it updated.
+- Edge functions now unused by the site: `scrape-articles`, `brain-query`,
+  `tekbrain-ollama-chat`, and — since Doc Browser was removed — `doc-chat`. Deleting them
+  is a Supabase-dashboard job.
 
-**Guide pages load one guide, not the library (2026-10-09).** `/guides/:slug` gets its data
-from `src/lib/guide-data.ts`: the server renderer reads the full library through
-`GuideSourceContext`, the prerendered HTML embeds that guide as
-`<script id="guide-data">` (captured in `main.tsx` before React mounts), and client-side
-navigation fetches `public/guide-data/<slug>.json`. List pages use `src/lib/guide-index.ts`
-(`src/data/guide-index.json`, committed, ~430 KB gz). Both are written by
+"Ask a real person" (`/get-help`) is the single help path. **Do not reintroduce an AI-chat
+CTA until the function behind it is deployed and answering.**
+
+**Guide pages load one guide, not the library.** `/guides/:slug` gets its data from
+`src/lib/guide-data.ts`: the server renderer reads the full library through
+`GuideSourceContext`, the prerendered HTML embeds that guide as `<script id="guide-data">`
+(captured in `main.tsx` before React mounts), and client-side navigation fetches
+`public/guide-data/<slug>.json`. List and search pages use `src/lib/guide-index.ts`
+(`src/data/guide-index.json`, committed). Both are written by
 `scripts/generate-guide-data.mjs` in `predev`/`prebuild`; `guide-index.test.ts` fails if the
 index is stale — rerun `node --import tsx scripts/generate-guide-data.mjs` after editing
-guides. Only `/search`, the Cmd+K modal and `/tools/guide-packs` still import the full
-library. `vite.config.ts` pins `guide-categories` to its own chunk; without that rule Rollup
-folds it into guide-data and any page showing a category name downloads 17 MB.
+guides. No client page imports `@/data/guides` any more; keep it that way.
 
-**Thin-content cut, 2026-08-30.** `/tools` went from 2,970 pages to 387. 2,246 of the
-removed pages were under 300 words, 2,480 had no editorial inbound link, and 207
-near-duplicate topic clusters covered 443 of them. This was the guide-count problem
-repeated at the route layer — the 2026-08-04 quality-over-count decision had been applied
-to guides and never to tool pages. 474 removed slugs with a genuine equivalent redirect
-(308 at the edge); the rest 404 on purpose, because pointing 2,000 unrelated thin pages at
-a hub reads as a soft 404. Full reasoning: `docs/REDUNDANCY-AUDIT-2026-08-30.md`.
-**Do not add `/tools` pages to move a number either.**
+**Earlier cuts.** 2026-08-30: `/tools` 2,970 → 387 and 110 duplicate guides merged
+(`docs/REDUNDANCY-AUDIT-2026-08-30.md`). 2026-10-09: 57 low-use routes removed (forum,
+community Q&A, TekBrain chat, learning paths). 2026-10-11: the revamp above. The rule from
+all three: **do not add guides or `/tools` pages to move a number.** The guide-count target
+was retired on 2026-08-04.
 
-**Thin guides, same day.** 110 guides that duplicated a longer guide on the same topic
-were merged away (17 by title via `scripts/merge-duplicate-guides.mjs`, 93 by topic via
-`scripts/merge-thin-guides.mjs` + `scripts/thin-guide-merges.json`) and redirect to the
-guide that actually answers the question. The merge map is hand-reviewed on purpose:
-automatic topic matching proposed a VPN guide onto a OneDrive guide and an Apple Watch
-guide onto Apple Pay. **~700 guides under 300 words remain and were left alone** — each is
-the only coverage of its topic, so they need expanding or an explicit decision to accept
-them, not deleting. That is a content call, not a cleanup.
-
-**Guide count target: retired.** Closed as MISSED at 4,049 by decision on 2026-08-04. 4,000 mediocre pages rank worse than 400 excellent ones. Do not add guides to move a number.
-
-**Open blockers (raise, don't work around):** analytics wiring unverified · monetization needs AdSense/affiliate credentials · hosted Ollama needs the Hetzner CX22 · ~~`npm run build` OOMs in sandbox~~ — fixed by the 2026-08-30 cut (tool registry + sharded prerender) · readability sits at grade 8.3 with ~58.5% above grade 8 — **analysis done 2026-09-19, awaiting Bailey's decision**: the grade is 17.68 word-length vs 6.19 sentence-length, sentences already average 15.9 words, the safe vocabulary pass is exhausted (0 swaps left), and the words driving it are proper nouns/UI labels (Medicare, Security, Battery) or everyday words (every, family). Recommendation is to accept 8.3 and retire the ≤8 target. Full evidence: `docs/READABILITY-DECISION-2026-09-19.md`. Do not re-derive this daily · **apex `teksure.com` redirects to `www` with a 307 (temporary), not a 308/301** — path is preserved so users are fine, but a 307 does not consolidate link equity onto the canonical host. This is a Vercel *domain* setting, not `vercel.json`, so it cannot be fixed from the repo: Vercel dashboard → Project → Settings → Domains → `teksure.com` → set the redirect to permanent.
+**Open blockers (raise, don't work around):** analytics wiring unverified · monetization needs AdSense/affiliate credentials · hosted Ollama needs the Hetzner CX22 · ~~`npm run build` OOMs in sandbox~~ — fixed by the 2026-08-30 cut (tool registry + sharded prerender) · ~~readability above grade 8~~ — resolved by the 2026-10-11 revamp: the 500 kept guides average grade 7.1, 24.9% above grade 8 · **apex `teksure.com` redirects to `www` with a 307 (temporary), not a 308/301** — path is preserved so users are fine, but a 307 does not consolidate link equity onto the canonical host. This is a Vercel *domain* setting, not `vercel.json`, so it cannot be fixed from the repo: Vercel dashboard → Project → Settings → Domains → `teksure.com` → set the redirect to permanent.
 
 ---
 
@@ -80,10 +77,15 @@ them, not deleting. That is a content call, not a cleanup.
 - Verify what's actually live: `curl -s https://www.teksure.com/build-info.json`
 
 **Redirects**
-- Redirects come from two places, both consumed by `scripts/generate-redirects.mjs`:
-  `<Navigate>` routes in `App.tsx`, and `src/data/tool-redirects.ts` for tool pages removed
-  in the 2026-08-30 cut. Add them there, never by hand in `vercel.json`.
-- **Turning a redirect back into a real page takes TWO steps.** `generate-redirects.mjs` preserves any redirect it no longer finds in `App.tsx`, treating it as hand-added — so the stale 308 survives and shadows the new page forever while the source looks correct. Delete the `vercel.json` entry by hand as well. (Cost a full session on `/pricing`, 2026-07-26.)
+- Redirects come from three places, all read by `scripts/generate-redirects.mjs`:
+  `<Navigate>` routes in `App.tsx`, `src/data/tool-redirects.ts` (removed tools) and
+  `src/data/guide-redirects.ts` (retired guides). Add them there, never by hand in `vercel.json`.
+- `vercel.json` redirects are **rebuilt from those sources on every build** (since
+  2026-10-11). The generator used to keep entries it no longer found, which let a stale 308
+  shadow a restored page (`/pricing`, 2026-07-26) and left 414 of 620 redirects pointing at
+  deleted pages. To turn a redirect back into a page, remove the `<Navigate>` and rebuild.
+- Every redirect target must be a live page. When you delete a page, point its redirects at
+  the new target directly — no chains. Vercel caps routes at 2,048; we use ~610.
 
 **Data shape — this is the one that caused 440 type errors**
 ```ts
@@ -99,8 +101,8 @@ them, not deleting. That is a content call, not a cleanup.
   steps: [{ title, content }]   // `content`, NOT `description`
 }
 ```
-- `GuideCategory` derives from `GUIDE_CATEGORIES` in `src/data/guides.ts`. Add categories to that array only — the type, tests, and `Record<GuideCategory, …>` maps follow.
-- **Every new batch file must be imported AND spread** in `guides.ts`, or its guides silently do not exist.
+- `GuideCategory` derives from `GUIDE_CATEGORIES` in `src/data/guide-categories.ts` (10 categories). Add categories to that array only — the type, tests, and `Record<GuideCategory, …>` maps follow.
+- Guides live in `src/data/guides-<category>.ts`, one file per category. Keys stay **unquoted** (`slug: "…"`): the sitemap, prerender, slug validator and stats scripts find guides by matching `slug:`. A new file must be imported AND spread in `guides.ts`, or its guides silently do not exist.
 
 **Tool pages are a registry, not a route table**
 - `/tools/<slug>` resolves through `src/data/tools-registry.ts` via a single dynamic
@@ -108,14 +110,14 @@ them, not deleting. That is a content call, not a cleanup.
   does not exist. `App.tsx` used to carry one `lazy()` and one `<Route>` per tool, which is
   how it reached 7,445 lines and accumulated 37 duplicate route declarations that were
   silently unreachable — React Router matched the first and ignored the second.
-- `scripts/generate-sitemap.mjs`, `scripts/generate-tools-directory.mjs` and
-  `scripts/prerender.mjs` all read the slug list through `scripts/tool-slugs.mjs`. If you
-  add a tool, add it to the registry — nothing scrapes `App.tsx` for tool routes any more.
+- `scripts/generate-sitemap.mjs` and `scripts/prerender.mjs` read the slug list through
+  `scripts/tool-slugs.mjs`. To add a tool, add it to the registry **and** to
+  `src/data/tools-list.ts` (the `/tools` page); `tools-list.test.ts` fails if they disagree.
 
 **Generated files — never hand-edit**
-`public/sitemap.xml` · `src/data/tools-directory.ts` · `src/data/site-stats.ts` · `vercel.json` (except redirect deletions above). All produced in `prebuild`. Do NOT add a second sitemap generator to `vite.config.ts` — one used to overwrite the good sitemap with guides only.
+`public/sitemap.xml` · `public/llms.txt` · `src/data/site-stats.ts` · `src/data/guide-index.json` · `vercel.json`. All produced in `prebuild`. Do NOT add a second sitemap generator to `vite.config.ts` — one used to overwrite the good sitemap with guides only.
 
-`site-stats.ts` must stay **codegen, not a runtime import**. It feeds the guide/tool counts in Landing, Tools and SiteIndex copy. It previously did `import { guides } from './guides'` to read `guides.length`, which pulled all 328 batch files (~20 MB of source) into the homepage chunk to render one number. Never reintroduce that import — count at build time instead.
+`site-stats.ts` must stay **codegen, not a runtime import**. It feeds the guide count in Landing and Guides copy. It previously did `import { guides } from './guides'` to read `guides.length`, which pulled the whole library into the homepage chunk to render one number. Never reintroduce that import — count at build time instead.
 
 **Git on this mount**
 `rm -f` fails on `.git/*.lock` files ("Operation not permitted") but `mv` works:
@@ -140,15 +142,20 @@ The 70+ accumulated `.stale*`/`.bak*` files are from past sessions hitting this 
 ## Verify before claiming done
 ```bash
 npx tsc --noEmit -p tsconfig.app.json
-npm test                        # 103 tests — brand voice + schema
+npm test                        # 108 tests — brand voice + schema
 node scripts/validate-slugs.mjs
-npm run build                   # ~40s + 5 prerender shards; verify prerender-report.json says complete
+npm run build                   # ~1 min; verify dist/prerender-report.json says complete
+# No .env in a cloud sandbox: prefix the build with
+# VITE_SUPABASE_URL=https://placeholder.supabase.co VITE_SUPABASE_PUBLISHABLE_KEY=placeholder
+# or prerender dies on "supabaseUrl is required" and ships 0 pages. Vercel has the real values.
 ```
 
 ## Key locations
 | Path | Purpose |
 |---|---|
-| `src/data/guides.ts` | Guide content + `GUIDE_CATEGORIES` |
+| `src/data/guides-<category>.ts` · `guides.ts` | Guide content (one file per category) |
+| `src/data/guide-categories.ts` | The 10 categories, labels, descriptions |
+| `src/data/tools-registry.ts` · `tools-list.ts` | Tool routes · the `/tools` page list |
 | `src/App.tsx` | All routes + `<Navigate>` redirects |
 | `src/components/layout/Navbar.tsx` · `Footer.tsx` · `MobileBottomNav.tsx` | Navigation |
 | `supabase/migrations/` | Migrations |
@@ -157,7 +164,7 @@ npm run build                   # ~40s + 5 prerender shards; verify prerender-re
 
 ## Supabase
 Tables: `auth.users`, `profiles`, `bookings`, `forum_threads`, `forum_replies`, `guide_ratings`, `guide_progress`, `testimonials`, `community_questions`, `community_question_votes`
-Edge functions: `send-help-confirmation`, `send-booking-confirmation`, `create-checkout-session`, `stripe-webhook`
+Edge functions the site uses: `send-help-confirmation`, `send-booking-confirmation`, `create-checkout-session`, `stripe-webhook`. Unused since 2026-10-11 and safe to delete from the dashboard: `scrape-articles`, `brain-query`, `tekbrain-ollama-chat`, `doc-chat`.
 Open: enable leaked-password protection in Auth; Supabase performance pass.
 
 ---
@@ -167,11 +174,11 @@ Open: enable leaked-password protection in Auth; Supabase performance pass.
 | System | Cadence | Role |
 |---|---|---|
 | `dev-loop.yml` (GitHub) | every 6h | **Read-only checks.** Writes findings to `.claude/dev-loop-backlog.md`. No source edits, no API calls. |
-| `teksure-loop` (scheduled task) | daily 6:30am | Health + cadence pages + ONE improvement from the backlog |
+| `teksure-loop` (scheduled task) | daily 6:30am | Health + ONE improvement from the backlog |
 | `teksure-weekly` (scheduled task) | Tue 8:00am | Discoverability verification + one high-value fix |
 | `auto-merge-claude.yml` | on PR | Merges `claude/`, `codex/`, `vercel/` branches |
 
-**Disabled on purpose:** `creative-loop.yml` and `continuous-content-loop.yml`. Together they ran ~25 automated content cycles a day against a stated quality-over-count policy. Do not re-enable without an explicit decision to resume volume.
+**Deleted on purpose (2026-10-11):** `creative-loop.yml`, `continuous-content-loop.yml` and their scripts. Together they once ran ~25 automated content cycles a day against the quality-over-count policy. Do not rebuild them without an explicit decision to resume volume.
 
 **dev-loop checks per cycle:** site metrics · duplicate slugs · internal link audit · `tsc --noEmit` · stale OS mentions (iOS ≤16, Android ≤13, Win 7/8, macOS pre-Ventura) · guides older than 18 months.
 
@@ -184,19 +191,13 @@ Flags: `--once`, `--dry-run`, `--ci`, `--interval=N`, `--only=health,links`, `--
 
 **Backlog hygiene:** keep `.claude/dev-loop-backlog.md` under 64KB (last ~20 cycles). It is read at the start of every run; at 264KB it burns context for no benefit.
 
-## Cadence pages — check every run
-Two pages advertise a schedule in their own copy and are footer-linked, so staleness is publicly visible:
-- `grep -m1 "dateISO: '" src/pages/TechProblemOfWeek.tsx` → must be within 7 days
-- `grep -m1 "id: '" src/pages/WhatsNew.tsx` → must cover the **most recently completed** month
-
-Match `dateISO: '` with the quote. A bare `grep -m1 "dateISO"` hits the interface
-declaration (`dateISO: string;`) first and returns no date at all. And What's New is a
-record of months that have *ended* — on September 21 the newest entry is August, which is
-correct. Do not read "current month" as licence to write up a month still in progress.
-
-If behind, follow `.claude/prompts/refresh-cadence-pages.md`. **Never invent a scam or a release.** A month that shipped nothing gets left out.
+## Cadence pages — none
+`/tech-problem-of-week` and `/whats-new` were deleted on 2026-10-11 because they kept going
+stale in public. If a scheduled task still asks you to refresh them, that task is out of
+date — correct it. Do not add a page that promises a schedule unless something real keeps
+it updated. **Never invent a scam or a release.**
 
 ## Work priority order
-`broken in production` > `blocking discovery` > `stale cadence pages` > `readability` > `genuine content gaps` > `new features`
+`broken in production` > `blocking discovery` > `improving an existing guide` > `genuine content gaps` > `new features`
 
-On readability: hand-passes move the number ~0.1pp per session — that's the appearance of progress. Either do a scripted bulk pass or state plainly that the number is being accepted. The existing splitters (`split-comma-conjunctions`, `split-em-dash`, `split-semicolons`) improve the metric while degrading some prose — do not run them blindly.
+The sentence-splitting and vocabulary scripts were deleted with the revamp: they moved the readability metric while degrading prose. Improve a guide by rewriting it, not by running a bulk script over it.

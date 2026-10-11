@@ -444,19 +444,11 @@ export default function SubscriptionAuditor() {
               </CardHeader>
               <CardContent className="space-y-3">
                 <Button asChild variant="outline" className="w-full justify-start">
-                  <Link to="/tools/monthly-budget-worksheet">
-                    Plan your full tech budget
-                    <ArrowRight className="ml-auto h-4 w-4" aria-hidden="true" />
-                  </Link>
                 </Button>
                 <Button asChild variant="outline" className="w-full justify-start">
-                  <Link to="/tools/streaming-calculator">
-                    Compare streaming services
-                    <ArrowRight className="ml-auto h-4 w-4" aria-hidden="true" />
-                  </Link>
                 </Button>
                 <Button asChild variant="outline" className="w-full justify-start">
-                  <Link to="/free-resources">
+                  <Link to="/tools/low-cost-internet">
                     See free alternatives
                     <ArrowRight className="ml-auto h-4 w-4" aria-hidden="true" />
                   </Link>

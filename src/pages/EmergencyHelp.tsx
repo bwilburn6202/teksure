@@ -94,7 +94,7 @@ const scenarios: EmergencyScenario[] = [
       },
     ],
     tip: 'Consider using a password manager to create and remember strong, unique passwords for every account. Our Password Manager Guide can help you get started.',
-    relatedLink: { to: '/tools/password-manager', label: 'Set Up a Password Manager' },
+    relatedLink: { to: '/tools/password-generator', label: 'Make a Strong New Password' },
   },
   {
     id: 'suspicious-link',
@@ -130,7 +130,7 @@ const scenarios: EmergencyScenario[] = [
       },
     ],
     tip: 'Before clicking a link in an email or text, hover over it (without clicking) to see where it really goes. If the address looks strange or does not match the company, do not click it.',
-    relatedLink: { to: '/tools/phishing-scanner', label: 'Check a Link with Our Phishing Scanner' },
+    relatedLink: { to: '/tools/url-safety-checker', label: 'Check a Link Before You Click' },
   },
   {
     id: 'scary-warning',
@@ -166,7 +166,7 @@ const scenarios: EmergencyScenario[] = [
       },
     ],
     tip: 'If you already called the number and gave someone remote access to your computer, disconnect from the internet immediately (unplug the cable or turn off WiFi), then call a trusted family member or local tech support for help.',
-    relatedLink: { to: '/safety/scam-alerts', label: 'Learn About Common Scams' },
+    relatedLink: { to: '/scam-defense', label: 'Learn About Common Scams' },
   },
 ];
 
@@ -288,7 +288,7 @@ export default function EmergencyHelp() {
                 <Link to="/get-help">Get Expert Help</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="min-h-[44px]">
-                <Link to="/tools/scam-simulator">Practice Spotting Scams</Link>
+                <Link to="/tools/is-this-a-scam">Practice Spotting Scams</Link>
               </Button>
             </div>
           </CardContent>

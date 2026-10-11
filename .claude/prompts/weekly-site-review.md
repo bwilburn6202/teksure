@@ -15,7 +15,6 @@ node scripts/dev-loop.mjs --once --dry-run     # health, links, duplicates, read
 node scripts/audit-senior-ux.mjs               # reading level, type size, a11y
 head -60 .claude/dev-loop-backlog.md           # what previous cycles found
 git log --oneline -15                          # what changed recently
-grep -m1 "dateISO" src/pages/TechProblemOfWeek.tsx  # is the weekly page actually weekly?
 ```
 
 Then check what the outside world sees — the site is useless if it cannot be found:
@@ -47,10 +46,9 @@ Rank candidate work by how many real people it helps:
 1. **Anything broken in production** — a crashing page, a dead link, a failed deploy.
 2. **Anything blocking discovery** — missing/duplicate titles, prerender regressions,
    sitemap staleness, robots mistakes. Content nobody can find has zero value.
-3. **Pages that promise a cadence and are not keeping it.** `/tech-problem-of-week`
-   says "Updated weekly" and `/whats-new` shows "This Month"; both are linked from the
-   footer, so a stale entry is a visible broken promise rather than a private one. See
-   `refresh-cadence-pages.md`. Cheap to fix, and credibility is hard to earn back.
+3. **Copy that promises a schedule.** The 2026-10-11 revamp deleted both cadence pages
+   (`/tech-problem-of-week`, `/whats-new`) because they went stale. Do not add a page
+   that says "updated weekly" unless something real keeps it updated.
 4. **Readability of existing guides** — currently ~59% sit above grade 8 (down from
    ~78% in July). Improving an existing guide that already gets traffic beats adding a
    4,001st guide.

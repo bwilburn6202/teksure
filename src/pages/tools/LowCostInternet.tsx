@@ -231,17 +231,17 @@ export default function LowCostInternet() {
           <div className="mt-10 pt-8 border-t border-border">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
-              <Link to="/tools/router-upgrade-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-base">Router Upgrade</p>
-                <p className="text-sm text-muted-foreground mt-0.5">Stop renting from your ISP.</p>
+              <Link to="/tools/internet-speed-doctor" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+                <p className="font-medium text-base">Internet Speed Check</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Find out if you need a faster plan.</p>
               </Link>
-              <Link to="/tools/bill-negotiator" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-base">Bill Negotiator</p>
-                <p className="text-sm text-muted-foreground mt-0.5">Lower an existing bill.</p>
+              <Link to="/tools/phone-plan-comparison" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+                <p className="font-medium text-base">Phone Plan Comparison</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Lower your cell phone bill too.</p>
               </Link>
-              <Link to="/tools/library-power-pack" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-base">Library Power Pack</p>
-                <p className="text-sm text-muted-foreground mt-0.5">Free streaming and books.</p>
+              <Link to="/tools/subscription-auditor" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+                <p className="font-medium text-base">Subscription Checkup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Spot monthly charges you can cancel.</p>
               </Link>
             </div>
           </div>

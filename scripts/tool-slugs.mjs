@@ -28,3 +28,12 @@ export function readToolRedirects() {
     destination: m[2],
   }));
 }
+
+/** Retired guide slugs that redirect to a kept guide, as { source, destination }. */
+export function readGuideRedirects() {
+  const src = readFileSync(join(ROOT, 'src', 'data', 'guide-redirects.ts'), 'utf8');
+  return [...src.matchAll(/^ {2}"([^"]+)":\s*"([^"]+)",/gm)].map((m) => ({
+    source: `/guides/${m[1]}`,
+    destination: `/guides/${m[2]}`,
+  }));
+}

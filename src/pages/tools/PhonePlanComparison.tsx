@@ -1223,7 +1223,7 @@ export default function PhonePlanComparison() {
                             </a>
                           </Button>
                           <Button asChild variant="outline" size="lg" className="gap-2 min-h-14 text-base">
-                            <Link to="/guides?category=phone-guides">
+                            <Link to="/guides?category=phones">
                               How to switch carriers
                               <ArrowRight className="w-5 h-5" />
                             </Link>
@@ -1553,36 +1553,23 @@ export default function PhonePlanComparison() {
             Tools and guides that pair well with picking a new phone plan.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-5">
-                <Link to="/tools/bill-negotiator" className="block space-y-2">
-                  <h3 className="text-lg font-semibold flex items-center gap-2">
-                    <DollarSign className="w-5 h-5 text-primary" />
-                    Bill Negotiator
-                  </h3>
-                  <p className="text-base leading-relaxed">
-                    A friendly script to call your current carrier and ask for a lower rate — before you switch.
-                  </p>
-                </Link>
-              </CardContent>
-            </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-5">
-                <Link to="/tools/my-first-smartphone" className="block space-y-2">
+                <Link to="/tools/new-phone-setup" className="block space-y-2">
                   <h3 className="text-lg font-semibold flex items-center gap-2">
                     <Smartphone className="w-5 h-5 text-primary" />
-                    My First Smartphone
+                    New Phone Setup
                   </h3>
                   <p className="text-base leading-relaxed">
-                    If you&apos;re new to smartphones, start here. Plain-English setup walkthrough.
+                    Move your contacts, photos and apps to your new phone, step by step.
                   </p>
                 </Link>
               </CardContent>
             </Card>
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-5">
-                <Link to="/guides?category=phone-guides" className="block space-y-2">
+                <Link to="/guides?category=phones" className="block space-y-2">
                   <h3 className="text-lg font-semibold flex items-center gap-2">
                     <Phone className="w-5 h-5 text-primary" />
                     Phone Guides

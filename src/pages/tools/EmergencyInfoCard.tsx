@@ -1292,30 +1292,6 @@ export default function EmergencyInfoCard() {
           <h2 className="text-2xl font-bold mb-5">Keep your safety plan complete</h2>
           <div className="grid md:grid-cols-3 gap-4">
             <Link
-              to="/tools/digital-will-template"
-              className="border rounded-xl p-5 hover:shadow-md hover:border-danger-foreground/25 transition group flex items-start gap-3"
-            >
-              <FileText className="h-6 w-6 text-danger-foreground shrink-0 mt-0.5" aria-hidden />
-              <div>
-                <h3 className="font-semibold text-lg">Digital Will Template</h3>
-                <p className="text-base text-muted-foreground">
-                  The accounts your family will need — in one printable document.
-                </p>
-              </div>
-            </Link>
-            <Link
-              to="/tools/medication-reminder-setup"
-              className="border rounded-xl p-5 hover:shadow-md hover:border-danger-foreground/25 transition group flex items-start gap-3"
-            >
-              <Pill className="h-6 w-6 text-danger-foreground shrink-0 mt-0.5" aria-hidden />
-              <div>
-                <h3 className="font-semibold text-lg">Medication Reminder Setup</h3>
-                <p className="text-base text-muted-foreground">
-                  Set phone reminders for every prescription so you never miss a dose.
-                </p>
-              </div>
-            </Link>
-            <Link
               to="/guides?category=safety"
               className="border rounded-xl p-5 hover:shadow-md hover:border-danger-foreground/25 transition group flex items-start gap-3"
             >

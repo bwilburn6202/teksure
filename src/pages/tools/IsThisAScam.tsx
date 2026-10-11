@@ -655,14 +655,14 @@ export default function IsThisAScam() {
                       <ExternalLink className="h-4 w-4 text-muted-foreground flex-shrink-0" />
                     </Link>
                     <Link
-                      to="/tools/scam-simulator"
+                      to="/tools/scam-message-decoder"
                       className="flex items-center gap-3 p-4 rounded-lg border hover:border-foreground/30 transition-colors"
                     >
                       <ShieldCheck className="h-5 w-5 text-info-foreground flex-shrink-0" />
                       <div className="flex-1 min-w-0">
-                        <p className="font-medium text-base">Practice Scam Spotting</p>
+                        <p className="font-medium text-base">Scam Message Decoder</p>
                         <p className="text-sm text-muted-foreground">
-                          Try our Scam Simulator tool
+                          Paste the message and see its warning signs
                         </p>
                       </div>
                       <ExternalLink className="h-4 w-4 text-muted-foreground flex-shrink-0" />
