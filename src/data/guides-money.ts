@@ -3,7 +3,7 @@ import type { Guide } from './guides';
 export const moneyGuides: Guide[] = [
   {
     slug: "bank-of-america-mobile-app",
-    title: "Bank of America Mobile Banking App: Setup and Everyday Tasks",
+    title: "Bank of America App: Setup and Everyday Use",
     excerpt: "The Bank of America Mobile Banking app lets you check balances, deposit checks, transfer funds, and pay bills from your iPhone or Android phone.",
     category: "money",
     tags: [
@@ -130,7 +130,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "best-laptops-for-seniors-2026",
-    title: "Best Laptops for Seniors in 2026: Chromebook vs. Windows",
+    title: "Best Laptops for Seniors: Chromebook or Windows?",
     excerpt: "Comparing the two most senior-friendly laptop options: an affordable Chromebook for basic tasks vs. a Windows laptop for full software support.",
     category: "money",
     tags: [
@@ -172,7 +172,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "xfinity-comcast-auto-renewal-traps-avoid",
-    title: "Comcast/Xfinity Auto-Renewal Traps — How to Cancel Add-ons You Never Signed Up For",
+    title: "Xfinity Auto-Renewal Traps and How to Cancel",
     excerpt: "Xfinity often auto-adds paid features to your bill after promotional periods end. Here is how to find them and cancel without a phone call.",
     category: "money",
     tags: [
@@ -237,7 +237,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "fraud-alert-vs-freeze",
-    title: "Fraud Alerts vs. Credit Freezes — Which Should You Use?",
+    title: "Fraud Alert vs. Credit Freeze: Which to Use?",
     excerpt: "Learn the difference between a fraud alert and a credit freeze so you can pick the right protection for your situation.",
     category: "money",
     tags: [
@@ -329,7 +329,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "how-to-check-your-credit-score-for-free-2026",
-    title: "How to Check Your Credit Score for Free (Without Hurting Your Credit)",
+    title: "How to Check Your Credit Score for Free",
     excerpt: "Check your credit score and full credit reports at no cost using AnnualCreditReport.com and Credit Karma. Checking your own score never lowers it.",
     category: "money",
     tags: [
@@ -515,7 +515,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "dispute-a-bank-charge",
-    title: "How to Dispute an Incorrect Charge on Your Bank Account",
+    title: "How to Dispute a Wrong Charge With Your Bank",
     excerpt: "If you see a charge you don't recognize or didn't authorize, here's how to report it to your bank and get your money back.",
     category: "money",
     tags: [
@@ -620,7 +620,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "find-and-cancel-forgotten-subscriptions",
-    title: "How to Find and Cancel Subscriptions You Forgot About",
+    title: "Find and Cancel Subscriptions You Forgot About",
     excerpt: "How to find every subscription draining your wallet — streaming services, forgotten free trials — and cancel them on iPhone, Android, or direct.",
     category: "money",
     tags: [
@@ -708,7 +708,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "freeze-credit-all-three-bureaus",
-    title: "How to Freeze Your Credit at All Three Bureaus to Prevent Identity Theft",
+    title: "How to Freeze Your Credit at All Three Bureaus",
     excerpt: "A credit freeze is a free, powerful way to stop scammers from opening new accounts in your name.",
     category: "money",
     tags: [
@@ -814,7 +814,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "how-to-keep-retirement-on-track-caregiving",
-    title: "How to Keep Your Own Retirement on Track While Caregiving",
+    title: "Keep Your Retirement on Track While Caregiving",
     excerpt: "Plain-English plan for sandwich-generation caregivers to protect 401(k) contributions, IRA savings, and Social Security earnings while caring for family.",
     category: "money",
     tags: [
@@ -974,7 +974,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "wire-transfer-bank-guide",
-    title: "How to Send a Bank Wire Transfer Online: What It Is and How to Stay Safe",
+    title: "How to Send a Bank Wire Transfer Safely",
     excerpt: "A wire transfer sends money directly from your bank account to another account, often the same day — learn how they work and how to avoid wire fraud.",
     category: "money",
     tags: [
@@ -1133,7 +1133,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "social-security-direct-deposit-setup",
-    title: "How to Set Up or Change Your Social Security Direct Deposit",
+    title: "Change Your Social Security Direct Deposit",
     excerpt: "Set up, change, or verify your Social Security direct deposit online or by phone — step-by-step with official SSA instructions.",
     category: "money",
     tags: [
@@ -1217,7 +1217,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "how-to-tap-to-pay-with-iphone-apple-pay-2026",
-    title: "How to Tap to Pay With Your iPhone Using Apple Pay — Step by Step in 2026",
+    title: "How to Tap to Pay With Apple Pay on iPhone",
     excerpt: "Set up Apple Pay on your iPhone, add a credit or debit card, and pay at any store that takes contactless payments — safer than swiping your card.",
     category: "money",
     tags: [
@@ -1326,7 +1326,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "turn-off-auto-renew-streaming-subscriptions-2026",
-    title: "How to Turn Off Auto-Renew on Streaming Subscriptions (2026)",
+    title: "Turn Off Auto-Renew on Streaming Services",
     excerpt: "Netflix, Disney+, Hulu, and the rest all renew automatically until you cancel. Here is exactly where to click on each service.",
     category: "money",
     tags: [
@@ -1436,7 +1436,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "how-to-use-travel-credit-card",
-    title: "How to Use a Travel Credit Card Without Getting Tripped Up by Fees",
+    title: "Use a Travel Credit Card Without Surprise Fees",
     excerpt: "Pick the right travel card, avoid foreign transaction fees, and use rewards points to lower trip costs without falling into common traps.",
     category: "money",
     tags: [
@@ -1488,7 +1488,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "schwab-app-guide",
-    title: "How to Use the Charles Schwab App to Manage Investments and Banking in One Place",
+    title: "How to Use the Charles Schwab App",
     excerpt: "Charles Schwab's app combines investment accounts and a fee-free checking account in one place, with no account minimums and no ATM fees worldwide.",
     category: "money",
     tags: [
@@ -1534,7 +1534,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "nerdwallet-app-guide",
-    title: "How to Use the NerdWallet App to Compare Financial Products and Track Your Credit",
+    title: "How to Use the NerdWallet App",
     excerpt: "NerdWallet helps you compare credit cards, loans, and savings accounts, and gives you a free credit score with personalized recommendations — all in one app.",
     category: "money",
     tags: [
@@ -1679,7 +1679,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "how-to-use-venmo-or-zelle-to-send-money-2026",
-    title: "How to Use Zelle or Venmo to Send Money to Family and Friends",
+    title: "Send Money to Family With Zelle or Venmo",
     excerpt: "Send money to family and friends from your phone in minutes using Zelle (built into most bank apps) or Venmo. Includes safety rules every sender should know.",
     category: "money",
     tags: [
@@ -1784,7 +1784,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "managing-your-social-security-online",
-    title: "Managing Your Social Security Online (my Social Security account)",
+    title: "Manage Your my Social Security Account Online",
     excerpt: "Set up your my Social Security account at ssa.gov: check your earnings, estimate benefits, change direct deposit, and avoid the common scams.",
     category: "money",
     tags: [
@@ -1895,7 +1895,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "passkey-login-for-banks-getting-started",
-    title: "Passkeys for Bank Login — The Password Replacement You Should Try",
+    title: "Passkeys for Bank Login: A Password Replacement",
     excerpt: "Passkeys are stronger than passwords and faster to use. Here is how to set one up for your bank account, step by step.",
     category: "money",
     tags: [
@@ -1953,7 +1953,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "roku-vs-google-tv-which-streaming-box-2026",
-    title: "Roku vs Google TV in 2026 — Which Streaming Box Is Right for You?",
+    title: "Roku vs Google TV: Which Streaming Box to Buy",
     excerpt: "A side-by-side look at Roku and Google TV in 2026 — what each does well, what each costs, and which one is easiest for a non-techy person.",
     category: "money",
     tags: [
@@ -2007,7 +2007,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "contactless-payment-setup",
-    title: "Setting Up Apple Pay, Google Pay, and Samsung Pay on Your Phone",
+    title: "Set Up Apple Pay, Google Pay, or Samsung Pay",
     excerpt: "Tap-to-pay is more secure than swiping your card. Here is how to set up Apple Pay, Google Wallet, or Samsung Wallet in a few minutes.",
     category: "money",
     tags: [
@@ -2054,7 +2054,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "t-mobile-essentials-65-versus-verizon-55-unlimited-2026",
-    title: "T-Mobile 55+ vs Verizon 55+ Unlimited in 2026 — Which Senior Plan Wins?",
+    title: "T-Mobile 55+ vs Verizon 55+ Unlimited Plans",
     excerpt: "A clear comparison of the two best senior cell phone plans in May 2026 — price, coverage, perks, and who each is best for.",
     category: "money",
     tags: [
@@ -2195,7 +2195,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "understanding-your-phone-bill",
-    title: "Understanding Your Phone Bill: What All Those Charges Mean",
+    title: "Your Phone Bill: What All Those Charges Mean",
     excerpt: "Decode every line on your phone bill — data, device payments, taxes, and 'administrative fees' — and learn how to lower it by $20-$50 a month.",
     category: "money",
     tags: [
@@ -2283,7 +2283,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "online-banking-app-guide",
-    title: "Using Your Bank's Mobile App to Check Balances, View Statements, and Deposit Checks",
+    title: "How to Use Your Bank's Mobile App",
     excerpt: "Your bank's mobile app lets you check your balance, view transactions, transfer money, and deposit a check by taking a photo — all from your phone.",
     category: "money",
     tags: [
@@ -2328,7 +2328,7 @@ export const moneyGuides: Guide[] = [
   },
   {
     slug: "wells-fargo-app-guide",
-    title: "Wells Fargo Mobile App: How to Use It for Daily Banking",
+    title: "How to Use the Wells Fargo Mobile App",
     excerpt: "The Wells Fargo Mobile app lets you manage your accounts, deposit checks, pay bills, and monitor your spending from your phone.",
     category: "money",
     tags: [

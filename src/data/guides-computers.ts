@@ -3,7 +3,7 @@ import type { Guide } from './guides';
 export const computersGuides: Guide[] = [
   {
     slug: "chromeos-flex-revive-old-windows-laptop",
-    title: "ChromeOS Flex — Turn an Old Windows Laptop Into a Fast New Chromebook",
+    title: "ChromeOS Flex: Make an Old Laptop a Chromebook",
     excerpt: "Google's free ChromeOS Flex turns a slow 10-year-old laptop into a fast, safe browsing machine. Here is how to install it in about 45 minutes.",
     category: "computers",
     tags: [
@@ -69,7 +69,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "disk-cleanup-windows",
-    title: "Disk Cleanup and Storage Sense: Free Up Gigabytes of Space on Your Windows PC",
+    title: "Free Up Space on Windows With Disk Cleanup",
     excerpt: "Your PC accumulates gigabytes of unnecessary files over time. Learn how to use Disk Cleanup and Storage Sense to reclaim that space in minutes.",
     category: "computers",
     tags: [
@@ -408,7 +408,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "remove-duplicate-photos-windows-11",
-    title: "How to Find and Remove Duplicate Photos on Windows 11",
+    title: "Find and Remove Duplicate Photos on Windows 11",
     excerpt: "Free up storage space on your Windows 11 computer by finding and safely deleting duplicate photos using the built-in Photos app.",
     category: "computers",
     tags: [
@@ -681,7 +681,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "how-to-set-up-windows-11-recall-and-privacy-2026",
-    title: "How to Manage Windows 11 Recall and Privacy Settings",
+    title: "Manage Windows 11 Recall and Privacy Settings",
     excerpt: "Windows 11 Recall takes periodic snapshots of your screen. Learn what that means, how to turn it off, and which other privacy settings are worth reviewing.",
     category: "computers",
     tags: [
@@ -869,7 +869,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "use-airdrop-mac-iphone",
-    title: "How to Share Files Between Mac and iPhone (AirDrop)",
+    title: "Share Files Between Mac and iPhone With AirDrop",
     excerpt: "Transfer photos, documents, and files wirelessly between your Mac and iPhone using AirDrop — no cables or email needed.",
     category: "computers",
     tags: [
@@ -1079,7 +1079,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "mac-handoff-universal-clipboard",
-    title: "How to Use Handoff and Universal Clipboard Between iPhone and Mac",
+    title: "Use Handoff and Copy-Paste Between iPhone and Mac",
     excerpt: "Apple's Handoff lets you start something on your iPhone and pick it up on your Mac — and Universal Clipboard lets you copy on one device and paste on another.",
     category: "computers",
     tags: [
@@ -1124,7 +1124,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "mac-photos-app-guide",
-    title: "How to Use the Photos App on Mac to Organize and Share Pictures",
+    title: "Organize and Share Pictures in Photos on Mac",
     excerpt: "The Mac Photos app stores all your pictures in one place and can auto-sync with your iPhone. Learn to create albums, find people, and share memories.",
     category: "computers",
     tags: [
@@ -1173,7 +1173,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "how-to-use-windows-11-start-menu",
-    title: "How to Use the Windows 11 Start Menu (If You Are Used to Windows 10)",
+    title: "How to Use the Windows 11 Start Menu",
     excerpt: "Windows 11 moved everything around — here is a simple guide to finding your programs, files, and settings in the new layout.",
     category: "computers",
     tags: [
@@ -1215,7 +1215,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-11-backup-app-new-pc",
-    title: "How to Use the Windows Backup App to Move to a New PC",
+    title: "Move to a New PC With the Windows Backup App",
     excerpt: "Windows 11 includes a built-in Backup app that copies your files, apps list, and settings so setting up a new computer is much easier.",
     category: "computers",
     tags: [
@@ -1297,7 +1297,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "ipad-sidecar-second-screen",
-    title: "How to Use Your iPad as a Second Screen for Your Mac",
+    title: "Use Your iPad as a Second Screen for Your Mac",
     excerpt: "Sidecar turns your iPad into an extra display for your Mac — giving you more screen space for work.",
     category: "computers",
     tags: [
@@ -1386,7 +1386,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "mac-mission-control",
-    title: "Mac Mission Control: See All Open Windows and Switch Between Them at a Glance",
+    title: "Mac Mission Control: See All Your Open Windows",
     excerpt: "Mission Control on Mac shows all your open windows and apps spread across your screen so you can find what you need and switch to it with one click.",
     category: "computers",
     tags: [
@@ -1429,7 +1429,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "mac-zoom-accessibility",
-    title: "Mac Zoom: How to Make Everything on Your Screen Much Larger",
+    title: "Mac Zoom: Make Everything on Screen Larger",
     excerpt: "Mac has a built-in Zoom feature that enlarges everything on screen. Turn it on in Accessibility settings and use keyboard shortcuts anytime.",
     category: "computers",
     tags: [
@@ -1469,7 +1469,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "macos-sequoia-iphone-mirroring-step-by-step",
-    title: "macOS Sequoia iPhone Mirroring — Use Your iPhone From Your Mac",
+    title: "iPhone Mirroring: Use Your iPhone From Your Mac",
     excerpt: "Apple's new iPhone Mirroring lets you control your iPhone from your Mac screen. Here is the setup and the catches.",
     category: "computers",
     tags: [
@@ -1522,7 +1522,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "fix-slow-windows-pc-2026",
-    title: "Make a Slow Windows PC Faster (No Cost, No Risky Tools)",
+    title: "Make a Slow Windows PC Faster for Free",
     excerpt: "A slow Windows PC is usually fixed in 30 minutes with three free, built-in steps. Skip the \"PC Cleaner\" ads — these tools come with Windows.",
     category: "computers",
     tags: [
@@ -1570,7 +1570,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-color-filters-easier-reading",
-    title: "Make Windows Easier on Your Eyes With Color Filters and Contrast",
+    title: "Windows Color Filters for Easier Reading",
     excerpt: "Windows can shift colors, raise contrast, and turn the screen grayscale for easier reading. Useful for color blindness, glare, and tired eyes.",
     category: "computers",
     tags: [
@@ -1665,7 +1665,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "microsoft-store-guide",
-    title: "Microsoft Store: How to Download Apps, Games, and Updates Safely on Windows",
+    title: "Microsoft Store: Download Windows Apps Safely",
     excerpt: "The Microsoft Store is the official place to download apps and games on Windows. Learn how to use it safely and keep your apps up to date.",
     category: "computers",
     tags: [
@@ -1709,7 +1709,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-settings-app-guide",
-    title: "Navigating the Windows Settings App: Wi-Fi, Display, Sound, and Updates",
+    title: "A Tour of the Windows Settings App",
     excerpt: "A plain-English walkthrough of the Windows Settings app — where to find Wi-Fi, display brightness, sound volume, and Windows Update in one place.",
     category: "computers",
     tags: [
@@ -1756,7 +1756,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "powershell-beginners",
-    title: "PowerShell for Beginners: A Few Useful Commands Any Windows User Can Learn",
+    title: "PowerShell for Beginners: A Few Useful Commands",
     excerpt: "PowerShell is a powerful Windows tool for running commands. You do not need to be a programmer to use a handful of helpful commands for everyday tasks.",
     category: "computers",
     tags: [
@@ -1800,7 +1800,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "scan-documents-windows-guide",
-    title: "Scanning Documents and Photos Using the Windows Scan App",
+    title: "Scan Documents and Photos With Windows Scan",
     excerpt: "The free Windows Scan app lets you scan documents and photos from a USB or Wi-Fi scanner and save them as PDFs or image files — no extra software needed.",
     category: "computers",
     tags: [
@@ -1845,7 +1845,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "send-text-messages-from-mac-imessage-android",
-    title: "Send and Reply to Text Messages from Your Mac — iPhone and Android",
+    title: "Send and Reply to Text Messages From Your Mac",
     excerpt: "Type texts on your real keyboard instead of your phone. Works with iMessage on Mac and Google Messages for Android users.",
     category: "computers",
     tags: [
@@ -1899,7 +1899,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "turn-off-windows-recall-privacy-feature",
-    title: "Turn Off Windows 11 Recall — How to Stop the Constant Screenshot AI",
+    title: "How to Turn Off Windows 11 Recall",
     excerpt: "Windows 11 Recall takes a screenshot of your PC every few seconds. Here is what it does, why people are worried, and how to turn it off.",
     category: "computers",
     tags: [
@@ -2002,7 +2002,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-10-end-of-support-what-to-do",
-    title: "Windows 10 Support Has Ended: What It Means and What to Do Now",
+    title: "Windows 10 Support Has Ended: What to Do Now",
     excerpt: "Microsoft stopped issuing free security updates for Windows 10. Here is how to check what you have and choose your next step.",
     category: "computers",
     tags: [
@@ -2053,7 +2053,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-11-24h2-recall-what-to-disable",
-    title: "Windows 11 24H2 — What to Disable Right Away (Including Recall)",
+    title: "Windows 11 24H2: What to Turn Off Right Away",
     excerpt: "Microsoft's 2024H2 update added some features you may want to turn off. Here is the short list of settings to change today.",
     category: "computers",
     tags: [
@@ -2106,7 +2106,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-11-app-freeze-onedrive-fix",
-    title: "Windows 11 Apps Freeze When Saving Files — Here's the Free Fix",
+    title: "Windows 11 Apps Freeze When Saving? Free Fix",
     excerpt: "A Windows 11 update bug causes Outlook, Word, and other apps to freeze when saving to OneDrive or Dropbox. Microsoft's free patch takes 5 minutes.",
     category: "computers",
     tags: [
@@ -2152,7 +2152,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-11-snap-layouts",
-    title: "Windows 11 Snap Layouts: Arrange Multiple Windows Side by Side for Better Focus",
+    title: "Windows 11 Snap Layouts: Windows Side by Side",
     excerpt: "Snap Layouts in Windows 11 lets you organize open windows into grids on your screen so you can work with two or more programs at the same time.",
     category: "computers",
     tags: [
@@ -2196,7 +2196,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-11-bitlocker-lockout-fix",
-    title: "Windows 11 Update Locked Me Out — How to Get Back In",
+    title: "Locked Out After a Windows 11 Update? Get Back In",
     excerpt: "Microsoft's April 2026 update triggered BitLocker screens on some PCs. Here is where to find your recovery key and get back in safely.",
     category: "computers",
     tags: [
@@ -2240,7 +2240,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-hello-guide",
-    title: "Windows Hello: Set Up Face Recognition or Fingerprint Sign-In on Windows 11",
+    title: "Windows Hello: Sign In With Face or Fingerprint",
     excerpt: "Windows Hello lets you sign into your PC with your face or fingerprint instead of typing a password — faster and more secure than most passwords.",
     category: "computers",
     tags: [
@@ -2284,7 +2284,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-high-contrast-mode",
-    title: "Windows High Contrast Mode: Make Text and Icons Stand Out if Vision Is Strained",
+    title: "Windows High Contrast: Make Text Stand Out",
     excerpt: "Windows High Contrast mode uses bold colors with strong contrast to make text and buttons easier to see — helpful for low vision, eye strain.",
     category: "computers",
     tags: [
@@ -2324,7 +2324,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-magnifier-accessibility",
-    title: "Windows Magnifier: Zoom Into Any Part of Your Screen to See It Better",
+    title: "Windows Magnifier: Zoom In to See Your Screen",
     excerpt: "Windows Magnifier is a free built-in tool that enlarges any part of your screen.",
     category: "computers",
     tags: [
@@ -2368,7 +2368,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-narrator-guide",
-    title: "Windows Narrator: The Built-In Screen Reader That Reads Text Aloud",
+    title: "Windows Narrator: The Built-In Screen Reader",
     excerpt: "Windows Narrator reads text, buttons, and menus aloud on your PC so you can use your computer without relying on the screen — no extra software needed.",
     category: "computers",
     tags: [
@@ -2414,7 +2414,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "windows-services-guide",
-    title: "Windows Services: What They Are and Which Ones You Can Safely Disable to Speed Up Your PC",
+    title: "Windows Services: Which Ones Can You Turn Off?",
     excerpt: "Windows runs dozens of background services. Some are essential; others you may not need. Learn what services are and how to manage them safely.",
     category: "computers",
     tags: [
@@ -2458,7 +2458,7 @@ export const computersGuides: Guide[] = [
   },
   {
     slug: "xbox-game-pass-pc-guide",
-    title: "Xbox Game Pass on PC: How to Access Hundreds of Games on Your Windows Computer",
+    title: "Xbox Game Pass on PC: Play Hundreds of Games",
     excerpt: "Xbox Game Pass gives you access to a large library of PC games for a monthly fee. Learn how to subscribe, download, and start playing on Windows.",
     category: "computers",
     tags: [

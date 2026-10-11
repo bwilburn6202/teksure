@@ -3,7 +3,7 @@ import type { Guide } from './guides';
 export const lifeGuides: Guide[] = [
   {
     slug: "retirement-benefits-explained",
-    title: "Benefits That Become Available at Retirement Beyond Social Security",
+    title: "Retirement Benefits Beyond Social Security",
     excerpt: "Medicare, pension payments, employer retiree health coverage, and senior discounts — a guide to the full picture of what is available when you retire.",
     category: "life",
     tags: [
@@ -47,7 +47,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "facebook-memorial-setup",
-    title: "Facebook Memorialized Accounts: What Happens and How to Plan Ahead",
+    title: "Facebook Memorialized Accounts: Plan Ahead",
     excerpt: "Learn what happens to your Facebook profile after you pass, how memorialization works, and how to appoint a Legacy Contact or request deletion.",
     category: "life",
     tags: [
@@ -91,7 +91,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "ssdi-application-guide",
-    title: "How to Apply for Social Security Disability Insurance (SSDI) Online",
+    title: "How to Apply for SSDI (Disability) Online",
     excerpt: "If a medical condition prevents you from working, SSDI may provide monthly income. Learn how to apply online through the Social Security Administration.",
     category: "life",
     tags: [
@@ -135,7 +135,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "how-to-check-your-medicare-account-online-2026",
-    title: "How to Check Your Medicare Account Online at Medicare.gov",
+    title: "Check Your Medicare Account Online",
     excerpt: "Create a free Medicare.gov account to view your coverage, check recent claims, track your deductible, and download your Medicare Summary Notice from home.",
     category: "life",
     tags: [
@@ -188,7 +188,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "check-social-security-benefit-online",
-    title: "How to Check Your Social Security Benefit Amount Online",
+    title: "Check Your Social Security Benefit Online",
     excerpt: "My Social Security lets you view your benefit estimate, earnings record, and manage your account online — no phone hold times required.",
     category: "life",
     tags: [
@@ -231,7 +231,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "how-to-claim-social-security-ex-spouse",
-    title: "How to Claim Social Security Based on an Ex-Spouse's Record",
+    title: "Claim Social Security on an Ex-Spouse's Record",
     excerpt: "Plain-English walkthrough for divorced older adults on claiming Social Security spousal and survivor benefits based on an ex-spouse's earnings record.",
     category: "life",
     tags: [
@@ -284,7 +284,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "how-to-find-cheap-flights-google-flights",
-    title: "How to Find Cheap Flights with Google Flights Price Tracking",
+    title: "Find Cheap Flights With Google Flights",
     excerpt: "Use Google Flights' free price-tracking and date-grid tools to spot the lowest fares and get an alert when the price drops on your route.",
     category: "life",
     tags: [
@@ -489,7 +489,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "how-to-get-ssa-1099-online",
-    title: "How to Get Your SSA-1099 from Social Security Online",
+    title: "How to Get Your SSA-1099 Online",
     excerpt: "Download your Social Security tax form from the SSA website in minutes using your my Social Security account.",
     body: "If you receive Social Security benefits, the Social Security Administration sends you a tax form called the SSA-1099 every January. This form shows the total amount of benefits you received during the year. And you need it to file your federal tax return. Sometimes the paper form gets lost in the mail, arrives late, or never shows up at all. The good news is you can get a replacement copy online any time you want, free of charge, through the official SSA website.\n\nTo do this, you need a my Social Security account at ssa.gov. This is a free, secure account that lets you view your benefit amount, change your direct deposit, request a replacement Medicare card, and download tax forms. If you already have an account, you can sign in and grab your SSA-1099 in about two minutes. If you do not have an account yet, you can create one in about ten minutes. The SSA will verify your identity by asking questions only you would know, such as past addresses and old phone numbers.\n\nThe SSA-1099 is available online starting February 1 each year for the prior tax year. Forms from previous years are also available, going back several years, in case you need them for amended returns or for a tax preparer. You can save the form as a PDF, print it, or email it directly to your tax preparer.\n\nOne important note: the website ssa.gov is the only official Social Security website. Be careful of fake sites with similar names. Always type ssa.gov directly into your browser. The SSA will never ask you for your password through email or text. If something feels wrong, stop and call the SSA at 1-800-772-1213.",
     category: "life",
@@ -530,7 +530,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "memorialize-facebook-account",
-    title: "How to Memorialize or Delete a Loved One's Facebook Account",
+    title: "Memorialize or Delete a Loved One's Facebook",
     excerpt: "After losing a loved one, you can ask Facebook to memorialize their account as a tribute or request its removal — here's how to do both.",
     category: "life",
     tags: [
@@ -624,7 +624,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "how-to-receive-social-security-overseas",
-    title: "How to Receive Social Security Payments While Living Overseas",
+    title: "Get Social Security Payments While Overseas",
     excerpt: "Plain-English walkthrough for retirees who want their Social Security checks to follow them abroad, with country rules, banking choices, and tax notes.",
     category: "life",
     tags: [
@@ -830,7 +830,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "how-to-sign-up-county-emergency-alerts",
-    title: "How to Sign Up for Emergency Text Alerts in Your County",
+    title: "Sign Up for Your County's Emergency Alerts",
     excerpt: "Plain-English walkthrough to register for your county's official emergency text and call alerts so you hear about fires, floods, and storms first.",
     category: "life",
     tags: [
@@ -888,7 +888,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "how-to-update-legal-documents-after-marriage-equality",
-    title: "How to Update Legal Documents After Marriage Equality",
+    title: "Update Legal Documents After Marriage Equality",
     excerpt: "Plain-English guide to updating wills, beneficiaries, Social Security, deeds, and IDs to reflect your legal marriage and protect your spouse.",
     category: "life",
     tags: [
@@ -1089,7 +1089,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "medicare-advantage-explained",
-    title: "Medicare Advantage (Part C): How It Works and How It Compares to Original Medicare",
+    title: "Medicare Advantage (Part C) Explained",
     excerpt: "Medicare Advantage is a private plan option for people on Medicare. Learn how it differs from Original Medicare and how to decide if it is right for you.",
     category: "life",
     tags: [
@@ -1133,7 +1133,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "medicare-extra-help-program",
-    title: "Medicare Extra Help: How to Get Help Paying for Prescription Drug Costs",
+    title: "Medicare Extra Help: Lower Drug Costs",
     excerpt: "If you have Medicare and a limited income, the Extra Help program can lower or eliminate your out-of-pocket costs for prescription drugs — here's how to apply.",
     category: "life",
     tags: [
@@ -1172,7 +1172,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "medicare-open-enrollment-2026-online-step-by-step",
-    title: "Medicare Open Enrollment 2026 — How to Enroll Online, Step by Step",
+    title: "Medicare Open Enrollment 2026: Enroll Online",
     excerpt: "Open Enrollment runs October 15 to December 7. Here is the plain-English walkthrough of comparing and choosing a plan at Medicare.gov.",
     category: "life",
     tags: [
@@ -1231,7 +1231,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "medicare-2027-open-enrollment-prep-guide",
-    title: "Medicare Open Enrollment 2027: How to Get Ready Before October",
+    title: "Get Ready for Medicare Open Enrollment 2027",
     excerpt: "Medicare Open Enrollment for 2027 coverage runs October 15 to December 7, 2026. Here is what to review now so you are not rushed in the fall.",
     category: "life",
     tags: [
@@ -1275,7 +1275,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "medicare-parts-guide",
-    title: "Medicare Parts A, B, C, and D Explained in Plain English",
+    title: "Medicare Parts A, B, C, and D Explained",
     excerpt: "What Medicare Parts A, B, C, and D each cover, what they cost, and when you need to enroll — written clearly for first-time enrollees.",
     category: "life",
     tags: [
@@ -1322,7 +1322,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "medicare-supplement-guide",
-    title: "Medicare Supplement (Medigap) Insurance: What It Covers and When to Buy It",
+    title: "Medigap Insurance: What It Covers, When to Buy",
     excerpt: "How Medigap insurance fills the gaps in original Medicare, when the best time to buy it is, and how it differs from Medicare Advantage.",
     category: "life",
     tags: [
@@ -1368,7 +1368,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "pods-storage-guide",
-    title: "PODS Portable Storage: How It Works for Moves and Long-Term Storage",
+    title: "PODS Portable Storage: How It Works",
     excerpt: "PODS delivers a storage container to your home, you fill it on your own schedule, then they pick it up and move or store it. Here's what to know.",
     category: "life",
     tags: [
@@ -1408,7 +1408,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "social-security-survivor-guide",
-    title: "Social Security Survivor Benefits: Who Qualifies and How to Apply",
+    title: "Social Security Survivor Benefits Explained",
     excerpt: "If a spouse or parent paid into Social Security, surviving family members may qualify for monthly benefits. Learn who qualifies and how to apply.",
     category: "life",
     tags: [
@@ -1452,7 +1452,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "social-security-cola-2027-what-to-expect",
-    title: "Social Security's 2027 Raise: When You'll Know and What to Expect",
+    title: "Social Security's 2027 Raise: What to Expect",
     excerpt: "The 2027 Social Security cost-of-living increase will be announced in mid-October 2026. Here is how the raise is calculated and when you will see it.",
     category: "life",
     tags: [
@@ -1495,7 +1495,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "321-backup-strategy",
-    title: "The 3-2-1 Backup Rule — Protect Your Files the Smart Way",
+    title: "The 3-2-1 Backup Rule for Your Files",
     excerpt: "The 3-2-1 rule is the industry-standard backup strategy: 3 copies, 2 media types, 1 off-site. Here is how to set it up at home.",
     category: "life",
     tags: [
@@ -1545,7 +1545,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "social-media-death-guide",
-    title: "What Happens to Facebook, Instagram, and Email Accounts When Someone Passes Away",
+    title: "What Happens to Online Accounts After a Death",
     excerpt: "How to memorialize a Facebook profile, set up a legacy contact, and request account removal for a deceased person's social media and email accounts.",
     category: "life",
     tags: [
@@ -1590,7 +1590,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "social-security-when-guide",
-    title: "When Should You Start Collecting Social Security? Early vs. Full vs. Delayed",
+    title: "When Should You Start Social Security?",
     excerpt: "A plain-English explanation of when to claim Social Security benefits — age 62, full retirement age, or 70 — and what each choice means for your monthly check.",
     category: "life",
     tags: [
@@ -1634,7 +1634,7 @@ export const lifeGuides: Guide[] = [
   },
   {
     slug: "medicare-annual-notice-of-change-what-to-check",
-    title: "Your Medicare Plan Mails an \"Annual Notice of Change\" — What to Check in It",
+    title: "Medicare Annual Notice of Change: What to Check",
     excerpt: "Medicare Advantage and Part D plans must mail your 2027 Annual Notice of Change by September 30, 2026. Here are the five items worth reading closely.",
     category: "life",
     tags: [

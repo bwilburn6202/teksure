@@ -3,7 +3,7 @@ import type { Guide } from './guides';
 export const basicsGuides: Guide[] = [
   {
     slug: "cloud-vs-local-backup",
-    title: "Cloud Backup vs. Local Backup: What's the Difference?",
+    title: "Cloud Backup vs. Local Backup Explained",
     excerpt: "Cloud backup and local backup both protect your files — but they work differently and the best approach uses both.",
     category: "basics",
     tags: [
@@ -41,7 +41,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "cloud-storage-explained-photos-files-safe",
-    title: "Cloud Storage Explained: Your Photos and Files, Safe and Sound",
+    title: "Cloud Storage Explained: Keep Your Files Safe",
     excerpt: "What cloud storage is, how to set it up on your phone or computer, and how to share photos and files with family — without the tech stress.",
     category: "basics",
     tags: [
@@ -120,7 +120,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "email-not-syncing-fix",
-    title: "Email Not Updating? How to Fix an Email App That Won't Sync",
+    title: "Email Not Updating? Fix an App That Won't Sync",
     excerpt: "When your email app stops pulling new messages, here are the most common causes and the steps to fix each one.",
     category: "basics",
     tags: [
@@ -216,7 +216,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "senior-tech-help-family-google-family-link-basics",
-    title: "Google Family Link for Android: The Same Idea on the Android Side",
+    title: "Google Family Link for Android: The Basics",
     excerpt: "Google Family Link links Android accounts under one family group for purchase approval, location, and shared services.",
     category: "basics",
     tags: [
@@ -260,7 +260,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "google-photos-vs-icloud",
-    title: "Google Photos vs. iCloud Photos: Which One Should You Use?",
+    title: "Google Photos vs. iCloud Photos: Which to Use?",
     excerpt: "Both Google Photos and iCloud Photos back up your pictures automatically — the best choice depends on which devices you use.",
     category: "basics",
     tags: [
@@ -298,7 +298,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "helping-parents-grandparents-from-far-away-caregivers-tech-kit",
-    title: "Helping Parents and Grandparents from Far Away: A Caregiver's Tech Kit",
+    title: "A Long-Distance Caregiver's Tech Kit",
     excerpt: "Helping an aging parent with tech from far away: screen sharing, remote access, safe monitoring, scam alerts, and how not to burn out doing it.",
     category: "basics",
     tags: [
@@ -414,7 +414,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "seeing-ai-guide",
-    title: "How Blind and Low-Vision Users Can Use Seeing AI on iPhone",
+    title: "Seeing AI on iPhone for Blind and Low Vision",
     excerpt: "Seeing AI is Microsoft's free app that reads text, identifies objects, and describes scenes aloud — designed for blind and low-vision users.",
     body: "Seeing AI is a free iPhone app developed by Microsoft specifically for people who are blind or have low vision. It uses your phone's camera and artificial intelligence to describe the world around you — reading text aloud, identifying products, recognizing people's faces and expressions, describing scenes, identifying currency, and more. The app speaks its descriptions out loud so you do not need to see the screen.\n\nSeeing AI is available exclusively on iPhone and iPad. Download it free from the App Store by searching for \"Seeing AI.\" Microsoft continues to update the app regularly with new features.\n\nOnce opened, Seeing AI offers several \"channels,\" each designed for a different task. You switch between channels by swiping left or right on the screen.\n\nThe Short Text channel is the most used feature. When you point your camera at any printed text — a label, a sign, a menu, a receipt — the app reads it aloud almost instantly as you move the phone. There is no button to press. It reads continuously as text comes into view. This makes it ideal for quickly checking a product label or finding a specific piece of text.\n\nThe Documents channel is for longer pieces of text — a full letter, a page from a book, a form. The app guides you with audio cues to get the page fully in frame, then reads the whole document aloud. You can also tap anywhere on the document image to have a specific section re-read.\n\nThe Products channel uses barcodes. Point the camera at the barcode on any packaged item and the app reads the product name aloud. This is useful in grocery stores or when organizing pantry items.\n\nThe People channel recognizes faces of people you have saved with a photo and name. When a recognized person comes into frame, the app says their name. It also describes unrecognized people's approximate age, emotional expression, and whether they appear to be looking at you.\n\nThe Scene channel provides a full description of what is in front of the camera — useful for understanding a room you have recently entered, a street you are standing on, or a photograph.\n\nThe Currency channel identifies U.S. paper bills — hold a bill in front of the camera and the app announces the denomination.\n\nThe Light Detector channel uses your phone's flash and camera to sense light levels, providing audio tones that become faster as light increases — helpful for finding a light switch or checking whether a light is on.\n\nFor best results, hold the phone steadily and make sure the subject is well lit. Natural daylight works best. The app can sometimes make mistakes, especially with handwritten text or poor lighting, so always verify important information through additional means.\n\nSeeing AI works alongside VoiceOver, Apple's built-in screen reader. If VoiceOver is enabled, you can use swipe and tap gestures to navigate between channels. Go to iPhone Settings, then Accessibility, then VoiceOver, to enable it.",
     category: "basics",
@@ -461,7 +461,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "how-to-clear-browser-history-and-cache-2026",
-    title: "How to Clear Your Browser History, Cache, and Cookies",
+    title: "Clear Your Browser History, Cache, and Cookies",
     excerpt: "A step-by-step guide to clearing browsing history on iPhone (Safari), Android (Chrome), and computers — and what actually gets deleted vs. what stays.",
     category: "basics",
     tags: [
@@ -564,7 +564,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "google-photos-create-album",
-    title: "How to Create and Share Photo Albums in Google Photos",
+    title: "Create and Share Albums in Google Photos",
     excerpt: "Google Photos lets you create custom albums to organize your favorite photos — and share them with family so everyone can add their own photos.",
     category: "basics",
     tags: [
@@ -654,7 +654,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "facetime-on-apple-tv-video-call-big-screen",
-    title: "How to FaceTime on Your Apple TV — Video Calls on Your Living Room Screen",
+    title: "How to FaceTime on Your Apple TV",
     excerpt: "Apple TV now supports FaceTime calls using your iPhone or iPad as the camera. Here is how to set it up so you can see family on a much larger screen.",
     category: "basics",
     tags: [
@@ -705,7 +705,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "google-photos-ai-search-find-any-photo",
-    title: "How to Find Any Photo in Google Photos Using AI Search",
+    title: "Find Any Photo With Google Photos Search",
     excerpt: "Google Photos can find photos by what is in them — type \"beach sunset 2022\" or \"birthday cake\" and it finds them instantly. Here is how.",
     category: "basics",
     tags: [
@@ -755,7 +755,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "find-wifi-password-on-router",
-    title: "How to Find Your Wi-Fi Password Without Calling Anyone",
+    title: "How to Find Your Wi-Fi Password",
     excerpt: "Find your home Wi-Fi password on the router label, in your iPhone settings, through Windows, or via a browser.",
     category: "basics",
     tags: [
@@ -797,7 +797,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "fix-wifi-keeps-dropping",
-    title: "How to Fix Wi-Fi That Keeps Dropping or Disconnecting",
+    title: "How to Fix Wi-Fi That Keeps Dropping",
     excerpt: "Wi-Fi cutting out every few minutes? Try these free fixes in order — most people are back online within 5 minutes.",
     category: "basics",
     tags: [
@@ -848,7 +848,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "how-to-free-up-google-photos-storage",
-    title: "How to Free Up Space in Google Photos When Storage Is Full",
+    title: "Free Up Space When Google Photos Is Full",
     excerpt: "When your Google account storage fills up, photos stop backing up and email slows down — here is how to fix it without losing your pictures.",
     category: "basics",
     tags: [
@@ -940,7 +940,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "notes-app-tips-iphone-mac",
-    title: "How to Get the Most Out of the Notes App on iPhone and Mac",
+    title: "Notes App Tips for iPhone and Mac",
     excerpt: "Apple's Notes app is more powerful than most people realize. Learn how to use it for checklists, locked notes, shared notes, document scanning.",
     category: "basics",
     tags: [
@@ -984,7 +984,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "how-to-deal-with-pop-up-ads-and-spam-2026",
-    title: "How to Handle Pop-Up Ads and Spam on Your Phone or Computer",
+    title: "How to Handle Pop-Up Ads and Spam",
     excerpt: "Pop-up ads and browser spam are annoying and sometimes dangerous. Here is how to close them safely, block future ones, and remove unwanted notifications.",
     category: "basics",
     tags: [
@@ -1039,7 +1039,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "how-to-stop-app-downloads-on-android-for-dementia-caregiver",
-    title: "How to Lock Down App Downloads on Android for a Family Member With Dementia",
+    title: "Block App Downloads on Android for Dementia Care",
     excerpt: "A step-by-step guide for caregivers to prevent unwanted app installs and purchases on an Android phone without needing a PIN every time.",
     category: "basics",
     tags: [
@@ -1119,7 +1119,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "google-account-recovery-guide",
-    title: "How to Recover Access to Your Google or Gmail Account",
+    title: "Recover Your Google or Gmail Account",
     excerpt: "Locked out of your Gmail account? Google's official recovery steps can restore access using your phone number, backup email, or security questions.",
     category: "basics",
     tags: [
@@ -1168,7 +1168,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "after-being-scammed-reporting-ftc-ic3-state-attorney-general",
-    title: "How to Report a Scam to the FTC, FBI IC3, and Your State Attorney General",
+    title: "Report a Scam to the FTC, FBI, and Your State",
     excerpt: "Filing reports does not always get your money back. But it unlocks help, records the crime, and protects others. Here is what each report does.",
     category: "basics",
     tags: [
@@ -1260,7 +1260,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "save-as-pdf-guide",
-    title: "How to Save Anything as a PDF on iPhone, Android, Mac, or Windows",
+    title: "How to Save Anything as a PDF",
     excerpt: "Save webpages, emails, and documents as PDF files on any device. No special software needed — all four platforms have this built in.",
     category: "basics",
     tags: [
@@ -1305,7 +1305,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "outlook-email-setup-guide",
-    title: "How to Set Up and Use Outlook for Email and Calendar",
+    title: "Set Up Outlook for Email and Calendar",
     excerpt: "Get started with Microsoft Outlook — send and receive email, organize your inbox with folders, and manage your calendar in one place.",
     category: "basics",
     tags: [
@@ -1353,7 +1353,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "gmail-filters-auto-sort-guide",
-    title: "How to Set Up Gmail Filters to Automatically Sort Your Email",
+    title: "Use Gmail Filters to Sort Email Automatically",
     excerpt: "Gmail filters automatically move, label, or archive emails as they arrive based on rules you set. Stop sorting email by hand — let Gmail do it for you.",
     category: "basics",
     tags: [
@@ -1398,7 +1398,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "streaming-setup",
-    title: "How to Set Up Netflix, YouTube, and Streaming Apps on Your TV",
+    title: "Set Up Netflix and YouTube on Your TV",
     excerpt: "Step-by-step guide to watching Netflix, YouTube, BBC iPlayer, and more on your Smart TV, Apple TV, Fire Stick, or Chromecast.",
     category: "basics",
     tags: [
@@ -1532,7 +1532,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "android-night-mode-camera-guide",
-    title: "How to Take Better Photos in the Dark Using Android Night Mode",
+    title: "Take Better Photos in the Dark on Android",
     excerpt: "Android's Night Mode captures bright, clear photos in low light by combining multiple exposures. Learn when to use it and how to get the best results.",
     category: "basics",
     tags: [
@@ -1631,7 +1631,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "how-to-update-your-iphone-to-ios-18",
-    title: "How to Update Your iPhone to the Latest iOS Version",
+    title: "How to Update Your iPhone to the Latest iOS",
     excerpt: "Keep your iPhone safe and running its best by updating to the latest iOS version — step-by-step with no tech knowledge needed.",
     category: "basics",
     tags: [
@@ -1799,7 +1799,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "iphone-portrait-mode-guide",
-    title: "How to Use iPhone Portrait Mode for Beautiful Blurry-Background Photos",
+    title: "How to Use Portrait Mode on iPhone",
     excerpt: "Portrait Mode blurs the background of photos to make your subject stand out — the look of professional photography on your iPhone.",
     category: "basics",
     tags: [
@@ -1843,7 +1843,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "live-caption-android-guide",
-    title: "How to Use Live Caption on Android to Read Audio as Text",
+    title: "Use Live Caption on Android to Read Audio",
     excerpt: "Android's Live Caption turns speech from videos, calls, and podcasts into on-screen text in real time — no internet needed.",
     body: "Live Caption is a built-in accessibility feature on Android phones that automatically transcribes spoken audio into on-screen text. It works with videos, podcasts, phone calls, audio messages, and almost any app that plays sound. The captions appear as a dark text box at the bottom of your screen that you can move, expand, or minimize.\n\nOne of the most important things about Live Caption is that it works completely offline. The speech recognition happens on your phone itself — your audio is never sent to Google's servers. This makes it both fast and private. You can use it without a cellular connection or Wi-Fi.\n\nLive Caption is available on Google Pixel phones starting with the Pixel 3 (running Android 14 or later) and has expanded to many other Android phones including Samsung, OnePlus, and other brands on Android 14 and later. Not all Android phones have this feature — the availability depends on the manufacturer including it.\n\nThere are two ways to turn on Live Caption. The fastest way is to press a volume button on the side of your phone. When the volume slider appears on screen, look for a small caption icon (two lines of text) below the slider. Tap it to enable or disable Live Caption. The second way is through Settings — go to Settings, tap Accessibility, then Live Caption, and toggle it on from there.\n\nOnce turned on, the caption box appears automatically whenever your phone plays audio with speech. You do not need to do anything. It starts captioning on its own. If you are watching a YouTube video, listening to a podcast, or playing a voice message, the words appear as text in real time at the bottom of your screen.\n\nYou can drag the caption box to any position on your screen by pressing and holding it, then dragging. Tapping the expand arrow makes the box larger so more text is visible at once. Tapping the collapse arrow shrinks it back down.\n\nLive Caption can also work during phone calls on supported Pixel devices, though this feature may not be available on all Android brands. For phone calls specifically, the captioning applies to what the other person is saying — not your own voice.",
     category: "basics",
@@ -1890,7 +1890,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "ipad-vs-android-tablet",
-    title: "iPad vs Android Tablet — Which One Is Right for You?",
+    title: "iPad vs Android Tablet: Which Is Right for You?",
     excerpt: "Compare iPads and Android tablets side by side to figure out which one fits your phone, budget, and daily habits.",
     category: "basics",
     tags: [
@@ -1982,7 +1982,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "senior-fulltime-rv-mail-voting-taxes-medicare",
-    title: "Mail Forwarding, Voting, Taxes, and Medicare While RVing",
+    title: "Mail, Voting, Taxes, and Medicare While RVing",
     excerpt: "Pick a domicile state, set up mail forwarding through Escapees or America's Mailbox, and keep Medicare and voting working on the road.",
     category: "basics",
     tags: [
@@ -2247,7 +2247,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "senior-chrome-browser-settings-2026",
-    title: "Senior-Friendly Chrome Browser Settings — Make the Web Easier (2026)",
+    title: "Chrome Settings That Make the Web Easier",
     excerpt: "Bigger text, easier zoom, no autoplay videos. Eight Chrome settings that make the internet much friendlier for older eyes.",
     category: "basics",
     tags: [
@@ -2351,7 +2351,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "after-being-scammed-bank-credit-card-reg-e-dispute",
-    title: "Talking to Your Bank or Credit Card After a Scam: Your Rights Under Reg E",
+    title: "After a Scam: Your Rights With Your Bank",
     excerpt: "Federal law protects you against unauthorized debits and charges. Here is what Reg E covers, the deadlines, and the script to use with your bank.",
     category: "basics",
     tags: [
@@ -2399,7 +2399,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "text-messaging-mastery",
-    title: "Text Messaging Mastery: Group Chats, Photos, Voice Messages & Emoji",
+    title: "Texting: Group Chats, Photos, and Voice Notes",
     excerpt: "Level up your texting skills — send photos, record voice messages, create group chats, and use WhatsApp like a pro.",
     category: "basics",
     thumbnailEmoji: "💬",
@@ -2451,7 +2451,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "browser-extensions-guide",
-    title: "Useful Browser Add-ons: Ad Blockers, Password Managers & More",
+    title: "Useful Browser Add-ons: Ad Blockers and More",
     excerpt: "Learn about browser extensions — small tools that make your web browsing safer, faster, and less frustrating.",
     category: "basics",
     thumbnailEmoji: "🧩",
@@ -2503,7 +2503,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "senior-memoir-voice-record-if-writing-is-hard-iphone-android-transcription",
-    title: "Voice-Record Your Memoir If Writing Is Hard: iPhone Voice Memos, Android, and Free Transcription",
+    title: "Record Your Memoir by Voice Instead of Writing",
     excerpt: "If typing is painful or slow, you can speak your memoir into the phone in your pocket and turn it into clean written text with free tools. Here is how.",
     category: "basics",
     tags: [
@@ -2649,7 +2649,7 @@ export const basicsGuides: Guide[] = [
   },
   {
     slug: "android-battery-drain-background-apps-how-to-fix",
-    title: "Why Your Android Phone Drains Battery Even When Apps Are Restricted",
+    title: "Android Battery Draining From Background Apps?",
     excerpt: "You restricted background activity but your battery still drains. Here's why — and the settings that actually stop it.",
     category: "basics",
     tags: [

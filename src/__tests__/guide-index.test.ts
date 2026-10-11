@@ -27,4 +27,13 @@ describe('guide index', () => {
   it('carries no step or body text', () => {
     expect(guideIndex.some((g) => 'steps' in g || 'body' in g)).toBe(false);
   });
+
+  // GuideDetail renders `${title} | TekSure` as the page title. Search results
+  // cut titles at about 60 characters, so the guide title gets 50.
+  it('keeps every page title within 60 characters', () => {
+    const long = guideIndex
+      .filter((g) => `${g.title} | TekSure`.length > 60)
+      .map((g) => `${g.slug} (${g.title.length})`);
+    expect(long).toEqual([]);
+  });
 });

@@ -3,7 +3,7 @@ import type { Guide } from './guides';
 export const aiGuides: Guide[] = [
   {
     slug: "ai-companion-guide",
-    title: "AI Companion Apps: Friendly Conversation With an AI",
+    title: "AI Companion Apps: Friendly Conversation",
     excerpt: "What AI companion apps are, who uses them, and how to try a free AI chat app for friendly conversation.",
     category: "ai",
     tags: [
@@ -420,7 +420,7 @@ export const aiGuides: Guide[] = [
   },
   {
     slug: "otter-ai-transcription-guide",
-    title: "How to Transcribe Meetings Automatically with Otter.ai",
+    title: "Transcribe Meetings Automatically With Otter.ai",
     excerpt: "Otter.ai listens to conversations and meetings, then converts the spoken words into written text in real time — so you never miss what was said.",
     category: "ai",
     tags: [
@@ -694,7 +694,7 @@ export const aiGuides: Guide[] = [
   },
   {
     slug: "office-copilot-tips",
-    title: "How to Use Microsoft Copilot in Word, Excel, and Outlook",
+    title: "Use Copilot in Word, Excel, and Outlook",
     excerpt: "Microsoft 365 Copilot uses AI to help you write documents, analyze spreadsheets, and summarize emails — here's what it can do.",
     category: "ai",
     tags: [
@@ -734,7 +734,7 @@ export const aiGuides: Guide[] = [
   },
   {
     slug: "ai-resume-cover-letter",
-    title: "Improve Your Resume and Write Cover Letters with AI",
+    title: "Improve Your Resume and Cover Letter With AI",
     excerpt: "Use AI to tighten resume bullets, tailor to a job description, and draft a cover letter — without letting it invent qualifications you don't have.",
     category: "ai",
     tags: [
@@ -776,7 +776,7 @@ export const aiGuides: Guide[] = [
   },
   {
     slug: "meta-ai-guide",
-    title: "Meta AI: How to Use the AI Assistant Inside Facebook, Instagram, and WhatsApp",
+    title: "Meta AI in Facebook, Instagram, and WhatsApp",
     excerpt: "Meta AI is built into Facebook, Instagram, Messenger, and WhatsApp. Learn how to find it, ask questions, and use it for writing and image generation.",
     category: "ai",
     tags: [
@@ -820,7 +820,7 @@ export const aiGuides: Guide[] = [
   },
   {
     slug: "microsoft-copilot-guide",
-    title: "Microsoft Copilot: The AI Assistant Built Into Windows 11 and Microsoft 365",
+    title: "Microsoft Copilot: The AI in Windows 11",
     excerpt: "Microsoft Copilot is an AI assistant that helps you write, summarize, and answer questions inside Windows 11 and Microsoft 365 apps like Word and Outlook.",
     category: "ai",
     tags: [
@@ -906,7 +906,7 @@ export const aiGuides: Guide[] = [
   },
   {
     slug: "ai-for-seniors-tips",
-    title: "Practical AI Tools Older Adults Are Using Every Day",
+    title: "Practical AI Tools Older Adults Use Every Day",
     excerpt: "Real ways everyday older adults are using AI: asking questions, getting recipes, writing help, and more — in plain English.",
     category: "ai",
     tags: [
@@ -1085,7 +1085,7 @@ export const aiGuides: Guide[] = [
   },
   {
     slug: "what-is-ai",
-    title: "What Is AI? A Plain-English Explanation for Everyday People",
+    title: "What Is AI? A Plain-English Explanation",
     excerpt: "Artificial intelligence is everywhere — but what actually is it? This beginner-friendly guide explains AI, how it works, and what it means for you.",
     category: "ai",
     tags: [

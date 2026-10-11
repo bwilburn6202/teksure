@@ -3,7 +3,7 @@ import type { Guide } from './guides';
 export const healthGuides: Guide[] = [
   {
     slug: "chronic-pain-non-opioid-acupuncture-massage-chiropractic-medicare-coverage",
-    title: "Acupuncture, Massage, and Chiropractic: When Medicare Covers Them and When It Does Not",
+    title: "Does Medicare Cover Acupuncture or Chiropractic?",
     excerpt: "A 2020 Medicare rule expanded acupuncture coverage for lower back pain. Massage stays out-of-pocket. Chiropractic is partly covered. The details matter.",
     category: "health",
     tags: [
@@ -50,7 +50,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "cvs-app-guide",
-    title: "CVS Pharmacy App: Refill Prescriptions, Print Photos, and Earn ExtraBucks",
+    title: "CVS Pharmacy App: Refills, Photos, ExtraBucks",
     excerpt: "The CVS app makes it easy to refill prescriptions, check ExtraBucks rewards, access your digital ExtraCare card, and order photo prints.",
     category: "health",
     tags: [
@@ -139,7 +139,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "how-to-ask-pharmacy-about-medication-cost",
-    title: "How to Ask Your Pharmacy About the Cost of a Medication",
+    title: "Ask Your Pharmacy What a Medication Costs",
     excerpt: "The price of a prescription can change every month. Learn the right questions to ask your pharmacist to lower the cost of your medications.",
     category: "health",
     tags: [
@@ -282,7 +282,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "how-to-find-medicare-memory-care-evaluation",
-    title: "How to Find a Medicare-Covered Memory Care Evaluation",
+    title: "Find a Medicare-Covered Memory Evaluation",
     excerpt: "Step-by-step guide to scheduling a memory evaluation under Medicare, with no out-of-pocket cost in most cases.",
     category: "health",
     tags: [
@@ -386,7 +386,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "how-to-find-native-friendly-medicare-advantage",
-    title: "How to Find a Native-Friendly Medicare Advantage Plan",
+    title: "Find a Native-Friendly Medicare Advantage Plan",
     excerpt: "Plain-English guide for Native American elders comparing Medicare Advantage plans that work well with Indian Health Service care and tribal clinics.",
     category: "health",
     tags: [
@@ -439,7 +439,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "how-to-find-dietitian-takes-medicare",
-    title: "How to Find a Registered Dietitian Who Takes Medicare",
+    title: "Find a Dietitian Who Takes Medicare",
     excerpt: "A senior-friendly guide to finding, scheduling, and getting the most out of a Medicare-covered visit with a registered dietitian nutritionist.",
     category: "health",
     tags: [
@@ -764,7 +764,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "use-zoom-doctor-telehealth-visit",
-    title: "How to Join a Telehealth Doctor Visit on Zoom or Phone",
+    title: "How to Join a Telehealth Doctor Visit",
     excerpt: "Most doctors now offer video appointments. Here is how to join one on Zoom, or use a phone call instead if video is not working.",
     category: "health",
     tags: [
@@ -813,7 +813,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "how-to-log-glucose-iphone-health-app",
-    title: "How to Log Glucose Readings in the iPhone Health App",
+    title: "Log Glucose Readings in the iPhone Health App",
     excerpt: "Track every finger-stick or CGM reading in one place on your iPhone, and share the chart with your doctor.",
     category: "health",
     tags: [
@@ -957,7 +957,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "how-to-quit-smoking-medicare-counseling",
-    title: "How to Quit Smoking with Medicare-Covered Counseling",
+    title: "Quit Smoking With Medicare-Covered Counseling",
     excerpt: "Detailed guide for adults 65+ on using Medicare's free smoking cessation counseling and medications to quit for good.",
     category: "health",
     tags: [
@@ -1015,7 +1015,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "how-to-read-your-medicare-explanation-of-benefits-letter-2026",
-    title: "How to Read Your Medicare Explanation of Benefits Letter",
+    title: "How to Read a Medicare Explanation of Benefits",
     excerpt: "Your Medicare EOB letter is not a bill. It is a summary of what Medicare paid. Learn what each section means, how to spot errors, and how to report fraud.",
     category: "health",
     tags: [
@@ -1164,7 +1164,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "how-to-switch-medicare-advantage-state-change",
-    title: "How to Switch Medicare Advantage When You Change State",
+    title: "Switch Medicare Advantage When You Move States",
     excerpt: "A guide for snowbird seniors on choosing a Medicare Advantage plan that travels between northern and southern homes, or works in both states.",
     category: "health",
     tags: [
@@ -1217,7 +1217,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "airpods-pro-hearing-test-ios18",
-    title: "How to Take a Hearing Test with AirPods Pro and iPhone",
+    title: "Take a Hearing Test With AirPods Pro and iPhone",
     excerpt: "AirPods Pro 2 and iOS 18 include a clinical-grade hearing test you can take at home in 5 minutes. Here is how to use it and what to do with the results.",
     category: "health",
     tags: [
@@ -1268,7 +1268,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "reduce-loud-sounds-iphone-hearing-protection",
-    title: "How to Turn On Hearing Protection Features on iPhone",
+    title: "Turn On Hearing Protection on iPhone",
     excerpt: "Use Reduce Loud Sounds and Headphone Notifications to protect your hearing automatically — no separate app or device needed.",
     category: "health",
     tags: [
@@ -1314,7 +1314,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "turn-on-live-captions-phone-calls",
-    title: "How to Turn On Live Captions for Phone Calls (iPhone and Android)",
+    title: "Turn On Live Captions for Phone Calls",
     excerpt: "Live Captions show a real-time text transcript of what the other person is saying during a phone call, right on your screen.",
     category: "health",
     tags: [
@@ -1357,7 +1357,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "amazon-pharmacy-setup",
-    title: "How to Use Amazon Pharmacy for Prescription Delivery",
+    title: "Amazon Pharmacy: Prescriptions by Mail",
     excerpt: "Amazon Pharmacy delivers your medications straight to your door, often with same-day or next-day options.",
     body: "Amazon Pharmacy is a full-service pharmacy that lets you order prescription medications online and have them delivered to your home. It operates like any licensed pharmacy. It accepts most insurance plans, including Medicare Part D and many commercial plans — but you manage everything through the Amazon website or app instead of visiting a store.\n\nTo use Amazon Pharmacy, you need an existing Amazon account. If you already shop on Amazon, you use the same login. Go to amazon.com/pharmacy in your browser or look for \"Pharmacy\" in the Amazon app.\n\nThe first step is to add your insurance information to your Amazon Pharmacy profile. Go to the Pharmacy section, tap \"Add Insurance,\" and enter your insurance card details (the information on the front of your card, including group number and member ID). Amazon Pharmacy will verify your coverage. If you do not have insurance or your plan is not accepted, you can still pay cash — Amazon Pharmacy's cash prices are often competitive.\n\nTo transfer a prescription from another pharmacy, tap \"Transfer Prescriptions\" and provide your current pharmacy's name and phone number, along with your medication information. Amazon contacts your pharmacy directly to handle the transfer. This usually takes one to two business days.\n\nFor a new prescription from your doctor, ask your doctor to send it electronically to \"Amazon Pharmacy\". They can find it in their e-prescribing system — or have them print it and you can mail or upload it.\n\nAmazon Prime members can sign up for RxPass, a $5 per month add-on that covers unlimited 30-day supplies of over 50 common generic medications. Medications covered include many for blood pressure, cholesterol, diabetes, anxiety, and other common conditions. If you take multiple generics, RxPass can save significant money.\n\nAmazon Pharmacy uses HIPAA-compliant security and does not share your prescription history with Amazon's marketing systems.\n\nKeep in mind that Amazon Pharmacy cannot fill controlled substances (like opioids or certain ADHD medications) or most specialty medications that require special handling. For those, you will still need a traditional pharmacy.\n\nDelivery times vary by location. Prime members in many cities get free same-day or next-day delivery on eligible medications.",
     category: "health",
@@ -1399,7 +1399,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "use-apple-health-app-for-seniors-2026",
-    title: "How to Use the iPhone Health App — A Plain-English Guide for Seniors",
+    title: "How to Use the iPhone Health App",
     excerpt: "Track your steps, heart rate, sleep, and more. Set up your Medical ID so first responders can help you faster.",
     category: "health",
     tags: [
@@ -1492,7 +1492,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "patient-portal-guide",
-    title: "How to Use Your Doctor's Patient Portal (MyChart & Others)",
+    title: "How to Use Your Doctor's Patient Portal",
     excerpt: "Access your medical records, message your doctor, view test results, and schedule appointments — all online.",
     category: "health",
     tags: [
@@ -1534,7 +1534,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "lose-it-calorie-tracker",
-    title: "Lose It! Calorie and Nutrition Tracker for iPhone and Android",
+    title: "Lose It! Calorie and Nutrition Tracker App",
     excerpt: "Lose It! is a free app that helps you track calories, set a daily food budget, and monitor your progress toward a weight loss or health goal.",
     category: "health",
     tags: [
@@ -1579,7 +1579,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "pair-hearing-aids-to-iphone-android-bluetooth",
-    title: "Pair Your Hearing Aids to a Phone — iPhone and Android Step-by-Step",
+    title: "Pair Your Hearing Aids to a Phone",
     excerpt: "Modern hearing aids stream phone calls, music, and TV audio directly to your ears. Here is how to pair them on iPhone or Android.",
     category: "health",
     tags: [
@@ -1632,7 +1632,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "senior-chronic-pain-physical-therapy-aquatic-therapy-medicare-coverage",
-    title: "Physical Therapy and Aquatic Therapy for Chronic Pain: Medicare Coverage at 70+",
+    title: "Medicare Coverage for Physical and Aquatic Therapy",
     excerpt: "How Medicare covers PT visits, why aquatic therapy works for arthritic joints, and what to expect from a senior-focused therapist.",
     category: "health",
     tags: [
@@ -1679,7 +1679,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "set-up-iphone-medication-reminders",
-    title: "Set Up Medication Reminders on iPhone (Built-In, Free)",
+    title: "Set Up Free Medication Reminders on iPhone",
     excerpt: "iPhone's Health app has a free Medications feature that reminds you to take pills, tracks your history, and warns about interactions.",
     category: "health",
     tags: [
@@ -1726,7 +1726,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "senior-chair-yoga-youtube-channels-home-practice",
-    title: "Starting a Chair Yoga Practice at Home: Best Free YouTube Channels for Seniors",
+    title: "Free Chair Yoga Channels on YouTube for Seniors",
     excerpt: "Yoga With Adriene, Senior Shape, and Silver Yogis all offer free chair yoga routines designed for older adults practicing alone at home.",
     category: "health",
     tags: [
@@ -1852,7 +1852,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "airpods-pro-2-hearing-aid-features-setup",
-    title: "Use AirPods Pro 2 as Hearing Aids — Setup Walkthrough",
+    title: "Use AirPods Pro 2 as Hearing Aids",
     excerpt: "Apple's AirPods Pro 2 now have FDA-cleared hearing aid features. Here is how to test your hearing and set them up.",
     category: "health",
     tags: [
@@ -1911,7 +1911,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "set-up-amazon-prime-delivery-prescriptions",
-    title: "Use Amazon Pharmacy to Get Prescriptions Delivered (Often Cheaper than Walgreens)",
+    title: "Get Prescriptions Delivered With Amazon Pharmacy",
     excerpt: "Amazon Pharmacy offers prescription delivery, often at lower prices than CVS or Walgreens — even without insurance. Here is how to get started.",
     category: "health",
     tags: [
@@ -1959,7 +1959,7 @@ export const healthGuides: Guide[] = [
   },
   {
     slug: "veterans-tech-guide-va-benefits-myhealthevet-online-resources",
-    title: "Veteran's Tech Guide: VA Benefits, MyHealtheVet, and Online Resources",
+    title: "Veterans' Guide to VA Benefits and My HealtheVet",
     excerpt: "A plain-English guide for veterans using VA.gov and MyHealtheVet — filing claims, VA telehealth, downloading your DD-214, and avoiding VA scams.",
     category: "health",
     tags: [
