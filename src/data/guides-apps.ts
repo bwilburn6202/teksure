@@ -129,7 +129,7 @@ export const appsGuides: Guide[] = [
       },
       {
         title: "Decide what device you will watch on",
-        content: "You need ONE of: a smart TV (most TVs made since 2018), a Roku stick or Roku Express ($30 one-time), an Amazon Fire TV Stick ($30 one-time), an Apple TV box ($129 one-time), or a Chromecast with Google TV ($50 one-time). Any of these plug into the back of your TV via HDMI and run the streaming apps. You do NOT need a separate device for every TV — but each TV needs one.",
+        content: "You need ONE of: a smart TV (most TVs made since 2018), a Roku stick or Roku Express ($30 one-time), an Amazon Fire TV Stick ($30 one-time), an Apple TV box ($129 one-time), or a Google TV Streamer ($100 one-time). Any of these plug into the back of your TV via HDMI and run the streaming apps. You do NOT need a separate device for every TV — but each TV needs one.",
         tip: "Quick Tip: For seniors not used to navigating smart TV menus, Roku has the simplest remote — fewer buttons, biggest text. Many AARP guides recommend it."
       },
       {
@@ -878,7 +878,7 @@ export const appsGuides: Guide[] = [
     steps: [
       {
         title: "Choose a streaming device",
-        content: "Popular options: Roku Streaming Stick ($30-50, easiest to use), Amazon Fire TV Stick ($30-50, works great with Alexa), Chromecast with Google TV ($30-50, good if you use Google), Apple TV 4K ($130, best for iPhone/Mac users). All of them plug into your TV's HDMI port and connect to your Wi-Fi to stream apps like Netflix, YouTube, Hulu, and more."
+        content: "Popular options: Roku Streaming Stick ($30-50, easiest to use), Amazon Fire TV Stick ($30-50, works great with Alexa), Google TV Streamer ($100, good if you use Google), Apple TV 4K ($130, best for iPhone/Mac users). All of them plug into your TV's HDMI port and connect to your Wi-Fi to stream apps like Netflix, YouTube, Hulu, and more."
       },
       {
         title: "Plug in and connect",
@@ -1152,9 +1152,9 @@ export const appsGuides: Guide[] = [
   },
   {
     slug: "google-tv-setup-guide",
-    title: "How to Set Up Google TV (Chromecast)",
-    excerpt: "Google TV is a smart streaming device that plugs into your TV's HDMI port and gives you access to Netflix, YouTube, HBO.",
-    body: "Google TV is Google's streaming platform, available as a standalone device (Chromecast with Google TV) or built into certain smart TVs. The Chromecast with Google TV is a small dongle that plugs into any TV's HDMI port and transforms it into a smart TV.\n\nThe device costs $29.99 (HD version) or $49.99 (4K version) and provides access to thousands of streaming apps including Netflix, YouTube, HBO Max, Disney+, Hulu, Paramount+, and more. It also integrates with Google services — Gmail, Google Photos, and Google Assistant — and works with Google Home smart home devices.\n\n**Key advantages of Google TV over basic Chromecast**: Earlier Chromecasts required you to cast content from your phone. Google TV has a full remote control and an on-screen interface. So you can browse and watch without needing your phone at all.\n\nGoogle TV features a personalized home screen that pulls in recommendations from multiple streaming services in one place. Rather than opening each app separately to look for something to watch, Google TV shows a combined \"For You\" feed based on your preferences.\n\nGoogle Assistant is built in. Press the microphone button on the remote and say \"Show me comedies on Netflix\" or \"What is the weather tomorrow?\" to search and get information hands-free.\n\nSetup takes about 10 minutes and requires a smartphone (Android or iPhone), a Google account, and your home Wi-Fi password.",
+    title: "How to Set Up a Google TV Streamer or Chromecast",
+    excerpt: "Set up Google TV on a Google TV Streamer or Chromecast to watch Netflix, YouTube, and more on any TV with an HDMI port.",
+    body: "Google TV is Google's streaming platform. You can get it on Google's own box, the Google TV Streamer (about $100), which replaced the Chromecast with Google TV in 2024. Lower-cost boxes such as Walmart's onn. 4K also run Google TV, and many smart TVs have it built in. If you already own a Chromecast with Google TV, it still works and the steps below are the same. Each of these plugs into your TV's HDMI port and turns it into a smart TV.\n\nGoogle TV provides access to thousands of streaming apps including Netflix, YouTube, HBO Max, Disney+, Hulu, Paramount+, and more. It also integrates with Google services — Gmail, Google Photos, and Google Assistant — and works with Google Home smart home devices.\n\n**Key advantages of Google TV over basic Chromecast**: Earlier Chromecasts required you to cast content from your phone. Google TV has a full remote control and an on-screen interface. So you can browse and watch without needing your phone at all.\n\nGoogle TV features a personalized home screen that pulls in recommendations from multiple streaming services in one place. Rather than opening each app separately to look for something to watch, Google TV shows a combined \"For You\" feed based on your preferences.\n\nGoogle Assistant is built in. Press the microphone button on the remote and say \"Show me comedies on Netflix\" or \"What is the weather tomorrow?\" to search and get information hands-free.\n\nSetup takes about 10 minutes and requires a smartphone (Android or iPhone), a Google account, and your home Wi-Fi password.",
     category: "apps",
     tags: [
       "google tv",
@@ -1169,17 +1169,17 @@ export const appsGuides: Guide[] = [
     difficulty: "Beginner",
     steps: [
       {
-        title: "Plug the Chromecast into your TV's HDMI port",
-        content: "Plug the Chromecast device into an HDMI port on your TV. Connect the power cable to the device and plug it into a wall outlet (or USB port on the TV if available). Switch your TV input to the corresponding HDMI channel."
+        title: "Plug the device into your TV's HDMI port",
+        content: "Plug the Google TV Streamer or Chromecast into an HDMI port on your TV. Connect the power cable to the device and plug it into a wall outlet. Switch your TV input to the corresponding HDMI channel."
       },
       {
         title: "Download the Google Home app on your phone",
-        content: "Search \"Google Home\" in the App Store or Google Play. Open the app and sign in with your Google account. Tap \"+\" to add a device and follow the prompts to set up your Chromecast.",
-        tip: "Keep your phone near the Chromecast during setup — the phone and TV communicate via Bluetooth during the pairing process."
+        content: "Search \"Google Home\" in the App Store or Google Play. Open the app and sign in with your Google account. Tap \"+\" to add a device and follow the prompts to set up your device.",
+        tip: "Keep your phone near the device during setup — the phone and TV communicate via Bluetooth during the pairing process."
       },
       {
         title: "Connect to Wi-Fi",
-        content: "During setup, you will be asked to choose your Wi-Fi network and enter the password. The Chromecast connects and downloads a software update (takes 3 to 5 minutes)."
+        content: "During setup, you will be asked to choose your Wi-Fi network and enter the password. The device connects and downloads a software update (takes 3 to 5 minutes)."
       },
       {
         title: "Sign in to your streaming apps",
@@ -2257,7 +2257,7 @@ export const appsGuides: Guide[] = [
       },
       {
         title: "What you need to start streaming",
-        content: "To stream TV, you need just two things: an internet connection and a device to watch on. Here is what that looks like in practice:\n\nInternet connection — You need home WiFi (wireless internet). Most home internet plans are fast enough for streaming. If you can browse websites and watch YouTube videos without problems, your internet is likely fine. For smooth streaming, a speed of at least 10-25 Mbps is recommended. If you are unsure about your speed, you can check it for free at speedtest.net from any device connected to your WiFi.\n\nA device to watch on — You have several options. And you may already own one:\n\n• Smart TV — If your TV was made in the last 5-8 years, it is probably a \"smart TV\" that already has streaming apps like Netflix and Hulu built in. Check your TV remote for buttons like \"Home,\" \"Smart Hub,\" or \"Apps.\" If you see those, you are set.\n\n• Roku — A small, affordable device ($30-50) that plugs into your TV and gives you access to every streaming service. This is the easiest option for most people and what we recommend for beginners.\n\n• Amazon Fire TV Stick — Similar to Roku, plugs into your TV ($30-50). Works great, especially if you use Alexa or Amazon services.\n\n• Apple TV — A premium streaming device ($130-180). Best for people who already use iPhones and other Apple products.\n\n• Computer, tablet, or phone — You can stream on any of these using a web browser or the streaming service's app. Good for watching in bed or on the go.\n\n• Chromecast with Google TV — A Google streaming device ($30-50) that plugs into your TV. Good if you use Google services.\n\nIf your TV is older and not a \"smart TV,\" do not worry — a Roku or Fire Stick turns any TV with an HDMI port into a smart TV for about $30.",
+        content: "To stream TV, you need just two things: an internet connection and a device to watch on. Here is what that looks like in practice:\n\nInternet connection — You need home WiFi (wireless internet). Most home internet plans are fast enough for streaming. If you can browse websites and watch YouTube videos without problems, your internet is likely fine. For smooth streaming, a speed of at least 10-25 Mbps is recommended. If you are unsure about your speed, you can check it for free at speedtest.net from any device connected to your WiFi.\n\nA device to watch on — You have several options. And you may already own one:\n\n• Smart TV — If your TV was made in the last 5-8 years, it is probably a \"smart TV\" that already has streaming apps like Netflix and Hulu built in. Check your TV remote for buttons like \"Home,\" \"Smart Hub,\" or \"Apps.\" If you see those, you are set.\n\n• Roku — A small, affordable device ($30-50) that plugs into your TV and gives you access to every streaming service. This is the easiest option for most people and what we recommend for beginners.\n\n• Amazon Fire TV Stick — Similar to Roku, plugs into your TV ($30-50). Works great, especially if you use Alexa or Amazon services.\n\n• Apple TV — A premium streaming device ($130-180). Best for people who already use iPhones and other Apple products.\n\n• Computer, tablet, or phone — You can stream on any of these using a web browser or the streaming service's app. Good for watching in bed or on the go.\n\n• Google TV Streamer — Google's streaming box ($100) that connects to your TV. Good if you use Google services.\n\nIf your TV is older and not a \"smart TV,\" do not worry — a Roku or Fire Stick turns any TV with an HDMI port into a smart TV for about $30.",
         tip: "Almost every TV made after 2015 has an HDMI port. It is the wide, flat port on the back or side of the TV. That is where you plug in a Roku or Fire Stick. If you are not sure if your TV has one, look for a port labeled \"HDMI\" on the back."
       },
       {

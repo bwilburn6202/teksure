@@ -48,8 +48,12 @@ const MINIMIZING_JUST = new RegExp(
   'delete|deletes|restart|restarts|unplug|unplugs|repeat|repeats|copy|paste|save|saves)\\b'
 );
 
-/** Guides published on or after this date must pass the banned-word scan. */
-const ENFORCEMENT_CUTOVER = '2026-04-19';
+/**
+ * Guides published on or after this date must pass the banned-word scan.
+ * Since the 2026-10-11 revamp every kept guide passes, so the cutover covers
+ * the whole library.
+ */
+const ENFORCEMENT_CUTOVER = '0000-01-01';
 
 /** Fields whose copy is author-facing and must follow brand voice. */
 const AUTHOR_FIELDS: Array<(g: typeof guides[0]) => string[]> = [
