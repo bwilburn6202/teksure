@@ -8,6 +8,62 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 316 — 2026-10-14T11:43:14.244Z
+
+### [ok] Site metrics snapshot
+500 guides, 146 routes, 24 tools (24 curated on /tools).
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 2 orphaned routes (of 146 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [ok] Stale OS version mentions
+No stale OS version mentions found.
+
+### [ok] Aged guides
+0 of 500 guides published before 2025-04-14.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [ok] Readability & senior UX
+avg reading grade 7.1 (target <= 8), 24.9% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.8: android-battery-drain-background-apps-how-to-fix
+- grade 10.2: how-to-screenshot-windows-11
+- grade 10.7: how-to-find-medicare-physical-therapist
+- grade 10.1: how-to-find-native-friendly-medicare-advantage
+- grade 10.1: senior-chronic-pain-physical-therapy-aquatic-therapy-medicare-coverage
+- grade 10.2: facebook-memories-download-guide
+- grade 11.4: check-social-security-benefit-online
+- grade 10.7: how-to-get-free-phone-lifeline
+- grade 10.3: how-to-receive-social-security-overseas
+- grade 10.1: how-to-sign-up-county-emergency-alerts
+```
+
+### [ok] External source link health
+20 source URLs checked, 0 confirmed broken (404/410), 3 unreachable (often bot-blocking).
+
+### [ok] Hardcoded prices outside pricing.ts
+All service prices come from src/data/pricing.ts.
+
+### [ok] Undisclosed invented testimonials
+No hardcoded reviews without a disclosure.
+
+### [ok] Overlong guide excerpts
+All guide excerpts are within 160 characters.
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+---
+
 ## Cycle 315 — 2026-10-14T04:45:04.586Z
 
 ### [ok] Site metrics snapshot
