@@ -190,7 +190,7 @@ export default function IdTheftRecovery() {
       <Navbar />
 
       <main className="min-h-screen bg-background">
-        <section className="bg-gradient-to-br from-red-50 via-background to-amber-50 dark:from-red-950/20 dark:to-amber-950/20 border-b border-border py-10 px-4">
+        <section className="bg-muted/50 border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-red-500/10 rounded-full">

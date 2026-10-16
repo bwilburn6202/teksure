@@ -320,7 +320,7 @@ const GetHelp = () => {
         <Navbar />
         <main id="main-content" tabIndex={-1} className="flex-1 outline-none">
           <div className="container py-24 flex flex-col items-center justify-center text-center max-w-lg mx-auto gap-8">
-            <div className="h-20 w-20 rounded-full bg-green-500/10 flex items-center justify-center">
+            <div className="h-20 w-20 rounded-full bg-success flex items-center justify-center">
               <CheckCircle2 className="h-10 w-10 text-success-foreground" />
             </div>
             <div>
@@ -356,13 +356,7 @@ const GetHelp = () => {
   }
 
   return (
-    <div
-      className="min-h-screen flex flex-col relative"
-      style={{
-        background:
-          'radial-gradient(1000px 500px at 50% -10%, #F5CDCB 0%, rgba(245,205,203,0) 60%), radial-gradient(800px 400px at 90% 10%, #FBDAD9 0%, rgba(251,218,217,0) 60%), #FAF8F4',
-      }}
-    >
+    <div className="min-h-screen flex flex-col relative bg-background">
       <SEOHead
         title="Get Tech Help — TekSure"
         description="Reach out for free tech support or schedule a technician appointment. Real humans, no jargon."

@@ -99,7 +99,7 @@ export default function FindLostPhone() {
       <Navbar />
 
       <main className="min-h-screen bg-background">
-        <section className="bg-gradient-to-br from-orange-50 via-background to-red-50 dark:from-orange-950/20 dark:to-red-950/20 border-b border-border py-10 px-4">
+        <section className="bg-muted/50 border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-orange-500/10 rounded-full">

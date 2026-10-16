@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { Printer, Volume2, Square } from 'lucide-react';
+import { Printer, Volume2, Square, Lightbulb, AlertTriangle } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -22,7 +22,7 @@ const ListenButton = ({ guide }: { guide: { title: string; excerpt: string; step
     let text = `${guide.title}. ${guide.excerpt}. `;
     guide.steps?.forEach((s, i) => {
       text += `Step ${i + 1}: ${s.title}. ${s.content}. `;
-      if (s.tip) text += `Tip: ${s.tip}. `;
+      if (s.tip) text += `Quick Tip: ${withoutLabel(s.tip, 'Quick Tip')}. `;
     });
     if (guide.body) text += guide.body;
     return text;
@@ -50,10 +50,27 @@ const ListenButton = ({ guide }: { guide: { title: string; excerpt: string; step
   );
 };
 
-const Callout = ({ label, tone, children }: { label: string; tone: 'tip' | 'warning'; children: React.ReactNode }) => (
-  <div className={`mt-4 border-l-4 px-4 py-3 ${tone === 'tip' ? 'border-primary bg-muted' : 'border-destructive bg-muted'}`}>
-    <p className={`font-bold ${tone === 'tip' ? 'text-foreground' : 'text-destructive'}`}>{label}</p>
-    <div className="mt-1 text-lg">{children}</div>
+/**
+ * Most tips in the guide data already start with "Quick Tip:", and the callout
+ * prints its own label, so the reader saw "Quick Tip / Quick Tip: …". Drop a
+ * leading copy of the label from the text before showing it.
+ */
+const withoutLabel = (text: string, label: string) =>
+  text.replace(new RegExp(`^\\s*(\\*\\*)?${label}\\s*[:—–-]\\s*(\\*\\*)?\\s*`, 'i'), '');
+
+const Callout = ({ label, tone, text }: { label: string; tone: 'tip' | 'warning'; text: string }) => (
+  <div
+    className={`mt-5 rounded-lg border-2 px-5 py-4 ${
+      tone === 'tip' ? 'border-primary/30 bg-info' : 'border-destructive/40 bg-danger'
+    }`}
+  >
+    <p className={`flex items-center gap-2 font-bold ${tone === 'tip' ? 'text-info-foreground' : 'text-danger-foreground'}`}>
+      {tone === 'tip' ? <Lightbulb className="h-5 w-5" aria-hidden="true" /> : <AlertTriangle className="h-5 w-5" aria-hidden="true" />}
+      {label}
+    </p>
+    <div className="mt-1 text-lg text-foreground">
+      <RichText text={withoutLabel(text, label)} className="space-y-2" />
+    </div>
   </div>
 );
 
@@ -188,21 +205,32 @@ const GuideDetail = () => {
             <ol className="mt-10 space-y-8">
               {guide.steps.map((step, i) => (
                 <li key={i} id={`step-${i + 1}`} className="scroll-mt-20 border-t-2 border-border pt-6">
-                  <h2 className="text-2xl font-bold">
-                    <span className="text-primary">Step {i + 1}.</span> {step.title}
+                  <h2 className="flex items-start gap-3 text-2xl font-bold leading-snug">
+                    <span
+                      aria-hidden="true"
+                      className="mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-lg text-primary-foreground"
+                    >
+                      {i + 1}
+                    </span>
+                    <span>
+                      <span className="sr-only">Step {i + 1}. </span>
+                      {step.title}
+                    </span>
                   </h2>
-                  <div className="mt-3 text-lg leading-relaxed">
-                    <RichText text={step.content} />
+                  <div className="sm:pl-12">
+                    <div className="mt-3 text-lg leading-relaxed">
+                      <RichText text={step.content} />
+                    </div>
+                    {step.tip && <Callout label="Quick Tip" tone="tip" text={step.tip} />}
+                    {step.warning && <Callout label="Warning" tone="warning" text={step.warning} />}
                   </div>
-                  {step.tip && <Callout label="Quick Tip" tone="tip"><RichText text={step.tip} className="space-y-2" /></Callout>}
-                  {step.warning && <Callout label="Warning" tone="warning"><RichText text={step.warning} className="space-y-2" /></Callout>}
                 </li>
               ))}
             </ol>
           )}
 
-          {guide.tip && <Callout label="Quick Tip" tone="tip"><RichText text={guide.tip} className="space-y-2" /></Callout>}
-          {guide.warning && <Callout label="Warning" tone="warning"><RichText text={guide.warning} className="space-y-2" /></Callout>}
+          {guide.tip && <Callout label="Quick Tip" tone="tip" text={guide.tip} />}
+          {guide.warning && <Callout label="Warning" tone="warning" text={guide.warning} />}
           {guide.body && (
             <div className="mt-10 text-lg leading-relaxed">
               <RichText text={guide.body} />
