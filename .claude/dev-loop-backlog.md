@@ -8,6 +8,62 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 327 — 2026-10-17T04:15:35.518Z
+
+### [ok] Site metrics snapshot
+500 guides, 146 routes, 24 tools (24 curated on /tools).
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 2 orphaned routes (of 146 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [ok] Stale OS version mentions
+No stale OS version mentions found.
+
+### [ok] Aged guides
+0 of 500 guides published before 2025-04-17.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [ok] Readability & senior UX
+avg reading grade 7.1 (target <= 8), 24.9% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.8: android-battery-drain-background-apps-how-to-fix
+- grade 10.2: how-to-screenshot-windows-11
+- grade 10.7: how-to-find-medicare-physical-therapist
+- grade 10.1: how-to-find-native-friendly-medicare-advantage
+- grade 10.1: senior-chronic-pain-physical-therapy-aquatic-therapy-medicare-coverage
+- grade 10.2: facebook-memories-download-guide
+- grade 11.4: check-social-security-benefit-online
+- grade 10.7: how-to-get-free-phone-lifeline
+- grade 10.3: how-to-receive-social-security-overseas
+- grade 10.1: how-to-sign-up-county-emergency-alerts
+```
+
+### [ok] External source link health
+20 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+### [ok] Hardcoded prices outside pricing.ts
+All service prices come from src/data/pricing.ts.
+
+### [ok] Undisclosed invented testimonials
+No hardcoded reviews without a disclosure.
+
+### [ok] Overlong guide excerpts
+All guide excerpts are within 160 characters.
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+---
+
 ## Cycle 323 — 2026-10-16T04:22:31.976Z
 
 _No change through cycle 326 (2026-10-16T20:59:35.139Z) — 4 consecutive identical cycles._
@@ -2090,44 +2146,6 @@ No video is reused across more than 5 guides.
 
 ### Suggested next actions
 - **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 248 — 2026-09-22 (Cowork daily run, hand-written)
-
-### [ok] Production healthy, cadence pages current — nothing broken
-Live `build-info.json`: `36f71970` (cycle 247 findings), built 2026-09-22T21:20Z, 7,129
-prerendered, 0 unprerendered. `/guides/qr-codes` serves its own title. Tech Problem of the
-Week is September 21–27 on main (cycle 245). What's New newest is `aug-2026`, correct until
-September ends. Dev-loop: all ok except the standing readability warn.
-
-### [fixed] The documented health checks lied in two places
-The one piece of work this run, taken from cycle 245's "Next #2". Docs only, no source.
-
-- **`grep -m1 "dateISO"`** — the cadence check in `CLAUDE.md` and
-  `refresh-cadence-pages.md` — matches the *interface* line `dateISO: string;` first, so it
-  prints no date at all. Now `grep -m1 "dateISO: '"`, which returns `2026-09-21`.
-- **"What's New must cover the current month"** in `CLAUDE.md` contradicted the prompt's
-  "add the month that just ended" (flagged in branch cycle 153). Reworded to *most recently
-  completed month*, with a line saying why, so no run reads it as licence to write up a
-  month in progress.
-- **`.claude/tasks/teksure-weekly.md`** still had the `<title>[^<]*` grep that matches nothing
-  on a healthy page (react-helmet emits `<title data-rh="true">`). Flagged at cycles ~220 and
-  245; `weekly-site-review.md` had been fixed, this copy had not. Now `<title[^>]*>`, verified
-  live against `/guides/qr-codes`.
-
-**Not fixable from the repo:** the Cowork scheduled-task prompts themselves (teksure-loop /
-teksure-90day-push and teksure-weekly) carry the same two bad greps. CLAUDE.md overrides them,
-but Bailey should paste the corrected commands into the task definitions.
-
-### [accepted, stated plainly] Readability
-8.3 / 58.5% above grade 8, unmoved. No hand pass. Still needs a scripted bulk pass or an
-explicit accept.
-
-### [BLOCKER — Bailey] Unchanged
-Redundancy-cut merge (branch now ~160 behind main); apex 307 → set permanent in Vercel
-Domains; analytics verification; monetization credentials; Hetzner CX22. `npm run build`
-not run this cycle (doc-only change; it OOMs on main's pre-cut tree anyway, per cycle 245).
 
 ---
 
