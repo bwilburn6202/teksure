@@ -10,7 +10,7 @@ Newest cycles appear at the top.
 
 ## Cycle 331 — 2026-10-18T04:21:08.277Z
 
-_No change through cycle 333 (2026-10-18T15:47:20.391Z) — 3 consecutive identical cycles._
+_No change through cycle 334 (2026-10-18T20:34:06.214Z) — 4 consecutive identical cycles._
 
 ### [ok] Site metrics snapshot
 500 guides, 146 routes, 24 tools (24 curated on /tools).
