@@ -257,7 +257,7 @@ export default function WifiTroubleshooter() {
 
       <main className="min-h-screen bg-background">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-primary/10 via-background to-secondary/10 border-b border-border py-10 px-4">
+        <section className="bg-muted/50 border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-primary/10 rounded-full">

@@ -877,7 +877,7 @@ export default function PhonePlanComparison() {
       <Navbar />
       <main className="min-h-screen bg-background">
         {/* ── Hero ─────────────────────────────────────────────── */}
-        <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-sky-50 via-white to-teal-50 dark:from-sky-950/30 dark:via-background dark:to-teal-950/30">
+        <section className="relative overflow-hidden border-b border-border bg-muted/50">
           <div className="container py-10 md:py-16 relative">
             <div className="absolute top-6 right-6">
             </div>
@@ -1117,7 +1117,7 @@ export default function PhonePlanComparison() {
             {/* ── Results ── */}
             {done && (
               <div className="space-y-6">
-                <Card className="bg-gradient-to-br from-sky-50 to-teal-50 dark:from-sky-950/30 dark:to-teal-950/30 border-sky-500/40">
+                <Card className="bg-info border-primary/40">
                   <CardContent className="p-6 md:p-8 space-y-4">
                     <div className="flex items-center gap-3">
                       <Trophy className="w-7 h-7 text-info-foreground " />

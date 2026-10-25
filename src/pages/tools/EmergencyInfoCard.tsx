@@ -7,7 +7,6 @@ import { SEOHead } from '@/components/SEOHead';
 import { PageBreadcrumb } from '@/components/PageBreadcrumb';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
@@ -687,22 +686,15 @@ export default function EmergencyInfoCard() {
         </div>
 
         {/* ── Hero ────────────────────────────────────────────── */}
-        <section className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-rose-700 via-red-700 to-red-900" aria-hidden />
-          <div className="relative container max-w-6xl mx-auto px-4 py-12 md:py-16 text-white">
-            <div className="flex items-center gap-3 mb-4">
-              <Badge className="bg-white/20 text-white border-white/30 hover:bg-white/30 text-base px-3 py-1">
-                <Sparkles className="h-4 w-4 mr-1" />
-                New Tool
-              </Badge>
-            </div>
+        <section className="relative overflow-hidden border-b border-border bg-danger">
+          <div className="relative container max-w-6xl mx-auto px-4 py-12 md:py-16 text-foreground">
             <div className="flex items-start gap-4 md:gap-5">
-              <Siren className="h-12 w-12 md:h-16 md:w-16 shrink-0 text-rose-200" aria-hidden />
+              <Siren className="h-12 w-12 md:h-16 md:w-16 shrink-0 text-danger-foreground" aria-hidden />
               <div>
                 <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
                   Emergency Info Card — Printable in 5 Minutes
                 </h1>
-                <p className="mt-3 text-lg md:text-xl text-rose-100 max-w-3xl leading-relaxed">
+                <p className="mt-3 text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
                   A card with your medical info, contacts, and meds — ready if someone finds you.
                 </p>
               </div>
@@ -717,7 +709,7 @@ export default function EmergencyInfoCard() {
             <AlertTitle className="text-base md:text-lg font-bold text-success-foreground ">
               Your data stays on your device — never sent anywhere
             </AlertTitle>
-            <AlertDescription className="text-base text-emerald-900/90 dark:text-emerald-100/90 leading-relaxed">
+            <AlertDescription className="text-base text-success-foreground leading-relaxed">
               Everything you type is saved only in your browser. We do not have a server that
               receives this information. Close the tab and your data is still here when you come
               back. Use the <strong>Clear</strong> button anytime to wipe it.
