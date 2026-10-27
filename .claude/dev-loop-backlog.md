@@ -10,7 +10,7 @@ Newest cycles appear at the top.
 
 ## Cycle 365 — 2026-10-27T04:54:22.177Z
 
-_No change through cycle 366 (2026-10-27T12:01:16.648Z) — 2 consecutive identical cycles._
+_No change through cycle 367 (2026-10-27T17:55:20.995Z) — 3 consecutive identical cycles._
 
 ### [ok] Site metrics snapshot
 500 guides, 146 routes, 24 tools (24 curated on /tools).
