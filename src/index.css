@@ -5,43 +5,41 @@
 /* Google Fonts loaded via <link> in index.html for better performance */
 
 @layer base {
-  /* Tech theme (2026-11-01): a cool off-white page, white cards, deep navy
-     "ink" bands for the hero, page headers and footer, one electric blue
-     taken from the logo, and a cyan "signal" accent used only on ink.
-     Every text/background pair is WCAG AA or better:
-       primary #0052CC on white ........ 6.9:1
-       foreground on background ........ 16:1
-       muted-foreground on background .. 8.5:1
-       white on ink .................... 17.7:1
-       signal on ink ................... 10.3:1
-       ink-muted on ink ................ 10:1 */
+  /* Paper and ink (2026-11-01, second pass): a printed-manual look.
+     Warm off-white paper, near-black ink, the logo blue for links and
+     buttons only, red for warnings. No glow, gradients or background
+     patterns; sections are divided by rules, not shadows.
+     Contrast (WCAG): foreground on background 17:1 · muted-foreground on
+     background 8:1 · primary on background 6.5:1 (on white 6.9:1) ·
+     white on primary 6.9:1 · border on background 3.4:1 (non-text, AA). */
   :root {
-    --background: 216 33% 97%;
-    --foreground: 218 45% 11%;
-    --card: 0 0% 100%;
-    --card-foreground: 218 45% 11%;
+    --background: 40 33% 97%;
+    --foreground: 30 10% 9%;
+    --card: 40 40% 99%;
+    --card-foreground: 30 10% 9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 218 45% 11%;
+    --popover-foreground: 30 10% 9%;
     --primary: 216 100% 40%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 216 40% 93%;
-    --secondary-foreground: 218 45% 11%;
-    --muted: 216 33% 93%;
-    --muted-foreground: 218 18% 30%;
+    --secondary: 40 22% 91%;
+    --secondary-foreground: 30 10% 9%;
+    --muted: 40 22% 91%;
+    --muted-foreground: 30 6% 30%;
     --accent: 216 100% 40%;
     --accent-foreground: 0 0% 100%;
-    --destructive: 0 74% 42%;
+    --destructive: 0 74% 40%;
     --destructive-foreground: 0 0% 100%;
-    --border: 216 20% 78%;
-    --input: 218 15% 46%;
+    --border: 35 8% 52%;
+    --input: 30 8% 40%;
     --ring: 216 100% 40%;
-    --radius: 0.75rem;
+    --radius: 0.25rem;
 
-    --ink: 216 60% 11%;
-    --ink-foreground: 0 0% 100%;
-    --ink-muted: 214 30% 78%;
-    --ink-line: 214 40% 24%;
-    --signal: 188 90% 55%;
+    /* Kept so older class names still resolve; they now match the paper. */
+    --ink: 30 10% 9%;
+    --ink-foreground: 40 33% 97%;
+    --ink-muted: 40 15% 80%;
+    --ink-line: 30 6% 30%;
+    --signal: 216 100% 40%;
 
     --teksure-success: 152 55% 42%;
     --teksure-warning: 38 85% 52%;
@@ -98,34 +96,33 @@
     --origin-lavender-text: 248 40% 56%;
   }
 
-  /* Dark: same structure, navy surfaces. Ink bands sit a step lighter than
-     the page so they still read as panels. */
+  /* Dark: the same manual, printed on dark stock. */
   .dark {
-    --background: 218 50% 7%;
-    --foreground: 210 40% 98%;
-    --card: 218 40% 11%;
-    --card-foreground: 210 40% 98%;
-    --popover: 218 40% 11%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 100% 70%;
-    --primary-foreground: 218 50% 7%;
-    --secondary: 218 30% 16%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 218 30% 16%;
-    --muted-foreground: 214 25% 80%;
-    --accent: 210 100% 70%;
-    --accent-foreground: 218 50% 7%;
-    --destructive: 0 62% 48%;
+    --background: 30 6% 9%;
+    --foreground: 40 25% 92%;
+    --card: 30 6% 12%;
+    --card-foreground: 40 25% 92%;
+    --popover: 30 6% 12%;
+    --popover-foreground: 40 25% 92%;
+    --primary: 213 100% 72%;
+    --primary-foreground: 30 10% 9%;
+    --secondary: 30 6% 17%;
+    --secondary-foreground: 40 25% 92%;
+    --muted: 30 6% 17%;
+    --muted-foreground: 40 10% 76%;
+    --accent: 213 100% 72%;
+    --accent-foreground: 30 10% 9%;
+    --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
-    --border: 216 20% 32%;
-    --input: 216 15% 60%;
-    --ring: 210 100% 70%;
+    --border: 35 6% 45%;
+    --input: 35 6% 62%;
+    --ring: 213 100% 72%;
 
-    --ink: 218 45% 12%;
-    --ink-foreground: 0 0% 100%;
-    --ink-muted: 214 30% 80%;
-    --ink-line: 214 35% 26%;
-    --signal: 188 90% 60%;
+    --ink: 40 25% 92%;
+    --ink-foreground: 30 6% 9%;
+    --ink-muted: 30 6% 30%;
+    --ink-line: 40 10% 76%;
+    --signal: 213 100% 72%;
 
     --teksure-success: 192 100% 43%;
     --teksure-warning: 304 56% 71%;
@@ -172,18 +169,19 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Atkinson Hyperlegible', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     overflow-x: hidden;
   }
-  /* Headings use the display face. Body copy stays Inter for reading. */
+  /* Headings use the serif. Body copy stays in Atkinson Hyperlegible. */
   h1, h2, h3 {
-    font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    font-weight: 700;
   }
   button, a[role="button"], [role="button"] {
     min-height: 44px;
   }
   h1, h2, h3, h4, h5, h6 {
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
   }
   /* Global focus-visible ring — WCAG 2.4.7. Ensures every keyboard
      user (including seniors using keyboard navigation) can always
@@ -196,19 +194,17 @@
   }
 }
 
-/* ── Tech accents ─────────────────────────────────────────────────────────
-   A faint blueprint grid behind ink bands. It is decoration only: the lines
-   are 6% white, so text contrast is unchanged. */
+/* ── Manual details ───────────────────────────────────────────────────────
+   Small, functional touches borrowed from printed computer manuals. */
 @layer components {
-  .bg-grid {
-    background-image:
-      linear-gradient(hsl(0 0% 100% / 0.06) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(0 0% 100% / 0.06) 1px, transparent 1px);
-    background-size: 40px 40px;
+  /* A screen label or key, printed the way a manual prints a button. */
+  .keycap {
+    @apply inline-block whitespace-nowrap rounded-[3px] border border-foreground/60 bg-card px-1.5 font-sans text-[0.92em] font-bold leading-snug text-foreground;
+    box-shadow: 0 2px 0 hsl(var(--foreground) / 0.45);
   }
-  /* Eyebrow label above a page title: monospace, sentence case, readable size. */
-  .eyebrow {
-    @apply inline-flex items-center gap-2 font-mono text-sm font-semibold;
+  /* "Checked" date, set like a rubber stamp. */
+  .stamp {
+    @apply inline-flex items-center gap-1.5 rounded-[3px] border-2 border-current px-2 py-0.5 font-mono text-sm font-semibold uppercase tracking-wide;
   }
 }
 

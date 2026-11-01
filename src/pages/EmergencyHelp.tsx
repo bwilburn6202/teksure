@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Shield, Smartphone, KeyRound, MousePointerClick, MonitorX, Phone, ExternalLink, ChevronDown } from 'lucide-react';
+import { Smartphone, KeyRound, MousePointerClick, MonitorX, Phone, ExternalLink, ChevronDown } from 'lucide-react';
 import { PageHeader } from '@/components/layout/PageHeader';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
@@ -184,7 +184,7 @@ export default function EmergencyHelp() {
       {/* Hero */}
       <PageHeader
         width="max-w-3xl"
-        eyebrow={<><Shield className="h-4 w-4" aria-hidden="true" /> Take a deep breath</>}
+        eyebrow="Take a deep breath"
         title="Emergency Tech Help"
         description="Something went wrong? Pick the situation that matches yours below, and follow the steps in order."
       />

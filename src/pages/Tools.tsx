@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -19,30 +18,24 @@ export default function Tools() {
       <Navbar />
       <main id="main-content" tabIndex={-1} className="outline-none">
         <PageHeader
-          eyebrow={`${TOOL_COUNT} free tools`}
+          eyebrow={`${TOOL_COUNT} free tools · no sign-up`}
           title="Tools"
-          description="Free tools that walk you through one job at a time. No sign-up needed."
+          description="Each tool walks you through one job, one step at a time."
         />
 
         <div className="mx-auto max-w-5xl px-4">
           {TOOL_GROUPS.map((group, gi) => (
             <section key={group.title} className="mt-12" aria-labelledby={`group-${gi}`}>
-              <h2 id={`group-${gi}`} className="font-display text-2xl font-bold">
+              <h2 id={`group-${gi}`} className="border-b-2 border-foreground pb-2 font-display text-2xl font-bold">
                 {group.title}
               </h2>
-              <ul className="mt-4 grid gap-3 md:grid-cols-2">
+              <ul className="divide-y divide-border">
                 {group.tools.map((t) => (
-                  <li key={t.slug}>
-                    <Link
-                      to={`/tools/${t.slug}`}
-                      className="group flex h-full flex-col rounded-xl border-2 border-border bg-card p-5 hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                    >
-                      <span className="flex items-start justify-between gap-3 text-xl font-semibold text-primary">
-                        {t.name}
-                        <ArrowRight className="mt-1 h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                      </span>
-                      <span className="mt-1 text-lg text-muted-foreground">{t.description}</span>
+                  <li key={t.slug} className="py-3">
+                    <Link to={`/tools/${t.slug}`} className="text-xl font-bold text-primary underline-offset-4 hover:underline">
+                      {t.name}
                     </Link>
+                    <p className="mt-1 text-lg text-muted-foreground">{t.description}</p>
                   </li>
                 ))}
               </ul>

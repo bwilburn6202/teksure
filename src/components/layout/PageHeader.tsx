@@ -1,12 +1,10 @@
 import type { ReactNode } from 'react';
 
 /**
- * The navy band at the top of a page: an optional eyebrow label, the page
- * title (the page's only <h1>) and a one-line description. Children render
- * under the description, for a search box or buttons.
- *
- * White text on ink is 17.7:1 and the cyan eyebrow is 10:1, so the band is
- * as readable as the white page below it.
+ * The top of a page, set like a chapter opening in a printed manual: a small
+ * label, a large serif title (the page's only <h1>), one line of description,
+ * and a heavy rule underneath. Children render under the description, for a
+ * search box or buttons.
  */
 export function PageHeader({
   eyebrow,
@@ -22,17 +20,11 @@ export function PageHeader({
   width?: string;
 }) {
   return (
-    <div className="relative overflow-hidden bg-ink text-ink-foreground print:bg-transparent print:text-foreground">
-      <div aria-hidden="true" className="bg-grid absolute inset-0 print:hidden" />
-      <div className={`relative mx-auto ${width} px-4 py-10 sm:py-14`}>
-        {eyebrow && (
-          <p className="eyebrow text-signal">
-            <span aria-hidden="true" className="h-2 w-2 rounded-full bg-signal" />
-            {eyebrow}
-          </p>
-        )}
-        <h1 className="mt-3 font-display text-4xl font-bold leading-tight sm:text-5xl">{title}</h1>
-        {description && <p className="mt-4 max-w-3xl text-xl text-ink-muted">{description}</p>}
+    <div className={`mx-auto ${width} px-4 pt-10 sm:pt-14`}>
+      <div className="border-b-2 border-foreground pb-8">
+        {eyebrow && <p className="flex items-center gap-2 text-base font-bold text-muted-foreground">{eyebrow}</p>}
+        <h1 className="mt-2 font-display text-4xl font-bold leading-tight sm:text-5xl">{title}</h1>
+        {description && <p className="mt-4 max-w-3xl text-xl text-muted-foreground">{description}</p>}
         {children}
       </div>
     </div>

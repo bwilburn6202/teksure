@@ -274,18 +274,18 @@ export default function ScamDefenseCenter() {
           title="Scam Defense Center"
           description={
             <>
-              Americans reported losing <strong className="text-ink-foreground">$15.9 billion to fraud in 2025</strong>, and
+              Americans reported losing <strong className="text-foreground">$15.9 billion to fraud in 2025</strong>, and
               older adults are a top target. Here is how to spot a scam, and what to do if one already got you.
             </>
           }
         >
-          <p className="mt-2 text-base text-ink-muted">
+          <p className="mt-2 text-base text-muted-foreground">
             Source:{' '}
-            <a href="https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-testifies-joint-economic-committee-agencys-efforts-combat-fraud" className="underline underline-offset-4 hover:text-signal">FTC report to Congress, March 2026</a>
+            <a href="https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-testifies-joint-economic-committee-agencys-efforts-combat-fraud" className="underline underline-offset-4 hover:text-primary">FTC report to Congress, March 2026</a>
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
-            <a href="#checklist" className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-signal px-6 text-lg font-semibold text-ink hover:bg-signal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal focus-visible:ring-offset-2 focus-visible:ring-offset-ink">Check for warning signs</a>
-            <a href="#got-scammed" className="inline-flex min-h-[52px] items-center justify-center rounded-xl border-2 border-ink-line bg-white/5 px-6 text-lg font-semibold text-ink-foreground hover:border-signal hover:text-signal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal">I already got scammed</a>
+            <a href="#checklist" className="inline-flex min-h-[52px] items-center justify-center rounded-sm bg-primary px-6 text-lg font-bold text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring/40">Check for warning signs</a>
+            <a href="#got-scammed" className="inline-flex min-h-[52px] items-center justify-center rounded-sm border-2 border-foreground bg-card px-6 text-lg font-bold text-foreground hover:bg-secondary focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring/40">I already got scammed</a>
           </div>
         </PageHeader>
 

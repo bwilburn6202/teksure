@@ -3,7 +3,7 @@ import {
   Settings, Shield, Wifi, Download, FolderOpen, Monitor, Smartphone,
   MousePointer, Keyboard, Eye, Lock, Trash2, RefreshCw, Power,
   Search, Mail, Globe, Camera, Volume2, Bluetooth, HardDrive,
-  ChevronRight, Copy, Printer, Users, Bell, Zap,
+  Copy, Printer, Users, Bell, Zap,
 } from 'lucide-react';
 import { CopyButton } from '@/components/CopyButton';
 import {
@@ -120,7 +120,7 @@ function normalizeKey(key: string): string {
 
 function KeyCap({ label }: { label: string }) {
   return (
-    <kbd className="inline-flex items-center justify-center min-w-[1.75rem] h-7 px-1.5 rounded-md border border-border bg-muted/80 text-xs font-semibold font-mono text-foreground shadow-[0_1px_0_1px_hsl(var(--border))] select-none">
+    <kbd className="keycap min-w-[1.75rem] text-center font-mono select-none">
       {label}
     </kbd>
   );
@@ -146,11 +146,9 @@ function MenuPath({ segments }: { segments: string[] }) {
     <span className="inline-flex items-center gap-0.5 mx-0.5 flex-wrap">
       {segments.map((seg, i) => (
         <React.Fragment key={i}>
-          {i > 0 && <ChevronRight className="h-3 w-3 text-muted-foreground shrink-0" />}
-          <span className="inline-flex items-center gap-1 bg-accent/60 text-accent-foreground px-2 py-0.5 rounded-md text-sm font-medium whitespace-nowrap">
-            {i === 0 && <Settings className="h-3 w-3 opacity-60" />}
-            {seg.trim()}
-          </span>
+          {i > 0 && <span aria-hidden="true" className="mx-0.5 font-bold text-muted-foreground">›</span>}
+          {/* Printed like the button on screen, so people can match it. */}
+          <span className="keycap">{seg.trim()}</span>
         </React.Fragment>
       ))}
     </span>
@@ -180,6 +178,12 @@ function GlossaryTerm({ term, definition }: { term: string; definition: string }
 const SHORTCUT_RE = /\b(Ctrl|Control|Alt|Option|Shift|Win|Windows|Cmd|Command)(\+\w+){1,3}\b/g;
 const MENU_PATH_RE = /(?:(?:Click|Go to|Open|Navigate to|Tap)\s+)?(?:[A-Z][\w\s]*(?:\s*→\s*)){1,}[A-Z][\w\s.]*/g;
 const CODE_RE = /`([^`]+)`/g;
+// "Settings > Phone > Blocked Contacts": two or more screen labels joined by
+// " > ". Each label is a run of words that start with a capital, "i"+capital
+// (iCloud), "&", or a [placeholder] such as [Your Name].
+const GT_WORD = String.raw`(?:[A-Z][\w'’-]*|i[A-Z][\w'’-]*|&|\[[^\]]+\])`;
+const GT_LABEL = `${GT_WORD}(?: ${GT_WORD})*`;
+const GT_PATH_RE = new RegExp(`${GT_LABEL}(?: > ${GT_LABEL})+`, 'g');
 
 interface ContentSegment {
   type: 'text' | 'shortcut' | 'menu' | 'code' | 'glossary';
@@ -247,6 +251,16 @@ function tokenize(text: string): ContentSegment[] {
         length: pathStr.length,
         token: { type: 'menu', value: pathStr, segments: segs },
       });
+    }
+
+    GT_PATH_RE.lastIndex = 0;
+    while ((m = GT_PATH_RE.exec(str)) !== null) {
+      // A sentence-opening verb ("Open Settings > …") is not part of the label.
+      const lead = /^(?:(?:Open|Tap|Click|Select|Choose|Go|Then|Next|Find)\s)+/.exec(m[0])?.[0] ?? '';
+      const path = m[0].slice(lead.length);
+      const segs = path.split(' > ').map((x) => x.trim()).filter(Boolean);
+      if (segs.length < 2) continue;
+      menuMatches.push({ index: m.index + lead.length, length: path.length, token: { type: 'menu', value: path, segments: segs } });
     }
 
     // Merge all matches, sorted by index, no overlaps
