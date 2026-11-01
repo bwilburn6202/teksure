@@ -44,20 +44,58 @@ Deno.serve(async (req) => {
     const bookingId = session.metadata?.booking_id;
 
     if (bookingId) {
-      const { error } = await (supabase as any)
+      // Only rows that were not already paid come back from this update, so
+      // when Stripe retries the same event we do not email everyone twice.
+      const { data: updated, error } = await (supabase as any)
         .from('bookings')
         .update({
           payment_status:    'deposit_paid',
           stripe_session_id: session.id,
           deposit_paid_at:   new Date().toISOString(),
         })
-        .eq('id', bookingId);
+        .eq('id', bookingId)
+        .neq('payment_status', 'deposit_paid')
+        .select('name, email, phone, device_type, problem_description');
 
       if (error) {
         console.error('Failed to update booking payment status:', error);
         return new Response('DB update failed', { status: 500 });
       }
       console.log(`✅ Deposit paid for booking ${bookingId}`);
+
+      // Until this existed, a paid deposit sent no email at all: the customer
+      // was promised a confirmation that never came, and Bailey had no alert
+      // that money had arrived. The pay-on-the-day path sends these from the
+      // browser; a deposit can only be confirmed here, after Stripe says so.
+      const booking = Array.isArray(updated) ? updated[0] : null;
+      if (booking) {
+        try {
+          const res = await fetch(`${supabaseUrl}/functions/v1/send-booking-confirmation`, {
+            method: 'POST',
+            headers: {
+              Authorization: `Bearer ${supabaseKey}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              name:                booking.name ?? session.metadata?.customer_name,
+              email:               booking.email ?? session.customer_details?.email ?? undefined,
+              phone:               booking.phone ?? undefined,
+              device_type:         booking.device_type ?? undefined,
+              problem_description: booking.problem_description ?? undefined,
+              service:             session.metadata?.service || undefined,
+              date:                session.metadata?.date || undefined,
+              slot:                session.metadata?.slot || undefined,
+              bookingId,
+              paymentOption:       'deposit',
+            }),
+          });
+          if (!res.ok) console.error('send-booking-confirmation failed:', res.status, await res.text());
+        } catch (err) {
+          // The payment is recorded either way. Do not make Stripe retry the
+          // whole event because an email failed.
+          console.error('send-booking-confirmation threw:', err);
+        }
+      }
     }
   }
 
