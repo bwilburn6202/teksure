@@ -125,7 +125,7 @@ export default function Landing() {
             </p>
           </blockquote>
           <p className="mt-3 text-lg font-bold">
-            — Bailey Wilburn, founder ·{' '}
+            — The TekSure team ·{' '}
             <Link to="/about" className="font-normal text-primary underline underline-offset-4">more about us</Link>
           </p>
           <p className="mt-6 text-lg">

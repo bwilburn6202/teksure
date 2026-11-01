@@ -30,7 +30,7 @@ import {
  * page nobody can read is not much better than no terms page, especially for
  * an audience of seniors and non-technical users.
  *
- * NOTE FOR BAILEY: the "Governing law" section needs your registered business
+ * NOTE FOR THE OWNER: the "Governing law" section needs your registered business
  * entity name and home state before this is fully airtight. It is written to
  * be honest and usable as-is, but have a lawyer review it if TekSure grows.
  */
