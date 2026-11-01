@@ -1,3 +1,4 @@
+import { PageHeader } from '@/components/layout/PageHeader';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -73,19 +74,14 @@ const Pricing = () => (
     <Navbar />
     <main id="main-content" className="flex-1">
       {/* Header */}
-      <section className="border-b border-border">
-        <div className="container py-12 md:py-16 text-center">
-          <div>
-            <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Simple, Honest Pricing</h1>
-            <p className="text-muted-foreground text-lg mb-3 max-w-xl mx-auto">
-              One rate for every kind of problem. No subscriptions, no hidden fees, no upselling.
-            </p>
-            <p className="text-base text-muted-foreground">
-              {BRAND_PROMISE} — available anywhere in the United States.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHeader
+        width="max-w-3xl"
+        eyebrow="Pricing"
+        title="Simple, Honest Pricing"
+        description="One rate for every kind of problem. No subscriptions, no hidden fees, no upselling."
+      >
+        <p className="mt-3 text-base text-ink-muted">{BRAND_PROMISE} — available anywhere in the United States.</p>
+      </PageHeader>
 
       {/* The single rate */}
       <section className="container py-12 md:py-16">

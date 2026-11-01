@@ -5,31 +5,43 @@
 /* Google Fonts loaded via <link> in index.html for better performance */
 
 @layer base {
-  /* Plain theme (2026-10-11): white page, near-black text, one strong blue
-     for links and buttons, visible borders. Every text/background pair is
-     WCAG AA or better; primary on white is 7:1. No gradients, no glass. */
+  /* Tech theme (2026-11-01): a cool off-white page, white cards, deep navy
+     "ink" bands for the hero, page headers and footer, one electric blue
+     taken from the logo, and a cyan "signal" accent used only on ink.
+     Every text/background pair is WCAG AA or better:
+       primary #0052CC on white ........ 6.9:1
+       foreground on background ........ 16:1
+       muted-foreground on background .. 8.5:1
+       white on ink .................... 17.7:1
+       signal on ink ................... 10.3:1
+       ink-muted on ink ................ 10:1 */
   :root {
-    /* Origin-flavored light: Faded Mist canvas, Ghost White cards */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 7%;
+    --background: 216 33% 97%;
+    --foreground: 218 45% 11%;
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 7%;
+    --card-foreground: 218 45% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 7%;
-    --primary: 221 83% 40%;
+    --popover-foreground: 218 45% 11%;
+    --primary: 216 100% 40%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 14% 95%;
-    --secondary-foreground: 0 0% 7%;
-    --muted: 220 14% 95%;
-    --muted-foreground: 220 9% 30%;
-    --accent: 221 83% 40%;
+    --secondary: 216 40% 93%;
+    --secondary-foreground: 218 45% 11%;
+    --muted: 216 33% 93%;
+    --muted-foreground: 218 18% 30%;
+    --accent: 216 100% 40%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 74% 42%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 9% 72%;
-    --input: 220 9% 46%;
-    --ring: 221 83% 40%;
-    --radius: 0.5rem;
+    --border: 216 20% 78%;
+    --input: 218 15% 46%;
+    --ring: 216 100% 40%;
+    --radius: 0.75rem;
+
+    --ink: 216 60% 11%;
+    --ink-foreground: 0 0% 100%;
+    --ink-muted: 214 30% 78%;
+    --ink-line: 214 40% 24%;
+    --signal: 188 90% 55%;
 
     --teksure-success: 152 55% 42%;
     --teksure-warning: 38 85% 52%;
@@ -86,27 +98,34 @@
     --origin-lavender-text: 248 40% 56%;
   }
 
-  /* Origin Midnight Ink dark — the canonical Origin look */
+  /* Dark: same structure, navy surfaces. Ink bands sit a step lighter than
+     the page so they still read as panels. */
   .dark {
-    --background: 0 0% 7%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 213 94% 72%;
-    --primary-foreground: 0 0% 7%;
-    --secondary: 0 0% 14%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 80%;
-    --accent: 213 94% 72%;
-    --accent-foreground: 0 0% 7%;
+    --background: 218 50% 7%;
+    --foreground: 210 40% 98%;
+    --card: 218 40% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 218 40% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 100% 70%;
+    --primary-foreground: 218 50% 7%;
+    --secondary: 218 30% 16%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 218 30% 16%;
+    --muted-foreground: 214 25% 80%;
+    --accent: 210 100% 70%;
+    --accent-foreground: 218 50% 7%;
     --destructive: 0 62% 48%;
     --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 35%;
-    --input: 0 0% 60%;
-    --ring: 213 94% 72%;
+    --border: 216 20% 32%;
+    --input: 216 15% 60%;
+    --ring: 210 100% 70%;
+
+    --ink: 218 45% 12%;
+    --ink-foreground: 0 0% 100%;
+    --ink-muted: 214 30% 80%;
+    --ink-line: 214 35% 26%;
+    --signal: 188 90% 60%;
 
     --teksure-success: 192 100% 43%;
     --teksure-warning: 304 56% 71%;
@@ -156,11 +175,15 @@
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     overflow-x: hidden;
   }
+  /* Headings use the display face. Body copy stays Inter for reading. */
+  h1, h2, h3 {
+    font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
   button, a[role="button"], [role="button"] {
     min-height: 44px;
   }
   h1, h2, h3, h4, h5, h6 {
-    letter-spacing: -0.025em;
+    letter-spacing: -0.02em;
   }
   /* Global focus-visible ring — WCAG 2.4.7. Ensures every keyboard
      user (including seniors using keyboard navigation) can always
@@ -170,6 +193,22 @@
     outline: 2px solid hsl(var(--ring));
     outline-offset: 2px;
     border-radius: 2px;
+  }
+}
+
+/* ── Tech accents ─────────────────────────────────────────────────────────
+   A faint blueprint grid behind ink bands. It is decoration only: the lines
+   are 6% white, so text contrast is unchanged. */
+@layer components {
+  .bg-grid {
+    background-image:
+      linear-gradient(hsl(0 0% 100% / 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(0 0% 100% / 0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  /* Eyebrow label above a page title: monospace, sentence case, readable size. */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-mono text-sm font-semibold;
   }
 }
 

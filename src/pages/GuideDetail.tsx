@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { Printer, Volume2, Square } from 'lucide-react';
+import { Printer, Volume2, Square, Lightbulb, AlertTriangle, ExternalLink, Headset, ArrowLeft, ArrowRight } from 'lucide-react';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -14,7 +14,11 @@ import { getGuideResources } from '@/lib/guideResources';
 import NotFound from './NotFound';
 
 const button =
-  'inline-flex items-center gap-2 min-h-[44px] px-4 rounded-md border-2 border-border text-base font-semibold hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring no-print';
+  'inline-flex items-center gap-2 min-h-[44px] px-4 rounded-lg border-2 border-border bg-card text-base font-semibold text-foreground hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring no-print';
+
+// The same buttons, on the navy title band.
+const bandButton =
+  'inline-flex items-center gap-2 min-h-[44px] px-4 rounded-lg border-2 border-ink-line bg-white/5 text-base font-semibold text-ink-foreground hover:border-signal hover:text-signal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal no-print';
 
 // Many tips already start with "Quick Tip:", which doubled up with the callout label.
 const stripTipLabel = (tip: string) => tip.replace(/^\s*\**\s*(quick|pro)\s+tip\s*\**\s*[:\-—–]\s*\**\s*/i, '');
@@ -28,7 +32,7 @@ const splitBody = (body?: string) => {
   return { intro: blocks[0], rest: blocks.slice(1).join('\n\n') };
 };
 
-const ListenButton = ({ guide }: { guide: { title: string; excerpt: string; steps?: GuideStep[]; body?: string } }) => {
+const ListenButton = ({ guide, className = button }: { guide: { title: string; excerpt: string; steps?: GuideStep[]; body?: string }; className?: string }) => {
   const [speaking, setSpeaking] = useState(false);
   const fullText = useCallback(() => {
     const { intro, rest } = splitBody(guide.body);
@@ -57,19 +61,29 @@ const ListenButton = ({ guide }: { guide: { title: string; excerpt: string; step
     setSpeaking(true);
   };
   return (
-    <button className={button} onClick={toggle}>
+    <button className={className} onClick={toggle}>
       {speaking ? <Square className="h-4 w-4" aria-hidden="true" /> : <Volume2 className="h-4 w-4" aria-hidden="true" />}
       {speaking ? 'Stop reading' : 'Read aloud'}
     </button>
   );
 };
 
-const Callout = ({ label, tone, children }: { label: string; tone: 'tip' | 'warning'; children: React.ReactNode }) => (
-  <div className={`mt-4 border-l-4 px-4 py-3 ${tone === 'tip' ? 'border-primary bg-muted' : 'border-destructive bg-muted'}`}>
-    <p className={`font-bold ${tone === 'tip' ? 'text-foreground' : 'text-destructive'}`}>{label}</p>
-    <div className="mt-1 text-lg">{children}</div>
-  </div>
-);
+const Callout = ({ label, tone, children }: { label: string; tone: 'tip' | 'warning'; children: React.ReactNode }) => {
+  const Icon = tone === 'tip' ? Lightbulb : AlertTriangle;
+  return (
+    <div
+      className={`mt-5 flex gap-3 rounded-xl border-2 px-4 py-4 ${
+        tone === 'tip' ? 'border-primary/30 bg-info text-foreground' : 'border-destructive/40 bg-danger text-foreground'
+      }`}
+    >
+      <Icon className={`mt-1 h-6 w-6 shrink-0 ${tone === 'tip' ? 'text-info-foreground' : 'text-danger-foreground'}`} aria-hidden="true" />
+      <div>
+        <p className={`font-bold ${tone === 'tip' ? 'text-info-foreground' : 'text-danger-foreground'}`}>{label}</p>
+        <div className="mt-1 text-lg">{children}</div>
+      </div>
+    </div>
+  );
+};
 
 const GuideLoading = ({ failed }: { failed: boolean }) => (
   <>
@@ -174,45 +188,58 @@ const GuideDetail = () => {
       <Navbar />
 
       <main id="main-content" tabIndex={-1} className="outline-none">
-        <article className="mx-auto max-w-3xl px-4 pt-8">
-          <nav aria-label="Breadcrumb" className="text-base no-print">
-            <Link to="/guides" className="underline underline-offset-4">Guides</Link>
-            <span aria-hidden="true"> › </span>
-            <Link to={`/guides?category=${guide.category}`} className="underline underline-offset-4">
-              {categoryLabels[guide.category]}
-            </Link>
-          </nav>
+        <article>
+          <header className="relative overflow-hidden bg-ink text-ink-foreground print:bg-transparent print:text-foreground">
+            <div aria-hidden="true" className="bg-grid absolute inset-0 print:hidden" />
+            <div className="relative mx-auto max-w-3xl px-4 py-10 sm:py-12">
+              <nav aria-label="Breadcrumb" className="text-base text-ink-muted no-print">
+                <Link to="/guides" className="underline underline-offset-4 hover:text-signal">Guides</Link>
+                <span aria-hidden="true"> › </span>
+                <Link to={`/guides?category=${guide.category}`} className="underline underline-offset-4 hover:text-signal">
+                  {categoryLabels[guide.category]}
+                </Link>
+              </nav>
 
-          <h1 className="mt-4 text-3xl sm:text-4xl font-bold leading-tight">{guide.title}</h1>
-          <p className="mt-4 text-xl text-muted-foreground">{guide.excerpt}</p>
-          <p className="mt-3 text-base text-muted-foreground">
-            {readTime}
-            {guide.steps?.length ? ` · ${guide.steps.length} steps` : ''}
-            {guide.lastVerifiedAt &&
-              ` · Checked ${new Date(guide.lastVerifiedAt).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}`}
-          </p>
+              <h1 className="mt-4 font-display text-3xl font-bold leading-tight sm:text-[2.6rem]">{guide.title}</h1>
+              <p className="mt-4 text-xl text-ink-muted print:text-foreground">{guide.excerpt}</p>
+              <p className="mt-4 flex flex-wrap gap-x-4 gap-y-1 font-mono text-sm font-semibold text-signal print:text-foreground">
+                <span>{readTime}</span>
+                {guide.steps?.length ? <span>{guide.steps.length} steps</span> : null}
+                {guide.lastVerifiedAt && (
+                  <span>
+                    Checked {new Date(guide.lastVerifiedAt).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
+                  </span>
+                )}
+              </p>
 
-          <div className="mt-5 flex flex-wrap gap-2">
-            <button className={button} onClick={() => window.print()}>
-              <Printer className="h-4 w-4" aria-hidden="true" /> Print
-            </button>
-            <ListenButton guide={guide} />
-          </div>
+              <div className="mt-6 flex flex-wrap gap-2">
+                <button className={bandButton} onClick={() => window.print()}>
+                  <Printer className="h-4 w-4" aria-hidden="true" /> Print
+                </button>
+                <ListenButton guide={guide} className={bandButton} />
+              </div>
+            </div>
+          </header>
 
+          <div className="mx-auto max-w-3xl px-4">
           {bodyParts.intro && (
-            <div className="mt-8 text-lg leading-relaxed">
+            <div className="mt-10 text-lg leading-relaxed">
               <RichText text={bodyParts.intro} />
             </div>
           )}
 
           {guide.steps && guide.steps.length > 0 && (
-            <ol className="mt-10 space-y-8">
+            <ol className="mt-10 space-y-6">
               {guide.steps.map((step, i) => (
-                <li key={i} id={`step-${i + 1}`} className="scroll-mt-20 border-t-2 border-border pt-6">
-                  <h2 className="text-2xl font-bold">
-                    <span className="text-primary">Step {i + 1}.</span> {step.title}
+                <li key={i} id={`step-${i + 1}`} className="scroll-mt-24 rounded-2xl border-2 border-border bg-card p-5 sm:p-6">
+                  <h2 className="flex items-start gap-4 font-display text-2xl font-bold">
+                    <span className="flex h-11 min-w-[2.75rem] shrink-0 items-center justify-center rounded-xl bg-primary px-2 font-mono text-lg text-primary-foreground">
+                      <span className="sr-only">Step </span>
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <span className="pt-1">{step.title}</span>
                   </h2>
-                  <div className="mt-3 text-lg leading-relaxed">
+                  <div className="mt-4 text-lg leading-relaxed">
                     <RichText text={step.content} />
                   </div>
                   {step.tip && <Callout label="Quick Tip" tone="tip"><RichText text={stripTipLabel(step.tip)} className="space-y-2" /></Callout>}
@@ -225,8 +252,8 @@ const GuideDetail = () => {
           {guide.tip && <Callout label="Quick Tip" tone="tip"><RichText text={stripTipLabel(guide.tip)} className="space-y-2" /></Callout>}
           {guide.warning && <Callout label="Warning" tone="warning"><RichText text={guide.warning} className="space-y-2" /></Callout>}
           {bodyParts.rest && (
-            <section aria-labelledby="more-about" className="mt-12 border-t-2 border-border pt-6">
-              <h2 id="more-about" className="text-2xl font-bold">More about this</h2>
+            <section aria-labelledby="more-about" className="mt-12">
+              <h2 id="more-about" className="font-display text-2xl font-bold">More about this</h2>
               <div className="mt-3 text-lg leading-relaxed">
                 <RichText text={bodyParts.rest} />
               </div>
@@ -234,8 +261,11 @@ const GuideDetail = () => {
           )}
 
           {(guide.sourceUrl || sources.length > 0 || guide.videoUrl) && (
-            <section aria-labelledby="sources" className="mt-12 border-t-2 border-border pt-6">
-              <h2 id="sources" className="text-2xl font-bold">Official sources</h2>
+            <section aria-labelledby="sources" className="mt-12 rounded-2xl border-2 border-border bg-card p-6">
+              <h2 id="sources" className="flex items-center gap-2 font-display text-2xl font-bold">
+                <ExternalLink className="h-6 w-6 text-primary" aria-hidden="true" />
+                Official sources
+              </h2>
               <ul className="mt-3 space-y-2 text-lg">
                 {guide.sourceUrl && (
                   <li>
@@ -263,24 +293,40 @@ const GuideDetail = () => {
             </section>
           )}
 
-          <section className="mt-12 border-2 border-border p-6 no-print">
-            <h2 className="text-2xl font-bold">Still stuck?</h2>
-            <p className="mt-2 text-lg">A real person can walk you through it over the phone.</p>
-            <Link
-              to="/get-help"
-              className="mt-4 inline-flex min-h-[48px] items-center rounded-md bg-primary px-5 text-lg font-semibold text-primary-foreground hover:bg-primary/90"
-            >
-              Get help from a person
-            </Link>
+          <section className="relative mt-12 overflow-hidden rounded-2xl bg-ink p-6 text-ink-foreground sm:p-8 no-print">
+            <div aria-hidden="true" className="bg-grid absolute inset-0" />
+            <div className="relative flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-start gap-4">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-signal text-ink">
+                  <Headset className="h-6 w-6" aria-hidden="true" />
+                </span>
+                <div>
+                  <h2 className="font-display text-2xl font-bold">Still stuck?</h2>
+                  <p className="mt-1 text-lg text-ink-muted">A real person can walk you through it over the phone.</p>
+                </div>
+              </div>
+              <Link
+                to="/get-help"
+                className="inline-flex min-h-[52px] shrink-0 items-center justify-center rounded-xl bg-card px-6 text-lg font-semibold text-primary hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal"
+              >
+                Get help from a person
+              </Link>
+            </div>
           </section>
 
           {related.length > 0 && (
             <section aria-labelledby="related" className="mt-12 no-print">
-              <h2 id="related" className="text-2xl font-bold">Related guides</h2>
-              <ul className="mt-3 space-y-2 text-lg">
+              <h2 id="related" className="font-display text-2xl font-bold">Related guides</h2>
+              <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                 {related.map((g) => (
                   <li key={g.slug}>
-                    <Link to={`/guides/${g.slug}`} className="text-primary underline underline-offset-4">{g.title}</Link>
+                    <Link
+                      to={`/guides/${g.slug}`}
+                      className="group flex h-full items-start justify-between gap-3 rounded-xl border-2 border-border bg-card p-4 text-lg font-semibold text-primary hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    >
+                      {g.title}
+                      <ArrowRight className="mt-1 h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -288,9 +334,20 @@ const GuideDetail = () => {
           )}
 
           <nav aria-label="More guides" className="mt-12 flex flex-col gap-3 sm:flex-row sm:justify-between text-lg no-print">
-            {prev ? <Link to={`/guides/${prev.slug}`} className="underline underline-offset-4">← {prev.title}</Link> : <span />}
-            {next ? <Link to={`/guides/${next.slug}`} className="underline underline-offset-4 sm:text-right">{next.title} →</Link> : <span />}
+            {prev ? (
+              <Link to={`/guides/${prev.slug}`} className="flex flex-1 items-start gap-2 rounded-xl border-2 border-border bg-card p-4 hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+                <ArrowLeft className="mt-1 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+                <span><span className="block font-mono text-sm font-semibold text-muted-foreground">Previous</span>{prev.title}</span>
+              </Link>
+            ) : <span className="flex-1" />}
+            {next ? (
+              <Link to={`/guides/${next.slug}`} className="flex flex-1 items-start justify-end gap-2 rounded-xl border-2 border-border bg-card p-4 text-right hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+                <span><span className="block font-mono text-sm font-semibold text-muted-foreground">Next</span>{next.title}</span>
+                <ArrowRight className="mt-1 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+              </Link>
+            ) : <span className="flex-1" />}
           </nav>
+          </div>
         </article>
       </main>
       <Footer />

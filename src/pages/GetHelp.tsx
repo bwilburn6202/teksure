@@ -14,6 +14,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Progress } from '@/components/ui/progress';
 import { Card, CardContent } from '@/components/ui/card';
+import { PageHeader } from '@/components/layout/PageHeader';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -364,15 +365,14 @@ const GetHelp = () => {
       />
       <Navbar />
 
-      <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col pt-12 sm:pt-16 pb-12 px-4 outline-none">
-        <div className="max-w-2xl w-full mx-auto">
-          {/* Header */}
-          <div className="mb-10">
-            <h1 className="text-4xl font-bold tracking-tight mb-3">Get Tech Help</h1>
-            <p className="text-muted-foreground text-xl">
-              Tell us what's happening — we'll get someone real to help. No jargon, no runaround.
-            </p>
-          </div>
+      <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col outline-none">
+        <PageHeader
+          width="max-w-2xl"
+          eyebrow="Real people, not robots"
+          title="Get Tech Help"
+          description="Tell us what's happening — we'll get someone real to help. No jargon, no runaround."
+        />
+        <div className="max-w-2xl w-full mx-auto px-4 pt-10 pb-12">
 
           {/* Mode toggle */}
           <div className="grid gap-3 sm:grid-cols-2 mb-10">

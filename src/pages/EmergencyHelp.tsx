@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Shield, Smartphone, KeyRound, MousePointerClick, MonitorX, Phone, ExternalLink, ChevronDown } from 'lucide-react';
+import { PageHeader } from '@/components/layout/PageHeader';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -181,20 +182,12 @@ export default function EmergencyHelp() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-red-500/10 via-background to-amber-500/10 border-b border-border py-12 px-4">
-        <div className="container max-w-3xl mx-auto text-center">
-          <div className="flex justify-center mb-4">
-            <div className="p-4 bg-danger rounded-full">
-              <Shield className="h-10 w-10 text-danger-foreground " />
-            </div>
-          </div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">Emergency Tech Help</h1>
-          <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Something went wrong? Take a deep breath. Pick the situation that matches yours below,
-            and follow the steps in order.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        width="max-w-3xl"
+        eyebrow={<><Shield className="h-4 w-4" aria-hidden="true" /> Take a deep breath</>}
+        title="Emergency Tech Help"
+        description="Something went wrong? Pick the situation that matches yours below, and follow the steps in order."
+      />
 
       <main id="main-content" className="container max-w-3xl mx-auto px-4 py-10">
         {/* Quick jump */}
