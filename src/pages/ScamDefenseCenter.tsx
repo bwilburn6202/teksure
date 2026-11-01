@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, AlertTriangle, CheckCircle2, ExternalLink, Phone, UserX, Lock, ChevronRight } from 'lucide-react';
+import { PageHeader } from '@/components/layout/PageHeader';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 import {
   Accordion,
   AccordionContent,
@@ -267,23 +267,29 @@ export default function ScamDefenseCenter() {
       />
       <Navbar />
 
-      <main id="main-content" tabIndex={-1} className="mx-auto max-w-4xl px-4 py-10 space-y-16 outline-none">
-        <section>
-          <h1 className="text-4xl md:text-5xl font-bold">Scam Defense Center</h1>
-          <p className="mt-4 text-xl leading-relaxed">
-            Americans reported losing <strong>$15.9 billion to fraud in 2025</strong>, and older adults are a
-            top target. Here is how to spot a scam, and what to do if one already got you.
-          </p>
-          <p className="mt-2 text-base text-muted-foreground">
+      <main id="main-content" tabIndex={-1} className="outline-none">
+        <PageHeader
+          width="max-w-4xl"
+          eyebrow="Spot it. Stop it. Report it."
+          title="Scam Defense Center"
+          description={
+            <>
+              Americans reported losing <strong className="text-ink-foreground">$15.9 billion to fraud in 2025</strong>, and
+              older adults are a top target. Here is how to spot a scam, and what to do if one already got you.
+            </>
+          }
+        >
+          <p className="mt-2 text-base text-ink-muted">
             Source:{' '}
-            <a href="https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-testifies-joint-economic-committee-agencys-efforts-combat-fraud" className="underline">FTC report to Congress, March 2026</a>
+            <a href="https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-testifies-joint-economic-committee-agencys-efforts-combat-fraud" className="underline underline-offset-4 hover:text-signal">FTC report to Congress, March 2026</a>
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
-            <Button asChild size="lg"><a href="#checklist">Check for warning signs</a></Button>
-            <Button asChild size="lg" variant="outline"><a href="#got-scammed">I already got scammed</a></Button>
+            <a href="#checklist" className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-signal px-6 text-lg font-semibold text-ink hover:bg-signal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal focus-visible:ring-offset-2 focus-visible:ring-offset-ink">Check for warning signs</a>
+            <a href="#got-scammed" className="inline-flex min-h-[52px] items-center justify-center rounded-xl border-2 border-ink-line bg-white/5 px-6 text-lg font-semibold text-ink-foreground hover:border-signal hover:text-signal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal">I already got scammed</a>
           </div>
-        </section>
+        </PageHeader>
 
+        <div className="mx-auto max-w-4xl px-4 py-12 space-y-16">
         {/* ── 2. Quick Checklist ────────────────────────────────────────────── */}
         <section id="checklist" className="scroll-mt-20">
           <Card className="border-2 border-danger-foreground/25 overflow-hidden">
@@ -638,6 +644,7 @@ export default function ScamDefenseCenter() {
           </div>
         </section>
 
+        </div>
       </main>
 
       <Footer />

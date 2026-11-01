@@ -17,7 +17,7 @@ export default function NotFound() {
       <SEOHead title="Page Not Found | TekSure" description="This page is not on TekSure any more." noindex />
       <Navbar />
       <main id="main-content" tabIndex={-1} className="mx-auto max-w-3xl px-4 pt-12 min-h-[50vh] outline-none">
-        <h1 className="text-4xl font-bold">We could not find that page</h1>
+        <h1 className="font-display text-4xl font-bold">We could not find that page</h1>
         <p className="mt-4 text-xl text-muted-foreground">
           {retired
             ? 'We trimmed TekSure down to our most useful guides and tools, and this one was removed.'

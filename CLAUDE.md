@@ -45,9 +45,13 @@ cut and a plain visual reset. What changed:
   live page. Real pages left: home, guides, tools, scam-defense, get-help, search,
   emergency-help, about, pricing, terms, privacy, refund-policy, plus account,
   booking, payment and admin routes.
-- **Look:** white page, near-black text, one blue (`--primary`, 7:1 on white), visible
-  borders, 18px base text, no gradients, glass, mesh wallpaper or stock photos. The Cmd+K
-  search modal is gone; the navbar links to `/search`.
+- **Look (2026-11-01 tech refresh):** cool off-white page, white cards with visible
+  borders, deep navy "ink" bands (`bg-ink` + `.bg-grid`) for the home hero, page headers
+  (`src/components/layout/PageHeader.tsx`) and footer, one electric blue from the logo
+  (`--primary`, 6.9:1 on white) and a cyan `signal` accent used only on ink. Headings are
+  Space Grotesk, body Inter at 18px, JetBrains Mono only for small labels (step numbers,
+  eyebrows). Contrast for every pair is listed at the top of `src/index.css`. Still no
+  glass, mesh wallpaper or stock photos; the grid lines are 6% white decoration.
 - **Cadence pages are gone**, so there is no weekly/monthly page to keep fresh. Do not add a
   page that promises a schedule unless something real keeps it updated.
 - Edge functions now unused by the site: `scrape-articles`, `brain-query`,

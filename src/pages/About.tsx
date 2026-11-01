@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { PageHeader } from '@/components/layout/PageHeader';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
@@ -38,12 +39,14 @@ export default function About() {
         }}
       />
       <Navbar />
-      <main id="main-content" tabIndex={-1} className="mx-auto max-w-3xl px-4 pt-10 outline-none">
-        <h1 className="text-4xl font-bold">About TekSure</h1>
-        <p className="mt-4 text-xl">
-          TekSure is a small American company with a simple goal: make technology make sense for
-          people who have been quietly feeling left behind. No jargon. No judgment. No selling your data.
-        </p>
+      <main id="main-content" tabIndex={-1} className="outline-none">
+        <PageHeader
+          width="max-w-3xl"
+          eyebrow="Our story"
+          title="About TekSure"
+          description="TekSure is a small American company with a simple goal: make technology make sense for people who have been quietly feeling left behind. No jargon. No judgment. No selling your data."
+        />
+        <div className="mx-auto max-w-3xl px-4">
 
         <section className="mt-12">
           <h2 className="text-2xl font-bold">Why we started</h2>
@@ -98,6 +101,7 @@ export default function About() {
             </li>
           </ul>
         </section>
+        </div>
       </main>
       <Footer />
     </>

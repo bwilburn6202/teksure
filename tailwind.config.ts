@@ -65,6 +65,15 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Deep navy used for the hero, page headers and footer bands.
+        ink: {
+          DEFAULT: "hsl(var(--ink) / <alpha-value>)",
+          foreground: "hsl(var(--ink-foreground) / <alpha-value>)",
+          muted: "hsl(var(--ink-muted) / <alpha-value>)",
+          line: "hsl(var(--ink-line) / <alpha-value>)",
+        },
+        // Bright cyan accent. Only for text/icons on ink, or as decoration.
+        signal: "hsl(var(--signal) / <alpha-value>)",
         teksure: {
           success: "hsl(var(--teksure-success) / <alpha-value>)",
           warning: "hsl(var(--teksure-warning) / <alpha-value>)",
@@ -117,7 +126,10 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
-        display: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        // Headings: Space Grotesk gives the "tech" feel; body stays Inter for reading.
+        display: ["'Space Grotesk'", "Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        // Small labels only (step numbers, eyebrows). Never for body text.
+        mono: ["'JetBrains Mono'", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
       },
       borderRadius: {
         lg: "var(--radius)",
