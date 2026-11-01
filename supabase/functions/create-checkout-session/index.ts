@@ -73,6 +73,10 @@ Deno.serve(async (req) => {
         booking_id:    bookingId    ?? '',
         customer_name: customerName ?? '',
         service:       serviceLabel ?? '',
+        // Read back by stripe-webhook to write the confirmation emails once
+        // the deposit is actually paid. Stripe caps each value at 500 chars.
+        date:          String(preferredDate ?? '').slice(0, 100),
+        slot:          String(preferredSlot ?? '').slice(0, 100),
       },
       success_url: `${siteUrl}/payment/success?session_id={CHECKOUT_SESSION_ID}&booking_id=${bookingId ?? ''}`,
       cancel_url:  `${siteUrl}/payment/cancel?booking_id=${bookingId ?? ''}`,

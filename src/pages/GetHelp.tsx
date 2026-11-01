@@ -226,6 +226,11 @@ const GetHelp = () => {
             date: selectedDate?.label,
             slot: selectedSlot?.label,
             bookingId,
+            // The admin alert needs a way to reach people who left a phone
+            // number and no email.
+            phone: phone.trim() || undefined,
+            device_type: deviceType || undefined,
+            problem_description: description.trim() || undefined,
             // Drives the "what this costs" block in the email. This branch is
             // the pay-on-the-day path, so nothing has been charged yet.
             paymentOption: 'day',
@@ -346,7 +351,8 @@ const GetHelp = () => {
               One of our technicians will confirm your exact appointment time. They'll call or email you{phone ? ` at ${phone}` : ''} before the appointment.
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
-              <Button onClick={() => navigate('/my-requests')} className="rounded-md">View My Bookings</Button>
+              {/* /my-requests needs an account; most people book as a guest. */}
+              {user && <Button onClick={() => navigate('/my-requests')} className="rounded-md">View My Bookings</Button>}
               <Button variant="outline" onClick={() => navigate('/guides')} className="rounded-md">Browse Free Guides</Button>
             </div>
           </div>

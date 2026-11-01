@@ -6,6 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { SEOHead } from '@/components/SEOHead';
+import { useAuth } from '@/contexts/AuthContext';
 
 export default function PaymentSuccess() {
   const [searchParams] = useSearchParams();
@@ -13,15 +14,19 @@ export default function PaymentSuccess() {
   const bookingId      = searchParams.get('booking_id') ?? '';
   const bookingRef     = bookingId.slice(0, 8).toUpperCase() || 'TEKSURE';
   const [countdown, setCountdown] = useState(10);
+  // Most people book as a guest. /my-requests sends a guest to the sign-in
+  // page, so only signed-in customers get the bookings link and the redirect.
+  const { user } = useAuth();
 
   useEffect(() => {
+    if (!user) return;
     if (countdown <= 0) {
       navigate('/my-requests');
       return;
     }
     const t = setTimeout(() => setCountdown(c => c - 1), 1000);
     return () => clearTimeout(t);
-  }, [countdown, navigate]);
+  }, [countdown, navigate, user]);
 
   return (
     <>
@@ -85,12 +90,14 @@ export default function PaymentSuccess() {
           </Card>
 
           <div className="flex gap-3 flex-col sm:flex-row justify-center">
-            <Button asChild>
-              <Link to="/my-requests" className="gap-2">
-                <Calendar className="h-4 w-4" />
-                View My Bookings
-              </Link>
-            </Button>
+            {user && (
+              <Button asChild>
+                <Link to="/my-requests" className="gap-2">
+                  <Calendar className="h-4 w-4" />
+                  View My Bookings
+                </Link>
+              </Button>
+            )}
             <Button asChild variant="outline">
               <Link to="/guides" className="gap-2">
                 <ArrowRight className="h-4 w-4" />
@@ -99,12 +106,14 @@ export default function PaymentSuccess() {
             </Button>
           </div>
 
-          <p className="text-sm text-muted-foreground">
-            Redirecting to your bookings in {countdown}s…{' '}
-            <button onClick={() => navigate('/my-requests')} className="underline hover:text-foreground">
-              go now
-            </button>
-          </p>
+          {user && (
+            <p className="text-sm text-muted-foreground">
+              Redirecting to your bookings in {countdown}s…{' '}
+              <button onClick={() => navigate('/my-requests')} className="underline hover:text-foreground">
+                go now
+              </button>
+            </p>
+          )}
 
           <div className="text-xs text-muted-foreground border-t border-border pt-4">
             Questions? Email{' '}

@@ -18,6 +18,24 @@ interface BookingDetails {
   bookingId?: string;
   /** 'deposit' if a Stripe deposit was taken, otherwise pay-on-the-day. */
   paymentOption?: 'day' | 'deposit';
+  /** Shown to the admin only, so a phone-only booking can still be reached. */
+  phone?: string;
+  device_type?: string;
+  problem_description?: string;
+}
+
+/**
+ * Everything below goes into HTML email. The values come from a public form,
+ * so escape them — otherwise anyone can put links or markup in the email
+ * Bailey receives.
+ */
+function esc(value: unknown): string {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 /**
@@ -45,7 +63,16 @@ serve(async (req) => {
 
   try {
     const body: BookingDetails = await req.json();
-    const { name, email, service, date, slot, bookingId, paymentOption } = body;
+    const raw = body;
+    const name = raw.name ? esc(raw.name) : undefined;
+    const email = raw.email ? String(raw.email).trim() : undefined;
+    const service = raw.service ? esc(raw.service) : undefined;
+    const date = raw.date ? esc(raw.date) : undefined;
+    const slot = raw.slot ? esc(raw.slot) : undefined;
+    const phone = raw.phone ? esc(raw.phone) : undefined;
+    const device = raw.device_type ? esc(raw.device_type) : undefined;
+    const problem = raw.problem_description ? esc(raw.problem_description) : undefined;
+    const { bookingId, paymentOption } = raw;
     const paidDeposit = paymentOption === 'deposit';
     const dueOnDay = paidDeposit ? FIRST_HOUR_PRICE - DEPOSIT_AMOUNT : FIRST_HOUR_PRICE;
 
@@ -57,13 +84,13 @@ serve(async (req) => {
     }
 
     const firstName = name?.split(' ')[0] || 'there';
-    const ref = bookingId?.slice(0, 8).toUpperCase() ?? 'TEKSURE';
+    const ref = esc(bookingId?.slice(0, 8).toUpperCase() ?? 'TEKSURE');
 
     // ── 1. Confirmation email to customer ────────────────────────────────────
     if (email) {
       await sendEmail({
         to: email,
-        subject: `Your TekSure booking is confirmed — ${service}`,
+        subject: `Your TekSure booking is confirmed — ${raw.service ?? 'Tech help'}`,
         html: `
           <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 520px; margin: 0 auto; padding: 32px 24px; color: #111;">
             <div style="margin-bottom: 28px;">
@@ -136,18 +163,27 @@ serve(async (req) => {
     // ── 2. Admin notification ────────────────────────────────────────────────
     await sendEmail({
       to: ADMIN_EMAIL,
-      subject: `New booking: ${service}${name ? ` — ${name}` : ''} (${date}, ${slot})`,
+      // Bailey reads the subject line first, so say plainly whether money came in.
+      subject: `${paidDeposit ? `PAID $${DEPOSIT_AMOUNT} deposit — ` : ''}New booking: ${raw.service ?? 'Tech help'}${raw.name ? ` — ${raw.name}` : ''} (${raw.date ?? 'date TBC'}, ${raw.slot ?? ''})`,
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 520px; margin: 0 auto; padding: 32px 24px; color: #111;">
           <h2 style="font-size: 20px; font-weight: 600; margin: 0 0 20px;">📅 New Booking</h2>
           <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
             ${name ? `<tr><td style="padding: 8px 0; color: #888; width: 120px;">Name</td><td style="font-weight: 500;">${name}</td></tr>` : ''}
-            ${email ? `<tr><td style="padding: 8px 0; color: #888;">Email</td><td><a href="mailto:${email}" style="color: #2563eb;">${email}</a></td></tr>` : ''}
+            ${phone ? `<tr><td style="padding: 8px 0; color: #888;">Phone</td><td><a href="tel:${phone}" style="color: #2563eb;">${phone}</a></td></tr>` : ''}
+            ${email ? `<tr><td style="padding: 8px 0; color: #888;">Email</td><td><a href="mailto:${esc(email)}" style="color: #2563eb;">${esc(email)}</a></td></tr>` : ''}
+            ${device ? `<tr><td style="padding: 8px 0; color: #888;">Device</td><td>${device}</td></tr>` : ''}
+            <tr><td style="padding: 8px 0; color: #888;">Payment</td><td style="font-weight: 500;">${paidDeposit ? `$${DEPOSIT_AMOUNT} deposit paid online. Collect $${dueOnDay} on the day.` : `Nothing paid yet. Collect $${FIRST_HOUR_PRICE} on the day.`}</td></tr>
             <tr><td style="padding: 8px 0; color: #888;">Service</td><td style="font-weight: 500;">${service}</td></tr>
             <tr><td style="padding: 8px 0; color: #888;">Date</td><td style="font-weight: 500;">${date}</td></tr>
             <tr><td style="padding: 8px 0; color: #888;">Time</td><td style="font-weight: 500;">${slot}</td></tr>
             <tr><td style="padding: 8px 0; color: #888;">Ref</td><td style="font-family: monospace;">${ref}</td></tr>
           </table>
+          ${problem ? `
+          <div style="background: #f0f4ff; border-left: 3px solid #2563eb; border-radius: 4px; padding: 14px 16px; margin-top: 20px;">
+            <p style="font-size: 13px; color: #888; margin: 0 0 6px;">What they said</p>
+            <p style="font-size: 15px; color: #333; margin: 0; line-height: 1.5;">${problem}</p>
+          </div>` : ''}
           <div style="margin-top: 24px;">
             <a href="https://teksure.com/admin" style="display: inline-block; background: #2563eb; color: white; font-size: 14px; font-weight: 500; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
               Manage in Admin Console →
