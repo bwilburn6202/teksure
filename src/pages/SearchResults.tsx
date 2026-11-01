@@ -59,7 +59,7 @@ export default function SearchResults() {
       <Navbar />
       <main id="main-content" tabIndex={-1} className="mx-auto max-w-3xl px-4 pt-10 min-h-[60vh] outline-none">
         <h1 className="text-4xl font-bold">Search</h1>
-        <form onSubmit={submit} role="search" className="mt-6 flex gap-2">
+        <form onSubmit={submit} role="search" className="mt-6 flex flex-col gap-2 sm:flex-row">
           <label htmlFor="search-input" className="sr-only">Search guides and tools</label>
           <input
             id="search-input"

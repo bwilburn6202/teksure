@@ -40,7 +40,7 @@ export default function Landing() {
           Free guides for phones, computers and the internet. No jargon, no sales pitch.
         </p>
 
-        <form onSubmit={onSubmit} role="search" className="mt-8 flex gap-2">
+        <form onSubmit={onSubmit} role="search" className="mt-8 flex flex-col gap-2 sm:flex-row">
           <label htmlFor="landing-search" className="sr-only">What do you need help with?</label>
           <input
             id="landing-search"
@@ -53,7 +53,7 @@ export default function Landing() {
           />
           <button
             type="submit"
-            className="inline-flex h-14 shrink-0 items-center gap-2 rounded-md bg-primary px-5 text-lg font-semibold text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            className="inline-flex h-14 shrink-0 items-center justify-center gap-2 rounded-md bg-primary px-5 text-lg font-semibold text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             <Search className="h-5 w-5" aria-hidden="true" />
             Search

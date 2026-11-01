@@ -289,7 +289,7 @@ const GetHelp = () => {
         <main id="main-content" tabIndex={-1} className="flex-1 flex items-center justify-center px-4 py-20 outline-none">
           <div className="max-w-md w-full text-center space-y-6">
             <div className="flex justify-center">
-              <div className="h-20 w-20 rounded-2xl bg-primary/10 flex items-center justify-center">
+              <div className="h-20 w-20 rounded-md bg-primary/10 flex items-center justify-center">
                 <CheckCircle className="h-10 w-10 text-primary" />
               </div>
             </div>
@@ -302,7 +302,7 @@ const GetHelp = () => {
             <p className="text-base text-muted-foreground">
               While you wait, browse our free guides.
             </p>
-            <Button onClick={() => navigate('/guides')} className="gap-2 rounded-xl" size="lg">
+            <Button onClick={() => navigate('/guides')} className="gap-2 rounded-md" size="lg">
               Browse Free Guides <ArrowRight className="h-4 w-4" />
             </Button>
           </div>
@@ -335,7 +335,7 @@ const GetHelp = () => {
                 </p>
               )}
             </div>
-            <Card className="rounded-2xl border border-border bg-card w-full">
+            <Card className="rounded-md border border-border bg-card w-full">
               <CardContent className="p-6">
                 <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wide font-semibold">Booking reference</p>
                 <p className="text-3xl font-mono font-bold tracking-widest">{bookingRef}</p>
@@ -345,8 +345,8 @@ const GetHelp = () => {
               One of our technicians will confirm your exact appointment time. They'll call or email you{phone ? ` at ${phone}` : ''} before the appointment.
             </p>
             <div className="flex gap-3 flex-wrap justify-center">
-              <Button onClick={() => navigate('/my-requests')} className="rounded-xl">View My Bookings</Button>
-              <Button variant="outline" onClick={() => navigate('/guides')} className="rounded-xl">Browse Free Guides</Button>
+              <Button onClick={() => navigate('/my-requests')} className="rounded-md">View My Bookings</Button>
+              <Button variant="outline" onClick={() => navigate('/guides')} className="rounded-md">Browse Free Guides</Button>
             </div>
           </div>
         </main>
@@ -356,13 +356,7 @@ const GetHelp = () => {
   }
 
   return (
-    <div
-      className="min-h-screen flex flex-col relative"
-      style={{
-        background:
-          'radial-gradient(1000px 500px at 50% -10%, #F5CDCB 0%, rgba(245,205,203,0) 60%), radial-gradient(800px 400px at 90% 10%, #FBDAD9 0%, rgba(251,218,217,0) 60%), #FAF8F4',
-      }}
-    >
+    <div className="min-h-screen flex flex-col bg-background">
       <SEOHead
         title="Get Tech Help — TekSure"
         description="Reach out for free tech support or schedule a technician appointment. Real humans, no jargon."
@@ -370,23 +364,23 @@ const GetHelp = () => {
       />
       <Navbar />
 
-      <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col py-12 md:py-16 px-4 outline-none">
+      <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col pt-12 sm:pt-16 pb-12 px-4 outline-none">
         <div className="max-w-2xl w-full mx-auto">
           {/* Header */}
-          <div className="text-center mb-10">
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">Get Tech Help</h1>
-            <p className="text-muted-foreground text-lg">
+          <div className="mb-10">
+            <h1 className="text-4xl font-bold tracking-tight mb-3">Get Tech Help</h1>
+            <p className="text-muted-foreground text-xl">
               Tell us what's happening — we'll get someone real to help. No jargon, no runaround.
             </p>
           </div>
 
           {/* Mode toggle */}
-          <div className="grid grid-cols-2 gap-3 mb-10">
+          <div className="grid gap-3 sm:grid-cols-2 mb-10">
             <button
               type="button"
               onClick={() => setMode('asap')}
               aria-pressed={mode === 'asap'}
-              className={`text-left rounded-2xl border-2 transition-colors px-5 py-5 ${
+              className={`text-left rounded-md border-2 transition-colors px-5 py-5 ${
                 mode === 'asap'
                   ? 'border-primary bg-primary/5'
                   : 'border-border hover:border-primary/30'
@@ -404,7 +398,7 @@ const GetHelp = () => {
               type="button"
               onClick={() => setMode('schedule')}
               aria-pressed={mode === 'schedule'}
-              className={`text-left rounded-2xl border-2 transition-colors px-5 py-5 ${
+              className={`text-left rounded-md border-2 transition-colors px-5 py-5 ${
                 mode === 'schedule'
                   ? 'border-primary bg-primary/5'
                   : 'border-border hover:border-primary/30'
@@ -428,7 +422,7 @@ const GetHelp = () => {
                   <Phone className="h-4 w-4 text-primary" />
                   Phone Number <span className="text-primary font-semibold"></span>
                 </Label>
-                <Input id="phone" type="tel" autoComplete="tel" placeholder="(555) 867-5309" value={phone} onChange={(e) => setPhone(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                <Input id="phone" type="tel" autoComplete="tel" placeholder="(555) 867-5309" value={phone} onChange={(e) => setPhone(e.target.value)} className="h-11 text-base rounded-md border-border" />
               </div>
 
               <div className="space-y-2">
@@ -436,7 +430,7 @@ const GetHelp = () => {
                   <Mail className="h-4 w-4 text-muted-foreground" />
                   Email Address
                 </Label>
-                <Input id="email" type="email" autoComplete="email" placeholder="you@email.com" value={email} onChange={(e) => setEmail(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                <Input id="email" type="email" autoComplete="email" placeholder="you@email.com" value={email} onChange={(e) => setEmail(e.target.value)} className="h-11 text-base rounded-md border-border" />
               </div>
 
               <div className="space-y-2">
@@ -444,7 +438,7 @@ const GetHelp = () => {
                   <User className="h-4 w-4 text-muted-foreground" />
                   Your Name
                 </Label>
-                <Input id="name" type="text" autoComplete="given-name" placeholder="First name is fine" value={name} onChange={(e) => setName(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                <Input id="name" type="text" autoComplete="given-name" placeholder="First name is fine" value={name} onChange={(e) => setName(e.target.value)} className="h-11 text-base rounded-md border-border" />
               </div>
 
               <div className="space-y-2">
@@ -453,7 +447,7 @@ const GetHelp = () => {
                   Device type
                 </Label>
                 <Select value={deviceType} onValueChange={setDeviceType}>
-                  <SelectTrigger id="device" className="h-11 text-base rounded-xl border-border">
+                  <SelectTrigger id="device" className="h-11 text-base rounded-md border-border">
                     <SelectValue placeholder="Pick one (optional)" />
                   </SelectTrigger>
                   <SelectContent>
@@ -469,16 +463,16 @@ const GetHelp = () => {
                   <MessageSquare className="h-4 w-4 text-muted-foreground" />
                   What's going on?
                 </Label>
-                <Textarea id="description" placeholder="Describe your issue in plain English — no jargon needed." value={description} onChange={(e) => setDescription(e.target.value)} rows={4} className="text-base resize-none rounded-xl border-border" />
+                <Textarea id="description" placeholder="Describe your issue in plain English — no jargon needed." value={description} onChange={(e) => setDescription(e.target.value)} rows={4} className="text-base resize-none rounded-md border-border" />
               </div>
 
               {error && (
-                <div role="alert" className="bg-destructive/10 border border-destructive/30 text-destructive rounded-xl px-4 py-3 text-sm">
+                <div role="alert" className="bg-destructive/10 border border-destructive/30 text-destructive rounded-md px-4 py-3 text-sm">
                   {error}
                 </div>
               )}
 
-              <Button type="submit" disabled={submitting} aria-busy={submitting} className="w-full h-11 text-base gap-2 rounded-xl" size="lg">
+              <Button type="submit" disabled={submitting} aria-busy={submitting} className="w-full h-11 text-base gap-2 rounded-md" size="lg">
                 {submitting
                   ? <><Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> Sending...</>
                   : <>Send Request <ArrowRight className="h-4 w-4" aria-hidden="true" /></>}
@@ -515,7 +509,7 @@ const GetHelp = () => {
                           key={s.id}
                           onClick={() => { setServiceType(s.id); setStep(1); }}
                           aria-pressed={serviceType === s.id}
-                          className="flex items-start gap-3 p-4 rounded-xl border border-border bg-card text-left hover:border-primary/30 hover:bg-card/80 transition-colors"
+                          className="flex items-start gap-3 p-4 rounded-md border border-border bg-card text-left hover:border-primary/30 hover:bg-card/80 transition-colors"
                         >
                           <Icon className="h-6 w-6 text-primary shrink-0 mt-0.5" aria-hidden="true" />
                           <div>
@@ -566,7 +560,7 @@ const GetHelp = () => {
                   <div className="mb-8">
                     <Label htmlFor="time-select" className="sr-only">Preferred time</Label>
                     <Select value={scheduleSlot ?? ''} onValueChange={(v) => setScheduleSlot(v)}>
-                      <SelectTrigger id="time-select" className="h-12 text-base rounded-xl border-border">
+                      <SelectTrigger id="time-select" className="h-12 text-base rounded-md border-border">
                         <SelectValue placeholder="Pick a time…" />
                       </SelectTrigger>
                       <SelectContent className="max-h-72">
@@ -581,8 +575,8 @@ const GetHelp = () => {
                   </div>
 
                   <div className="flex gap-3">
-                    <Button variant="outline" onClick={() => setStep(0)} className="rounded-xl">← Back</Button>
-                    <Button disabled={!scheduleDate || !scheduleSlot} onClick={() => setStep(2)} className="ml-auto rounded-xl gap-2">
+                    <Button variant="outline" onClick={() => setStep(0)} className="rounded-md">← Back</Button>
+                    <Button disabled={!scheduleDate || !scheduleSlot} onClick={() => setStep(2)} className="ml-auto rounded-md gap-2">
                       Continue <ArrowRight className="h-4 w-4" />
                     </Button>
                   </div>
@@ -644,7 +638,7 @@ const GetHelp = () => {
                       — every session is remote — so we state that plainly
                       instead of showing a one-option picker. */}
                   {!ONSITE_AVAILABLE ? (
-                    <Card className="rounded-xl border border-border bg-card mb-6">
+                    <Card className="rounded-md border border-border bg-card mb-6">
                       <CardContent className="p-4 flex items-start gap-3">
                         <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" aria-hidden="true" />
                         <div>
@@ -665,7 +659,7 @@ const GetHelp = () => {
                         role="radio"
                         aria-checked={serviceLocation === 'remote'}
                         onClick={() => setServiceLocation('remote')}
-                        className={`w-full flex items-start gap-3 p-4 rounded-xl border transition-colors text-left ${serviceLocation === 'remote' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
+                        className={`w-full flex items-start gap-3 p-4 rounded-md border transition-colors text-left ${serviceLocation === 'remote' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
                       >
                         <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${serviceLocation === 'remote' ? 'border-primary' : 'border-border'}`} aria-hidden="true">
                           {serviceLocation === 'remote' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
@@ -680,7 +674,7 @@ const GetHelp = () => {
                         role="radio"
                         aria-checked={serviceLocation === 'onsite'}
                         onClick={() => setServiceLocation('onsite')}
-                        className={`w-full flex items-start gap-3 p-4 rounded-xl border transition-colors text-left ${serviceLocation === 'onsite' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
+                        className={`w-full flex items-start gap-3 p-4 rounded-md border transition-colors text-left ${serviceLocation === 'onsite' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
                       >
                         <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${serviceLocation === 'onsite' ? 'border-primary' : 'border-border'}`} aria-hidden="true">
                           {serviceLocation === 'onsite' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
@@ -693,28 +687,28 @@ const GetHelp = () => {
                     </div>
 
                     {serviceLocation === 'onsite' && (
-                      <div className="mt-4 space-y-3 rounded-xl border border-border bg-muted/30 p-4">
+                      <div className="mt-4 space-y-3 rounded-md border border-border bg-muted/30 p-4">
                         <p className="text-sm text-muted-foreground">
                           We need your address to send a technician. We'll confirm you're inside our service
                           area before charging anything — if you're not, we'll tell you and cancel at no cost.
                         </p>
                         <div className="space-y-2">
                           <Label htmlFor="street" className="text-sm font-medium">Street address</Label>
-                          <Input id="street" autoComplete="street-address" placeholder="123 Main St, Apt 4" value={streetAddress} onChange={(e) => setStreetAddress(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                          <Input id="street" autoComplete="street-address" placeholder="123 Main St, Apt 4" value={streetAddress} onChange={(e) => setStreetAddress(e.target.value)} className="h-11 text-base rounded-md border-border" />
                         </div>
                         <div className="grid grid-cols-2 gap-3">
                           <div className="space-y-2">
                             <Label htmlFor="city" className="text-sm font-medium">City</Label>
-                            <Input id="city" autoComplete="address-level2" value={city} onChange={(e) => setCity(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                            <Input id="city" autoComplete="address-level2" value={city} onChange={(e) => setCity(e.target.value)} className="h-11 text-base rounded-md border-border" />
                           </div>
                           <div className="space-y-2">
                             <Label htmlFor="state" className="text-sm font-medium">State</Label>
-                            <Input id="state" autoComplete="address-level1" placeholder="TX" value={stateRegion} onChange={(e) => setStateRegion(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                            <Input id="state" autoComplete="address-level1" placeholder="TX" value={stateRegion} onChange={(e) => setStateRegion(e.target.value)} className="h-11 text-base rounded-md border-border" />
                           </div>
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="zip" className="text-sm font-medium">ZIP code</Label>
-                          <Input id="zip" autoComplete="postal-code" inputMode="numeric" placeholder="75001" value={postalCode} onChange={(e) => setPostalCode(e.target.value)} className="h-11 text-base rounded-xl border-border" />
+                          <Input id="zip" autoComplete="postal-code" inputMode="numeric" placeholder="75001" value={postalCode} onChange={(e) => setPostalCode(e.target.value)} className="h-11 text-base rounded-md border-border" />
                         </div>
                       </div>
                     )}
@@ -722,7 +716,7 @@ const GetHelp = () => {
                   )}
 
                   {/* Pricing + payment option */}
-                  <Card className="rounded-xl border border-border bg-card mb-6">
+                  <Card className="rounded-md border border-border bg-card mb-6">
                     <CardContent className="p-4">
                       <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Pricing</p>
                       <div className="flex justify-between text-sm mb-2"><span>First hour</span><strong>{formatPrice(FIRST_HOUR_PRICE)}</strong></div>
@@ -736,7 +730,7 @@ const GetHelp = () => {
                       role="radio"
                       aria-checked={paymentOption === 'day'}
                       onClick={() => setPaymentOption('day')}
-                      className={`w-full flex items-start gap-3 p-4 rounded-xl border transition-colors text-left ${paymentOption === 'day' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
+                      className={`w-full flex items-start gap-3 p-4 rounded-md border transition-colors text-left ${paymentOption === 'day' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
                     >
                       <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${paymentOption === 'day' ? 'border-primary' : 'border-border'}`} aria-hidden="true">
                         {paymentOption === 'day' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
@@ -751,7 +745,7 @@ const GetHelp = () => {
                       role="radio"
                       aria-checked={paymentOption === 'deposit'}
                       onClick={() => setPaymentOption('deposit')}
-                      className={`w-full flex items-start gap-3 p-4 rounded-xl border transition-colors text-left ${paymentOption === 'deposit' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
+                      className={`w-full flex items-start gap-3 p-4 rounded-md border transition-colors text-left ${paymentOption === 'deposit' ? 'border-primary bg-primary/5' : 'border-border hover:border-primary/30'}`}
                     >
                       <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mt-0.5 shrink-0 ${paymentOption === 'deposit' ? 'border-primary' : 'border-border'}`} aria-hidden="true">
                         {paymentOption === 'deposit' && <div className="w-2.5 h-2.5 rounded-full bg-primary" />}
@@ -768,7 +762,7 @@ const GetHelp = () => {
                   </div>
 
                   {paymentOption === 'deposit' && (
-                    <Card className="rounded-xl border border-primary/20 bg-primary/5 mb-6">
+                    <Card className="rounded-md border border-primary/20 bg-primary/5 mb-6">
                       <CardContent className="p-4 text-center">
                         <div className="flex items-center justify-center gap-2 mb-2">
                           <Lock className="h-4 w-4 text-primary" aria-hidden="true" />
@@ -781,7 +775,7 @@ const GetHelp = () => {
                     </Card>
                   )}
 
-                  <Card className="rounded-xl border border-border bg-card mb-6">
+                  <Card className="rounded-md border border-border bg-card mb-6">
                     <CardContent className="p-4 text-sm space-y-2">
                       <p className="font-semibold mb-3">Summary</p>
                       <p className="flex items-center gap-2"><Wrench className="h-4 w-4 text-muted-foreground" /> <strong>{selectedService?.label}</strong></p>
@@ -799,11 +793,11 @@ const GetHelp = () => {
                   {error && <p role="alert" className="text-destructive text-base mb-4 font-medium">{error}</p>}
 
                   <div className="flex gap-3">
-                    <Button variant="outline" onClick={() => setStep(1)} className="rounded-xl">← Back</Button>
+                    <Button variant="outline" onClick={() => setStep(1)} className="rounded-md">← Back</Button>
                     <Button
                       onClick={paymentOption === 'deposit' ? submitStripeDeposit : submitPayOnDay}
                       disabled={submitting}
-                      className="ml-auto rounded-xl gap-2"
+                      className="ml-auto rounded-md gap-2"
                     >
                       {submitting
                         ? <><Loader2 className="h-4 w-4 animate-spin" /> {paymentOption === 'deposit' ? 'Redirecting to payment…' : 'Booking…'}</>

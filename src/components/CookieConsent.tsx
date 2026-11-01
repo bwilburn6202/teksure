@@ -17,18 +17,18 @@ export function CookieConsent() {
   };
 
   return (
-    <div role="dialog" aria-label="Cookie consent" className="fixed bottom-0 inset-x-0 z-50 p-4 no-print">
-      <div className="container max-w-3xl mx-auto bg-card border border-border rounded-xl shadow-lg p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4">
+    <div role="dialog" aria-label="Cookie consent" className="fixed bottom-0 inset-x-0 z-50 p-2 sm:p-4 no-print">
+      <div className="container max-w-3xl mx-auto bg-card border-2 border-border rounded-md shadow-lg px-4 py-3 sm:p-6 flex flex-wrap items-center gap-x-4 gap-y-2">
         <Cookie className="h-6 w-6 text-primary shrink-0 hidden sm:block" aria-hidden="true" />
-        <p className="text-base text-muted-foreground flex-1">
-          We use cookies to improve your experience and remember your preferences.
-          See our <a href="/privacy" className="text-primary underline">Privacy Policy</a> for details.
+        <p className="text-base text-muted-foreground flex-1 min-w-[12rem]">
+          We use cookies to remember your settings.{' '}
+          <a href="/privacy" className="text-primary underline">Privacy Policy</a>
         </p>
         <div className="flex gap-2 shrink-0">
-          <Button asChild size="sm" variant="outline" className="min-h-[44px] px-4">
+          <Button asChild size="sm" variant="outline" className="hidden sm:inline-flex min-h-[44px] px-4">
             <Link to="/privacy">Learn more</Link>
           </Button>
-          <Button size="sm" onClick={accept} className="min-h-[44px] px-4">Accept</Button>
+          <Button size="sm" onClick={accept} className="min-h-[44px] px-6">Accept</Button>
         </div>
       </div>
     </div>
