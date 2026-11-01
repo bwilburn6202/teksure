@@ -7,22 +7,10 @@ import { SEOHead } from '@/components/SEOHead';
 import { guideIndex } from '@/lib/guide-index';
 import { categoryLabels } from '@/data/guide-categories';
 import { TOOL_GROUPS } from '@/data/tools-list';
+import { rank } from '@/lib/search';
 
 const POPULAR = ['Wi-Fi', 'scam', 'password', 'video call', 'iPhone', 'email', 'printer', 'Medicare'];
 const TOOLS = TOOL_GROUPS.flatMap((g) => g.tools);
-
-/** Every word must appear somewhere; title hits rank highest. */
-function score(fields: { title: string; text: string }, words: string[]): number {
-  const title = fields.title.toLowerCase();
-  const text = fields.text.toLowerCase();
-  let total = 0;
-  for (const w of words) {
-    if (title.includes(w)) total += 10;
-    else if (text.includes(w)) total += 3;
-    else return 0;
-  }
-  return total + (title.startsWith(words[0]) ? 2 : 0);
-}
 
 export default function SearchResults() {
   const [params, setParams] = useSearchParams();
@@ -30,23 +18,20 @@ export default function SearchResults() {
   const [input, setInput] = useState(q);
   useEffect(() => setInput(q), [q]);
 
-  const words = useMemo(
-    () => q.toLowerCase().replace(/wi-fi/g, 'wifi').split(/\s+/).filter((w) => w.length > 1),
-    [q],
-  );
-
   const { guides, tools } = useMemo(() => {
-    if (!words.length) return { guides: [], tools: [] };
-    const norm = (s: string) => s.replace(/wi-fi/gi, 'wifi');
-    const guides = guideIndex
-      .map((g) => ({ g, s: score({ title: norm(g.title), text: norm(`${g.excerpt} ${g.tags.join(' ')}`) }, words) }))
-      .filter((r) => r.s > 0)
-      .sort((a, b) => b.s - a.s)
-      .slice(0, 40)
-      .map((r) => r.g);
-    const tools = TOOLS.filter((t) => score({ title: norm(t.name), text: norm(t.description) }, words) > 0);
+    const guides = rank(guideIndex, (g) => ({ title: g.title, text: `${g.excerpt} ${g.tags.join(' ')}` }), q);
+    const tools = rank(TOOLS, (t) => ({ title: t.name, text: t.description }), q, 10);
     return { guides, tools };
-  }, [words]);
+  }, [q]);
+
+  // Tell analytics what people searched for, and flag searches that found
+  // nothing: those are the words to add to src/lib/search.ts, or the guides to write.
+  const resultCount = guides.length + tools.length;
+  useEffect(() => {
+    if (!q || typeof window === 'undefined' || typeof window.gtag !== 'function') return;
+    window.gtag('event', 'search', { search_term: q, result_count: resultCount });
+    if (resultCount === 0) window.gtag('event', 'search_no_results', { search_term: q });
+  }, [q, resultCount]);
 
   const submit = (e: FormEvent) => {
     e.preventDefault();
