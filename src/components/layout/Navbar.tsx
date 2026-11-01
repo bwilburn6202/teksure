@@ -40,13 +40,11 @@ export function Navbar(_props: { noSpacer?: boolean } = {}) {
   const dashboardPath = user?.role === 'tech' ? '/tech' : user?.role === 'admin' ? '/admin' : '/customer';
   const isActive = (to: string) => location.pathname === to || location.pathname.startsWith(to + '/');
 
-  // The current page gets a blue bar under its link, so "where am I" never
-  // depends on colour alone.
+  // The current page is underlined, so "where am I" never depends on colour alone.
   const link = (to: string) =>
-    `relative inline-flex items-center min-h-[44px] px-3 text-lg font-semibold rounded-md
-     hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
-     after:absolute after:inset-x-3 after:-bottom-[12px] after:h-[3px] after:rounded-full
-     ${isActive(to) ? 'text-primary after:bg-primary' : 'text-foreground after:bg-transparent'}`;
+    `inline-flex items-center min-h-[44px] px-3 text-lg font-bold rounded-sm underline-offset-[6px]
+     hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
+     ${isActive(to) ? 'text-foreground underline decoration-[3px] decoration-primary' : 'text-foreground'}`;
 
   const signOut = async () => {
     await logout();
@@ -54,7 +52,7 @@ export function Navbar(_props: { noSpacer?: boolean } = {}) {
   };
 
   return (
-    <header role="banner" className="sticky top-0 z-50 w-full border-b border-border bg-card print:hidden">
+    <header role="banner" className="sticky top-0 z-50 w-full border-b-2 border-foreground bg-background print:hidden">
       <div className="mx-auto flex h-[68px] max-w-6xl items-center gap-2 px-4">
         <Link to="/" aria-label="TekSure home" className="mr-2 shrink-0 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
           <img src="/teksure-logo.svg" alt="TekSure" width={147} height={32} className="h-8 w-auto block dark:hidden" />
@@ -83,7 +81,7 @@ export function Navbar(_props: { noSpacer?: boolean } = {}) {
           </div>
           <Link
             to="/get-help"
-            className="hidden sm:inline-flex items-center gap-2 min-h-[44px] px-4 rounded-lg bg-primary text-primary-foreground text-lg font-semibold shadow-sm hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            className="hidden sm:inline-flex items-center gap-2 min-h-[44px] px-4 rounded-sm bg-primary text-primary-foreground text-lg font-bold hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             <Phone className="h-5 w-5" aria-hidden="true" />
             Get Help
@@ -131,7 +129,7 @@ export function Navbar(_props: { noSpacer?: boolean } = {}) {
       </div>
 
       {open && (
-        <nav id="mobile-menu" aria-label="Mobile navigation" className="md:hidden border-t border-border bg-card px-4 pb-4">
+        <nav id="mobile-menu" aria-label="Mobile navigation" className="md:hidden border-t border-border bg-background px-4 pb-4">
           <ul className="flex flex-col">
             {[...LINKS, { to: '/get-help', label: 'Get Help' }].map((l) => (
               <li key={l.to}>

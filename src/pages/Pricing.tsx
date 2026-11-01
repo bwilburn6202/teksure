@@ -80,7 +80,7 @@ const Pricing = () => (
         title="Simple, Honest Pricing"
         description="One rate for every kind of problem. No subscriptions, no hidden fees, no upselling."
       >
-        <p className="mt-3 text-base text-ink-muted">{BRAND_PROMISE} — available anywhere in the United States.</p>
+        <p className="mt-3 text-base text-muted-foreground">{BRAND_PROMISE} — available anywhere in the United States.</p>
       </PageHeader>
 
       {/* The single rate */}

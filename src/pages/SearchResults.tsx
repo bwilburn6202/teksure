@@ -60,7 +60,7 @@ export default function SearchResults() {
       <Navbar />
       <main id="main-content" tabIndex={-1} className="min-h-[60vh] outline-none">
         <PageHeader width="max-w-3xl" eyebrow="Guides and tools" title="Search">
-        <form onSubmit={submit} role="search" className="mt-6 flex flex-col gap-2 rounded-2xl bg-card p-2 sm:flex-row">
+        <form onSubmit={submit} role="search" className="mt-6 flex flex-col gap-2 sm:flex-row">
           <label htmlFor="search-input" className="sr-only">Search guides and tools</label>
           <input
             id="search-input"
@@ -68,9 +68,9 @@ export default function SearchResults() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="What do you need help with?"
-            className="h-14 w-full rounded-xl border-2 border-input bg-card px-4 text-lg text-foreground placeholder:text-muted-foreground focus-visible:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="h-14 w-full rounded-sm border-2 border-foreground bg-card px-4 text-lg text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring/40"
           />
-          <button type="submit" className="h-14 shrink-0 rounded-xl bg-primary px-6 text-lg font-semibold text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+          <button type="submit" className="h-14 shrink-0 rounded-sm bg-primary px-7 text-lg font-bold text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
             Search
           </button>
         </form>
@@ -83,7 +83,7 @@ export default function SearchResults() {
             <ul className="mt-3 flex flex-wrap gap-2">
               {POPULAR.map((term) => (
                 <li key={term}>
-                  <Link to={`/search?q=${encodeURIComponent(term)}`} className="inline-flex min-h-[44px] items-center rounded-full border-2 border-border bg-card px-4 text-lg hover:border-primary">
+                  <Link to={`/search?q=${encodeURIComponent(term)}`} className="inline-flex min-h-[44px] items-center rounded-sm border-2 border-foreground/40 bg-card px-4 text-lg hover:border-foreground">
                     {term}
                   </Link>
                 </li>
@@ -102,10 +102,10 @@ export default function SearchResults() {
 
         {tools.length > 0 && (
           <section aria-labelledby="tool-results" className="mt-8">
-            <h2 id="tool-results" className="font-display text-2xl font-bold">Tools</h2>
-            <ul className="mt-4 space-y-3">
+            <h2 id="tool-results" className="border-b-2 border-foreground pb-2 font-display text-2xl font-bold">Tools</h2>
+            <ul className="mt-2 divide-y divide-border">
               {tools.map((t) => (
-                <li key={t.slug} className="rounded-xl border-2 border-border bg-card p-4">
+                <li key={t.slug} className="py-3">
                   <Link to={`/tools/${t.slug}`} className="text-lg font-semibold text-primary underline-offset-4 hover:underline">{t.name}</Link>
                   <p className="mt-1 text-base text-muted-foreground">{t.description}</p>
                 </li>
@@ -116,13 +116,13 @@ export default function SearchResults() {
 
         {guides.length > 0 && (
           <section aria-labelledby="guide-results" className="mt-8">
-            <h2 id="guide-results" className="font-display text-2xl font-bold">Guides</h2>
-            <ul className="mt-4 space-y-3">
+            <h2 id="guide-results" className="border-b-2 border-foreground pb-2 font-display text-2xl font-bold">Guides</h2>
+            <ul className="mt-2 divide-y divide-border">
               {guides.map((g) => (
-                <li key={g.slug} className="rounded-xl border-2 border-border bg-card p-4">
+                <li key={g.slug} className="py-3">
                   <Link to={`/guides/${g.slug}`} className="text-lg font-semibold text-primary underline-offset-4 hover:underline">{g.title}</Link>
                   <p className="mt-1 text-base text-muted-foreground">{g.excerpt}</p>
-                  <p className="mt-2 font-mono text-sm font-semibold text-muted-foreground">{categoryLabels[g.category]}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{categoryLabels[g.category]}</p>
                 </li>
               ))}
             </ul>

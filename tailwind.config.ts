@@ -125,11 +125,12 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
-        // Headings: Space Grotesk gives the "tech" feel; body stays Inter for reading.
-        display: ["'Space Grotesk'", "Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
-        // Small labels only (step numbers, eyebrows). Never for body text.
-        mono: ["'JetBrains Mono'", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
+        // Body: Atkinson Hyperlegible, designed by the Braille Institute for low-vision readers.
+        sans: ["'Atkinson Hyperlegible'", "system-ui", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        // Headings: a sturdy serif, like a printed manual.
+        display: ["'Source Serif 4'", "Georgia", "'Times New Roman'", "serif"],
+        // Only for what people type or read off a screen: addresses, codes, numbers.
+        mono: ["'IBM Plex Mono'", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
       },
       borderRadius: {
         lg: "var(--radius)",

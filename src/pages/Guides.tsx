@@ -7,8 +7,7 @@ import { GUIDE_CATEGORIES, categoryLabels, categoryDescriptions, type GuideCateg
 import { guideIndex } from '@/lib/guide-index';
 import { GUIDE_COUNT_LABEL } from '@/data/site-stats';
 import { PageHeader } from '@/components/layout/PageHeader';
-import { categoryIcons } from '@/lib/category-icons';
-import { ArrowRight } from 'lucide-react';
+
 
 const isCategory = (v: string | null): v is GuideCategory =>
   !!v && (GUIDE_CATEGORIES as readonly string[]).includes(v);
@@ -43,8 +42,8 @@ export default function Guides() {
   };
 
   const chip = (on: boolean) =>
-    `inline-flex items-center gap-2 min-h-[44px] px-4 rounded-full border-2 text-base font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
-      on ? 'border-primary bg-primary text-primary-foreground' : 'border-border bg-card hover:border-primary'
+    `inline-flex items-center min-h-[44px] px-4 rounded-sm border-2 text-base font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+      on ? 'border-foreground bg-foreground text-background' : 'border-foreground/40 bg-card hover:border-foreground'
     }`;
 
   return (
@@ -75,7 +74,7 @@ export default function Guides() {
               value={filter}
               onChange={(e) => setFilter(e.target.value)}
               placeholder="For example: WhatsApp, printer, Medicare"
-              className="mt-2 h-14 w-full rounded-xl border-2 border-transparent bg-card px-4 text-lg text-foreground placeholder:text-muted-foreground focus-visible:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal"
+              className="mt-2 h-14 w-full rounded-sm border-2 border-foreground bg-card px-4 text-lg text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-ring/40"
             />
           </div>
         </PageHeader>
@@ -85,18 +84,14 @@ export default function Guides() {
             <button onClick={() => pick(null)} className={chip(!active)} aria-pressed={!active}>
               All topics
             </button>
-            {GUIDE_CATEGORIES.map((c) => {
-              const Icon = categoryIcons[c];
-              return (
-                <button key={c} onClick={() => pick(c)} className={chip(active === c)} aria-pressed={active === c}>
-                  <Icon className="h-4 w-4" aria-hidden="true" />
-                  {categoryLabels[c]}
-                </button>
-              );
-            })}
+            {GUIDE_CATEGORIES.map((c) => (
+              <button key={c} onClick={() => pick(c)} className={chip(active === c)} aria-pressed={active === c}>
+                {categoryLabels[c]}
+              </button>
+            ))}
           </nav>
 
-          <p className="mt-6 font-mono text-sm font-semibold text-muted-foreground" aria-live="polite">
+          <p className="mt-6 text-base text-muted-foreground" aria-live="polite">
             Showing {shown} {shown === 1 ? 'guide' : 'guides'}
           </p>
 
@@ -104,31 +99,17 @@ export default function Guides() {
             guides.length === 0 ? null : (
               <section key={cat} aria-labelledby={`cat-${cat}`} className="mt-10">
                 {!active && (
-                  <h2 id={`cat-${cat}`} className="flex items-center gap-3 font-display text-2xl font-bold">
-                    {(() => {
-                      const Icon = categoryIcons[cat];
-                      return (
-                        <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-primary">
-                          <Icon className="h-5 w-5" aria-hidden="true" />
-                        </span>
-                      );
-                    })()}
+                  <h2 id={`cat-${cat}`} className="border-b-2 border-foreground pb-2 font-display text-2xl font-bold">
                     {categoryLabels[cat]}
                   </h2>
                 )}
-                <ul className="mt-4 grid gap-3 md:grid-cols-2">
+                <ul className="divide-y divide-border">
                   {guides.map((g) => (
-                    <li key={g.slug}>
-                      <Link
-                        to={`/guides/${g.slug}`}
-                        className="group flex h-full flex-col rounded-xl border-2 border-border bg-card p-4 hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                      >
-                        <span className="flex items-start justify-between gap-3 text-lg font-semibold text-primary">
-                          {g.title}
-                          <ArrowRight className="mt-1 h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                        </span>
-                        <span className="mt-1 text-base text-muted-foreground">{g.excerpt}</span>
+                    <li key={g.slug} className="py-3">
+                      <Link to={`/guides/${g.slug}`} className="text-lg font-bold text-primary underline-offset-4 hover:underline">
+                        {g.title}
                       </Link>
+                      <p className="mt-1 text-base text-muted-foreground">{g.excerpt}</p>
                     </li>
                   ))}
                 </ul>
