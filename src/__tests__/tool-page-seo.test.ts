@@ -26,7 +26,7 @@ describe('tool pages set their own SEO head', () => {
   const files = readdirSync(TOOLS_DIR).filter((f) => f.endsWith('.tsx'));
 
   it('finds the tool page components', () => {
-    expect(files.length).toBeGreaterThan(20);
+    expect(files.length).toBeGreaterThanOrEqual(9);
   });
 
   it('every tool page renders <SEOHead>', () => {

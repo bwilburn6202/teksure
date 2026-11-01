@@ -33,10 +33,8 @@ const Tools                  = lazy(() => import("./pages/Tools"));
 const ScamDefenseCenter      = lazy(() => import("./pages/ScamDefenseCenter"));
 const GetHelp                = lazy(() => import("./pages/GetHelp"));
 const SearchResults          = lazy(() => import("./pages/SearchResults"));
-const Glossary               = lazy(() => import("./pages/Glossary"));
 const EmergencyHelp          = lazy(() => import("./pages/EmergencyHelp"));
 const About                  = lazy(() => import("./pages/About"));
-const FAQ                    = lazy(() => import("./pages/FAQ"));
 const Pricing                = lazy(() => import("./pages/Pricing"));
 const Terms                  = lazy(() => import("./pages/Terms"));
 const Privacy                = lazy(() => import("./pages/Privacy"));
@@ -44,16 +42,9 @@ const RefundPolicy           = lazy(() => import("./pages/RefundPolicy"));
 const NotFound               = lazy(() => import("./pages/NotFound"));
 // Accounts, bookings and payments
 const MyRequests             = lazy(() => import("./pages/MyRequests"));
-const Profile                = lazy(() => import("./pages/Profile"));
 const PaymentSuccess         = lazy(() => import("./pages/payment/Success"));
 const PaymentCancel          = lazy(() => import("./pages/payment/Cancel"));
-const CustomerDashboard      = lazy(() => import("./pages/customer/Dashboard"));
-const CustomerJobRoom        = lazy(() => import("./pages/customer/JobRoom"));
-const TechDashboard          = lazy(() => import("./pages/tech/Dashboard"));
-const TechJobRoom            = lazy(() => import("./pages/tech/JobRoom"));
 const AdminConsole           = lazy(() => import("./pages/admin/Console"));
-const ContentPipeline        = lazy(() => import("./pages/admin/ContentPipeline"));
-const AdminNewsletter        = lazy(() => import("./pages/admin/Newsletter"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -233,10 +224,8 @@ const AppContent = () => {
           <Route path="/scam-defense" element={<ScamDefenseCenter />} />
           <Route path="/get-help" element={<GetHelp />} />
           <Route path="/search" element={<SearchResults />} />
-          <Route path="/glossary" element={<Glossary />} />
           <Route path="/emergency-help" element={<EmergencyHelp />} />
           <Route path="/about" element={<About />} />
-          <Route path="/faq" element={<FAQ />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
@@ -246,20 +235,17 @@ const AppContent = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/my-requests" element={<MyRequests />} />
-          <Route path="/profile" element={<ProtectedRoute allowedRoles={['customer', 'tech', 'admin']}><Profile /></ProtectedRoute>} />
           <Route path="/payment/success" element={<PaymentSuccess />} />
           <Route path="/payment/cancel" element={<PaymentCancel />} />
-          <Route path="/customer" element={<ProtectedRoute allowedRoles={['customer']}><CustomerDashboard /></ProtectedRoute>} />
-          <Route path="/customer/jobs/:id" element={<ProtectedRoute allowedRoles={['customer']}><CustomerJobRoom /></ProtectedRoute>} />
-          <Route path="/tech" element={<ProtectedRoute allowedRoles={['tech']}><TechDashboard /></ProtectedRoute>} />
-          <Route path="/tech/jobs/:id" element={<ProtectedRoute allowedRoles={['tech']}><TechJobRoom /></ProtectedRoute>} />
           <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin']}><AdminConsole /></ProtectedRoute>} />
-          <Route path="/admin/content" element={<ProtectedRoute allowedRoles={['admin']}><ContentPipeline /></ProtectedRoute>} />
-          <Route path="/admin/newsletter" element={<ProtectedRoute allowedRoles={['admin']}><AdminNewsletter /></ProtectedRoute>} />
 
           {/* Retired URLs. scripts/generate-redirects.mjs turns each into a 308 in
               vercel.json. Every target is a live page — when a page is removed,
               point its redirects at the new target instead of chaining. */}
+          {/* Removed 2026-11-01 (lean launch) */}
+          <Route path="/glossary" element={<Navigate to="/guides?category=basics" replace />} />
+          <Route path="/faq" element={<Navigate to="/about" replace />} />
+          <Route path="/profile" element={<Navigate to="/my-requests" replace />} />
           <Route path="/welcome" element={<Navigate to="/" replace />} />
           <Route path="/roadmap" element={<Navigate to="/about" replace />} />
           <Route path="/find-a-guide" element={<Navigate to="/guides" replace />} />
@@ -317,7 +303,7 @@ const AppContent = () => {
           <Route path="/this-week" element={<Navigate to="/guides" replace />} />
           <Route path="/quizzes/tech-confidence" element={<Navigate to="/scam-defense" replace />} />
           <Route path="/practice/phone" element={<Navigate to="/scam-defense" replace />} />
-          <Route path="/practice/vocab-flashcards" element={<Navigate to="/glossary" replace />} />
+          <Route path="/practice/vocab-flashcards" element={<Navigate to="/guides?category=basics" replace />} />
           <Route path="/volunteer" element={<Navigate to="/about" replace />} />
           <Route path="/daily-tip" element={<Navigate to="/guides" replace />} />
           <Route path="/how-it-works" element={<Navigate to="/get-help" replace />} />
@@ -333,11 +319,11 @@ const AppContent = () => {
           <Route path="/printables/digital-estate-binder" element={<Navigate to="/guides?category=life" replace />} />
           <Route path="/calculators/medicare-cost" element={<Navigate to="/guides?category=life" replace />} />
           <Route path="/calculators/phone-bill" element={<Navigate to="/guides/understanding-your-phone-bill" replace />} />
-          <Route path="/calculators/internet-plan" element={<Navigate to="/tools/low-cost-internet" replace />} />
-          <Route path="/calculators/subscriptions" element={<Navigate to="/tools/subscription-auditor" replace />} />
+          <Route path="/calculators/internet-plan" element={<Navigate to="/guides/free-low-cost-internet-seniors" replace />} />
+          <Route path="/calculators/subscriptions" element={<Navigate to="/guides/find-and-cancel-forgotten-subscriptions" replace />} />
           <Route path="/free-resources" element={<Navigate to="/guides" replace />} />
           <Route path="/practice/phishing-inbox" element={<Navigate to="/scam-defense" replace />} />
-          <Route path="/practice/password-practice" element={<Navigate to="/tools/password-strength" replace />} />
+          <Route path="/practice/password-practice" element={<Navigate to="/tools/password-generator" replace />} />
           <Route path="/practice/suspicious-call" element={<Navigate to="/scam-defense" replace />} />
           <Route path="/quizzes/scam-iq" element={<Navigate to="/scam-defense" replace />} />
           <Route path="/accessibility" element={<Navigate to="/guides/hidden-accessibility-features-your-phone-already-has" replace />} />

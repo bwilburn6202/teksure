@@ -6,8 +6,6 @@ const LINKS = [
   { to: '/scam-defense', label: 'Scams' },
   { to: '/get-help', label: 'Get Help' },
   { to: '/emergency-help', label: 'Scammed? Start here' },
-  { to: '/glossary', label: 'Glossary' },
-  { to: '/faq', label: 'FAQ' },
   { to: '/about', label: 'About' },
   { to: '/pricing', label: 'Pricing' },
   { to: '/privacy', label: 'Privacy' },
