@@ -100,7 +100,6 @@ export function Navbar(_props: { noSpacer?: boolean } = {}) {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem onClick={() => navigate(dashboardPath)}>Dashboard</DropdownMenuItem>
                 <DropdownMenuItem onClick={() => navigate('/my-requests')}>My requests</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => navigate('/profile')}>Profile</DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem onClick={signOut}>Sign out</DropdownMenuItem>
               </DropdownMenuContent>

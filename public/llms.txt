@@ -4,7 +4,7 @@
 
 ## About this site
 
-- 500 step-by-step guides and 24 interactive tools, all free and without a paywall.
+- 500 step-by-step guides and 9 interactive tools, all free and without a paywall.
 - Audience: non-technical adults, especially people aged 60+, and caregivers.
 - US-focused: prices in USD, US carriers, US government services (Medicare, Social Security, IRS).
 - Editorial rule: plain English, no jargon without an explanation.
@@ -22,7 +22,6 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [Tools](https://www.teksure.com/tools): every interactive tool
 - [Scam Defense Center](https://www.teksure.com/scam-defense): how to check if something is a scam
 - [Scammed? Start here](https://www.teksure.com/emergency-help): what to do right after a scam
-- [Glossary](https://www.teksure.com/glossary): tech terms in plain English
 - [Get help](https://www.teksure.com/get-help): book a person for one-to-one support
 
 ## Tools
@@ -32,25 +31,10 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [Link Safety Checker](https://www.teksure.com/tools/url-safety-checker): Check a web address before you click it.
 - [Stop Robocalls](https://www.teksure.com/tools/robocall-blocker-setup): Turn on the call-blocking features your phone already has.
 - [Password Maker](https://www.teksure.com/tools/password-generator): Make a strong password you can still remember.
-- [Password Checker](https://www.teksure.com/tools/password-strength): See how strong a password is. Nothing you type leaves your device.
 - [Two-Step Login Setup](https://www.teksure.com/tools/two-factor-setup): Add a second lock to your email, bank and other accounts.
-- [Data Breach Checker](https://www.teksure.com/tools/data-breach-checker): Find out if your email address showed up in a known data breach.
 - [Freeze Your Credit](https://www.teksure.com/tools/credit-freeze-walkthrough): Freeze your credit at all three bureaus, step by step. It is free.
 - [Scam Recovery Checklist](https://www.teksure.com/tools/scam-recovery-checklist): What to do first, second and third after a scam.
 - [Identity Theft Recovery](https://www.teksure.com/tools/id-theft-recovery): Report it, lock things down and repair your credit.
-- [Find a Lost Phone](https://www.teksure.com/tools/find-lost-phone): Locate, lock or erase a lost iPhone or Android phone.
-- [Emergency Info Card](https://www.teksure.com/tools/emergency-info-card): Fill in and print a wallet card with your medical and contact details.
-- [Tech Troubleshooter](https://www.teksure.com/tools/troubleshooter): Pick what is wrong and follow the fixes, most likely first.
-- [Wi-Fi Fixer](https://www.teksure.com/tools/wifi-troubleshooter): Get a dropped or slow Wi-Fi connection working again.
-- [Internet Speed Check](https://www.teksure.com/tools/internet-speed-doctor): Find out why your internet is slow and what to do about it.
-- [Printer Fixer](https://www.teksure.com/tools/printer-troubleshooter): Get a printer that will not print working again.
-- [Speed Up a Slow Device](https://www.teksure.com/tools/speed-up-device): Safe steps to make a slow phone or computer faster.
-- [Error Message Decoder](https://www.teksure.com/tools/error-decoder): Look up what a confusing error message means.
-- [New Phone Setup](https://www.teksure.com/tools/new-phone-setup): Move your contacts, photos and apps to a new phone.
-- [Photo Backup](https://www.teksure.com/tools/photo-backup-wizard): Make sure your photos are saved somewhere safe.
-- [Phone Plan Comparison](https://www.teksure.com/tools/phone-plan-comparison): Compare cell phone plans, including 55+ plans.
-- [Low-Cost Internet](https://www.teksure.com/tools/low-cost-internet): Find discounted internet plans you may qualify for.
-- [Subscription Checkup](https://www.teksure.com/tools/subscription-auditor): List what you pay for each month and spot what to cancel.
 
 ## Guides by topic
 

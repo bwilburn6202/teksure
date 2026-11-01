@@ -41,8 +41,13 @@ describe('not-found status and app-shell rewrites', () => {
 
   it('keeps the screens Stripe and signed-in users land on', () => {
     const sources = rewrites.map((r) => r.source);
-    for (const p of ['/payment/success', '/payment/cancel', '/profile', '/my-requests', '/admin']) {
+    for (const p of ['/payment/success', '/payment/cancel', '/my-requests', '/admin']) {
       expect(sources).toContain(p);
     }
+  });
+
+  it('sends the removed /profile page to /my-requests', () => {
+    const redirects: { source: string; destination: string }[] = vercel.redirects ?? [];
+    expect(redirects.find((r) => r.source === '/profile')?.destination).toBe('/my-requests');
   });
 });

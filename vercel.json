@@ -65,22 +65,6 @@
       "destination": "/404"
     },
     {
-      "source": "/admin/content",
-      "destination": "/404"
-    },
-    {
-      "source": "/admin/newsletter",
-      "destination": "/404"
-    },
-    {
-      "source": "/customer",
-      "destination": "/404"
-    },
-    {
-      "source": "/customer/jobs/:id",
-      "destination": "/404"
-    },
-    {
       "source": "/my-requests",
       "destination": "/404"
     },
@@ -91,21 +75,24 @@
     {
       "source": "/payment/success",
       "destination": "/404"
-    },
-    {
-      "source": "/profile",
-      "destination": "/404"
-    },
-    {
-      "source": "/tech",
-      "destination": "/404"
-    },
-    {
-      "source": "/tech/jobs/:id",
-      "destination": "/404"
     }
   ],
   "redirects": [
+    {
+      "source": "/glossary",
+      "destination": "/guides?category=basics",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/profile",
+      "destination": "/my-requests",
+      "permanent": true
+    },
     {
       "source": "/welcome",
       "destination": "/",
@@ -393,7 +380,7 @@
     },
     {
       "source": "/practice/vocab-flashcards",
-      "destination": "/glossary",
+      "destination": "/guides?category=basics",
       "permanent": true
     },
     {
@@ -473,12 +460,12 @@
     },
     {
       "source": "/calculators/internet-plan",
-      "destination": "/tools/low-cost-internet",
+      "destination": "/guides/free-low-cost-internet-seniors",
       "permanent": true
     },
     {
       "source": "/calculators/subscriptions",
-      "destination": "/tools/subscription-auditor",
+      "destination": "/guides/find-and-cancel-forgotten-subscriptions",
       "permanent": true
     },
     {
@@ -493,7 +480,7 @@
     },
     {
       "source": "/practice/password-practice",
-      "destination": "/tools/password-strength",
+      "destination": "/tools/password-generator",
       "permanent": true
     },
     {
@@ -742,8 +729,13 @@
       "permanent": true
     },
     {
+      "source": "/tools/data-breach-checker",
+      "destination": "/guides/check-personal-data-leaks",
+      "permanent": true
+    },
+    {
       "source": "/tools/data-leak-dashboard",
-      "destination": "/tools/data-breach-checker",
+      "destination": "/guides/check-personal-data-leaks",
       "permanent": true
     },
     {
@@ -752,8 +744,23 @@
       "permanent": true
     },
     {
+      "source": "/tools/emergency-info-card",
+      "destination": "/guides/how-to-set-up-medical-id-on-your-phone-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/error-decoder",
+      "destination": "/get-help",
+      "permanent": true
+    },
+    {
       "source": "/tools/facebook-marketplace-tips",
       "destination": "/guides/how-to-use-facebook-marketplace-safely-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/find-lost-phone",
+      "destination": "/guides/how-to-set-up-find-my-iphone",
       "permanent": true
     },
     {
@@ -773,17 +780,22 @@
     },
     {
       "source": "/tools/internet-plan-comparator",
-      "destination": "/tools/low-cost-internet",
+      "destination": "/guides/free-low-cost-internet-seniors",
       "permanent": true
     },
     {
       "source": "/tools/internet-speed-advisor",
-      "destination": "/tools/internet-speed-doctor",
+      "destination": "/guides/fix-slow-internet-connection",
+      "permanent": true
+    },
+    {
+      "source": "/tools/internet-speed-doctor",
+      "destination": "/guides/fix-slow-internet-connection",
       "permanent": true
     },
     {
       "source": "/tools/internet-speed-needs",
-      "destination": "/tools/internet-speed-doctor",
+      "destination": "/guides/fix-slow-internet-connection",
       "permanent": true
     },
     {
@@ -798,12 +810,17 @@
     },
     {
       "source": "/tools/jargon-translator",
-      "destination": "/glossary",
+      "destination": "/guides?category=basics",
       "permanent": true
     },
     {
       "source": "/tools/local-tv-cord-cutting",
       "destination": "/guides/tv-antenna-setup-cord-cutting-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/low-cost-internet",
+      "destination": "/guides/free-low-cost-internet-seniors",
       "permanent": true
     },
     {
@@ -823,7 +840,7 @@
     },
     {
       "source": "/tools/monthly-tech-expense-audit",
-      "destination": "/tools/subscription-auditor",
+      "destination": "/guides/find-and-cancel-forgotten-subscriptions",
       "permanent": true
     },
     {
@@ -837,13 +854,18 @@
       "permanent": true
     },
     {
+      "source": "/tools/new-phone-setup",
+      "destination": "/guides/set-up-new-iphone-beginners",
+      "permanent": true
+    },
+    {
       "source": "/tools/new-phone-setup-assistant",
-      "destination": "/tools/new-phone-setup",
+      "destination": "/guides/set-up-new-iphone-beginners",
       "permanent": true
     },
     {
       "source": "/tools/new-phone-setup-checklist",
-      "destination": "/tools/new-phone-setup",
+      "destination": "/guides/set-up-new-iphone-beginners",
       "permanent": true
     },
     {
@@ -858,12 +880,12 @@
     },
     {
       "source": "/tools/password-health",
-      "destination": "/tools/password-strength",
+      "destination": "/tools/password-generator",
       "permanent": true
     },
     {
       "source": "/tools/password-leak-checker",
-      "destination": "/tools/data-breach-checker",
+      "destination": "/guides/check-personal-data-leaks",
       "permanent": true
     },
     {
@@ -872,8 +894,13 @@
       "permanent": true
     },
     {
+      "source": "/tools/password-strength",
+      "destination": "/tools/password-generator",
+      "permanent": true
+    },
+    {
       "source": "/tools/password-strength-checker",
-      "destination": "/tools/password-strength",
+      "destination": "/tools/password-generator",
       "permanent": true
     },
     {
@@ -888,12 +915,22 @@
     },
     {
       "source": "/tools/phone-carrier-comparison",
-      "destination": "/tools/phone-plan-comparison",
+      "destination": "/guides/t-mobile-essentials-65-versus-verizon-55-unlimited-2026",
       "permanent": true
     },
     {
       "source": "/tools/phone-plan-comparator",
-      "destination": "/tools/phone-plan-comparison",
+      "destination": "/guides/t-mobile-essentials-65-versus-verizon-55-unlimited-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/phone-plan-comparison",
+      "destination": "/guides/t-mobile-essentials-65-versus-verizon-55-unlimited-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/photo-backup-wizard",
+      "destination": "/guides/backup-iphone-to-icloud",
       "permanent": true
     },
     {
@@ -903,7 +940,12 @@
     },
     {
       "source": "/tools/plain-english-translator",
-      "destination": "/glossary",
+      "destination": "/guides?category=basics",
+      "permanent": true
+    },
+    {
+      "source": "/tools/printer-troubleshooter",
+      "destination": "/guides/printer-wont-print-fix",
       "permanent": true
     },
     {
@@ -1028,7 +1070,7 @@
     },
     {
       "source": "/tools/senior-photo-backup",
-      "destination": "/tools/photo-backup-wizard",
+      "destination": "/guides/backup-iphone-to-icloud",
       "permanent": true
     },
     {
@@ -1097,18 +1139,33 @@
       "permanent": true
     },
     {
+      "source": "/tools/speed-up-device",
+      "destination": "/guides/fix-slow-windows-pc-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/subscription-auditor",
+      "destination": "/guides/find-and-cancel-forgotten-subscriptions",
+      "permanent": true
+    },
+    {
       "source": "/tools/subscription-tracker",
-      "destination": "/tools/subscription-auditor",
+      "destination": "/guides/find-and-cancel-forgotten-subscriptions",
       "permanent": true
     },
     {
       "source": "/tools/tech-jargon-translator",
-      "destination": "/glossary",
+      "destination": "/guides?category=basics",
       "permanent": true
     },
     {
       "source": "/tools/toll-text-scam",
       "destination": "/guides/unpaid-toll-text-scam",
+      "permanent": true
+    },
+    {
+      "source": "/tools/troubleshooter",
+      "destination": "/get-help",
       "permanent": true
     },
     {
@@ -1133,7 +1190,12 @@
     },
     {
       "source": "/tools/wifi-speed",
-      "destination": "/tools/internet-speed-doctor",
+      "destination": "/guides/fix-slow-internet-connection",
+      "permanent": true
+    },
+    {
+      "source": "/tools/wifi-troubleshooter",
+      "destination": "/guides/fix-wifi-keeps-dropping",
       "permanent": true
     },
     {

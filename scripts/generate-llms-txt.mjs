@@ -50,7 +50,6 @@ const lines = [
   `- [Tools](${BASE}/tools): every interactive tool`,
   `- [Scam Defense Center](${BASE}/scam-defense): how to check if something is a scam`,
   `- [Scammed? Start here](${BASE}/emergency-help): what to do right after a scam`,
-  `- [Glossary](${BASE}/glossary): tech terms in plain English`,
   `- [Get help](${BASE}/get-help): book a person for one-to-one support`,
   '',
   '## Tools',

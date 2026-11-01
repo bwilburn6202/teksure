@@ -46,7 +46,6 @@ const STATIC_PAGES = [
   { path: '/tools',         changefreq: 'weekly',  priority: '0.9' },
   { path: '/scam-defense',  changefreq: 'weekly',  priority: '0.8' },
   { path: '/get-help',      changefreq: 'monthly', priority: '0.8' },
-  { path: '/glossary',      changefreq: 'monthly', priority: '0.7' },
   { path: '/pricing',       changefreq: 'monthly', priority: '0.6' },
   { path: '/about',         changefreq: 'monthly', priority: '0.5' },
   // Legal pages. Low priority for ranking, but they must be crawlable and

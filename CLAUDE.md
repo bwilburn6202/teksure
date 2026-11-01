@@ -12,8 +12,19 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 - **Repo:** github.com/bwilburn6202/teksure · **Live:** https://www.teksure.com (canonical host is `www`; apex currently **307s**, not 301 — see blockers)
 - **Local:** `~/Documents/Claude/Projects/TekSure` · dev on :5173
 
-## Current state (2026-10-11) — complete revamp
-500 guides · 24 tools · 539 sitemap URLs · 541/541 prerendered · TypeScript clean · 108/108 tests · avg reading grade 7.1
+## Current state (2026-11-01) — lean launch
+500 guides · 9 tools · 521 sitemap URLs · 524/524 prerendered · TypeScript clean · 111/111 tests · avg reading grade 7.1
+
+**Lean launch, 2026-11-01.** Bailey asked for an extremely lean site to get the idea off
+the ground. On top of the revamp below: tools 24 → 9 (scam checks, account protection,
+recovery; the rest 308 to their closest guide via `tool-redirects.ts`); `/glossary`, `/faq`
+and `/profile` removed (redirected); the unused customer/tech dashboards and job rooms and
+the admin content-pipeline and newsletter screens deleted; the 6-hourly `dev-loop` workflow,
+its script and backlog deleted (it committed to main four times a day, and each commit
+redeployed); the dead Express SSR server (`server.ts`, `api/ssr.ts`) and unused packages
+(tesseract.js, pdfjs-dist, mammoth, marked, express, compression, sirv, lovable-tagger)
+removed; old notes folders (`archive/`, `knowledge-base/`, `local-brain/`, logo sources)
+removed — all still in git history. Guides were kept at 500 on purpose.
 
 Check `curl -s https://www.teksure.com/build-info.json` before trusting counts.
 
@@ -26,13 +37,13 @@ cut and a plain visual reset. What changed:
   `money`, `health`, `life`, `ai`, `basics`). The 328 batch files became one file per
   category, `src/data/guides-<category>.ts`. 405 retired slugs with a genuine equivalent
   are 308s (`src/data/guide-redirects.ts`); the other ~3,000 404 on purpose.
-- **Tools 385 → 24**, listed by hand in `src/data/tools-list.ts` (grouped; a test checks it
+- **Tools 385 → 24** (now 9, see above), listed by hand in `src/data/tools-list.ts` (grouped; a test checks it
   matches the registry). Doc Browser (an AI chat) was removed with the rest.
 - **Pages:** every topic hub, printable, calculator, quiz, practice sim, course, toolkit,
   `/how-it-works`, `/guias`, `/quick-fixes`, `/safety/scam-alerts`, `/site-index`,
   `/start`, `/tech-problem-of-week` and `/whats-new` deleted; each redirects to its closest
-  live page. Real pages left: home, guides, tools, scam-defense, get-help, search, glossary,
-  emergency-help, about, faq, pricing, terms, privacy, refund-policy, plus account,
+  live page. Real pages left: home, guides, tools, scam-defense, get-help, search,
+  emergency-help, about, pricing, terms, privacy, refund-policy, plus account,
   booking, payment and admin routes.
 - **Look:** white page, near-black text, one blue (`--primary`, 7:1 on white), visible
   borders, 18px base text, no gradients, glass, mesh wallpaper or stock photos. The Cmd+K
@@ -164,7 +175,6 @@ npm run build                   # ~1 min; verify dist/prerender-report.json says
 | `src/App.tsx` | All routes + `<Navigate>` redirects |
 | `src/components/layout/Navbar.tsx` · `Footer.tsx` · `MobileBottomNav.tsx` | Navigation |
 | `supabase/migrations/` | Migrations |
-| `.claude/dev-loop-backlog.md` | Work queue — newest cycles at top |
 | `.claude/prompts/` | Reusable run briefs |
 
 ## Supabase
@@ -178,23 +188,15 @@ Open: enable leaked-password protection in Auth; Supabase performance pass.
 
 | System | Cadence | Role |
 |---|---|---|
-| `dev-loop.yml` (GitHub) | every 6h | **Read-only checks.** Writes findings to `.claude/dev-loop-backlog.md`. No source edits, no API calls. |
-| `teksure-loop` (scheduled task) | daily 6:30am | Health + ONE improvement from the backlog |
+| `teksure-loop` (scheduled task) | daily 6:30am | Health + ONE improvement |
 | `teksure-weekly` (scheduled task) | Tue 8:00am | Discoverability verification + one high-value fix |
-| `auto-merge-claude.yml` | on PR | Merges `claude/`, `codex/`, `vercel/` branches |
+| `auto-merge-claude.yml` | on PR | Merges `claude/`, `codex/`, `vercel/` branches — **except** a PR with `[hold]` in its title or a `hold` label |
 
 **Deleted on purpose (2026-10-11):** `creative-loop.yml`, `continuous-content-loop.yml` and their scripts. Together they once ran ~25 automated content cycles a day against the quality-over-count policy. Do not rebuild them without an explicit decision to resume volume.
 
-**dev-loop checks per cycle:** site metrics · duplicate slugs · internal link audit · `tsc --noEmit` · stale OS mentions (iOS ≤16, Android ≤13, Win 7/8, macOS pre-Ventura) · guides older than 18 months.
+**Deleted on purpose (2026-11-01):** `dev-loop.yml`, `scripts/dev-loop.mjs` and `.claude/dev-loop-backlog.md`. The scheduled tasks should run the "Verify before claiming done" checks directly instead of reading a backlog.
 
-```bash
-npm run loop:dev:dry    # one cycle, no writes
-npm run loop:dev:once   # one cycle, writes state + backlog
-npm run loop:dev:ci     # exits 1 on hard failures (used by the workflow)
-```
-Flags: `--once`, `--dry-run`, `--ci`, `--interval=N`, `--only=health,links`, `--skip=stale-os`
-
-**Backlog hygiene:** keep `.claude/dev-loop-backlog.md` under 64KB (last ~20 cycles). It is read at the start of every run; at 264KB it burns context for no benefit.
+**Any PR that removes pages or content goes up with `[hold]` in its title** so Bailey can review it before it reaches production.
 
 ## Cadence pages — none
 `/tech-problem-of-week` and `/whats-new` were deleted on 2026-10-11 because they kept going

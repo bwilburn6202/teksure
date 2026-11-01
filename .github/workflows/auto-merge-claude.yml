@@ -7,10 +7,14 @@ on:
 
 jobs:
   auto-merge:
+    # A PR whose title contains [hold], or that carries the "hold" label, is left
+    # for a human to merge. Use it for changes that remove content or need review.
     if: |
-      startsWith(github.head_ref, 'claude/') ||
-      startsWith(github.head_ref, 'codex/') ||
-      startsWith(github.head_ref, 'vercel/')
+      (startsWith(github.head_ref, 'claude/') ||
+       startsWith(github.head_ref, 'codex/') ||
+       startsWith(github.head_ref, 'vercel/')) &&
+      !contains(github.event.pull_request.title, '[hold]') &&
+      !contains(github.event.pull_request.labels.*.name, 'hold')
     runs-on: ubuntu-latest
     permissions:
       contents: write
