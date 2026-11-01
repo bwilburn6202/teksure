@@ -10,6 +10,7 @@ import { useGuide, guideToEmbeddedJson, EMBEDDED_GUIDE_ID } from '@/lib/guide-da
 import { calcReadTime } from '@/lib/guide-nav';
 import { guideRedirects } from '@/data/guide-redirects';
 import { RichText } from '@/components/guide/StepContentRenderer';
+import { GuideFeedback } from '@/components/guide/GuideFeedback';
 import { getGuideResources } from '@/lib/guideResources';
 import NotFound from './NotFound';
 
@@ -274,6 +275,8 @@ const GuideDetail = () => {
               </ul>
             </section>
           )}
+
+          <GuideFeedback slug={guide.slug} />
 
           <section className="mt-12 border-2 border-foreground bg-card p-6 no-print">
             <h2 className="font-display text-2xl font-bold">Still stuck?</h2>
