@@ -151,7 +151,7 @@ const Privacy = () => {
                 If you have any questions about this privacy policy or want to make a data request, contact us at:
               </p>
               <p>
-                <a href="mailto:bailey@teksure.com" className="text-primary underline">bailey@teksure.com</a>
+                <a href="mailto:hello@teksure.com" className="text-primary underline">hello@teksure.com</a>
               </p>
               <p>We will respond within 30 days.</p>
             </CardContent>

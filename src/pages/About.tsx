@@ -35,7 +35,6 @@ export default function About() {
           description: 'Free technology guides and support for everyday people.',
           contactPoint: { '@type': 'ContactPoint', email: 'hello@teksure.com', contactType: 'customer service' },
           foundingDate: '2025',
-          founder: { '@type': 'Person', name: 'Bailey Wilburn' },
         }}
       />
       <Navbar />
@@ -63,7 +62,7 @@ export default function About() {
               So we started writing things down, with one rule: if someone who has never used a
               computer cannot read it aloud and follow along, it is not done yet.
             </p>
-            <p className="font-semibold">— Bailey Wilburn, founder</p>
+            <p className="font-semibold">— The TekSure team</p>
           </div>
         </section>
 

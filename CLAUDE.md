@@ -158,6 +158,7 @@ The 70+ accumulated `.stale*`/`.bak*` files are from past sessions hitting this 
 - Every guide: step-by-step instructions, an official source link (Apple/Google/Microsoft/Samsung/AARP/FTC/CISA/Medicare.gov), and a real YouTube reference
 - Every new page needs `<SEOHead title="..." description="..." />`
 - Commit format: `feat: [description]` / `fix: [description]`
+- **Never put the owner's name on the website** (pages, guides, metadata, schema, emails shown to users). Sign as "the TekSure team" and use hello@teksure.com. Bailey asked for this on 2026-11-01.
 
 ## Verify before claiming done
 ```bash

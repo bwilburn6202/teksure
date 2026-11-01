@@ -2637,7 +2637,7 @@ export const phonesGuides: Guide[] = [
       {
         title: "Turn on Personal Hotspot",
         content: "Tap the toggle next to \"Allow Others to Join.\" Your iPhone will generate a Wi-Fi network name and password.",
-        tip: "The default hotspot name is your iPhone's name (like \"Bailey's iPhone\"). To change it, go to Settings → General → About → Name."
+        tip: "The default hotspot name is your iPhone's name (like \"Pat's iPhone\"). To change it, go to Settings → General → About → Name."
       },
       {
         title: "Note your hotspot password",
