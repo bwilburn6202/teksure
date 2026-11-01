@@ -175,7 +175,7 @@ const RECOVERY_STEPS = [
   {
     title: "Don't panic — you are not alone",
     detail:
-      "Scammers stole over $10 billion from Americans in 2023, and it can happen to even the most careful people. These criminals are professionals who do this full-time. Being tricked does not mean you did something stupid — it means you ran into a skilled manipulator. What matters now is what you do next.",
+      "Americans reported losing $15.9 billion to fraud in 2025, and it can happen to even the most careful people. These criminals are professionals who do this full-time. Being tricked does not mean you did something stupid — it means you ran into a skilled manipulator. What matters now is what you do next.",
   },
   {
     title: 'Stop all contact with the scammer immediately',
@@ -271,10 +271,13 @@ export default function ScamDefenseCenter() {
         <section>
           <h1 className="text-4xl md:text-5xl font-bold">Scam Defense Center</h1>
           <p className="mt-4 text-xl leading-relaxed">
-            Scammers took over <strong>$10 billion from Americans in 2023</strong>, and older adults are a
+            Americans reported losing <strong>$15.9 billion to fraud in 2025</strong>, and older adults are a
             top target. Here is how to spot a scam, and what to do if one already got you.
           </p>
-          <p className="mt-2 text-base text-muted-foreground">Source: FTC Consumer Sentinel Network Data Book 2023</p>
+          <p className="mt-2 text-base text-muted-foreground">
+            Source:{' '}
+            <a href="https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-testifies-joint-economic-committee-agencys-efforts-combat-fraud" className="underline">FTC report to Congress, March 2026</a>
+          </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
             <Button asChild size="lg"><a href="#checklist">Check for warning signs</a></Button>
             <Button asChild size="lg" variant="outline"><a href="#got-scammed">I already got scammed</a></Button>

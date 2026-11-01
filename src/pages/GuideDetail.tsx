@@ -16,15 +16,29 @@ import NotFound from './NotFound';
 const button =
   'inline-flex items-center gap-2 min-h-[44px] px-4 rounded-md border-2 border-border text-base font-semibold hover:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring no-print';
 
+// Many tips already start with "Quick Tip:", which doubled up with the callout label.
+const stripTipLabel = (tip: string) => tip.replace(/^\s*\**\s*(quick|pro)\s+tip\s*\**\s*[:\-—–]\s*\**\s*/i, '');
+
+// The body's opening paragraph explains what the guide is about, so it goes above the
+// steps; the rest is background and stays below them.
+const splitBody = (body?: string) => {
+  const blocks = (body ?? '').trim().split(/\n\s*\n/).filter(Boolean);
+  if (blocks.length === 0) return { intro: '', rest: '' };
+  if (/^\s*(#|[-*•]\s|\d+[.)]\s)/.test(blocks[0])) return { intro: '', rest: blocks.join('\n\n') };
+  return { intro: blocks[0], rest: blocks.slice(1).join('\n\n') };
+};
+
 const ListenButton = ({ guide }: { guide: { title: string; excerpt: string; steps?: GuideStep[]; body?: string } }) => {
   const [speaking, setSpeaking] = useState(false);
   const fullText = useCallback(() => {
+    const { intro, rest } = splitBody(guide.body);
     let text = `${guide.title}. ${guide.excerpt}. `;
+    if (intro) text += `${intro} `;
     guide.steps?.forEach((s, i) => {
       text += `Step ${i + 1}: ${s.title}. ${s.content}. `;
-      if (s.tip) text += `Tip: ${s.tip}. `;
+      if (s.tip) text += `Tip: ${stripTipLabel(s.tip)}. `;
     });
-    if (guide.body) text += guide.body;
+    if (rest) text += rest;
     return text;
   }, [guide]);
   useEffect(() => () => window.speechSynthesis?.cancel(), []);
@@ -91,6 +105,7 @@ const GuideDetail = () => {
 
   const { prev, next, related } = guide.nav;
   const sources = getGuideResources(guide);
+  const bodyParts = splitBody(guide.body);
   const url = `https://www.teksure.com/guides/${guide.slug}`;
 
   const howToJsonLd = guide.steps?.length
@@ -184,6 +199,12 @@ const GuideDetail = () => {
             <ListenButton guide={guide} />
           </div>
 
+          {bodyParts.intro && (
+            <div className="mt-8 text-lg leading-relaxed">
+              <RichText text={bodyParts.intro} />
+            </div>
+          )}
+
           {guide.steps && guide.steps.length > 0 && (
             <ol className="mt-10 space-y-8">
               {guide.steps.map((step, i) => (
@@ -194,19 +215,22 @@ const GuideDetail = () => {
                   <div className="mt-3 text-lg leading-relaxed">
                     <RichText text={step.content} />
                   </div>
-                  {step.tip && <Callout label="Quick Tip" tone="tip"><RichText text={step.tip} className="space-y-2" /></Callout>}
+                  {step.tip && <Callout label="Quick Tip" tone="tip"><RichText text={stripTipLabel(step.tip)} className="space-y-2" /></Callout>}
                   {step.warning && <Callout label="Warning" tone="warning"><RichText text={step.warning} className="space-y-2" /></Callout>}
                 </li>
               ))}
             </ol>
           )}
 
-          {guide.tip && <Callout label="Quick Tip" tone="tip"><RichText text={guide.tip} className="space-y-2" /></Callout>}
+          {guide.tip && <Callout label="Quick Tip" tone="tip"><RichText text={stripTipLabel(guide.tip)} className="space-y-2" /></Callout>}
           {guide.warning && <Callout label="Warning" tone="warning"><RichText text={guide.warning} className="space-y-2" /></Callout>}
-          {guide.body && (
-            <div className="mt-10 text-lg leading-relaxed">
-              <RichText text={guide.body} />
-            </div>
+          {bodyParts.rest && (
+            <section aria-labelledby="more-about" className="mt-12 border-t-2 border-border pt-6">
+              <h2 id="more-about" className="text-2xl font-bold">More about this</h2>
+              <div className="mt-3 text-lg leading-relaxed">
+                <RichText text={bodyParts.rest} />
+              </div>
+            </section>
           )}
 
           {(guide.sourceUrl || sources.length > 0 || guide.videoUrl) && (
